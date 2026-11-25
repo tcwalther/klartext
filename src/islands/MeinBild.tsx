@@ -91,8 +91,8 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
         <section>
           <h2 class="serif text-2xl font-semibold">Spannungen in deinem Bild</h2>
           <p class="text-muted mt-1 mb-4 max-w-prose">
-            Manche deiner Antworten ziehen in verschiedene Richtungen. Das ist kein Fehler, denn fast jede politische
-            Position muss solche Zielkonflikte auflösen. Über diese Stellen lohnt es sich zu sprechen.
+            Manche deiner Antworten ziehen in verschiedene Richtungen. Das ist kein Fehler; fast jede politische Position
+            muss solche Zielkonflikte auflösen.
           </p>
           <div class="grid gap-7">
             {aktiv.map((s) => (
@@ -124,8 +124,7 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
       {/* Offene Fragen */}
       {offen.length > 0 && (
         <section>
-          <h2 class="serif text-2xl font-semibold">Hier bist du noch unentschieden</h2>
-          <p class="text-muted mt-1 mb-4">Hier lohnt es sich, tiefer einzusteigen.</p>
+          <h2 class="serif text-2xl font-semibold mb-4">Hier bist du noch unentschieden</h2>
           <ul class="border-t border-line">
             {offen.map((f) => (
               <li key={f.id} class="border-b border-line">

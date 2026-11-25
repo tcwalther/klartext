@@ -66,7 +66,6 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
 <Layout title="Gesundheit" description="Das deutsche Gesundheitssystem verständlich: das Wichtigste auf einen Blick, die großen Fragen und wie das System funktioniert.">
   <div class="mx-auto max-w-5xl px-4 pt-6 sm:pt-10">
     <header class="max-w-3xl">
-      <div class="kicker text-accent mb-2">Thema 1</div>
       <h1 class="serif text-4xl sm:text-5xl font-semibold leading-tight">Gesundheit</h1>
       <p class="mt-4 text-lg text-muted leading-relaxed">
         Kaum eine Frage im Gesundheitssystem lässt sich für sich allein beantworten. Wer mehr Kliniken in der Nähe will,
@@ -74,7 +73,6 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
       </p>
       <div class="mt-6 flex flex-wrap gap-2">
         <a href="/gesundheit/fragen/" class="btn btn-primary">Fragen starten ({fragen.length}) →</a>
-        <a href="#bereiche" class="btn btn-ghost">Alle Fragen ansehen</a>
       </div>
     </header>
 
@@ -91,11 +89,7 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
 
     <!-- Die Fragen -->
     <section id="bereiche" class="mt-16 scroll-mt-20" aria-labelledby="bereiche-h">
-      <h2 id="bereiche-h" class="serif text-2xl font-semibold">Die Fragen</h2>
-      <p class="text-muted mt-1 mb-6 max-w-prose">
-        {fragen.length} Fragen in {bereiche.length} Bereichen. Jede beginnt mit einer kurzen Erklärung und lässt sich bei
-        Bedarf vertiefen.
-      </p>
+      <h2 id="bereiche-h" class="serif text-2xl font-semibold mb-6">Die Fragen</h2>
       <div class="grid md:grid-cols-2 gap-x-10 gap-y-10">
         {
           bereiche.map((b) => {
@@ -110,7 +104,7 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
                     </a>
                   )}
                 </div>
-                <p class="text-sm text-muted mt-1 mb-3">{b.data.kurz}</p>
+                <div class="mb-2" />
                 {fs.length === 0 ? (
                   <p class="text-sm text-faint italic">In Arbeit.</p>
                 ) : (
@@ -141,25 +135,20 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
           })
         }
       </div>
-      <p class="text-xs text-faint mt-4">Die Punkte zeigen, wie viele Ebenen einer Frage bereits ausgearbeitet sind.</p>
     </section>
 
     <!-- Wie das System funktioniert -->
     {
       sd && (
         <section class="mt-20" aria-labelledby="system">
-          <h2 id="system" class="serif text-2xl font-semibold">
+          <h2 id="system" class="serif text-2xl font-semibold mb-8">
             Wie das System funktioniert
           </h2>
-          <p class="text-muted mt-1 mb-8 max-w-prose">
-            Woher das Geld kommt und wohin es fließt, wer die Entscheidungen trifft und wie die Bereiche zusammenhängen.
-          </p>
 
           {anteile && (
             <figure class="mb-14">
               <figcaption class="mb-4">
-                <span class="kicker text-accent">1 · Das Geld</span>
-                <span class="block serif text-xl font-semibold mt-1">{anteile.titel}</span>
+                <span class="block serif text-xl font-semibold">{anteile.titel}</span>
               </figcaption>
               <div
                 class="flex h-9 sm:h-11 rounded-md overflow-hidden gap-0.5"
@@ -198,8 +187,7 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
 
           {sd.steuerung.length > 0 && (
             <div class="mb-14">
-              <div class="kicker text-accent">2 · Die Entscheidungen</div>
-              <h3 class="serif text-xl font-semibold mt-1 mb-5">Wer entscheidet was?</h3>
+              <h3 class="serif text-xl font-semibold mb-5">Wer entscheidet was?</h3>
               <ol class="grid md:grid-cols-3 gap-x-8 gap-y-6">
                 {sd.steuerung.map((st, i) => (
                   <li class="border-t-2 border-ink pt-3">
@@ -215,12 +203,10 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
 
           <div class="grid lg:grid-cols-[1fr_28rem] gap-8 items-start">
             <div>
-              <div class="kicker text-accent">3 · Die Zusammenhänge</div>
-              <h3 class="serif text-xl font-semibold mt-1">Wie die Bereiche zusammenhängen</h3>
+              <h3 class="serif text-xl font-semibold">Wie die Bereiche zusammenhängen</h3>
               <p class="text-muted mt-2 max-w-prose">
-                Jede Linie verbindet zwei Bereiche, deren Fragen sich gegenseitig beeinflussen; je dicker die Linie, desto
-                mehr solcher Verbindungen gibt es. Unter <a class="link" href="/mein-bild/">Mein Bild</a> siehst du, wo
-                deine eigenen Antworten in Spannung zueinander stehen.
+                Jede Linie verbindet zwei Bereiche, deren Fragen sich gegenseitig beeinflussen. Je dicker die Linie, desto
+                enger der Zusammenhang.
               </p>
             </div>
             <figure>
@@ -273,7 +259,7 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
               <span>
                 <span class="block serif text-xl font-semibold">Alle Zahlen im Detail</span>
                 <span class="block text-sm text-muted">
-                  {sd.kennzahlen.length} Kennzahlen, {sd.geldfluss.length} Geldströme und {sd.akteure.length} Akteure, jeweils mit Quelle
+                  {sd.kennzahlen.length} Kennzahlen, {sd.geldfluss.length} Geldströme und {sd.akteure.length} Akteure
                 </span>
               </span>
               <span class="text-sm text-accent shrink-0 group-open/d:hidden">aufklappen</span>

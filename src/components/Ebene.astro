@@ -8,7 +8,7 @@ interface Props {
   n: number;
   id: string;
   titel: string;
-  sub: string;
+  sub?: string;
   frageId: string;
   open?: boolean;
 }
@@ -23,7 +23,7 @@ const { n, id, titel, sub, frageId, open = false } = Astro.props;
     >
     <span class="flex-1 min-w-0">
       <span class="ebene-titel block serif text-xl font-semibold leading-snug transition-colors">{titel}</span>
-      <span class="block text-sm text-muted leading-snug mt-0.5">{sub}</span>
+      {sub && <span class="block text-sm text-muted leading-snug mt-0.5">{sub}</span>}
     </span>
     <svg class="chev shrink-0 size-5 text-faint mt-1" viewBox="0 0 20 20" fill="none" aria-hidden="true">
       <path d="M7.5 4.5 13 10l-5.5 5.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path>
