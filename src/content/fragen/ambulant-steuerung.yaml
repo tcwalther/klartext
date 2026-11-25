@@ -71,20 +71,22 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: In Deutschland können gesetzlich Versicherte heute in der Regel direkt zu Fachärztinnen und Fachärzten gehen. Eine Überweisung ist dafür meist nicht nötig.
+    text: Gesetzlich Versicherte dürfen in Deutschland meist direkt zu jeder Fachärztin und jedem Facharzt gehen, ohne Überweisung. Es gibt also keine feste Stelle, die vorab klärt, wer wohin muss.
     quellen: [kbv-primaerversorgung-2026]
   - typ: fakt
-    text: 2024 wurden in den Arztpraxen rund 579 Millionen **Behandlungsfälle** abgerechnet (ein Fall = eine Person, eine Praxis, ein Quartal). Davon entfielen 188 Millionen auf Hausarztpraxen und 328 Millionen auf Fachärzte.
+    text: Den größeren Teil der Arbeit tragen die Fachpraxen. Auf einen Behandlungsfall in der Hausarztpraxis kommen fast zwei bei Fachärzten.
+    genau: 2024 wurden in den Arztpraxen rund 579 Millionen **Behandlungsfälle** abgerechnet, davon 188 Millionen in Hausarztpraxen und 328 Millionen bei Fachärzten. Ein Behandlungsfall heißt eine Person, eine Praxis, ein Quartal.
     quellen: [zi-trendreport-2024]
+  - typ: wertung
+    text: Freier Zugang hat zwei Seiten. Wer seine Diagnose kennt, spart sich einen Umweg. Gleichzeitig hat oft niemand den Überblick über alle Befunde und Medikamente einer Person, und knappe Facharzttermine gehen eher an die, die zuerst anrufen, als an die, die sie am dringendsten brauchen.
   - typ: fakt
-    text: Union und SPD haben im Koalitionsvertrag 2025 ein „verbindliches Primärarztsystem bei freier Arztwahl durch Haus- und Kinderärzte“ vereinbart. Mit **Primärarzt** ist eine feste erste Anlaufstelle gemeint, meist die Hausarztpraxis.
-    quellen: [aok-koalitionsvertrag-2025]
-  - typ: fakt
-    text: Die damalige Ministerin Nina Warken kündigte im Januar 2026 einen Gesetzentwurf bis zum Sommer an und nannte „erste Wirkungen“ für 2028. Ihr Nachfolger Carsten Linnemann (CDU, im Amt seit Ende Juli 2026) hat angekündigt, das Primärarztsystem weiterzuverfolgen. Einen veröffentlichten Entwurf fand die Redaktion bis Ende November 2026 nicht. Geplant sind Ausnahmen, etwa für Frauen-, Augen- und Zahnärzte sowie für bestimmte chronisch Kranke.
-    quellen: [kbv-primaerversorgung-2026, bmg-amtsuebergabe-2026]
+    text: Union und SPD wollen ein **Primärarztsystem** einführen. Gemeint ist eine feste erste Anlaufstelle, meist die Hausarztpraxis, die gezielt weiterleitet. Ein Gesetzentwurf liegt noch nicht vor.
+    genau: Im Koalitionsvertrag 2025 steht ein „verbindliches Primärarztsystem bei freier Arztwahl durch Haus- und Kinderärzte“. Die damalige Ministerin Nina Warken (CDU) kündigte im Januar 2026 einen Entwurf bis zum Sommer und „erste Wirkungen“ für 2028 an. Ihr Nachfolger Carsten Linnemann (CDU, Minister seit 29. Juli 2026) will das Vorhaben weiterverfolgen; einen veröffentlichten Entwurf fand die Redaktion bis Ende November 2026 nicht.
+    quellen: [aok-koalitionsvertrag-2025, kbv-primaerversorgung-2026, bmg-amtsuebergabe-2026]
     unsicherheit: Der Zeitplan hat sich bereits verschoben; ob und wann ein Referentenentwurf kommt, war bei Redaktionsschluss offen.
   - typ: fakt
-    text: Wie verbindlich die Steuerung wird, ist offen. Genannt wurden ein Bonus, eine Gebühr für den Direktzugang oder die Pflicht zur Überweisung, damit der Facharzt abrechnen kann.
+    text: Offen ist vor allem, wie verbindlich die Steuerung wird. Im Gespräch sind ein Bonus für den Weg über die Hausarztpraxis, eine Gebühr für den Direktzugang oder eine Überweisungspflicht. Für manche Fächer und Patientengruppen soll es Ausnahmen geben.
+    genau: Als mögliche Ausnahmen wurden Frauen-, Augen- und Zahnärzte sowie bestimmte chronisch Kranke genannt. Diskutiert wird auch, dass Fachärzte nur mit Überweisung abrechnen dürfen.
     quellen: [kbv-primaerversorgung-2026]
 
 zielkonflikte:

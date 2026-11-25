@@ -8,10 +8,11 @@ const beispiel = fragen.find((f) => f.id === 'krankenhaus-standorte') ?? fragen[
 const schichten = [
   { n: 0, t: 'Die Frage', d: 'Kurz und einfach, wie beim Wahl-O-Mat.' },
   { n: 1, t: 'Worum geht’s?', d: 'Das Wichtigste in zwei Minuten.' },
-  { n: 2, t: 'Argumente & Zielkonflikte', d: 'Die stärksten Gründe für jede Option – und was sie kostet.' },
-  { n: 3, t: 'Fakten & Daten', d: 'Zahlen mit Quelle und Stand.' },
-  { n: 4, t: 'Geschichte', d: 'Was wurde schon versucht, was kam heraus?' },
-  { n: 5, t: 'Andere Länder', d: 'Wie machen es andere – und ist das übertragbar?' },
+  { n: 2, t: 'Wie hängt das zusammen?', d: 'Ursachen, Wirkungen – und wie groß jeder Hebel ist.' },
+  { n: 3, t: 'Argumente & Zielkonflikte', d: 'Die stärksten Gründe für jede Option – und was sie kostet.' },
+  { n: 4, t: 'Fakten & Daten', d: 'Zahlen mit Quelle und Stand.' },
+  { n: 5, t: 'Geschichte', d: 'Was wurde schon versucht, was kam heraus?' },
+  { n: 6, t: 'Andere Länder', d: 'Wie machen es andere – und ist das übertragbar?' },
 ];
 ---
 
@@ -23,7 +24,7 @@ const schichten = [
     <p class="mt-6 text-lg sm:text-xl text-muted max-w-2xl leading-relaxed">
       Beim Wahl-O-Mat hat man zu vielen Fragen keine Meinung – weil man nicht weiß, worum es geht. Klartext fängt genauso
       einfach an. Aber wenn du sagst <em class="text-ink not-italic font-semibold">„kann ich nicht entscheiden“</em>,
-      geht es Schicht für Schicht tiefer: Argumente, Daten, Geschichte, andere Länder.
+      geht es Schicht für Schicht tiefer: Zusammenhänge, Argumente, Daten, Geschichte, andere Länder.
     </p>
     <div class="mt-8 flex flex-wrap gap-2">
       <a href="/gesundheit/" class="btn btn-primary">Mit dem Gesundheitssystem beginnen →</a>
@@ -45,7 +46,7 @@ const schichten = [
               class="card flex items-center gap-3 py-2.5 pr-3"
               style={`margin-left: ${i * 0.75}rem; padding-left: 0.75rem`}
             >
-              <span class="size-7 shrink-0 rounded-full grid place-items-center text-xs font-semibold" style={`background: color-mix(in srgb, var(--accent) ${100 - i * 15}%, var(--surface)); color: ${i < 3 ? 'var(--accent-ink)' : 'var(--ink)'}`}>
+              <span class="size-7 shrink-0 rounded-full grid place-items-center text-xs font-semibold" style={`background: color-mix(in srgb, var(--accent) ${100 - i * 13}%, var(--surface)); color: ${i < 3 ? 'var(--accent-ink)' : 'var(--ink)'}`}>
                 {s.n}
               </span>
               <span class="min-w-0">

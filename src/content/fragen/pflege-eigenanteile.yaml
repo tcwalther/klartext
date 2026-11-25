@@ -90,21 +90,27 @@ optionen:
     kostet: [Versicherte mit geringem Einkommen, Arbeitgeber, Heute ältere Menschen]
 erklaerung:
   - typ: fakt
-    text: Etwa 800.000 Menschen leben in Pflegeheimen – rund 14 % aller Pflegebedürftigen (Ende 2023).
-    quellen: [destatis-pflegestatistik-2023]
-  - typ: fakt
-    text: 'Im ersten Jahr im Heim zahlten Bewohner im Juli 2026 im Schnitt **3.364 € im Monat** selbst. Davon entfielen 1.775 € auf die Pflege, 1.068 € auf Unterkunft und Verpflegung und 521 € auf Investitionskosten der Heime. Die Spanne reicht von 2.891 € (Sachsen-Anhalt) bis 3.761 € (Bremen).'
-    quellen: [vdek-eigenanteile-2026]
-  - typ: fakt
-    text: Die Pflegeversicherung zahlt im Heim einen festen Betrag je Pflegegrad, zum Beispiel 1.319 € im Monat bei Pflegegrad 3. Dazu kommt ein **Leistungszuschlag** auf den Pflege-Eigenanteil – 15 % im ersten Jahr, 30 % im zweiten, 50 % im dritten und 75 % ab dem vierten Jahr.
+    text: Die Pflegeversicherung zahlt im Heim einen **festen Betrag** je Pflegegrad – keinen festen Anteil an den Kosten. Steigen die Kosten, tragen die Bewohner den Anstieg deshalb zunächst selbst.
     quellen: [bmg-leistungsbetraege-2026]
+    genau: Bei Pflegegrad 3 zahlt die Pflegeversicherung 2026 zum Beispiel 1.319 € im Monat.
   - typ: fakt
-    text: Die Bundesregierung hat im September 2026 ein Pflegeneuordnungsgesetz beschlossen. Einen Deckel für die Eigenanteile enthält es nicht. Eine Kommission soll bis Ende Januar 2027 Vorschläge zur langfristigen Finanzierung machen.
-    quellen: [bundesregierung-pnog-2026]
-  - typ: position
-    wer: Verband der Ersatzkassen (vdek)
-    text: Die Länder sollten Investitions- und Ausbildungskosten vollständig übernehmen. Bewohner würden dann im Schnitt 649 € im Monat weniger zahlen.
+    text: Entsprechend hoch ist der Eigenanteil, und er steigt Jahr für Jahr. Im ersten Jahr im Heim zahlen Bewohner im Schnitt deutlich mehr als 3.000 € im Monat selbst.
     quellen: [vdek-eigenanteile-2026]
+    genau: 'Juli 2026: im Schnitt 3.364 € im Monat im ersten Jahr, je nach Land von 2.891 € (Sachsen-Anhalt) bis 3.761 € (Bremen). Der pflegebedingte Teil stieg binnen eines Jahres von 1.583 € auf 1.775 €.'
+  - typ: fakt
+    text: Nur gut die Hälfte davon ist Pflege. Der Rest sind Unterkunft und Verpflegung sowie **Investitionskosten** der Heime, etwa für Gebäude. Wer die Eigenanteile senken will, kann deshalb an verschiedenen Stellen ansetzen.
+    quellen: [vdek-eigenanteile-2026]
+    genau: 'Juli 2026, erstes Jahr im Heim: Pflege 1.775 €, Unterkunft und Verpflegung 1.068 €, Investitionskosten 521 € im Monat.'
+  - typ: fakt
+    text: Ein **Leistungszuschlag** senkt den Pflege-Anteil, und zwar umso stärker, je länger jemand im Heim lebt. Er hilft also vor allem bei langen Aufenthalten. Unterkunft, Verpflegung und Investitionskosten deckt er nicht.
+    quellen: [bmg-leistungsbetraege-2026]
+    genau: Zuschlag auf den pflegebedingten Eigenanteil – 15 % im ersten Jahr, 30 % im zweiten, 50 % im dritten und 75 % ab dem vierten Jahr.
+  - typ: fakt
+    text: Das Pflegeneuordnungsgesetz der Bundesregierung enthält keinen Deckel für die Eigenanteile. Eine Kommission soll Vorschläge zur langfristigen Finanzierung machen.
+    quellen: [bundesregierung-pnog-2026]
+    genau: Kabinettsbeschluss im September 2026. Die Kommission soll bis Ende Januar 2027 berichten.
+  - typ: wertung
+    text: 'Im Kern geht es darum, wer das Risiko steigender Pflegekosten trägt: die Bewohner und ihre Familien, die Beitragszahler, die Steuerzahler oder die Länder. Was eine Gruppe weniger zahlt, zahlt eine andere mehr.'
 zielkonflikte:
   - typ: wertung
     text: '**Schutz der Pflegebedürftigen gegen Belastung der Beitragszahler:** Was Bewohner weniger zahlen, müssen Versicherte, Arbeitgeber oder Steuerzahler mehr zahlen.'
@@ -167,7 +173,17 @@ verknuepft:
     grund: Höhere Löhne für Pflegekräfte schlagen sich direkt in den Eigenanteilen nieder.
   - frage: finanzierung-versicherungssystem
     grund: Auch in der Pflege gibt es ein gesetzliches und ein privates System.
-parteien: []
+parteien:
+  - partei: Die Linke
+    option: vollversicherung
+    beleg: Unsere solidarische Pflegevollversicherung soll alle pflegerischen Leistungen abdecken. Menschen mit Pflegebedarf und ihre Familien zahlen häufig mehr als 3.000 Euro im Monat für einen Heimplatz – das würde dann entfallen.
+    seite: "18"
+    quelle: wahlprogramm-2025-die-linke
+  - partei: SPD
+    option: eigenanteil-deckeln
+    beleg: Die hohen Eigenanteile bei den Pflegekosten in der stationären Langzeitpflege wollen wir durch eine Begrenzung auf 1.000 Euro pro Monat (sogenannter Pflegekosten-Deckel) maßgeblich reduzieren.
+    seite: "31"
+    quelle: wahlprogramm-2025-spd
 quellen:
   - id: vdek-eigenanteile-2026
     titel: Eigenbeteiligung in der stationären Pflege erneut gestiegen (Pressemitteilung vom 14.07.2026)
@@ -223,3 +239,15 @@ quellen:
     jahr: 2023
     url: https://www.pkv.de/fileadmin/user_upload/PKV/3_PDFs/Gutachten_Studien/Abschlussbericht_Experten-Rat_Pflegefinanzen_kurz.pdf
     art: gutachten
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei
+  - id: wahlprogramm-2025-spd
+    titel: Mehr für Dich. Besser für Deutschland. Regierungsprogramm der SPD für die Bundestagswahl 2025
+    herausgeber: SPD
+    jahr: 2025
+    url: https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf
+    art: partei

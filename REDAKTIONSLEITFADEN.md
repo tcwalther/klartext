@@ -44,18 +44,35 @@ Jede Quelle braucht `id`, `titel`, `herausgeber`, `jahr`, `art` und möglichst e
 ## 5. Die Zwiebel – Ebenen einer Frage
 
 0. **Frage** + Optionen in je einem Satz
-1. **Worum geht’s?** 3–6 Aussagen, in zwei Minuten lesbar
-2. **Argumente & Zielkonflikte**: pro/contra je Option, dazu Zielkonflikte über alle Optionen
-3. **Fakten & Daten**: Kennzahlen, Diagramme
-4. **Geschichte**: Was wurde schon versucht, was kam heraus?
-5. **Andere Länder**: Ansatz, Ergebnis und **Vergleichbarkeit** (warum übertragbar oder nicht)
-6. **Quellen**: wird automatisch aus allen Belegen erzeugt
+1. **Worum geht’s?** 3–6 Aussagen, in zwei Minuten lesbar (Regeln unten)
+2. **Wie hängt das zusammen?** Die Mechanismen hinter dem Streit: Ursachen, Wirkungen, Größenordnungen. Optional mit Wirkungskette (`kette`) und Hebel-Rechner (`rechner`)
+3. **Argumente & Zielkonflikte**: pro/contra je Option, dazu Zielkonflikte über alle Optionen
+4. **Fakten & Daten**: Kennzahlen, Diagramme
+5. **Geschichte**: Was wurde schon versucht, was kam heraus?
+6. **Andere Länder**: Ansatz, Ergebnis und **Vergleichbarkeit** (warum übertragbar oder nicht)
+7. **Quellen**: wird automatisch aus allen Belegen erzeugt
 
-Ebenen 3–5 sind optional, solange ein Bereich noch im Aufbau ist.
+Ebenen 2 und 4–6 sind optional, solange ein Bereich noch im Aufbau ist.
+
+### Ebene 1: Verstehen statt merken
+
+Ebene 1 soll ein **mentales Modell** vermitteln, keinen Datensatz. Niemand merkt sich beim Lesen fünf Zahlen, aber jeder merkt sich „etwa jeder dritte Euro geht ins Krankenhaus“.
+
+- Höchstens **eine** Zahl pro Aussage, gerundet und möglichst als Verhältnis oder Vergleich: „jeder dritte“, „doppelt so viele wie in Frankreich“, „seit 20 Jahren steigend“.
+- Exakte Zahlen, Jahresangaben und Spannbreiten gehören in das Feld `genau`. Sie werden auf Wunsch aufgeklappt. Die Quelle bleibt an der Aussage.
+- Erkläre **warum**, nicht nur **was**: Jede Aussage sollte einen Zusammenhang sichtbar machen („Weil die Beiträge an den Löhnen hängen, …“).
+- Positionen von Akteuren gehören nicht in Ebene 1, sondern in Ebene 3.
+
+### Ebene 2: Mechanismen statt Phrasen
+
+Talkshow-Argumente („die Lohnnebenkosten belasten die Wirtschaft“) sind Positionen. Ebene 2 erklärt, **was tatsächlich passiert**: Welche Treiber wirken, wie groß sie sind, welche Stellschraube wie viel bewegt und wer die Last trägt. Über die Arithmetik soll man sich einigen können, auch wenn man die Werte unterschiedlich gewichtet.
+
+- `kette`: 2–5 Stufen, z. B. *Treiber → Wohin das Geld geht → Folge → Stellschrauben*. Kurze Stichworte, je ein Satz Erklärung.
+- `rechner`: nur, wenn sich die Hebel in einer gemeinsamen Einheit vergleichen lassen (z. B. Mrd. € pro Jahr). Jede Wirkung braucht eine Quelle; Schätzungen sind als solche markiert. `wer_traegt` sagt in einfachen Worten, wer bezahlt.
 
 ## 6. Parteipositionen
 
-Nur mit wörtlichem oder eng paraphrasiertem Beleg aus dem Wahl- oder Grundsatzprogramm (mit Seitenzahl) im Feld `beleg`. Eine Partei wird nur dann einer Option zugeordnet, wenn das Programm eindeutig ist. Sonst lieber weglassen. Parteipositionen werden Nutzerinnen und Nutzern erst nach ihrer eigenen Antwort gezeigt.
+Berücksichtigt werden die Parteien im aktuellen Bundestag (derzeit AfD, CDU/CSU, Die Linke, Grüne, SPD), in alphabetischer Reihenfolge. Grundlage ist das Wahlprogramm zur letzten Bundestagswahl. Zuordnungen nur mit wörtlichem Beleg aus dem Wahl- oder Grundsatzprogramm im Feld `beleg` und der Seitenzahl im Feld `seite`. Alle Parteien werden mit demselben Maßstab geprüft. Übertragen werden die Zuordnungen mit `npm run merge:parteien <ordner>`. Eine Partei wird nur dann einer Option zugeordnet, wenn das Programm eindeutig ist. Sonst lieber weglassen. Parteipositionen werden Nutzerinnen und Nutzern erst nach ihrer eigenen Antwort gezeigt.
 
 ## 7. Spannungen
 

@@ -63,17 +63,23 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: Viele medizinische Aufgaben dürfen in Deutschland bisher nur Ärztinnen und Ärzte eigenständig ausführen. Andere Berufe übernehmen sie meist nur auf ärztliche Anordnung (**Delegation**). Wenn ein anderer Beruf die Aufgabe eigenständig übernimmt, spricht man von **Substitution**.
+    text: Viele medizinische Aufgaben dürfen in Deutschland nur Ärztinnen und Ärzte eigenständig ausführen. Andere Berufe übernehmen sie meist nur auf ärztliche Anordnung (**Delegation**). Übernimmt ein anderer Beruf eine Aufgabe in eigener Verantwortung, spricht man von **Substitution**.
     quellen: [baek-stellungnahme-pkg-2025]
+  - typ: schaetzung
+    text: Weil Arztzeit knapp ist, liegt hier ein Hebel. Eine Modellrechnung für Baden-Württemberg kommt zum Ergebnis, dass nichtärztliche Berufe etwa ein Drittel der erwarteten hausärztlichen Versorgungslücke schließen könnten.
+    genau: Laut der IGES-Studie im Auftrag des Bosch Health Campus könnte der Einsatz nichtärztlicher Berufsgruppen die Lücke 2040 von 6,5 auf 4,4 Millionen Behandlungsfälle pro Jahr verringern.
+    quellen: [aerzteblatt-iges-2026]
+    unsicherheit: Szenariorechnung; hängt stark von Annahmen zu übertragbaren Aufgaben ab.
+  - typ: wertung
+    text: Der Preis liegt bei Verantwortung und Überblick. Wer diagnostiziert, haftet und muss das ganze Krankheitsbild im Blick haben. Mehr Beteiligte bedeuten mehr Schnittstellen. Und auch Pflegekräfte sind knapp – was sie zusätzlich übernehmen, fehlt womöglich an anderer Stelle.
   - typ: fakt
-    text: Seit 1. Januar 2026 gilt das **Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege**. Pflegefachpersonen können damit bestimmte Aufgaben eigenständig übernehmen, die bisher Ärzten vorbehalten waren, etwa beim Management chronischer Erkrankungen. Welche genau, legt die Selbstverwaltung in Verträgen fest.
-    quellen: [bundesregierung-beep-2026]
+    text: Erste Schritte sind gemacht. Pflegefachpersonen dürfen seit 2026 bestimmte ärztliche Aufgaben eigenständig übernehmen, etwa bei chronischen Erkrankungen. Welche genau, legt die Selbstverwaltung erst noch in Verträgen fest. Apotheken dürfen mehr impfen und in dringenden Fällen bestimmte Medikamente ohne Rezept abgeben.
+    genau: Das **Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege** gilt seit 1. Januar 2026. Mit der Apothekenreform (Bundestag, Mai 2026) dürfen Apotheken mit allen Impfstoffen impfen, die keine Lebendimpfstoffe sind.
+    quellen: [bundesregierung-beep-2026, bmg-apothekenreform-2026]
   - typ: fakt
-    text: Mit der Apothekenreform, die der Bundestag im Mai 2026 beschlossen hat, dürfen Apotheken mit allen Impfstoffen impfen, die keine Lebendimpfstoffe sind. Sie dürfen außerdem in dringenden Fällen bestimmte verschreibungspflichtige Medikamente ohne Rezept abgeben.
-    quellen: [bmg-apothekenreform-2026]
-  - typ: fakt
-    text: Ein eigenes Gesetz für **Advanced Practice Nurses** – Pflegekräfte mit Masterabschluss und erweiterten Befugnissen – hat das Gesundheitsministerium im Juli 2026 für die zweite Jahreshälfte angekündigt.
-    quellen: [aerzteblatt-apn-2026]
+    text: Andere Länder gehen weiter. In mehreren europäischen Ländern dürfen speziell ausgebildete Pflegekräfte selbst Medikamente verordnen. Ein Gesetz für solche **Advanced Practice Nurses** ist in Deutschland angekündigt.
+    genau: Verordnen dürfen bestimmte Pflegekräfte etwa in Finnland, Frankreich, den Niederlanden, Polen, Spanien und Estland (OECD 2017). Advanced Practice Nurses sind Pflegekräfte mit Masterabschluss und erweiterten Befugnissen; das Gesundheitsministerium kündigte das Gesetz im Juli 2026 für die zweite Jahreshälfte an.
+    quellen: [oecd-nurses-advanced-2017, aerzteblatt-apn-2026]
     unsicherheit: Ob inzwischen ein Entwurf vorliegt, war bei Redaktionsschluss nicht geklärt.
 
 zielkonflikte:
@@ -172,3 +178,26 @@ quellen:
     jahr: 2026
     url: https://www.aerzteblatt.de/news/prognose-rund-12000-freie-hausarztsitze-bis-2040-5e83a125-b6f8-4588-8c01-d1b36df8c0a6
     art: presse
+  - id: wahlprogramm-2025-gruene
+    titel: Zusammen wachsen – Regierungsprogramm 2025
+    herausgeber: Bündnis 90/Die Grünen
+    jahr: 2025
+    url: https://cms.gruene.de/uploads/assets/Regierungsprogramm_DIGITAL_DINA5.pdf
+    art: partei
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei
+parteien:
+  - partei: Grüne
+    option: erweitern
+    beleg: Für Gesundheitsberufe, etwa in der Physio-, Logo- und Ergotherapie, sowie in der Pflege und im Rettungsdienst wollen wir mehr Kompetenzen zur eigenständigen heilkundlichen Behandlung.
+    seite: "89"
+    quelle: wahlprogramm-2025-gruene
+  - partei: Die Linke
+    option: erweitern
+    beleg: Sie sollen stärker eigenverantwortlich behandeln und beraten können. Wir wollen die Befugnisse der Heilberufe ausweiten und eine flächendeckende Versorgung gewährleisten.
+    seite: "19"
+    quelle: wahlprogramm-2025-die-linke

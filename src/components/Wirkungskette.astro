@@ -1,0 +1,39 @@
+---
+/**
+ * Wirkungskette in Stufen (z. B. Treiber → Ausgaben → Lücke → Stellschrauben).
+ * Desktop: Spalten mit Pfeilen. Handy: untereinander mit Pfeilen nach unten.
+ */
+import { md } from '../lib/content';
+interface Props {
+  stufen: { titel: string; punkte: { label: string; text: string }[] }[];
+}
+const { stufen } = Astro.props;
+---
+
+<figure class="my-2" aria-label="Wirkungskette">
+  <ol class="flex flex-col lg:flex-row gap-2 lg:gap-0 lg:items-stretch">
+    {
+      stufen.map((s, i) => (
+        <li class="flex flex-col lg:flex-row lg:flex-1 min-w-0">
+          <div class="flex-1 rounded-xl border border-line bg-surface p-3">
+            <div class="text-xs font-semibold uppercase tracking-wide text-accent mb-2">{s.titel}</div>
+            <ul class="grid gap-2">
+              {s.punkte.map((p) => (
+                <li class="text-sm leading-snug">
+                  <span class="font-semibold">{p.label}</span>
+                  <span class="block text-muted prose-k" set:html={md(p.text)} />
+                </li>
+              ))}
+            </ul>
+          </div>
+          {i < stufen.length - 1 && (
+            <div class="grid place-items-center text-accent text-lg py-0.5 lg:px-1" aria-hidden="true">
+              <span class="lg:hidden">↓</span>
+              <span class="hidden lg:inline">→</span>
+            </div>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</figure>

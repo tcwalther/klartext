@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks';
 import { allesLoeschen, useAntworten } from '../lib/antworten';
 import type { FrageKurz, Spannung } from '../lib/content';
+import { PARTEIEN } from '../lib/parteien';
 
 type Props = {
   fragen: FrageKurz[];
@@ -172,6 +173,56 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
           })}
         </div>
       </section>
+
+      {/* Parteien-Abgleich: bewusst zurückhaltend und aufklappbar */}
+      {(() => {
+        const zeilen = PARTEIEN.map((partei) => {
+          let gleich = 0;
+          let vergleichbar = 0;
+          for (const f of fragen) {
+            const w = antworten[f.id]?.wahl;
+            const p = f.parteien.find((x) => x.partei === partei);
+            if (!w || w === 'unentschieden' || w === 'egal' || !p) continue;
+            vergleichbar++;
+            if (p.option === w) gleich++;
+          }
+          return { partei, gleich, vergleichbar };
+        });
+        if (zeilen.every((z) => z.vergleichbar === 0)) return null;
+        return (
+          <section>
+            <details class="card p-4 sm:p-5 group/a">
+              <summary class="cursor-pointer list-none flex items-center justify-between gap-3">
+                <span class="serif text-lg font-semibold">Abgleich mit den Parteien</span>
+                <span class="text-sm text-muted group-open/a:hidden">anzeigen</span>
+              </summary>
+              <p class="text-sm text-muted mt-2 mb-4">
+                Gezählt werden nur Fragen, bei denen du eine Option gewählt hast <em>und</em> das Wahlprogramm 2025 einer
+                Partei eindeutig ist. Das ist keine Wahlempfehlung: Programme sagen zu vielen Fragen nichts, und eine
+                Wahlentscheidung hängt an viel mehr als am Gesundheitssystem.
+              </p>
+              <ul class="grid gap-3">
+                {zeilen.map((z) => (
+                  <li key={z.partei} class="text-sm">
+                    <div class="flex justify-between gap-3 mb-1">
+                      <span class="font-semibold">{z.partei}</span>
+                      <span class="text-muted tabular-nums">
+                        {z.vergleichbar === 0 ? 'nicht vergleichbar' : `${z.gleich} von ${z.vergleichbar} gleich`}
+                      </span>
+                    </div>
+                    <div class="h-2 rounded-full bg-surface-2 overflow-hidden" aria-hidden="true">
+                      <div
+                        class="h-full rounded-full"
+                        style={{ width: z.vergleichbar ? `${(100 * z.gleich) / z.vergleichbar}%` : '0', background: 'var(--accent)' }}
+                      />
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </section>
+        );
+      })()}
 
       <section class="card p-4 sm:p-5">
         <h2 class="serif text-lg font-semibold">Ins Gespräch bringen</h2>

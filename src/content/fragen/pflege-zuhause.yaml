@@ -67,20 +67,26 @@ optionen:
     kostet: [Kontrolle über die Mittelverwendung, Möglicherweise professionelle Anbieter]
 erklaerung:
   - typ: fakt
-    text: Ende 2023 waren rund 5,7 Millionen Menschen pflegebedürftig. **86 %** – 4,9 Millionen – wurden zu Hause versorgt.
+    text: Pflege findet vor allem zu Hause statt. Mehr als vier von fünf Pflegebedürftigen leben nicht im Heim.
     quellen: [destatis-pflegestatistik-2023]
+    genau: Ende 2023 waren rund 5,7 Millionen Menschen pflegebedürftig. 4,9 Millionen (86 %) wurden zu Hause versorgt.
   - typ: fakt
-    text: 3,1 Millionen von ihnen bekamen nur **Pflegegeld** und wurden überwiegend von Angehörigen gepflegt. 1,1 Millionen wurden ganz oder teilweise von ambulanten Diensten versorgt.
+    text: Die größte Last tragen Angehörige. Mehr als die Hälfte aller Pflegebedürftigen bekommt nur **Pflegegeld** und wird meist von der Familie versorgt, ohne Pflegedienst.
     quellen: [destatis-pflegestatistik-2023]
+    genau: 3,1 Millionen bekamen Ende 2023 nur Pflegegeld. 1,1 Millionen wurden ganz oder teilweise von ambulanten Diensten versorgt.
   - typ: fakt
-    text: Das Pflegegeld beträgt je nach Pflegegrad 347 € bis 990 € im Monat. Wer einen Pflegedienst nutzt, bekommt stattdessen **Pflegesachleistungen** von bis zu 796 € bis 2.299 €. Dazu kommen ein Entlastungsbetrag von 131 € im Monat und Leistungen für Tagespflege.
+    text: Die Pflegeversicherung zahlt entweder Geld an die Pflegebedürftigen, das meist an die pflegende Familie weitergeht (**Pflegegeld**), oder den Einsatz eines Pflegedienstes (**Pflegesachleistung**). Für den Pflegedienst stellt sie mehr als doppelt so viel Geld bereit.
     quellen: [bmg-leistungsbetraege-2026]
+    genau: '2026: Pflegegeld je nach Pflegegrad 347 € bis 990 € im Monat (Pflegegrad 3: 599 €), Pflegesachleistungen bis zu 796 € bis 2.299 € (Pflegegrad 3: bis zu 1.497 €). Dazu kommen ein Entlastungsbetrag von 131 € im Monat und Leistungen für Tagespflege.'
   - typ: fakt
-    text: Wer im Beruf kürzertritt, um zu pflegen, kann heute nur ein zinsloses Darlehen bekommen, keinen Lohnersatz.
+    text: Wer im Beruf kürzertritt, um zu pflegen, verliert Einkommen. Einen Lohnersatz wie beim Elterngeld gibt es dafür nicht, nur ein zinsloses Darlehen.
     quellen: [beirat-familienpflegegeld-2022]
   - typ: fakt
-    text: Das von der Bundesregierung im September 2026 beschlossene Pflegeneuordnungsgesetz sieht ein neues „Sozialraumbudget“ und einen Anspruch auf fachliche Pflegebegleitung vor Ort vor. Es ist noch nicht in Kraft.
+    text: Das Pflegeneuordnungsgesetz der Bundesregierung setzt vor allem auf Angebote vor Ort, mit einem neuen **Sozialraumbudget** und fachlicher Pflegebegleitung. Es ist noch nicht in Kraft.
     quellen: [bundesregierung-pnog-2026]
+    genau: Kabinettsbeschluss im September 2026.
+  - typ: wertung
+    text: 'Der Streit dreht sich darum, wo zusätzliches Geld am meisten bewirkt: direkt bei den pflegenden Angehörigen, bei professionellen Diensten oder bei Angeboten vor Ort, die beide entlasten. Weil Familien den größten Teil der Pflege leisten, geht es dabei auch um Beruf und Einkommen der Pflegenden.'
 zielkonflikte:
   - typ: wertung
     text: '**Familie gegen Fachkraft:** Geld für Angehörige stärkt die familiäre Pflege, Geld für Dienste stärkt die professionelle Pflege. Beides gleichzeitig voll auszubauen, ist teuer.'
@@ -137,7 +143,22 @@ verknuepft:
     grund: Ambulante Dienste brauchen Pflegekräfte, die knapp sind.
   - frage: digitalisierung-telemedizin
     grund: Digitale Angebote könnten Pflege zu Hause unterstützen.
-parteien: []
+parteien:
+  - partei: CDU/CSU
+    option: budget-flexibel
+    beleg: Wir stellen die häusliche Pflegesituation in den Mittelpunkt und wollen die Vereinbarkeit von Pflege und Beruf stärken. Wir wollen mehr Vereinfachung mit einem Pflegebudget erreichen, das flexibel für pflegerische Leistungen eingesetzt werden kann.
+    seite: "69"
+    quelle: wahlprogramm-2025-cdu-csu
+  - partei: Die Linke
+    option: profis-ausbauen
+    beleg: Die größte Entlastung sowohl für Menschen mit Pflegebedarf als auch für ihre pflegenden Angehörigen sind Angebote einer wohnortnahen, nichtkommerziellen und von einer solidarischen Pflegevollversicherung abgedeckten professionellen Tages- und Kurzzeitpflege sowie andere unbürokratisch zugängliche Hilfen.
+    seite: "20"
+    quelle: wahlprogramm-2025-die-linke
+  - partei: SPD
+    option: angehoerige-lohnersatz
+    beleg: Wir werden uns für mehr Zeitsouveränität für alle pflegenden Angehörigen und nahestehenden Personen durch die Familienpflegezeit und das Familienpflegegeld – analog zum Elterngeld – einsetzen.
+    seite: "31"
+    quelle: wahlprogramm-2025-spd
 quellen:
   - id: destatis-pflegestatistik-2023
     titel: 5,7 Millionen Pflegebedürftige zum Jahresende 2023 (Pressemitteilung)
@@ -169,3 +190,21 @@ quellen:
     jahr: 2026
     url: https://www.aok.de/pp/gg/update/kompromiss-koalition-pflege/
     art: verband
+  - id: wahlprogramm-2025-cdu-csu
+    titel: Politikwechsel für Deutschland. Wahlprogramm von CDU und CSU
+    herausgeber: CDU Deutschlands / CSU
+    jahr: 2025
+    url: https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf
+    art: partei
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei
+  - id: wahlprogramm-2025-spd
+    titel: Mehr für Dich. Besser für Deutschland. Regierungsprogramm der SPD für die Bundestagswahl 2025
+    herausgeber: SPD
+    jahr: 2025
+    url: https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf
+    art: partei

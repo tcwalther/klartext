@@ -87,22 +87,28 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: "Krankenhäuser haben zwei Geldquellen: Die **Bundesländer** sollen Investitionen wie Neubauten und Geräte bezahlen, die **Krankenkassen** die laufenden Kosten der Behandlung. Das nennt man duale Finanzierung; sie gilt seit 1972."
-    quellen: [gkv-sv-fokus-finanzierung, khg-4]
+    text: "Krankenhäuser haben zwei Geldgeber: Die **Bundesländer** sollen Neubauten und Geräte bezahlen, die **Krankenkassen** die laufende Behandlung. Für die Kassen ist das der größte Posten – fast jeder dritte Euro geht ins Krankenhaus."
+    quellen: [gkv-sv-fokus-finanzierung, khg-4, bmg-kv45-2025]
+    genau: "Diese „duale Finanzierung“ gilt seit 1972. 2025 gaben die gesetzlichen Krankenkassen rund 111,4 Mrd. € für Krankenhausbehandlung aus, rund 31,6 % ihrer Ausgaben (vorläufige Rechnungsergebnisse)."
   - typ: fakt
-    text: "Seit 2004 wird der Großteil der Behandlungen über **Fallpauschalen** bezahlt (auch DRG genannt, „Diagnosis Related Groups“). Das Krankenhaus bekommt je Fall einen festen Betrag, der von Diagnose, Eingriff und Schweregrad abhängt – nicht davon, wie lange jemand bleibt."
+    text: "Seit 2004 bekommt eine Klinik für die meisten Behandlungen einen festen Betrag pro Fall, die **Fallpauschale**. Er hängt von Diagnose und Eingriff ab, nicht davon, wie lange jemand bleibt. Wer günstiger behandelt als die Pauschale, behält die Differenz. Damit lohnt es sich, Patienten zügig zu entlassen und mehr Fälle zu behandeln."
     quellen: [bmg-fallpauschalen]
+    genau: "Fallpauschalen heißen auch DRG („Diagnosis Related Groups“). 2003 wurden sie freiwillig eingeführt, ab 2004 für alle somatischen Krankenhäuser verpflichtend. Seit 2010 gilt in jedem Bundesland ein einheitlicher Grundpreis je Fall (Basisfallwert)."
   - typ: fakt
-    text: "Seit 2020 sind die Kosten für das Pflegepersonal am Bett herausgelöst. Sie werden über ein eigenes **Pflegebudget** nach tatsächlichen Kosten erstattet."
+    text: "Beides ist eingetreten: Die Verweildauer hat sich seit 1991 halbiert, und die Zahl der Fälle stieg bis zur Corona-Pandemie. Allerdings sanken die Liegezeiten schon vor den Fallpauschalen."
+    quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
+    unsicherheit: "Wie viel davon auf die Pauschalen zurückgeht und wie viel auf eine ältere Bevölkerung und medizinischen Fortschritt, ist umstritten."
+    genau: "Durchschnittliche Verweildauer 1991: 14,0 Tage, 2025: 7,0 Tage. Vollstationäre Fälle 2005: 16,5 Mio., 2019: 19,4 Mio., 2025: 17,7 Mio."
+  - typ: fakt
+    text: "Seit 2020 ist die Pflege am Bett aus den Pauschalen herausgelöst. Ein eigenes **Pflegebudget** erstattet die tatsächlichen Kosten. Am Pflegepersonal zu sparen, bringt einer Klinik dadurch keinen finanziellen Vorteil mehr."
     quellen: [gkv-sv-pflegebudget]
+    genau: "Der GKV-Spitzenverband nennt das Pflegebudget die tiefgreifendste Veränderung seit Einführung der Fallpauschalen."
   - typ: fakt
-    text: "Die Reform von 2024, angepasst 2026, führt zusätzlich ein **Vorhaltebudget** ein: Geld dafür, dass eine Klinik bestimmte Leistungen überhaupt anbietet. 2026 und 2027 ändert sich am Budget noch nichts, 2028 und 2029 folgt der Übergang, ab 2030 wirkt es voll."
-    quellen: [bt-drs-21-2512, khentgg-6b]
-  - typ: fakt
-    text: "Es geht um viel Geld: 2025 gaben die gesetzlichen Krankenkassen rund 111,4 Milliarden Euro für Krankenhausbehandlung aus – fast ein Drittel ihrer Ausgaben."
-    quellen: [bmg-kv45-2025]
+    text: "Die Reform von 2024 fügt ein **Vorhaltebudget** hinzu: Geld dafür, dass eine Klinik eine Leistung überhaupt bereithält – unabhängig davon, wie viele Fälle sie hat. Damit hängt weniger Geld an der Fallzahl. Wirksam wird das aber erst gegen Ende des Jahrzehnts."
+    quellen: [bt-drs-21-2512, khentgg-6b, khg-17b]
+    genau: "2026 und 2027 ändern sich die Budgets noch nicht, 2028 und 2029 folgt der Übergang, ab 2030 wirkt das Vorhaltebudget voll (Verschiebung durch das KHAG von 2026). Als Vorhalteanteil gelten 60 % der Kosten ohne variable Sachkosten; die Pflegepersonalkosten werden darauf angerechnet."
   - typ: wertung
-    text: "Die Kernfrage lautet: Soll das Geld der einzelnen Behandlung folgen, dem Bereithalten von Versorgung oder den tatsächlichen Kosten einer Klinik? Jede Antwort setzt andere Anreize."
+    text: "Die Kernfrage lautet: Soll das Geld der einzelnen Behandlung folgen, dem Bereithalten von Versorgung oder den tatsächlichen Kosten einer Klinik? Jedes Modell setzt andere Anreize – zwischen Effizienz, Mengenausweitung und Sicherheit für die Klinik."
 
 zielkonflikte:
   - typ: wertung
@@ -280,7 +286,27 @@ verknuepft:
   - frage: ambulant-steuerung
     grund: "Wie stationäre Behandlungen bezahlt werden, beeinflusst, was ambulant oder im Krankenhaus gemacht wird."
 
-parteien: []
+parteien:
+  - partei: AfD
+    option: budgets
+    beleg: Notwendig ist die vollständige Abschaffung der Fallpauschalen und mittelfristig die Rückkehr zu individuellen Budgetvereinbarungen zwischen den Krankenhäusern und den Spitzenverbänden der GKV auf Landesebene.
+    seite: "27"
+    quelle: wahlprogramm-2025-afd
+  - partei: Grüne
+    option: mischsystem
+    beleg: Die Umsetzung der Krankenhausreform werden wir weiter vorantreiben und gemeinsam mit den Ländern umsetzen. Wo erforderlich werden wir diese für eine bestmögliche Versorgung der Patient*innen weiterentwickeln, insbesondere im Hinblick auf bestmögliche Struktur-, Prozess- und Ergebnisqualität sowie eine sachgerechte Vorhaltevergütung.
+    seite: "89"
+    quelle: wahlprogramm-2025-gruene
+  - partei: Die Linke
+    option: budgets
+    beleg: Wir wollen, dass die notwendigen Betriebskosten der Krankenhäuser von den Krankenkassen vollständig finanziert werden. Die Fallpauschalen müssen vollständig abgeschafft werden. Dadurch werden Gewinne und Verluste weitgehend unmöglich.
+    seite: "18"
+    quelle: wahlprogramm-2025-die-linke
+  - partei: SPD
+    option: mischsystem
+    beleg: Unser Ziel ist zudem ein einheitliches und einfaches Vergütungssystem, das zugleich die Vorhaltekosten der Leistungserbringer absichert.
+    seite: "29"
+    quelle: wahlprogramm-2025-spd
 
 quellen:
   - id: destatis-pm-2026-376
@@ -421,3 +447,27 @@ quellen:
     jahr: 2016
     url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/netherlands-2016/financing/payment-mechanisms
     art: international
+  - id: wahlprogramm-2025-afd
+    titel: Zeit für Deutschland. Programm der Alternative für Deutschland für die Wahl zum 21. Deutschen Bundestag
+    herausgeber: Alternative für Deutschland
+    jahr: 2025
+    url: https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf
+    art: partei
+  - id: wahlprogramm-2025-gruene
+    titel: Zusammen wachsen – Regierungsprogramm 2025
+    herausgeber: Bündnis 90/Die Grünen
+    jahr: 2025
+    url: https://cms.gruene.de/uploads/assets/Regierungsprogramm_DIGITAL_DINA5.pdf
+    art: partei
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei
+  - id: wahlprogramm-2025-spd
+    titel: Mehr für Dich. Besser für Deutschland. Regierungsprogramm der SPD für die Bundestagswahl 2025
+    herausgeber: SPD
+    jahr: 2025
+    url: https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf
+    art: partei

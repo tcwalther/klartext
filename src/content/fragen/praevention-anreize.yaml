@@ -60,17 +60,20 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: In der gesetzlichen Krankenversicherung hängt der Beitrag vom Einkommen ab, nicht vom Gesundheitszustand oder Lebensstil. Das nennt man **Solidarprinzip**.
+    text: In der gesetzlichen Krankenversicherung hängt der Beitrag vom Einkommen ab, nicht von Gesundheit oder Lebensstil. Das nennt man **Solidarprinzip**. Wer raucht, zahlt also nicht mehr als jemand, der Sport treibt.
     quellen: [sgb5-3]
+  - typ: wertung
+    text: Dahinter steht eine Abwägung. Ob jemand krank wird, hängt nur zum Teil vom eigenen Verhalten ab, zum Teil von Genen, Einkommen oder Arbeit. Würde der Beitrag am persönlichen Risiko hängen, zahlten Kranke mehr – genau das soll eine solidarische Versicherung vermeiden.
   - typ: fakt
-    text: Trotzdem sollen Kassen laut Gesetz **Boni** für gesundheitsbewusstes Verhalten zahlen, etwa für Vorsorgeuntersuchungen, Impfungen oder Präventionskurse. Auch Arbeitgeber mit betrieblicher Gesundheitsförderung und ihre Beschäftigten sollen einen Bonus bekommen.
+    text: Belohnen ist trotzdem möglich, aber nur über einen **Bonus**. Kassen sollen zum Beispiel Vorsorge, Impfungen oder Präventionskurse belohnen. Boni für Kurse müssen sich auf Dauer durch Einsparungen selbst tragen.
+    genau: Geregelt in § 65a SGB V. Auch Arbeitgeber mit betrieblicher Gesundheitsförderung und ihre Beschäftigten sollen einen Bonus bekommen.
     quellen: [sgb5-65a]
   - typ: fakt
-    text: 2024 gaben die Krankenkassen rund 686 Millionen Euro für Gesundheitsförderung und Prävention aus, davon 282 Millionen für Betriebe.
+    text: Der größere Teil des Präventionsgeldes geht nicht an Einzelne. Gut 40 Prozent fließen allein in Betriebe, dazu kommen Angebote in Kitas, Schulen und Kommunen.
+    genau: 2024 gaben die Krankenkassen rund 686 Millionen Euro für Gesundheitsförderung und Prävention aus, davon 282 Millionen Euro für Betriebe. Mit Angeboten in Lebenswelten erreichten sie knapp 8,9 Millionen Menschen.
     quellen: [zm-praeventionsbericht-2025]
-  - typ: fakt
-    text: Höhere Beiträge für bestimmtes Verhalten, etwa fürs Rauchen, sieht das Gesetz für die gesetzliche Krankenversicherung nicht vor.
-    quellen: [sgb5-3]
+  - typ: wertung
+    text: Gestritten wird darüber, ob persönliche Anreize mehr bewirken als Angebote dort, wo Menschen leben und arbeiten – und ob der Beitrag überhaupt vom Verhalten abhängen darf. Dafür müsste man Verhalten messen und also mehr Gesundheitsdaten erheben.
 
 zielkonflikte:
   - typ: wertung

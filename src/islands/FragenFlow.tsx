@@ -156,11 +156,17 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
                     {a.wer && <span class="normal-case tracking-normal font-medium">· {a.wer}</span>}
                   </span>{' '}
                   <span class="prose-k" dangerouslySetInnerHTML={{ __html: a.html }} />
+                  {a.genau && (
+                    <details class="genau mt-1.5 text-sm">
+                      <summary class="cursor-pointer text-accent select-none w-fit">Genaue Zahlen</summary>
+                      <div class="mt-1 rounded-md bg-surface px-3 py-2 text-muted prose-k" dangerouslySetInnerHTML={{ __html: a.genau }} />
+                    </details>
+                  )}
                 </li>
               ))}
             </ul>
-            <a href={`${f.url}#argumente`} class="btn btn-primary mt-4">
-              Tiefer einsteigen: Argumente, Daten, Geschichte →
+            <a href={`${f.url}#${f.zusammenhaenge ? 'zusammenhaenge' : 'argumente'}`} class="btn btn-primary mt-4">
+              Tiefer einsteigen: Zusammenhänge, Argumente, Daten →
             </a>
             <p class="text-xs text-muted mt-2">Quellen zu allen Aussagen findest du auf der Detailseite.</p>
           </section>

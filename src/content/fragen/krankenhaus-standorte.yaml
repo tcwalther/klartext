@@ -87,19 +87,23 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: "2025 gab es in Deutschland 1.807 Krankenhäuser mit durchschnittlich rund 468.800 Betten. 1991 waren es noch 2.411 Häuser mit 665.565 Betten."
-    quellen: [destatis-pm-2026-376, destatis-grunddaten-2021]
-  - typ: fakt
-    text: "Im europäischen Vergleich hat Deutschland viele Krankenhausbetten: 2024 waren es 759 je 100.000 Einwohner, im EU-Schnitt 507. Nur Bulgarien lag höher."
+    text: "Deutschland hat im europäischen Vergleich sehr viele Krankenhausbetten: rund anderthalbmal so viele je Einwohner wie im EU-Schnitt."
     quellen: [eurostat-betten-2024]
+    genau: "2024: 759 Betten je 100.000 Einwohner, EU-Schnitt 507. Nur Bulgarien lag höher. Eurostat zählt für Deutschland auch Betten in Vorsorge- und Rehabilitationseinrichtungen mit."
   - typ: fakt
-    text: "Gleichzeitig steht ein Teil der Betten leer. 2025 waren im Schnitt 72,6 % der Betten belegt – in sehr kleinen Häusern deutlich weniger als in großen."
+    text: "Häuser und Betten werden seit Jahrzehnten weniger. Noch stärker gesunken ist aber, wie lange Patientinnen und Patienten bleiben: nur noch halb so lange wie 1991. Für dieselbe Zahl an Fällen braucht es deshalb weniger Betten."
+    quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
+    genau: "1991: 2.411 Krankenhäuser mit 665.565 Betten, durchschnittliche Verweildauer 14,0 Tage. 2025: 1.807 Krankenhäuser mit durchschnittlich 468.803 Betten, Verweildauer 7,0 Tage."
+  - typ: fakt
+    text: "Entsprechend steht ein Teil der Betten leer, vor allem in kleinen Häusern. Dort ist im Schnitt nur gut jedes zweite Bett belegt."
     quellen: [destatis-pm-2026-376]
+    genau: "Bettenauslastung 2025: 72,6 % über alle Häuser, 55,2 % in Häusern mit 1–49 Betten, 75,3 % in Häusern mit über 800 Betten."
   - typ: fakt
-    text: "Wo welches Krankenhaus steht und was es behandeln darf, planen die **Bundesländer**. Seit der Reform von 2024, angepasst 2026, teilen sie den Kliniken **Leistungsgruppen** zu – also Behandlungsbereiche wie Herzchirurgie oder Geburtshilfe. Für jede Gruppe gelten Mindestanforderungen an Personal und Ausstattung."
+    text: "Wo welches Krankenhaus steht, planen die **Bundesländer**. Seit der Reform von 2024 teilen sie den Kliniken **Leistungsgruppen** zu, etwa Herzchirurgie oder Geburtshilfe. Eine Leistung darf nur anbieten, wer die Mindestanforderungen an Personal und Ausstattung erfüllt. So entscheiden Qualitätsregeln mit, welches Haus was behält."
     quellen: [sgb5-135e, bmg-pm-khag-2026]
+    genau: "Krankenhausversorgungsverbesserungsgesetz (KHVVG), in Kraft seit 12. Dezember 2024, angepasst 2026 durch das Krankenhausreformanpassungsgesetz (KHAG). Die Anforderungen je Leistungsgruppe regelt § 135e SGB V."
   - typ: wertung
-    text: "Im Kern geht es um eine Abwägung: kurze Wege und vertraute Häuser auf der einen Seite, Erfahrung, Spezialisierung und knappes Personal auf der anderen."
+    text: "Im Kern ist es eine Abwägung zwischen Nähe und Routine. Viele Standorte bedeuten kurze Wege. Aber jedes Haus braucht rund um die Uhr Personal, knappe Fachkräfte verteilen sich auf mehr Häuser, und jedes macht einen bestimmten Eingriff seltener. Weniger Standorte bündeln Erfahrung und Personal, verlängern aber für manche die Wege."
 
 zielkonflikte:
   - typ: wertung
@@ -287,7 +291,17 @@ verknuepft:
   - frage: finanzierung-kostenanstieg
     grund: "Krankenhäuser sind der größte Ausgabenposten der gesetzlichen Krankenversicherung."
 
-parteien: []
+parteien:
+  - partei: Grüne
+    option: buendeln
+    beleg: Oberste Priorität hat für uns dabei, dass sich Menschen in unserem Land darauf verlassen können, eine gute Grund- und Notfallversorgung überall erreichen zu können und in spezialisierten Zentren in bester Qualität versorgt zu werden.
+    seite: "89"
+    quelle: wahlprogramm-2025-gruene
+  - partei: Die Linke
+    option: wohnortnah-erhalten
+    beleg: Das Sterben insbesondere von kleinen Krankenhäusern ist eingeplant und soll zur Hälfte auch noch mit Beiträgen der gesetzlichen Kassen finanziert werden. Eine bedarfsgerechte wohnortnahe Krankenhausplanung ist nicht vorgesehen.
+    seite: "18"
+    quelle: wahlprogramm-2025-die-linke
 
 quellen:
   - id: destatis-pm-2026-376
@@ -434,3 +448,15 @@ quellen:
     jahr: 2016
     url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/netherlands-2016/provision-of-services/specialized-ambulatory-care-inpatient-care
     art: international
+  - id: wahlprogramm-2025-gruene
+    titel: Zusammen wachsen – Regierungsprogramm 2025
+    herausgeber: Bündnis 90/Die Grünen
+    jahr: 2025
+    url: https://cms.gruene.de/uploads/assets/Regierungsprogramm_DIGITAL_DINA5.pdf
+    art: partei
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei

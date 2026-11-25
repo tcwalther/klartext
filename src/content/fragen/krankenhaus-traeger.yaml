@@ -88,19 +88,28 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: "In Deutschland gibt es drei Arten von Krankenhausträgern: **öffentliche** (zum Beispiel Länder, Kreise, Städte oder Sozialversicherungen), **freigemeinnützige** (kirchliche und freie Wohlfahrtspflege, Kirchengemeinden, Stiftungen, Vereine) und **private** (gewerbliche Unternehmen)."
+    text: "Krankenhäuser gehören drei Arten von Trägern: **öffentlichen** (etwa Ländern, Kreisen und Städten), **freigemeinnützigen** (etwa Kirchen und Wohlfahrtsverbänden) und **privaten** Unternehmen."
     quellen: [destatis-grunddaten-2021]
+    genau: "Öffentlich sind auch Häuser von Sozialversicherungen. Freigemeinnützig sind Häuser der kirchlichen und freien Wohlfahrtspflege, von Kirchengemeinden, Stiftungen und Vereinen. Private Träger sind gewerbliche Unternehmen."
   - typ: fakt
-    text: "2025 waren 529 Häuser öffentlich, 549 freigemeinnützig und 729 privat. Private Häuser sind im Schnitt kleiner: Sie stellten nur 21,0 % der Betten, öffentliche 47,4 % und freigemeinnützige 31,6 %."
-    quellen: [destatis-pm-2026-376]
-  - typ: fakt
-    text: "Der Anteil privater Häuser ist stark gestiegen: 1991 waren 358 von 2.411 Krankenhäusern privat (rund 15 %), 2025 waren es 729 von 1.807 (rund 40 %)."
+    text: "Seit 1991 wurden viele öffentliche Häuser verkauft oder geschlossen. Der Anteil privater Häuser hat sich in dieser Zeit fast verdreifacht."
     quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
+    genau: "1991 waren 358 von 2.411 Krankenhäusern privat (rund 15 %), 2025 waren es 729 von 1.807 (rund 40 %). Die Zahl öffentlicher Häuser sank im selben Zeitraum von 1.110 auf 529."
   - typ: fakt
-    text: "Alle Träger können für ihre Häuser Investitionsförderung der Länder beantragen, und das Gesetz verlangt, die Vielfalt der Träger zu beachten. Ein Unterschied: Bei öffentlichen Häusern gleicht der Träger Verluste teils aus Steuermitteln aus – das ist unter bestimmten Bedingungen zulässig."
+    text: "Private Häuser sind im Schnitt aber kleiner. Gemessen an den Betten stellen öffentliche Häuser weiterhin fast die Hälfte der Versorgung."
+    quellen: [destatis-pm-2026-376]
+    genau: "2025: 529 öffentliche, 549 freigemeinnützige und 729 private Krankenhäuser. Anteil an den Betten: öffentlich 47,4 %, freigemeinnützig 31,6 %, privat 21,0 %."
+  - typ: schaetzung
+    text: "Die Länder müssen die Investitionen aller Krankenhäuser bezahlen, decken aber seit Jahren nur etwa die Hälfte des Bedarfs. Diese Lücke trifft jeden Träger. Wer sie aus eigenem Geld schließen kann, ist im Vorteil."
+    quellen: [khg-9, dkg-pm-2026-01-09, gemeinsame-pm-invest-2024]
+    genau: "Für 2023 bezifferte die Deutsche Krankenhausgesellschaft den Investitionsbedarf auf 6,52 Mrd. €, die Fördermittel der Länder auf 3,89 Mrd. € (2024: rund 4,24 Mrd. €). GKV-Spitzenverband, PKV-Verband und Krankenhausgesellschaft nennen gemeinsam einen Bedarf von rund 6,5 Mrd. € pro Jahr."
+    unsicherheit: Der „Bedarf“ ist eine Berechnung der Krankenhausgesellschaft, also eines Interessenverbands. Kassen- und PKV-Verband tragen die Größenordnung mit; eine amtliche Bedarfsrechnung gibt es nicht.
+  - typ: fakt
+    text: "Hier unterscheiden sich die Träger: Bei öffentlichen Häusern kann die Kommune Verluste aus Steuermitteln ausgleichen. Private Träger bringen eigenes Kapital mit und erwarten dafür eine Rendite. Die Investitionsförderung der Länder können dagegen alle Träger gleichermaßen beantragen."
     quellen: [khg-1, khg-9, bgh-2016-calw]
+    genau: "Der Verlustausgleich ist zulässig, wenn die Kommune ihr Haus vorher förmlich mit der Versorgung betraut hat (Bundesgerichtshof 2016, Fall Landkreis Calw). Das Krankenhausfinanzierungsgesetz verlangt, die Vielfalt der Träger zu beachten."
   - typ: wertung
-    text: "Ob die Trägerart die Qualität der Behandlung beeinflusst, ist wissenschaftlich nicht eindeutig geklärt. Die Frage berührt deshalb auch Grundüberzeugungen: Wie viel Markt verträgt die Gesundheitsversorgung?"
+    text: "Ob die Trägerart die Qualität der Behandlung beeinflusst, ist wissenschaftlich nicht eindeutig geklärt – auch weil Häuser verschiedener Träger unterschiedliche Patienten und Leistungen haben. Im Streit geht es deshalb auch um Grundüberzeugungen: Wie viel Markt verträgt die Gesundheitsversorgung, und wer soll Gewinne und Verluste tragen?"
 
 zielkonflikte:
   - typ: wertung
@@ -245,7 +254,17 @@ verknuepft:
   - frage: finanzierung-kostenanstieg
     grund: "Gewinne, Verlustausgleich und Investitionen betreffen Beitrags- und Steuerzahler."
 
-parteien: []
+parteien:
+  - partei: Grüne
+    option: gemeinwohl-staerken
+    beleg: Wir wollen daher das Prinzip der Gemeinwohlorientierung stärker etablieren und öffentliche und gemeinnützige Träger fördern, denn eine Profitorientierung birgt Risiken für die Versorgungsqualität und -sicherheit.
+    seite: "93"
+    quelle: wahlprogramm-2025-gruene
+  - partei: Die Linke
+    option: gemeinwohl-staerken
+    beleg: Private Konzerne sollen zwar weiterhin Krankenhäuser betreiben dürfen, aber ohne Gewinnmöglichkeit werden sie daran kein Interesse haben. Wir wollen Krankenhäuser, die von privaten Betreibern aufgegeben werden, in die öffentliche Hand überführen.
+    seite: "18"
+    quelle: wahlprogramm-2025-die-linke
 
 quellen:
   - id: destatis-pm-2026-376
@@ -362,3 +381,15 @@ quellen:
     jahr: 2024
     url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/denmark-2024/financing/payment-mechanisms
     art: international
+  - id: wahlprogramm-2025-gruene
+    titel: Zusammen wachsen – Regierungsprogramm 2025
+    herausgeber: Bündnis 90/Die Grünen
+    jahr: 2025
+    url: https://cms.gruene.de/uploads/assets/Regierungsprogramm_DIGITAL_DINA5.pdf
+    art: partei
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei

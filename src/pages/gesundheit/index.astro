@@ -180,13 +180,13 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
                 ) : (
                   <ul class="grid gap-1">
                     {fs.map((f) => {
-                      const tiefe = ebenenVon(f).filter((e) => e.da && e.n < 6).length;
+                      const tiefe = ebenenVon(f).filter((e) => e.da && e.n < 7).length;
                       return (
                         <li>
                           <a href={frageUrl(f.id)} class="flex items-start gap-3 rounded-lg -mx-2 px-2 py-2 no-underline hover:bg-surface-2">
                             <span class="flex-1 leading-snug">{f.data.titel}</span>
-                            <span class="flex gap-0.5 pt-1.5 shrink-0" title={`${tiefe} von 5 Ebenen ausgearbeitet`} aria-label={`${tiefe} von 5 Ebenen ausgearbeitet`}>
-                              {[1, 2, 3, 4, 5].map((n) => (
+                            <span class="flex gap-0.5 pt-1.5 shrink-0" title={`${tiefe} von 6 Ebenen ausgearbeitet`} aria-label={`${tiefe} von 6 Ebenen ausgearbeitet`}>
+                              {[1, 2, 3, 4, 5, 6].map((n) => (
                                 <span class="size-1.5 rounded-full" style={`background: ${n <= tiefe ? 'var(--accent)' : 'var(--line)'}`} />
                               ))}
                             </span>
@@ -201,7 +201,7 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
           })
         }
       </div>
-      <p class="text-xs text-faint mt-3">Punkte = ausgearbeitete Ebenen (Erklärung, Argumente, Daten, Geschichte, Ländervergleich).</p>
+      <p class="text-xs text-faint mt-3">Punkte = ausgearbeitete Ebenen (Erklärung, Zusammenhänge, Argumente, Daten, Geschichte, Ländervergleich).</p>
     </section>
 
     {

@@ -72,20 +72,27 @@ optionen:
     kostet: [Beitragszahlende, Preistransparenz]
 erklaerung:
   - typ: fakt
-    text: Seit 2011 regelt das **AMNOG** (Arzneimittelmarktneuordnungsgesetz) die Preise neuer Medikamente. Der Hersteller muss belegen, ob ein Mittel einen **Zusatznutzen** gegenüber bisherigen Therapien hat. Das prüft der Gemeinsame Bundesausschuss (G-BA).
-    quellen: [gkv-sv-amnog-fokus]
-  - typ: fakt
-    text: Auf dieser Grundlage verhandeln Hersteller und GKV-Spitzenverband einen **Erstattungsbetrag**. Einigen sie sich nicht, entscheidet eine Schiedsstelle. Der Betrag gilt ab dem **siebten Monat** nach Markteinführung – bis dahin gilt der Preis des Herstellers.
-    quellen: [sgb5-130b, gkv-sv-amnog-fokus]
-  - typ: fakt
-    text: Die GKV gab 2025 im ambulanten Bereich netto 62,6 Mrd. € für Arzneimittel aus, 5,6 % mehr als im Vorjahr. Davon entfielen 34,4 Mrd. € auf patentgeschützte Mittel.
+    text: Neue, patentgeschützte Medikamente machen nur einen kleinen Teil der Verordnungen aus, aber mehr als die Hälfte der Arzneimittelkosten der Krankenkassen.
     quellen: [wido-arzneimittelmarkt-2026]
+    genau: 2025 gab die GKV im ambulanten Bereich netto 62,6 Mrd. € für Arzneimittel aus, 5,6 % mehr als im Vorjahr. Davon entfielen 34,4 Mrd. € (rund 55 %) auf patentgeschützte Mittel; ihr Anteil an den verordneten Tagesdosen lag bei gut 7 %.
   - typ: fakt
-    text: Von 464 neuen Arzneimitteln, die zwischen 2011 und 2024 bewertet wurden, konnten 57 % einen Zusatznutzen zeigen; bei 43 % galt er als nicht belegt.
-    quellen: [vfa-amnog-zahlen-2024]
-  - typ: fakt
-    text: Seit 2025 können Hersteller mit Forschung in Deutschland einen **vertraulichen Erstattungsbetrag** vereinbaren. Der Vergleich mit Preisen in anderen EU-Ländern ist als Kriterium weggefallen.
+    text: Solange ein Patent gilt, gibt es keine günstigeren Nachahmer. Der Preis entsteht deshalb nicht durch Wettbewerb, sondern wird verhandelt. Grundlage ist seit 2011 der **Zusatznutzen**, den der Hersteller gegenüber bisherigen Therapien belegen muss.
     quellen: [gkv-sv-amnog-fokus]
+    genau: Geregelt im **AMNOG** (Arzneimittelmarktneuordnungsgesetz). Den Zusatznutzen prüft der Gemeinsame Bundesausschuss (G-BA).
+  - typ: fakt
+    text: Auf dieser Grundlage handeln Hersteller und GKV-Spitzenverband einen **Erstattungsbetrag** aus; ohne Einigung entscheidet eine Schiedsstelle. Im ersten halben Jahr gilt aber der Preis, den der Hersteller selbst festlegt.
+    quellen: [sgb5-130b, gkv-sv-amnog-fokus]
+    genau: Der Erstattungsbetrag gilt ab dem siebten Monat nach Markteinführung (§ 130b SGB V).
+  - typ: fakt
+    text: Die Bewertung ist kein Formalakt. Nur gut die Hälfte der neuen Medikamente kann einen Zusatznutzen belegen, bei den übrigen gilt er als nicht belegt.
+    quellen: [vfa-amnog-zahlen-2024]
+    genau: Von 464 neuen Arzneimitteln, die zwischen 2011 und 2024 bewertet wurden, zeigten 57 % einen Zusatznutzen; bei 43 % galt er als nicht belegt.
+  - typ: fakt
+    text: Seit 2025 dürfen Hersteller, die in Deutschland forschen, einen **vertraulichen Erstattungsbetrag** vereinbaren. Der Vergleich mit Preisen in anderen EU-Ländern ist als Kriterium weggefallen. Der Preis soll damit auch Forschung in Deutschland fördern.
+    quellen: [gkv-sv-amnog-fokus]
+    genau: Eingeführt mit dem Medizinforschungsgesetz.
+  - typ: wertung
+    text: 'Der Streit dreht sich darum, wie streng verhandelt werden soll: Niedrigere Preise entlasten die Beitragszahler. Höhere oder vertrauliche Preise sollen schnellen Zugang zu neuen Mitteln und Forschung im Land sichern. Wie stark Preise diese Ziele tatsächlich beeinflussen, ist umstritten.'
 zielkonflikte:
   - typ: wertung
     text: '**Bezahlbarkeit gegen schnellen Zugang:** Niedrigere Preise entlasten die Beitragszahler, können aber dazu führen, dass Medikamente später oder nicht auf den Markt kommen.'
@@ -147,7 +154,12 @@ verknuepft:
     grund: Preise beeinflussen auch, wo und wie zuverlässig Medikamente hergestellt werden.
   - frage: finanzierung-kostenanstieg
     grund: Arzneimittel sind einer der am stärksten wachsenden Ausgabenblöcke.
-parteien: []
+parteien:
+  - partei: Die Linke
+    option: strenger-regulieren
+    beleg: Keiner der Versuche, die Preise für neue Arzneimittel zu regulieren, konnte die Kostenexplosion wirksam begrenzen. Wir wollen den Einfluss der Pharmakonzerne zurückdrängen.
+    seite: "19"
+    quelle: wahlprogramm-2025-die-linke
 quellen:
   - id: wido-arzneimittelmarkt-2026
     titel: 'Arzneimittelmarkt 2027: Ausgabenbremse ersetzt keine Preisreform (Pressemitteilung vom 03.11.2026)'
@@ -185,3 +197,9 @@ quellen:
     jahr: 2026
     url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/pressemitteilungen_und_statements/pressemitteilung_2318251.jsp
     art: verband
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei

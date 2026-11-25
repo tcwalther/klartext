@@ -69,20 +69,27 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: Rund 53,5 Prozent der Erwachsenen in Deutschland sind übergewichtig, Adipositas (starkes Übergewicht) eingeschlossen. Das zeigen Selbstangaben aus einer RKI-Befragung von 2019/2020.
+    text: Etwa jeder zweite Erwachsene in Deutschland ist übergewichtig.
+    genau: 53,5 Prozent der Erwachsenen, Adipositas eingeschlossen (RKI-Befragung GEDA 2019/2020, Selbstangaben zu Größe und Gewicht).
     quellen: [rki-geda-uebergewicht-2022]
   - typ: fakt
-    text: Der Anteil der Erwachsenen mit **Adipositas** (Body-Mass-Index ab 30) stieg laut RKI von 12,2 Prozent (2003) auf 19,7 Prozent (2023).
+    text: Starkes Übergewicht (**Adipositas**) ist in 20 Jahren deutlich häufiger geworden. Heute betrifft es etwa jeden fünften Erwachsenen.
+    genau: Der Anteil der Erwachsenen mit einem Body-Mass-Index ab 30 stieg laut RKI von 12,2 Prozent (2003) auf 19,7 Prozent (2023).
     quellen: [rki-adipositas-trend-2025]
+  - typ: wertung
+    text: Was Menschen essen und trinken, hängt nicht nur von ihrem Wissen ab, sondern auch von Preis, Werbung und dem, was im Regal steht. Abgaben und Werbegrenzen setzen deshalb beim Angebot an, Aufklärung beim Einzelnen. Darum dreht sich der Streit.
   - typ: fakt
-    text: Die Bundesregierung plant eine Steuer auf zuckerhaltige Getränke. Das Kabinett beschloss im Oktober 2026 einen Entwurf mit 26 Cent je Liter (5 bis unter 8 Gramm Zucker je 100 ml) und 32 Cent (ab 8 Gramm), Start 1. Juli 2027.
-    quellen: [ihk-zuckersteuer-2026]
+    text: Eine Abgabe kann über die Hersteller wirken. In Großbritannien steigt sie mit dem Zuckergehalt. Viele Hersteller haben daraufhin ihre Rezepte geändert, der Zuckergehalt der betroffenen Softdrinks hat sich fast halbiert.
+    genau: Der durchschnittliche Zuckergehalt der abgabepflichtigen Softdrinks sank zwischen 2015 und 2024 um 47 Prozent. Die Abgabe gilt seit 2018.
+    quellen: [govuk-sdil-2025]
   - typ: fakt
-    text: Im November 2026 verständigte sich die Koalition darauf, den Start auf Anfang 2028 zu verschieben und drei statt zwei Stufen vorzusehen. Der Bundestag hat noch nicht abschließend entschieden.
-    quellen: [aok-zuckersteuer-verschoben-2026]
+    text: Deutschland plant eine ähnlich gestaffelte Steuer auf Zuckergetränke. Die Einnahmen sollen auch helfen, die Krankenkassenbeiträge zu stabilisieren. Der Bundestag hat noch nicht entschieden, der Start wurde schon einmal verschoben.
+    genau: Der Kabinettsentwurf vom Oktober 2026 sah 26 Cent je Liter (5 bis unter 8 Gramm Zucker je 100 ml) und 32 Cent (ab 8 Gramm) vor, Start 1. Juli 2027. Im November 2026 einigte sich die Koalition auf einen Start Anfang 2028 und drei statt zwei Stufen.
+    quellen: [aerzteblatt-zuckerabgabe-plan-2026, ihk-zuckersteuer-2026, aok-zuckersteuer-verschoben-2026]
     unsicherheit: Sätze und Stufen der geänderten Fassung waren bei Redaktionsschluss nicht veröffentlicht.
   - typ: fakt
-    text: Ein Gesetz zur Begrenzung von Lebensmittelwerbung an Kinder (Kinder-Lebensmittel-Werbegesetz) wurde in der letzten Wahlperiode entworfen, scheiterte aber 2024. Der aktuelle Koalitionsvertrag sieht laut Werbewirtschaft keine weiteren Werbeverbote vor.
+    text: Bei Werbung für Kinder ist dagegen nichts Neues geplant. Ein Gesetz dazu scheiterte in der letzten Wahlperiode.
+    genau: Der Entwurf eines Kinder-Lebensmittel-Werbegesetzes scheiterte 2024. Der aktuelle Koalitionsvertrag sieht laut Werbewirtschaft keine weiteren Werbeverbote vor.
     quellen: [zaw-lebensmittel]
 
 zielkonflikte:
@@ -212,3 +219,59 @@ quellen:
     jahr: 2016
     url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4986313
     art: wissenschaft
+  - id: wahlprogramm-2025-afd
+    titel: Zeit für Deutschland. Programm der Alternative für Deutschland für die Wahl zum 21. Deutschen Bundestag
+    herausgeber: Alternative für Deutschland
+    jahr: 2025
+    url: https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf
+    art: partei
+  - id: wahlprogramm-2025-cdu-csu
+    titel: Politikwechsel für Deutschland. Wahlprogramm von CDU und CSU
+    herausgeber: CDU Deutschlands / CSU
+    jahr: 2025
+    url: https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf
+    art: partei
+  - id: wahlprogramm-2025-gruene
+    titel: Zusammen wachsen – Regierungsprogramm 2025
+    herausgeber: Bündnis 90/Die Grünen
+    jahr: 2025
+    url: https://cms.gruene.de/uploads/assets/Regierungsprogramm_DIGITAL_DINA5.pdf
+    art: partei
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei
+  - id: wahlprogramm-2025-spd
+    titel: Mehr für Dich. Besser für Deutschland. Regierungsprogramm der SPD für die Bundestagswahl 2025
+    herausgeber: SPD
+    jahr: 2025
+    url: https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf
+    art: partei
+parteien:
+  - partei: AfD
+    option: freiwillig
+    beleg: Die AfD unterstützt das Leitbild des mündigen Bürgers. Er soll in seinem Konsumverhalten nicht staatlich bevormundet werden. Deshalb lehnen wir jede Form der gesonderten Lebensmittelbesteuerung ab, wie z. B. eine Fleisch- oder Zuckersteuer.
+    seite: "74"
+    quelle: wahlprogramm-2025-afd
+  - partei: CDU/CSU
+    option: freiwillig
+    beleg: Bei der Ernährung auf mündige Bürger setzen. Wir setzen auf Ernährungsbildung und gute Information, aber nicht auf unwirksame Werbeverbote oder Lenkungssteuern.
+    seite: "35"
+    quelle: wahlprogramm-2025-cdu-csu
+  - partei: Grüne
+    option: werbung
+    beleg: Außerdem werden wir Kinder vor Werbung für ungesunde Lebensmittel schützen und Geschmacksaromen für E-Zigaretten, die besonders junge Menschen zum Konsum verleiten, vom Markt verbannen.
+    seite: "60"
+    quelle: wahlprogramm-2025-gruene
+  - partei: Die Linke
+    option: werbung
+    beleg: Wir fordern ein Werbe- und Marketingverbot für ungesunde Lebensmittel, besonders für Kinder und Jugendliche. Der Zuckergehalt insbesondere in Softdrinks muss geregelt und begrenzt werden, ohne die Verbraucher*innen zu belasten.
+    seite: "42"
+    quelle: wahlprogramm-2025-die-linke
+  - partei: SPD
+    option: abgaben
+    beleg: Um den Zucker-, Salz- und Fettgehalt in unseren Lebensmitteln zu reduzieren, legen wir verbindliche Ziele fest und setzen ökonomische Anreize für weniger gesundheitsschädliche Produkte – über eine Herstellerabgabe für zuckerhaltige Getränke.
+    seite: "28"
+    quelle: wahlprogramm-2025-spd

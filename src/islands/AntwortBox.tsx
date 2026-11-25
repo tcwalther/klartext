@@ -1,5 +1,6 @@
 import { setzeAntwort, useAntworten } from '../lib/antworten';
 import type { FrageKurz } from '../lib/content';
+import Parteipositionen from './Parteipositionen';
 
 type Props = {
   frage: Pick<FrageKurz, 'id' | 'optionen' | 'parteien'>;
@@ -10,7 +11,6 @@ type Props = {
 export default function AntwortBox({ frage, variante = 'oben' }: Props) {
   const { antworten, geladen } = useAntworten();
   const wahl = antworten[frage.id]?.wahl;
-  const gewaehlteOption = frage.optionen.find((o) => o.id === wahl);
 
   const Choice = ({ id, titel, kurz }: { id: string; titel: string; kurz?: string }) => (
     <button
@@ -46,14 +46,7 @@ export default function AntwortBox({ frage, variante = 'oben' }: Props) {
           Völlig in Ordnung. Unten kannst du Schicht für Schicht tiefer einsteigen – und später wiederkommen.
         </p>
       )}
-      {gewaehlteOption && frage.parteien.length > 0 && (
-        <div class="mt-4 pt-3 border-t border-line text-sm">
-          <div class="font-semibold mb-1">Parteien mit dieser Position</div>
-          <p class="text-muted">
-            {frage.parteien.filter((p) => p.option === wahl).map((p) => p.partei).join(', ') || 'Keine eindeutige Zuordnung.'}
-          </p>
-        </div>
-      )}
+      {wahl && <Parteipositionen frage={frage} wahl={wahl} />}
     </section>
   );
 }

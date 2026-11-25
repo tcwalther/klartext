@@ -36,8 +36,9 @@ test('Durchlauf: unentschieden → tiefer → entscheiden → Mein Bild', async 
   await expect(page.getByRole('heading', { name: 'Worum geht’s?' })).toBeVisible();
 
   await page.getByRole('link', { name: /Tiefer einsteigen/ }).click();
-  await expect(page).toHaveURL(/#argumente$/);
-  await expect(page.locator('#argumente')).toHaveAttribute('open', '');
+  await expect(page).toHaveURL(/#(argumente|zusammenhaenge)$/);
+  const ziel = new URL(page.url()).hash;
+  await expect(page.locator(ziel)).toHaveAttribute('open', '');
 
   // Quelle anklicken öffnet die Quellen-Ebene
   const ref = page.locator('#argumente .src-ref, #worum-gehts .src-ref').first();

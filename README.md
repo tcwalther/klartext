@@ -51,7 +51,8 @@ Vorher in `astro.config.mjs` die echte Domain bei `site` eintragen und in `src/c
 
 ## Nächste Schritte (Ideen)
 
-- Inhalte prüfen und freigeben, Parteipositionen mit Belegen ergänzen
+- Inhalte prüfen und freigeben
+- Ebene „Die Debatte im Bundestag“: je Fraktion eine Rede aus der Bundestag-Mediathek zu den passenden Gesetzen, mit Zeitmarke (neutral, weil jede Fraktion spricht). Videos nur per Klick laden, wegen Datenschutz
 - Weitere Bereiche in volle Tiefe bringen
 - Anonymes, aggregiertes Meinungsbild (wo sind sich Menschen einig?) im Stil von Polis
 - „Tiefer recherchieren“: Nutzer fragen nach, ein Sprachmodell schreibt einen Entwurf, die Redaktion prüft, alle sehen das Ergebnis

@@ -60,19 +60,24 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: Deutschland hatte 2025 rund 55.800 Hausärztinnen und Hausärzte – etwas mehr als im Vorjahr. Weil mehr in Teilzeit arbeiten, sank aber die Zahl der voll besetzten Hausarztsitze leicht.
+    text: Die Zahl der Hausärztinnen und Hausärzte steigt sogar leicht. Weil aber mehr von ihnen in Teilzeit arbeiten, sinkt die Zahl der voll besetzten Hausarztsitze. Mehr Köpfe heißt also nicht mehr Arztzeit.
+    genau: 2025 gab es 55.778 Hausärztinnen und Hausärzte, etwas mehr als im Vorjahr. Die Zahl der voll besetzten Hausarztsitze sank im selben Zeitraum leicht.
     quellen: [kbv-arztzahlen-2026]
-  - typ: position
-    wer: Kassenärztliche Bundesvereinigung
-    text: Schon jetzt seien deutschlandweit etwa 5.000 Hausarztsitze nicht besetzt.
-    quellen: [kbv-arztzahlen-2026]
+  - typ: wertung
+    text: Ob ein Ort versorgt ist, hängt bisher vor allem daran, dass jemand eine Praxis übernimmt und als eigenes Unternehmen führt. Viele jüngere Ärztinnen und Ärzte wollen lieber angestellt und in Teilzeit arbeiten. Wo Wege weit und Praxen klein sind, fällt die Nachfolge deshalb besonders schwer.
   - typ: schaetzung
-    text: Eine IGES-Studie erwartet bis 2040 rund 12.000 unbesetzte Hausarztsitze, etwa ein Fünftel aller Sitze. Knapp ein Fünftel der Kreise, vor allem ländliche, wäre dann hausärztlich unterversorgt.
+    text: Eine Modellrechnung erwartet, dass bis 2040 etwa jeder fünfte Hausarztsitz unbesetzt ist. Betroffen wären vor allem ländliche Kreise.
+    genau: Die IGES-Studie im Auftrag des Bosch Health Campus rechnet für 2040 mit rund 12.000 unbesetzten Hausarztsitzen, gegenüber rund 4.400 im Vorjahr der Studie. Knapp ein Fünftel der Kreise wäre dann hausärztlich unterversorgt.
     quellen: [aerzteblatt-iges-2026]
     unsicherheit: Simulation auf Basis von Nachwuchs- und Altersannahmen; frühere Studien kamen zu höheren Werten.
   - typ: fakt
-    text: Seit Oktober 2025 werden hausärztliche Leistungen grundsätzlich ohne Mengenbegrenzung bezahlt („Entbudgetierung“). Geplante Gesundheitskioske und Primärversorgungszentren wurden dagegen aus dem Gesetz gestrichen.
+    text: Ein Hebel ist das Geld. Hausärztliche Leistungen werden seit Herbst 2025 ohne Mengengrenze bezahlt, damit lohnen sich zusätzliche Patienten für die Praxis voll. Neue Versorgungsformen wie Gesundheitskioske wurden dagegen aus dem Gesetz gestrichen.
+    genau: Die „Entbudgetierung“ gilt seit Oktober 2025 (Gesundheitsversorgungsstärkungsgesetz). Gestrichen wurden die geplanten Gesundheitskioske und Primärversorgungszentren.
     quellen: [vdek-gvsg-2025]
+  - typ: fakt
+    text: Weitere Werkzeuge gibt es schon. Über die **Landarztquote** verpflichten sich Studierende, später auf dem Land als Hausärztin oder Hausarzt zu arbeiten. Kommunen dürfen eigene **Medizinische Versorgungszentren (MVZ)** gründen und Ärzte anstellen. Gestritten wird darüber, was davon reicht und wie schnell es wirkt – denn zwischen Studienbeginn und eigener Praxis vergehen viele Jahre.
+    genau: In NRW gibt es die Landarztquote seit 2019. Im Studienjahr 2026/27 sind es 227 Plätze (8,8 % der Medizinstudienplätze); mehr als 1.100 künftige Hausärztinnen und Hausärzte sind so bereits gebunden, jeweils für zehn Jahre in einer unterversorgten Region. Grundlage für kommunale MVZ ist § 95 SGB V.
+    quellen: [nrw-landarztquote-2026, sgb5-95]
 
 zielkonflikte:
   - typ: wertung
@@ -165,3 +170,26 @@ quellen:
     jahr: 2025
     url: https://www.sozialministerium.gv.at/Services/Aktuelles/Archiv-2025/100pve.html
     art: amtlich
+  - id: wahlprogramm-2025-afd
+    titel: Zeit für Deutschland. Programm der Alternative für Deutschland für die Wahl zum 21. Deutschen Bundestag
+    herausgeber: Alternative für Deutschland
+    jahr: 2025
+    url: https://www.afd.de/wp-content/uploads/2025/02/AfD_Bundestagswahlprogramm2025_web.pdf
+    art: partei
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei
+parteien:
+  - partei: AfD
+    option: anreize
+    beleg: Die freiberuflich geführte Inhaberpraxis soll weiterhin das Rückgrat der ambulanten Versorgung bilden. Zur Förderung der Niederlassung von Ärzten im ländlichen Räumen sind finanzielle und organisatorische Niederlassungshilfen zu etablieren.
+    seite: "27"
+    quelle: wahlprogramm-2025-afd
+  - partei: Die Linke
+    option: kommunale-zentren
+    beleg: Wir wollen kommunale Versorgungszentren als Rückgrat der wohnortnahen Gesundheitsversorgung fördern! Sie sollen zentrale Anlaufstelle für Patient*innen sein und die ambulante Versorgung mit akutstationären, notfallmedizinischen, psychotherapeutischen, (gemeinde-)pflegerischen und weiteren therapeutischen Behandlungen verbinden.
+    seite: "19"
+    quelle: wahlprogramm-2025-die-linke

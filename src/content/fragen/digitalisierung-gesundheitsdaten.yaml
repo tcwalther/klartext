@@ -62,19 +62,26 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: Die **elektronische Patientenakte (ePA)** ist eine digitale Akte mit Befunden, Arztbriefen und Medikamenten. Seit dem 15. Januar 2025 bekommen alle gesetzlich Versicherten eine, sofern sie nicht widersprechen. Widersprechen geht jederzeit.
-    quellen: [bmg-digig-faq]
+    text: Die **elektronische Patientenakte (ePA)** ist eine digitale Akte mit Befunden, Arztbriefen und Medikamenten. Seit 2025 bekommt sie jede und jeder gesetzlich Versicherte automatisch, außer man widerspricht. Das nennt man **Widerspruchslösung**.
+    genau: Die ePA wird seit dem 15. Januar 2025 für alle angelegt, die nicht widersprechen. Widersprechen geht jederzeit. Die Umstellung von der Zustimmungs- auf die Widerspruchslösung hat der Bundestag 2023 beschlossen.
+    quellen: [bmg-digig-faq, bmg-digitalgesetze-2023]
   - typ: fakt
-    text: Bis Ende September 2025 wurden rund 70 Millionen Akten angelegt. Vor dem Start hatten laut GKV-Spitzenverband durchschnittlich gut fünf Prozent widersprochen.
-    quellen: [gematik-epa-zahlen-2025, aok-widerspruch-2025]
+    text: Diese Voreinstellung entscheidet viel. Nur etwa jeder Zwanzigste hat widersprochen, deshalb haben fast alle Versicherten eine Akte.
+    genau: Vor dem Start hatten laut GKV-Spitzenverband durchschnittlich gut 5 Prozent widersprochen (Stand April 2025). Bis zum 30. September 2025 wurden rund 70 Millionen Akten angelegt.
+    quellen: [aok-widerspruch-2025, gematik-epa-zahlen-2025]
   - typ: fakt
-    text: Aktiv genutzt wird die Akte über die Kassen-App von wenigen. Laut gematik haben sich rund 8 Prozent der Versicherten registriert (etwa 5,85 Millionen).
-    quellen: [aerzteblatt-datenbarometer-2026]
+    text: Selbst hineinschauen tun dagegen wenige. Nur etwa jeder zwölfte Versicherte hat sich in der App seiner Kasse angemeldet. Die Akte ist damit vor allem ein Werkzeug für Praxen, Kliniken und Apotheken.
+    genau: Laut gematik haben sich rund 5,85 Millionen Versicherte registriert, etwa 8 Prozent (2026). Über 110.000 von rund 160.000 Praxen, Kliniken und Apotheken hatten Ende September 2025 Zugriff auf die ePA.
+    quellen: [aerzteblatt-datenbarometer-2026, gematik-epa-zahlen-2025]
   - typ: fakt
-    text: Ab Oktober 2026 werden ePA-Daten pseudonymisiert an das **Forschungsdatenzentrum Gesundheit** beim BfArM weitergeleitet, wenn man nicht widerspricht. Pseudonymisiert heißt, der Name wird durch einen Code ersetzt. Forschende – auch aus Unternehmen – können die Daten ab 2027 für festgelegte Gemeinwohl-Zwecke beantragen, nicht für Marketing.
+    text: Seit Herbst 2026 gehen die Daten außerdem an ein staatliches Forschungsdatenzentrum, ebenfalls nur ohne Widerspruch. Der Name wird dabei durch einen Code ersetzt (**pseudonymisiert**). Forschende, auch aus Unternehmen, können die Daten für Gemeinwohl-Zwecke beantragen, nicht für Marketing.
+    genau: Die Weiterleitung an das **Forschungsdatenzentrum Gesundheit** beim BfArM startete im Oktober 2026, nach einer sechswöchigen Widerspruchsfrist stufenweise ab Mitte Dezember. Anträge auf Datennutzung sind ab 2027 möglich.
     quellen: [bmg-fdz-faq]
+  - typ: wertung
+    text: Im Kern geht es um die richtige Voreinstellung. Mit der Widerspruchslösung sind fast alle dabei, das macht Akte und Forschung aussagekräftiger. Mit einer Zustimmungslösung hätte jede Person bewusst entschieden, es machen aber vermutlich deutlich weniger mit.
   - typ: fakt
-    text: Der **Europäische Gesundheitsdatenraum (EHDS)** ist seit März 2025 in Kraft und gilt schrittweise. Er sieht für die Forschungsnutzung ein verpflichtendes Widerspruchsrecht vor, mit möglichen Ausnahmen.
+    text: Ganz allein entscheidet Deutschland das nicht mehr. Der **Europäische Gesundheitsdatenraum (EHDS)** schreibt für die Nutzung von Gesundheitsdaten in der Forschung ein Widerspruchsrecht vor.
+    genau: Der EHDS ist seit März 2025 in Kraft und gilt schrittweise. Das verpflichtende Widerspruchsrecht sieht mögliche Ausnahmen vor.
     quellen: [bmg-ehds]
 
 zielkonflikte:

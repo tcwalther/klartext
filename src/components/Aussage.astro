@@ -14,6 +14,14 @@ const { a, nums, as: Tag = 'li' } = Astro.props;
   <ClaimBadge typ={a.typ} wer={a.wer} />
   <span class="prose-k ml-1" set:html={md(a.text)} /><SourceRefs ids={a.quellen} nums={nums} />
   {
+    a.genau && (
+      <details class="genau mt-1.5 text-sm">
+        <summary class="cursor-pointer text-accent select-none w-fit">Genaue Zahlen</summary>
+        <div class="mt-1 rounded-md bg-surface-2 px-3 py-2 text-muted prose-k" set:html={md(a.genau)} />
+      </details>
+    )
+  }
+  {
     a.unsicherheit && (
       <span class="block mt-1 text-sm text-muted">
         <span class="font-semibold">Unsicherheit:</span> {a.unsicherheit}

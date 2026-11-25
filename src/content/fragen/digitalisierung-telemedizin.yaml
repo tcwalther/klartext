@@ -57,17 +57,23 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: 2024 gab es in den Arztpraxen rund 2,7 Millionen **Videosprechstunden** – ein Viertel mehr als 2023. Bei insgesamt 579 Millionen Behandlungsfällen ist das aber nur ein kleiner Teil. Die Hälfte entfiel auf Hausarztpraxen, ein Drittel auf die Psychotherapie.
+    text: Videosprechstunden nehmen zu, sind aber noch selten. Auf gut 200 Behandlungsfälle in Arztpraxen kommt etwa eine Videosprechstunde.
+    genau: 2024 gab es rund 2,7 Millionen Videosprechstunden, 24,8 Prozent mehr als 2023, bei insgesamt 579 Millionen Behandlungsfällen. Die Hälfte entfiel auf Hausarztpraxen, ein Drittel auf die Psychotherapie. Dazu kamen 8,4 Millionen telefonische Beratungen.
     quellen: [zi-trendreport-2024]
   - typ: fakt
-    text: Unter der Nummer **116117** bekommen Anrufende eine strukturierte **Ersteinschätzung**, also eine Einschätzung, wie dringend ihr Anliegen ist und wo sie Hilfe finden. Im ersten Halbjahr 2026 gab es rund 1,85 Millionen solcher Ersteinschätzungen, davon rund 440.000 online.
+    text: Wie gut Video passt, hängt vom Anliegen ab. Gespräche wie in der Psychotherapie gehen gut, körperliche Untersuchungen nicht. Telemedizin bleibt deshalb bisher an Praxen gebunden. Eine Praxis darf höchstens die Hälfte ihrer Fälle nur per Video behandeln.
+    genau: Die Obergrenze von 50 Prozent reiner Videofälle je Praxis haben Kassenärztliche Bundesvereinigung und GKV-Spitzenverband 2025 vereinbart. Sie gilt einheitlich, auch für Patientinnen und Patienten, die die Praxis noch nicht kennt.
+    quellen: [kbv-video-obergrenze-2025, zi-trendreport-2024]
+  - typ: fakt
+    text: Die zweite Idee ist die **Ersteinschätzung**. Bevor jemand in eine Praxis oder Notaufnahme geht, klärt ein strukturiertes Gespräch am Telefon oder online, wie dringend das Anliegen ist und wo es am besten aufgehoben ist. Das gibt es schon über die Nummer **116117**.
+    genau: Im ersten Halbjahr 2026 gab es rund 1,85 Millionen Ersteinschätzungen über die 116117 und das Online-Patientennavi, davon rund 440.000 online.
     quellen: [aerzteblatt-ersteinschaetzung-2026]
   - typ: fakt
-    text: Mit der Notfallreform, die der Bundestag im Oktober 2026 beschlossen hat, wird die 116117 in eine Terminservice- und eine Akutleitstelle geteilt. Für Akutfälle soll es dort auch telefonische oder videogestützte Versorgung geben.
-    quellen: [bmg-notfallreform-2026]
-  - typ: fakt
-    text: Ein weiteres Gesetz (GeDIG), das das Kabinett im Juli 2026 beschlossen hat, soll eine digitale Ersteinschätzung, die Terminvermittlung und die elektronische Überweisung in die ePA einbinden.
-    quellen: [zm-gedig-2026]
+    text: Zwei Gesetze bauen das aus. Die Notfallreform macht aus der 116117 auch eine Akutleitstelle, die per Telefon oder Video behandeln soll. Ein geplantes Digitalgesetz soll Ersteinschätzung, Terminvermittlung und Überweisung mit der ePA verbinden.
+    genau: Die Notfallreform hat der Bundestag im Oktober 2026 beschlossen; die 116117 wird in eine Terminservice- und eine Akutleitstelle geteilt. Das Digitalgesetz (GeDIG) hat das Kabinett im Juli 2026 beschlossen.
+    quellen: [bmg-notfallreform-2026, zm-gedig-2026]
+  - typ: wertung
+    text: Offen ist, welche Rolle der digitale Weg spielen soll – normaler erster Kontakt oder Ergänzung zur Praxis. Je mehr er zum Standard wird, desto mehr Praxiszeit kann er sparen. Umso wichtiger wird dann aber, dass Menschen ohne gutes Internet oder mit Sprachbarrieren nicht abgehängt werden.
 
 zielkonflikte:
   - typ: wertung

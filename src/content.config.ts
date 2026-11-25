@@ -9,6 +9,7 @@
 import { defineCollection } from 'astro:content';
 import { glob, file } from 'astro/loaders';
 import { z } from 'astro/zod';
+import { PARTEIEN } from './lib/parteien';
 
 const slug = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'nur a-z, 0-9 und Bindestriche');
 
@@ -36,6 +37,8 @@ const aussage = z
     quellen: z.array(slug).default([]),
     wer: z.string().optional(),
     unsicherheit: z.string().optional(),
+    // Exakte Zahlen zum Aufklappen. `text` bleibt verständlich und gerundet.
+    genau: z.string().optional(),
   })
   .superRefine((a, ctx) => {
     if ((a.typ === 'fakt' || a.typ === 'schaetzung') && a.quellen.length === 0) {
@@ -86,9 +89,51 @@ const fragen = defineCollection({
 
     // Ebene 1 – Worum geht's? (in zwei Minuten lesbar)
     erklaerung: z.array(aussage).min(2),
-    // Ebene 2 – Zielkonflikte über alle Optionen hinweg
+    // Ebene 2 – Wie hängt das zusammen? Mechanismen statt Positionen.
+    zusammenhaenge: z
+      .object({
+        // Kernmechanismus in 2–4 Aussagen
+        erklaerung: z.array(aussage).min(1),
+        // Wirkungskette in Stufen, z. B. Treiber → Ausgabenblöcke → Folge → Stellschrauben
+        kette: z
+          .array(
+            z.object({
+              titel: z.string(),
+              punkte: z.array(z.object({ label: z.string(), text: z.string() })).min(1),
+            }),
+          )
+          .min(2)
+          .max(5)
+          .optional(),
+        // Hebel-Rechner: Wie viel bringt welche Maßnahme? Alle Wirkungen belegt.
+        rechner: z
+          .object({
+            titel: z.string(),
+            einheit: z.string(), // z. B. „Mrd. € pro Jahr“
+            ziel: z.object({ label: z.string(), wert: z.number().positive(), stand: z.string(), quelle: slug, hinweis: z.string().optional() }),
+            massnahmen: z
+              .array(
+                z.object({
+                  id: slug,
+                  titel: z.string(),
+                  option: slug.optional(), // zu welcher Antwortoption die Maßnahme gehört
+                  wer_traegt: z.string(), // wer die Last trägt – in einfachen Worten
+                  varianten: z
+                    .array(z.object({ label: z.string(), wirkung: z.number().nonnegative() }))
+                    .min(1),
+                  typ: z.enum(['fakt', 'schaetzung']),
+                  quelle: slug,
+                  hinweis: z.string().optional(),
+                }),
+              )
+              .min(2),
+          })
+          .optional(),
+      })
+      .optional(),
+    // Ebene 3 – Zielkonflikte über alle Optionen hinweg
     zielkonflikte: z.array(aussage).min(1),
-    // Ebene 3 – Fakten & Daten
+    // Ebene 4 – Fakten & Daten
     daten: z
       .object({
         kennzahlen: z.array(kennzahl).default([]),
@@ -96,7 +141,7 @@ const fragen = defineCollection({
         aussagen: z.array(aussage).default([]),
       })
       .optional(),
-    // Ebene 4 – Geschichte: Was wurde schon versucht?
+    // Ebene 5 – Geschichte: Was wurde schon versucht?
     geschichte: z
       .object({
         ereignisse: z.array(
@@ -105,7 +150,7 @@ const fragen = defineCollection({
         bilanz: z.array(aussage).default([]),
       })
       .optional(),
-    // Ebene 5 – Andere Länder
+    // Ebene 6 – Andere Länder
     laender: z
       .object({
         beispiele: z.array(
@@ -126,7 +171,15 @@ const fragen = defineCollection({
     verknuepft: z.array(z.object({ frage: slug, grund: z.string() })).default([]),
     // Parteipositionen: nur mit Quelle (Wahlprogramm + Seite). Werden erst nach der eigenen Antwort gezeigt.
     parteien: z
-      .array(z.object({ partei: z.string(), option: slug, beleg: z.string(), quelle: slug }))
+      .array(
+        z.object({
+          partei: z.enum(PARTEIEN),
+          option: slug,
+          beleg: z.string().min(20), // wörtliches Zitat aus dem Programm
+          seite: z.string(), // Seitenzahl im PDF
+          quelle: slug,
+        }),
+      )
       .default([]),
     quellen: z.array(quelle).min(1),
   }),

@@ -144,6 +144,8 @@ a {
   text-underline-offset: 3px;
 }
 
+/* Komponenten-Klassen in einer Ebene, damit Tailwind-Utilities sie überschreiben können */
+@layer components {
 /* Aussage-Badges */
 .badge {
   display: inline-flex;
@@ -271,4 +273,5 @@ details.ebene[open] .chev {
 .choice[aria-pressed='true'] {
   border-color: var(--accent);
   background: var(--accent-soft);
+}
 }

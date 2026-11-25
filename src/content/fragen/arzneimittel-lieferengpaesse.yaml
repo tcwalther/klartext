@@ -76,17 +76,26 @@ optionen:
     kostet: [Vielfalt der Anbieter, Möglicherweise Versorgungssicherheit]
 erklaerung:
   - typ: fakt
-    text: Ein **Lieferengpass** liegt vor, wenn ein Medikament länger als zwei Wochen nicht oder nur eingeschränkt verfügbar ist. 2025 gingen beim Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM) 1.514 Meldungen zu 1.041 Lieferengpässen ein.
+    text: Ein **Lieferengpass** liegt vor, wenn ein Medikament länger als zwei Wochen nicht oder nur eingeschränkt lieferbar ist. Das ist kein Einzelfall – 2025 wurden rund tausend Engpässe gemeldet.
     quellen: [zi-lieferengpaesse-2026]
+    genau: 2025 gingen beim Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM) 1.514 Meldungen zu 1.041 Lieferengpässen ein.
   - typ: fakt
-    text: Besonders betroffen waren Psychopharmaka. Engpässe bei Antipsychotika dauerten im Schnitt 230 Tage. Auch Antibiotika, Cholesterinsenker und das Asthmamittel Salbutamol fehlten zeitweise.
+    text: Betroffen sind auch weit verbreitete Mittel wie Antibiotika, Cholesterinsenker, das Asthmamittel Salbutamol und Psychopharmaka. Manche Engpässe dauern Monate, bei Antipsychotika im Schnitt mehr als ein halbes Jahr.
     quellen: [zi-lieferengpaesse-2026]
+    genau: 'Durchschnittliche Dauer 2025: Antipsychotika 230 Tage, Cholesterinsenker 156 Tage, Antibiotika 122 Tage, Antidepressiva 107 Tage.'
   - typ: fakt
-    text: Für **Generika** schließen Krankenkassen **Rabattverträge** mit Herstellern. Der Preis ist dabei oft entscheidend. Generika machen über 80 % der Verordnungen aus, aber nur rund 6 % der Arzneimittelausgaben der GKV.
+    text: Den Großteil der Versorgung tragen **Generika**, also Nachahmerprodukte ohne Patentschutz. Sie machen mehr als vier von fünf Verordnungen aus, aber nur einen kleinen Bruchteil der Ausgaben.
+    quellen: [progenerika-zahlen-2025]
+    genau: 'Generika 2025: über 80 % der Verordnungen, rund 6 % der Arzneimittelausgaben der GKV. Eine Tagesdosis kostet nach Rabatten im Schnitt rund 6 Cent (Angabe des Herstellerverbands Pro Generika).'
+  - typ: fakt
+    text: 'Dahinter stehen unter anderem **Rabattverträge**: Krankenkassen schreiben Generika aus, und der Preis ist dabei oft entscheidend. Geht ein Vertrag nur an einen oder wenige Anbieter, fehlt bei deren Ausfall schnell der Ersatz.'
     quellen: [progenerika-zahlen-2025]
   - typ: fakt
-    text: 'Das Lieferengpassgesetz von 2023 (ALBVVG) verpflichtet Hersteller bei Rabattarzneimitteln zu sechs Monaten Lagerhaltung. Bei Kinderarzneimitteln entfielen Festbeträge und Rabattverträge. Bei Antibiotika müssen Ausschreibungen Produktion in der EU zusätzlich berücksichtigen.'
+    text: Das Lieferengpassgesetz von 2023 setzt an mehreren Stellen an – bei Vorräten, bei den Preisregeln für Kinderarzneimittel und bei europäischer Produktion von Antibiotika.
     quellen: [bmg-albvvg-2023]
+    genau: 'ALBVVG: Hersteller müssen bei Rabattarzneimitteln sechs Monate Vorrat halten. Für Kinderarzneimittel entfielen Festbeträge und Rabattverträge. Bei Antibiotika müssen Ausschreibungen Produktion in der EU zusätzlich berücksichtigen.'
+  - typ: wertung
+    text: 'Niedrige Preise sparen Beitragsgeld. Sie machen es für Hersteller aber weniger attraktiv, Vorräte, zusätzliche Kapazitäten oder Produktion in Europa vorzuhalten. Umstritten ist, wie viel der Engpässe sich so erklärt und ob höhere Preise, strengere Vorgaben oder europäische Lösungen am meisten helfen.'
 zielkonflikte:
   - typ: wertung
     text: '**Niedrige Preise gegen sichere Versorgung:** Günstige Generika entlasten die Beitragszahler, machen die Produktion in Europa aber oft unwirtschaftlich.'
@@ -148,7 +157,17 @@ verknuepft:
     grund: Preisregeln für neue und alte Medikamente beeinflussen, wo produziert wird.
   - frage: finanzierung-kostenanstieg
     grund: Höhere Preise für mehr Versorgungssicherheit erhöhen die Ausgaben.
-parteien: []
+parteien:
+  - partei: Grüne
+    option: produktion-europa
+    beleg: Angesichts instabiler Lieferketten wollen wir, dass wichtige Arzneimittelwirkstoffe wieder stärker in Deutschland oder Europa produziert werden. Bei unverzichtbaren Medikamenten der Grund- und Notfallversorgung ist es unser Ziel, bessere Vergütungsregelungen zu etablieren.
+    seite: "89"
+    quelle: wahlprogramm-2025-gruene
+  - partei: SPD
+    option: produktion-europa
+    beleg: "Außerdem wollen wir für eine stärkere Produktion von Arzneimitteln in Deutschland und Europa sorgen: Krankenkassen sollen zusammen mit anderen nationalen und europäischen Akteuren größere Mengen an Therapien über längere Zeiträume einkaufen dürfen, wenn diese bei uns hergestellt werden."
+    seite: "30"
+    quelle: wahlprogramm-2025-spd
 quellen:
   - id: zi-lieferengpaesse-2026
     titel: 'Grafik des Monats Januar 2026: Lieferengpässe bei Arzneimitteln'
@@ -174,3 +193,15 @@ quellen:
     jahr: 2026
     url: https://www.ema.europa.eu/en/news/ema-welcomes-political-agreement-critical-medicines-act
     art: international
+  - id: wahlprogramm-2025-gruene
+    titel: Zusammen wachsen – Regierungsprogramm 2025
+    herausgeber: Bündnis 90/Die Grünen
+    jahr: 2025
+    url: https://cms.gruene.de/uploads/assets/Regierungsprogramm_DIGITAL_DINA5.pdf
+    art: partei
+  - id: wahlprogramm-2025-spd
+    titel: Mehr für Dich. Besser für Deutschland. Regierungsprogramm der SPD für die Bundestagswahl 2025
+    herausgeber: SPD
+    jahr: 2025
+    url: https://www.spd.de/fileadmin/Dokumente/Beschluesse/Programm/2025_SPD_Regierungsprogramm.pdf
+    art: partei

@@ -7,6 +7,8 @@ import Kennzahl from '../../components/Kennzahl.astro';
 import BarChart from '../../components/BarChart.astro';
 import EntwurfHinweis from '../../components/EntwurfHinweis.astro';
 import AntwortBox from '../../islands/AntwortBox.tsx';
+import HebelRechner from '../../islands/HebelRechner.tsx';
+import Wirkungskette from '../../components/Wirkungskette.astro';
 import { getFragen, getBereiche, quellenNummern, ebenenVon, frageKurz, frageUrl, md } from '../../lib/content';
 
 export async function getStaticPaths() {
@@ -25,6 +27,25 @@ const quellenSortiert = [...d.quellen].sort((a, b) => nums.get(a.id)! - nums.get
 const verknuepft = d.verknuepft
   .map((v) => ({ ...v, f: alleFragen.find((f) => f.id === v.frage) }))
   .filter((v) => v.f);
+const z = d.zusammenhaenge;
+const optTitel = new Map(d.optionen.map((o) => [o.id, o.titel]));
+const rechner = z?.rechner && {
+  titel: z.rechner.titel,
+  einheit: z.rechner.einheit,
+  ziel: { ...z.rechner.ziel, hinweis: z.rechner.ziel.hinweis ?? null, quelleId: z.rechner.ziel.quelle, quelleNr: nums.get(z.rechner.ziel.quelle)! },
+  massnahmen: z.rechner.massnahmen.map((m) => ({
+    id: m.id,
+    titel: m.titel,
+    option: m.option ?? null,
+    optionTitel: m.option ? (optTitel.get(m.option) ?? null) : null,
+    wer_traegt: m.wer_traegt,
+    varianten: m.varianten,
+    typ: m.typ,
+    quelleId: m.quelle,
+    quelleNr: nums.get(m.quelle)!,
+    hinweis: m.hinweis ?? null,
+  })),
+};
 const vergleichbarkeitLabel = { hoch: 'gut vergleichbar', mittel: 'teilweise vergleichbar', gering: 'schwer vergleichbar' };
 const artLabel: Record<string, string> = {
   amtlich: 'Amtliche Statistik',
@@ -85,7 +106,26 @@ const artLabel: Record<string, string> = {
       </Ebene>
 
       <!-- Ebene 2 -->
-      <Ebene n={2} id="argumente" titel="Argumente & Zielkonflikte" sub="Was spricht für welche Option – und was kostet sie?" frageId={frage.id}>
+      {
+        z && (
+          <Ebene n={2} id="zusammenhaenge" titel="Wie hängt das zusammen?" sub="Ursachen, Wirkungen und wie groß jeder Hebel ist" frageId={frage.id}>
+            <AussageListe items={z.erklaerung} nums={nums} />
+            {z.kette && (
+              <div class="mt-5">
+                <Wirkungskette stufen={z.kette} />
+              </div>
+            )}
+            {rechner && (
+              <div class="mt-5">
+                <HebelRechner client:visible {...rechner} />
+              </div>
+            )}
+          </Ebene>
+        )
+      }
+
+      <!-- Ebene 3 -->
+      <Ebene n={3} id="argumente" titel="Argumente & Zielkonflikte" sub="Was spricht für welche Option – und was kostet sie?" frageId={frage.id}>
         <div class="grid gap-4">
           {
             d.optionen.map((o) => (
@@ -136,10 +176,10 @@ const artLabel: Record<string, string> = {
         </div>
       </Ebene>
 
-      <!-- Ebene 3 -->
+      <!-- Ebene 4 -->
       {
-        d.daten && ebenen[2]!.da && (
-          <Ebene n={3} id="daten" titel="Fakten & Daten" sub="Zahlen mit Quelle und Stand" frageId={frage.id}>
+        d.daten && ebenen[3]!.da && (
+          <Ebene n={4} id="daten" titel="Fakten & Daten" sub="Zahlen mit Quelle und Stand" frageId={frage.id}>
             {d.daten.kennzahlen.length > 0 && (
               <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
                 {d.daten.kennzahlen.map((k) => (
@@ -159,10 +199,10 @@ const artLabel: Record<string, string> = {
         )
       }
 
-      <!-- Ebene 4 -->
+      <!-- Ebene 5 -->
       {
-        d.geschichte && ebenen[3]!.da && (
-          <Ebene n={4} id="geschichte" titel="Was wurde schon versucht?" sub="Reformen und was dabei herauskam" frageId={frage.id}>
+        d.geschichte && ebenen[4]!.da && (
+          <Ebene n={5} id="geschichte" titel="Was wurde schon versucht?" sub="Reformen und was dabei herauskam" frageId={frage.id}>
             <ol class="relative border-l-2 border-line ml-2 space-y-5 mb-5">
               {d.geschichte.ereignisse.map((e) => (
                 <li class="pl-5 relative">
@@ -186,10 +226,10 @@ const artLabel: Record<string, string> = {
         )
       }
 
-      <!-- Ebene 5 -->
+      <!-- Ebene 6 -->
       {
-        d.laender && ebenen[4]!.da && (
-          <Ebene n={5} id="andere-laender" titel="Wie machen es andere Länder?" sub="Und lässt sich das übertragen?" frageId={frage.id}>
+        d.laender && ebenen[5]!.da && (
+          <Ebene n={6} id="andere-laender" titel="Wie machen es andere Länder?" sub="Und lässt sich das übertragen?" frageId={frage.id}>
             <div class="grid gap-3 mb-4">
               {d.laender.beispiele.map((l) => (
                 <section class="rounded-xl border border-line p-4">
@@ -231,8 +271,8 @@ const artLabel: Record<string, string> = {
         )
       }
 
-      <!-- Ebene 6 -->
-      <Ebene n={6} id="quellen" titel="Quellen" sub={`${d.quellen.length} Belege für diese Frage`} frageId={frage.id}>
+      <!-- Ebene 7 -->
+      <Ebene n={7} id="quellen" titel="Quellen" sub={`${d.quellen.length} Belege für diese Frage`} frageId={frage.id}>
         <ol class="space-y-2.5 text-sm">
           {
             quellenSortiert.map((q) => (

@@ -79,18 +79,28 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: In Pflegeberufen arbeiteten 2024 rund 1,72 Millionen Menschen – 22 Prozent mehr als zehn Jahre zuvor. Der Anteil ausländischer Beschäftigter liegt bei 18 Prozent.
+    text: In der Pflege arbeiten heute gut ein Fünftel mehr Menschen als vor zehn Jahren. Neue Pflegekräfte kommen inzwischen vor allem aus dem Ausland.
+    genau: 2024 arbeiteten rund 1,72 Millionen Menschen in Pflegeberufen, 22 Prozent mehr als zehn Jahre zuvor. Der Anteil ausländischer Beschäftigter liegt bei 18 Prozent.
     quellen: [ba-pflege-2025]
   - typ: schaetzung
-    text: Das Statistische Bundesamt rechnet damit, dass 2049 zwischen 280.000 und 690.000 Pflegekräfte fehlen. Der Bedarf steigt mit der Alterung um rund ein Drittel, gleichzeitig gehen viele Pflegekräfte in Rente.
+    text: Trotzdem dürfte es absehbar nicht reichen, weil zwei Entwicklungen zusammenkommen. Mit der Alterung steigt der Bedarf an Pflege um rund ein Drittel. Gleichzeitig gehen viele Pflegekräfte selbst in Rente.
+    genau: Das Statistische Bundesamt rechnet damit, dass 2049 zwischen 280.000 und 690.000 Pflegekräfte fehlen.
     quellen: [destatis-pflegekraefte-2024]
     unsicherheit: Modellrechnung („Wenn-dann-Aussage“); die Spanne hängt davon ab, ob sich der Zuwachs der 2010er-Jahre fortsetzt.
   - typ: fakt
-    text: 2025 begannen 63.900 Menschen eine Ausbildung zur Pflegefachfrau oder zum Pflegefachmann, 8 Prozent mehr als im Vorjahr.
+    text: Die Löhne sind in den letzten zehn Jahren stark gestiegen. Pflegefachkräfte verdienen inzwischen mehr als der Durchschnitt aller Vollzeitbeschäftigten.
+    genau: Im April 2024 verdienten Fachkräfte in der Altenpflege im Mittel (Median, Vollzeit, ohne Sonderzahlungen) 4.228 Euro brutto im Monat, 1.612 Euro mehr als zehn Jahre zuvor. In der Gesundheits- und Krankenpflege waren es 4.310 Euro, über alle Vollzeitbeschäftigten 3.978 Euro.
+    quellen: [destatis-verdienste-pflege-2025]
+  - typ: wertung
+    text: Neben der Zahl der Köpfe zählt, wie viele Stunden Pflegekräfte arbeiten und wie lange sie im Beruf bleiben. Dort setzen Arbeitsbedingungen, Personalvorgaben und Entlastung durch Technik an. Ausbildung und Anwerbung erhöhen dagegen die Zahl der Köpfe, brauchen aber Zeit.
+  - typ: fakt
+    text: Der Nachwuchs wächst wieder. Die Zahl neuer Auszubildender in der Pflege ist dreimal in Folge gestiegen.
+    genau: 2025 begannen 63.900 Menschen eine Ausbildung zur Pflegefachfrau oder zum Pflegefachmann, 8 Prozent mehr als im Vorjahr.
     quellen: [destatis-pflegeausbildung-2026]
   - typ: fakt
-    text: Im Juli 2026 hat der Bundestag die Pflicht zur Pflegepersonalbemessung im Krankenhaus (**PPR 2.0**) wieder abgeschafft. Stattdessen gilt eine allgemeine Pflicht zu einer guten Personalbesetzung. Die Pflegepersonaluntergrenzen für bestimmte Stationen gelten weiter.
-    quellen: [bmg-gkv-bstabg-2026]
+    text: Wie viel Personal eine Krankenhausstation haben muss, wird immer wieder neu geregelt. Eine verbindliche Personalbemessung (**PPR 2.0**) wurde eingeführt und zwei Jahre später wieder abgeschafft. Mindestbesetzungen für bestimmte Stationen gelten weiter.
+    genau: Die PPR 2.0 trat im Juli 2024 in Kraft, zunächst ohne Sanktionen. Im Juli 2026 entfiel die Pflicht mit dem GKV-Beitragssatzstabilisierungsgesetz; stattdessen gilt eine allgemeine Pflicht zu einer guten Personalbesetzung. Die Pflegepersonaluntergrenzen bleiben.
+    quellen: [bmg-ppbv, bmg-gkv-bstabg-2026]
 
 zielkonflikte:
   - typ: wertung
@@ -233,3 +243,15 @@ quellen:
     jahr: 2012
     url: https://bristol.ac.uk/cmpo/publications/papers/2012/abstract283.html
     art: wissenschaft
+  - id: wahlprogramm-2025-die-linke
+    titel: Alle wollen regieren. Wir wollen verändern. Reichtum teilen. Preise senken. Füreinander. Wahlprogramm zur Bundestagswahl 2025
+    herausgeber: Die Linke
+    jahr: 2025
+    url: https://www.die-linke.de/fileadmin/user_upload/Wahlprogramm_Langfassung_Linke-BTW25_01.pdf
+    art: partei
+parteien:
+  - partei: Die Linke
+    option: bezahlung
+    beleg: Gute Löhne und Arbeitsbedingungen sind das beste Mittel gegen Personalmangel.
+    seite: "27"
+    quelle: wahlprogramm-2025-die-linke
