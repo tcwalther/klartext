@@ -1,0 +1,10 @@
+---
+import { buchstabe } from '../lib/optionen';
+interface Props {
+  index: number;
+  klein?: boolean;
+}
+const { index, klein = false } = Astro.props;
+---
+
+<span class:list={['opt', klein && 'opt-klein']} aria-label={`Option ${buchstabe(index)}`}>{buchstabe(index)}</span>

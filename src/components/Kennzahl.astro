@@ -1,4 +1,5 @@
 ---
+/** Kennzahl im Zeitungsstil: kräftige Linie oben, Zahl, Beschriftung – kein Kasten. */
 import SourceRefs from './SourceRefs.astro';
 interface Props {
   label: string;
@@ -11,10 +12,10 @@ interface Props {
 const { label, wert, stand, quelle, hinweis, nums } = Astro.props;
 ---
 
-<div class="card p-3 sm:p-4 flex flex-col gap-1">
-  <div class="text-sm text-muted leading-snug">{label}</div>
-  <div class:list={['serif font-semibold leading-tight', wert.length > 16 ? 'text-lg' : 'text-2xl']}>
+<div class="border-t-2 border-ink pt-2.5 flex flex-col gap-0.5">
+  <div class:list={['serif font-semibold leading-tight', wert.length > 16 ? 'text-xl' : 'text-[1.75rem]']}>
     {wert}{nums && <SourceRefs ids={[quelle]} nums={nums} />}
   </div>
-  <div class="text-xs text-faint">Stand {stand}{hinweis && <> · {hinweis}</>}</div>
+  <div class="text-sm leading-snug">{label}</div>
+  <div class="text-xs text-faint leading-snug">Stand {stand}{hinweis && <> · {hinweis}</>}</div>
 </div>

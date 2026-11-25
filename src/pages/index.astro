@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ClaimBadge from '../components/ClaimBadge.astro';
+import Legende from '../components/Legende.astro';
 import { getFragen } from '../lib/content';
 
 const fragen = await getFragen();
@@ -32,27 +32,25 @@ const schichten = [
     </div>
   </section>
 
-  <section class="mx-auto max-w-5xl px-4 mt-12 grid lg:grid-cols-2 gap-10 items-start">
+  <section class="mx-auto max-w-5xl px-4 mt-16 grid lg:grid-cols-2 gap-x-16 gap-y-14 items-start">
     <div>
       <h2 class="serif text-2xl font-semibold">Wie eine Zwiebel</h2>
-      <p class="text-muted mt-2 mb-5 max-w-prose">
+      <p class="text-muted mt-2 mb-6 max-w-prose">
         Jede Frage hat mehrere Schichten. Du gehst nur so tief, wie du willst. Alle sehen dieselben Inhalte – es gibt
         keine personalisierten Antworten.
       </p>
-      <ol class="grid gap-1.5">
+      <ol class="relative border-l border-line ml-3.5">
         {
           schichten.map((s, i) => (
-            <li
-              class="card flex items-center gap-3 py-2.5 pr-3"
-              style={`margin-left: ${i * 0.75}rem; padding-left: 0.75rem`}
-            >
-              <span class="size-7 shrink-0 rounded-full grid place-items-center text-xs font-semibold" style={`background: color-mix(in srgb, var(--accent) ${100 - i * 13}%, var(--surface)); color: ${i < 3 ? 'var(--accent-ink)' : 'var(--ink)'}`}>
+            <li class="relative pl-7 pb-4 last:pb-0">
+              <span
+                class="absolute -left-3.5 top-0 size-7 rounded-full grid place-items-center text-xs font-bold border-2"
+                style={`background: color-mix(in srgb, var(--accent) ${100 - i * 15}%, var(--bg)); border-color: var(--bg); color: ${i < 3 ? 'var(--accent-ink)' : 'var(--ink)'}`}
+              >
                 {s.n}
               </span>
-              <span class="min-w-0">
-                <span class="block font-semibold leading-snug">{s.t}</span>
-                <span class="block text-sm text-muted leading-snug">{s.d}</span>
-              </span>
+              <span class="block font-semibold leading-snug pt-0.5">{s.t}</span>
+              <span class="block text-sm text-muted leading-snug">{s.d}</span>
             </li>
           ))
         }
@@ -61,43 +59,38 @@ const schichten = [
 
     <div>
       <h2 class="serif text-2xl font-semibold">Daten und Meinungen getrennt</h2>
-      <p class="text-muted mt-2 mb-5 max-w-prose">
-        Jede Aussage trägt ein Etikett. So siehst du sofort, ob etwas belegt ist, geschätzt wird, eine Abwägung ist –
+      <p class="text-muted mt-2 mb-6 max-w-prose">
+        Jede Aussage ist am Rand markiert. So siehst du sofort, ob etwas belegt ist, geschätzt wird, eine Abwägung ist –
         oder ob es jemand fordert, der ein Interesse daran hat.
       </p>
-      <ul class="card divide-y divide-[var(--line)]">
-        <li class="p-4"><ClaimBadge typ="fakt" /><span class="ml-2">Überprüfbare Tatsache – immer mit Quelle.</span></li>
-        <li class="p-4"><ClaimBadge typ="schaetzung" /><span class="ml-2">Prognose oder Studienergebnis mit Unsicherheit.</span></li>
-        <li class="p-4"><ClaimBadge typ="wertung" /><span class="ml-2">Argument, das auf einer Abwägung beruht.</span></li>
-        <li class="p-4"><ClaimBadge typ="position" wer="Verband X" /><span class="ml-2">Was ein bestimmter Akteur fordert.</span></li>
-      </ul>
+      <Legende ausfuehrlich />
       {
         beispiel && (
-          <a href={`/gesundheit/${beispiel.id}/`} class="card block p-4 mt-4 no-underline hover:border-faint">
-            <span class="text-xs font-semibold uppercase tracking-wide text-faint">Beispiel ansehen</span>
-            <span class="block serif text-lg font-semibold mt-1 leading-snug">{beispiel.data.titel}</span>
-            <span class="block text-sm text-muted mt-0.5">{beispiel.data.frage}</span>
+          <a href={`/gesundheit/${beispiel.id}/`} class="group block mt-8 border-t-2 border-ink pt-3 no-underline">
+            <span class="kicker">Beispiel ansehen</span>
+            <span class="block serif text-xl font-semibold mt-1 leading-snug group-hover:text-accent">{beispiel.data.titel} →</span>
+            <span class="block text-sm text-muted mt-1">{beispiel.data.frage}</span>
           </a>
         )
       }
     </div>
   </section>
 
-  <section class="mx-auto max-w-5xl px-4 mt-16">
-    <div class="card p-6 sm:p-8 grid sm:grid-cols-3 gap-6">
-      <div>
+  <section class="mx-auto max-w-5xl px-4 mt-20">
+    <div class="grid sm:grid-cols-3 gap-x-10 gap-y-6">
+      <div class="border-t border-line pt-3">
         <h3 class="font-semibold">Neutral</h3>
         <p class="text-sm text-muted mt-1">
           Keine Wahlempfehlung, kein Ranking. Jede Option wird in ihrer stärksten Form dargestellt.
         </p>
       </div>
-      <div>
+      <div class="border-t border-line pt-3">
         <h3 class="font-semibold">Belegt</h3>
         <p class="text-sm text-muted mt-1">
           Jede Zahl hat eine Quelle. Jede Änderung ist öffentlich nachvollziehbar.
         </p>
       </div>
-      <div>
+      <div class="border-t border-line pt-3">
         <h3 class="font-semibold">Privat</h3>
         <p class="text-sm text-muted mt-1">
           Deine Antworten bleiben in deinem Browser. Kein Konto, kein Tracking deiner Meinung.

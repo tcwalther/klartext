@@ -5,6 +5,7 @@ type Massnahme = {
   titel: string;
   option: string | null;
   optionTitel: string | null;
+  optionBuchstabe: string | null;
   wer_traegt: string;
   varianten: { label: string; wirkung: number }[];
   typ: 'fakt' | 'schaetzung';
@@ -79,16 +80,17 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
       </div>
 
       {/* Maßnahmen */}
-      <ul class="mt-5 grid gap-3">
+      <ul class="mt-5 grid gap-4">
         {massnahmen.map((m) => {
           const w = wahl[m.id] ?? -1;
           return (
-            <li key={m.id} class="rounded-lg border border-line p-2.5 sm:p-3">
+            <li key={m.id} class="border-t border-line pt-3">
               <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <span class="font-semibold leading-snug">{m.titel}</span>
                 {m.optionTitel && (
-                  <a href={`#option-${m.option}`} class="text-xs rounded-md bg-surface-2 px-1.5 py-0.5 no-underline hover:underline">
-                    gehört zu: {m.optionTitel}
+                  <a href={`#option-${m.option}`} class="inline-flex items-center gap-1.5 text-xs text-muted no-underline hover:text-ink">
+                    <span class="opt opt-klein">{m.optionBuchstabe}</span>
+                    {m.optionTitel}
                   </a>
                 )}
               </div>

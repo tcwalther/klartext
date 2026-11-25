@@ -1,7 +1,6 @@
 ---
-import ClaimBadge from './ClaimBadge.astro';
 import SourceRefs from './SourceRefs.astro';
-import { md, type Aussage } from '../lib/content';
+import { md, typLabel, typErklaerung, type Aussage } from '../lib/content';
 interface Props {
   a: Aussage;
   nums: Map<string, number>;
@@ -10,9 +9,10 @@ interface Props {
 const { a, nums, as: Tag = 'li' } = Astro.props;
 ---
 
-<Tag class="leading-relaxed">
-  <ClaimBadge typ={a.typ} wer={a.wer} />
-  <span class="prose-k ml-1" set:html={md(a.text)} /><SourceRefs ids={a.quellen} nums={nums} />
+<Tag class={`aussage aussage-${a.typ} leading-relaxed`} title={`${typLabel[a.typ]}: ${typErklaerung[a.typ]}`}>
+  <span class="sr-only">{typLabel[a.typ]}{a.wer && ` von ${a.wer}`}: </span>
+  <span class="aussage-text prose-k" set:html={md(a.text)} /><SourceRefs ids={a.quellen} nums={nums} />
+  {a.typ === 'position' && a.wer && <span class="aussage-wer" aria-hidden="true">— {a.wer}</span>}
   {
     a.genau && (
       <details class="genau mt-1.5 text-sm">

@@ -1,0 +1,37 @@
+---
+/** Legende der Randmarkierungen. */
+import { typLabel, typErklaerung } from '../lib/content';
+interface Props {
+  ausfuehrlich?: boolean;
+}
+const { ausfuehrlich = false } = Astro.props;
+const typen = ['fakt', 'schaetzung', 'wertung', 'position'] as const;
+const stil: Record<(typeof typen)[number], string> = {
+  fakt: 'border-left-color: var(--fakt)',
+  schaetzung: 'border-left-style: dashed; border-left-color: var(--schaetzung)',
+  wertung: 'border-left-style: dotted; border-left-color: var(--wertung)',
+  position: 'border-left-color: var(--position)',
+};
+---
+
+{
+  ausfuehrlich ? (
+    <ul class="grid gap-3">
+      {typen.map((t) => (
+        <li class={`aussage aussage-${t}`}>
+          <span class="font-semibold">{typLabel[t]}</span>
+          <span class="block text-muted text-[0.95rem]">{typErklaerung[t]}</span>
+        </li>
+      ))}
+    </ul>
+  ) : (
+    <p class="text-xs text-muted flex flex-wrap gap-x-4 gap-y-1" aria-label="Legende der Randmarkierungen">
+      {typen.map((t) => (
+        <span class="whitespace-nowrap" title={typErklaerung[t]}>
+          <span class="marker-muster" style={stil[t]} aria-hidden="true" />
+          {typLabel[t]}
+        </span>
+      ))}
+    </p>
+  )
+}

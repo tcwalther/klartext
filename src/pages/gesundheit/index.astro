@@ -60,7 +60,7 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
               </h2>
               {system.data.status === 'entwurf' && <span class="text-xs text-faint">Entwurf · Stand {system.data.stand}</span>}
             </div>
-            <div class="grid grid-cols-1 min-[420px]:grid-cols-2 lg:grid-cols-4 gap-3">
+            <div class="grid grid-cols-1 min-[420px]:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
               {system.data.kennzahlen.map((k) => (
                 <Kennzahl {...k} nums={nums} />
               ))}
@@ -72,9 +72,9 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
               Wie das Geld fließt
             </h2>
             <p class="text-muted mt-1 mb-4 max-w-prose">Die wichtigsten Ströme – vereinfacht.</p>
-            <ol class="grid gap-2">
+            <ol class="border-t border-line">
               {system.data.geldfluss.map((g) => (
-                <li class="card p-4 grid gap-1 md:grid-cols-[minmax(0,22rem)_1fr] md:gap-6">
+                <li class="border-b border-line py-4 grid gap-1 md:grid-cols-[minmax(0,22rem)_1fr] md:gap-8">
                   <div>
                     <div class="font-semibold leading-snug">
                       {g.von} <span class="text-accent" aria-label="an">→</span> {g.an}
@@ -94,9 +94,9 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
             <h2 id="akteure" class="serif text-2xl font-semibold mb-4">
               Wer entscheidet was?
             </h2>
-            <dl class="grid sm:grid-cols-2 gap-3">
+            <dl class="grid sm:grid-cols-2 gap-x-8 border-t border-line">
               {system.data.akteure.map((a) => (
-                <div class="card p-4">
+                <div class="border-b border-line py-3.5">
                   <dt class="font-semibold">{a.name}</dt>
                   <dd class="text-sm text-muted mt-0.5 leading-snug">{a.rolle}</dd>
                 </div>
@@ -116,7 +116,7 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
           zueinander stehen.
         </p>
       </div>
-      <figure class="card p-2">
+      <figure class="border-t border-line pt-2">
         <svg viewBox="-95 15 590 370" class="w-full h-auto" role="img" aria-label="Netz der Zusammenhänge zwischen den Bereichen">
           {
             [...kanten.entries()].map(([k, n]) => {
@@ -160,12 +160,12 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
 
     <section id="bereiche" class="mt-14 scroll-mt-20" aria-labelledby="bereiche-h">
       <h2 id="bereiche-h" class="serif text-2xl font-semibold mb-4">Die Bereiche und ihre Fragen</h2>
-      <div class="grid md:grid-cols-2 gap-4">
+      <div class="grid md:grid-cols-2 gap-x-10 gap-y-10">
         {
           bereiche.map((b) => {
             const fs = fragen.filter((f) => f.data.bereich === b.id);
             return (
-              <section id={`bereich-${b.id}`} class="card p-5 scroll-mt-20">
+              <section id={`bereich-${b.id}`} class="border-t-2 border-ink pt-3 scroll-mt-20">
                 <div class="flex items-baseline justify-between gap-3">
                   <h3 class="serif text-xl font-semibold">{b.data.titel}</h3>
                   {fs.length > 0 && (
@@ -178,13 +178,13 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
                 {fs.length === 0 ? (
                   <p class="text-sm text-faint italic">In Arbeit.</p>
                 ) : (
-                  <ul class="grid gap-1">
+                  <ul class="border-t border-line">
                     {fs.map((f) => {
                       const tiefe = ebenenVon(f).filter((e) => e.da && e.n < 7).length;
                       return (
-                        <li>
-                          <a href={frageUrl(f.id)} class="flex items-start gap-3 rounded-lg -mx-2 px-2 py-2 no-underline hover:bg-surface-2">
-                            <span class="flex-1 leading-snug">{f.data.titel}</span>
+                        <li class="border-b border-line">
+                          <a href={frageUrl(f.id)} class="group flex items-start gap-3 py-2.5 no-underline">
+                            <span class="flex-1 leading-snug group-hover:text-accent">{f.data.titel}</span>
                             <span class="flex gap-0.5 pt-1.5 shrink-0" title={`${tiefe} von 6 Ebenen ausgearbeitet`} aria-label={`${tiefe} von 6 Ebenen ausgearbeitet`}>
                               {[1, 2, 3, 4, 5, 6].map((n) => (
                                 <span class="size-1.5 rounded-full" style={`background: ${n <= tiefe ? 'var(--accent)' : 'var(--line)'}`} />

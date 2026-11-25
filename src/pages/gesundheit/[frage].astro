@@ -6,10 +6,13 @@ import SourceRefs from '../../components/SourceRefs.astro';
 import Kennzahl from '../../components/Kennzahl.astro';
 import BarChart from '../../components/BarChart.astro';
 import EntwurfHinweis from '../../components/EntwurfHinweis.astro';
+import OptionMarker from '../../components/OptionMarker.astro';
+import Legende from '../../components/Legende.astro';
+import Wirkungskette from '../../components/Wirkungskette.astro';
 import AntwortBox from '../../islands/AntwortBox.tsx';
 import HebelRechner from '../../islands/HebelRechner.tsx';
-import Wirkungskette from '../../components/Wirkungskette.astro';
 import { getFragen, getBereiche, quellenNummern, ebenenVon, frageKurz, frageUrl, md } from '../../lib/content';
+import { buchstabe } from '../../lib/optionen';
 
 export async function getStaticPaths() {
   const fragen = await getFragen();
@@ -22,31 +25,37 @@ const bereich = (await getBereiche()).find((b) => b.id === d.bereich)!;
 const alleFragen = await getFragen();
 const nums = quellenNummern(frage);
 const ebenen = ebenenVon(frage);
+const sichtbar = ebenen.filter((e) => e.da);
 const kurz = frageKurz(frage);
 const quellenSortiert = [...d.quellen].sort((a, b) => nums.get(a.id)! - nums.get(b.id)!);
 const verknuepft = d.verknuepft
   .map((v) => ({ ...v, f: alleFragen.find((f) => f.id === v.frage) }))
   .filter((v) => v.f);
 const z = d.zusammenhaenge;
-const optTitel = new Map(d.optionen.map((o) => [o.id, o.titel]));
+const optIndex = new Map(d.optionen.map((o, i) => [o.id, i]));
 const rechner = z?.rechner && {
   titel: z.rechner.titel,
   einheit: z.rechner.einheit,
   ziel: { ...z.rechner.ziel, hinweis: z.rechner.ziel.hinweis ?? null, quelleId: z.rechner.ziel.quelle, quelleNr: nums.get(z.rechner.ziel.quelle)! },
-  massnahmen: z.rechner.massnahmen.map((m) => ({
-    id: m.id,
-    titel: m.titel,
-    option: m.option ?? null,
-    optionTitel: m.option ? (optTitel.get(m.option) ?? null) : null,
-    wer_traegt: m.wer_traegt,
-    varianten: m.varianten,
-    typ: m.typ,
-    quelleId: m.quelle,
-    quelleNr: nums.get(m.quelle)!,
-    hinweis: m.hinweis ?? null,
-  })),
+  massnahmen: z.rechner.massnahmen.map((m) => {
+    const i = m.option ? optIndex.get(m.option) : undefined;
+    return {
+      id: m.id,
+      titel: m.titel,
+      option: m.option ?? null,
+      optionTitel: i !== undefined ? d.optionen[i]!.titel : null,
+      optionBuchstabe: i !== undefined ? buchstabe(i) : null,
+      wer_traegt: m.wer_traegt,
+      varianten: m.varianten,
+      typ: m.typ,
+      quelleId: m.quelle,
+      quelleNr: nums.get(m.quelle)!,
+      hinweis: m.hinweis ?? null,
+    };
+  }),
 };
 const vergleichbarkeitLabel = { hoch: 'gut vergleichbar', mittel: 'teilweise vergleichbar', gering: 'schwer vergleichbar' };
+const vergleichbarkeitPunkte = { hoch: 3, mittel: 2, gering: 1 };
 const artLabel: Record<string, string> = {
   amtlich: 'Amtliche Statistik',
   wissenschaft: 'Wissenschaft',
@@ -57,291 +66,329 @@ const artLabel: Record<string, string> = {
   presse: 'Presse',
   international: 'Internationale Organisation',
 };
+const kurzTitel: Record<string, string> = {
+  'worum-gehts': 'Worum geht’s?',
+  zusammenhaenge: 'Zusammenhänge',
+  argumente: 'Argumente',
+  daten: 'Daten',
+  geschichte: 'Geschichte',
+  'andere-laender': 'Andere Länder',
+  quellen: 'Quellen',
+};
 ---
 
 <Layout title={d.titel} description={d.frage}>
-  <article class="mx-auto max-w-3xl px-4 pt-6 sm:pt-10">
-    <nav class="text-sm text-muted mb-4" aria-label="Brotkrumen">
-      <a href="/gesundheit/" class="hover:text-ink">Gesundheit</a>
-      <span aria-hidden="true" class="mx-1">›</span>
-      <a href={`/gesundheit/#bereich-${bereich.id}`} class="hover:text-ink">{bereich.data.titel}</a>
-    </nav>
-
-    {d.status === 'entwurf' && <EntwurfHinweis stand={d.stand} />}
-
-    <header class="mt-5 mb-6">
-      <h1 class="serif text-3xl sm:text-4xl font-semibold leading-tight">{d.titel}</h1>
-      <p class="mt-3 text-lg sm:text-xl text-muted leading-snug serif">{d.frage}</p>
-    </header>
-
-    <AntwortBox client:load frage={kurz} />
-
-    <!-- Tiefen-Navigation -->
-    <nav class="mt-8 mb-3" aria-label="Ebenen dieser Frage">
-      <div class="text-sm font-semibold mb-2">Wie tief willst du einsteigen?</div>
-      <ol class="flex flex-wrap gap-1.5 text-xs">
+  <!-- Tiefenleiste Handy: oben angeheftet -->
+  <nav class="lg:hidden sticky top-14 z-10 bg-bg/95 backdrop-blur border-b border-line" aria-label="Ebenen dieser Frage">
+    <div class="mx-auto max-w-3xl px-4 h-11 flex items-center gap-3">
+      <ol class="flex items-center gap-1 shrink-0">
         {
-          ebenen
-            .filter((e) => e.da)
-            .map((e) => (
-              <li>
-                <a
-                  href={`#${e.id}`}
-                  data-open={e.id}
-                  class="inline-flex items-center gap-1.5 rounded-full border border-line bg-surface px-2.5 py-1 no-underline hover:border-faint"
-                >
-                  <span class="font-semibold text-accent">{e.n}</span>
-                  {e.titel}
-                </a>
-              </li>
-            ))
+          sichtbar.map((e) => (
+            <li>
+              <a
+                href={`#${e.id}`}
+                data-ebene-link={e.id}
+                class="tiefe-punkt grid place-items-center size-7 rounded-full text-xs font-semibold no-underline text-muted border border-line"
+                aria-label={`Ebene ${e.n}: ${e.titel}`}
+              >
+                {e.n}
+              </a>
+            </li>
+          ))
         }
       </ol>
-    </nav>
+      <span class="text-xs text-muted truncate min-w-0" data-ebene-name>Tiefer einsteigen</span>
+    </div>
+  </nav>
 
-    <div class="grid gap-3">
-      <!-- Ebene 1 -->
-      <Ebene n={1} id="worum-gehts" titel="Worum geht’s?" sub="In zwei Minuten das Wichtigste" frageId={frage.id} open>
-        <AussageListe items={d.erklaerung} nums={nums} />
-      </Ebene>
-
-      <!-- Ebene 2 -->
-      {
-        z && (
-          <Ebene n={2} id="zusammenhaenge" titel="Wie hängt das zusammen?" sub="Ursachen, Wirkungen und wie groß jeder Hebel ist" frageId={frage.id}>
-            <AussageListe items={z.erklaerung} nums={nums} />
-            {z.kette && (
-              <div class="mt-5">
-                <Wirkungskette stufen={z.kette} />
-              </div>
-            )}
-            {rechner && (
-              <div class="mt-5">
-                <HebelRechner client:visible {...rechner} />
-              </div>
-            )}
-          </Ebene>
-        )
-      }
-
-      <!-- Ebene 3 -->
-      <Ebene n={3} id="argumente" titel="Argumente & Zielkonflikte" sub="Was spricht für welche Option – und was kostet sie?" frageId={frage.id}>
-        <div class="grid gap-4">
+  <div class="mx-auto max-w-5xl px-4 pt-6 sm:pt-10 lg:grid lg:grid-cols-[11rem_minmax(0,1fr)] lg:gap-12">
+    <!-- Tiefenleiste Desktop: links, mitlaufend -->
+    <aside class="hidden lg:block">
+      <nav class="sticky top-24" aria-label="Ebenen dieser Frage">
+        <div class="kicker mb-3">Tiefe</div>
+        <ol class="relative border-l border-line ml-[0.4rem]">
           {
-            d.optionen.map((o) => (
-              <section class="rounded-xl border border-line p-3 sm:p-4 bg-bg/40" id={`option-${o.id}`}>
-                <h3 class="serif text-lg font-semibold">{o.titel}</h3>
-                <p class="text-sm text-muted mb-3">{o.kurz}</p>
-                <div class="grid sm:grid-cols-2 gap-4">
-                  <div>
-                    <div class="text-xs font-semibold uppercase tracking-wide text-faint mb-2">Dafür spricht</div>
-                    <AussageListe items={o.pro} nums={nums} class="text-[0.95rem]" />
-                  </div>
-                  <div>
-                    <div class="text-xs font-semibold uppercase tracking-wide text-faint mb-2">Dagegen spricht</div>
-                    <AussageListe items={o.contra} nums={nums} class="text-[0.95rem]" />
-                  </div>
-                </div>
-                {(o.gewinnt.length > 0 || o.kostet.length > 0) && (
-                  <dl class="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
-                    {o.gewinnt.length > 0 && (
-                      <div>
-                        <dt class="font-semibold mb-1">Wer oder was gewinnt</dt>
-                        <dd class="flex flex-wrap gap-1.5">
-                          {o.gewinnt.map((g) => (
-                            <span class="rounded-md bg-surface-2 px-2 py-0.5">＋ {g}</span>
-                          ))}
-                        </dd>
-                      </div>
-                    )}
-                    {o.kostet.length > 0 && (
-                      <div>
-                        <dt class="font-semibold mb-1">Wer oder was trägt die Last</dt>
-                        <dd class="flex flex-wrap gap-1.5">
-                          {o.kostet.map((g) => (
-                            <span class="rounded-md bg-surface-2 px-2 py-0.5">－ {g}</span>
-                          ))}
-                        </dd>
-                      </div>
-                    )}
-                  </dl>
-                )}
-              </section>
-            ))
-          }
-          <section>
-            <h3 class="serif text-lg font-semibold mb-2">Die Zielkonflikte</h3>
-            <AussageListe items={d.zielkonflikte} nums={nums} />
-          </section>
-        </div>
-      </Ebene>
-
-      <!-- Ebene 4 -->
-      {
-        d.daten && ebenen[3]!.da && (
-          <Ebene n={4} id="daten" titel="Fakten & Daten" sub="Zahlen mit Quelle und Stand" frageId={frage.id}>
-            {d.daten.kennzahlen.length > 0 && (
-              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
-                {d.daten.kennzahlen.map((k) => (
-                  <Kennzahl {...k} nums={nums} />
-                ))}
-              </div>
-            )}
-            {d.daten.diagramme.length > 0 && (
-              <div class="grid gap-3 mb-4">
-                {d.daten.diagramme.map((g) => (
-                  <BarChart {...g} nums={nums} />
-                ))}
-              </div>
-            )}
-            {d.daten.aussagen.length > 0 && <AussageListe items={d.daten.aussagen} nums={nums} />}
-          </Ebene>
-        )
-      }
-
-      <!-- Ebene 5 -->
-      {
-        d.geschichte && ebenen[4]!.da && (
-          <Ebene n={5} id="geschichte" titel="Was wurde schon versucht?" sub="Reformen und was dabei herauskam" frageId={frage.id}>
-            <ol class="relative border-l-2 border-line ml-2 space-y-5 mb-5">
-              {d.geschichte.ereignisse.map((e) => (
-                <li class="pl-5 relative">
-                  <span class="absolute -left-[7px] top-1.5 size-3 rounded-full bg-accent" aria-hidden="true" />
-                  <div class="text-sm font-semibold text-accent tabular-nums">{e.jahr}</div>
-                  <div class="font-semibold leading-snug">{e.titel}</div>
-                  <p class="text-[0.95rem] text-muted mt-0.5">
-                    <span class="prose-k" set:html={md(e.text)} />
-                    <SourceRefs ids={e.quellen} nums={nums} />
-                  </p>
-                </li>
-              ))}
-            </ol>
-            {d.geschichte.bilanz.length > 0 && (
-              <>
-                <h3 class="serif text-lg font-semibold mb-2">Bilanz</h3>
-                <AussageListe items={d.geschichte.bilanz} nums={nums} />
-              </>
-            )}
-          </Ebene>
-        )
-      }
-
-      <!-- Ebene 6 -->
-      {
-        d.laender && ebenen[5]!.da && (
-          <Ebene n={6} id="andere-laender" titel="Wie machen es andere Länder?" sub="Und lässt sich das übertragen?" frageId={frage.id}>
-            <div class="grid gap-3 mb-4">
-              {d.laender.beispiele.map((l) => (
-                <section class="rounded-xl border border-line p-3 sm:p-4">
-                  <div class="flex flex-wrap items-baseline justify-between gap-2">
-                    <h3 class="serif text-lg font-semibold">{l.land}</h3>
-                    <span
-                      class="text-xs font-semibold rounded-full px-2 py-0.5 border"
-                      style={
-                        l.vergleichbarkeit === 'hoch'
-                          ? 'border-color: var(--accent); color: var(--accent)'
-                          : l.vergleichbarkeit === 'mittel'
-                            ? 'border-color: var(--faint); color: var(--muted)'
-                            : 'border-color: var(--line); color: var(--faint); border-style: dashed'
-                      }
-                    >
-                      {vergleichbarkeitLabel[l.vergleichbarkeit]}
-                    </span>
-                  </div>
-                  <div class="text-sm font-medium text-muted mb-1">{l.ansatz}</div>
-                  <p class="text-[0.95rem]">
-                    <span class="prose-k" set:html={md(l.text)} />
-                    <SourceRefs ids={l.quellen} nums={nums} />
-                  </p>
-                  <p class="text-sm text-muted mt-2">
-                    <span class="font-semibold text-ink">Übertragbar?</span> {l.vergleichbarkeit_text}
-                  </p>
-                </section>
-              ))}
-            </div>
-            {d.laender.diagramme.length > 0 && (
-              <div class="grid gap-3 mb-4">
-                {d.laender.diagramme.map((g) => (
-                  <BarChart {...g} nums={nums} />
-                ))}
-              </div>
-            )}
-            {d.laender.fazit.length > 0 && <AussageListe items={d.laender.fazit} nums={nums} />}
-          </Ebene>
-        )
-      }
-
-      <!-- Ebene 7 -->
-      <Ebene n={7} id="quellen" titel="Quellen" sub={`${d.quellen.length} Belege für diese Frage`} frageId={frage.id}>
-        <ol class="space-y-2.5 text-sm">
-          {
-            quellenSortiert.map((q) => (
-              <li id={`quelle-${q.id}`} class="grid grid-cols-[2rem_1fr] scroll-mt-24 target:bg-accent-soft rounded-md">
-                <span class="text-faint tabular-nums">[{nums.get(q.id)}]</span>
-                <span>
-                  {q.url ? (
-                    <a href={q.url} class="link" target="_blank" rel="noopener">
-                      {q.titel}
-                    </a>
-                  ) : (
-                    q.titel
-                  )}
-                  <span class="text-muted">
-                    {' '}
-                    – {q.herausgeber}, {q.jahr}
-                  </span>
-                  <span class="block text-xs text-faint">{artLabel[q.art]}</span>
-                </span>
+            sichtbar.map((e) => (
+              <li class="relative pl-5 pb-3.5 last:pb-0">
+                <span class="absolute -left-[0.4rem] top-[0.3rem] size-3 rounded-full border-2 border-line bg-bg" aria-hidden="true" data-dot={e.id} />
+                <a href={`#${e.id}`} data-ebene-link={e.id} class="tiefe-link block text-sm leading-snug no-underline text-muted hover:text-ink">
+                  <span class="tabular-nums text-faint mr-1">{e.n}</span>
+                  {kurzTitel[e.id]}
+                </a>
               </li>
             ))
           }
         </ol>
-      </Ebene>
-    </div>
+      </nav>
+    </aside>
 
-    {
-      verknuepft.length > 0 && (
-        <section class="mt-10">
-          <h2 class="serif text-xl font-semibold mb-3">Hängt zusammen mit</h2>
-          <ul class="grid gap-2">
-            {verknuepft.map((v) => (
-              <li>
-                <a href={frageUrl(v.frage)} class="card block p-4 no-underline hover:border-faint">
-                  <span class="block font-semibold">{v.f!.data.titel}</span>
-                  <span class="block text-sm text-muted">{v.grund}</span>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </section>
-      )
-    }
+    <article class="min-w-0 max-w-[44rem]">
+      <nav class="kicker mb-3" aria-label="Brotkrumen">
+        <a href="/gesundheit/" class="hover:text-ink no-underline">Gesundheit</a>
+        <span aria-hidden="true" class="mx-1.5">/</span>
+        <a href={`/gesundheit/#bereich-${bereich.id}`} class="hover:text-ink no-underline">{bereich.data.titel}</a>
+      </nav>
 
-    <div class="mt-10">
-      <AntwortBox client:visible frage={kurz} variante="unten" />
-    </div>
+      <header class="mb-6">
+        <p class="text-muted text-[0.95rem] mb-2">{d.titel}</p>
+        <h1 class="serif text-[1.55rem] sm:text-[2.3rem] font-semibold leading-[1.18]">{d.frage}</h1>
+      </header>
 
-    <nav class="mt-8 grid grid-cols-2 gap-3 text-sm" aria-label="Weitere Fragen">
       {
-        prev ? (
-          <a href={frageUrl(prev.id)} class="card p-3 no-underline hover:border-faint">
-            <span class="text-faint">← Vorige Frage</span>
-            <span class="block font-medium leading-snug">{prev.data.titel}</span>
-          </a>
-        ) : (
-          <span />
+        d.status === 'entwurf' && (
+          <div class="mb-6">
+            <EntwurfHinweis stand={d.stand} />
+          </div>
         )
       }
+
+      <AntwortBox client:load frage={kurz} />
+
+      <div class="mt-10 mb-3 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
+        <h2 class="kicker">Schicht für Schicht tiefer</h2>
+        <Legende />
+      </div>
+
+      <div class="border-b border-line">
+        <!-- Ebene 1 -->
+        <Ebene n={1} id="worum-gehts" titel="Worum geht’s?" sub="In zwei Minuten das Wichtigste" frageId={frage.id} open>
+          <AussageListe items={d.erklaerung} nums={nums} />
+        </Ebene>
+
+        <!-- Ebene 2 -->
+        {
+          z && (
+            <Ebene n={2} id="zusammenhaenge" titel="Wie hängt das zusammen?" sub="Ursachen, Wirkungen und wie groß jeder Hebel ist" frageId={frage.id}>
+              <AussageListe items={z.erklaerung} nums={nums} />
+              {z.kette && (
+                <div class="mt-8">
+                  <Wirkungskette stufen={z.kette} />
+                </div>
+              )}
+              {rechner && (
+                <div class="mt-8">
+                  <HebelRechner client:visible {...rechner} />
+                </div>
+              )}
+            </Ebene>
+          )
+        }
+
+        <!-- Ebene 3 -->
+        <Ebene n={3} id="argumente" titel="Argumente & Zielkonflikte" sub="Was spricht für welche Option – und was kostet sie?" frageId={frage.id}>
+          <div>
+            {
+              d.optionen.map((o, i) => (
+                <section class="py-6 first:pt-0 border-b border-line scroll-mt-28" id={`option-${o.id}`}>
+                  <h3 class="flex items-start gap-2.5 serif text-xl font-semibold leading-snug">
+                    <span class="pt-0.5">
+                      <OptionMarker index={i} />
+                    </span>
+                    {o.titel}
+                  </h3>
+                  <p class="text-muted mt-1 mb-5">{o.kurz}</p>
+                  <div class="grid md:grid-cols-2 gap-x-8 gap-y-6">
+                    <div>
+                      <div class="kicker mb-3">Dafür spricht</div>
+                      <AussageListe items={o.pro} nums={nums} />
+                    </div>
+                    <div>
+                      <div class="kicker mb-3">Dagegen spricht</div>
+                      <AussageListe items={o.contra} nums={nums} />
+                    </div>
+                  </div>
+                  {(o.gewinnt.length > 0 || o.kostet.length > 0) && (
+                    <dl class="mt-5 grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm">
+                      {o.gewinnt.length > 0 && (
+                        <div>
+                          <dt class="font-semibold">Wer oder was gewinnt</dt>
+                          <dd class="text-muted">{o.gewinnt.join(' · ')}</dd>
+                        </div>
+                      )}
+                      {o.kostet.length > 0 && (
+                        <div>
+                          <dt class="font-semibold">Wer oder was trägt die Last</dt>
+                          <dd class="text-muted">{o.kostet.join(' · ')}</dd>
+                        </div>
+                      )}
+                    </dl>
+                  )}
+                </section>
+              ))
+            }
+            <section class="pt-6">
+              <h3 class="serif text-xl font-semibold mb-4">Die Zielkonflikte</h3>
+              <AussageListe items={d.zielkonflikte} nums={nums} />
+            </section>
+          </div>
+        </Ebene>
+
+        <!-- Ebene 4 -->
+        {
+          d.daten && ebenen[3]!.da && (
+            <Ebene n={4} id="daten" titel="Fakten & Daten" sub="Zahlen mit Quelle und Stand" frageId={frage.id}>
+              {d.daten.kennzahlen.length > 0 && (
+                <div class="grid grid-cols-1 min-[420px]:grid-cols-2 gap-x-6 gap-y-5 mb-8">
+                  {d.daten.kennzahlen.map((k) => (
+                    <Kennzahl {...k} nums={nums} />
+                  ))}
+                </div>
+              )}
+              {d.daten.diagramme.length > 0 && (
+                <div class="grid gap-8 mb-8">
+                  {d.daten.diagramme.map((g) => (
+                    <BarChart {...g} nums={nums} />
+                  ))}
+                </div>
+              )}
+              {d.daten.aussagen.length > 0 && <AussageListe items={d.daten.aussagen} nums={nums} />}
+            </Ebene>
+          )
+        }
+
+        <!-- Ebene 5 -->
+        {
+          d.geschichte && ebenen[4]!.da && (
+            <Ebene n={5} id="geschichte" titel="Was wurde schon versucht?" sub="Reformen und was dabei herauskam" frageId={frage.id}>
+              <ol class="relative border-l border-line ml-1.5 space-y-5 mb-8">
+                {d.geschichte.ereignisse.map((e) => (
+                  <li class="pl-5 relative">
+                    <span class="absolute -left-[5px] top-[0.45rem] size-[9px] rounded-full bg-accent" aria-hidden="true" />
+                    <div class="text-sm font-semibold text-accent tabular-nums">{e.jahr}</div>
+                    <div class="font-semibold leading-snug">{e.titel}</div>
+                    <p class="text-muted mt-0.5">
+                      <span class="prose-k" set:html={md(e.text)} />
+                      <SourceRefs ids={e.quellen} nums={nums} />
+                    </p>
+                  </li>
+                ))}
+              </ol>
+              {d.geschichte.bilanz.length > 0 && (
+                <>
+                  <h3 class="serif text-xl font-semibold mb-4">Bilanz</h3>
+                  <AussageListe items={d.geschichte.bilanz} nums={nums} />
+                </>
+              )}
+            </Ebene>
+          )
+        }
+
+        <!-- Ebene 6 -->
+        {
+          d.laender && ebenen[5]!.da && (
+            <Ebene n={6} id="andere-laender" titel="Wie machen es andere Länder?" sub="Und lässt sich das übertragen?" frageId={frage.id}>
+              <div class="mb-8">
+                {d.laender.beispiele.map((l) => (
+                  <section class="py-5 first:pt-0 border-b border-line last:border-b-0">
+                    <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
+                      <h3 class="serif text-xl font-semibold">{l.land}</h3>
+                      <span class="text-xs font-semibold text-muted whitespace-nowrap">
+                        <span class="inline-flex gap-0.5 mr-1.5 align-middle" aria-hidden="true">
+                          {[1, 2, 3].map((k) => (
+                            <span
+                              class="size-1.5 rounded-full"
+                              style={`background: ${k <= vergleichbarkeitPunkte[l.vergleichbarkeit] ? 'var(--accent)' : 'var(--line)'}`}
+                            />
+                          ))}
+                        </span>
+                        {vergleichbarkeitLabel[l.vergleichbarkeit]}
+                      </span>
+                    </div>
+                    <div class="text-sm font-medium text-muted mb-1.5">{l.ansatz}</div>
+                    <p>
+                      <span class="prose-k" set:html={md(l.text)} />
+                      <SourceRefs ids={l.quellen} nums={nums} />
+                    </p>
+                    <p class="text-sm text-muted mt-2">
+                      <span class="font-semibold text-ink">Übertragbar?</span> {l.vergleichbarkeit_text}
+                    </p>
+                  </section>
+                ))}
+              </div>
+              {d.laender.diagramme.length > 0 && (
+                <div class="grid gap-8 mb-8">
+                  {d.laender.diagramme.map((g) => (
+                    <BarChart {...g} nums={nums} />
+                  ))}
+                </div>
+              )}
+              {d.laender.fazit.length > 0 && <AussageListe items={d.laender.fazit} nums={nums} />}
+            </Ebene>
+          )
+        }
+
+        <!-- Ebene 7 -->
+        <Ebene n={7} id="quellen" titel="Quellen" sub={`${d.quellen.length} Belege für diese Frage`} frageId={frage.id}>
+          <ol class="space-y-2.5">
+            {
+              quellenSortiert.map((q) => (
+                <li id={`quelle-${q.id}`} class="grid grid-cols-[2.25rem_1fr] scroll-mt-28 target:bg-accent-soft rounded-md">
+                  <span class="text-faint tabular-nums">[{nums.get(q.id)}]</span>
+                  <span class="min-w-0">
+                    {q.url ? (
+                      <a href={q.url} class="link" target="_blank" rel="noopener">
+                        {q.titel}
+                      </a>
+                    ) : (
+                      q.titel
+                    )}
+                    <span class="text-muted">
+                      {' '}
+                      – {q.herausgeber}, {q.jahr}
+                    </span>
+                    <span class="block text-xs text-faint">{artLabel[q.art]}</span>
+                  </span>
+                </li>
+              ))
+            }
+          </ol>
+        </Ebene>
+      </div>
+
       {
-        next && (
-          <a href={frageUrl(next.id)} class="card p-3 no-underline hover:border-faint text-right">
-            <span class="text-faint">Nächste Frage →</span>
-            <span class="block font-medium leading-snug">{next.data.titel}</span>
-          </a>
+        verknuepft.length > 0 && (
+          <section class="mt-12">
+            <h2 class="kicker mb-3">Hängt zusammen mit</h2>
+            <ul class="border-t border-line">
+              {verknuepft.map((v) => (
+                <li class="border-b border-line">
+                  <a href={frageUrl(v.frage)} class="group block py-3.5 no-underline">
+                    <span class="block font-semibold group-hover:text-accent">{v.f!.data.titel} →</span>
+                    <span class="block text-sm text-muted">{v.grund}</span>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </section>
         )
       }
-    </nav>
-  </article>
+
+      <div class="mt-12">
+        <AntwortBox client:visible frage={kurz} variante="unten" />
+      </div>
+
+      <nav class="mt-10 grid grid-cols-2 gap-6 text-sm border-t border-line pt-4" aria-label="Weitere Fragen">
+        {
+          prev ? (
+            <a href={frageUrl(prev.id)} class="group no-underline">
+              <span class="kicker">← Vorige Frage</span>
+              <span class="block font-medium leading-snug mt-1 group-hover:text-accent">{prev.data.titel}</span>
+            </a>
+          ) : (
+            <span />
+          )
+        }
+        {
+          next && (
+            <a href={frageUrl(next.id)} class="group no-underline text-right">
+              <span class="kicker">Nächste Frage →</span>
+              <span class="block font-medium leading-snug mt-1 group-hover:text-accent">{next.data.titel}</span>
+            </a>
+          )
+        }
+      </nav>
+    </article>
+  </div>
 </Layout>
 
 <script>
@@ -349,7 +396,7 @@ const artLabel: Record<string, string> = {
 
   const frageId = location.pathname.split('/').filter(Boolean).pop()!;
 
-  // Ebene öffnen, wenn per Anker angesprungen (auch Quellen in der geschlossenen Ebene 6).
+  // Ebene öffnen, wenn per Anker angesprungen (auch Quellen in der geschlossenen letzten Ebene).
   function oeffneZiel() {
     if (!location.hash) return;
     const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
@@ -367,10 +414,75 @@ const artLabel: Record<string, string> = {
     if (details && !details.open) details.open = true;
   });
 
+  const ebenen = [...document.querySelectorAll<HTMLDetailsElement>('details.ebene')];
+
+  // Tiefenleiste: geöffnete Ebenen füllen, aktuelle Ebene hervorheben.
+  let aktiv = 'worum-gehts';
+  function markiere() {
+    for (const d of ebenen) {
+      const offen = d.open;
+      const ist = d.id === aktiv;
+      document.querySelectorAll<HTMLElement>(`[data-ebene-link="${d.id}"]`).forEach((a) => {
+        a.dataset.offen = String(offen);
+        a.dataset.aktiv = String(ist);
+        if (ist) a.setAttribute('aria-current', 'location');
+        else a.removeAttribute('aria-current');
+      });
+      const dot = document.querySelector<HTMLElement>(`[data-dot="${d.id}"]`);
+      if (dot) {
+        dot.style.background = offen ? 'var(--accent)' : 'var(--bg)';
+        dot.style.borderColor = ist || offen ? 'var(--accent)' : 'var(--line)';
+      }
+    }
+    const name = document.querySelector('[data-ebene-name]');
+    const akt = ebenen.find((d) => d.id === aktiv);
+    if (name && akt) name.textContent = `Ebene ${akt.dataset.ebene}: ${akt.querySelector('.ebene-titel')?.textContent ?? ''}`;
+  }
+
   // Erkundete Tiefe merken (nur lokal) – für „Mein Bild“.
-  document.querySelectorAll<HTMLDetailsElement>('details.ebene').forEach((d) => {
+  ebenen.forEach((d) => {
     const n = Number(d.dataset.ebene);
     if (d.open && n === 1) merkeTiefe(frageId, 1);
-    d.addEventListener('toggle', () => d.open && merkeTiefe(frageId, n));
+    d.addEventListener('toggle', () => {
+      if (d.open) merkeTiefe(frageId, n);
+      markiere();
+    });
   });
+
+  // Aktiv ist die oberste Ebene, deren Bereich das obere Drittel des Bildschirms berührt.
+  const imBand = new Set<string>();
+  const beobachter = new IntersectionObserver(
+    (eintraege) => {
+      for (const e of eintraege) {
+        if (e.isIntersecting) imBand.add(e.target.id);
+        else imBand.delete(e.target.id);
+      }
+      const oberste = ebenen.find((d) => imBand.has(d.id));
+      if (!oberste) return;
+      aktiv = oberste.id;
+      markiere();
+    },
+    { rootMargin: '-120px 0px -60% 0px' },
+  );
+  ebenen.forEach((d) => beobachter.observe(d));
+  markiere();
 </script>
+
+<style>
+  .tiefe-punkt[data-offen='true'] {
+    border-color: var(--accent);
+    color: var(--accent);
+  }
+  .tiefe-punkt[data-aktiv='true'] {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+  .tiefe-link[data-offen='true'] {
+    color: var(--ink);
+  }
+  .tiefe-link[data-aktiv='true'] {
+    color: var(--ink);
+    font-weight: 600;
+  }
+</style>

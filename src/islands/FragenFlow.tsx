@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { setzeAntwort, useAntworten } from '../lib/antworten';
 import type { FrageKurz } from '../lib/content';
+import { buchstabe } from '../lib/optionen';
 
 type Props = {
   fragen: FrageKurz[];
@@ -8,7 +9,6 @@ type Props = {
 };
 
 const label = { fakt: 'Fakt', schaetzung: 'Schätzung', wertung: 'Wertung', position: 'Position' } as const;
-const icon = { fakt: '■', schaetzung: '◇', wertung: '◆', position: '●' } as const;
 
 export default function FragenFlow({ fragen, bereiche }: Props) {
   const { antworten, geladen } = useAntworten();
@@ -119,10 +119,15 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
         </h2>
 
         <div class="grid gap-2 mt-5" role="group" aria-label="Antwortmöglichkeiten">
-          {f.optionen.map((o) => (
+          {f.optionen.map((o, i) => (
             <button key={o.id} type="button" class="choice" aria-pressed={wahl === o.id} onClick={() => waehle(o.id)}>
-              <span class="block font-semibold leading-snug">{o.titel}</span>
-              <span class="block text-sm text-muted leading-snug mt-0.5">{o.kurz}</span>
+              <span class="flex items-start gap-3">
+                <span class="opt mt-px">{buchstabe(i)}</span>
+                <span class="min-w-0">
+                  <span class="block font-semibold leading-snug">{o.titel}</span>
+                  <span class="block text-sm text-muted leading-snug mt-0.5">{o.kurz}</span>
+                </span>
+              </span>
             </button>
           ))}
         </div>
@@ -147,15 +152,12 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
         {mehr && (
           <section class="mt-5 rounded-xl bg-surface-2 p-4 sm:p-5" aria-label="Worum geht’s?">
             <h3 class="serif text-lg font-semibold mb-3">Worum geht’s?</h3>
-            <ul class="space-y-3">
+            <ul class="space-y-4">
               {f.erklaerung.map((a, i) => (
-                <li key={i} class="leading-relaxed">
-                  <span class={`badge badge-${a.typ}`}>
-                    <span aria-hidden="true">{icon[a.typ]}</span>
-                    {label[a.typ]}
-                    {a.wer && <span class="badge-wer normal-case tracking-normal font-medium">· {a.wer}</span>}
-                  </span>{' '}
-                  <span class="prose-k" dangerouslySetInnerHTML={{ __html: a.html }} />
+                <li key={i} class={`aussage aussage-${a.typ} leading-relaxed`} title={label[a.typ]}>
+                  <span class="sr-only">{label[a.typ]}: </span>
+                  <span class="aussage-text prose-k" dangerouslySetInnerHTML={{ __html: a.html }} />
+                  {a.typ === 'position' && a.wer && <span class="aussage-wer">— {a.wer}</span>}
                   {a.genau && (
                     <details class="genau mt-1.5 text-sm">
                       <summary class="cursor-pointer text-accent select-none w-fit">Genaue Zahlen</summary>

@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import ClaimBadge from '../components/ClaimBadge.astro';
-import { typErklaerung } from '../lib/content';
+import Legende from '../components/Legende.astro';
 ---
 
 <Layout title="Methodik & Neutralität" description="Wie Klartext Inhalte erstellt, prüft und neutral hält.">
@@ -27,19 +26,9 @@ import { typErklaerung } from '../lib/content';
     </section>
 
     <section>
-      <h2 class="serif text-2xl font-semibold mb-3">Die vier Aussage-Typen</h2>
-      <ul class="card divide-y divide-[var(--line)]">
-        {
-          (['fakt', 'schaetzung', 'wertung', 'position'] as const).map((t) => (
-            <li class="p-4 flex flex-col sm:flex-row sm:items-center gap-2">
-              <span class="sm:w-32 shrink-0">
-                <ClaimBadge typ={t} />
-              </span>
-              <span class="text-[0.95rem]">{typErklaerung[t]}</span>
-            </li>
-          ))
-        }
-      </ul>
+      <h2 class="serif text-2xl font-semibold mb-2">Die vier Aussage-Typen</h2>
+      <p class="text-muted mb-4">Jede Aussage ist am linken Rand markiert – die Form der Linie verrät den Typ.</p>
+      <Legende ausfuehrlich />
       <p class="text-sm text-muted mt-3">
         Fakten und Schätzungen ohne Quelle lassen sich technisch gar nicht veröffentlichen: Die Seite wird dann nicht
         gebaut.

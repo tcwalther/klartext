@@ -2,6 +2,7 @@ import { useState } from 'preact/hooks';
 import { allesLoeschen, useAntworten } from '../lib/antworten';
 import type { FrageKurz, Spannung } from '../lib/content';
 import { PARTEIEN } from '../lib/parteien';
+import { buchstabe } from '../lib/optionen';
 
 type Props = {
   fragen: FrageKurz[];
@@ -33,6 +34,10 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
   const optionTitel = (f: FrageKurz, wahl: string) =>
     wahl === 'unentschieden' ? 'Noch unentschieden' : wahl === 'egal' ? 'Nicht wichtig' : (f.optionen.find((o) => o.id === wahl)?.titel ?? '–');
 
+  const optionBuchstabe = (f: FrageKurz, wahl: string) => {
+    const i = f.optionen.findIndex((o) => o.id === wahl);
+    return i >= 0 ? buchstabe(i) : null;
+  };
   const offen = fragen.filter((f) => antworten[f.id]?.wahl === 'unentschieden');
   const aktiv = spannungen.filter((s) => s.wenn.every((w) => antworten[w.frage]?.wahl === w.option));
   const vertieft = fragen.filter((f) => (tiefen[f.id] ?? 0) >= 2).length;
@@ -73,8 +78,8 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
           { n: offen.length, l: 'noch offen' },
           { n: vertieft, l: 'vertieft gelesen' },
         ].map((k) => (
-          <div class="card p-3 sm:p-4" key={k.l}>
-            <div class="serif text-2xl sm:text-3xl font-semibold tabular-nums">{k.n}</div>
+          <div class="border-t-2 border-ink pt-2" key={k.l}>
+            <div class="serif text-3xl font-semibold tabular-nums">{k.n}</div>
             <div class="text-xs sm:text-sm text-muted leading-tight">{k.l}</div>
           </div>
         ))}
@@ -88,9 +93,9 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
             Manche Antworten ziehen in verschiedene Richtungen. Das ist normal – fast jede politische Position muss
             solche Spannungen auflösen. Genau hier lohnt sich das Gespräch.
           </p>
-          <div class="grid gap-3">
+          <div class="grid gap-7">
             {aktiv.map((s) => (
-              <article class="card p-4 sm:p-5" key={s.id}>
+              <article class="aussage aussage-wertung py-1" key={s.id}>
                 <h3 class="serif text-lg font-semibold leading-snug">{s.titel}</h3>
                 <ul class="mt-2 mb-3 flex flex-wrap gap-1.5 text-xs">
                   {s.wenn.map((w) => {
@@ -120,12 +125,12 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
         <section>
           <h2 class="serif text-2xl font-semibold">Hier bist du noch unentschieden</h2>
           <p class="text-muted mt-1 mb-4">Guter Startpunkt, um tiefer einzusteigen.</p>
-          <ul class="grid gap-2">
+          <ul class="border-t border-line">
             {offen.map((f) => (
-              <li key={f.id}>
-                <a href={`${f.url}#argumente`} class="card p-4 flex items-center gap-3 no-underline hover:border-faint">
+              <li key={f.id} class="border-b border-line">
+                <a href={`${f.url}#argumente`} class="group py-3 flex items-center gap-3 no-underline">
                   <span class="flex-1">
-                    <span class="block font-semibold leading-snug">{f.titel}</span>
+                    <span class="block font-semibold leading-snug group-hover:text-accent">{f.titel}</span>
                     <span class="block text-sm text-muted">
                       {(tiefen[f.id] ?? 0) >= 2 ? `Bis Ebene ${tiefen[f.id]} gelesen` : 'Noch nicht vertieft'}
                     </span>
@@ -143,24 +148,25 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
       {/* Alle Antworten nach Bereich */}
       <section>
         <h2 class="serif text-2xl font-semibold mb-4">Deine Antworten</h2>
-        <div class="grid gap-5">
+        <div class="grid gap-7">
           {bereiche.map((b) => {
             const fs = fragen.filter((f) => f.bereich === b.id);
             return (
               <div key={b.id}>
-                <h3 class="text-sm font-semibold uppercase tracking-wide text-faint mb-2">{b.titel}</h3>
-                <ul class="card divide-y divide-[var(--line)]">
+                <h3 class="kicker mb-1">{b.titel}</h3>
+                <ul class="border-t border-line">
                   {fs.map((f) => {
                     const a = antworten[f.id];
                     return (
-                      <li key={f.id}>
-                        <a href={f.url} class="flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-4 p-3 sm:px-4 no-underline hover:bg-surface-2/60">
-                          <span class="flex-1 text-[0.95rem] leading-snug">{f.titel}</span>
+                      <li key={f.id} class="border-b border-line">
+                        <a href={f.url} class="group flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-4 py-3 no-underline">
+                          <span class="flex-1 text-[0.95rem] leading-snug group-hover:text-accent">{f.titel}</span>
                           <span
-                            class={`text-sm sm:text-right sm:max-w-[45%] ${
+                            class={`inline-flex items-center gap-1.5 text-sm sm:justify-end sm:max-w-[45%] ${
                               !a ? 'text-faint' : a.wahl === 'unentschieden' || a.wahl === 'egal' ? 'text-muted italic' : 'font-semibold'
                             }`}
                           >
+                            {a && optionBuchstabe(f, a.wahl) && <span class="opt opt-klein">{optionBuchstabe(f, a.wahl)}</span>}
                             {a ? optionTitel(f, a.wahl) : 'nicht beantwortet'}
                           </span>
                         </a>

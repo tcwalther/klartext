@@ -94,6 +94,8 @@
   --color-accent-soft: var(--accent-soft);
 }
 
+/* Grundregeln in der base-Ebene, damit Komponenten und Utilities sie überschreiben */
+@layer base {
 html {
   background: var(--bg);
   color: var(--ink);
@@ -155,6 +157,105 @@ a {
   color: var(--accent);
   text-decoration: underline;
   text-underline-offset: 3px;
+}
+}
+
+/*
+ * Aussage-Typen als Randmarkierung (statt Etikett vor jedem Satz):
+ * Fakt = durchgezogen, Schätzung = gestrichelt, Wertung = gepunktet,
+ * Position = Zitat mit Absender. Unterscheidung über Linienform UND Farbe.
+ */
+@layer components {
+  .aussage {
+    position: relative;
+    padding-left: 0.85rem;
+    border-left-width: 3px;
+    border-left-style: solid;
+  }
+  .aussage-fakt {
+    border-left-color: var(--fakt);
+  }
+  .aussage-schaetzung {
+    border-left-style: dashed;
+    border-left-color: var(--schaetzung);
+  }
+  .aussage-wertung {
+    border-left-style: dotted;
+    border-left-color: var(--wertung);
+  }
+  .aussage-position {
+    border-left-color: var(--position);
+  }
+  .aussage-position .aussage-text {
+    font-family: var(--font-serif);
+    font-size: 1.04em;
+  }
+  .aussage-wer {
+    display: block;
+    margin-top: 0.15rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--position);
+    letter-spacing: 0.01em;
+  }
+  /* Legende: kurze Musterlinie */
+  .marker-muster {
+    display: inline-block;
+    width: 0;
+    height: 1.05em;
+    border-left-width: 3px;
+    border-left-style: solid;
+    vertical-align: -0.15em;
+    margin-right: 0.4rem;
+  }
+
+  /* Optionsbuchstabe A/B/C/D – neutral, ohne Farbe, zieht sich durch alle Ebenen */
+  .opt {
+    display: inline-grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 1.45rem;
+    height: 1.45rem;
+    border-radius: 5px;
+    border: 1.5px solid currentColor;
+    font-family: var(--font-sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1;
+    font-style: normal;
+  }
+  .opt-klein {
+    width: 1.15rem;
+    height: 1.15rem;
+    font-size: 0.66rem;
+    border-radius: 4px;
+    border-width: 1.25px;
+  }
+  [aria-pressed='true'] .opt {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: var(--accent-ink);
+  }
+
+  /* Ebenen: tiefer = dichter */
+  details.ebene[data-ebene='4'] .ebene-body,
+  details.ebene[data-ebene='5'] .ebene-body,
+  details.ebene[data-ebene='6'] .ebene-body {
+    font-size: 0.96rem;
+  }
+  details.ebene[data-ebene='7'] .ebene-body {
+    font-size: 0.9rem;
+  }
+
+  /* Kleine Überschrift (Kicker) */
+  .kicker {
+    font-family: var(--font-sans);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--faint);
+  }
 }
 
 /* Komponenten-Klassen in einer Ebene, damit Tailwind-Utilities sie überschreiben können */

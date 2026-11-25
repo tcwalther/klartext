@@ -9,6 +9,6 @@ interface Props {
 const { items, nums, class: cls = '' } = Astro.props;
 ---
 
-<ul class={`space-y-3 ${cls}`}>
+<ul class={`space-y-4 ${cls}`}>
   {items.map((a) => <Aussage a={a} nums={nums} />)}
 </ul>
