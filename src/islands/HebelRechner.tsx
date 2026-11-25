@@ -37,7 +37,7 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
   const ueberschuss = summe - ziel.wert;
 
   return (
-    <section class="rounded-xl border border-line bg-surface p-4 sm:p-5" aria-label={titel}>
+    <section class="rounded-xl border border-line bg-surface p-3 sm:p-5" aria-label={titel}>
       <h3 class="serif text-lg font-semibold leading-snug">{titel}</h3>
       <p class="text-sm text-muted mt-1">
         {ziel.label}: <strong class="text-ink">rund {fmt.format(ziel.wert)} {einheit}</strong> (Stand {ziel.stand})
@@ -83,7 +83,7 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
         {massnahmen.map((m) => {
           const w = wahl[m.id] ?? -1;
           return (
-            <li key={m.id} class="rounded-lg border border-line p-3">
+            <li key={m.id} class="rounded-lg border border-line p-2.5 sm:p-3">
               <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <span class="font-semibold leading-snug">{m.titel}</span>
                 {m.optionTitel && (

@@ -129,7 +129,7 @@ const artLabel: Record<string, string> = {
         <div class="grid gap-4">
           {
             d.optionen.map((o) => (
-              <section class="rounded-xl border border-line p-4 bg-bg/40" id={`option-${o.id}`}>
+              <section class="rounded-xl border border-line p-3 sm:p-4 bg-bg/40" id={`option-${o.id}`}>
                 <h3 class="serif text-lg font-semibold">{o.titel}</h3>
                 <p class="text-sm text-muted mb-3">{o.kurz}</p>
                 <div class="grid sm:grid-cols-2 gap-4">
@@ -232,7 +232,7 @@ const artLabel: Record<string, string> = {
           <Ebene n={6} id="andere-laender" titel="Wie machen es andere Länder?" sub="Und lässt sich das übertragen?" frageId={frage.id}>
             <div class="grid gap-3 mb-4">
               {d.laender.beispiele.map((l) => (
-                <section class="rounded-xl border border-line p-4">
+                <section class="rounded-xl border border-line p-3 sm:p-4">
                   <div class="flex flex-wrap items-baseline justify-between gap-2">
                     <h3 class="serif text-lg font-semibold">{l.land}</h3>
                     <span

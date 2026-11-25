@@ -11,7 +11,7 @@ interface Props {
 const { label, wert, stand, quelle, hinweis, nums } = Astro.props;
 ---
 
-<div class="card p-4 flex flex-col gap-1">
+<div class="card p-3 sm:p-4 flex flex-col gap-1">
   <div class="text-sm text-muted leading-snug">{label}</div>
   <div class:list={['serif font-semibold leading-tight', wert.length > 16 ? 'text-lg' : 'text-2xl']}>
     {wert}{nums && <SourceRefs ids={[quelle]} nums={nums} />}

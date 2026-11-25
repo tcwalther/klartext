@@ -8,7 +8,8 @@ export default defineConfig({
   use: { baseURL: 'http://localhost:4321', trace: 'off', launchOptions },
   projects: [
     { name: 'mobil', use: { ...devices['Pixel 7'], launchOptions } },
+    { name: 'mobil-schmal', use: { ...devices['Galaxy S9+'], viewport: { width: 360, height: 740 }, launchOptions } },
     { name: 'desktop', use: { viewport: { width: 1280, height: 900 }, launchOptions } },
   ],
-  webServer: { command: 'npx astro preview --port 4321 --ignore-lock', url: 'http://localhost:4321', reuseExistingServer: true },
+  webServer: { command: 'npx astro preview --port 4321 --ignore-lock', url: 'http://localhost:4321', reuseExistingServer: false },
 });

@@ -153,7 +153,7 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
                   <span class={`badge badge-${a.typ}`}>
                     <span aria-hidden="true">{icon[a.typ]}</span>
                     {label[a.typ]}
-                    {a.wer && <span class="normal-case tracking-normal font-medium">· {a.wer}</span>}
+                    {a.wer && <span class="badge-wer normal-case tracking-normal font-medium">· {a.wer}</span>}
                   </span>{' '}
                   <span class="prose-k" dangerouslySetInnerHTML={{ __html: a.html }} />
                   {a.genau && (

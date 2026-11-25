@@ -9,5 +9,5 @@ const icon: Record<AussageTyp, string> = { fakt: '■', schaetzung: '◇', wertu
 ---
 
 <span class={`badge badge-${typ}`} title={typErklaerung[typ]}>
-  <span aria-hidden="true">{icon[typ]}</span>{typLabel[typ]}{wer && <span class="normal-case tracking-normal font-medium">· {wer}</span>}
+  <span aria-hidden="true">{icon[typ]}</span>{typLabel[typ]}{wer && <span class="badge-wer normal-case tracking-normal font-medium">· {wer}</span>}
 </span>
