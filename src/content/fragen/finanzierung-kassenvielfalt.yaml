@@ -1,0 +1,615 @@
+bereich: finanzierung
+reihenfolge: 3
+status: entwurf
+stand: "2026-11-25"
+titel: Wie viele Krankenkassen braucht es – und wie viel Wettbewerb zwischen ihnen?
+frage: Sollen die gesetzlichen Krankenkassen stärker miteinander konkurrieren, so vielfältig bleiben wie heute, deutlich weniger werden oder zu einer einzigen Kasse zusammengelegt werden?
+
+optionen:
+  - id: mehr-wettbewerb
+    titel: Mehr Wettbewerb wagen
+    kurz: Kassen bekommen mehr Freiheit, eigene Verträge mit Ärzten und Kliniken zu schließen, Tarife zu gestalten und Leistungen anzubieten.
+    pro:
+      - typ: position
+        wer: Monopolkommission
+        text: "Ein vom Versicherten wahrnehmbarer Wettbewerb bestehe bisher vor allem über Service und Zusatzleistungen. Auf der Einkaufsseite blieben dagegen „einheitliche und wettbewerbslose Vergütungs- und Versorgungsstrukturen“ erhalten. Die Kassen sollten mehr Freiheiten bekommen, um Qualität individuell umzusetzen."
+        quellen: [monopolkommission-sg75-2017]
+      - typ: wertung
+        text: "Heute verhandeln die Kassen die meisten Preise und Honorare gemeinsam und einheitlich. Ob eine Praxis oder Klinik besonders gut oder besonders teuer arbeitet, ändert deshalb kaum etwas an ihrem Geld. Dürften Kassen gezielt mit besonders guten Anbietern Verträge schließen, könnte Wettbewerb um Qualität entstehen – nicht nur um den Preis."
+      - typ: position
+        wer: Techniker Krankenkasse
+        text: "„Unser Gesundheitssystem benötigt vor allem mehr Wettbewerb – gesteuert durch die soziale Selbstverwaltung.“ Mehr Möglichkeiten brauche es beim Wettbewerb zwischen den Kassen und um gute Verträge mit Leistungserbringern und Industrie."
+        quellen: [tk-mehr-wettbewerb-2026]
+      - typ: position
+        wer: GKV-Spitzenverband
+        text: "Für eine nachhaltige Reform der Finanzierung brauche es „eine Rückbesinnung auf die Gestaltungsprinzipien der Selbstverwaltung und des Wettbewerbs“. Wettbewerb setze Anreize für mehr Wirtschaftlichkeit bei Kassen und Anbietern."
+        quellen: [gkv-sv-stellungnahme-fk-2025]
+    contra:
+      - typ: wertung
+        text: "Je mehr Kassen bei Leistungen und Tarifen selbst entscheiden dürfen, desto größer ist der Anreiz, Angebote so zu gestalten, dass vor allem Gesunde und Gutverdienende kommen. Der Finanzausgleich zwischen den Kassen müsste dann immer genauer werden – und bleibt doch unvollkommen."
+      - typ: fakt
+        text: "Selektivverträge sparen nicht automatisch Geld. Die FinanzKommission Gesundheit stellte gerade dort hohe Ausgabensteigerungen fest: Die sonstigen ambulanten Ausgaben, zu denen die hausarztzentrierte Versorgung gehört, wuchsen in zehn Jahren auf das Zweieinhalbfache."
+        genau: "Sonstige Ausgaben (u. a. Hochschulambulanzen, hausarztzentrierte Versorgung, ambulante spezialfachärztliche Versorgung): +153 % von 2015 bis 2025."
+        quellen: [finanzkommission-bericht-voll-2026]
+      - typ: wertung
+        text: "Wenn Leistungen und Arztnetze von der Kasse abhängen, hängt auch die Versorgung davon ab, bei welcher Kasse man ist. Für Versicherte wird es schwerer, Angebote zu vergleichen – und wer krank ist, kann nicht beliebig wechseln."
+      - typ: position
+        wer: Verbraucherzentrale Bundesverband (vzbv)
+        text: "Bislang fehle ein unabhängiges, öffentlich zugängliches Vergleichsportal für Krankenkassen. Ohne Transparenz können Versicherte Unterschiede kaum erkennen."
+        quellen: [vzbv-vergleichsportal-2025]
+    gewinnt: [Kassen mit eigenen Versorgungsideen, Anbieter mit guter Qualität, Versicherte, die Angebote vergleichen]
+    kostet: [Einheitlichkeit des Leistungsanspruchs, Übersichtlichkeit, möglicherweise chronisch Kranke]
+
+  - id: vielfalt-wie-bisher
+    titel: Vielfalt wie bisher
+    kurz: Viele Kassen mit weitgehend gleichem Leistungskatalog konkurrieren vor allem über Zusatzbeitrag und Service; die Zahl ergibt sich aus freiwilligen Fusionen.
+    pro:
+      - typ: fakt
+        text: "Größe allein macht Kassen nicht sparsamer. Die FinanzKommission Gesundheit fand keinen eindeutigen Zusammenhang zwischen der Größe einer Kasse und ihren Verwaltungsausgaben je Versicherten. Den stärksten Anreiz zum Sparen setze der Preiswettbewerb über den Zusatzbeitrag."
+        quellen: [finanzkommission-bericht-voll-2026]
+      - typ: fakt
+        text: "Der Konzentrationsprozess läuft ohnehin: Die 20 größten Kassen versichern schon heute etwa fünf von sechs Mitgliedern. Die vielen kleinen Kassen sind vor allem Betriebskrankenkassen, die oft nur in einer Region oder für einen Betrieb offen sind."
+        genau: "20 größte Kassen: 84 % der GKV-Mitglieder. Marktanteil der fünf größten Kassen je Bundesland: 68–85 % (1. Juli 2025)."
+        quellen: [finanzkommission-bericht-voll-2026]
+      - typ: position
+        wer: AOK-Bundesverband
+        text: Die Debatte um eine politisch verordnete Reduzierung der Kassenzahl sei eine „Scheindebatte“, die kaum Einsparungen bringe. „Wir sollten auf den Wettbewerb setzen.“
+        quellen: [aok-reimann-2026]
+      - typ: wertung
+        text: "Wer mit Service oder Beitrag unzufrieden ist, kann wechseln. Diese Wahl übt Druck auf jede einzelne Kasse aus, ohne dass der Leistungsanspruch von der Kasse abhängt."
+    contra:
+      - typ: fakt
+        text: "Jede Kasse braucht eigenen Vorstand, eigene Verwaltungsräte, eigene IT und eigenes Marketing. Bisher durften Kassen bis zu rund 6 € je Mitglied und Jahr für Werbung ausgeben – Geld, das Mitglieder nur zwischen den Kassen verschiebt. Das Spargesetz von 2026 halbiert diese Grenze."
+        quellen: [bt-drs-21-6130]
+      - typ: position
+        wer: Hausärztinnen- und Hausärzteverband
+        text: Die Kassen müssten den Rotstift bei sich selbst ansetzen und ihre Verwaltungskosten mittelfristig „dringend halbieren“.
+        quellen: [aerzteblatt-kassenzahl-2026]
+      - typ: wertung
+        text: "Weil fast alle Leistungen gesetzlich vorgegeben sind, unterscheiden sich die Kassen für die meisten Versicherten nur im Beitrag. Ein Wettbewerb, der sich fast nur um den Preis dreht, verbessert die Versorgung kaum."
+    gewinnt: [Wahlfreiheit der Versicherten, Selbstverwaltung der Kassen, Planbarkeit]
+    kostet: [Verwaltungskosten mehrfacher Strukturen, Werbeausgaben]
+
+  - id: weniger-kassen
+    titel: Weniger Kassen
+    kurz: Die Politik fördert Fusionen, etwa über eine Mindestgröße, und begrenzt die Verwaltungskosten stärker.
+    pro:
+      - typ: fakt
+        text: "Für bestimmte Verwaltungsabläufe gibt es Größenvorteile. Selbst der GKV-Spitzenverband räumt ein, dass größere Fallzahlen „gewisse Größen- und damit Kostenvorteile“ bringen können."
+        quellen: [gkv-sv-fokus-verwaltung]
+      - typ: position
+        wer: Bundesvereinigung der Deutschen Arbeitgeberverbände (BDA)
+        text: "Die Verwaltungsausgaben seien in ihrer absoluten Höhe „erheblich“, und es bestünden „durchaus Effizienzpotenziale“. Die FinanzKommission solle weitere Vorschläge zur Begrenzung vorlegen."
+        quellen: [bda-bstabg-2026]
+      - typ: wertung
+        text: "Kleine Kassen sind anfälliger: Wenige teure Behandlungsfälle können ihre Finanzen stärker durcheinanderbringen. Größere Kassen können solche Schwankungen besser abfedern und haben mehr Gewicht in Verhandlungen."
+      - typ: wertung
+        text: "Weniger Kassen bedeuten weniger parallele Vorstände, Rechenzentren und Werbebudgets. Der Wettbewerb über den Zusatzbeitrag bleibt erhalten, solange es mehrere Kassen gibt."
+    contra:
+      - typ: position
+        wer: GKV-Spitzenverband
+        text: "Bei Fusionen bleibe die Zahl der Versicherten und damit der Betreuungsbedarf gleich. Die Erfahrung zeige, dass sich die Verwaltungskosten dadurch nur in begrenztem Umfang senken ließen."
+        quellen: [gkv-sv-fokus-verwaltung]
+      - typ: fakt
+        text: "Verwaltung ist ein kleiner Teil der Ausgaben: knapp 4 von 100 Euro. Selbst eine deutliche Senkung bringt wenig im Vergleich zur Lücke, die durch steigende Ausgaben für Behandlungen entsteht."
+        genau: "Netto-Verwaltungskosten 2024: 12,63 Mrd. € = 3,86 % der Gesamtausgaben. Zwischen 2014 und 2024 stiegen die Verwaltungskosten um 26 %, die Leistungsausgaben um 61 %."
+        quellen: [gkv-sv-fokus-verwaltung]
+      - typ: position
+        wer: Techniker Krankenkasse
+        text: "Politisch initiierte Fusionen seien problematisch und teuer. „Es ist an den GKV-Mitgliedern zu entscheiden, wie viele Krankenkassen Deutschland braucht.“"
+        quellen: [tk-mehr-wettbewerb-2026]
+      - typ: wertung
+        text: "Fusionen kosten zunächst Geld: Systeme müssen zusammengelegt, Personal umgesetzt, Verträge angeglichen werden. Die Einsparungen kommen – wenn überhaupt – erst Jahre später."
+    gewinnt: [Beitragszahlende, falls Verwaltung sinkt, Verhandlungsmacht der Kassen]
+    kostet: [Auswahl für Versicherte, kleine und betriebsnahe Kassen, Beschäftigte der Kassen]
+
+  - id: einheitskasse
+    titel: Eine Kasse für alle
+    kurz: Alle gesetzlich Versicherten sind in einer einzigen Kasse, gegebenenfalls mit regionalen Untergliederungen; Wettbewerb zwischen Kassen gibt es nicht mehr.
+    pro:
+      - typ: position
+        wer: Sozialverband VdK
+        text: Die Beiträge sollten nicht Verwaltungsapparate in 93 Krankenkassen finanzieren. Ziel solle „eine gesetzliche Krankenkasse mit regionalen Untergliederungen“ sein. „Grundsätzlich sollte der Wettbewerb unter den gesetzlichen Krankenkassen abgeschafft werden.“
+        quellen: [vdk-bstabg-2026]
+      - typ: wertung
+        text: "Mit nur einer Kasse gibt es keinen Anreiz mehr, um gesunde Versicherte zu werben. Der aufwendige Finanzausgleich zwischen den Kassen, Werbung und Wechselverwaltung würden überflüssig."
+      - typ: wertung
+        text: "Eine einzige Kasse verhandelt mit Ärzten, Kliniken und Herstellern aus einer Hand. Das stärkt ihre Verhandlungsmacht und sorgt dafür, dass überall dieselben Regeln gelten."
+    contra:
+      - typ: fakt
+        text: "Das naheliegende Beispiel spricht bisher nicht für Einsparungen: Österreich hat 2020 neun Gebietskrankenkassen zur Österreichischen Gesundheitskasse zusammengelegt. Statt der angekündigten Einsparung von einer Milliarde Euro errechnete der Rechnungshof Mehrkosten."
+        genau: "Rechnungshof Österreich: Mehraufwand von 214,95 Mio. € (2020–2023) gegenüber einem Szenario ohne Fusion; selbst bei vorsichtiger Rechnung 34,78 bis 134,10 Mio. €."
+        quellen: [rechnungshof-at-2022]
+      - typ: position
+        wer: Techniker Krankenkasse
+        text: Eine Einheitskasse käme „in die Behördenfalle“ – ohne Veränderungsdruck drohten mangelnde Digitalisierung, schlechte Prozesse und fehlende Kundenorientierung.
+        quellen: [tk-mehr-wettbewerb-2026]
+      - typ: position
+        wer: Deutscher Gewerkschaftsbund (DGB)
+        text: Die behaupteten Einsparungen seien „hypothetisch“; das Beispiel Österreich zeige, dass selbst die Zusammenlegung zu einer einzigen Kasse keine realen Kostenvorteile gebracht habe. Eine Zentralisierung würde vor allem die Selbstverwaltung schwächen.
+        quellen: [dgb-bstabg-2026]
+      - typ: wertung
+        text: "Wer mit seiner Kasse unzufrieden ist, kann nicht mehr ausweichen. Fehler oder schlechter Service treffen dann alle gesetzlich Versicherten zugleich."
+    gewinnt: [Einheitliche Regeln für alle, Verhandlungsmacht gegenüber Anbietern, Wegfall von Werbung und Risikoauswahl]
+    kostet: [Wahlfreiheit, Wettbewerbsdruck auf die Kasse, Selbstverwaltung in heutiger Form]
+
+erklaerung:
+  - typ: fakt
+    text: "Es gibt heute rund 90 gesetzliche Krankenkassen. Vor gut 50 Jahren waren es etwa zwanzigmal so viele – die meisten sind durch Fusionen verschwunden."
+    genau: "1970: 1.815 Kassen. Oktober 2026: 93 Kassen (11 AOK, 68 Betriebskrankenkassen, 6 Innungskrankenkassen, 6 Ersatzkassen, je 1 Landwirtschaftliche Krankenkasse und Knappschaft)."
+    quellen: [gkv-sv-kassen, bmg-km1-2026]
+  - typ: fakt
+    text: "Seit 1996 dürfen fast alle Versicherten ihre Kasse frei wählen. Vorher bestimmten vor allem Beruf und Arbeitgeber, wo man versichert war."
+    quellen: [bpb-gegliedert-2017]
+  - typ: fakt
+    text: "Was eine Kasse zahlen muss, legen Gesetz und Gemeinsamer Bundesausschuss für alle gleich fest. Deshalb konkurrieren die Kassen vor allem über den Preis: Der teuerste Zusatzbeitrag ist etwa doppelt so hoch wie der günstigste."
+    genau: "Spanne der Zusatzbeiträge Januar 2026: 2,18 % bis 4,39 % (92 Kassen ohne Landwirtschaftliche Krankenkasse); Durchschnitt 3,13 %."
+    quellen: [vdek-basisdaten-2026, monopolkommission-sg75-2017]
+  - typ: fakt
+    text: "Damit Kassen nicht um Gesunde konkurrieren, bekommen sie aus dem Gesundheitsfonds mehr Geld für ältere und kranke Versicherte. Dieser **Risikostrukturausgleich** berücksichtigt seit 2009 Krankheiten und seit 2021 alle Krankheitsgruppen."
+    quellen: [gkv-sv-gesundheitsfonds-rsa]
+  - typ: fakt
+    text: "Die Verwaltung der Kassen kostet knapp 4 von 100 Euro. Der Anteil sinkt seit Jahren, weil die Verwaltungskosten langsamer wachsen als die Ausgaben für Behandlungen."
+    genau: "Netto-Verwaltungskosten 2024: 12,63 Mrd. € (3,86 % der Ausgaben), 169,54 € je Versicherten. 2014–2024: Verwaltung +26 %, Leistungsausgaben +61 %."
+    quellen: [gkv-sv-fokus-verwaltung]
+
+zusammenhaenge:
+  erklaerung:
+    - typ: fakt
+      text: "Der Wettbewerb funktioniert über einen Umweg: Alle Kassen bekommen aus dem Gesundheitsfonds Geld je Versicherten, angepasst an Alter, Geschlecht, Krankheiten und Wohnort. Reicht das Geld nicht, muss die Kasse einen höheren Zusatzbeitrag nehmen – und riskiert, dass Mitglieder wechseln. Wer sparsam wirtschaftet, kann günstiger sein."
+      quellen: [gkv-sv-gesundheitsfonds-rsa, finanzkommission-bericht-voll-2026]
+    - typ: fakt
+      text: "Auch die Verwaltung wird pauschal bezahlt: Kassen bekommen Zuweisungen für standardisierte Verwaltungsausgaben, die nur im Durchschnitt die tatsächlichen Kosten decken. Eine Kasse mit teurer Verwaltung muss den Rest über den Zusatzbeitrag hereinholen."
+      quellen: [finanzkommission-bericht-voll-2026]
+    - typ: fakt
+      text: "Beim Einkauf von Versorgung ist der Spielraum klein. Satzungsleistungen erweitern den Leistungskatalog nur in geringem Maß, und die meisten Verträge mit Ärzten und Kliniken gelten für alle Kassen gemeinsam. Mehr Wettbewerb hieße vor allem, diesen Bereich zu öffnen."
+      quellen: [monopolkommission-sg75-2017]
+  kette:
+    - titel: Was für alle Kassen gleich ist
+      punkte:
+        - label: Leistungskatalog
+          text: Gesetz und Gemeinsamer Bundesausschuss legen fest, was bezahlt wird.
+        - label: Gemeinsame Verträge
+          text: Honorare für Praxen und Preise für Kliniken werden weitgehend einheitlich verhandelt.
+        - label: Gesundheitsfonds
+          text: Alle Beiträge fließen in einen Topf und werden nach Risiko verteilt.
+    - titel: Wo Kassen sich unterscheiden dürfen
+      punkte:
+        - label: Zusatzbeitrag
+          text: Der wichtigste Unterschied für Versicherte.
+        - label: Service und Satzungsleistungen
+          text: Erreichbarkeit, Apps, Extras wie zusätzliche Vorsorge oder Osteopathie.
+        - label: Selektivverträge und Wahltarife
+          text: Eigene Verträge mit Ärzten oder Netzen, Hausarzttarife, Selbstbehalt-Tarife.
+    - titel: Welche Anreize entstehen
+      punkte:
+        - label: Sparsam wirtschaften
+          text: Niedrige Kosten erlauben einen niedrigen Zusatzbeitrag.
+        - label: Risikoauswahl
+          text: Gesunde Versicherte sind attraktiver – der Finanzausgleich soll das neutralisieren.
+        - label: Werbung
+          text: Kassen werben um Mitglieder; das Geld verschiebt Versicherte, verbessert aber nicht die Versorgung.
+    - titel: Stellschrauben
+      punkte:
+        - label: Mehr Vertragsfreiheit
+          text: Kassen dürfen eigene Wege in der Versorgung gehen.
+        - label: Finanzausgleich
+          text: Je genauer er ist, desto weniger lohnt Risikoauswahl.
+        - label: Mindestgröße und Fusionen
+          text: Weniger, größere Kassen.
+        - label: Eine Kasse
+          text: Wettbewerb zwischen Kassen entfällt ganz.
+
+zielkonflikte:
+  - typ: wertung
+    text: "**Wahlfreiheit gegen schlanke Verwaltung:** Viele Kassen bedeuten Auswahl, aber auch viele parallele Strukturen. Eine einzige Kasse spart Doppelstrukturen, nimmt aber jede Ausweichmöglichkeit."
+  - typ: wertung
+    text: "**Gestaltungsfreiheit gegen gleichen Anspruch:** Je mehr Kassen selbst entscheiden dürfen, desto mehr hängt die Versorgung davon ab, bei welcher Kasse man ist."
+  - typ: wertung
+    text: "**Wettbewerb gegen Solidarität:** Wettbewerb belohnt Effizienz, aber auch das Werben um gesunde Versicherte. Der Finanzausgleich soll beides trennen – vollständig gelingt das nie."
+  - typ: wertung
+    text: "**Verhandlungsmacht gegen Monopol:** Große Kassen oder eine Einheitskasse verhandeln stärker mit Anbietern. Ohne Konkurrenz fehlt aber der Druck, gut und sparsam zu arbeiten."
+
+daten:
+  kennzahlen:
+    - label: Gesetzliche Krankenkassen
+      wert: "93"
+      stand: Oktober 2026
+      quelle: bmg-km1-2026
+      hinweis: "1970 waren es 1.815."
+    - label: Netto-Verwaltungskosten je Versicherten
+      wert: 169,54 €
+      stand: "2024"
+      quelle: bmg-kennzahlen-gkv-2025
+      hinweis: Insgesamt 12,63 Mrd. € bzw. 3,86 % der Ausgaben.
+    - label: Spanne der Zusatzbeiträge
+      wert: 2,18 % bis 4,39 %
+      stand: Januar 2026
+      quelle: vdek-basisdaten-2026
+    - label: Anteil der 20 größten Kassen an allen Mitgliedern
+      wert: 84 %
+      stand: "2025/2026"
+      quelle: finanzkommission-bericht-voll-2026
+    - label: Versicherte je Beschäftigtem einer Kasse
+      wert: "563"
+      stand: "2024"
+      quelle: finanzkommission-bericht-voll-2026
+      hinweis: "2004 waren es 487 – vor allem durch Digitalisierung."
+    - label: Höchstgrenze für Werbeausgaben
+      wert: rund 3 € je Mitglied und Jahr
+      stand: ab 2027
+      quelle: bt-drs-21-6130
+      hinweis: Bisher rund 6 €.
+  diagramme:
+    - titel: Zahl der gesetzlichen Krankenkassen
+      einheit: Kassen
+      stand: 1970–2026
+      quelle: vdek-basisdaten-2026
+      hinweis: "Darstellung des vdek nach Daten des BMG, jeweils zum Jahresbeginn. Andere Auswertungen kommen wegen abweichender Stichtage zu leicht anderen Werten, etwa 1.223 Kassen für 1992."
+      werte:
+        - label: "1970"
+          wert: 1815
+        - label: "1980"
+          wert: 1319
+        - label: "1990"
+          wert: 1147
+        - label: "1995"
+          wert: 960
+        - label: "2000"
+          wert: 420
+        - label: "2005"
+          wert: 267
+        - label: "2010"
+          wert: 169
+        - label: "2015"
+          wert: 122
+        - label: "2020"
+          wert: 105
+        - label: "2026"
+          wert: 93
+          hervorheben: true
+    - titel: Netto-Verwaltungskosten der Krankenkassen je Versicherten
+      einheit: Euro pro Jahr
+      stand: 2013–2024
+      quelle: bmg-kennzahlen-gkv-2025
+      hinweis: Nicht inflationsbereinigt. Zum Vergleich stiegen die Leistungsausgaben je Versicherten im selben Zeitraum von 2.616 € auf 4.192 €.
+      werte:
+        - label: "2013"
+          wert: 142.17
+        - label: "2016"
+          wert: 153.78
+        - label: "2018"
+          wert: 158.11
+        - label: "2020"
+          wert: 161.15
+        - label: "2022"
+          wert: 167.92
+        - label: "2024"
+          wert: 169.54
+          hervorheben: true
+  aussagen:
+    - typ: fakt
+      text: "Der Anteil der Verwaltungskosten an den Einnahmen der GKV sank zwischen 2019 und 2024 von 4,4 % auf 3,9 %. Bei der privaten Krankenversicherung lagen die Abschluss- und Verwaltungskosten 2024 bei 9,5 % der Einnahmen."
+      quellen: [vdek-basisdaten-2026]
+      unsicherheit: "Bei der PKV sind Abschlusskosten (etwa Provisionen) enthalten; die Werte sind daher nur eingeschränkt vergleichbar."
+    - typ: position
+      wer: Hausärztinnen- und Hausärzteverband
+      text: In der hausarztzentrierten Versorgung, einer Form von Selektivvertrag, seien mehr als elf Millionen Versicherte eingeschrieben.
+      quellen: [hib-hzv-2026]
+
+geschichte:
+  ereignisse:
+    - jahr: "1883"
+      titel: Gesetzliche Krankenversicherung entsteht
+      text: Unter Reichskanzler Bismarck wird die Krankenversicherung für Arbeiter eingeführt. Rund jeder Zehnte ist anfangs pflichtversichert. Es entstehen viele Kassen nach Ort, Betrieb und Beruf.
+      quellen: [bmg-geschichte-gkv]
+    - jahr: "1970"
+      titel: Über 1.800 Kassen
+      text: In der Bundesrepublik gibt es 1.815 Krankenkassen. Wer wo versichert ist, hängt meist von Beruf, Betrieb oder Wohnort ab.
+      quellen: [gkv-sv-kassen]
+    - jahr: "1994"
+      titel: Risikostrukturausgleich
+      text: Ein Finanzausgleich zwischen den Kassen gleicht Unterschiede bei Alter, Geschlecht und Erwerbsminderung aus. Er soll einen fairen Wettbewerb ermöglichen.
+      quellen: [gkv-sv-gesundheitsfonds-rsa, bas-rsa]
+    - jahr: "1996"
+      titel: Freie Kassenwahl
+      text: Die meisten Versicherten dürfen ihre Kasse nun frei wählen. Die Zahl der Kassen sinkt danach besonders schnell, von rund 960 (1995) auf 420 (2000).
+      quellen: [bpb-gegliedert-2017, vdek-basisdaten-2026]
+    - jahr: "2009"
+      titel: Gesundheitsfonds und Morbi-RSA
+      text: Alle Beiträge fließen in einen gemeinsamen Fonds. Der Finanzausgleich berücksichtigt nun auch Krankheiten, zunächst 80 ausgewählte.
+      quellen: [gkv-sv-gesundheitsfonds-rsa, bmg-rsa]
+    - jahr: "2020"
+      titel: Faire-Kassenwahl-Gesetz
+      text: "Der Finanzausgleich wird umgebaut: Er erfasst alle Krankheiten, berücksichtigt den Wohnort, gleicht sehr teure Einzelfälle über einen Risikopool aus und erschwert Manipulationen bei Diagnosen."
+      quellen: [bmg-rsa]
+    - jahr: "2020"
+      titel: Österreich legt Kassen zusammen
+      text: Neun Gebietskrankenkassen werden zur Österreichischen Gesundheitskasse. Der Rechnungshof stellt später fest, dass die angekündigten Einsparungen nicht darstellbar sind.
+      quellen: [rechnungshof-at-2022]
+    - jahr: "2026"
+      titel: Deckel für Verwaltung und Werbung
+      text: "Das Spargesetz bindet den Anstieg der Verwaltungsausgaben jeder Kasse an die Einnahmenentwicklung und halbiert die Grenze für Werbeausgaben. Die FinanzKommission Gesundheit gibt keine Empfehlung zur Zahl der Kassen ab."
+      quellen: [bt-drs-21-6130, bundesregierung-bstabg-2026, finanzkommission-bericht-voll-2026]
+  bilanz:
+    - typ: fakt
+      text: "Die Zahl der Kassen ist seit 1970 um rund 95 % gesunken, und zwar überwiegend durch freiwillige Fusionen – vor allem in den Jahren nach Einführung der Kassenwahl."
+      quellen: [vdek-basisdaten-2026]
+    - typ: fakt
+      text: "Die Ersparnis durch Begrenzung von Verwaltung und Werbung ist im Vergleich klein: Das Spargesetz rechnet mit rund 0,1 Mrd. € im ersten Jahr – bei einer Finanzlücke von rund 15 Mrd. €."
+      quellen: [bt-drs-21-6130]
+    - typ: wertung
+      text: "Deutschland hat den Wettbewerb zwischen Kassen eingeführt, um Service und Wirtschaftlichkeit zu verbessern. Ob er auch die Versorgung verbessert hat, ist umstritten – und hängt davon ab, wie viel Spielraum die Kassen beim Einkauf von Leistungen tatsächlich haben."
+
+laender:
+  beispiele:
+    - land: Österreich
+      ansatz: Pflichtversicherung ohne Kassenwahl, 2020 zu einer großen Kasse fusioniert
+      text: "Die Versicherten können ihre Kasse nicht wählen; sie wird nach Beruf und Bundesland zugewiesen. 2020 wurden 21 Sozialversicherungsträger auf fünf reduziert, die neun Gebietskrankenkassen bilden seitdem die Österreichische Gesundheitskasse. Angekündigt war eine „Patientenmilliarde“ durch geringere Verwaltungskosten. Der Rechnungshof fand stattdessen Mehrkosten, eine nur teilweise Angleichung der Leistungen und keinen bundesweit einheitlichen Ärztevertrag."
+      vergleichbarkeit: hoch
+      vergleichbarkeit_text: "Österreich hat wie Deutschland eine beitragsfinanzierte Sozialversicherung mit Selbstverwaltung. Allerdings gab es dort schon vorher keinen Wettbewerb zwischen den Kassen; die Fusion zeigt also vor allem, wie schwer eine Zusammenlegung ist, nicht, was der Verzicht auf Wettbewerb bewirkt."
+      quellen: [rechnungshof-at-2022, observatory-at-2018]
+    - land: Schweiz
+      ansatz: Viele private Versicherer in der Grundversicherung, Einheitskasse per Volksabstimmung abgelehnt
+      text: "Die Grundversicherung wird von privaten Versicherern angeboten, 1996 waren es 145, 2025 noch 37. Ihre Verwaltungskosten liegen bei knapp 5 % der Prämien. Eine öffentliche Einheitskasse lehnten die Stimmberechtigten zweimal ab: 2007 mit 71 % und 2014 mit knapp 62 % Nein-Stimmen."
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: "Die Schweiz hat wie Deutschland Wettbewerb zwischen Versicherern mit gleichem Leistungskatalog und Finanzausgleich. Finanziert wird aber über Kopfprämien, und die Versicherer sind privatrechtlich organisiert. Die Abstimmungen zeigen eine Präferenz der Bevölkerung, aber keinen Kostenvergleich."
+      quellen: [bag-kennzahlen-versicherer-2025, fedlex-abstimmung-2014, swissvotes-2007]
+    - land: Niederlande
+      ansatz: Regulierter Wettbewerb privater Versicherer mit viel Vertragsfreiheit
+      text: "Seit 2006 bieten private Versicherer die Pflichtversicherung an, müssen aber jeden aufnehmen. Sie dürfen frei mit Kliniken und Praxen verhandeln. Der Markt ist stark konzentriert: Zehn Konzerne, von denen die vier größten knapp 85 % der Versicherten haben. Jedes Jahr wechseln etwa 6 bis 9 % der Versicherten den Konzern. Das Observatory urteilt, die Verträge richteten sich noch stärker nach Menge und Preis als nach Qualität."
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: "Die Niederlande zeigen, wohin die Option „mehr Wettbewerb“ führen kann: mehr Vertragsfreiheit, aber auch wenige große Anbieter. Der Weg dorthin war ein großer Systemumbau mit Abschaffung der Trennung von gesetzlich und privat."
+      quellen: [nza-zorgverzekeringen-2026, observatory-nl-2024]
+    - land: Frankreich
+      ansatz: Ein großer öffentlicher Träger plus private Zusatzversicherungen
+      text: "Die gesetzliche Krankenversicherung ist weitgehend in einem allgemeinen System zusammengefasst; 2018 wurde auch die eigene Kasse der Selbstständigen in dieses System eingegliedert. Wettbewerb gibt es vor allem bei den Zusatzversicherungen, die fast alle Menschen haben und die gut jeden achten Euro der Behandlungskosten tragen."
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: "Frankreich kommt einer Einheitskasse nahe, verlagert den Wettbewerb aber in die Zusatzversicherung. Diese trägt in Frankreich Kosten, die in Deutschland die GKV übernimmt; ein direkter Vergleich der Verwaltungskosten ist deshalb schwierig."
+      quellen: [assemblee-rsi-2017, drees-complementaire-2026, drees-financement-2025]
+  diagramme:
+    - titel: Anteil der Versicherten, die den Versicherer wechseln (Niederlande)
+      einheit: Prozent der Versicherten
+      stand: 2022–2026
+      quelle: nza-zorgverzekeringen-2026
+      hinweis: Nur Wechsel zwischen Versicherungskonzernen. Zum Vergleich gibt es in Deutschland keine amtliche Wechselstatistik.
+      werte:
+        - label: "2022"
+          wert: 6.9
+        - label: "2023"
+          wert: 8.5
+        - label: "2024"
+          wert: 7.4
+        - label: "2025"
+          wert: 7.0
+        - label: "2026"
+          wert: 6.4
+          hervorheben: true
+  fazit:
+    - typ: wertung
+      text: "Die Beispiele zeigen keine eindeutige Richtung: Österreich hat mit der Zusammenlegung nicht gespart, die Schweiz hält am Wettbewerb fest, die Niederlande zeigen, dass viel Vertragsfreiheit zu wenigen großen Anbietern führen kann, und Frankreich verlagert den Wettbewerb in die Zusatzversicherung."
+    - typ: wertung
+      text: "Ob weniger oder mehr Kassen besser sind, hängt weniger von der Zahl ab als davon, was die Kassen gestalten dürfen."
+
+verknuepft:
+  - frage: finanzierung-kostenanstieg
+    grund: Verwaltung und Wettbewerb der Kassen sind Teil der Debatte, wie die Finanzlücke geschlossen werden kann.
+  - frage: finanzierung-versicherungssystem
+    grund: Eine Einheitskasse für gesetzlich Versicherte ist etwas anderes als eine Bürgerversicherung für alle – beide Fragen hängen aber zusammen.
+  - frage: ambulant-steuerung
+    grund: Hausarzttarife und Selektivverträge sind Werkzeuge, mit denen Kassen die Versorgung unterschiedlich gestalten könnten.
+  - frage: praevention-anreize
+    grund: Bonusprogramme sind eine der wenigen Leistungen, mit denen sich Kassen voneinander unterscheiden.
+
+parteien:
+  - partei: CDU/CSU
+    option: mehr-wettbewerb
+    beleg: Finanzen der gesetzlichen Krankenversicherung zukunftsfest aufstellen. Dazu streben wir mehr Effizienz beim Einsatz von Beitragsgeldern an und stärken den Wettbewerb der Krankenkassen.
+    seite: "68"
+    quelle: wahlprogramm-2025-cdu-csu
+
+quellen:
+  - id: gkv-sv-kassen
+    titel: Die gesetzlichen Krankenkassen
+    herausgeber: GKV-Spitzenverband
+    jahr: 2026
+    url: https://www.gkv-spitzenverband.de/krankenversicherung/kv_grundprinzipien/alle_gesetzlichen_krankenkassen/alle_gesetzlichen_krankenkassen.jsp
+    art: verband
+  - id: bmg-km1-2026
+    titel: Gesetzliche Krankenversicherung – Mitglieder, mitversicherte Angehörige und Krankenstand, Monatswerte Januar–Oktober 2026 (KM1)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/GKV/Mitglieder_Versicherte/KM1_Januar_bis_Oktober_2026.pdf
+    art: amtlich
+  - id: bmg-kennzahlen-gkv-2025
+    titel: Gesetzliche Krankenversicherung – Kennzahlen und Faustformeln (KF25Bund)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2025
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/GKV/Kennzahlen_Daten/KF2025Bund_Dezember_2025.pdf
+    art: amtlich
+  - id: bmg-geschichte-gkv
+    titel: Geschichte der gesetzlichen Krankenversicherung
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/themen/krankenversicherung/grundprinzipien/geschichte
+    art: amtlich
+  - id: bmg-rsa
+    titel: Risikostrukturausgleich
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/risikostrukturausgleich
+    art: amtlich
+  - id: bas-rsa
+    titel: Risikostrukturausgleich
+    herausgeber: Bundesamt für Soziale Sicherung
+    jahr: 2026
+    url: https://www.bundesamtsozialesicherung.de/de/themen/risikostrukturausgleich/
+    art: amtlich
+  - id: bpb-gegliedert-2017
+    titel: "Die gegliederte Krankenversicherung (Thomas Gerlinger)"
+    herausgeber: Bundeszentrale für politische Bildung
+    jahr: 2017
+    url: https://www.bpb.de/politik/innenpolitik/gesundheitspolitik/252357/die-gegliederte-krankenversicherung
+    art: wissenschaft
+  - id: gkv-sv-gesundheitsfonds-rsa
+    titel: Gesundheitsfonds und Risikostrukturausgleich (RSA)
+    herausgeber: GKV-Spitzenverband
+    jahr: 2026
+    url: https://www.gkv-spitzenverband.de/krankenversicherung/kv_grundprinzipien/finanzierung/gesundheitsfonds_und_rsa/gesundheitsfonds_und_rsa.jsp
+    art: verband
+  - id: gkv-sv-fokus-verwaltung
+    titel: "Fokus: Verwaltungskosten und Anzahl der Krankenkassen"
+    herausgeber: GKV-Spitzenverband
+    jahr: 2026
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/fokus/verwaltungskosten_kk.jsp
+    art: verband
+  - id: gkv-sv-stellungnahme-fk-2025
+    titel: Stellungnahme des GKV-Spitzenverbandes vom 28.11.2025 an die FinanzKommission Gesundheit
+    herausgeber: GKV-Spitzenverband
+    jahr: 2025
+    url: https://www.gkv-spitzenverband.de/media/dokumente/presse/p_stellungnahmen/2024_2025/2025-11-28_GKV-SV_Stellungnahme_FinanzKommission_Gesundheit_final.pdf
+    art: verband
+  - id: vdek-basisdaten-2026
+    titel: vdek-Basisdaten des Gesundheitswesens 2026/2027
+    herausgeber: Verband der Ersatzkassen
+    jahr: 2026
+    url: https://www.vdek.com/content/dam/vdeksite/vdek/daten/broschuere/VDEK_Basisdaten_2026_2027_web.pdf
+    art: verband
+  - id: finanzkommission-bericht-voll-2026
+    titel: Erster Bericht der FinanzKommission Gesundheit (30.03.2026, Fassung vom 01.06.2026)
+    herausgeber: FinanzKommission Gesundheit (Bundesministerium für Gesundheit)
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/F/FinanzKommission_Gesundheit/FinanzKommissionGesundheit_Erster_Bericht_20260330.pdf
+    art: gutachten
+  - id: bt-drs-21-6130
+    titel: Entwurf eines Gesetzes zur Stabilisierung der Beitragssätze in der gesetzlichen Krankenversicherung (GKV-Beitragssatzstabilisierungsgesetz), Drucksache 21/6130
+    herausgeber: Deutscher Bundestag
+    jahr: 2026
+    url: https://dserver.bundestag.de/btd/21/061/2106130.pdf
+    art: amtlich
+  - id: bundesregierung-bstabg-2026
+    titel: Für ein bezahlbares Gesundheitssystem
+    herausgeber: Bundesregierung
+    jahr: 2026
+    url: https://www.bundesregierung.de/breg-de/aktuelles/gesundheitsreform-kabinett-2425916
+    art: amtlich
+  - id: monopolkommission-sg75-2017
+    titel: "Sondergutachten 75: Stand und Perspektiven des Wettbewerbs im deutschen Krankenversicherungssystem (Drucksache 18/11490)"
+    herausgeber: Monopolkommission
+    jahr: 2017
+    url: https://dserver.bundestag.de/btd/18/114/1811490.pdf
+    art: gutachten
+  - id: tk-mehr-wettbewerb-2026
+    titel: "Mehr Wettbewerb wagen. Für eine Governance-Wende im Gesundheitswesen (Positionspapier)"
+    herausgeber: Techniker Krankenkasse
+    jahr: 2026
+    url: https://www.tk.de/resource/blob/2218922/fb43f45749d93904c6014176eaf72af1/tk-positionspapier-mehr-wettbewerb-wagen-data.pdf
+    art: verband
+  - id: aok-reimann-2026
+    titel: Reimann setzt auf Primärversorgung statt Kassenabbau (G+G-Update vom 24.08.2026)
+    herausgeber: AOK-Bundesverband
+    jahr: 2026
+    url: https://www.aok.de/pp/gg/update/reimann-setzt-auf-primaerversorgung-statt-kassenabbau/
+    art: verband
+  - id: aerzteblatt-kassenzahl-2026
+    titel: "GKV-Finanzierung: Debatte um Reduzierung der Kassenanzahl"
+    herausgeber: Deutsches Ärzteblatt
+    jahr: 2026
+    url: https://www.aerzteblatt.de/themen/gkv-finanzen/gkv-finanzierung-debatte-um-reduzierung-der-kassenanzahl-4b8a8a19-d727-4eb5-87df-36f8fac39ae3
+    art: presse
+  - id: bda-bstabg-2026
+    titel: Stellungnahme zum GKV-Beitragssatzstabilisierungsgesetz, Ausschussdrucksache 21(14)92(33)
+    herausgeber: Bundesvereinigung der Deutschen Arbeitgeberverbände
+    jahr: 2026
+    url: https://www.bundestag.de/resource/blob/1188032/21-14-0092-33-BDA-GKV.pdf
+    art: verband
+  - id: vdk-bstabg-2026
+    titel: Stellungnahme zum GKV-Beitragssatzstabilisierungsgesetz, Ausschussdrucksache 21(14)92(23)
+    herausgeber: Sozialverband VdK Deutschland
+    jahr: 2026
+    url: https://www.bundestag.de/resource/blob/1188012/21-14-0092-23-VdK-GKV-nicht-barrierefrei.pdf
+    art: verband
+  - id: dgb-bstabg-2026
+    titel: Stellungnahme zum GKV-Beitragssatzstabilisierungsgesetz, Ausschussdrucksache 21(14)92(42)
+    herausgeber: Deutscher Gewerkschaftsbund
+    jahr: 2026
+    url: https://www.bundestag.de/resource/blob/1190746/21-14-0092-42-DGB-GKV-nicht-barrierefrei.pdf
+    art: verband
+  - id: vzbv-vergleichsportal-2025
+    titel: "Krankenkassenwechsel: Verbraucherzentrale fordert unabhängiges Vergleichsportal (Pressemitteilung vom 30.12.2025)"
+    herausgeber: Verbraucherzentrale Bundesverband
+    jahr: 2025
+    url: https://www.vzbv.de/pressemitteilungen/krankenkassenwechsel-verbraucherzentrale-fordert-unabhaengiges-vergleichsportal
+    art: verband
+  - id: hib-hzv-2026
+    titel: "heute im bundestag 380/2026 (Kurzmeldung vom 06.05.2026)"
+    herausgeber: Deutscher Bundestag
+    jahr: 2026
+    url: https://www.bundestag.de/presse/hib/kurzmeldungen-1174544
+    art: amtlich
+  - id: rechnungshof-at-2022
+    titel: "Reform der Sozialversicherungsträger – Presseinformation vom 16.12.2022 (Berichte BUND 2022/41 und 2022/42)"
+    herausgeber: Rechnungshof Österreich
+    jahr: 2022
+    url: https://www.rechnungshof.gv.at/rh/home/home_1/fragen-medien/Presseinformation_SV-Reform_16.12.pdf
+    art: amtlich
+  - id: observatory-at-2018
+    titel: "Austria: Health system review 2018 (Health Systems in Transition, Vol. 20 No. 3)"
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2018
+    url: https://www.ecoi.net/en/file/local/1451211/1788_1542632873_hit-austria-eng.pdf
+    art: international
+  - id: bag-kennzahlen-versicherer-2025
+    titel: Faktenblatt Kennzahlen Krankenversicherer
+    herausgeber: Bundesamt für Gesundheit (Schweiz)
+    jahr: 2025
+    url: https://www.bag.admin.ch/dam/en/sd-web/S45VrqfyLzCZ/PG26-FB-Kennzahlen%20Krankenversicherer_DE.pdf
+    art: amtlich
+  - id: fedlex-abstimmung-2014
+    titel: Bundesratsbeschluss über das Ergebnis der Volksabstimmung vom 28. September 2014
+    herausgeber: Schweizerischer Bundesrat (Bundesblatt)
+    jahr: 2014
+    url: https://fedlex.admin.ch/filestore/fedlex.data.admin.ch/eli/fga/2014/2047/de/pdf-a/fedlex-data-admin-ch-eli-fga-2014-2047-de-pdf-a.pdf
+    art: amtlich
+  - id: swissvotes-2007
+    titel: "Volksinitiative „Für eine soziale Einheitskrankenkasse“ – Bundesratsbeschluss über das Ergebnis vom 17. April 2007"
+    herausgeber: Swissvotes (Universität Bern)
+    jahr: 2007
+    url: https://swissvotes.ch/vote/528.00/erwahrung-de.pdf
+    art: amtlich
+  - id: nza-zorgverzekeringen-2026
+    titel: "Informatiekaart Zorgverzekeringen voorjaar 2026 – Trends & ontwikkelingen"
+    herausgeber: Nederlandse Zorgautoriteit (NZa)
+    jahr: 2026
+    url: https://zoek.officielebekendmakingen.nl/blg-1251825.pdf
+    art: amtlich
+  - id: observatory-nl-2024
+    titel: "The Netherlands: Health System Summary 2024"
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2024
+    url: https://eurohealthobservatory.who.int/publications/i/the-netherlands-health-system-summary-2024
+    art: international
+  - id: assemblee-rsi-2017
+    titel: "Question écrite n° 2567 (15e législature) – Réponse du Gouvernement zur Eingliederung des RSI"
+    herausgeber: Assemblée nationale (Frankreich)
+    jahr: 2017
+    url: https://www.assemblee-nationale.fr/dyn/15/questions/QANR5L15QE2567
+    art: amtlich
+  - id: drees-complementaire-2026
+    titel: "Les Dossiers de la DREES Nr. 137: Complémentaire santé (01.04.2026)"
+    herausgeber: DREES (Frankreich)
+    jahr: 2026
+    url: https://drees.solidarites-sante.gouv.fr/publications-communique-de-presse/les-dossiers-de-la-drees/260401_DD_compl%C3%A9mentaire_sant%C3%A9
+    art: amtlich
+  - id: drees-financement-2025
+    titel: "Les dépenses de santé en 2024, Fiche 18: Le financement de la consommation de soins et de biens médicaux"
+    herausgeber: DREES (Frankreich)
+    jahr: 2025
+    url: https://www.drees.solidarites-sante.gouv.fr/sites/default/files/2025-12/CNS%20-%20Fiche%2018%20-%20Le%20financement%20de%20la%20consommation%20de%20soins%20et%20de%20biens%20m%C3%A9dicaux.pdf
+    art: amtlich
+  - id: wahlprogramm-2025-cdu-csu
+    titel: Politikwechsel für Deutschland. Wahlprogramm von CDU und CSU
+    herausgeber: CDU Deutschlands / CSU
+    jahr: 2025
+    url: https://www.cdu.de/app/uploads/2025/01/km_btw_2025_wahlprogramm_langfassung_ansicht.pdf
+    art: partei
