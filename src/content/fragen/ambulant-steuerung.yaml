@@ -1,0 +1,197 @@
+bereich: ambulant
+reihenfolge: 1
+status: entwurf
+stand: "2026-11-25"
+titel: Wer entscheidet, zu welchem Arzt man geht?
+frage: Soll man weiterhin selbst entscheiden, ob man zuerst zur Hausärztin oder direkt zum Facharzt geht – oder soll der erste Weg verbindlich über die Hausarztpraxis oder eine Ersteinschätzung führen?
+
+optionen:
+  - id: freie-wahl
+    titel: Freie Arztwahl wie bisher
+    kurz: Patientinnen und Patienten gehen weiter selbst direkt zu jeder Fachärztin, ohne Überweisung.
+    pro:
+      - typ: wertung
+        text: Wer seine Beschwerden kennt, kommt ohne Umweg zur passenden Fachpraxis. Das spart einen Termin und Zeit.
+      - typ: wertung
+        text: Selbstbestimmung ist ein Wert für sich. Erwachsene sollen selbst entscheiden, wem sie ihre Gesundheit anvertrauen.
+      - typ: position
+        wer: Spitzenverband Fachärztinnen und Fachärzte Deutschlands (SpiFa)
+        text: Ein verpflichtendes Hausarzt-„Gatekeeping“ für alle sei „fatal“ und „ungeeignet“. Nötig sei eine geordnete Zusammenarbeit von Haus- und Fachärzten.
+        quellen: [aok-spifa-2025]
+    contra:
+      - typ: wertung
+        text: Ohne Lotsen landen manche Menschen in der falschen Praxis oder bei mehreren Fachärzten für dasselbe Problem. Das bindet knappe Termine.
+      - typ: wertung
+        text: Niemand hat den Überblick über alle Befunde und Medikamente einer Person, wenn sie viele Praxen parallel besucht.
+    gewinnt: [Wahlfreiheit der Versicherten, schneller Direktzugang für Menschen mit klarer Diagnose, Fachpraxen]
+    kostet: [Termine für Menschen, die dringend einen Facharzt brauchen, Koordination der Behandlung]
+
+  - id: primaerarzt
+    titel: Verbindliches Primärarztsystem
+    kurz: Der erste Weg führt in der Regel zur Hausarztpraxis oder über eine telefonische bzw. digitale Ersteinschätzung, die dann gezielt weiterleitet.
+    pro:
+      - typ: wertung
+        text: Eine feste Anlaufstelle behält den Überblick über Diagnosen und Medikamente. Das kann Doppeluntersuchungen und Wechselwirkungen vermeiden.
+      - typ: wertung
+        text: Facharzttermine gehen gezielter an die, die sie wirklich brauchen. Wartezeiten können sich nach Dringlichkeit richten statt nach Zufall.
+      - typ: position
+        wer: Bundesgesundheitsministerium (damals Nina Warken, CDU, Januar 2026)
+        text: Das geplante Primärversorgungssystem sei „kein Spargesetz“, sondern solle vorhandene Kapazitäten besser nutzen.
+        quellen: [kbv-primaerversorgung-2026]
+    contra:
+      - typ: wertung
+        text: Hausarztpraxen sind vielerorts schon heute voll. Eine Pflicht-Station könnte zum Engpass werden statt zur Entlastung.
+      - typ: wertung
+        text: Ein zusätzlicher Termin vor dem Facharzt kostet Zeit – besonders für Menschen, die ihr Problem und ihre Fachärztin längst kennen.
+      - typ: position
+        wer: Sozialverband VdK (Verena Bentele)
+        text: Patientinnen und Patienten bräuchten Orientierung statt Sanktionen. Wenn die Arztwahl eingeschränkt werde, müsse das fair bleiben und evaluiert werden.
+        quellen: [aok-primaerversorgung-auftakt-2026]
+    gewinnt: [Koordination der Behandlung, Menschen mit dringendem Facharztbedarf, Hausarztpraxen als zentrale Anlaufstelle]
+    kostet: [Wahlfreiheit, Zeit für Menschen mit bekannter Diagnose, Kapazität der Hausarztpraxen]
+
+  - id: hausarzttarif
+    titel: Freiwillige Hausarzttarife mit Bonus
+    kurz: Wer sich freiwillig verpflichtet, zuerst zur Hausarztpraxis zu gehen, bekommt einen Vorteil – alle anderen behalten den Direktzugang.
+    pro:
+      - typ: wertung
+        text: Niemand wird gezwungen. Wer Steuerung will, bekommt sie; wer frei wählen will, kann das weiter.
+      - typ: fakt
+        text: Solche Programme gibt es schon. An der **hausarztzentrierten Versorgung (HzV)** nehmen nach Angaben des Hausärztinnen- und Hausärzteverbands rund 11 Millionen Versicherte freiwillig teil (Stand April 2026).
+        quellen: [haev-hzv-2026]
+    contra:
+      - typ: position
+        wer: Techniker Krankenkasse
+        text: Die TK hat 2026 14 HzV-Verträge gekündigt. Eine von ihr zitierte Evaluation zeige keine weniger Facharztkontakte oder Klinikaufenthalte, aber Mehrkosten von rund 160 Millionen Euro im Jahr für die TK.
+        quellen: [tk-hzv-2026]
+      - typ: wertung
+        text: Freiwillig machen vor allem die mit, die ohnehin ihre Hausarztpraxis nutzen. Die Steuerungswirkung auf alle anderen bleibt dann klein.
+    gewinnt: [Wahlfreiheit, Versicherte, die Steuerung wünschen, teilnehmende Hausarztpraxen]
+    kostet: [Beitragszahler (Bonus und Zusatzvergütung), Steuerungswirkung im Gesamtsystem]
+
+erklaerung:
+  - typ: fakt
+    text: In Deutschland können gesetzlich Versicherte heute in der Regel direkt zu Fachärztinnen und Fachärzten gehen. Eine Überweisung ist dafür meist nicht nötig.
+    quellen: [kbv-primaerversorgung-2026]
+  - typ: fakt
+    text: 2024 wurden in den Arztpraxen rund 579 Millionen **Behandlungsfälle** abgerechnet (ein Fall = eine Person, eine Praxis, ein Quartal). Davon entfielen 188 Millionen auf Hausarztpraxen und 328 Millionen auf Fachärzte.
+    quellen: [zi-trendreport-2024]
+  - typ: fakt
+    text: Union und SPD haben im Koalitionsvertrag 2025 ein „verbindliches Primärarztsystem bei freier Arztwahl durch Haus- und Kinderärzte“ vereinbart. Mit **Primärarzt** ist eine feste erste Anlaufstelle gemeint, meist die Hausarztpraxis.
+    quellen: [aok-koalitionsvertrag-2025]
+  - typ: fakt
+    text: Die damalige Ministerin Nina Warken kündigte im Januar 2026 einen Gesetzentwurf bis zum Sommer an und nannte „erste Wirkungen“ für 2028. Ihr Nachfolger Carsten Linnemann (CDU, im Amt seit Ende Juli 2026) hat angekündigt, das Primärarztsystem weiterzuverfolgen. Einen veröffentlichten Entwurf fand die Redaktion bis Ende November 2026 nicht. Geplant sind Ausnahmen, etwa für Frauen-, Augen- und Zahnärzte sowie für bestimmte chronisch Kranke.
+    quellen: [kbv-primaerversorgung-2026, bmg-amtsuebergabe-2026]
+    unsicherheit: Der Zeitplan hat sich bereits verschoben; ob und wann ein Referentenentwurf kommt, war bei Redaktionsschluss offen.
+  - typ: fakt
+    text: Wie verbindlich die Steuerung wird, ist offen. Genannt wurden ein Bonus, eine Gebühr für den Direktzugang oder die Pflicht zur Überweisung, damit der Facharzt abrechnen kann.
+    quellen: [kbv-primaerversorgung-2026]
+
+zielkonflikte:
+  - typ: wertung
+    text: Mehr Steuerung kann knappe Facharzttermine gerechter verteilen – sie schränkt aber die Wahlfreiheit ein, die viele Versicherte schätzen.
+  - typ: wertung
+    text: Eine starke Hausarztrolle setzt genug Hausärztinnen und Hausärzte voraus. Wo diese fehlen, kann die Steuerung selbst zum Nadelöhr werden.
+  - typ: wertung
+    text: Anreize wie Boni oder Gebühren wirken auf Menschen mit wenig Geld stärker als auf Menschen mit viel Geld. Pflichtregeln treffen alle gleich, lassen aber weniger Spielraum.
+
+daten:
+  kennzahlen:
+    - label: Behandlungsfälle in Arztpraxen
+      wert: rund 579 Mio.
+      stand: "2024"
+      quelle: zi-trendreport-2024
+      hinweis: davon 188 Mio. hausärztlich, 328 Mio. fachärztlich
+    - label: Hausärztinnen und Hausärzte
+      wert: "55.778"
+      stand: "2025"
+      quelle: kbv-arztzahlen-2026
+    - label: Versicherte in der hausarztzentrierten Versorgung (HzV)
+      wert: rund 11 Mio.
+      stand: "April 2026"
+      quelle: haev-hzv-2026
+      hinweis: Angabe des Hausärztinnen- und Hausärzteverbands (Interessenvertretung)
+  aussagen:
+    - typ: position
+      wer: Kassenärztliche Bundesvereinigung (Andreas Gassen)
+      text: Schon heute gingen rund 70 Prozent der Versicherten zuerst zur Hausarztpraxis.
+      quellen: [kbv-primaerversorgung-2026]
+
+laender:
+  beispiele:
+    - land: Dänemark
+      ansatz: Hausarzt als verbindlicher Lotse, mit Wahlmöglichkeit gegen Zuzahlung
+      text: Fast alle Däninnen und Dänen sind in der „Gruppe 1“. Sie sind bei einer Hausarztpraxis eingeschrieben, die sie zu den meisten Fachärzten, zur Physiotherapie und ins Krankenhaus überweist. Augen- und HNO-Ärzte sind ohne Überweisung erreichbar. Wer in „Gruppe 2“ wechselt, darf frei zu Fachärzten gehen, zahlt aber zu. Das wählt nur etwa 1 Prozent.
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: Dänemark hat ein steuerfinanziertes, regional organisiertes System mit langer Hausarzt-Tradition. Deutschland hat dagegen viele niedergelassene Fachärzte und eine Kultur des Direktzugangs – die Umstellung wäre größer.
+      quellen: [observatory-daenemark-2024]
+
+verknuepft:
+  - frage: ambulant-land
+    grund: Ob eine Hausarztpflicht funktioniert, hängt davon ab, ob es überall genug Hausarztpraxen gibt.
+  - frage: digitalisierung-telemedizin
+    grund: Die geplante Steuerung soll teils über telefonische und digitale Ersteinschätzung laufen.
+  - frage: fachkraefte-aufgabenteilung
+    grund: Wenn Pflegekräfte mehr übernehmen, können Hausarztpraxen mehr Menschen steuern.
+
+quellen:
+  - id: kbv-primaerversorgung-2026
+    titel: Warken bringt Primärversorgungssystem auf den Weg – Auftakt des Dialogprozesses
+    herausgeber: Kassenärztliche Bundesvereinigung
+    jahr: 2026
+    url: https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/01-29/warken-bringt-primaerversorgungssystem-auf-den-weg-auftakt-des-dialogprozesses
+    art: verband
+  - id: aok-primaerversorgung-auftakt-2026
+    titel: Warken gibt Startschuss für Reform der Primärversorgung
+    herausgeber: AOK-Bundesverband (G+G)
+    jahr: 2026
+    url: https://www.aok.de/pp/gg/update/primaerversorgung-auftakt/
+    art: verband
+  - id: aok-spifa-2025
+    titel: SpiFa gegen Primärarztsystem
+    herausgeber: AOK-Bundesverband (G+G)
+    jahr: 2025
+    url: https://www.aok.de/pp/gg/update/spifa-gegen-primaerarztsystem/
+    art: verband
+  - id: aok-koalitionsvertrag-2025
+    titel: Schwarz-Rot bleibt bei Gesundheit und Pflege eher unkonkret
+    herausgeber: AOK-Bundesverband (G+G)
+    jahr: 2025
+    url: https://www.aok.de/pp/gg/update/schwarz-rot-bleibt-bei-gesundheit-und-pflege-eher-unkonkret/
+    art: verband
+  - id: zi-trendreport-2024
+    titel: "Zi-Trendreport 2024: Wieder deutlich mehr Videosprechstunden (Medieninformation)"
+    herausgeber: Zentralinstitut für die kassenärztliche Versorgung (Zi)
+    jahr: 2025
+    url: https://www.zi.de/fileadmin/Downloads/Service/Medien/MI/MI_Trendreport_2025-07-07.pdf
+    art: wissenschaft
+  - id: kbv-arztzahlen-2026
+    titel: "Kritischer Trend setzt sich fort: Mehr Ärzte und trotzdem weniger Zeit"
+    herausgeber: Kassenärztliche Bundesvereinigung
+    jahr: 2026
+    url: https://www.kbv.de/presse/pressemitteilungen/2026/kritischer-trend-setzt-sich-fort-mehr-aerzte-und-trotzdem-weniger-zeit
+    art: verband
+  - id: haev-hzv-2026
+    titel: Vorteile der HZV (Factsheet)
+    herausgeber: Hausärztinnen- und Hausärzteverband
+    jahr: 2026
+    url: https://www.haev.de/fileadmin/user_upload/pdf/Marketing/Material_Website/HAEV_Vorteile_der_HZV_2026_04_09.pdf
+    art: verband
+  - id: tk-hzv-2026
+    titel: TK kündigt 14 Hausarztverträge – Auftakt für Neuverhandlungen der Hausarztprogramme
+    herausgeber: Techniker Krankenkasse
+    jahr: 2026
+    url: https://www.tk.de/presse/themen/medizinische-versorgung/ambulante-versorgung/tk-kuendigt-hausarztvertraege-2219718
+    art: verband
+  - id: observatory-daenemark-2024
+    titel: "Health Systems in Transition Monitor: Denmark 2024 – Person-centred care"
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2024
+    url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/denmark-2024/organization-and-governance/person-centred-care
+    art: international
+  - id: bmg-amtsuebergabe-2026
+    titel: Carsten Linnemann neuer Gesundheitsminister (Amtsübergabe Juli 2026)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/en/ministry/news/handover-ceremony-health-minister-july-2026
+    art: amtlich

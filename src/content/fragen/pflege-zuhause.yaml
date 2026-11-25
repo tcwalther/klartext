@@ -1,0 +1,171 @@
+bereich: pflege
+reihenfolge: 2
+status: entwurf
+stand: "2026-11-25"
+titel: Pflege zu Hause – was soll gestärkt werden?
+frage: Die meisten Pflegebedürftigen werden zu Hause versorgt, oft von Angehörigen. Wo soll zusätzliches Geld vor allem hinfließen?
+optionen:
+  - id: angehoerige-lohnersatz
+    titel: Angehörige finanziell absichern
+    kurz: Wer für die Pflege eines Angehörigen im Beruf kürzertritt, bekommt einen Lohnersatz – ähnlich dem Elterngeld.
+    pro:
+      - typ: position
+        wer: Unabhängiger Beirat für die Vereinbarkeit von Pflege und Beruf
+        text: Empfohlen wird eine Entgeltersatzleistung „analog dem Elterngeld“ und eine Freistellung von bis zu 36 Monaten. Bisher gibt es für längere Freistellungen nur ein zinsloses Darlehen.
+        quellen: [beirat-familienpflegegeld-2022]
+      - typ: wertung
+        text: Angehörige leisten den größten Teil der Pflege. Ein Lohnersatz würdigt diese Arbeit und verringert das Risiko, später im Alter arm zu sein.
+      - typ: wertung
+        text: Wer nicht ganz aus dem Beruf aussteigen muss, bleibt dem Arbeitsmarkt erhalten.
+    contra:
+      - typ: wertung
+        text: Ein Lohnersatz kostet viel Geld. Offen ist, ob Pflegeversicherung, Bund oder Arbeitgeber zahlen.
+      - typ: wertung
+        text: Er kann den Anreiz verstärken, dass vor allem Frauen ihre Arbeitszeit reduzieren – mit Folgen für Karriere und Rente.
+      - typ: wertung
+        text: Arbeitgeber, besonders kleine Betriebe, müssen längere Ausfälle überbrücken – in Zeiten von Fachkräftemangel.
+    gewinnt: [Pflegende Angehörige, Vereinbarkeit von Pflege und Beruf]
+    kostet: [Beitrags- oder Steuerzahlende, Arbeitgeber, Kleine Betriebe]
+  - id: profis-ausbauen
+    titel: Professionelle Dienste ausbauen
+    kurz: Mehr ambulante Pflegedienste, Tages- und Kurzzeitpflege, damit Angehörige entlastet werden und weiter arbeiten können.
+    pro:
+      - typ: wertung
+        text: Fachkräfte sichern die Qualität der Pflege, gerade bei komplexen Pflegesituationen.
+      - typ: wertung
+        text: Tages- und Kurzzeitpflege entlasten Angehörige, ohne dass sie ihren Beruf aufgeben müssen.
+      - typ: wertung
+        text: Viele Pflegebedürftige haben keine Angehörigen in der Nähe. Für sie sind professionelle Angebote die einzige Alternative zum Heim.
+    contra:
+      - typ: wertung
+        text: Es fehlen schon heute Pflegekräfte. Mehr Geld allein schafft nicht automatisch mehr Angebote, besonders auf dem Land.
+      - typ: wertung
+        text: Professionelle Pflege ist teurer als Pflege durch Angehörige. Die Ausgaben der Pflegeversicherung steigen.
+      - typ: wertung
+        text: Viele Pflegebedürftige möchten lieber von vertrauten Menschen gepflegt werden.
+    gewinnt: [Pflegebedürftige ohne Angehörige, Erwerbstätige Angehörige, Pflegequalität]
+    kostet: [Beitragszahlende, Ohnehin knappe Pflegekräfte]
+  - id: budget-flexibel
+    titel: Leistungen flexibel als Budget
+    kurz: Die verschiedenen Leistungen werden zu einem Budget zusammengefasst, das Familien nach eigenem Bedarf einsetzen.
+    pro:
+      - typ: wertung
+        text: Familien wissen selbst am besten, welche Hilfe sie brauchen. Ein Budget gibt ihnen mehr Wahlfreiheit.
+      - typ: wertung
+        text: Heute gibt es viele einzelne Töpfe mit eigenen Regeln. Ein Budget ist einfacher und weniger bürokratisch.
+      - typ: fakt
+        text: Verhinderungs- und Kurzzeitpflege sind bereits in einem gemeinsamen Jahresbetrag von bis zu 3.539 € zusammengefasst, den Familien flexibel nutzen können.
+        quellen: [bmg-leistungsbetraege-2026]
+    contra:
+      - typ: wertung
+        text: Ohne Beratung und Kontrolle ist schwer zu prüfen, ob das Geld wirklich in gute Pflege fließt.
+      - typ: wertung
+        text: Mehr Geldleistungen können Angebote von Fachkräften verdrängen, wenn Familien das Geld anders einsetzen.
+      - typ: wertung
+        text: Ein Budget verteilt das vorhandene Geld nur neu. Es löst nicht das Problem steigender Kosten.
+    gewinnt: [Wahlfreiheit der Familien, Weniger Bürokratie]
+    kostet: [Kontrolle über die Mittelverwendung, Möglicherweise professionelle Anbieter]
+erklaerung:
+  - typ: fakt
+    text: Ende 2023 waren rund 5,7 Millionen Menschen pflegebedürftig. **86 %** – 4,9 Millionen – wurden zu Hause versorgt.
+    quellen: [destatis-pflegestatistik-2023]
+  - typ: fakt
+    text: 3,1 Millionen von ihnen bekamen nur **Pflegegeld** und wurden überwiegend von Angehörigen gepflegt. 1,1 Millionen wurden ganz oder teilweise von ambulanten Diensten versorgt.
+    quellen: [destatis-pflegestatistik-2023]
+  - typ: fakt
+    text: Das Pflegegeld beträgt je nach Pflegegrad 347 € bis 990 € im Monat. Wer einen Pflegedienst nutzt, bekommt stattdessen **Pflegesachleistungen** von bis zu 796 € bis 2.299 €. Dazu kommen ein Entlastungsbetrag von 131 € im Monat und Leistungen für Tagespflege.
+    quellen: [bmg-leistungsbetraege-2026]
+  - typ: fakt
+    text: Wer im Beruf kürzertritt, um zu pflegen, kann heute nur ein zinsloses Darlehen bekommen, keinen Lohnersatz.
+    quellen: [beirat-familienpflegegeld-2022]
+  - typ: fakt
+    text: Das von der Bundesregierung im September 2026 beschlossene Pflegeneuordnungsgesetz sieht ein neues „Sozialraumbudget“ und einen Anspruch auf fachliche Pflegebegleitung vor Ort vor. Es ist noch nicht in Kraft.
+    quellen: [bundesregierung-pnog-2026]
+zielkonflikte:
+  - typ: wertung
+    text: '**Familie gegen Fachkraft:** Geld für Angehörige stärkt die familiäre Pflege, Geld für Dienste stärkt die professionelle Pflege. Beides gleichzeitig voll auszubauen, ist teuer.'
+  - typ: wertung
+    text: '**Wahlfreiheit gegen Qualitätssicherung:** Je freier Familien über Geld verfügen, desto schwerer ist zu sichern, dass es in gute Pflege fließt.'
+  - typ: wertung
+    text: '**Vereinbarkeit gegen Gleichstellung:** Lohnersatz erleichtert die Pflege, kann aber alte Rollenmuster verfestigen.'
+daten:
+  kennzahlen:
+    - label: Zu Hause versorgte Pflegebedürftige
+      wert: 4,9 Mio. (86 %)
+      stand: Dezember 2023
+      quelle: destatis-pflegestatistik-2023
+    - label: davon nur mit Pflegegeld
+      wert: 3,1 Mio.
+      stand: Dezember 2023
+      quelle: destatis-pflegestatistik-2023
+    - label: Pflegegeld Pflegegrad 3
+      wert: 599 € / Monat
+      stand: "2026"
+      quelle: bmg-leistungsbetraege-2026
+    - label: Pflegesachleistung Pflegegrad 3
+      wert: bis zu 1.497 € / Monat
+      stand: "2026"
+      quelle: bmg-leistungsbetraege-2026
+  diagramme:
+    - titel: Wie Pflegebedürftige versorgt werden
+      einheit: Millionen Menschen
+      stand: Dezember 2023
+      quelle: destatis-pflegestatistik-2023
+      werte:
+        - label: Zu Hause, nur Pflegegeld (meist Angehörige)
+          wert: 3.1
+          hervorheben: true
+        - label: Zu Hause, mit ambulantem Dienst
+          wert: 1.1
+        - label: Im Pflegeheim
+          wert: 0.8
+      hinweis: Insgesamt wurden 4,9 Mio. Menschen zu Hause versorgt. Die Differenz zu den beiden Teilgruppen weist die Quelle nicht gesondert aus.
+geschichte:
+  ereignisse:
+    - jahr: "2022"
+      titel: Empfehlung für ein Familienpflegegeld
+      text: Der Unabhängige Beirat für die Vereinbarkeit von Pflege und Beruf empfiehlt eine Lohnersatzleistung nach dem Vorbild des Elterngeldes.
+      quellen: [beirat-familienpflegegeld-2022]
+    - jahr: "2026"
+      titel: Pflegeneuordnungsgesetz im Kabinett
+      text: Der Entwurf setzt auf neue Budgets und Pflegebegleitung. Kürzungen bei der Rente pflegender Angehöriger, die in einem früheren Entwurf vorgesehen waren, sind nicht mehr enthalten.
+      quellen: [bundesregierung-pnog-2026, aok-pnog-kabinett-2026]
+verknuepft:
+  - frage: pflege-eigenanteile
+    grund: Steigende Heimkosten machen die Pflege zu Hause für viele Familien wichtiger.
+  - frage: fachkraefte-pflege
+    grund: Ambulante Dienste brauchen Pflegekräfte, die knapp sind.
+  - frage: digitalisierung-telemedizin
+    grund: Digitale Angebote könnten Pflege zu Hause unterstützen.
+parteien: []
+quellen:
+  - id: destatis-pflegestatistik-2023
+    titel: 5,7 Millionen Pflegebedürftige zum Jahresende 2023 (Pressemitteilung)
+    herausgeber: Statistisches Bundesamt
+    jahr: 2024
+    url: https://www.presseportal.de/pm/32102/5933248
+    art: amtlich
+  - id: bmg-leistungsbetraege-2026
+    titel: Leistungsansprüche der Versicherten im Jahr 2026 an die Pflegeversicherung im Kurzüberblick
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2025
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/P/Pflegeversicherung_Leistungsbeitraege/Uebersicht_Leistungsbetraege_2026.pdf
+    art: amtlich
+  - id: beirat-familienpflegegeld-2022
+    titel: Empfehlungen zur Familienpflegezeit und zum Familienpflegegeld (Teilbericht)
+    herausgeber: Unabhängiger Beirat für die Vereinbarkeit von Pflege und Beruf / Bundesfamilienministerium
+    jahr: 2022
+    url: https://www.bmfsfj.de/resource/blob/200056/42abf8d95c281661058caaf581d10a97/empfehlungen-zur-familienpflegezeit-und-zum-familienpflegegeld-data.pdf
+    art: gutachten
+  - id: bundesregierung-pnog-2026
+    titel: 'Pflegeneuordnungsgesetz: Pflege sichern, Angehörige stärken'
+    herausgeber: Bundesregierung
+    jahr: 2026
+    url: https://www.bundesregierung.de/breg-de/aktuelles/pflegeneuordnungsgesetz-2454862
+    art: amtlich
+  - id: aok-pnog-kabinett-2026
+    titel: Kompromiss in der Koalition – Kabinett billigt Pflegereform (G+G-Update)
+    herausgeber: AOK-Bundesverband (G+G)
+    jahr: 2026
+    url: https://www.aok.de/pp/gg/update/kompromiss-koalition-pflege/
+    art: verband

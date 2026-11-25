@@ -1,0 +1,167 @@
+bereich: ambulant
+reihenfolge: 2
+status: entwurf
+stand: "2026-11-25"
+titel: Arztpraxen auf dem Land
+frage: Wie soll die ärztliche Grundversorgung in Regionen gesichert werden, in denen Hausarztpraxen keine Nachfolge finden?
+
+optionen:
+  - id: anreize
+    titel: Anreize und Landarztquote
+    kurz: Mehr Geld, Förderprogramme und Studienplätze mit Landverpflichtung sollen Ärztinnen und Ärzte aufs Land holen.
+    pro:
+      - typ: wertung
+        text: Das bewährte Modell der eigenen Praxis bleibt erhalten. Ärztinnen und Ärzte entscheiden selbst, wo sie arbeiten – nur mit besseren Bedingungen.
+      - typ: fakt
+        text: Beispiel **Landarztquote** in NRW (seit 2019) – wer darüber einen Medizin-Studienplatz bekommt, verpflichtet sich, später zehn Jahre hausärztlich in einer unterversorgten Region zu arbeiten. Inzwischen sind so mehr als 1.100 künftige Hausärztinnen und Hausärzte gebunden.
+        quellen: [nrw-landarztquote-2026]
+    contra:
+      - typ: wertung
+        text: Die Landarztquote wirkt sehr spät. Zwischen Studienbeginn und eigener Praxis liegen oft mehr als zehn Jahre.
+      - typ: wertung
+        text: Geld allein löst nicht alles. Viele junge Ärztinnen und Ärzte wollen angestellt und in Teilzeit arbeiten statt eine eigene Praxis zu führen.
+    gewinnt: [Ärztinnen und Ärzte, die aufs Land gehen, Kontinuität des Praxismodells]
+    kostet: [Beitrags- und Steuerzahler (Förderung), Wahlfreiheit von Studierenden mit Landverpflichtung]
+
+  - id: kommunale-zentren
+    titel: Kommunen betreiben Versorgungszentren
+    kurz: Gemeinden, Kreise oder das Land gründen selbst Gesundheitszentren und stellen Ärztinnen und Ärzte an, wo sich keine Praxis findet.
+    pro:
+      - typ: wertung
+        text: Angestellte Ärztinnen und Ärzte müssen kein Unternehmen führen und kein Risiko tragen. Das kommt dem Wunsch vieler Jüngerer nach geregelten Arbeitszeiten entgegen.
+      - typ: fakt
+        text: Kommunen dürfen nach dem Sozialgesetzbuch selbst **Medizinische Versorgungszentren (MVZ)** gründen. Ein MVZ ist eine Einrichtung, in der mehrere, oft angestellte Ärztinnen und Ärzte zusammenarbeiten.
+        quellen: [sgb5-95]
+    contra:
+      - typ: wertung
+        text: Kommunen tragen dann Kosten und Verwaltungsaufwand, für die sie nicht gemacht sind. Ärmere Gemeinden können sich das weniger leisten.
+      - typ: wertung
+        text: Ein Zentrum ist nur so gut wie sein Personal. Fehlen Ärztinnen und Ärzte insgesamt, verschiebt eine neue Trägerschaft sie nur von einem Ort an einen anderen.
+    gewinnt: [Orte ohne Praxisnachfolge, Ärztinnen und Ärzte, die angestellt arbeiten wollen]
+    kostet: [kommunale Haushalte, unternehmerische Freiheit der Praxisinhaber]
+
+  - id: neu-organisieren
+    titel: Versorgung neu organisieren
+    kurz: Weniger Arztkontakte pro Patient – stattdessen Telemedizin, mobile Teams und mehr Aufgaben für Pflegekräfte und Praxisassistenz.
+    pro:
+      - typ: wertung
+        text: Die vorhandenen Ärztinnen und Ärzte können sich auf das konzentrieren, wofür es sie wirklich braucht. Routineaufgaben übernehmen andere Berufe.
+      - typ: schaetzung
+        text: Eine Studie im Auftrag des Bosch Health Campus rechnet vor, dass Prävention, Telemedizin und nichtärztliche Berufe zusammen die erwartete hausärztliche Versorgungslücke schließen könnten.
+        quellen: [aerzteblatt-iges-2026]
+        unsicherheit: Modellrechnung mit Annahmen, etwa zum Anteil telemedizinischer Fälle; Ergebnisse beispielhaft für Baden-Württemberg berechnet.
+    contra:
+      - typ: wertung
+        text: Ältere und weniger technikaffine Menschen kommen mit Video und App schlechter zurecht – gerade sie leben häufig auf dem Land.
+      - typ: wertung
+        text: Mehr Beteiligte bedeuten mehr Schnittstellen. Wenn Zuständigkeiten unklar sind, kann Wichtiges untergehen.
+    gewinnt: [Patienten in Regionen mit wenigen Praxen, Pflege- und Assistenzberufe]
+    kostet: [persönlicher Arztkontakt, Menschen ohne digitale Zugänge]
+
+erklaerung:
+  - typ: fakt
+    text: Deutschland hatte 2025 rund 55.800 Hausärztinnen und Hausärzte – etwas mehr als im Vorjahr. Weil mehr in Teilzeit arbeiten, sank aber die Zahl der voll besetzten Hausarztsitze leicht.
+    quellen: [kbv-arztzahlen-2026]
+  - typ: position
+    wer: Kassenärztliche Bundesvereinigung
+    text: Schon jetzt seien deutschlandweit etwa 5.000 Hausarztsitze nicht besetzt.
+    quellen: [kbv-arztzahlen-2026]
+  - typ: schaetzung
+    text: Eine IGES-Studie erwartet bis 2040 rund 12.000 unbesetzte Hausarztsitze, etwa ein Fünftel aller Sitze. Knapp ein Fünftel der Kreise, vor allem ländliche, wäre dann hausärztlich unterversorgt.
+    quellen: [aerzteblatt-iges-2026]
+    unsicherheit: Simulation auf Basis von Nachwuchs- und Altersannahmen; frühere Studien kamen zu höheren Werten.
+  - typ: fakt
+    text: Seit Oktober 2025 werden hausärztliche Leistungen grundsätzlich ohne Mengenbegrenzung bezahlt („Entbudgetierung“). Geplante Gesundheitskioske und Primärversorgungszentren wurden dagegen aus dem Gesetz gestrichen.
+    quellen: [vdek-gvsg-2025]
+
+zielkonflikte:
+  - typ: wertung
+    text: Wohnortnahe Versorgung steht gegen Effizienz. Eine Praxis in jedem Dorf ist kaum zu besetzen, größere Zentren bedeuten längere Wege.
+  - typ: wertung
+    text: Freiheit der Berufswahl steht gegen planbare Versorgung. Je stärker man Ärztinnen und Ärzte bindet, desto sicherer ist die Versorgung – desto unattraktiver aber vielleicht der Beruf.
+  - typ: wertung
+    text: Neue Versorgungsformen sparen Arztzeit, verändern aber die gewohnte Beziehung zwischen Patient und Hausärztin.
+
+daten:
+  kennzahlen:
+    - label: Hausärztinnen und Hausärzte
+      wert: "55.778"
+      stand: "2025"
+      quelle: kbv-arztzahlen-2026
+    - label: Unbesetzte Hausarztsitze (Prognose)
+      wert: rund 12.000
+      stand: "2040"
+      quelle: aerzteblatt-iges-2026
+      hinweis: Modellrechnung; zum Vergleich nennt die Studie rund 4.400 im Vorjahr
+    - label: Medizinische Versorgungszentren (MVZ)
+      wert: "5.305"
+      stand: "Ende 2025"
+      quelle: kbv-mvz-2026
+      hinweis: alle Träger; eine bundesweite Zahl kommunaler MVZ wird nicht erhoben
+    - label: Landarztquote NRW – Studienplätze pro Jahr
+      wert: 227 (8,8 % der Plätze)
+      stand: "Studienjahr 2026/27"
+      quelle: nrw-landarztquote-2026
+
+laender:
+  beispiele:
+    - land: Österreich
+      ansatz: Primärversorgungseinheiten (PVE) mit gemischten Teams
+      text: In einer PVE arbeiten Allgemein- oder Kinderärztinnen mit Pflege, Ordinationsassistenz, Therapie und Sozialarbeit zusammen, mit längeren Öffnungszeiten. Seit Juli 2025 gibt es 100 PVE, davon 13 für Kinder und Jugendliche. Österreich nutzte dafür 100 Millionen Euro aus dem EU-Aufbauplan.
+      vergleichbarkeit: hoch
+      vergleichbarkeit_text: Ähnliches Sozialversicherungssystem mit niedergelassenen Ärzten. Belastbare Daten zur Wirkung auf die Versorgung auf dem Land fehlen in den genutzten Quellen allerdings noch.
+      quellen: [sozialministerium-at-pve-2025]
+
+verknuepft:
+  - frage: ambulant-steuerung
+    grund: Eine Hausarztpflicht setzt voraus, dass es überall genug Hausarztpraxen gibt.
+  - frage: digitalisierung-telemedizin
+    grund: Videosprechstunden und digitale Ersteinschätzung können weite Wege ersetzen.
+  - frage: fachkraefte-aufgabenteilung
+    grund: Wenn Pflegekräfte mehr dürfen, können sie Lücken auf dem Land füllen.
+  - frage: krankenhaus-standorte
+    grund: Wo Kliniken schließen oder sich spezialisieren, wird die ambulante Versorgung vor Ort wichtiger.
+
+quellen:
+  - id: kbv-arztzahlen-2026
+    titel: "Kritischer Trend setzt sich fort: Mehr Ärzte und trotzdem weniger Zeit"
+    herausgeber: Kassenärztliche Bundesvereinigung
+    jahr: 2026
+    url: https://www.kbv.de/presse/pressemitteilungen/2026/kritischer-trend-setzt-sich-fort-mehr-aerzte-und-trotzdem-weniger-zeit
+    art: verband
+  - id: aerzteblatt-iges-2026
+    titel: "Prognose: Rund 12.000 freie Hausarztsitze bis 2040 (zur Studie „Primärversorgung 2035+“ von IGES im Auftrag des Bosch Health Campus)"
+    herausgeber: Deutsches Ärzteblatt
+    jahr: 2026
+    url: https://www.aerzteblatt.de/news/prognose-rund-12000-freie-hausarztsitze-bis-2040-5e83a125-b6f8-4588-8c01-d1b36df8c0a6
+    art: presse
+  - id: nrw-landarztquote-2026
+    titel: Nordrhein-Westfalen erhöht die Landarztquote
+    herausgeber: Landesregierung Nordrhein-Westfalen
+    jahr: 2026
+    url: https://www.land.nrw/pressemitteilung/nordrhein-westfalen-erhoeht-die-landarztquote
+    art: amtlich
+  - id: sgb5-95
+    titel: § 95 SGB V – Teilnahme an der vertragsärztlichen Versorgung
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/sgb_5/__95.html
+    art: gesetz
+  - id: kbv-mvz-2026
+    titel: Zahl der Medizinischen Versorgungszentren leicht gestiegen
+    herausgeber: Kassenärztliche Bundesvereinigung
+    jahr: 2026
+    url: https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2026/11-12/zahl-der-medizinischen-versorgungszentren-leicht-gestiegen
+    art: verband
+  - id: vdek-gvsg-2025
+    titel: Gesundheitsversorgungsstärkungsgesetz (GVSG)
+    herausgeber: Verband der Ersatzkassen (vdek)
+    jahr: 2025
+    url: https://www.vdek.com/politik/gesetze/wahlperiode_20/gvsg-gesundheitsversorgungsstaerkungsgesetz.html
+    art: verband
+  - id: sozialministerium-at-pve-2025
+    titel: 100 Primärversorgungseinheiten in Österreich
+    herausgeber: Bundesministerium für Arbeit, Soziales, Gesundheit, Pflege und Konsumentenschutz (Österreich)
+    jahr: 2025
+    url: https://www.sozialministerium.gv.at/Services/Aktuelles/Archiv-2025/100pve.html
+    art: amtlich

@@ -1,0 +1,235 @@
+bereich: fachkraefte
+reihenfolge: 1
+status: entwurf
+stand: "2026-11-25"
+titel: Wie gewinnt man genug Pflegekräfte?
+frage: Worauf soll die Politik vor allem setzen, damit es in Krankenhäusern, Heimen und zu Hause genug Pflegekräfte gibt?
+
+optionen:
+  - id: bezahlung
+    titel: Bessere Bezahlung und Arbeitsbedingungen
+    kurz: Höhere Löhne, verlässliche Dienstpläne und weniger Überlastung sollen mehr Menschen in den Beruf holen und dort halten.
+    pro:
+      - typ: wertung
+        text: Viele ausgebildete Pflegekräfte arbeiten in Teilzeit oder haben den Beruf verlassen. Bessere Bedingungen könnten einen Teil zurückholen – das wirkt schneller als neue Ausbildung.
+      - typ: wertung
+        text: Ein attraktiver Beruf zieht auch mehr junge Menschen an. Das sichert den Nachwuchs langfristig.
+    contra:
+      - typ: wertung
+        text: Höhere Löhne kosten Geld – über Krankenkassenbeiträge, Pflegeversicherung oder Eigenanteile im Heim.
+      - typ: fakt
+        text: Die Löhne sind bereits deutlich gestiegen. Fachkräfte in der Altenpflege verdienten im April 2024 im Mittel 4.228 Euro brutto im Monat (Vollzeit), 1.612 Euro mehr als zehn Jahre zuvor. Das liegt über dem Mittel aller Vollzeitbeschäftigten (3.978 Euro).
+        quellen: [destatis-verdienste-pflege-2025]
+      - typ: wertung
+        text: Wenn die Löhne schon über dem Durchschnitt liegen, löst noch mehr Geld allein den Mangel womöglich nicht.
+    gewinnt: [Pflegekräfte, Pflegequalität]
+    kostet: [Beitragszahler, Pflegebedürftige (Eigenanteile)]
+
+  - id: anwerbung
+    titel: Gezielte Anwerbung aus dem Ausland
+    kurz: Pflegekräfte aus anderen Ländern werden aktiv angeworben, ihre Abschlüsse schneller anerkannt und sie beim Ankommen unterstützt.
+    pro:
+      - typ: fakt
+        text: Das wächst bereits stark. 2025 wurden 32.000 ausländische Pflege-Abschlüsse als gleichwertig anerkannt – so viele wie in keinem anderen Beruf.
+        quellen: [destatis-anerkennung-2026]
+      - typ: wertung
+        text: Anwerbung wirkt schneller als eine dreijährige Ausbildung im Inland.
+    contra:
+      - typ: wertung
+        text: Herkunftsländer verlieren Fachkräfte, die sie selbst brauchen.
+      - typ: wertung
+        text: Sprache, Anerkennung und Einarbeitung kosten Zeit. Wer sich nicht willkommen fühlt, zieht weiter oder kehrt zurück.
+    gewinnt: [Krankenhäuser und Heime mit offenen Stellen, Zugewanderte Fachkräfte]
+    kostet: [Herkunftsländer, Einarbeitungsaufwand in den Teams]
+
+  - id: personalbemessung
+    titel: Verbindliche Personalbemessung
+    kurz: Eine Vorgabe legt fest, wie viele Pflegekräfte für eine bestimmte Zahl und Schwere von Patienten mindestens im Dienst sein müssen.
+    pro:
+      - typ: position
+        wer: Deutscher Berufsverband für Pflegeberufe (DBfK)
+        text: Die Personalbemessung mache sichtbar, wie viel Pflege tatsächlich gebraucht wird. Ohne sie würden Engpässe „unsichtbar“, die Arbeit verdichte sich und der Beruf werde unattraktiver.
+        quellen: [dbfk-ppr-2026]
+      - typ: wertung
+        text: Feste Vorgaben schützen Patientinnen und Pflegekräfte vor Überlastung. Das kann auch Menschen in den Beruf zurückholen.
+    contra:
+      - typ: wertung
+        text: Personalbemessung bringt Dokumentations- und Nachweispflichten mit sich. Diese Zeit fehlt dann am Bett.
+      - typ: wertung
+        text: Vorgaben schaffen keine Pflegekräfte. Wo sie fehlen, müssen Kliniken Betten sperren oder Stationen schließen.
+    gewinnt: [Patientensicherheit, Pflegekräfte im Dienst]
+    kostet: [Flexibilität der Kliniken, Bettenkapazität bei Personalmangel, Bürokratie]
+
+  - id: entlastung
+    titel: Entlastung durch Technik und weniger Bürokratie
+    kurz: Digitale Dokumentation, Hilfsmittel und weniger Papierarbeit sollen Pflegekräften mehr Zeit für Menschen geben.
+    pro:
+      - typ: wertung
+        text: Jede Stunde weniger Dokumentation ist eine Stunde mehr Pflege – ohne zusätzliche Köpfe.
+      - typ: fakt
+        text: Das Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege, seit 1. Januar 2026 in Kraft, soll Pflegeeinrichtungen bei Bürokratie entlasten.
+        quellen: [bundesregierung-beep-2026]
+    contra:
+      - typ: wertung
+        text: Technik muss erst angeschafft und eingeführt werden. Das kostet anfangs Zeit und Geld.
+      - typ: wertung
+        text: Pflege ist Beziehungsarbeit. Den Großteil der Arbeit am Menschen kann Technik nicht ersetzen.
+    gewinnt: [Pflegekräfte, Pflegebedürftige (mehr Zeit)]
+    kostet: [Investitionen der Einrichtungen, Kontrolldichte]
+
+erklaerung:
+  - typ: fakt
+    text: In Pflegeberufen arbeiteten 2024 rund 1,72 Millionen Menschen – 22 Prozent mehr als zehn Jahre zuvor. Der Anteil ausländischer Beschäftigter liegt bei 18 Prozent.
+    quellen: [ba-pflege-2025]
+  - typ: schaetzung
+    text: Das Statistische Bundesamt rechnet damit, dass 2049 zwischen 280.000 und 690.000 Pflegekräfte fehlen. Der Bedarf steigt mit der Alterung um rund ein Drittel, gleichzeitig gehen viele Pflegekräfte in Rente.
+    quellen: [destatis-pflegekraefte-2024]
+    unsicherheit: Modellrechnung („Wenn-dann-Aussage“); die Spanne hängt davon ab, ob sich der Zuwachs der 2010er-Jahre fortsetzt.
+  - typ: fakt
+    text: 2025 begannen 63.900 Menschen eine Ausbildung zur Pflegefachfrau oder zum Pflegefachmann, 8 Prozent mehr als im Vorjahr.
+    quellen: [destatis-pflegeausbildung-2026]
+  - typ: fakt
+    text: Im Juli 2026 hat der Bundestag die Pflicht zur Pflegepersonalbemessung im Krankenhaus (**PPR 2.0**) wieder abgeschafft. Stattdessen gilt eine allgemeine Pflicht zu einer guten Personalbesetzung. Die Pflegepersonaluntergrenzen für bestimmte Stationen gelten weiter.
+    quellen: [bmg-gkv-bstabg-2026]
+
+zielkonflikte:
+  - typ: wertung
+    text: Bessere Bedingungen kosten Geld, das Versicherte und Pflegebedürftige aufbringen müssen.
+  - typ: wertung
+    text: Strenge Personalvorgaben schützen die Qualität, können bei Mangel aber dazu führen, dass weniger Menschen versorgt werden.
+  - typ: wertung
+    text: Anwerbung schließt Lücken hier und kann Lücken anderswo vergrößern.
+
+daten:
+  kennzahlen:
+    - label: Beschäftigte in Pflegeberufen
+      wert: 1,72 Mio.
+      stand: "2024"
+      quelle: ba-pflege-2025
+    - label: Fehlende Pflegekräfte (Vorausberechnung)
+      wert: 280.000 bis 690.000
+      stand: "2049"
+      quelle: destatis-pflegekraefte-2024
+    - label: Anerkannte ausländische Pflege-Abschlüsse
+      wert: "32.000"
+      stand: "2025"
+      quelle: destatis-anerkennung-2026
+    - label: Neue Auszubildende Pflegefachfrau/-mann
+      wert: "63.900"
+      stand: "2025"
+      quelle: destatis-pflegeausbildung-2026
+  diagramme:
+    - titel: Bruttomonatsverdienst von Fachkräften (Vollzeit, Median)
+      einheit: Euro
+      stand: April 2024
+      quelle: destatis-verdienste-pflege-2025
+      hinweis: ohne Sonderzahlungen
+      werte:
+        - label: Gesundheits- und Krankenpflege
+          wert: 4310
+          hervorheben: true
+        - label: Altenpflege
+          wert: 4228
+          hervorheben: true
+        - label: Fachkräfte Gesamtwirtschaft
+          wert: 3580
+
+geschichte:
+  ereignisse:
+    - jahr: "1996/97"
+      titel: Erste Personalregelung ausgesetzt
+      text: Die damalige Pflege-Personalregelung wurde 1996 ausgesetzt und 1997 abgeschafft. Der Berufsverband DBfK sieht darin den Beginn eines starken Personalabbaus in der Krankenhauspflege.
+      quellen: [dbfk-ppr-2026]
+    - jahr: "2024"
+      titel: PPR 2.0 eingeführt
+      text: Die Pflegepersonalbemessungsverordnung trat im Juli 2024 in Kraft – zunächst ohne Sanktionen bei Unterschreitung.
+      quellen: [bmg-ppbv]
+    - jahr: "2026"
+      titel: PPR 2.0 wieder abgeschafft
+      text: Mit dem Gesetz zur Stabilisierung der Krankenkassenbeiträge entfiel die Pflicht zur Anwendung der PPR 2.0.
+      quellen: [bmg-gkv-bstabg-2026, dkg-ppr-2026]
+
+laender:
+  beispiele:
+    - land: Kalifornien (USA)
+      ansatz: Gesetzliche Mindestbesetzung je Patient (seit 2004)
+      text: Kalifornien schreibt feste Verhältnisse von Pflegekräften zu Patienten vor. Eine Auswertung zeigt, dass Kliniken, die die Werte vorher nicht erreichten, ihre Besetzung verbesserten. Messbare Verbesserungen der Patientensicherheit fand diese Studie aber nicht.
+      vergleichbarkeit: gering
+      vergleichbarkeit_text: Andere Ausbildung, andere Aufgabenteilung und ein anderes Krankenhaus-Finanzierungssystem. Andere Studien kommen zu günstigeren Ergebnissen; die Wirkung ist umstritten.
+      quellen: [cook-staffing-2012]
+
+verknuepft:
+  - frage: fachkraefte-aufgabenteilung
+    grund: Wenn Pflegekräfte mehr Aufgaben übernehmen, steigt der Bedarf an Pflegekräften weiter – oder der Beruf wird attraktiver.
+  - frage: pflege-eigenanteile
+    grund: Höhere Löhne in der Altenpflege schlagen auf die Eigenanteile im Heim durch.
+  - frage: krankenhaus-verguetung
+    grund: Wie Kliniken bezahlt werden, beeinflusst, wie viel Pflegepersonal sie einstellen.
+
+quellen:
+  - id: ba-pflege-2025
+    titel: "Tag der Pflege: Neue Pflegekräfte kommen vor allem aus dem Ausland (Presseinfo Nr. 21)"
+    herausgeber: Bundesagentur für Arbeit
+    jahr: 2025
+    url: https://www.arbeitsagentur.de/presse/2025-21-tag-der-pflege-neue-pflegekraefte-kommen-vor-allem-aus-dem-ausland
+    art: amtlich
+  - id: destatis-pflegekraefte-2024
+    titel: Bis 2049 werden voraussichtlich mindestens 280 000 zusätzliche Pflegekräfte benötigt (Pressemitteilung Nr. 033)
+    herausgeber: Statistisches Bundesamt
+    jahr: 2024
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2024/01/PD24_033_23_12.html
+    art: amtlich
+  - id: destatis-anerkennung-2026
+    titel: 10 % mehr Anerkennungen ausländischer Berufsabschlüsse 2025 (Pressemitteilung Nr. 295)
+    herausgeber: Statistisches Bundesamt
+    jahr: 2026
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/08/PD26_295_212.html
+    art: amtlich
+  - id: destatis-pflegeausbildung-2026
+    titel: "Pflegeausbildung 2025: Zahl neuer Auszubildender zum dritten Mal in Folge gestiegen (Pressemitteilung Nr. 231)"
+    herausgeber: Statistisches Bundesamt
+    jahr: 2026
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_231_212.html
+    art: amtlich
+  - id: destatis-verdienste-pflege-2025
+    titel: "1 219 Euro mehr: Bruttomonatsverdienste in Gesundheits- und Pflegeberufen binnen zehn Jahren deutlich gestiegen (Zahl der Woche Nr. 19)"
+    herausgeber: Statistisches Bundesamt
+    jahr: 2025
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/Zahl-der-Woche/2025/PD25_19_p002.html
+    art: amtlich
+  - id: bmg-gkv-bstabg-2026
+    titel: Bundestag beschließt GKV-Beitragssatzstabilisierungsgesetz
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/bundestag-beschliesst-gkv-beitragssatzstabilisierunggesetz-pm-10-07-2026
+    art: amtlich
+  - id: bmg-ppbv
+    titel: Pflegepersonalbemessung im Krankenhaus
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2024
+    url: https://www.bundesgesundheitsministerium.de/service/begriffe-von-a-z/p/pflegepersonalbemessung-im-krankenhaus.html
+    art: amtlich
+  - id: dbfk-ppr-2026
+    titel: "PPR 2.0: DBfK warnt vor Abschaffung (Pressemitteilung)"
+    herausgeber: Deutscher Berufsverband für Pflegeberufe (DBfK)
+    jahr: 2026
+    url: https://dbfk.de/media/docs/newsroom/PressemitteilungenPDF/2026/20260607_PM-DBfK_Abschaffung-PPR.pdf
+    art: verband
+  - id: dkg-ppr-2026
+    titel: PPR 2.0
+    herausgeber: Deutsche Krankenhausgesellschaft (DKG)
+    jahr: 2026
+    url: https://www.dkgev.de/themen/personal-weiterbildung/ppr-20/
+    art: verband
+  - id: bundesregierung-beep-2026
+    titel: Qualifikationen von Pflegekräften besser nutzen
+    herausgeber: Bundesregierung
+    jahr: 2026
+    url: https://www.bundesregierung.de/breg-de/aktuelles/befugnisse-pflegekraefte-2376966
+    art: amtlich
+  - id: cook-staffing-2012
+    titel: "The Effect of a Hospital Nurse Staffing Mandate on Patient Health Outcomes: Evidence from California's Minimum Staffing Regulation (CMPO Working Paper 12/283)"
+    herausgeber: Cook, Gaynor, Stephens, Taylor – University of Bristol, CMPO
+    jahr: 2012
+    url: https://bristol.ac.uk/cmpo/publications/papers/2012/abstract283.html
+    art: wissenschaft

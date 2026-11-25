@@ -1,0 +1,153 @@
+bereich: digitalisierung
+reihenfolge: 2
+status: entwurf
+stand: "2026-11-25"
+titel: Telemedizin und digitale Ersteinschätzung
+frage: Welche Rolle sollen Videosprechstunde, Telefon und digitale Ersteinschätzung künftig spielen – erster Kontakt, Ergänzung oder Ausnahme?
+
+optionen:
+  - id: digital-zuerst
+    titel: Digital als regulärer erster Kontakt
+    kurz: Wer krank ist, meldet sich zuerst per App, Telefon oder Video. Eine strukturierte Ersteinschätzung entscheidet, ob und wohin es weitergeht.
+    pro:
+      - typ: wertung
+        text: Viele Anliegen lassen sich ohne Wartezimmer klären. Das spart Wege, Ansteckungen und Praxiszeit für die, die wirklich vor Ort untersucht werden müssen.
+      - typ: wertung
+        text: Eine einheitliche Ersteinschätzung lenkt nach Dringlichkeit, nicht nach dem Zufall, wer zuerst anruft.
+    contra:
+      - typ: wertung
+        text: Ältere Menschen und Menschen ohne gutes Internet oder mit Sprachbarrieren könnten benachteiligt werden.
+      - typ: wertung
+        text: Manche Erkrankungen zeigen sich erst bei der körperlichen Untersuchung. Ein Fehler in der Ersteinschätzung kann eine Behandlung verzögern.
+    gewinnt: [Menschen mit wenig Zeit oder weiten Wegen, Praxen mit vollem Wartezimmer, Steuerung nach Dringlichkeit]
+    kostet: [Menschen ohne digitale Zugänge, persönlicher Erstkontakt]
+
+  - id: ergaenzung
+    titel: Ergänzung mit klaren Grenzen
+    kurz: Telemedizin wird weiter ausgebaut, bleibt aber Ergänzung. Grenzen – etwa beim Anteil reiner Videofälle je Praxis – sichern den Praxisbetrieb.
+    pro:
+      - typ: wertung
+        text: Die Mischung nutzt Vorteile beider Wege. Folgetermine und Besprechungen gehen per Video, Untersuchungen in der Praxis.
+      - typ: fakt
+        text: Heute darf eine Praxis bis zu 50 Prozent ihrer Behandlungsfälle ausschließlich per Video versorgen. Darauf haben sich Kassenärztliche Bundesvereinigung und GKV-Spitzenverband 2025 geeinigt.
+        quellen: [kbv-video-obergrenze-2025]
+    contra:
+      - typ: wertung
+        text: Feste Quoten sind willkürlich. Für manche Fächer wie die Psychotherapie passt ein hoher Video-Anteil, für andere nicht.
+      - typ: wertung
+        text: Solange Telemedizin nur ergänzt, bleibt ihr Effekt auf Wartezeiten und Wege eher klein.
+    gewinnt: [Praxen mit gemischtem Angebot, Patienten mit Folgeterminen]
+    kostet: [Tempo der Digitalisierung, Anbieter rein digitaler Versorgung]
+
+  - id: persoenlich
+    titel: Vorrang des persönlichen Kontakts
+    kurz: Der Erstkontakt findet in der Regel persönlich statt. Telemedizin bleibt die Ausnahme für bekannte Patientinnen und einfache Anliegen.
+    pro:
+      - typ: wertung
+        text: Vertrauen, Gespräch und körperliche Untersuchung sind der Kern ärztlicher Arbeit. Gerade beim ersten Kontakt sieht man im Raum mehr als auf dem Bildschirm.
+      - typ: wertung
+        text: Eine Behandlung „aus der Ferne“ durch wechselnde Anbieter kann die feste Beziehung zur Hausarztpraxis schwächen.
+    contra:
+      - typ: wertung
+        text: Wege und Wartezeiten bleiben, auch für Anliegen, die sich per Video schnell klären ließen.
+      - typ: wertung
+        text: Gerade dort, wo Praxen fehlen, verzichtet man auf ein Mittel, um Versorgung überhaupt zu ermöglichen.
+    gewinnt: [persönliche Arzt-Patienten-Beziehung, Menschen ohne digitale Zugänge]
+    kostet: [Menschen mit weiten Wegen, Praxiszeit]
+
+erklaerung:
+  - typ: fakt
+    text: 2024 gab es in den Arztpraxen rund 2,7 Millionen **Videosprechstunden** – ein Viertel mehr als 2023. Bei insgesamt 579 Millionen Behandlungsfällen ist das aber nur ein kleiner Teil. Die Hälfte entfiel auf Hausarztpraxen, ein Drittel auf die Psychotherapie.
+    quellen: [zi-trendreport-2024]
+  - typ: fakt
+    text: Unter der Nummer **116117** bekommen Anrufende eine strukturierte **Ersteinschätzung**, also eine Einschätzung, wie dringend ihr Anliegen ist und wo sie Hilfe finden. Im ersten Halbjahr 2026 gab es rund 1,85 Millionen solcher Ersteinschätzungen, davon rund 440.000 online.
+    quellen: [aerzteblatt-ersteinschaetzung-2026]
+  - typ: fakt
+    text: Mit der Notfallreform, die der Bundestag im Oktober 2026 beschlossen hat, wird die 116117 in eine Terminservice- und eine Akutleitstelle geteilt. Für Akutfälle soll es dort auch telefonische oder videogestützte Versorgung geben.
+    quellen: [bmg-notfallreform-2026]
+  - typ: fakt
+    text: Ein weiteres Gesetz (GeDIG), das das Kabinett im Juli 2026 beschlossen hat, soll eine digitale Ersteinschätzung, die Terminvermittlung und die elektronische Überweisung in die ePA einbinden.
+    quellen: [zm-gedig-2026]
+
+zielkonflikte:
+  - typ: wertung
+    text: Bequemlichkeit und Tempo stehen gegen Gründlichkeit. Nicht jedes Anliegen lässt sich am Bildschirm sicher einschätzen.
+  - typ: wertung
+    text: Digitale Wege entlasten die einen und schließen andere aus. Je mehr „digital zuerst“ gilt, desto wichtiger sind gute Alternativen.
+  - typ: wertung
+    text: Steuerung durch eine zentrale Ersteinschätzung kann Praxen entlasten, nimmt Patientinnen aber ein Stück Entscheidung ab.
+
+daten:
+  kennzahlen:
+    - label: Videosprechstunden in Arztpraxen
+      wert: rund 2,7 Mio.
+      stand: "2024"
+      quelle: zi-trendreport-2024
+      hinweis: "+24,8 % gegenüber 2023"
+    - label: Telefonische Beratungen in Arztpraxen
+      wert: 8,4 Mio.
+      stand: "2024"
+      quelle: zi-trendreport-2024
+    - label: Ersteinschätzungen über 116117 und Online-Patientennavi
+      wert: rund 1,85 Mio.
+      stand: "1. Halbjahr 2026"
+      quelle: aerzteblatt-ersteinschaetzung-2026
+    - label: Obergrenze reiner Videofälle je Praxis
+      wert: 50 %
+      stand: "seit April 2025"
+      quelle: kbv-video-obergrenze-2025
+
+laender:
+  beispiele:
+    - land: Dänemark (Region Hauptstadt)
+      ansatz: Telefonische Ersteinschätzung vor Notaufnahme und Bereitschaftsdienst („Akuttelefon 1813“)
+      text: Die Nummer 1813 ist mit Ärztinnen und Pflegekräften besetzt und leitet Anrufende außerhalb der Hausarzt-Sprechzeiten zur passenden Hilfe.
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: Dänemark hat ein steuerfinanziertes System mit starker Hausarztsteuerung. Die deutsche Akutleitstelle der 116117 verfolgt ein ähnliches Ziel, startet aber in einem System mit freiem Zugang zu Praxen.
+      quellen: [regionh-1813]
+
+verknuepft:
+  - frage: ambulant-steuerung
+    grund: Ein Primärarztsystem soll teils über telefonische und digitale Ersteinschätzung laufen.
+  - frage: ambulant-land
+    grund: Telemedizin kann weite Wege zur Praxis ersetzen.
+  - frage: digitalisierung-gesundheitsdaten
+    grund: Digitale Ersteinschätzung und Terminvermittlung sollen in die ePA eingebunden werden.
+
+quellen:
+  - id: zi-trendreport-2024
+    titel: "Zi-Trendreport 2024: Wieder deutlich mehr Videosprechstunden (Medieninformation)"
+    herausgeber: Zentralinstitut für die kassenärztliche Versorgung (Zi)
+    jahr: 2025
+    url: https://www.zi.de/fileadmin/Downloads/Service/Medien/MI/MI_Trendreport_2025-07-07.pdf
+    art: wissenschaft
+  - id: kbv-video-obergrenze-2025
+    titel: "Einheitliche Obergrenze für alle: Mehr Videosprechstunden jetzt auch für unbekannte Patienten möglich"
+    herausgeber: Kassenärztliche Bundesvereinigung
+    jahr: 2025
+    url: https://www.kbv.de/praxis/tools-und-services/praxisnachrichten/2025/07-17/einheitliche-obergrenze-fuer-alle-mehr-videosprechstunden-jetzt-auch-fuer-unbekannte-patienten-moeglich
+    art: verband
+  - id: aerzteblatt-ersteinschaetzung-2026
+    titel: 1,85 Millionen medizinische Ersteinschätzungen über die 116117
+    herausgeber: Deutsches Ärzteblatt
+    jahr: 2026
+    url: https://www.aerzteblatt.de/news/185-millionen-medizinische-ersteinschatzungen-uber-die-116117-12b0303e-e2e9-4d9d-9b8a-aba5f7b2d15c
+    art: presse
+  - id: bmg-notfallreform-2026
+    titel: Bundestag beschließt Notfallreform
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/bundestag-beschliesst-notfallreform
+    art: amtlich
+  - id: zm-gedig-2026
+    titel: Kabinett bringt neues Digitalgesetz auf den Weg
+    herausgeber: zm – Zahnärztliche Mitteilungen
+    jahr: 2026
+    url: https://www.zm-online.de/news/detail/warken-will-die-epa-zum-tueroeffner-machen
+    art: presse
+  - id: regionh-1813
+    titel: Medical Helpline 1813
+    herausgeber: Region Hovedstaden (Capital Region of Denmark)
+    jahr: 2025
+    url: https://www.regionh.dk/english/Healthcare-Services/Emergency-Medical-Services/Pages/Medical-Helpline-1813.aspx
+    art: amtlich

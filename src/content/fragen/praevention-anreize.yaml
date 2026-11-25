@@ -1,0 +1,134 @@
+bereich: praevention
+reihenfolge: 2
+status: entwurf
+stand: "2026-11-25"
+titel: Sollen Versicherte für gesundes Verhalten belohnt werden?
+frage: Sollen Krankenkassen gesundes Verhalten stärker belohnen – oder soll der Beitrag weiterhin unabhängig davon sein, wie jemand lebt?
+
+optionen:
+  - id: bonus-ausbauen
+    titel: Bonusprogramme ausbauen
+    kurz: Kassen zahlen höhere Prämien für Vorsorge, Impfungen, Sportkurse oder Gesundheits-Apps – die Teilnahme bleibt freiwillig.
+    pro:
+      - typ: wertung
+        text: Ein Bonus ist ein positiver Anreiz. Niemand wird bestraft, aber wer etwas für seine Gesundheit tut, merkt es auch im Geldbeutel.
+      - typ: wertung
+        text: Boni können helfen, Früherkennung und Impfungen bekannter zu machen, die viele sonst aufschieben.
+    contra:
+      - typ: wertung
+        text: Boni bekommen oft die, die ohnehin gesund leben und Zeit für Kurse haben. Wer es schwerer hat, profitiert weniger.
+      - typ: fakt
+        text: Das Gesetz verlangt, dass sich Boni für Präventionskurse mittelfristig durch Einsparungen selbst tragen. Gelingt das nicht, dürfen Kassen dafür keine Boni zahlen.
+        quellen: [sgb5-65a]
+    gewinnt: [gesundheitsbewusste Versicherte, Früherkennung und Impfquoten]
+    kostet: [Beitragszahler, Versicherte, die Angebote nicht nutzen können]
+
+  - id: verhaltensabhaengig
+    titel: Beiträge stärker ans Verhalten koppeln
+    kurz: Wer nachweislich gesund lebt, zahlt weniger – wer zum Beispiel raucht oder Vorsorge auslässt, zahlt mehr oder bekommt weniger Leistungen.
+    pro:
+      - typ: wertung
+        text: Wer Risiken bewusst eingeht, soll einen größeren Teil der Folgen tragen. Das empfinden viele als gerecht gegenüber denen, die vorsorgen.
+      - typ: wertung
+        text: Ein spürbarer finanzieller Unterschied setzt einen stärkeren Anreiz als ein kleiner Bonus.
+    contra:
+      - typ: wertung
+        text: Krankheit hat oft Ursachen, die Menschen nicht steuern können – Gene, Armut, Arbeitsbedingungen. Wer krank wird, könnte zusätzlich bestraft werden.
+      - typ: wertung
+        text: Um Verhalten zu belohnen, muss man es messen. Das erfordert Daten über Ernährung, Bewegung oder Gewohnheiten – ein Eingriff in die Privatsphäre.
+    gewinnt: [Versicherte mit gesundem Lebensstil, Eigenverantwortung]
+    kostet: [Solidarausgleich, chronisch Kranke und Menschen in schwierigen Lebenslagen, Datenschutz]
+
+  - id: lebenswelten
+    titel: Solidarisch bleiben, Prävention in Lebenswelten
+    kurz: Der Beitrag hängt nicht vom Verhalten ab. Prävention findet dort statt, wo Menschen leben und arbeiten – in Kita, Schule, Betrieb und Stadtteil.
+    pro:
+      - typ: wertung
+        text: Gesundheit hängt stark von den Lebensverhältnissen ab. Wer dort ansetzt, erreicht auch Menschen, die sich nie für einen Kurs anmelden würden.
+      - typ: wertung
+        text: Das Solidarprinzip bleibt unangetastet. Niemand muss beweisen, dass er gesund lebt.
+      - typ: fakt
+        text: Die Krankenkassen erreichten 2024 mit Angeboten in Lebenswelten wie Kitas, Schulen und Kommunen knapp 8,9 Millionen Menschen.
+        quellen: [zm-praeventionsbericht-2025]
+    contra:
+      - typ: wertung
+        text: Ohne persönlichen Anreiz fehlt ein Hebel, der zum Mitmachen motiviert. Eigenverantwortung wird nicht gestärkt.
+      - typ: wertung
+        text: Ob Programme in Schulen oder Betrieben wirken, ist schwer zu messen. Das Geld kann versickern.
+    gewinnt: [Kinder und Beschäftigte, Menschen mit wenig Einkommen, Solidarprinzip]
+    kostet: [persönliche Anreize, Kassen und Kommunen (Organisationsaufwand)]
+
+erklaerung:
+  - typ: fakt
+    text: In der gesetzlichen Krankenversicherung hängt der Beitrag vom Einkommen ab, nicht vom Gesundheitszustand oder Lebensstil. Das nennt man **Solidarprinzip**.
+    quellen: [sgb5-3]
+  - typ: fakt
+    text: Trotzdem sollen Kassen laut Gesetz **Boni** für gesundheitsbewusstes Verhalten zahlen, etwa für Vorsorgeuntersuchungen, Impfungen oder Präventionskurse. Auch Arbeitgeber mit betrieblicher Gesundheitsförderung und ihre Beschäftigten sollen einen Bonus bekommen.
+    quellen: [sgb5-65a]
+  - typ: fakt
+    text: 2024 gaben die Krankenkassen rund 686 Millionen Euro für Gesundheitsförderung und Prävention aus, davon 282 Millionen für Betriebe.
+    quellen: [zm-praeventionsbericht-2025]
+  - typ: fakt
+    text: Höhere Beiträge für bestimmtes Verhalten, etwa fürs Rauchen, sieht das Gesetz für die gesetzliche Krankenversicherung nicht vor.
+    quellen: [sgb5-3]
+
+zielkonflikte:
+  - typ: wertung
+    text: Eigenverantwortung steht gegen Solidarität. Je stärker das Verhalten zählt, desto mehr tragen Einzelne ihre Risiken selbst – desto weniger tragen alle gemeinsam.
+  - typ: wertung
+    text: Anreize brauchen Nachweise. Je genauer man belohnt, desto mehr Daten muss man erheben.
+  - typ: wertung
+    text: Persönliche Anreize erreichen eher die Motivierten, Angebote in Lebenswelten eher alle. Was mehr Gesundheit pro Euro bringt, ist umstritten.
+
+daten:
+  kennzahlen:
+    - label: Ausgaben der Kassen für Prävention und Gesundheitsförderung
+      wert: rund 686 Mio. Euro
+      stand: "2024"
+      quelle: zm-praeventionsbericht-2025
+    - label: davon betriebliche Gesundheitsförderung
+      wert: 282 Mio. Euro
+      stand: "2024"
+      quelle: zm-praeventionsbericht-2025
+    - label: In Lebenswelten erreichte Menschen
+      wert: knapp 8,9 Mio.
+      stand: "2024"
+      quelle: zm-praeventionsbericht-2025
+    - label: Erwachsene mit Adipositas
+      wert: 19,7 %
+      stand: "2023"
+      quelle: rki-adipositas-trend-2025
+
+verknuepft:
+  - frage: praevention-ungesunde-produkte
+    grund: Auch dort geht es darum, ob Prävention beim Einzelnen oder bei den Verhältnissen ansetzen soll.
+  - frage: finanzierung-versicherungssystem
+    grund: Ob Beiträge vom Verhalten abhängen dürfen, berührt die Grundfrage, wie die Versicherung organisiert ist.
+  - frage: digitalisierung-gesundheitsdaten
+    grund: Verhaltensbezogene Tarife setzen voraus, dass Gesundheitsdaten genutzt werden dürfen.
+
+quellen:
+  - id: sgb5-65a
+    titel: § 65a SGB V – Bonus für gesundheitsbewusstes Verhalten
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/sgb_5/__65a.html
+    art: gesetz
+  - id: sgb5-3
+    titel: § 3 SGB V – Solidarische Finanzierung
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/sgb_5/__3.html
+    art: gesetz
+  - id: zm-praeventionsbericht-2025
+    titel: Krankenkassen investieren fast 700 Millionen Euro in die Vorsorge (zum Präventionsbericht 2025 von GKV-Spitzenverband und Medizinischem Dienst Bund)
+    herausgeber: zm – Zahnärztliche Mitteilungen
+    jahr: 2025
+    url: https://www.zm-online.de/news/detail/krankenkassen-investieren-fast-700-millionen-euro-in-die-vorsorge
+    art: presse
+  - id: rki-adipositas-trend-2025
+    titel: Adipositas und Rauchen in Deutschland – Trends (Journal of Health Monitoring 2025/1)
+    herausgeber: Robert Koch-Institut
+    jahr: 2025
+    url: https://rki.de/DE/Aktuelles/Publikationen/Journal-of-Health-Monitoring/GBEDownloadsJ/Focus/JHealthMonit_2025_01_Adipositas_Rauchen.pdf
+    art: amtlich

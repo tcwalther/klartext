@@ -1,0 +1,17 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FragenFlow from '../../islands/FragenFlow.tsx';
+import { getFragen, getBereiche, frageKurz } from '../../lib/content';
+
+const fragen = (await getFragen()).map(frageKurz);
+const bereiche = (await getBereiche()).map((b) => ({ id: b.id, titel: b.data.titel }));
+---
+
+<Layout title="Fragen zum Gesundheitssystem" description="Eine Frage nach der anderen – und wenn du unsicher bist, erklären wir mehr.">
+  <div class="mx-auto max-w-2xl px-4 pt-6 sm:pt-10">
+    <FragenFlow client:load fragen={fragen} bereiche={bereiche} />
+    <p class="text-xs text-faint mt-4 text-center">
+      Deine Antworten werden nur in diesem Browser gespeichert. Klartext sieht sie nicht.
+    </p>
+  </div>
+</Layout>

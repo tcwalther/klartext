@@ -1,0 +1,13 @@
+---
+import { typLabel, typErklaerung, type AussageTyp } from '../lib/content';
+interface Props {
+  typ: AussageTyp;
+  wer?: string | undefined;
+}
+const { typ, wer } = Astro.props;
+const icon: Record<AussageTyp, string> = { fakt: '■', schaetzung: '◇', wertung: '◆', position: '●' };
+---
+
+<span class={`badge badge-${typ}`} title={typErklaerung[typ]}>
+  <span aria-hidden="true">{icon[typ]}</span>{typLabel[typ]}{wer && <span class="normal-case tracking-normal font-medium">· {wer}</span>}
+</span>

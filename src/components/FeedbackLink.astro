@@ -1,0 +1,15 @@
+---
+import { feedbackLink } from '../config';
+interface Props {
+  abschnitt: string;
+}
+const href = feedbackLink(Astro.props.abschnitt);
+---
+
+{
+  href && (
+    <a href={href} target="_blank" rel="noopener" class="text-xs text-muted hover:text-ink underline underline-offset-2">
+      Fehlt etwas oder wirkt es einseitig? Sag Bescheid
+    </a>
+  )
+}

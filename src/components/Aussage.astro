@@ -1,0 +1,23 @@
+---
+import ClaimBadge from './ClaimBadge.astro';
+import SourceRefs from './SourceRefs.astro';
+import { md, type Aussage } from '../lib/content';
+interface Props {
+  a: Aussage;
+  nums: Map<string, number>;
+  as?: 'li' | 'p' | 'div';
+}
+const { a, nums, as: Tag = 'li' } = Astro.props;
+---
+
+<Tag class="leading-relaxed">
+  <ClaimBadge typ={a.typ} wer={a.wer} />
+  <span class="prose-k ml-1" set:html={md(a.text)} /><SourceRefs ids={a.quellen} nums={nums} />
+  {
+    a.unsicherheit && (
+      <span class="block mt-1 text-sm text-muted">
+        <span class="font-semibold">Unsicherheit:</span> {a.unsicherheit}
+      </span>
+    )
+  }
+</Tag>

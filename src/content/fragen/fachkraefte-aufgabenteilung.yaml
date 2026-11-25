@@ -1,0 +1,174 @@
+bereich: fachkraefte
+reihenfolge: 2
+status: entwurf
+stand: "2026-11-25"
+titel: Wer darf was in der Versorgung?
+frage: Sollen Pflegekräfte, Apothekerinnen und andere Gesundheitsberufe mehr Aufgaben eigenständig übernehmen dürfen, die bisher Ärztinnen und Ärzten vorbehalten sind?
+
+optionen:
+  - id: erweitern
+    titel: Befugnisse deutlich erweitern
+    kurz: Speziell ausgebildete Pflegekräfte – etwa Community Health Nurses oder Advanced Practice Nurses – behandeln bestimmte Krankheiten eigenständig und verordnen selbst.
+    pro:
+      - typ: wertung
+        text: Ärztinnen und Ärzte sind knapp. Wenn andere Berufe Routineaufgaben eigenständig übernehmen, bleibt mehr Arztzeit für schwierige Fälle.
+      - typ: wertung
+        text: Mehr Verantwortung macht Gesundheitsberufe attraktiver. Das kann helfen, Fachkräfte zu gewinnen und zu halten.
+      - typ: fakt
+        text: In mehreren europäischen Ländern dürfen bestimmte Pflegekräfte bereits Medikamente verordnen, etwa in Finnland, Frankreich, den Niederlanden, Polen, Spanien und Estland.
+        quellen: [oecd-nurses-advanced-2017]
+    contra:
+      - typ: position
+        wer: Bundesärztekammer
+        text: Diagnose und Differenzialdiagnose müssten ärztliche Aufgabe bleiben. Bei der Ausweitung heilkundlicher Befugnisse müssten die „ärztlichen Kernkompetenzen erhalten bleiben“; auch das Haftungsrecht sei betroffen.
+        quellen: [baek-stellungnahme-pkg-2025]
+      - typ: wertung
+        text: Mehr Beteiligte bedeuten mehr Schnittstellen. Wenn unklar ist, wer verantwortlich ist, kann für Patientinnen etwas verloren gehen.
+    gewinnt: [Pflegekräfte und andere Gesundheitsberufe, Patienten in Regionen mit wenigen Ärzten]
+    kostet: [ärztliche Gesamtverantwortung, klare Zuständigkeiten (in der Übergangszeit)]
+
+  - id: schrittweise
+    titel: Schrittweise mit ärztlicher Einbindung
+    kurz: Pflegekräfte und Apotheken übernehmen nach und nach mehr – über festgelegte Leistungskataloge, nach ärztlicher Diagnose oder mit ärztlicher Rückfrage.
+    pro:
+      - typ: wertung
+        text: Neue Aufgaben lassen sich erproben und auswerten, bevor sie zur Regel werden.
+      - typ: position
+        wer: Kassenärztliche Bundesvereinigung
+        text: Die KBV unterstützt den Ausbau von Pflegekompetenzen, warnt aber vor neuen und „entbehrlichen Schnittstellen zwischen den Professionen“.
+        quellen: [kbv-stellungnahme-beep-2025]
+    contra:
+      - typ: wertung
+        text: Ein Kompromiss kann die Nachteile beider Seiten verbinden – zusätzliche Abstimmung, aber wenig echte Entlastung.
+      - typ: wertung
+        text: Wenn die Selbstverwaltung die Leistungskataloge erst aushandeln muss, kann es Jahre dauern, bis sich im Alltag etwas ändert.
+    gewinnt: [Patientensicherheit durch Erprobung, schrittweise Entlastung der Praxen]
+    kostet: [Tempo, Abstimmungsaufwand]
+
+  - id: arztvorbehalt
+    titel: Arztvorbehalt beibehalten
+    kurz: Diagnose und Behandlungsentscheidung bleiben bei Ärztinnen und Ärzten. Andere Berufe arbeiten weiter auf ärztliche Anordnung („Delegation“).
+    pro:
+      - typ: wertung
+        text: Ärztinnen und Ärzte haben die längste Ausbildung und den Überblick über das ganze Krankheitsbild. Gerade bei mehreren Erkrankungen und vielen Medikamenten zählt das.
+      - typ: wertung
+        text: Klare Verantwortung schützt Patientinnen. Es ist eindeutig, wer haftet und wer entscheidet.
+    contra:
+      - typ: wertung
+        text: Ärztliche Zeit wird für Aufgaben gebunden, die gut ausgebildete Pflegekräfte oder Apotheker ebenso erledigen könnten.
+      - typ: wertung
+        text: Gut qualifizierte Pflegekräfte bleiben unter ihren Möglichkeiten. Das kann den Beruf weniger attraktiv machen.
+    gewinnt: [einheitliche ärztliche Verantwortung, Klarheit bei der Haftung]
+    kostet: [Arztzeit, Entwicklungsmöglichkeiten anderer Gesundheitsberufe]
+
+erklaerung:
+  - typ: fakt
+    text: Viele medizinische Aufgaben dürfen in Deutschland bisher nur Ärztinnen und Ärzte eigenständig ausführen. Andere Berufe übernehmen sie meist nur auf ärztliche Anordnung (**Delegation**). Wenn ein anderer Beruf die Aufgabe eigenständig übernimmt, spricht man von **Substitution**.
+    quellen: [baek-stellungnahme-pkg-2025]
+  - typ: fakt
+    text: Seit 1. Januar 2026 gilt das **Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege**. Pflegefachpersonen können damit bestimmte Aufgaben eigenständig übernehmen, die bisher Ärzten vorbehalten waren, etwa beim Management chronischer Erkrankungen. Welche genau, legt die Selbstverwaltung in Verträgen fest.
+    quellen: [bundesregierung-beep-2026]
+  - typ: fakt
+    text: Mit der Apothekenreform, die der Bundestag im Mai 2026 beschlossen hat, dürfen Apotheken mit allen Impfstoffen impfen, die keine Lebendimpfstoffe sind. Sie dürfen außerdem in dringenden Fällen bestimmte verschreibungspflichtige Medikamente ohne Rezept abgeben.
+    quellen: [bmg-apothekenreform-2026]
+  - typ: fakt
+    text: Ein eigenes Gesetz für **Advanced Practice Nurses** – Pflegekräfte mit Masterabschluss und erweiterten Befugnissen – hat das Gesundheitsministerium im Juli 2026 für die zweite Jahreshälfte angekündigt.
+    quellen: [aerzteblatt-apn-2026]
+    unsicherheit: Ob inzwischen ein Entwurf vorliegt, war bei Redaktionsschluss nicht geklärt.
+
+zielkonflikte:
+  - typ: wertung
+    text: Mehr Befugnisse für andere Berufe können den Zugang zur Versorgung verbessern, verteilen aber Verantwortung auf mehr Schultern.
+  - typ: wertung
+    text: Wer Pflegekräften ärztliche Aufgaben überträgt, braucht noch mehr Pflegekräfte – und die sind selbst knapp.
+  - typ: wertung
+    text: Schnelle Entlastung steht gegen sorgfältige Erprobung. Je vorsichtiger man vorgeht, desto länger dauert es, bis Patienten etwas merken.
+
+daten:
+  kennzahlen:
+    - label: Hausärztinnen und Hausärzte
+      wert: "55.778"
+      stand: "2025"
+      quelle: kbv-arztzahlen-2026
+    - label: Neue Auszubildende Pflegefachfrau/-mann
+      wert: "63.900"
+      stand: "2025"
+      quelle: destatis-pflegeausbildung-2026
+  aussagen:
+    - typ: schaetzung
+      text: Eine IGES-Studie im Auftrag des Bosch Health Campus rechnet für Baden-Württemberg vor, dass der Einsatz nichtärztlicher Berufsgruppen die hausärztliche Versorgungslücke 2040 von 6,5 auf 4,4 Millionen Behandlungsfälle pro Jahr verringern könnte.
+      quellen: [aerzteblatt-iges-2026]
+      unsicherheit: Szenariorechnung; hängt stark von Annahmen zu übertragbaren Aufgaben ab.
+
+laender:
+  beispiele:
+    - land: Mehrere OECD-Länder
+      ansatz: Pflegekräfte in erweiterten Rollen in der Primärversorgung
+      text: Eine OECD-Studie zu 37 Ländern beschreibt, wie Pflegekräfte dort Aufgaben übernehmen, die früher Ärzten vorbehalten waren – von Chronikerbetreuung bis zur Verordnung von Medikamenten. Voraussetzung sind meist eine akademische Zusatzqualifikation und eine klare gesetzliche Regelung.
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: Ausbildung, Rollen und Bezahlung unterscheiden sich stark. Länder mit langer akademischer Pflegeausbildung sind schwer mit Deutschland zu vergleichen, wo die Akademisierung erst begonnen hat.
+      quellen: [oecd-nurses-advanced-2017]
+
+verknuepft:
+  - frage: fachkraefte-pflege
+    grund: Mehr Aufgaben für Pflegekräfte setzen voraus, dass es genug Pflegekräfte gibt.
+  - frage: ambulant-steuerung
+    grund: In einem Primärversorgungssystem könnten Pflegekräfte einen Teil der Steuerung übernehmen.
+  - frage: ambulant-land
+    grund: Erweiterte Befugnisse könnten Lücken dort füllen, wo Ärzte fehlen.
+
+quellen:
+  - id: bundesregierung-beep-2026
+    titel: Qualifikationen von Pflegekräften besser nutzen
+    herausgeber: Bundesregierung
+    jahr: 2026
+    url: https://www.bundesregierung.de/breg-de/aktuelles/befugnisse-pflegekraefte-2376966
+    art: amtlich
+  - id: bmg-apothekenreform-2026
+    titel: Bundestag beschließt Apothekenreform
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/bundestag-beschliesst-apothekenreform-pm-22-05-2026
+    art: amtlich
+  - id: baek-stellungnahme-pkg-2025
+    titel: Stellungnahme der Bundesärztekammer zum Referentenentwurf eines Gesetzes zur Stärkung der Pflegekompetenz (Pflegekompetenzgesetz – PKG)
+    herausgeber: Bundesärztekammer
+    jahr: 2025
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Gesetze_und_Verordnungen/Stellungnahmen_WP21/PKG/BAEK_Stellungnahme_RefE_PKG.pdf
+    art: verband
+  - id: kbv-stellungnahme-beep-2025
+    titel: Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege – Stellungnahme
+    herausgeber: Kassenärztliche Bundesvereinigung
+    jahr: 2025
+    url: https://www.kbv.de/positionen/stellungnahmen/gesetz-zur-befugniserweiterung-und-entbuerokratisierung-in-der-pflege
+    art: verband
+  - id: aerzteblatt-apn-2026
+    titel: Advanced Practice Nursing soll noch in diesem Jahr gesetzlich geregelt werden
+    herausgeber: Deutsches Ärzteblatt
+    jahr: 2026
+    url: https://www.aerzteblatt.de/themen/pflegepersonal/advanced-practice-nursing-soll-noch-in-diesem-jahr-gesetzlich-geregelt-werden-ba4a86d5-050b-4119-a403-5bdce690a3a4
+    art: presse
+  - id: oecd-nurses-advanced-2017
+    titel: "Nurses in advanced roles in primary care: Policy levers for implementation (OECD Health Working Paper No. 98)"
+    herausgeber: OECD (Maier, Aiken, Busse)
+    jahr: 2017
+    url: https://www.oecd.org/social-issues-migration-health/nurses-in-advanced-roles-in-primary-care_a8756593-en
+    art: international
+  - id: kbv-arztzahlen-2026
+    titel: "Kritischer Trend setzt sich fort: Mehr Ärzte und trotzdem weniger Zeit"
+    herausgeber: Kassenärztliche Bundesvereinigung
+    jahr: 2026
+    url: https://www.kbv.de/presse/pressemitteilungen/2026/kritischer-trend-setzt-sich-fort-mehr-aerzte-und-trotzdem-weniger-zeit
+    art: verband
+  - id: destatis-pflegeausbildung-2026
+    titel: "Pflegeausbildung 2025: Zahl neuer Auszubildender zum dritten Mal in Folge gestiegen (Pressemitteilung Nr. 231)"
+    herausgeber: Statistisches Bundesamt
+    jahr: 2026
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/07/PD26_231_212.html
+    art: amtlich
+  - id: aerzteblatt-iges-2026
+    titel: "Prognose: Rund 12.000 freie Hausarztsitze bis 2040 (zur Studie „Primärversorgung 2035+“ von IGES im Auftrag des Bosch Health Campus)"
+    herausgeber: Deutsches Ärzteblatt
+    jahr: 2026
+    url: https://www.aerzteblatt.de/news/prognose-rund-12000-freie-hausarztsitze-bis-2040-5e83a125-b6f8-4588-8c01-d1b36df8c0a6
+    art: presse

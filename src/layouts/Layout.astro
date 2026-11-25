@@ -1,0 +1,81 @@
+---
+import '../styles/global.css';
+import { SITE } from '../config';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+const { title, description = 'Klartext erklärt politische Fragen Schicht für Schicht – neutral, mit Quellen, ohne Wahlempfehlung.' } = Astro.props;
+const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} – ${SITE.claim}`;
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/gesundheit/', label: 'Gesundheit' },
+  { href: '/gesundheit/fragen/', label: 'Fragen' },
+  { href: '/mein-bild/', label: 'Mein Bild' },
+  { href: '/methodik/', label: 'Methodik', desktop: true },
+];
+const isActive = (href: string) =>
+  href === '/gesundheit/' ? path === href || (path.startsWith('/gesundheit/') && !path.startsWith('/gesundheit/fragen/')) : path.startsWith(href);
+---
+
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#f8f6f1" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#141413" media="(prefers-color-scheme: dark)" />
+  </head>
+  <body class="min-h-dvh flex flex-col">
+    <a href="#inhalt" class="sr-only focus:not-sr-only focus:absolute focus:m-2 focus:p-2 focus:bg-surface">Zum Inhalt</a>
+    <header class="border-b border-line bg-bg/90 backdrop-blur sticky top-0 z-20">
+      <div class="mx-auto max-w-5xl px-4 h-14 flex items-center gap-4">
+        <a href="/" class="serif text-xl font-semibold tracking-tight no-underline shrink-0" aria-label="Klartext – Startseite">
+          Klartext<span class="text-accent">.</span>
+        </a>
+        <nav aria-label="Hauptnavigation" class="ml-auto -mr-2 overflow-x-auto">
+          <ul class="flex items-center gap-1 text-sm whitespace-nowrap">
+            {
+              nav.map((n) => (
+                <li class={n.desktop ? 'hidden sm:block' : ''}>
+                  <a
+                    href={n.href}
+                    class:list={[
+                      'px-2 sm:px-2.5 py-1.5 rounded-md no-underline hover:bg-surface-2',
+                      isActive(n.href) ? 'text-ink font-semibold' : 'text-muted',
+                    ]}
+                    aria-current={isActive(n.href) ? 'page' : undefined}
+                  >
+                    {n.label}
+                  </a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inhalt" class="flex-1">
+      <slot />
+    </main>
+
+    <footer class="border-t border-line mt-16">
+      <div class="mx-auto max-w-5xl px-4 py-8 text-sm text-muted grid gap-3 sm:grid-cols-[1fr_auto]">
+        <p class="max-w-prose">
+          <strong class="text-ink">Klartext</strong> ist politisch neutral und gibt keine Wahlempfehlung. Inhalte sind
+          mit Quellen belegt und als Fakt, Schätzung, Wertung oder Position gekennzeichnet. Deine Antworten bleiben in
+          deinem Browser.
+        </p>
+        <p class="sm:text-right">
+          <a class="link" href="/methodik/">Methodik</a> · <a class="link" href="/quellen/">Quellen</a><br />
+          <span class="text-faint">Prototyp v{SITE.version}</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

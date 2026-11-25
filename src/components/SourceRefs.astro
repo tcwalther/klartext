@@ -1,0 +1,15 @@
+---
+interface Props {
+  ids: string[];
+  nums: Map<string, number>;
+}
+const { ids, nums } = Astro.props;
+---
+
+{
+  ids.map((id) => (
+    <a href={`#quelle-${id}`} class="src-ref" aria-label={`Quelle ${nums.get(id)}`}>
+      [{nums.get(id)}]
+    </a>
+  ))
+}

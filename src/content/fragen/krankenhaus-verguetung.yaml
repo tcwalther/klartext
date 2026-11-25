@@ -1,0 +1,423 @@
+bereich: krankenhaeuser
+reihenfolge: 2
+status: entwurf
+stand: "2026-11-25"
+titel: Wie sollen Krankenhäuser bezahlt werden?
+frage: "Sollen Krankenhäuser weiter vor allem je Behandlungsfall bezahlt werden, einen festen Anteil für das Bereithalten von Leistungen bekommen oder ein Budget, das ihre tatsächlichen Kosten deckt?"
+
+optionen:
+  - id: fallpauschalen
+    titel: Fallpauschalen weiterentwickeln
+    kurz: "Das Geld folgt weiterhin der einzelnen Behandlung: Für jeden Fall gibt es einen festen Preis je nach Diagnose und Schweregrad; das System wird verfeinert statt ersetzt."
+    pro:
+      - typ: position
+        wer: Verband der Privaten Krankenversicherung (PKV)
+        text: "„Zwei Jahrzehnte DRG-System haben Transparenz über die Leistungen der deutschen Krankenhäuser gebracht.“ Die geplante Vorhaltevergütung gehe dagegen in die falsche Richtung, führe zu neuen Fehlanreizen und mehr Bürokratie."
+        quellen: [pkv-khvvg-2024]
+      - typ: position
+        wer: Bundesverband Deutscher Privatkliniken (BDPK)
+        text: "Das DRG-System werde „zu Unrecht als Ursache“ für die Probleme gesehen. Den wirtschaftlichen Druck verursache vor allem, dass Personal- und Investitionskosten nicht vollständig refinanziert würden."
+        quellen: [bdpk-2021]
+      - typ: wertung
+        text: "Wer mehr Patientinnen und Patienten gut und effizient behandelt, bekommt mehr Geld. Das belohnt Leistung und macht Kosten zwischen Kliniken vergleichbar."
+    contra:
+      - typ: position
+        wer: Regierungskommission Krankenhausversorgung
+        text: "Die rein leistungs- und mengenorientierte Vergütung erzeuge erhebliche Fehlanreize, insbesondere „eine sachlich nicht gerechtfertigte Mengenausweitung“. In Deutschland übten die Fallpauschalen wahrscheinlich den stärksten Mengenanreiz im OECD-Vergleich aus."
+        quellen: [regkom-3-2022]
+      - typ: wertung
+        text: "Eine Notaufnahme oder ein Kreißsaal kostet auch dann Geld, wenn wenig los ist. Häuser mit wenigen Fällen geraten so unter Druck – unabhängig davon, wie gut sie behandeln."
+    gewinnt: [Kliniken mit hohen Fallzahlen und effizienten Abläufen, Transparenz über Leistungen und Kosten]
+    kostet: [kleine Häuser mit hohen Bereitschaftskosten, Bereiche mit schwankender Nachfrage wie Geburtshilfe und Kinderheilkunde]
+
+  - id: mischsystem
+    titel: Mischsystem mit Vorhaltepauschalen
+    kurz: "Ein großer Teil des Geldes fließt unabhängig von der genauen Fallzahl für das Bereithalten von Personal und Technik, der Rest weiter je Fall – so sieht es die Reform von 2024/2026 vor."
+    pro:
+      - typ: position
+        wer: Regierungskommission Krankenhausversorgung
+        text: "Leistungsanreize müssten erhalten bleiben. Daneben solle es eine Vorhaltefinanzierung geben, die an Versorgungsstufen und Leistungsgruppen gekoppelt ist."
+        quellen: [regkom-3-2022]
+      - typ: fakt
+        text: "Nach geltendem Recht werden 60 % der Kosten einer Behandlung (ohne Materialkosten wie Implantate, die Pflegepersonalkosten mitgerechnet) aus den Fallpauschalen herausgelöst und als **Vorhaltebudget** gezahlt."
+        quellen: [khg-17b]
+      - typ: wertung
+        text: "Kliniken können besser planen, wenn ein Teil des Geldes nicht davon abhängt, wie viele Fälle in einem Jahr kommen. Das senkt den Druck, zusätzliche Behandlungen aus wirtschaftlichen Gründen anzubieten."
+    contra:
+      - typ: position
+        wer: Deutsche Krankenhausgesellschaft (DKG)
+        text: "Die Vorhaltevergütung verursache „massiven Bürokratieaufwand“, erreiche aber die Ziele nicht. Sie verteile nur bestehende, aus Sicht der DKG zu knappe Mittel um. Da die Vorhaltebudgets weiter an Fallzahlen anknüpften, ändere sich wenig."
+        quellen: [dkg-khvvg-2024]
+      - typ: position
+        wer: Deutscher Landkreistag
+        text: "Die Idee einer echten Vorhaltefinanzierung sei richtig, die fallzahlabhängige Ausgestaltung aber „ein grundsätzlich ungeeignetes Instrument“. Daran ändere auch die Verschiebung nichts."
+        quellen: [dlt-khag-2025]
+      - typ: wertung
+        text: "Ein zweites Abrechnungssystem neben den Fallpauschalen macht die Finanzierung komplizierter und schwerer zu überprüfen."
+    gewinnt: [Häuser mit hohen Bereitschaftskosten (Notfall, Geburtshilfe, Kinder), Planbarkeit für Kliniken, Spezialisierung über Leistungsgruppen]
+    kostet: [Einfachheit der Abrechnung, Anreiz zur Effizienz je Fall, Häuser ohne zugewiesene Leistungsgruppen]
+
+  - id: budgets
+    titel: Budgets nach tatsächlichen Kosten
+    kurz: "Jedes Krankenhaus bekommt ein festes Budget, das seine nachgewiesenen, notwendigen Kosten deckt – wie früher allgemein und heute schon beim Pflegepersonal."
+    pro:
+      - typ: position
+        wer: ver.di (Vereinte Dienstleistungsgewerkschaft)
+        text: "ver.di fordert die Abschaffung des DRG-Systems. Es solle durch eine Finanzierung ersetzt werden, die sich an den tatsächlichen Bedarfen der Patientinnen und Patienten orientiert, und unterstützt die Wiedereinführung des Selbstkostendeckungsprinzips."
+        quellen: [verdi-2021]
+      - typ: fakt
+        text: "Für das Pflegepersonal am Bett gilt das Prinzip bereits: Seit 2020 werden diese Kosten außerhalb der Fallpauschalen über ein krankenhausindividuelles **Pflegebudget** nach dem Selbstkostendeckungsprinzip bezahlt."
+        quellen: [gkv-sv-pflegebudget]
+      - typ: wertung
+        text: "Wenn Kosten gedeckt sind, lohnt es sich weder, Behandlungen aus finanziellen Gründen auszuweiten, noch, beim Personal zu sparen. Ärztliche Entscheidungen werden von wirtschaftlichem Druck entlastet."
+    contra:
+      - typ: position
+        wer: Regierungskommission Krankenhausversorgung
+        text: "Auch eine ausschließlich leistungsunabhängige Vergütung – etwa ein zu 100 % garantiertes Budget oder Selbstkostendeckung – setze Fehlanreize und löse erhebliche Risiken für die Versorgung sowie finanzielle Risiken für die Krankenkassen aus."
+        quellen: [regkom-3-2022]
+      - typ: position
+        wer: GKV-Spitzenverband
+        text: "Beim Pflegebudget seien Kosten aus den Fallpauschalen in das Budget verschoben worden. Das führe zu einer Doppelfinanzierung von Personalkosten zulasten der Beitragszahler."
+        quellen: [gkv-sv-fokus-finanzierung, gkv-sv-pflegebudget]
+      - typ: fakt
+        text: "Bis 2003 wurden Krankenhausleistungen überwiegend über Tagessätze bezahlt, die unabhängig vom Behandlungsaufwand waren. Die Kasse zahlte bei gleicher Liegedauer für leicht Erkrankte genauso viel wie für schwer Kranke."
+        quellen: [bmg-fallpauschalen]
+    gewinnt: [Beschäftigte (weniger Kostendruck), Häuser mit wenigen Fällen, Versorgung mit schwankender Nachfrage]
+    kostet: [Beitragszahler (schwerere Ausgabenkontrolle), Anreize zu wirtschaftlichem Handeln, Vergleichbarkeit zwischen Kliniken]
+
+erklaerung:
+  - typ: fakt
+    text: "Krankenhäuser haben zwei Geldquellen: Die **Bundesländer** sollen Investitionen wie Neubauten und Geräte bezahlen, die **Krankenkassen** die laufenden Kosten der Behandlung. Das nennt man duale Finanzierung; sie gilt seit 1972."
+    quellen: [gkv-sv-fokus-finanzierung, khg-4]
+  - typ: fakt
+    text: "Seit 2004 wird der Großteil der Behandlungen über **Fallpauschalen** bezahlt (auch DRG genannt, „Diagnosis Related Groups“). Das Krankenhaus bekommt je Fall einen festen Betrag, der von Diagnose, Eingriff und Schweregrad abhängt – nicht davon, wie lange jemand bleibt."
+    quellen: [bmg-fallpauschalen]
+  - typ: fakt
+    text: "Seit 2020 sind die Kosten für das Pflegepersonal am Bett herausgelöst. Sie werden über ein eigenes **Pflegebudget** nach tatsächlichen Kosten erstattet."
+    quellen: [gkv-sv-pflegebudget]
+  - typ: fakt
+    text: "Die Reform von 2024, angepasst 2026, führt zusätzlich ein **Vorhaltebudget** ein: Geld dafür, dass eine Klinik bestimmte Leistungen überhaupt anbietet. 2026 und 2027 ändert sich am Budget noch nichts, 2028 und 2029 folgt der Übergang, ab 2030 wirkt es voll."
+    quellen: [bt-drs-21-2512, khentgg-6b]
+  - typ: fakt
+    text: "Es geht um viel Geld: 2025 gaben die gesetzlichen Krankenkassen rund 111,4 Milliarden Euro für Krankenhausbehandlung aus – fast ein Drittel ihrer Ausgaben."
+    quellen: [bmg-kv45-2025]
+  - typ: wertung
+    text: "Die Kernfrage lautet: Soll das Geld der einzelnen Behandlung folgen, dem Bereithalten von Versorgung oder den tatsächlichen Kosten einer Klinik? Jede Antwort setzt andere Anreize."
+
+zielkonflikte:
+  - typ: wertung
+    text: "**Effizienz gegen Sicherheit.** Je stärker Geld an Fälle gebunden ist, desto mehr lohnt sich effizientes Arbeiten – aber auch das Ausweiten lukrativer Behandlungen. Je stärker Kosten garantiert sind, desto sicherer ist die Klinik – aber desto geringer der Druck, wirtschaftlich zu arbeiten."
+  - typ: wertung
+    text: "**Umverteilen oder mehr Geld?** Ein neues Bezahlsystem verteilt zunächst die vorhandenen Mittel anders. Ob insgesamt mehr Geld nötig ist, ist eine eigene Frage – und betrifft Beitrags- und Steuerzahler."
+  - typ: wertung
+    text: "**Genauigkeit gegen Bürokratie.** Je genauer ein System Aufwand abbildet, desto mehr muss dokumentiert, kodiert und geprüft werden."
+  - typ: fakt
+    text: "**Die zweite Säule fehlt teilweise.** Für 2023 standen einem Investitionsbedarf von 6,52 Milliarden Euro Fördermittel der Länder von 3,89 Milliarden Euro gegenüber, so die Deutsche Krankenhausgesellschaft. Kliniken finanzieren Investitionen deshalb zum Teil aus dem Geld für die laufende Behandlung."
+    quellen: [dkg-pm-2026-01-09, regkom-3-2022]
+
+daten:
+  kennzahlen:
+    - label: Ausgaben der GKV für Krankenhausbehandlung
+      wert: "111,4 Mrd. €"
+      stand: "2025"
+      quelle: bmg-kv45-2025
+      hinweis: "Vorläufige Rechnungsergebnisse; entspricht rund 31,6 % aller GKV-Ausgaben von 352,4 Mrd. € (eigene Berechnung)."
+    - label: Vollstationäre Behandlungsfälle
+      wert: "17,7 Mio."
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+      hinweis: "2019 waren es 19,4 Mio."
+    - label: Durchschnittliche Verweildauer
+      wert: "7,0 Tage"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+    - label: Vorhalteanteil nach geltendem Recht
+      wert: "60 % der Kosten (ohne variable Sachkosten)"
+      stand: "2026"
+      quelle: khg-17b
+      hinweis: "Pflegepersonalkosten werden auf den Vorhalteanteil angerechnet."
+    - label: Investitionsmittel der Länder (§ 9 KHG)
+      wert: "rund 4,24 Mrd. €"
+      stand: "2024"
+      quelle: dkg-pm-2026-01-09
+      hinweis: "Angabe der Deutschen Krankenhausgesellschaft (Interessenverband)."
+  diagramme:
+    - titel: Durchschnittliche Verweildauer im Krankenhaus
+      einheit: Tage
+      stand: "1991–2021"
+      quelle: destatis-grunddaten-2021
+      hinweis: "2025: 7,0 Tage. Die Verweildauer sank schon vor Einführung der Fallpauschalen 2003/2004."
+      werte:
+        - label: "1991"
+          wert: 14.0
+        - label: "1995"
+          wert: 11.5
+        - label: "2000"
+          wert: 9.7
+        - label: "2005"
+          wert: 8.7
+        - label: "2010"
+          wert: 7.9
+        - label: "2015"
+          wert: 7.3
+        - label: "2019"
+          wert: 7.2
+        - label: "2021"
+          wert: 7.2
+          hervorheben: true
+    - titel: Vollstationäre Behandlungsfälle
+      einheit: Millionen Fälle
+      stand: "1991–2021"
+      quelle: destatis-grunddaten-2021
+      hinweis: "Der Einbruch 2020/2021 fällt in die Corona-Pandemie. 2025: 17,7 Mio."
+      werte:
+        - label: "1991"
+          wert: 14.6
+        - label: "1995"
+          wert: 15.9
+        - label: "2000"
+          wert: 17.3
+        - label: "2005"
+          wert: 16.5
+        - label: "2010"
+          wert: 18.0
+        - label: "2015"
+          wert: 19.2
+        - label: "2019"
+          wert: 19.4
+          hervorheben: true
+        - label: "2021"
+          wert: 16.7
+  aussagen:
+    - typ: fakt
+      text: "Zwischen 2005 und 2019 stieg die Zahl der vollstationären Fälle von 16,5 auf 19,4 Millionen. Seit der Corona-Pandemie liegt sie deutlich niedriger."
+      quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
+    - typ: wertung
+      text: "Ob der Anstieg der Fallzahlen vor allem an den Fallpauschalen lag oder an einer älteren Bevölkerung und medizinischem Fortschritt, ist umstritten. Die Daten allein beantworten das nicht."
+    - typ: position
+      wer: GKV-Spitzenverband, PKV-Verband und Deutsche Krankenhausgesellschaft (gemeinsam)
+      text: "Der bestandserhaltende Investitionsbedarf der Krankenhäuser liege bei rund 6,5 Milliarden Euro pro Jahr; die Länder deckten seit Jahren nur etwa die Hälfte. Anfang der 1970er-Jahre hätten die Investitionsmittel 25 % der GKV-Ausgaben entsprochen, heute deutlich unter 4 %."
+      quellen: [gemeinsame-pm-invest-2024]
+
+geschichte:
+  ereignisse:
+    - jahr: "1972"
+      titel: Selbstkostendeckung wird Grundsatz
+      text: "Das Krankenhausfinanzierungsgesetz schreibt die Selbstkostendeckung fest: Die Kassen erstatten die Betriebskosten der Krankenhäuser, bis 1984 sogar im Nachhinein. Die Länder übernehmen die Investitionen."
+      quellen: [bpb-verguetung-2017, gkv-sv-fokus-finanzierung]
+    - jahr: "1993"
+      titel: Budgetdeckel und erste Pauschalen
+      text: "Das Gesundheitsstrukturgesetz begrenzt die Budgets der Krankenhäuser und leitet den Umbau ein. Ab 1996 gelten für alle Kliniken erste Fallpauschalen und Sonderentgelte neben den Tagessätzen."
+      quellen: [bpb-verguetung-2017]
+    - jahr: "2003/2004"
+      titel: Einführung der DRG-Fallpauschalen
+      text: "Nach einem australischen Vorbild werden Fallpauschalen eingeführt: 2003 freiwillig, ab 2004 für alle somatischen Krankenhäuser verpflichtend. Zunächst ändern sich die Budgets der einzelnen Häuser noch nicht."
+      quellen: [bmg-fallpauschalen]
+    - jahr: "2005–2010"
+      titel: Angleichung der Preise
+      text: "Die zunächst krankenhausindividuellen Preise werden schrittweise angeglichen. Seit 2010 gilt in jedem Bundesland ein einheitlicher Basisfallwert, also ein Grundpreis je Fall."
+      quellen: [bpb-verguetung-2017]
+    - jahr: "2020"
+      titel: Pflegebudget
+      text: "Die Pflegepersonalkosten am Bett werden aus den Fallpauschalen herausgelöst und wieder nach tatsächlichen Kosten bezahlt. Der GKV-Spitzenverband nennt das die tiefgreifendste Veränderung seit Einführung der DRG."
+      quellen: [gkv-sv-pflegebudget]
+    - jahr: "2022"
+      titel: Regierungskommission schlägt Vorhaltefinanzierung vor
+      text: "Eine Expertenkommission empfiehlt, die Vergütung auf zwei Säulen zu stellen: Vorhaltung und Fallpauschalen. Je nach Bereich sollen 40 bis 60 % als Vorhaltung gezahlt werden (Pflegebudget eingerechnet)."
+      quellen: [regkom-3-2022]
+    - jahr: "2024"
+      titel: KHVVG
+      text: "Die Krankenhausreform tritt am 12. Dezember 2024 in Kraft. Sie verankert ein Vorhaltebudget je Leistungsgruppe."
+      quellen: [bt-drs-21-2512, khentgg-6b]
+    - jahr: "2026"
+      titel: KHAG verschiebt Vorhaltevergütung
+      text: "Das Krankenhausreformanpassungsgesetz tritt am 15. April 2026 in Kraft. Es verschiebt die Vorhaltevergütung um ein Jahr: volle Wirkung erst ab 2030."
+      quellen: [bmg-khag-verfahren, bt-drs-21-2512]
+  bilanz:
+    - typ: fakt
+      text: "Die Verweildauer hat sich seit 1991 halbiert. Sie sank allerdings schon vor 2003 deutlich – also auch unter Tagessätzen und Budgetdeckel."
+      quellen: [destatis-grunddaten-2021]
+    - typ: wertung
+      text: "Deutschland hat in 50 Jahren fast alle Grundmodelle ausprobiert: Kostenerstattung, Budgetdeckel, Fallpauschalen und nun ein Mischsystem. Jedes Modell wurde eingeführt, um Probleme des vorherigen zu lösen – und hat eigene Nebenwirkungen erzeugt."
+    - typ: wertung
+      text: "Wie das neue Vorhaltebudget wirkt, lässt sich frühestens ab 2028 beobachten, wenn es tatsächlich Geld verteilt."
+
+laender:
+  beispiele:
+    - land: Dänemark
+      ansatz: "Globale Budgets, Abkehr von Leistungsvergütung"
+      text: "Seit 1982 bekommen Krankenhäuser im Voraus festgelegte Gesamtbudgets, vor allem um die Kosten zu begrenzen. Ab den 1990er-Jahren kam leistungsbezogene Bezahlung hinzu; 2010 verteilten zwei der fünf Regionen 70 % der Budgets danach. Seit 2017 haben alle Regionen diese leistungsbezogene Finanzierung weitgehend abgeschafft und setzen auf Ziele wie Wartezeiten und Qualitätsstandards. Fallpauschalen dienen weiter zur Verrechnung zwischen Regionen und zum Vergleich."
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: "In Dänemark legen die Regionen die Budgets ihrer Krankenhäuser selbst fest und können sie direkt steuern. In Deutschland verhandeln Kassen mit Krankenhäusern sehr unterschiedlicher Träger."
+      quellen: [observatory-dk-2024]
+    - land: Frankreich
+      ansatz: "Fallpauschalen plus Pauschalen und Ausgabendeckel"
+      text: "Seit 2005 werden Akutbehandlungen in öffentlichen und privaten Kliniken über Fallpauschalen (T2A) bezahlt. Öffentliche Kliniken bekommen daneben Pauschalen etwa für Lehre, Forschung und Aufgaben im öffentlichen Interesse. Das Parlament legt jährlich Ausgabenziele fest; wächst die Menge stärker, sinken im Folgejahr die Preise. Das Gesundheitsministerium will den Anteil der Fallpauschalen schrittweise senken."
+      vergleichbarkeit: hoch
+      vergleichbarkeit_text: "Frankreich hat wie Deutschland ein Versicherungssystem und ein Nebeneinander öffentlicher und privater Kliniken. Der jährliche Ausgabendeckel mit Preisanpassung ist in Deutschland aber so nicht vorgesehen."
+      quellen: [observatory-fr-2023]
+    - land: Niederlande
+      ansatz: "Pauschalen mit Preisverhandlung durch Versicherer"
+      text: "Seit 2005 werden Krankenhäuser über Behandlungspauschalen (DBC, heute DOT) bezahlt. 2012 wurde die Zahl der Pauschalen von rund 30.000 auf 4.400 gesenkt. Für einen Teil der Leistungen handeln Krankenhäuser und Versicherer die Preise frei aus, für den anderen setzt eine Behörde Höchstpreise fest."
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: "Die niederländischen Versicherer verhandeln einzeln und mit viel Spielraum mit den Kliniken. In Deutschland gilt dagegen je Bundesland ein einheitlicher Grundpreis je Fall."
+      quellen: [observatory-nl-2016-finanzierung, bpb-verguetung-2017]
+  fazit:
+    - typ: wertung
+      text: "Kein Land nutzt ein reines Modell. Fallpauschalen werden fast überall mit Budgets, Ausgabendeckeln oder Pauschalen für besondere Aufgaben kombiniert. Strittig ist vor allem das Mischungsverhältnis."
+    - typ: wertung
+      text: "Dänemark ist ein Beispiel für den Weg zurück von der Leistungsvergütung. Ob das auf ein System mit vielen unabhängigen Trägern übertragbar ist, ist offen."
+
+verknuepft:
+  - frage: krankenhaus-standorte
+    grund: "Ob sich kleine Häuser halten können, hängt stark davon ab, ob Geld je Fall oder für das Bereithalten fließt."
+  - frage: krankenhaus-traeger
+    grund: "Gewinne und Verluste eines Krankenhauses entstehen innerhalb des Bezahlsystems – das prägt, für welche Träger sich ein Haus lohnt."
+  - frage: finanzierung-kostenanstieg
+    grund: "Krankenhausausgaben sind der größte Posten der gesetzlichen Krankenversicherung."
+  - frage: fachkraefte-pflege
+    grund: "Das Pflegebudget bezahlt Pflegepersonal nach tatsächlichen Kosten – mit Folgen für Stellen und Beiträge."
+  - frage: ambulant-steuerung
+    grund: "Wie stationäre Behandlungen bezahlt werden, beeinflusst, was ambulant oder im Krankenhaus gemacht wird."
+
+parteien: []
+
+quellen:
+  - id: destatis-pm-2026-376
+    titel: "1,2 % mehr Krankenhausbehandlungen im Jahr 2025 (Pressemitteilung Nr. 376 vom 28. Oktober 2026)"
+    herausgeber: Statistisches Bundesamt (Destatis)
+    jahr: 2026
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_376_231.html
+    art: amtlich
+  - id: destatis-grunddaten-2021
+    titel: "Grunddaten der Krankenhäuser 2021 (Fachserie 12 Reihe 6.1.1), Tabelle 1.1: Krankenhäuser, Betten und Patientenbewegung 1991 bis 2021"
+    herausgeber: Statistisches Bundesamt (Destatis)
+    jahr: 2022
+    url: https://www.statistischebibliothek.de/mir/servlets/MCRFileNodeServlet/DEHeft_derivate_00087776/2120611217004_korr10072024.pdf
+    art: amtlich
+  - id: bmg-kv45-2025
+    titel: "Finanzentwicklung der GKV im 1.–4. Quartal 2025 (Anlage, vorläufige Rechnungsergebnisse)"
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/G/GKV/Anlage_Finanzentwicklung_der_GKV_im_1.-4._Qu_2025.pdf
+    art: amtlich
+  - id: bmg-fallpauschalen
+    titel: "Begriffe A–Z: Fallpauschalen"
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/service/begriffe-von-a-z/f/fallpauschalen.html
+    art: amtlich
+  - id: khg-4
+    titel: "§ 4 KHG – Wirtschaftliche Sicherung der Krankenhäuser"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/khg/__4.html
+    art: gesetz
+  - id: khg-17b
+    titel: "§ 17b KHG – Einführung eines pauschalierenden Entgeltsystems, Absatz 4b (Vorhaltebewertungsrelationen)"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/khg/__17b.html
+    art: gesetz
+  - id: khentgg-6b
+    titel: "§ 6b KHEntgG – Vergütung eines Vorhaltebudgets"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/khentgg/__6b.html
+    art: gesetz
+  - id: bt-drs-21-2512
+    titel: "Entwurf eines Gesetzes zur Anpassung der Krankenhausreform (Krankenhausreformanpassungsgesetz – KHAG), Drucksache 21/2512"
+    herausgeber: Deutscher Bundestag
+    jahr: 2025
+    url: https://dserver.bundestag.de/btd/21/025/2102512.pdf
+    art: amtlich
+  - id: bmg-khag-verfahren
+    titel: "Krankenhausreformanpassungsgesetz (KHAG) – Gesetzgebungsverfahren"
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/krankenhausreformanpassungsgesetz
+    art: amtlich
+  - id: regkom-3-2022
+    titel: "Dritte Stellungnahme und Empfehlung der Regierungskommission für eine moderne und bedarfsgerechte Krankenhausversorgung: Grundlegende Reform der Krankenhausvergütung"
+    herausgeber: Regierungskommission für eine moderne und bedarfsgerechte Krankenhausversorgung (BMG)
+    jahr: 2022
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/K/Krankenhausreform/3te_Stellungnahme_Regierungskommission_Grundlegende_Reform_KH-Verguetung_6_Dez_2022_mit_Tab-anhang.pdf
+    art: gutachten
+  - id: bpb-verguetung-2017
+    titel: "Die Vergütung von Krankenhausleistungen (Thomas Gerlinger)"
+    herausgeber: Bundeszentrale für politische Bildung
+    jahr: 2017
+    url: https://www.bpb.de/themen/gesundheit/gesundheitspolitik/252951/die-verguetung-von-krankenhausleistungen/
+    art: wissenschaft
+  - id: gkv-sv-fokus-finanzierung
+    titel: "Fokus: Krankenhausfinanzierung"
+    herausgeber: GKV-Spitzenverband
+    jahr: 2023
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/fokus/krankenhausfinanzierung/thema_krankenhausfinanzierung.jsp
+    art: verband
+  - id: gkv-sv-pflegebudget
+    titel: "Pflegebudget im Krankenhaus"
+    herausgeber: GKV-Spitzenverband
+    jahr: 2025
+    url: https://www.gkv-spitzenverband.de/krankenversicherung/krankenhaeuser/kh_pflegebudget/pflegebudget_kh.jsp
+    art: verband
+  - id: pkv-khvvg-2024
+    titel: "Stellungnahme zum Gesetzentwurf eines Krankenhausversorgungsverbesserungsgesetzes (KHVVG), 13. September 2024"
+    herausgeber: Verband der Privaten Krankenversicherung
+    jahr: 2024
+    url: https://www.pkv.de/positionen/stellungnahme-zum-gesetzentwurf-zur-verbesserung-der-versorgungsqualitaet-im-krankenhaus-und-zur-reform-der-verguetungsstrukturen-krankenhausversorgungsverbesserungsgesetz-khvvg/
+    art: verband
+  - id: bdpk-2021
+    titel: "Stellungnahme zu Anträgen zur Krankenhausfinanzierung, Ausschussdrucksache 19(14)340(2), 14. Mai 2021"
+    herausgeber: Bundesverband Deutscher Privatkliniken
+    jahr: 2021
+    url: https://www.bundestag.de/resource/blob/841866/71c2cedb1f7b15ab4544b146f851f5c5/19_14_0340-2-_Bundesverband-Deutscher-Privatkliniken_Krankenhausfinanzierung.pdf
+    art: verband
+  - id: verdi-2021
+    titel: "Stellungnahme zu Anträgen zur Krankenhausfinanzierung, Ausschussdrucksache 19(14)340(3)"
+    herausgeber: ver.di – Vereinte Dienstleistungsgewerkschaft
+    jahr: 2021
+    url: https://www.bundestag.de/resource/blob/841868/b726ee3201913d9512b8da1d8cdcc7f0/19_14_0340-3-_Vereinte-Dienstleistungsgewerkschaft_Krankenhausfinanzierung.pdf
+    art: verband
+  - id: dkg-khvvg-2024
+    titel: "Stellungnahme zum Regierungsentwurf des Krankenhausversorgungsverbesserungsgesetzes (KHVVG), Ausschussdrucksache 20(14)220(22)"
+    herausgeber: Deutsche Krankenhausgesellschaft
+    jahr: 2024
+    url: https://bundestag.de/resource/blob/1020654/3bf39c98c2d368b3036bb0c0ab5a8478/20_14_0220-22-_DKG_KHVVG.pdf
+    art: verband
+  - id: dlt-khag-2025
+    titel: "Stellungnahme zum Referentenentwurf eines Gesetzes zur Anpassung der Krankenhausreform (KHAG), 21. August 2025"
+    herausgeber: Deutscher Landkreistag
+    jahr: 2025
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Gesetze_und_Verordnungen/Stellungnahmen_WP21/KHAG/Deutscher_Landkreistag.pdf
+    art: verband
+  - id: dkg-pm-2026-01-09
+    titel: "DKG zur Bestandsaufnahme „Krankenhausplanung und Investitionsfinanzierung in den Bundesländern 2025“ (Pressemitteilung vom 9. Januar 2026)"
+    herausgeber: Deutsche Krankenhausgesellschaft
+    jahr: 2026
+    url: https://dkgev.de/fileadmin/default/Mediapool/1_DKG/1.7_Presse/1.7.1_Pressemitteilungen/2026/2026-01-09_PM_DKG_Bestandsaufnahme_Krankenhausplanung_und_Investitionsfinanzierung.pdf
+    art: verband
+  - id: gemeinsame-pm-invest-2024
+    titel: "GKV-Spitzenverband, PKV und DKG fordern von Ländern höhere Investitionen in Kliniken (Gemeinsame Pressemitteilung vom 9. April 2024)"
+    herausgeber: GKV-Spitzenverband, Verband der Privaten Krankenversicherung, Deutsche Krankenhausgesellschaft
+    jahr: 2024
+    url: https://www.dkgev.de/fileadmin/default/Mediapool/1_DKG/1.7_Presse/1.7.1_Pressemitteilungen/2024/2024-04-09_GemPM_Katalog_fuer_Krankenhaus_Investitionsbewertungsrelationen.pdf
+    art: verband
+  - id: observatory-dk-2024
+    titel: "Denmark – Health Systems and Policy Monitor (2024), Payment mechanisms"
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2024
+    url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/denmark-2024/financing/payment-mechanisms
+    art: international
+  - id: observatory-fr-2023
+    titel: "France – Health Systems and Policy Monitor (2023), Payment mechanisms"
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2023
+    url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/france-2023/hspm-fra-2023-financing/payment-mechanisms
+    art: international
+  - id: observatory-nl-2016-finanzierung
+    titel: "Netherlands – Health Systems and Policy Monitor (2016), Payment mechanisms"
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2016
+    url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/netherlands-2016/financing/payment-mechanisms
+    art: international

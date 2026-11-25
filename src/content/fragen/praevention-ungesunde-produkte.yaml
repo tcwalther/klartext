@@ -1,0 +1,214 @@
+bereich: praevention
+reihenfolge: 1
+status: entwurf
+stand: "2026-11-25"
+titel: Soll der Staat ungesunde Produkte stärker regulieren?
+frage: Soll der Staat stärker eingreifen, damit weniger zuckerhaltige und andere ungesunde Lebensmittel konsumiert werden – über Abgaben, Werbegrenzen oder vor allem über Aufklärung?
+
+optionen:
+  - id: abgaben
+    titel: Abgaben auf ungesunde Produkte
+    kurz: Hersteller zahlen eine Abgabe, die mit dem Zuckergehalt steigt – etwa auf Softdrinks nach britischem Vorbild.
+    pro:
+      - typ: wertung
+        text: Eine gestaffelte Abgabe setzt bei den Herstellern an. Wer weniger Zucker verwendet, zahlt weniger. So ändert sich das Angebot, ohne dass Einzelne etwas verboten bekommen.
+      - typ: fakt
+        text: In Großbritannien sank der durchschnittliche Zuckergehalt der abgabepflichtigen Softdrinks zwischen 2015 und 2024 um 47 Prozent, vor allem weil Hersteller ihre Rezepte änderten.
+        quellen: [govuk-sdil-2025]
+      - typ: position
+        wer: Verbraucherzentrale Bundesverband (Ramona Pop)
+        text: Die geplante Abgabe sei eine „gute Nachricht“. Sie solle auch Süßstoffe erfassen, jährlich an die Inflation angepasst und für Prävention verwendet werden.
+        quellen: [aerzteblatt-zuckerabgabe-plan-2026]
+    contra:
+      - typ: wertung
+        text: Menschen mit wenig Geld geben einen größeren Teil ihres Einkommens für Lebensmittel aus. Steigen Preise, trifft sie das stärker.
+      - typ: position
+        wer: Bundesvereinigung der Deutschen Ernährungsindustrie (Christoph Minhoff)
+        text: Es gehe „einzig und allein darum, mit dieser Steuer Haushaltslöcher zu stopfen“, nicht um Gesundheit.
+        quellen: [aerzteblatt-zuckerabgabe-plan-2026]
+      - typ: wertung
+        text: Eine Abgabe auf einzelne Produkte erfasst nur einen Teil der Ernährung. Wer ausweicht, isst vielleicht anderes Ungesundes.
+    gewinnt: [Kinder und Jugendliche mit hohem Softdrink-Konsum, Zahngesundheit, Staatshaushalt bzw. Krankenversicherung (Einnahmen)]
+    kostet: [Getränkehersteller, Verbraucher mit geringem Einkommen, Wahlfreiheit über den Preis]
+
+  - id: werbung
+    titel: Werbung und Marketing begrenzen
+    kurz: Werbung für sehr zucker-, fett- oder salzhaltige Lebensmittel, die sich an Kinder richtet, wird eingeschränkt.
+    pro:
+      - typ: wertung
+        text: Kinder können Werbung schlechter durchschauen als Erwachsene. Sie vor gezielter Ansprache zu schützen, ist ein anerkanntes Ziel des Jugendschutzes.
+      - typ: wertung
+        text: Eine Werbegrenze kostet Verbraucher nichts und verbietet kein Produkt. Erwachsene können weiter kaufen, was sie wollen.
+    contra:
+      - typ: position
+        wer: Zentralverband der deutschen Werbewirtschaft (ZAW)
+        text: Werbeverbote gefährdeten die Medienvielfalt, weil private Medien von Werbung leben. Dass sie die Gesundheit verbessern, sei nicht belegt; die bestehende Selbstregulierung habe sich bewährt.
+        quellen: [zaw-lebensmittel]
+      - typ: wertung
+        text: Wo genau Kinderwerbung anfängt, ist schwer abzugrenzen. Zu breite Regeln können auch Werbung treffen, die sich an Erwachsene richtet.
+    gewinnt: [Kinder, Eltern]
+    kostet: [Lebensmittel- und Werbewirtschaft, Medien (Werbeeinnahmen)]
+
+  - id: freiwillig
+    titel: Aufklärung und Freiwilligkeit
+    kurz: Der Staat setzt auf Ernährungsbildung, Information und freiwillige Vereinbarungen mit der Industrie statt auf neue Abgaben oder Verbote.
+    pro:
+      - typ: wertung
+        text: Erwachsene entscheiden selbst, was sie essen und trinken. Der Staat informiert, aber bevormundet nicht.
+      - typ: wertung
+        text: Wissen über Ernährung wirkt über einzelne Produkte hinaus. Wer gelernt hat, gesund zu kochen und einzukaufen, profitiert davon ein Leben lang.
+      - typ: wertung
+        text: Übergewicht hat viele Ursachen – Bewegung, Schlaf, Stress, Einkommen. Einzelne Produkte zu verteuern oder zu bewerben, greift aus dieser Sicht zu kurz.
+    contra:
+      - typ: wertung
+        text: Aufklärung erreicht oft vor allem die, die ohnehin informiert sind. Menschen in schwierigen Lebenslagen erreicht sie schlechter.
+      - typ: wertung
+        text: Freiwillige Zusagen der Industrie sind schwer zu überprüfen und lassen sich ohne Folgen verfehlen.
+    gewinnt: [Wahlfreiheit der Verbraucher, Lebensmittelwirtschaft]
+    kostet: [Tempo bei der Senkung des Zuckerkonsums, Menschen, die Aufklärung schlecht erreicht]
+
+erklaerung:
+  - typ: fakt
+    text: Rund 53,5 Prozent der Erwachsenen in Deutschland sind übergewichtig, Adipositas (starkes Übergewicht) eingeschlossen. Das zeigen Selbstangaben aus einer RKI-Befragung von 2019/2020.
+    quellen: [rki-geda-uebergewicht-2022]
+  - typ: fakt
+    text: Der Anteil der Erwachsenen mit **Adipositas** (Body-Mass-Index ab 30) stieg laut RKI von 12,2 Prozent (2003) auf 19,7 Prozent (2023).
+    quellen: [rki-adipositas-trend-2025]
+  - typ: fakt
+    text: Die Bundesregierung plant eine Steuer auf zuckerhaltige Getränke. Das Kabinett beschloss im Oktober 2026 einen Entwurf mit 26 Cent je Liter (5 bis unter 8 Gramm Zucker je 100 ml) und 32 Cent (ab 8 Gramm), Start 1. Juli 2027.
+    quellen: [ihk-zuckersteuer-2026]
+  - typ: fakt
+    text: Im November 2026 verständigte sich die Koalition darauf, den Start auf Anfang 2028 zu verschieben und drei statt zwei Stufen vorzusehen. Der Bundestag hat noch nicht abschließend entschieden.
+    quellen: [aok-zuckersteuer-verschoben-2026]
+    unsicherheit: Sätze und Stufen der geänderten Fassung waren bei Redaktionsschluss nicht veröffentlicht.
+  - typ: fakt
+    text: Ein Gesetz zur Begrenzung von Lebensmittelwerbung an Kinder (Kinder-Lebensmittel-Werbegesetz) wurde in der letzten Wahlperiode entworfen, scheiterte aber 2024. Der aktuelle Koalitionsvertrag sieht laut Werbewirtschaft keine weiteren Werbeverbote vor.
+    quellen: [zaw-lebensmittel]
+
+zielkonflikte:
+  - typ: wertung
+    text: Gesundheitsschutz steht gegen Wahlfreiheit. Je stärker der Staat eingreift, desto wirksamer kann er sein – desto mehr greift er aber in Alltagsentscheidungen ein.
+  - typ: wertung
+    text: Abgaben bringen Geld und wirken über den Preis. Gerade deshalb belasten sie Haushalte mit wenig Einkommen stärker – auch wenn diese oft am meisten von gesünderen Produkten hätten.
+  - typ: wertung
+    text: Wird eine Abgabe auch zum Stopfen von Finanzlücken genutzt, entsteht ein Widerspruch. Je besser sie wirkt, desto weniger bringt sie ein.
+
+daten:
+  kennzahlen:
+    - label: Erwachsene mit Übergewicht (inkl. Adipositas)
+      wert: 53,5 %
+      stand: "2019/2020"
+      quelle: rki-geda-uebergewicht-2022
+      hinweis: Selbstangaben zu Größe und Gewicht
+    - label: Erwachsene mit Adipositas
+      wert: 19,7 %
+      stand: "2023"
+      quelle: rki-adipositas-trend-2025
+    - label: Geplante Zuckergetränkesteuer (Kabinettsentwurf)
+      wert: 26 bzw. 32 Cent je Liter
+      stand: "Oktober 2026"
+      quelle: ihk-zuckersteuer-2026
+      hinweis: Ausgestaltung wurde im November 2026 noch einmal geändert
+    - label: Geschätzte Einnahmen einer Zuckerabgabe
+      wert: rund 450 Mio. Euro pro Jahr
+      stand: "April 2026"
+      quelle: aerzteblatt-zuckerabgabe-2028
+      hinweis: Schätzung der Finanzkommission Gesundheit; andere Quellen nennen 650 Mio. Euro als eingeplanten Betrag
+
+geschichte:
+  ereignisse:
+    - jahr: "2024"
+      titel: Werbegesetz gestoppt
+      text: Der Entwurf eines Kinder-Lebensmittel-Werbegesetzes scheiterte 2024 und trat nicht in Kraft.
+      quellen: [zaw-lebensmittel]
+    - jahr: "2025"
+      titel: Bund lehnt Zuckersteuer zunächst ab
+      text: Im Dezember 2025 erklärte das Bundesfinanzministerium, eine Zuckersteuer sei im Koalitionsvertrag nicht vorgesehen. Schleswig-Holsteins Ministerpräsident Daniel Günther (CDU) kündigte eine Bundesrats-Initiative an.
+      quellen: [aerzteblatt-bmf-zuckersteuer-2025]
+    - jahr: "2026"
+      titel: Zuckerabgabe wird Teil der Kassenfinanzen
+      text: Im April 2026 nahm die Bundesregierung eine Abgabe auf zuckergesüßte Getränke in ihre Pläne zur Stabilisierung der Krankenkassenbeiträge auf. Im Oktober folgte ein Kabinettsentwurf, im November die Verschiebung auf 2028.
+      quellen: [aerzteblatt-zuckerabgabe-plan-2026, ihk-zuckersteuer-2026, aok-zuckersteuer-verschoben-2026]
+
+laender:
+  beispiele:
+    - land: Großbritannien
+      ansatz: Gestaffelte Herstellerabgabe auf Softdrinks (Soft Drinks Industry Levy, seit 2018)
+      text: Hersteller zahlen 18 Pence je Liter bei 5 bis unter 8 Gramm Zucker je 100 ml und 24 Pence ab 8 Gramm. Rund 65 Prozent der Getränke über 5 Gramm wurden bis 2019 so verändert, dass sie darunter lagen. Ab 2028 soll die Grenze auf 4,5 Gramm sinken und auch gesüßte Milchgetränke erfassen.
+      vergleichbarkeit: hoch
+      vergleichbarkeit_text: Ähnlicher Getränkemarkt und ähnliche Industrie. Der geplante deutsche Entwurf orientiert sich ausdrücklich am britischen Stufenmodell.
+      quellen: [govuk-sdil-2025]
+    - land: Mexiko
+      ansatz: Verbrauchsteuer von 1 Peso je Liter auf zuckergesüßte Getränke (seit 2014)
+      text: Im ersten Jahr kauften Haushalte im Schnitt 6 Prozent weniger besteuerte Getränke als ohne Steuer zu erwarten gewesen wäre. Haushalte mit niedrigem Einkommen reduzierten am stärksten, im Schnitt um 9 Prozent.
+      vergleichbarkeit: gering
+      vergleichbarkeit_text: Mexiko hatte einen der höchsten Softdrink-Konsume weltweit und andere Einkommensverhältnisse. Die Steuer setzt beim Preis an, nicht wie in Großbritannien bei Rezepturen.
+      quellen: [colchero-bmj-2016]
+
+verknuepft:
+  - frage: praevention-anreize
+    grund: Beide Fragen klären, ob Prävention eher beim Einzelnen oder bei den Verhältnissen ansetzen soll.
+  - frage: finanzierung-kostenanstieg
+    grund: Die geplante Zuckerabgabe ist Teil eines Pakets, das die Krankenkassenbeiträge stabilisieren soll.
+
+quellen:
+  - id: govuk-sdil-2025
+    titel: "Strengthening the Soft Drinks Industry Levy: summary of responses"
+    herausgeber: HM Treasury / HM Revenue & Customs
+    jahr: 2025
+    url: https://www.gov.uk/government/consultations/strengthening-the-soft-drinks-industry-levy/outcome/strengthening-the-soft-drinks-industry-levy-summary-of-responses
+    art: amtlich
+  - id: aerzteblatt-zuckerabgabe-plan-2026
+    titel: Bundesregierung will Zuckerabgabe einführen
+    herausgeber: Deutsches Ärzteblatt
+    jahr: 2026
+    url: https://www.aerzteblatt.de/news/bundesregierung-will-zuckerabgabe-einfuhren-ce082fc6-dd86-4d80-82ef-e853063a5a7a
+    art: presse
+  - id: aerzteblatt-zuckerabgabe-2028
+    titel: Zuckerabgabe ab 2028 geplant, Details noch offen
+    herausgeber: Deutsches Ärzteblatt
+    jahr: 2026
+    url: https://www.aerzteblatt.de/news/zuckerabgabe-ab-2028-geplant-details-noch-offen
+    art: presse
+  - id: aerzteblatt-bmf-zuckersteuer-2025
+    titel: "Bundesfinanzministerium: Einführung von Zuckersteuer nicht vorgesehen"
+    herausgeber: Deutsches Ärzteblatt
+    jahr: 2025
+    url: https://www.aerzteblatt.de/news/bundesfinanzministerium-einfuhrung-von-zuckersteuer-nicht-vorgesehen-3bd1232f-afea-4238-b86c-ff2fd1d31c4c
+    art: presse
+  - id: ihk-zuckersteuer-2026
+    titel: Kabinett einigt sich bei Zuckersteuer
+    herausgeber: IHK Ostthüringen zu Gera
+    jahr: 2026
+    url: https://www.ihk.de/gera/recht-und-steuern/aktuelles-rechtundsteuern/kabinett-einigt-sich-bei-zuckersteuer-7203886
+    art: verband
+  - id: aok-zuckersteuer-verschoben-2026
+    titel: Zuckersteuer verschoben
+    herausgeber: AOK-Bundesverband (G+G)
+    jahr: 2026
+    url: https://www.aok.de/pp/gg/update/zuckersteuer-verschoben/
+    art: verband
+  - id: zaw-lebensmittel
+    titel: "Positionen: Lebensmittel"
+    herausgeber: Zentralverband der deutschen Werbewirtschaft (ZAW)
+    jahr: 2025
+    url: https://zaw.de/positionen/lebensmittel/
+    art: verband
+  - id: rki-geda-uebergewicht-2022
+    titel: Übergewicht und Adipositas bei Erwachsenen in Deutschland – Ergebnisse der Studie GEDA 2019/2020-EHIS
+    herausgeber: Robert Koch-Institut (Journal of Health Monitoring)
+    jahr: 2022
+    url: https://edoc.rki.de/handle/176904/10231
+    art: amtlich
+  - id: rki-adipositas-trend-2025
+    titel: Adipositas und Rauchen in Deutschland – Trends (Journal of Health Monitoring 2025/1)
+    herausgeber: Robert Koch-Institut
+    jahr: 2025
+    url: https://rki.de/DE/Aktuelles/Publikationen/Journal-of-Health-Monitoring/GBEDownloadsJ/Focus/JHealthMonit_2025_01_Adipositas_Rauchen.pdf
+    art: amtlich
+  - id: colchero-bmj-2016
+    titel: "Beverage purchases from stores in Mexico under the excise tax on sugar sweetened beverages: observational study"
+    herausgeber: Colchero, Popkin, Rivera, Ng – BMJ 2016;352:h6704
+    jahr: 2016
+    url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4986313
+    art: wissenschaft

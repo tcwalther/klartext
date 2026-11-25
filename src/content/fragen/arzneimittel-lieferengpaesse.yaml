@@ -1,0 +1,176 @@
+bereich: arzneimittel
+reihenfolge: 2
+status: entwurf
+stand: "2026-11-25"
+titel: Was tun gegen Lieferengpässe bei Medikamenten?
+frage: Immer wieder fehlen in Apotheken gängige Medikamente wie Antibiotika oder Psychopharmaka. Was soll vor allem dagegen helfen?
+optionen:
+  - id: produktion-europa
+    titel: Produktion nach Europa holen
+    kurz: Herstellung wichtiger Wirkstoffe in Europa wird gezielt gefördert – auch wenn Medikamente dadurch teurer werden.
+    pro:
+      - typ: position
+        wer: Zentralinstitut für die kassenärztliche Versorgung (Zi)
+        text: Ein zentraler Grund für Engpässe sei die starke Konzentration der Wirkstoffproduktion auf wenige Hersteller, vor allem in China und Indien. Probleme dort machten sich schnell in deutschen Apotheken bemerkbar.
+        quellen: [zi-lieferengpaesse-2026]
+      - typ: wertung
+        text: Mehr Hersteller an mehr Orten machen die Versorgung unabhängiger von einzelnen Fabriken, Ländern und Handelskonflikten.
+      - typ: fakt
+        text: Die EU hat sich im Mai 2026 vorläufig auf einen **Critical Medicines Act** geeinigt. Er verbindet Regeln mit Industriepolitik, etwa staatlichen Beihilfen und gemeinsamer Beschaffung, für über 200 kritische Wirkstoffe.
+        quellen: [ema-cma-2026]
+    contra:
+      - typ: wertung
+        text: Produktion in Europa ist teurer. Das erhöht die Ausgaben der Krankenkassen oder erfordert Subventionen.
+      - typ: wertung
+        text: Neue Fabriken brauchen Jahre. Kurzfristig ändert sich an der Versorgung wenig.
+      - typ: wertung
+        text: Auch europäische Hersteller sind auf Vorprodukte aus aller Welt angewiesen. Vollständige Unabhängigkeit ist kaum erreichbar.
+    gewinnt: [Versorgungssicherheit, Industriestandort Europa]
+    kostet: [Beitragszahlende, Steuerzahlende, Günstige Preise]
+  - id: vorraete-meldepflichten
+    titel: Vorräte und Frühwarnung ausbauen
+    kurz: Hersteller, Großhandel und Apotheken müssen mehr vorrätig halten; Engpässe sollen über Meldepflichten früher erkannt werden.
+    pro:
+      - typ: wertung
+        text: Vorräte überbrücken kurzfristige Ausfälle, bis andere Hersteller einspringen.
+      - typ: position
+        wer: Zentralinstitut für die kassenärztliche Versorgung (Zi)
+        text: Ein Frühwarnsystem solle sicherstellen, dass Informationen über Produktionsausfälle in Asien die Verantwortlichen in Deutschland erreichen, bevor Hersteller nicht mehr liefern können.
+        quellen: [zi-lieferengpaesse-2026]
+      - typ: wertung
+        text: Vorräte und Meldepflichten lassen sich vergleichsweise schnell umsetzen.
+    contra:
+      - typ: wertung
+        text: Lagerhaltung kostet Geld, und Medikamente können verfallen.
+      - typ: wertung
+        text: Vorräte helfen bei kurzen Engpässen, nicht aber, wenn ein Wirkstoff über Monate weltweit knapp ist.
+      - typ: position
+        wer: Zentralinstitut für die kassenärztliche Versorgung (Zi)
+        text: Das Gesetz gegen Lieferengpässe von 2023 habe nach Auskunft der Krankenkassen außer höheren Kosten keine spürbaren Verbesserungen gebracht.
+        quellen: [zi-lieferengpaesse-2026]
+    gewinnt: [Kurzfristige Versorgungssicherheit, Transparenz]
+    kostet: [Hersteller und Großhandel, Lagerkosten]
+  - id: markt-rabattvertraege
+    titel: Markt und Rabattverträge im Kern belassen
+    kurz: Krankenkassen schließen weiter Rabattverträge mit Herstellern; staatliche Eingriffe bleiben auf einzelne Problemfälle beschränkt.
+    pro:
+      - typ: fakt
+        text: Generika (Nachahmerpräparate) decken über 80 % der verordneten Medikamente ab, kosten die GKV nach Rabatten aber nur rund 6 Cent pro Tagesdosis.
+        quellen: [progenerika-zahlen-2025]
+      - typ: schaetzung
+        text: Ohne Generika müsste die GKV für das gleiche Versorgungsniveau nach einer Modellrechnung über 16 Mrd. € im Jahr mehr aufwenden. Dieses Geld steht für andere Leistungen zur Verfügung.
+        quellen: [progenerika-zahlen-2025]
+        unsicherheit: Modellrechnung des Herstellerverbands.
+      - typ: wertung
+        text: Engpässe haben viele Ursachen, etwa schwankende Nachfrage oder Qualitätsprobleme. Höhere Preise allein garantieren keine Lieferfähigkeit.
+    contra:
+      - typ: position
+        wer: Pro Generika (Verband der Generikahersteller)
+        text: Rabattverträge, Festbeträge und Preismoratorium hielten die Preise dauerhaft niedrig. Bei zentralen Wirkstoffen wie Amoxicillin, Metformin oder Tamoxifen konzentriere sich die Versorgung deshalb auf wenige Anbieter.
+        quellen: [progenerika-zahlen-2025]
+      - typ: wertung
+        text: Wenn ein Rabattvertrag nur an einen oder wenige Anbieter geht, fehlt bei deren Ausfall schnell der Ersatz.
+      - typ: wertung
+        text: Engpässe belasten Patienten, Ärzte und Apotheken, die nach Alternativen suchen müssen.
+    gewinnt: [Beitragszahlende, Niedrige Arzneimittelpreise]
+    kostet: [Vielfalt der Anbieter, Möglicherweise Versorgungssicherheit]
+erklaerung:
+  - typ: fakt
+    text: Ein **Lieferengpass** liegt vor, wenn ein Medikament länger als zwei Wochen nicht oder nur eingeschränkt verfügbar ist. 2025 gingen beim Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM) 1.514 Meldungen zu 1.041 Lieferengpässen ein.
+    quellen: [zi-lieferengpaesse-2026]
+  - typ: fakt
+    text: Besonders betroffen waren Psychopharmaka. Engpässe bei Antipsychotika dauerten im Schnitt 230 Tage. Auch Antibiotika, Cholesterinsenker und das Asthmamittel Salbutamol fehlten zeitweise.
+    quellen: [zi-lieferengpaesse-2026]
+  - typ: fakt
+    text: Für **Generika** schließen Krankenkassen **Rabattverträge** mit Herstellern. Der Preis ist dabei oft entscheidend. Generika machen über 80 % der Verordnungen aus, aber nur rund 6 % der Arzneimittelausgaben der GKV.
+    quellen: [progenerika-zahlen-2025]
+  - typ: fakt
+    text: 'Das Lieferengpassgesetz von 2023 (ALBVVG) verpflichtet Hersteller bei Rabattarzneimitteln zu sechs Monaten Lagerhaltung. Bei Kinderarzneimitteln entfielen Festbeträge und Rabattverträge. Bei Antibiotika müssen Ausschreibungen Produktion in der EU zusätzlich berücksichtigen.'
+    quellen: [bmg-albvvg-2023]
+zielkonflikte:
+  - typ: wertung
+    text: '**Niedrige Preise gegen sichere Versorgung:** Günstige Generika entlasten die Beitragszahler, machen die Produktion in Europa aber oft unwirtschaftlich.'
+  - typ: wertung
+    text: '**Schnelle gegen dauerhafte Lösungen:** Vorräte helfen sofort, neue Produktion erst nach Jahren.'
+  - typ: wertung
+    text: '**National gegen europäisch:** Deutschland allein hat wenig Marktmacht; europäische Lösungen brauchen Abstimmung und Zeit.'
+daten:
+  kennzahlen:
+    - label: Lieferengpassmeldungen
+      wert: 1.514 (zu 1.041 Engpässen)
+      stand: "2025"
+      quelle: zi-lieferengpaesse-2026
+    - label: Anteil Generika an der Versorgung
+      wert: über 80 %
+      stand: "2025"
+      quelle: progenerika-zahlen-2025
+    - label: Kosten je Tagesdosis Generikum nach Rabatten
+      wert: rund 6 Cent
+      stand: "2025"
+      quelle: progenerika-zahlen-2025
+      hinweis: Angabe des Herstellerverbands.
+    - label: Kritische Wirkstoffe auf der EU-Liste
+      wert: über 200
+      stand: "2026"
+      quelle: ema-cma-2026
+  diagramme:
+    - titel: Durchschnittliche Dauer von Lieferengpässen
+      einheit: Tage
+      stand: "2025"
+      quelle: zi-lieferengpaesse-2026
+      werte:
+        - label: Antipsychotika
+          wert: 230
+          hervorheben: true
+        - label: Cholesterinsenker
+          wert: 156
+        - label: Antibiotika
+          wert: 122
+        - label: Antidepressiva
+          wert: 107
+geschichte:
+  ereignisse:
+    - jahr: "2023"
+      titel: Lieferengpassgesetz (ALBVVG)
+      text: Lagerpflichten, Lockerung der Preisregeln für Kinderarzneimittel, Berücksichtigung europäischer Produktion bei Antibiotika und ein Frühwarnsystem beim BfArM.
+      quellen: [bmg-albvvg-2023]
+    - jahr: "2026"
+      titel: Einigung auf den Critical Medicines Act
+      text: Europäisches Parlament und Rat einigen sich vorläufig auf ein Gesetz, das die Versorgung mit kritischen Arzneimitteln in der EU stärken soll.
+      quellen: [ema-cma-2026]
+  bilanz:
+    - typ: position
+      wer: Zentralinstitut für die kassenärztliche Versorgung (Zi)
+      text: Lieferengpässe blieben auch nach dem Gesetz von 2023 ein relevantes Versorgungsproblem.
+      quellen: [zi-lieferengpaesse-2026]
+verknuepft:
+  - frage: arzneimittel-preise
+    grund: Preisregeln für neue und alte Medikamente beeinflussen, wo produziert wird.
+  - frage: finanzierung-kostenanstieg
+    grund: Höhere Preise für mehr Versorgungssicherheit erhöhen die Ausgaben.
+parteien: []
+quellen:
+  - id: zi-lieferengpaesse-2026
+    titel: 'Grafik des Monats Januar 2026: Lieferengpässe bei Arzneimitteln'
+    herausgeber: Zentralinstitut für die kassenärztliche Versorgung (Zi)
+    jahr: 2026
+    url: https://www.zi.de/fileadmin/Downloads/Service/Medien/Grafik_des_Monats/2026/gdm-lieferengpaesse-01-26.pdf
+    art: wissenschaft
+  - id: progenerika-zahlen-2025
+    titel: Generika in Zahlen – Kalenderjahr 2025
+    herausgeber: Pro Generika
+    jahr: 2026
+    url: https://www.progenerika.de/wp-content/uploads/2026/06/Generika-in-Zahlen_Kalenderjahr-2025.pdf
+    art: verband
+  - id: bmg-albvvg-2023
+    titel: Arzneimittel-Lieferengpassbekämpfungs- und Versorgungsverbesserungsgesetz (ALBVVG)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2023
+    url: https://www.bundesgesundheitsministerium.de/ministerium/gesetze-und-verordnungen/guv-20-lp/albvvg
+    art: amtlich
+  - id: ema-cma-2026
+    titel: EMA welcomes political agreement on Critical Medicines Act
+    herausgeber: European Medicines Agency
+    jahr: 2026
+    url: https://www.ema.europa.eu/en/news/ema-welcomes-political-agreement-critical-medicines-act
+    art: international

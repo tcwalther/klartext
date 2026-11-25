@@ -1,0 +1,187 @@
+bereich: arzneimittel
+reihenfolge: 1
+status: entwurf
+stand: "2026-11-25"
+titel: Wie sollen Preise neuer Medikamente festgelegt werden?
+frage: Neue, patentgeschützte Medikamente machen gut die Hälfte der Arzneimittelausgaben aus. Soll Deutschland ihre Preise strenger regulieren oder schnellen Zugang und den Pharmastandort in den Vordergrund stellen?
+optionen:
+  - id: amnog-beibehalten
+    titel: System im Kern beibehalten
+    kurz: Nutzenbewertung und Preisverhandlung nach dem AMNOG bleiben wie heute, mit Anpassungen im Detail.
+    pro:
+      - typ: wertung
+        text: Das System verbindet schnellen Zugang mit einer Preisbindung an den Nutzen. Neue Mittel sind sofort verfügbar, der Preis wird danach verhandelt.
+      - typ: position
+        wer: European Federation of Pharmaceutical Industries and Associations (EFPIA)
+        text: In Deutschland sind neue Medikamente nach der EU-Zulassung europaweit am schnellsten verfügbar – im Median nach 56 Tagen, gegenüber einem Median von 532 Tagen über alle untersuchten Länder.
+        quellen: [efpia-wait-2026]
+      - typ: wertung
+        text: Das System wurde seit 2011 immer wieder angepasst. Weitere große Eingriffe könnten Hersteller verunsichern.
+    contra:
+      - typ: fakt
+        text: Trotz AMNOG verursachten patentgeschützte Arzneimittel 2025 rund 55 % der Nettokosten für Arzneimittel, aber nur gut 7 % der verordneten Tagesdosen.
+        quellen: [wido-arzneimittelmarkt-2026]
+      - typ: wertung
+        text: Neue Ausnahmen – etwa vertrauliche Preise für Unternehmen mit Forschung in Deutschland – machen das System weniger transparent.
+    gewinnt: [Schneller Zugang zu neuen Medikamenten, Planungssicherheit für Hersteller]
+    kostet: [Beitragszahlende, wenn Ausgaben weiter stark wachsen]
+  - id: strenger-regulieren
+    titel: Preise strenger regulieren
+    kurz: Der verhandelte Preis gilt rückwirkend ab dem ersten Tag, und der Preis richtet sich noch strenger nach dem nachgewiesenen Zusatznutzen.
+    pro:
+      - typ: wertung
+        text: In den ersten sechs Monaten dürfen Hersteller ihren Preis heute frei festlegen. Gilt der verhandelte Preis ab Tag 1, entfällt dieser Anreiz zu hohen Einstiegspreisen.
+      - typ: position
+        wer: Wissenschaftliches Institut der AOK (WIdO)
+        text: Was die GKV für ein Arzneimittel bezahlt, müsse sich am zusätzlichen Nutzen für die Patientinnen und Patienten orientieren. Dafür sei eine Reform der Preisbildung nötig.
+        quellen: [wido-arzneimittelmarkt-2026]
+      - typ: wertung
+        text: Geld, das bei Arzneimitteln gespart wird, steht für andere Leistungen zur Verfügung oder entlastet die Beitragszahler.
+    contra:
+      - typ: position
+        wer: Verband Forschender Arzneimittelhersteller (vfa)
+        text: Der Anteil der Bewertungen mit nicht belegtem Zusatznutzen sei gestiegen. Diese Entwicklung sei nach den Verschärfungen durch das GKV-Finanzstabilisierungsgesetz „alarmierend“.
+        quellen: [vfa-amnog-zahlen-2024]
+      - typ: wertung
+        text: Strengere Preisregeln können dazu führen, dass Hersteller Medikamente in Deutschland später oder gar nicht auf den Markt bringen.
+      - typ: wertung
+        text: Niedrigere Preise können Investitionen in Forschung und Produktion in Deutschland unattraktiver machen.
+    gewinnt: [Beitragszahlende, Krankenkassen]
+    kostet: [Umsätze der Hersteller, Möglicherweise Zugang zu einzelnen neuen Medikamenten]
+  - id: zugang-standort
+    titel: Zugang und Standort priorisieren
+    kurz: Regeln werden gelockert oder mit Standortförderung verbunden, damit neue Medikamente schnell kommen und Pharmaforschung in Deutschland bleibt.
+    pro:
+      - typ: wertung
+        text: Patientinnen und Patienten profitieren, wenn neue Therapien früh verfügbar sind – besonders bei schweren Erkrankungen wie Krebs.
+      - typ: fakt
+        text: Unternehmen mit Forschung in Deutschland können seit 2025 einen vertraulichen Erstattungsbetrag vereinbaren. Das soll Forschung und Investitionen im Land fördern.
+        quellen: [gkv-sv-amnog-fokus]
+      - typ: wertung
+        text: Die Pharmaindustrie schafft gut bezahlte Arbeitsplätze und Wertschöpfung. Ein attraktiver Standort kann auch die Versorgungssicherheit stärken.
+    contra:
+      - typ: position
+        wer: GKV-Spitzenverband
+        text: Würde Standortförderung für die Pharmaindustrie aus Beitragsmitteln bezahlt, stünde die Finanzstabilität der Krankenkassen wieder in Frage.
+        quellen: [gkv-sv-beitragsniveau-2026]
+      - typ: wertung
+        text: Industriepolitik ist Aufgabe des Staates. Werden Beitragsgelder dafür eingesetzt, zahlen Versicherte für etwas, das allen nützt.
+      - typ: wertung
+        text: Geheime Preise erschweren es Ärzten und Öffentlichkeit, Kosten und Nutzen zu vergleichen.
+    gewinnt: [Schneller Zugang zu Innovationen, Pharmastandort und Arbeitsplätze]
+    kostet: [Beitragszahlende, Preistransparenz]
+erklaerung:
+  - typ: fakt
+    text: Seit 2011 regelt das **AMNOG** (Arzneimittelmarktneuordnungsgesetz) die Preise neuer Medikamente. Der Hersteller muss belegen, ob ein Mittel einen **Zusatznutzen** gegenüber bisherigen Therapien hat. Das prüft der Gemeinsame Bundesausschuss (G-BA).
+    quellen: [gkv-sv-amnog-fokus]
+  - typ: fakt
+    text: Auf dieser Grundlage verhandeln Hersteller und GKV-Spitzenverband einen **Erstattungsbetrag**. Einigen sie sich nicht, entscheidet eine Schiedsstelle. Der Betrag gilt ab dem **siebten Monat** nach Markteinführung – bis dahin gilt der Preis des Herstellers.
+    quellen: [sgb5-130b, gkv-sv-amnog-fokus]
+  - typ: fakt
+    text: Die GKV gab 2025 im ambulanten Bereich netto 62,6 Mrd. € für Arzneimittel aus, 5,6 % mehr als im Vorjahr. Davon entfielen 34,4 Mrd. € auf patentgeschützte Mittel.
+    quellen: [wido-arzneimittelmarkt-2026]
+  - typ: fakt
+    text: Von 464 neuen Arzneimitteln, die zwischen 2011 und 2024 bewertet wurden, konnten 57 % einen Zusatznutzen zeigen; bei 43 % galt er als nicht belegt.
+    quellen: [vfa-amnog-zahlen-2024]
+  - typ: fakt
+    text: Seit 2025 können Hersteller mit Forschung in Deutschland einen **vertraulichen Erstattungsbetrag** vereinbaren. Der Vergleich mit Preisen in anderen EU-Ländern ist als Kriterium weggefallen.
+    quellen: [gkv-sv-amnog-fokus]
+zielkonflikte:
+  - typ: wertung
+    text: '**Bezahlbarkeit gegen schnellen Zugang:** Niedrigere Preise entlasten die Beitragszahler, können aber dazu führen, dass Medikamente später oder nicht auf den Markt kommen.'
+  - typ: wertung
+    text: '**Transparenz gegen Standortpolitik:** Vertrauliche Preise sollen Investitionen anlocken, erschweren aber den öffentlichen Vergleich.'
+  - typ: wertung
+    text: '**Beitragsgeld gegen Industriepolitik:** Unklar ist, ob die Krankenversicherung oder der Staat Standortförderung bezahlen soll.'
+daten:
+  kennzahlen:
+    - label: Nettokosten Arzneimittel (ambulant, GKV)
+      wert: 62,6 Mrd. €
+      stand: "2025"
+      quelle: wido-arzneimittelmarkt-2026
+    - label: Anteil patentgeschützter Mittel an den Kosten
+      wert: rund 55 %
+      stand: "2025"
+      quelle: wido-arzneimittelmarkt-2026
+      hinweis: Anteil an den verordneten Tagesdosen gut 7 %.
+    - label: Zeit bis zur Verfügbarkeit in Deutschland
+      wert: 56 Tage (Median)
+      stand: Zulassungen 2021–2024
+      quelle: efpia-wait-2026
+      hinweis: Median über alle untersuchten Länder 532 Tage; Erhebung des Industrieverbands.
+    - label: Gültigkeit des Erstattungsbetrags
+      wert: ab dem 7. Monat nach Markteinführung
+      stand: "2026"
+      quelle: sgb5-130b
+  diagramme:
+    - titel: Patentgeschützte Arzneimittel – Anteil an Kosten und Menge
+      einheit: Prozent
+      stand: "2025"
+      quelle: wido-arzneimittelmarkt-2026
+      werte:
+        - label: Anteil an den Nettokosten
+          wert: 55
+          hervorheben: true
+        - label: Anteil an den verordneten Tagesdosen
+          wert: 7
+geschichte:
+  ereignisse:
+    - jahr: "2011"
+      titel: AMNOG tritt in Kraft
+      text: Neue Arzneimittel müssen ihren Zusatznutzen nachweisen; danach wird ein Erstattungsbetrag verhandelt.
+      quellen: [gkv-sv-amnog-fokus]
+    - jahr: "2022"
+      titel: GKV-Finanzstabilisierungsgesetz
+      text: Neue „Leitplanken“ für die Verhandlung – ob die Vergleichstherapie noch patentgeschützt ist, wird für den Preis relevant.
+      quellen: [gkv-sv-amnog-fokus]
+    - jahr: "2025"
+      titel: Medizinforschungsgesetz
+      text: Vertrauliche Erstattungsbeträge für Unternehmen mit Forschung in Deutschland werden möglich; der EU-Preisvergleich entfällt.
+      quellen: [gkv-sv-amnog-fokus]
+  bilanz:
+    - typ: fakt
+      text: Das Gesetz zur Preisverhandlung (§ 130b SGB V) wurde bis Ende 2024 in sechzehn Gesetzen geändert, im Schnitt mehr als einmal im Jahr.
+      quellen: [gkv-sv-amnog-fokus]
+verknuepft:
+  - frage: arzneimittel-lieferengpaesse
+    grund: Preise beeinflussen auch, wo und wie zuverlässig Medikamente hergestellt werden.
+  - frage: finanzierung-kostenanstieg
+    grund: Arzneimittel sind einer der am stärksten wachsenden Ausgabenblöcke.
+parteien: []
+quellen:
+  - id: wido-arzneimittelmarkt-2026
+    titel: 'Arzneimittelmarkt 2027: Ausgabenbremse ersetzt keine Preisreform (Pressemitteilung vom 03.11.2026)'
+    herausgeber: Wissenschaftliches Institut der AOK (WIdO)
+    jahr: 2026
+    url: https://www.aok.de/pp/bv/wido-pm/arzneimittelmarkt-2027-ausgabenbremse-ersetzt-keine-preisreform/
+    art: wissenschaft
+  - id: efpia-wait-2026
+    titel: Patients in Europe waiting longer for new medicines as inequality grows between Member States (Patients W.A.I.T. Indicator)
+    herausgeber: European Federation of Pharmaceutical Industries and Associations
+    jahr: 2026
+    url: https://efpia.eu/news-events/the-efpia-view/statements-press-releases/patients-in-europe-waiting-longer-for-new-medicines-as-inequality-grows-between-member-states/
+    art: verband
+  - id: gkv-sv-amnog-fokus
+    titel: 'Fokus: Arzneimittel und das AMNOG'
+    herausgeber: GKV-Spitzenverband
+    jahr: 2025
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/fokus/amnog_verhandlungen/s_thema_amnog_verhandlungen.jsp
+    art: verband
+  - id: sgb5-130b
+    titel: § 130b SGB V – Vereinbarungen zwischen dem GKV-Spitzenverband und pharmazeutischen Unternehmern über Erstattungsbeträge
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/sgb_5/__130b.html
+    art: gesetz
+  - id: vfa-amnog-zahlen-2024
+    titel: 'AMNOG: Zahlen, Daten, Fakten'
+    herausgeber: Verband Forschender Arzneimittelhersteller
+    jahr: 2024
+    url: https://www.vfa.de/download/faktenblatt-amnog-zahlen-daten-fakten.pdf
+    art: verband
+  - id: gkv-sv-beitragsniveau-2026
+    titel: Das Beitragsniveau hat sich stabilisiert (Meldung)
+    herausgeber: GKV-Spitzenverband
+    jahr: 2026
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/pressemitteilungen_und_statements/pressemitteilung_2318251.jsp
+    art: verband

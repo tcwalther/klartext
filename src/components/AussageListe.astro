@@ -1,0 +1,14 @@
+---
+import Aussage from './Aussage.astro';
+import type { Aussage as A } from '../lib/content';
+interface Props {
+  items: A[];
+  nums: Map<string, number>;
+  class?: string;
+}
+const { items, nums, class: cls = '' } = Astro.props;
+---
+
+<ul class={`space-y-3 ${cls}`}>
+  {items.map((a) => <Aussage a={a} nums={nums} />)}
+</ul>

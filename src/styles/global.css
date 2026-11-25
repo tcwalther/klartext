@@ -1,0 +1,274 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/inter';
+@import '@fontsource-variable/source-serif-4';
+
+/*
+ * Farben bewusst ohne Parteibezug: warmes Papier, Tinte, gedecktes Petrol als Akzent.
+ * Aussage-Typen unterscheiden sich durch Form UND Beschriftung, nicht nur durch Farbe.
+ */
+:root {
+  --bg: #f8f6f1;
+  --surface: #ffffff;
+  --surface-2: #f1eee6;
+  --ink: #1d1c1a;
+  --muted: #5d5950;
+  --faint: #8a857a;
+  --line: #e2ddd1;
+  --accent: #0e5a66;
+  --accent-ink: #ffffff;
+  --accent-soft: #e2eff0;
+  --fakt: #2d4a63;
+  --fakt-soft: #e6edf3;
+  --schaetzung: #4c5f73;
+  --wertung: #7a5418;
+  --wertung-soft: #f6ecd9;
+  --position: #5a4a6e;
+  --position-soft: #ece7f2;
+  --warn-soft: #fbf1d6;
+  --warn-ink: #6b4d00;
+  --focus: #0e5a66;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) {
+    --bg: #141413;
+    --surface: #1d1d1b;
+    --surface-2: #262523;
+    --ink: #ecebe6;
+    --muted: #b0aca2;
+    --faint: #86827a;
+    --line: #34332f;
+    --accent: #6cc3cf;
+    --accent-ink: #0b2226;
+    --accent-soft: #17343a;
+    --fakt: #a9c3da;
+    --fakt-soft: #1d2a36;
+    --schaetzung: #a7b6c6;
+    --wertung: #e2b874;
+    --wertung-soft: #33291a;
+    --position: #c8b6dd;
+    --position-soft: #2b2534;
+    --warn-soft: #33290f;
+    --warn-ink: #f0cf7a;
+    --focus: #6cc3cf;
+    color-scheme: dark;
+  }
+}
+:root[data-theme='dark'] {
+  --bg: #141413;
+  --surface: #1d1d1b;
+  --surface-2: #262523;
+  --ink: #ecebe6;
+  --muted: #b0aca2;
+  --faint: #86827a;
+  --line: #34332f;
+  --accent: #6cc3cf;
+  --accent-ink: #0b2226;
+  --accent-soft: #17343a;
+  --fakt: #a9c3da;
+  --fakt-soft: #1d2a36;
+  --schaetzung: #a7b6c6;
+  --wertung: #e2b874;
+  --wertung-soft: #33291a;
+  --position: #c8b6dd;
+  --position-soft: #2b2534;
+  --warn-soft: #33290f;
+  --warn-ink: #f0cf7a;
+  --focus: #6cc3cf;
+  color-scheme: dark;
+}
+
+@theme {
+  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Source Serif 4 Variable', ui-serif, Georgia, serif;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+}
+
+html {
+  background: var(--bg);
+  color: var(--ink);
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  background: var(--bg);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  font-feature-settings: 'cv11', 'ss01';
+}
+h1,
+h2,
+h3,
+.serif {
+  font-family: var(--font-serif);
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+a {
+  color: inherit;
+}
+.link {
+  color: var(--accent);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.link:hover {
+  text-decoration-thickness: 2px;
+}
+
+/* Fließtext aus Markdown */
+.prose-k strong {
+  font-weight: 600;
+}
+.prose-k a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Aussage-Badges */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  line-height: 1;
+  padding: 0.3em 0.5em;
+  border-radius: 4px;
+  white-space: nowrap;
+  border: 1px solid transparent;
+  vertical-align: 0.12em;
+}
+.badge-fakt {
+  color: var(--fakt);
+  background: var(--fakt-soft);
+}
+.badge-schaetzung {
+  color: var(--schaetzung);
+  border: 1px dashed currentColor;
+}
+.badge-wertung {
+  color: var(--wertung);
+  background: var(--wertung-soft);
+}
+.badge-position {
+  color: var(--position);
+  background: var(--position-soft);
+}
+
+/* Quellenverweise */
+.src-ref {
+  font-size: 0.72em;
+  vertical-align: super;
+  line-height: 0;
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0 0.08em;
+}
+.src-ref:hover {
+  text-decoration: underline;
+}
+
+/* Zwiebel-Ebenen */
+details.ebene > summary {
+  list-style: none;
+  cursor: pointer;
+}
+details.ebene > summary::-webkit-details-marker {
+  display: none;
+}
+details.ebene .chev {
+  transition: transform 0.2s ease;
+}
+details.ebene[open] .chev {
+  transform: rotate(90deg);
+}
+@media (prefers-reduced-motion: reduce) {
+  details.ebene .chev {
+    transition: none;
+  }
+}
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 10px;
+  padding: 0.7rem 1.1rem;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    transform 0.05s;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn:active {
+  transform: translateY(1px);
+}
+.btn-primary {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+.btn-primary:hover {
+  filter: brightness(1.08);
+}
+.btn-ghost {
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+}
+.btn-ghost:hover {
+  border-color: var(--faint);
+}
+
+/* Antwort-Optionen */
+.choice {
+  width: 100%;
+  text-align: left;
+  border: 1.5px solid var(--line);
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 0.9rem 1rem;
+  transition:
+    border-color 0.15s,
+    background 0.15s;
+  cursor: pointer;
+}
+.choice:hover {
+  border-color: var(--faint);
+}
+.choice[aria-pressed='true'] {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}

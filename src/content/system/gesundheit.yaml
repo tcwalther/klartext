@@ -1,0 +1,183 @@
+stand: "2026-11-25"
+status: entwurf
+kennzahlen:
+  - label: Gesundheitsausgaben insgesamt
+    wert: 538,2 Mrd. €
+    stand: "2024"
+    quelle: destatis-gesundheitsausgaben-2024
+    hinweis: Schätzung für 2025 579,5 Mrd. €.
+  - label: Gesundheitsausgaben je Einwohner
+    wert: 6.444 €
+    stand: "2024"
+    quelle: destatis-gesundheitsausgaben-2024
+  - label: Anteil am Bruttoinlandsprodukt
+    wert: 12,4 %
+    stand: "2024"
+    quelle: destatis-gesundheitsausgaben-2024
+  - label: Ausgaben je Kopf im OECD-Vergleich
+    wert: 9.365 US-$ (OECD-Schnitt 5.967 US-$)
+    stand: "2024"
+    quelle: oecd-hag-2025
+    hinweis: In Kaufkraftparitäten. Anteil am BIP nach OECD-Abgrenzung 12,3 % (OECD-Schnitt 9,3 %).
+  - label: Lebenserwartung bei Geburt
+    wert: 81,1 Jahre (OECD-Schnitt 81,1)
+    stand: "2023"
+    quelle: oecd-hag-2025
+  - label: Gesetzlich Versicherte
+    wert: 74,4 Mio.
+    stand: Oktober 2026
+    quelle: bmg-km1-2026
+    bereich: finanzierung
+  - label: Privat Vollversicherte
+    wert: 8,79 Mio.
+    stand: "2025"
+    quelle: pkv-branchenzahlen-2025
+    bereich: finanzierung
+  - label: Gesetzliche Krankenkassen
+    wert: "92"
+    stand: Oktober 2026
+    quelle: bmg-km1-2026
+    bereich: finanzierung
+  - label: Beitragssatz GKV
+    wert: 14,6 % + durchschnittlich 2,9 % Zusatzbeitrag
+    stand: "2026/2027"
+    quelle: bmg-zusatzbeitrag-2027
+    bereich: finanzierung
+    hinweis: Tatsächlich erhobener Zusatzbeitrag im Schnitt 3,13 % (Oktober 2026, GKV-Spitzenverband).
+  - label: Beschäftigte im Gesundheitswesen
+    wert: knapp 6,2 Mio.
+    stand: Ende 2024
+    quelle: destatis-personal-2024
+    bereich: fachkraefte
+  - label: Pflegebedürftige
+    wert: 5,7 Mio. (86 % zu Hause versorgt)
+    stand: Ende 2023
+    quelle: destatis-pflegestatistik-2023
+    bereich: pflege
+  - label: Arzneimittelausgaben der GKV (ambulant, netto)
+    wert: 62,6 Mrd. €
+    stand: "2025"
+    quelle: wido-arzneimittelmarkt-2026
+    bereich: arzneimittel
+geldfluss:
+  - von: Versicherte und Arbeitgeber
+    an: Gesundheitsfonds
+    betrag: Hauptteil der Fondseinnahmen von 312,3 Mrd. € (Schätzung 2026)
+    text: Beiträge der Versicherten und ihrer Arbeitgeber sind die wichtigste Einnahmequelle des Gesundheitsfonds. Die Zusatzbeiträge der Kassen kommen hinzu.
+    quelle: bas-schaetzerkreis-2025
+  - von: Bund
+    an: Gesundheitsfonds
+    betrag: 14,5 Mrd. € Bundeszuschuss (2026)
+    text: Regulärer Bundeszuschuss für sogenannte versicherungsfremde Leistungen. 2026 kommen ein ergänzender Zuschuss von 2,5 Mrd. € für die Umbaukosten der Krankenhäuser und ein Darlehen des Bundes von 2,3 Mrd. € hinzu.
+    quelle: bas-schaetzerkreis-2025
+  - von: Gesundheitsfonds
+    an: Krankenkassen
+    betrag: 294,7 Mrd. € Zuweisungen (2025)
+    text: Der Fonds verteilt das Geld als feste Zuweisungen an die Kassen – je nach Risikostruktur ihrer Versicherten (Risikostrukturausgleich).
+    quelle: bas-schaetzerkreis-2025
+  - von: Krankenkassen
+    an: Krankenhäuser
+    betrag: 102,2 Mrd. € (2024)
+    text: Krankenhausbehandlung ist der größte Ausgabenblock der GKV. Die Kassen bezahlen die laufenden Behandlungskosten.
+    quelle: bmg-kennzahlen-gkv-2025
+  - von: Krankenkassen
+    an: Arztpraxen (über die Kassenärztlichen Vereinigungen)
+    betrag: 50,3 Mrd. € (2024)
+    text: Die Kassen zahlen eine Gesamtvergütung an die Kassenärztlichen Vereinigungen, die das Geld an die Praxen verteilen.
+    quelle: bmg-kennzahlen-gkv-2025
+  - von: Krankenkassen
+    an: Apotheken und Hersteller (Arzneimittel)
+    betrag: 55,2 Mrd. € (2024)
+    text: Ausgaben der GKV für Arzneimittel, der zweitgrößte Ausgabenblock nach den Krankenhäusern.
+    quelle: bmg-kennzahlen-gkv-2025
+  - von: Länder
+    an: Krankenhäuser (Investitionen)
+    betrag: rund 4,24 Mrd. € (2024)
+    text: Für Investitionen der Kliniken, etwa Gebäude und große Geräte, sind die Länder zuständig. Die Deutsche Krankenhausgesellschaft beziffert den Bedarf für 2023 auf 6,52 Mrd. €.
+    quelle: dkg-investitionen-2026
+akteure:
+  - name: Bundestag und Bundesrat
+    rolle: Beschließen die Gesetze, die Leistungen, Beiträge und Zuständigkeiten im Gesundheitswesen festlegen.
+  - name: Bundesministerium für Gesundheit (BMG)
+    rolle: Bereitet Gesetze vor, führt die Rechtsaufsicht über die Selbstverwaltung und legt jährlich den durchschnittlichen Zusatzbeitrag fest.
+  - name: Gemeinsamer Bundesausschuss (G-BA)
+    rolle: Oberstes Gremium der Selbstverwaltung aus Kassen, Ärzten und Kliniken; entscheidet, welche Leistungen die Kassen bezahlen, und bewertet den Nutzen neuer Arzneimittel.
+  - name: Krankenkassen und GKV-Spitzenverband
+    rolle: Die Kassen versichern rund 74 Millionen Menschen und bezahlen deren Behandlung; ihr Spitzenverband verhandelt bundesweit, etwa die Preise neuer Arzneimittel.
+  - name: Private Krankenversicherungen
+    rolle: Versichern Beamte, Selbstständige und Gutverdienende als Alternative zur GKV sowie viele Menschen mit Zusatzversicherungen.
+  - name: Kassenärztliche Vereinigungen (KVen) und KBV
+    rolle: Vertreten die niedergelassenen Ärztinnen und Ärzte, verteilen deren Honorare und sollen die ambulante Versorgung sicherstellen.
+  - name: Deutsche Krankenhausgesellschaft (DKG)
+    rolle: Dachverband der Krankenhausträger; verhandelt mit den Kassen über Regeln der Klinikvergütung.
+  - name: Bundesländer
+    rolle: Planen, welche Krankenhäuser es wo gibt, und finanzieren deren Investitionen; sie sind auch für die Investitionskosten von Pflegeeinrichtungen zuständig.
+  - name: Bundesamt für Soziale Sicherung (BAS)
+    rolle: Verwaltet den Gesundheitsfonds, verteilt die Zuweisungen an die Kassen und führt die Aufsicht über bundesweite Krankenkassen.
+quellen:
+  - id: destatis-gesundheitsausgaben-2024
+    titel: Gesundheitsausgaben im Jahr 2024 auf 538 Milliarden Euro gestiegen (Pressemitteilung Nr. 115)
+    herausgeber: Statistisches Bundesamt
+    jahr: 2026
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_115_23611.html
+    art: amtlich
+  - id: oecd-hag-2025
+    titel: 'Health at a Glance 2025: OECD Indicators'
+    herausgeber: OECD
+    jahr: 2025
+    url: https://doi.org/10.1787/8f9e3f98-en
+    art: international
+  - id: bmg-km1-2026
+    titel: Gesetzliche Krankenversicherung – Mitglieder, mitversicherte Angehörige und Krankenstand, Monatswerte Januar–Oktober 2026 (KM1)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/GKV/Mitglieder_Versicherte/KM1_Januar_bis_Oktober_2026.pdf
+    art: amtlich
+  - id: pkv-branchenzahlen-2025
+    titel: Private Krankenversicherung auch 2025 mit stabilem Wachstum (Pressemitteilung)
+    herausgeber: Verband der Privaten Krankenversicherung
+    jahr: 2026
+    url: https://www.pkv.de/verband/presse/pressemitteilungen/pkv-branchenzahlen-private-krankenversicherung-auch-2025-mit-stabilem-wachstum/
+    art: verband
+  - id: bmg-zusatzbeitrag-2027
+    titel: BMG legt durchschnittlichen Zusatzbeitragssatz auf 2,9 Prozent fest (Pressemitteilung)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/zusatzbeitragssatz-gkv-2027-festgelegt
+    art: amtlich
+  - id: destatis-personal-2024
+    titel: 1,7 % mehr Beschäftigte im Gesundheitswesen 2024 (Pressemitteilung Nr. 030)
+    herausgeber: Statistisches Bundesamt
+    jahr: 2026
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/01/PD26_030_23526.html
+    art: amtlich
+  - id: destatis-pflegestatistik-2023
+    titel: 5,7 Millionen Pflegebedürftige zum Jahresende 2023 (Pressemitteilung)
+    herausgeber: Statistisches Bundesamt
+    jahr: 2024
+    url: https://www.presseportal.de/pm/32102/5933248
+    art: amtlich
+  - id: wido-arzneimittelmarkt-2026
+    titel: 'Arzneimittelmarkt 2027: Ausgabenbremse ersetzt keine Preisreform (Pressemitteilung vom 03.11.2026)'
+    herausgeber: Wissenschaftliches Institut der AOK (WIdO)
+    jahr: 2026
+    url: https://www.aok.de/pp/bv/wido-pm/arzneimittelmarkt-2027-ausgabenbremse-ersetzt-keine-preisreform/
+    art: wissenschaft
+  - id: bas-schaetzerkreis-2025
+    titel: GKV-Schätzerkreis schätzt die finanziellen Rahmenbedingungen der GKV für die Jahre 2025 und 2026 (Pressemitteilung Nr. 6/2025)
+    herausgeber: Bundesamt für Soziale Sicherung
+    jahr: 2025
+    url: https://www.bundesamtsozialesicherung.de/fileadmin/user_upload/PM_GKV_Schaetzerkreis.pdf
+    art: amtlich
+  - id: bmg-kennzahlen-gkv-2025
+    titel: Gesetzliche Krankenversicherung – Kennzahlen und Faustformeln (KF25Bund)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2025
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/GKV/Kennzahlen_Daten/KF2025Bund_Dezember_2025.pdf
+    art: amtlich
+  - id: dkg-investitionen-2026
+    titel: Bestandsaufnahme Krankenhausplanung und Investitionsfinanzierung (Pressemitteilung vom 09.01.2026)
+    herausgeber: Deutsche Krankenhausgesellschaft
+    jahr: 2026
+    url: https://dkgev.de/fileadmin/default/Mediapool/1_DKG/1.7_Presse/1.7.1_Pressemitteilungen/2026/2026-01-09_PM_DKG_Bestandsaufnahme_Krankenhausplanung_und_Investitionsfinanzierung.pdf
+    art: verband

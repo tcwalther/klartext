@@ -1,0 +1,364 @@
+bereich: krankenhaeuser
+reihenfolge: 3
+status: entwurf
+stand: "2026-11-25"
+titel: Wem sollen Krankenhäuser gehören?
+frage: "Soll es beim Nebeneinander öffentlicher, gemeinnütziger und privater Krankenhäuser bleiben, sollen öffentliche Träger gestärkt und Gewinnausschüttungen begrenzt werden, oder soll es mehr Wettbewerb zwischen Trägern geben?"
+
+optionen:
+  - id: traegervielfalt
+    titel: Trägervielfalt wie bisher
+    kurz: "Öffentliche, kirchliche bzw. gemeinnützige und private Krankenhäuser bestehen nebeneinander und arbeiten unter denselben Regeln für Planung, Bezahlung und Qualität."
+    pro:
+      - typ: fakt
+        text: "Das Krankenhausfinanzierungsgesetz schreibt vor, dass die **Vielfalt der Krankenhausträger** zu beachten ist; die wirtschaftliche Sicherung gemeinnütziger und privater Häuser ist ausdrücklich zu gewährleisten."
+        quellen: [khg-1]
+      - typ: position
+        wer: Bundesverband Deutscher Privatkliniken (BDPK)
+        text: "Gute Versorgung sei auf leistungsfähige Kliniken „aller Größenordnungen und Trägerschaften“ angewiesen. Der BDPK tritt für ein System ein, das von „Wettbewerb, Trägerpluralität und Fairness“ getragen wird."
+        quellen: [bdpk-2021]
+      - typ: wertung
+        text: "Unterschiedliche Träger bringen unterschiedliche Stärken mit: kommunale Verankerung, kirchliche Werte, Kapital und Managementerfahrung großer Klinikgruppen. Patientinnen und Patienten können oft zwischen Häusern wählen."
+    contra:
+      - typ: wertung
+        text: "Gleiche Regeln bedeuten nicht gleiche Ausgangslage: Kommunen gleichen Verluste ihrer Häuser teils aus Steuergeld aus, private Träger können Gewinne an Eigentümer ausschütten. Beide Seiten sehen darin einen Nachteil für sich."
+      - typ: fakt
+        text: "Der Bundesverband Deutscher Privatkliniken klagte gegen den Landkreis Calw, weil dieser die Verluste seiner Kreiskliniken ausglich. Der Bundesgerichtshof entschied 2016, dass solche Zahlungen unter bestimmten Voraussetzungen zulässig sind – etwa wenn der Kreis das Haus vorher förmlich mit der Versorgung betraut hat."
+        quellen: [bgh-2016-calw]
+      - typ: wertung
+        text: "Der bisherige Zustand hat das Investitionsproblem nicht gelöst: Träger mit wenig eigenem Kapital können notwendige Erneuerungen oft nicht finanzieren."
+    gewinnt: [Wahlfreiheit der Patienten, bestehende Träger aller Art, Planbarkeit für Beschäftigte]
+    kostet: [klare Verantwortung bei Verlusten, kommunale Haushalte (Defizitausgleich)]
+
+  - id: gemeinwohl-staerken
+    titel: Öffentliche Träger stärken, Gewinne begrenzen
+    kurz: "Krankenhäuser sollen stärker in öffentlicher oder gemeinnütziger Hand sein; Gewinne aus Kassengeldern sollen im System bleiben statt an Eigentümer zu fließen."
+    pro:
+      - typ: position
+        wer: Bündnis Klinikrettung
+        text: "„Verbieten Sie Gewinne im Krankenhauswesen! Krankenhäuser müssen gemeinnützig sein.“ Der wirtschaftliche Druck gehe zulasten von Personal und Versorgungsqualität."
+        quellen: [klinikrettung-petition-2026]
+      - typ: schaetzung
+        text: "Eine Übersichtsarbeit aus Oxford zu Studien aus acht reichen Ländern, darunter Deutschland, fand: Mehr Privatisierung ging meist mit schlechterer Versorgungsqualität einher. Häuser, die von öffentlicher in private Hand wechselten, erzielten höhere Gewinne – vor allem durch weniger Personal."
+        quellen: [goodair-reeves-2024]
+        unsicherheit: "Die Autoren betonen selbst, dass es nur wenige Studien gibt und viele Lücken bestehen. Die Ergebnisse stammen aus sehr unterschiedlichen Gesundheitssystemen."
+      - typ: wertung
+        text: "Krankenhäuser werden aus Pflichtbeiträgen und Steuern bezahlt. Wer das so sieht, hält es für richtig, dass Überschüsse in die Versorgung zurückfließen und gewählte Vertreter über Standorte mitentscheiden."
+    contra:
+      - typ: position
+        wer: Bundesverband Deutscher Privatkliniken (BDPK)
+        text: "Eine Rekommunalisierung lehnt der BDPK ab. Private Häuser seien in der Mehrzahl ehemalige kommunale Krankenhäuser, die durch private Investoren „vor dem Aus gerettet“ worden seien; sie stünden bei Qualität mindestens auf gleicher Höhe wie andere Träger."
+        quellen: [bdpk-2021]
+      - typ: schaetzung
+        text: "Eine RWI-Studie mit Daten von 2005 bis 2013 fand bei Wundinfektionen, Krankenhaussterblichkeit und Druckgeschwüren keine signifikanten Unterschiede zwischen den Trägern. 2013 galten 7 % der privaten, aber 62 % der kommunalen Häuser als nicht investitionsfähig."
+        quellen: [rwi-2015]
+        unsicherheit: "Die Studie wurde vom Bundesverband Deutscher Privatkliniken in Auftrag gegeben. Unterschiede bei Patientengruppen und Leistungsspektrum lassen sich nur teilweise herausrechnen."
+      - typ: wertung
+        text: "Kauf, Verlustausgleich und Investitionen müssten aus öffentlichen Haushalten kommen, die ohnehin knapp sind. Ein Gewinnverbot kann privates Kapital für Neubauten und Technik fernhalten."
+    gewinnt: [demokratische Kontrolle über Standorte, Beschäftigte (weniger Renditedruck), Beitragszahler (keine Gewinnausschüttung)]
+    kostet: [öffentliche Haushalte, privates Kapital für Investitionen, bestehende private Träger]
+
+  - id: mehr-wettbewerb
+    titel: Mehr Wettbewerb zwischen Trägern
+    kurz: "Wer ein Haus betreibt, ist zweitrangig – entscheidend sind Qualität und Wirtschaftlichkeit. Private Träger sollen leichter übernehmen können, Verlustausgleich aus Steuergeld soll die Ausnahme bleiben."
+    pro:
+      - typ: schaetzung
+        text: "Eine Studie zu deutschen Krankenhäusern fand: Nach dem Wechsel von öffentlicher zu privater, gewinnorientierter Trägerschaft stieg die Effizienz um 2,9 bis 4,9 %, und der Effekt hielt an. Die Autoren sehen darin einen Weg, knappe Mittel besser zu nutzen."
+        quellen: [tiemann-schreyoegg-2012]
+        unsicherheit: "Effizienz bedeutet hier das Verhältnis von Personal und Mitteln zu Leistungen – nicht die Behandlungsqualität. Die Daten stammen überwiegend aus der Zeit um die Einführung der Fallpauschalen."
+      - typ: position
+        wer: Bundesverband Deutscher Privatkliniken (BDPK)
+        text: "Nahezu alle privaten Kliniken arbeiteten heute im wirtschaftlichen Plus. Ohne die Privaten gäbe es keine Versorgungssicherheit, weil sie viele Häuser übernommen hätten, die sonst geschlossen worden wären."
+        quellen: [bdpk-2021]
+      - typ: wertung
+        text: "Wo die Länder Investitionen nicht ausreichend bezahlen, können private Träger mit eigenem Kapital modernisieren. Wettbewerb zwingt alle Häuser, Abläufe zu verbessern."
+    contra:
+      - typ: schaetzung
+        text: "Dieselbe Studie zeigt, woher die Effizienzgewinne vor allem kamen: aus einem deutlichen Abbau von Personal in fast allen Berufsgruppen, außer bei Ärztinnen und Ärzten."
+        quellen: [tiemann-schreyoegg-2012]
+        unsicherheit: "Ob weniger Personal je Fall die Qualität senkt, misst die Studie nicht."
+      - typ: wertung
+        text: "Gewinnorientierte Träger haben einen Anreiz, sich auf lohnende Behandlungen zu konzentrieren und sich aus wenig rentablen Regionen oder Abteilungen zurückzuziehen. Die Grund- und Notfallversorgung bliebe dann bei der öffentlichen Hand."
+      - typ: position
+        wer: Bündnis Klinikrettung
+        text: "Die defizitäre wohnortnahe Grund- und Notfallversorgung verbleibe bei der öffentlichen Hand, während lukrative private Fachkliniken entstünden."
+        quellen: [klinikrettung-petition-2026]
+    gewinnt: [Effizienz, Kapital für Investitionen, Steuerzahler (weniger Verlustausgleich)]
+    kostet: [Personalausstattung je Fall, wenig rentable Standorte und Abteilungen, öffentlicher Einfluss auf Standorte]
+
+erklaerung:
+  - typ: fakt
+    text: "In Deutschland gibt es drei Arten von Krankenhausträgern: **öffentliche** (zum Beispiel Länder, Kreise, Städte oder Sozialversicherungen), **freigemeinnützige** (kirchliche und freie Wohlfahrtspflege, Kirchengemeinden, Stiftungen, Vereine) und **private** (gewerbliche Unternehmen)."
+    quellen: [destatis-grunddaten-2021]
+  - typ: fakt
+    text: "2025 waren 529 Häuser öffentlich, 549 freigemeinnützig und 729 privat. Private Häuser sind im Schnitt kleiner: Sie stellten nur 21,0 % der Betten, öffentliche 47,4 % und freigemeinnützige 31,6 %."
+    quellen: [destatis-pm-2026-376]
+  - typ: fakt
+    text: "Der Anteil privater Häuser ist stark gestiegen: 1991 waren 358 von 2.411 Krankenhäusern privat (rund 15 %), 2025 waren es 729 von 1.807 (rund 40 %)."
+    quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
+  - typ: fakt
+    text: "Alle Träger können für ihre Häuser Investitionsförderung der Länder beantragen, und das Gesetz verlangt, die Vielfalt der Träger zu beachten. Ein Unterschied: Bei öffentlichen Häusern gleicht der Träger Verluste teils aus Steuermitteln aus – das ist unter bestimmten Bedingungen zulässig."
+    quellen: [khg-1, khg-9, bgh-2016-calw]
+  - typ: wertung
+    text: "Ob die Trägerart die Qualität der Behandlung beeinflusst, ist wissenschaftlich nicht eindeutig geklärt. Die Frage berührt deshalb auch Grundüberzeugungen: Wie viel Markt verträgt die Gesundheitsversorgung?"
+
+zielkonflikte:
+  - typ: wertung
+    text: "**Kapital gegen Kontrolle.** Private Träger bringen Geld für Investitionen mit, erwarten aber eine Rendite. Öffentliche Träger können politisch gesteuert werden, sind aber auf knappe Haushalte angewiesen."
+  - typ: wertung
+    text: "**Effizienz gegen Personalausstattung.** Was als Effizienzgewinn gemessen wird, ist oft weniger Personal je Fall. Ob das Verschwendung abbaut oder die Versorgung verschlechtert, hängt vom Einzelfall ab."
+  - typ: wertung
+    text: "**Gleiche Regeln, ungleiche Rollen.** Sollen alle Träger gleich behandelt werden – oder brauchen Häuser, die unrentable Notfall- und Grundversorgung übernehmen, einen Ausgleich, den andere nicht bekommen?"
+  - typ: fakt
+    text: "**Das Investitionsproblem betrifft alle.** Die Länder sind gesetzlich verpflichtet, die notwendigen Investitionskosten zu decken. Nach Angaben der Deutschen Krankenhausgesellschaft blieb 2023 aber eine Lücke von über 2,6 Milliarden Euro."
+    quellen: [khg-9, dkg-pm-2026-01-09]
+
+daten:
+  kennzahlen:
+    - label: Öffentliche Krankenhäuser
+      wert: "529 (47,4 % der Betten)"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+    - label: Freigemeinnützige Krankenhäuser
+      wert: "549 (31,6 % der Betten)"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+    - label: Private Krankenhäuser
+      wert: "729 (21,0 % der Betten)"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+    - label: Investitionsbedarf vs. Fördermittel der Länder
+      wert: "6,52 vs. 3,89 Mrd. €"
+      stand: "2023"
+      quelle: dkg-pm-2026-01-09
+      hinweis: "Berechnung der Deutschen Krankenhausgesellschaft (Interessenverband). 2024 stellten die Länder laut DKG rund 4,24 Mrd. € bereit."
+    - label: Investitionsquote der Krankenhäuser
+      wert: "2,8 % (1991: 9,7 %)"
+      stand: "2024"
+      quelle: dkg-pm-2026-01-09
+      hinweis: "Fördermittel bezogen auf die bereinigten Krankenhauskosten, Angabe der DKG."
+  diagramme:
+    - titel: Anteil privater Träger an allen Krankenhäusern
+      einheit: "% der Krankenhäuser"
+      stand: "1991–2021"
+      quelle: destatis-grunddaten-2021
+      hinweis: "Eigene Berechnung aus Tabelle 1.4. 2025 lag der Anteil bei rund 40 % (729 von 1.807)."
+      werte:
+        - label: "1991"
+          wert: 14.8
+        - label: "2000"
+          wert: 21.7
+        - label: "2005"
+          wert: 26.6
+        - label: "2010"
+          wert: 32.9
+        - label: "2015"
+          wert: 35.8
+        - label: "2021"
+          wert: 38.8
+          hervorheben: true
+    - titel: Anteil an den Krankenhausbetten nach Trägerart
+      einheit: "% der Betten"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+      werte:
+        - label: Öffentlich
+          wert: 47.4
+        - label: Freigemeinnützig
+          wert: 31.6
+        - label: Privat
+          wert: 21.0
+          hervorheben: true
+  aussagen:
+    - typ: fakt
+      text: "Die Zahl öffentlicher Krankenhäuser hat sich seit 1991 mehr als halbiert (von 1.110 auf 529 im Jahr 2025). Auch freigemeinnützige Häuser wurden deutlich weniger (von 943 auf 549)."
+      quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
+    - typ: wertung
+      text: "Zur Frage, ob private, öffentliche oder gemeinnützige Häuser besser behandeln, gibt es nur wenige belastbare Studien. Sie kommen zu unterschiedlichen Ergebnissen, auch weil Häuser verschiedener Träger unterschiedliche Patienten und Leistungen haben. Ein klarer Befund zugunsten einer Trägerart lässt sich daraus nicht ableiten."
+    - typ: position
+      wer: GKV-Spitzenverband, PKV-Verband und Deutsche Krankenhausgesellschaft (gemeinsam)
+      text: "Die Länder deckten seit Jahren nur etwa die Hälfte des Investitionsbedarfs von rund 6,5 Milliarden Euro pro Jahr. Anfang der 1970er-Jahre hätten die Investitionsmittel noch 25 % der GKV-Ausgaben entsprochen, heute deutlich unter 4 %."
+      quellen: [gemeinsame-pm-invest-2024]
+
+geschichte:
+  ereignisse:
+    - jahr: "1991–2021"
+      titel: Welle von Privatisierungen
+      text: "Die Zahl privater Krankenhäuser verdoppelt sich von 358 auf 733, die der öffentlichen sinkt von 1.110 auf 547."
+      quellen: [destatis-grunddaten-2021]
+    - jahr: "2004"
+      titel: Volksentscheid in Hamburg
+      text: "Beim Volksentscheid „Gesundheit ist keine Ware“ stimmt eine Mehrheit gegen den Verkauf der städtischen Krankenhäuser. Die Bürgerschaft beschließt den Verkauf im Dezember 2004 trotzdem; das Hamburgische Verfassungsgericht hatte entschieden, dass Senat und Bürgerschaft an das Ergebnis nicht gebunden sind."
+      quellen: [hamburg-volksabstimmungen, abgeordnetenwatch-lbk-2004]
+    - jahr: "2006"
+      titel: Erste private Uniklinik
+      text: "Das Land Hessen verkauft 95 % der fusionierten Universitätskliniken Gießen und Marburg für 112 Millionen Euro an die Rhön-Klinikum AG – die erste Privatisierung einer Universitätsklinik in Deutschland."
+      quellen: [iww-ukgm-2006]
+    - jahr: "2016"
+      titel: BGH-Urteil zum Verlustausgleich
+      text: "Der Bundesgerichtshof entscheidet im Streit zwischen dem Privatklinikverband und dem Landkreis Calw: Kommunen dürfen Verluste ihrer Kliniken ausgleichen, wenn sie diese vorher förmlich mit der Versorgung betraut haben."
+      quellen: [bgh-2016-calw]
+    - jahr: "2026"
+      titel: Forderung nach Gewinnverbot
+      text: "Das Bündnis Klinikrettung startet eine Unterschriftensammlung mit der Forderung, Gewinne im Krankenhauswesen zu verbieten."
+      quellen: [klinikrettung-petition-2026]
+  bilanz:
+    - typ: fakt
+      text: "Seit 1991 ist der Anteil privater Häuser stark gestiegen; heute stellen private Träger die meisten Häuser. Gemessen an den Betten bleiben öffentliche Häuser aber die größte Gruppe."
+      quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
+    - typ: wertung
+      text: "Die Erfahrungen mit Privatisierungen werden sehr unterschiedlich bewertet. Befürworter verweisen auf gerettete Standorte und Investitionen, Kritiker auf Personalabbau und Renditedruck. Eine eindeutige wissenschaftliche Bilanz gibt es nicht."
+
+laender:
+  beispiele:
+    - land: Niederlande
+      ansatz: "Nur gemeinnützige Krankenhäuser"
+      text: "Krankenhäuser sind dort meist Stiftungen und dürfen nicht mit Gewinnabsicht betrieben werden. Ob Krankenhäuser Gewinne machen und Anteilseigner haben dürfen, ist politisch umstritten; ein Gesetzentwurf, der das unter Bedingungen erlauben sollte, wurde 2014 zurückgezogen."
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: "Die Niederlande finanzieren Krankenhäuser ähnlich wie Deutschland über Versicherungen, haben aber keinen gewinnorientierten Krankenhausmarkt. Ein Gewinnverbot in Deutschland würde dagegen bestehende private Eigentümer betreffen."
+      quellen: [observatory-nl-2016]
+    - land: Frankreich
+      ansatz: "Gemischte Trägerschaft wie in Deutschland"
+      text: "Ende 2023 gab es 1.330 öffentliche Krankenhäuser, 978 private Kliniken und 657 private gemeinnützige Einrichtungen. Die öffentlichen Häuser machten 2023 zusammen 2,4 Milliarden Euro Defizit, die gewinnorientierten Kliniken einen Überschuss von 362 Millionen Euro."
+      vergleichbarkeit: hoch
+      vergleichbarkeit_text: "Frankreich hat wie Deutschland ein Versicherungssystem, Fallpauschalen und ein Nebeneinander aller drei Trägerarten. Die Zahlen sind deshalb gut vergleichbar, auch wenn sich Planung und Finanzierung im Detail unterscheiden."
+      quellen: [drees-2025]
+    - land: Dänemark
+      ansatz: "Krankenhäuser in öffentlicher Hand der Regionen"
+      text: "Seit 2007 sind fünf Regionen politisch und organisatorisch für die Krankenhäuser zuständig; sie legen auch deren Budgets fest. Auf dieser Grundlage hat Dänemark seine Krankenhauslandschaft zentral umgebaut und bis 2021 18 Häuser geschlossen."
+      vergleichbarkeit: gering
+      vergleichbarkeit_text: "Ein System, in dem die Regionen ihre Krankenhäuser selbst führen, unterscheidet sich grundlegend vom deutschen. Es zeigt eher, was einheitliche Zuständigkeit für die Planung ermöglicht, als wie man dorthin käme."
+      quellen: [dk-super-hospital-2021, observatory-dk-2024]
+  fazit:
+    - typ: wertung
+      text: "Die Spannbreite in Europa ist groß: von Regionen, die ihre Krankenhäuser selbst führen (Dänemark), über ausschließlich gemeinnützige Häuser (Niederlande) bis zu gemischten Systemen wie in Frankreich und Deutschland. Ein Ländervergleich allein zeigt nicht, welches Modell besser versorgt, weil sich die Systeme in vielem anderen auch unterscheiden."
+    - typ: wertung
+      text: "Auch in Frankreich schreiben öffentliche Häuser insgesamt Verluste und gewinnorientierte Kliniken Gewinne. Ob das an Effizienz liegt oder an unterschiedlichen Aufgaben und Patienten, zeigen diese Zahlen allein nicht."
+
+verknuepft:
+  - frage: krankenhaus-standorte
+    grund: "Ob ein kleines Haus erhalten bleibt, hängt auch davon ab, ob sein Träger Verluste tragen kann oder will."
+  - frage: krankenhaus-verguetung
+    grund: "Das Bezahlsystem entscheidet, welche Leistungen Gewinn bringen – und damit, für welche Träger sich ein Haus lohnt."
+  - frage: fachkraefte-pflege
+    grund: "Studien zu Privatisierungen drehen sich oft um die Personalausstattung."
+  - frage: finanzierung-kostenanstieg
+    grund: "Gewinne, Verlustausgleich und Investitionen betreffen Beitrags- und Steuerzahler."
+
+parteien: []
+
+quellen:
+  - id: destatis-pm-2026-376
+    titel: "1,2 % mehr Krankenhausbehandlungen im Jahr 2025 (Pressemitteilung Nr. 376 vom 28. Oktober 2026)"
+    herausgeber: Statistisches Bundesamt (Destatis)
+    jahr: 2026
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_376_231.html
+    art: amtlich
+  - id: destatis-grunddaten-2021
+    titel: "Grunddaten der Krankenhäuser 2021 (Fachserie 12 Reihe 6.1.1), Tabelle 1.4: Krankenhäuser und Betten nach Trägerschaft 1991 bis 2021"
+    herausgeber: Statistisches Bundesamt (Destatis)
+    jahr: 2022
+    url: https://www.statistischebibliothek.de/mir/servlets/MCRFileNodeServlet/DEHeft_derivate_00087776/2120611217004_korr10072024.pdf
+    art: amtlich
+  - id: khg-1
+    titel: "§ 1 KHG – Grundsatz"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/khg/__1.html
+    art: gesetz
+  - id: khg-9
+    titel: "§ 9 KHG – Fördertatbestände"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/khg/__9.html
+    art: gesetz
+  - id: bgh-2016-calw
+    titel: "Bundesgerichtshof zur Notifizierungspflicht von Zuwendungen eines Landkreises an eine Kreisklinik bei der Europäischen Kommission (Pressemitteilung Nr. 63/2016, Urteil I ZR 263/14)"
+    herausgeber: Bundesgerichtshof
+    jahr: 2016
+    url: https://www.bundesgerichtshof.de/SharedDocs/Pressemitteilungen/DE/2016/2016063.html
+    art: amtlich
+  - id: bdpk-2021
+    titel: "Stellungnahme zu Anträgen zur Krankenhausfinanzierung, Ausschussdrucksache 19(14)340(2), 14. Mai 2021"
+    herausgeber: Bundesverband Deutscher Privatkliniken
+    jahr: 2021
+    url: https://www.bundestag.de/resource/blob/841866/71c2cedb1f7b15ab4544b146f851f5c5/19_14_0340-2-_Bundesverband-Deutscher-Privatkliniken_Krankenhausfinanzierung.pdf
+    art: verband
+  - id: klinikrettung-petition-2026
+    titel: "Gewinne raus aus dem Krankenhaus! (Unterschriftenaufruf)"
+    herausgeber: Bündnis Klinikrettung / Gemeingut in BürgerInnenhand
+    jahr: 2026
+    url: https://www.gemeingut.org/wordpress/wp-content/uploads/2026/03/2026-Petition_Gewinne_raus_aus_dem_Krankenhaus.pdf
+    art: verband
+  - id: goodair-reeves-2024
+    titel: "The effect of health-care privatisation on the quality of care (The Lancet Public Health 9, 2024)"
+    herausgeber: "Goodair B, Reeves A (University of Oxford)"
+    jahr: 2024
+    url: https://www.thelancet.com/journals/lanpub/article/PIIS2468-2667(24)00003-3/fulltext
+    art: wissenschaft
+  - id: rwi-2015
+    titel: "Krankenhäuser in privater Trägerschaft 2015 (RWI Materialien Heft 89) – Pressemitteilung"
+    herausgeber: RWI – Leibniz-Institut für Wirtschaftsforschung (im Auftrag des BDPK)
+    jahr: 2015
+    url: https://www.rwi-essen.de/presse/wissenschaftskommunikation/pressemitteilungen/detail/private-kliniken-arbeiten-effizient-und-sind-wichtig-fuer-gesundheitsversorgung
+    art: wissenschaft
+  - id: tiemann-schreyoegg-2012
+    titel: "Changes in hospital efficiency after privatization (Health Care Management Science 15(4), 310–326)"
+    herausgeber: "Tiemann O, Schreyögg J"
+    jahr: 2012
+    url: https://doi.org/10.1007/s10729-012-9193-z
+    art: wissenschaft
+  - id: dkg-pm-2026-01-09
+    titel: "DKG zur Bestandsaufnahme „Krankenhausplanung und Investitionsfinanzierung in den Bundesländern 2025“ (Pressemitteilung vom 9. Januar 2026)"
+    herausgeber: Deutsche Krankenhausgesellschaft
+    jahr: 2026
+    url: https://dkgev.de/fileadmin/default/Mediapool/1_DKG/1.7_Presse/1.7.1_Pressemitteilungen/2026/2026-01-09_PM_DKG_Bestandsaufnahme_Krankenhausplanung_und_Investitionsfinanzierung.pdf
+    art: verband
+  - id: gemeinsame-pm-invest-2024
+    titel: "GKV-Spitzenverband, PKV und DKG fordern von Ländern höhere Investitionen in Kliniken (Gemeinsame Pressemitteilung vom 9. April 2024)"
+    herausgeber: GKV-Spitzenverband, Verband der Privaten Krankenversicherung, Deutsche Krankenhausgesellschaft
+    jahr: 2024
+    url: https://www.dkgev.de/fileadmin/default/Mediapool/1_DKG/1.7_Presse/1.7.1_Pressemitteilungen/2024/2024-04-09_GemPM_Katalog_fuer_Krankenhaus_Investitionsbewertungsrelationen.pdf
+    art: verband
+  - id: hamburg-volksabstimmungen
+    titel: Übersicht über Volksabstimmungen in Hamburg
+    herausgeber: Freie und Hansestadt Hamburg
+    jahr: 2024
+    url: https://www.hamburg.de/resource/blob/890736/1532bedd9b6b5874e5b78682dcc155cf/uebersicht-ueber-volksabstimmungen-in-hamburg-data.pdf
+    art: amtlich
+  - id: abgeordnetenwatch-lbk-2004
+    titel: "Hamburgische Bürgerschaft: Abstimmung LBK-Verkauf (16. Dezember 2004)"
+    herausgeber: abgeordnetenwatch.de
+    jahr: 2004
+    url: https://www.abgeordnetenwatch.de/hamburg/18/abstimmungen/lbk-verkauf/tabelle
+    art: presse
+  - id: iww-ukgm-2006
+    titel: "Krankenhausprivatisierung: Erste Uniklinik Deutschlands wird privatisiert"
+    herausgeber: IWW Institut (CB Chefärzte Brief)
+    jahr: 2006
+    url: https://www.iww.de/cb/archiv/krankenhausprivatisierung-erste-uniklinik-deutschlands-wird-privatisiert-f25345
+    art: presse
+  - id: observatory-nl-2016
+    titel: "Netherlands – Health Systems and Policy Monitor (2016), 5.4 Specialized ambulatory care/inpatient care"
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2016
+    url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/netherlands-2016/provision-of-services/specialized-ambulatory-care-inpatient-care
+    art: international
+  - id: drees-2025
+    titel: "Les établissements de santé en 2023 – Édition 2025, Vue d’ensemble"
+    herausgeber: DREES (Statistikbehörde des französischen Gesundheitsministeriums)
+    jahr: 2025
+    url: https://www.drees.solidarites-sante.gouv.fr/sites/default/files/2025-07/ES%202025%20-%20Vue%20d%27ensemble.pdf
+    art: international
+  - id: dk-super-hospital-2021
+    titel: The Danish Super Hospital Programme 2021
+    herausgeber: Indenrigs- og Sundhedsministeriet (Dänisches Innen- und Gesundheitsministerium)
+    jahr: 2021
+    url: https://ism.dk/Media/637683227529083454/The%20Danish%20Super%20Hospital%20Programme%202021.pdf
+    art: international
+  - id: observatory-dk-2024
+    titel: "Denmark – Health Systems and Policy Monitor (2024), Payment mechanisms"
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2024
+    url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/denmark-2024/financing/payment-mechanisms
+    art: international

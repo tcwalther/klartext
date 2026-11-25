@@ -1,0 +1,37 @@
+eintraege:
+  - id: ausgaben-begrenzen-und-produktion-europa
+    wenn:
+      - frage: finanzierung-kostenanstieg
+        option: ausgaben-begrenzen
+      - frage: arzneimittel-lieferengpaesse
+        option: produktion-europa
+    titel: Sparen und zugleich teurer produzieren
+    text: Die Krankenkassen sollen ihre Ausgaben begrenzen. Gleichzeitig soll mehr Medikamentenproduktion nach Europa kommen – und das macht viele Arzneimittel teurer.
+    aufloesung: Beides passt zusammen, wenn man an anderer Stelle stärker spart als bei günstigen Grundmedikamenten, oder wenn Europa-Produktion aus Steuermitteln oder EU-Programmen statt aus Beiträgen gefördert wird. Manche sehen höhere Preise für wenige kritische Wirkstoffe auch als günstige Versicherung gegen teure Engpässe.
+  - id: zugang-standort-und-ausgaben-begrenzen
+    wenn:
+      - frage: arzneimittel-preise
+        option: zugang-standort
+      - frage: finanzierung-kostenanstieg
+        option: ausgaben-begrenzen
+    titel: Großzügig bei neuen Medikamenten, sparsam insgesamt
+    text: Neue Medikamente sollen schnell verfügbar sein und der Pharmastandort gefördert werden. Gleichzeitig sollen die Ausgaben der Krankenkassen nicht schneller wachsen als ihre Einnahmen. Neue Arzneimittel gehören zu den am stärksten wachsenden Ausgaben.
+    aufloesung: Man kann beides wollen, wenn die Standortförderung aus dem Staatshaushalt statt aus Beiträgen bezahlt wird, oder wenn in anderen Bereichen – etwa bei Strukturen oder Verwaltung – entsprechend mehr gespart wird.
+  - id: vollversicherung-und-lohnersatz
+    wenn:
+      - frage: pflege-eigenanteile
+        option: vollversicherung
+      - frage: pflege-zuhause
+        option: angehoerige-lohnersatz
+    titel: Zwei große Leistungsausweitungen in der Pflege
+    text: Die Pflegeversicherung soll alle Pflegekosten im Heim übernehmen, und pflegende Angehörige sollen einen Lohnersatz bekommen. Beides kostet viel Geld – und die Pflegeversicherung schreibt bereits Defizite.
+    aufloesung: Das lässt sich verbinden, wenn man bereit ist, dafür deutlich höhere Beiträge oder Steuerzuschüsse in Kauf zu nehmen, oder wenn beide Schritte nacheinander eingeführt werden. Ein Lohnersatz könnte auch aus dem Bundeshaushalt statt aus der Pflegeversicherung bezahlt werden.
+  - id: strenger-regulieren-und-produktion-europa
+    wenn:
+      - frage: arzneimittel-preise
+        option: strenger-regulieren
+      - frage: arzneimittel-lieferengpaesse
+        option: produktion-europa
+    titel: Niedrigere Preise und mehr Produktion im Inland
+    text: Die Preise neuer Medikamente sollen strenger reguliert werden, und zugleich soll mehr Produktion nach Europa kommen. Hersteller argumentieren, dass Preisdruck Investitionen in Europa unattraktiv macht.
+    aufloesung: Das ist kein Widerspruch, wenn man zwischen den Märkten unterscheidet – strengere Preise bei teuren, patentgeschützten Mitteln, dafür auskömmlichere Preise oder Förderung bei günstigen Grundmedikamenten wie Antibiotika.

@@ -1,0 +1,436 @@
+bereich: krankenhaeuser
+reihenfolge: 1
+status: entwurf
+stand: "2026-11-25"
+titel: Wie viele Krankenhäuser – und wo?
+frage: "Soll Deutschland seine Krankenhausversorgung stärker auf weniger, spezialisierte Standorte bündeln, möglichst viele wohnortnahe Häuser erhalten oder kleine Häuser in ambulant-stationäre Versorgungszentren umwandeln?"
+
+optionen:
+  - id: buendeln
+    titel: Stärker bündeln und spezialisieren
+    kurz: "Komplexe und planbare Behandlungen sollen in weniger, größeren Kliniken mit viel Erfahrung stattfinden; die Grundversorgung bleibt in der Fläche."
+    pro:
+      - typ: schaetzung
+        text: "Eine große Studie mit Daten von AOK-Versicherten und Krebsregistern fand: Wer bei der ersten Krebsbehandlung in einem zertifizierten Zentrum behandelt wurde, lebte im Schnitt länger – bei allen elf untersuchten Krebsarten. Zertifizierte Zentren müssen unter anderem Mindestfallzahlen und feste Abläufe nachweisen."
+        quellen: [wizen-2023]
+        unsicherheit: "Beobachtungsstudie mit Daten von 2009 bis 2017. Sie zeigt einen Zusammenhang, keinen sicheren Ursache-Wirkungs-Beleg. Der Überlebensvorteil schwankt je nach Krebsart stark."
+      - typ: position
+        wer: GKV-Spitzenverband
+        text: "Es gebe „zu viele Krankenhäuser mit Gelegenheitsversorgung“. Wer Operationen nur gelegentlich mache, gehe zulasten der Qualität. Ziel müsse sein, Spezialisierung zu fördern und zugleich eine gute Grundversorgung flächendeckend zu sichern."
+        quellen: [gkv-sv-pm-2025-10-08]
+      - typ: wertung
+        text: "Ärztinnen, Ärzte und Pflegekräfte sind knapp. Wenn sich dieselben Fachkräfte auf weniger Standorte verteilen, lassen sich Dienstpläne rund um die Uhr leichter besetzen und Teams sammeln mehr Routine."
+    contra:
+      - typ: fakt
+        text: "Schon heute sind spezialisierte Einrichtungen nicht überall schnell erreichbar: 2020 lebten rund 9 Millionen Menschen (11 %) dort, wo eine Schlaganfall-Station (Stroke Unit) mit dem Rettungsdienst nicht innerhalb von 30 Minuten erreichbar war – vor allem im ländlichen Nordosten."
+        quellen: [bbsr-erreichbarkeit-2020]
+      - typ: position
+        wer: Deutscher Landkreistag
+        text: "Ausnahmen bei der Zuweisung von Leistungsgruppen seien gerade für Flächenländer ein wesentliches Instrument, um die stationäre Versorgung in ländlichen Regionen zu sichern. Die Reform müsse den regionalen Versorgungsrealitäten Rechnung tragen."
+        quellen: [dlt-khag-2025]
+      - typ: wertung
+        text: "Längere Wege treffen nicht nur Patientinnen und Patienten, sondern auch Angehörige, die zu Besuch kommen. Für Menschen ohne Auto kann eine Klinik in 40 Kilometern Entfernung praktisch unerreichbar sein."
+    gewinnt: [Behandlungsqualität bei komplexen Eingriffen, Fachkräfte in größeren Teams, Beitragszahler (weniger doppelte Vorhaltung)]
+    kostet: [Wohnortnähe, Patienten und Angehörige in dünn besiedelten Regionen, Beschäftigte und Gemeinden an aufgegebenen Standorten]
+
+  - id: wohnortnah-erhalten
+    titel: Wohnortnahe Häuser erhalten
+    kurz: "Möglichst viele Krankenhäuser mit Notaufnahme und Grundversorgung sollen bestehen bleiben; Länder sollen dafür von bundesweiten Vorgaben abweichen dürfen."
+    pro:
+      - typ: wertung
+        text: "Bei Herzinfarkt, Schlaganfall oder Unfall zählt jede Minute. Ein Krankenhaus in der Nähe kann Erstversorgung leisten und stabilisieren, bevor jemand in ein Zentrum verlegt wird."
+      - typ: position
+        wer: Deutscher Landkreistag
+        text: "Die Länder sollen bei der Krankenhausplanung eine zentrale Rolle behalten und ihre Kompetenzen dauerhaft stärken. Ausnahmen von Qualitätsvorgaben müssten in besonderen Fällen auch länger als sechs Jahre möglich sein, wenn die Versorgungsqualität nicht leidet."
+        quellen: [dlt-khag-2025]
+      - typ: wertung
+        text: "Ein Krankenhaus ist in vielen Kleinstädten einer der größten Arbeitgeber und ein Ankerpunkt für Praxen, Rettungsdienst und Pflege. Fällt es weg, kann das die ganze Region schwächen."
+      - typ: wertung
+        text: "Mehr Standorte bedeuten mehr Reserven für Krisen wie eine Pandemie oder einen Großschadensfall."
+    contra:
+      - typ: fakt
+        text: "Kleine Häuser sind deutlich weniger ausgelastet: 2025 waren in Krankenhäusern mit bis zu 49 Betten im Schnitt 55,2 % der Betten belegt, in Häusern mit mehr als 800 Betten 75,3 %."
+        quellen: [destatis-pm-2026-376]
+      - typ: position
+        wer: GKV-Spitzenverband
+        text: "Die Behandlungsqualität dürfe nicht davon abhängen, in welchem Bundesland jemand ins Krankenhaus kommt. Ausnahmen von Qualitäts- und Personalanforderungen dürften nicht die Regel werden."
+        quellen: [gkv-sv-pm-2025-10-08, gkv-sv-pm-2026-02-27]
+      - typ: wertung
+        text: "Jeder Standort braucht rund um die Uhr Personal, auch wenn nachts wenige Patienten kommen. Bei Fachkräftemangel kann das an anderer Stelle fehlen."
+    gewinnt: [Patienten und Angehörige auf dem Land, Gemeinden mit Krankenhausstandort, Beschäftigte vor Ort]
+    kostet: [Beitragszahler (Vorhaltung vieler Standorte), Spezialisierung, knappe Fachkräfte]
+
+  - id: umwandeln
+    titel: Kleine Häuser umwandeln
+    kurz: "Kleine Krankenhäuser werden zu Gesundheitszentren, die einfache stationäre Fälle, ambulante Behandlung und Pflege unter einem Dach anbieten – komplexe Fälle gehen in größere Kliniken."
+    pro:
+      - typ: fakt
+        text: "Seit der Krankenhausreform 2024 können die Länder Standorte als **sektorenübergreifende Versorgungseinrichtung** bestimmen. Diese erbringen stationäre Grundleistungen etwa der Inneren Medizin und Geriatrie (Altersmedizin) und können zusätzlich ambulant behandeln sowie Kurzzeit-, Tages- und Nachtpflege anbieten."
+        quellen: [sgb5-115g, khg-6c]
+      - typ: position
+        wer: Deutsche Krankenhausgesellschaft (DKG)
+        text: "Diese Einrichtungen seien „regionale Gesundheitszentren“. Nötig sei ein breiter „Instrumentenkasten“, mit dem die Verantwortlichen vor Ort Lösungen für eine wohnortnahe, sektorenübergreifende Versorgung entwickeln können."
+        quellen: [dkg-khvvg-2024]
+      - typ: wertung
+        text: "Der Ort behält eine Anlaufstelle mit Ärztinnen, Ärzten und Pflege. Personal und Gebäude werden weiter genutzt, statt zu verschwinden."
+    contra:
+      - typ: wertung
+        text: "Eine Notaufnahme mit voller Ausstattung gibt es dort meist nicht mehr. Viele Menschen erleben die Umwandlung deshalb als Schließung ihres Krankenhauses."
+      - typ: position
+        wer: Deutsche Krankenhausgesellschaft (DKG)
+        text: "Die Finanzierung der sektorenübergreifenden Versorger sei unzureichend. Wegen befristeter Versorgungsaufgaben fehle den Häusern Planungssicherheit."
+        quellen: [dkg-khvvg-2024]
+      - typ: wertung
+        text: "Das Modell ist neu. Wie gut die Zusammenarbeit mit Arztpraxen, Pflegediensten und großen Kliniken im Alltag klappt, muss sich erst zeigen."
+    gewinnt: [Grundversorgung vor Ort, ältere und chronisch kranke Menschen, Zusammenarbeit von Klinik, Praxen und Pflege]
+    kostet: [Notfallversorgung rund um die Uhr am Ort, Planungssicherheit in der Übergangszeit]
+
+erklaerung:
+  - typ: fakt
+    text: "2025 gab es in Deutschland 1.807 Krankenhäuser mit durchschnittlich rund 468.800 Betten. 1991 waren es noch 2.411 Häuser mit 665.565 Betten."
+    quellen: [destatis-pm-2026-376, destatis-grunddaten-2021]
+  - typ: fakt
+    text: "Im europäischen Vergleich hat Deutschland viele Krankenhausbetten: 2024 waren es 759 je 100.000 Einwohner, im EU-Schnitt 507. Nur Bulgarien lag höher."
+    quellen: [eurostat-betten-2024]
+  - typ: fakt
+    text: "Gleichzeitig steht ein Teil der Betten leer. 2025 waren im Schnitt 72,6 % der Betten belegt – in sehr kleinen Häusern deutlich weniger als in großen."
+    quellen: [destatis-pm-2026-376]
+  - typ: fakt
+    text: "Wo welches Krankenhaus steht und was es behandeln darf, planen die **Bundesländer**. Seit der Reform von 2024, angepasst 2026, teilen sie den Kliniken **Leistungsgruppen** zu – also Behandlungsbereiche wie Herzchirurgie oder Geburtshilfe. Für jede Gruppe gelten Mindestanforderungen an Personal und Ausstattung."
+    quellen: [sgb5-135e, bmg-pm-khag-2026]
+  - typ: wertung
+    text: "Im Kern geht es um eine Abwägung: kurze Wege und vertraute Häuser auf der einen Seite, Erfahrung, Spezialisierung und knappes Personal auf der anderen."
+
+zielkonflikte:
+  - typ: wertung
+    text: "**Nähe gegen Routine.** Je mehr Standorte es gibt, desto kürzer sind die Wege – aber desto seltener macht jedes Haus einen bestimmten Eingriff."
+  - typ: wertung
+    text: "**Personal ist die harte Grenze.** Auch wer alle Häuser erhalten will, muss sie rund um die Uhr besetzen. Auch wer bündeln will, braucht genug Fachkräfte in den Zentren und im Rettungsdienst."
+  - typ: wertung
+    text: "**Einheitlich oder regional?** Bundesweit gleiche Qualitätsregeln sorgen für Vergleichbarkeit. Spielräume der Länder erlauben Lösungen für besondere Lagen, etwa dünn besiedelte Regionen – führen aber zu Unterschieden zwischen den Ländern."
+  - typ: fakt
+    text: "**Umbau kostet Geld.** Für den Umbau der Krankenhauslandschaft steht von 2026 bis 2035 ein Transformationsfonds mit insgesamt rund 50 Milliarden Euro bereit; davon trägt der Bund 29 Milliarden Euro, den Rest die Länder."
+    quellen: [bt-drs-21-2512, khg-12b]
+
+daten:
+  kennzahlen:
+    - label: Krankenhäuser
+      wert: "1.807"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+    - label: Aufgestellte Betten (Jahresdurchschnitt)
+      wert: "468.803"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+    - label: Bettenauslastung
+      wert: "72,6 %"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+    - label: Krankenhausbetten je 100.000 Einwohner
+      wert: "759 (EU: 507)"
+      stand: "2024"
+      quelle: eurostat-betten-2024
+      hinweis: "Eurostat zählt für Deutschland auch Betten in Vorsorge- und Rehabilitationseinrichtungen mit (insgesamt 634.000). Die Destatis-Zahl oben umfasst nur Krankenhäuser im engeren Sinn."
+    - label: Häuser mit weniger als 100 Betten
+      wert: "586 von 1.887"
+      stand: "2021"
+      quelle: destatis-grunddaten-2021
+      hinweis: "Dazu kommen 63 reine Tages- oder Nachtkliniken ohne Betten."
+    - label: Durchschnittliche Verweildauer
+      wert: "7,0 Tage (1991: 14,0)"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+  diagramme:
+    - titel: Zahl der Krankenhäuser in Deutschland
+      einheit: Krankenhäuser
+      stand: "1991–2021"
+      quelle: destatis-grunddaten-2021
+      hinweis: "2025 waren es laut Statistischem Bundesamt 1.807."
+      werte:
+        - label: "1991"
+          wert: 2411
+        - label: "1995"
+          wert: 2325
+        - label: "2000"
+          wert: 2242
+        - label: "2005"
+          wert: 2139
+        - label: "2010"
+          wert: 2064
+        - label: "2015"
+          wert: 1956
+        - label: "2021"
+          wert: 1887
+          hervorheben: true
+    - titel: Bettenauslastung nach Größe des Krankenhauses
+      einheit: "% der Betten belegt"
+      stand: "2025"
+      quelle: destatis-pm-2026-376
+      werte:
+        - label: "1–49 Betten"
+          wert: 55.2
+        - label: "50–99 Betten"
+          wert: 68.2
+        - label: "alle Häuser"
+          wert: 72.6
+          hervorheben: true
+        - label: "über 800 Betten"
+          wert: 75.3
+  aussagen:
+    - typ: fakt
+      text: "Die Zahl der Krankenhäuser ist seit 1991 um rund ein Viertel gesunken. Gleichzeitig hat sich die durchschnittliche Verweildauer halbiert: von 14,0 Tagen (1991) auf 7,0 Tage (2025)."
+      quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
+    - typ: fakt
+      text: "Erreichbarkeit spezialisierter Versorgung 2020: Rund 14,5 Millionen Menschen (17,5 %) lebten mehr als 30 Minuten Fahrzeit von einer zertifizierten Herzinfarkt-Einheit (Chest Pain Unit) entfernt. Bei Traumazentren für Schwerverletzte waren es rund 2 Millionen (2,5 %)."
+      quellen: [bbsr-erreichbarkeit-2020]
+    - typ: schaetzung
+      text: "Für die Region Köln/Leverkusen simulierte das IGES-Institut im Auftrag der Bertelsmann Stiftung eine Versorgung mit 14 statt 38 Akutkrankenhäusern. Die Stiftung folgerte daraus, bundesweit seien deutlich unter 600 statt knapp 1.400 Kliniken für eine bessere Versorgung ausreichend."
+      quellen: [bertelsmann-2019]
+      unsicherheit: "Modellrechnung für eine einzelne, dicht besiedelte Region. Die Übertragung auf ganz Deutschland ist eine Hochrechnung und war stark umstritten."
+
+geschichte:
+  ereignisse:
+    - jahr: "1972"
+      titel: Krankenhausfinanzierungsgesetz
+      text: "Das Krankenhausfinanzierungsgesetz teilt die Finanzierung auf: Die Länder bezahlen die Investitionen der Krankenhäuser, die Krankenkassen die laufenden Kosten. Die Länder stellen zudem Krankenhauspläne auf."
+      quellen: [gkv-sv-fokus-finanzierung, regkom-3-2022]
+    - jahr: "1991–2021"
+      titel: Stetiger Rückgang
+      text: "Die Zahl der Häuser sinkt von 2.411 auf 1.887, die der Betten von 665.565 auf 483.606. Der Abbau geschieht meist schrittweise durch Fusionen, Schließungen einzelner Abteilungen oder ganzer Häuser."
+      quellen: [destatis-grunddaten-2021]
+    - jahr: "2016"
+      titel: Strukturfonds
+      text: "Ein Fonds über 500 Millionen Euro aus der Reserve des Gesundheitsfonds soll Länder beim Abbau von Überkapazitäten, bei der Konzentration von Standorten und bei der Umwandlung von Krankenhäusern in nicht-stationäre Einrichtungen unterstützen."
+      quellen: [khg-12]
+    - jahr: "2019"
+      titel: Streit um Bertelsmann-Studie
+      text: "Eine Studie im Auftrag der Bertelsmann Stiftung hält deutlich unter 600 Kliniken für ausreichend. Die These löst eine heftige öffentliche Debatte über Klinikschließungen aus."
+      quellen: [bertelsmann-2019]
+    - jahr: "2022"
+      titel: Vorschläge der Regierungskommission
+      text: "Eine Expertenkommission der Bundesregierung empfiehlt bundesweit einheitliche Versorgungsstufen und genau definierte Leistungsgruppen. Nordrhein-Westfalen plant bereits mit 60 Leistungsgruppen."
+      quellen: [regkom-3-2022]
+    - jahr: "2024"
+      titel: Krankenhausreform (KHVVG)
+      text: "Das Krankenhausversorgungsverbesserungsgesetz tritt am 12. Dezember 2024 in Kraft. Es führt bundesweite Leistungsgruppen mit Qualitätskriterien, die sektorenübergreifenden Versorgungseinrichtungen und einen Transformationsfonds ein."
+      quellen: [bt-drs-21-2512]
+    - jahr: "2026"
+      titel: Anpassung der Reform (KHAG)
+      text: "Das Krankenhausreformanpassungsgesetz tritt am 15. April 2026 in Kraft. Es reduziert die Leistungsgruppen auf 61, gibt den Ländern mehr Spielraum für Ausnahmen und finanziert den Bundesanteil des Transformationsfonds aus dem Sondervermögen Infrastruktur statt aus Krankenkassengeld."
+      quellen: [bmg-khag-verfahren, bmg-pm-khag-2026, bt-drs-21-2512]
+  bilanz:
+    - typ: fakt
+      text: "Seit 1991 ist rund ein Viertel der Krankenhäuser weggefallen. Trotzdem liegt Deutschland bei der Bettendichte weiterhin weit über dem EU-Schnitt."
+      quellen: [destatis-pm-2026-376, eurostat-betten-2024]
+    - typ: wertung
+      text: "Bisher geschah der Abbau meist ungeplant – etwa durch Insolvenzen oder Entscheidungen einzelner Träger. Die Reform von 2024/2026 ist der erste Versuch, Standorte bundesweit nach einheitlichen Qualitätskriterien zu ordnen. Wie stark sie die Landschaft tatsächlich verändert, lässt sich Ende 2026 noch nicht sagen."
+
+laender:
+  beispiele:
+    - land: Dänemark
+      ansatz: "Geplante Zentralisierung mit Neubau von Großkliniken"
+      text: "Mit einer Verwaltungsreform 2007 übernahmen fünf Regionen die Krankenhäuser von 13 Kreisen. Ziel war, die Zahl der Krankenhäuser mit Notaufnahme von 40 auf 21 zu senken. Bis 2021 wurden 18 Krankenhäuser geschlossen, weitere neun sollten folgen. Ein Neubauprogramm mit 16 Projekten ist mit rund 6,6 Milliarden Euro ausgestattet. Eine Studie zehn Jahre nach der Reform fand, dass die Produktivität der Kliniken um mehr als 2 % pro Jahr stieg, bei stabilen Kosten. Zugleich berichtet sie, dass sich Menschen in abgelegenen Gegenden abgehängt fühlen und das Personal stärker belastet ist."
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: "Dänemark ist klein, und dort sind die Regionen zugleich für Planung, Betrieb und Budgets der Kliniken zuständig. In Deutschland sind diese Rollen auf Länder, Kassen und viele verschiedene Träger verteilt, was einen zentral geplanten Umbau schwieriger macht."
+      quellen: [dk-super-hospital-2021, christiansen-vrangbaek-2018]
+    - land: Niederlande
+      ansatz: "Wenige, gemeinnützige Allgemeinkrankenhäuser"
+      text: "2014 gab es 85 allgemeine Krankenhäuser, 8 Universitätskliniken und 65 Fachkliniken. Mit rund 221 Krankenhausbetten je 100.000 Einwohner (2024) liegen die Niederlande bei weniger als einem Drittel des deutschen Werts."
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: "Die Niederlande sind dicht besiedelt, was kurze Wege auch bei wenigen Standorten erleichtert. Hausärzte steuern dort stärker, wer überhaupt ins Krankenhaus kommt, und Pflegeheime übernehmen mehr Langzeitversorgung."
+      quellen: [observatory-nl-2016, eurostat-hlth-rs-bds1]
+    - land: Schweiz
+      ansatz: "Planung über fein definierte Leistungsgruppen"
+      text: "In der Schweiz wird die Spitalplanung über ein Modell mit über 100 Leistungsgruppen organisiert, für die jeweils Vorgaben an Personal und Technik gelten. Die Regierungskommission nannte es 2022 ausdrücklich als Beispiel für die deutschen Leistungsgruppen; Nordrhein-Westfalen arbeitet mit einer gröberen Einteilung in 60 Gruppen."
+      vergleichbarkeit: hoch
+      vergleichbarkeit_text: "Wie in Deutschland liegt die Planung bei den Gliedstaaten (Kantonen), und das Instrument diente als Vorlage. Die Schweiz ist aber deutlich kleiner, und ihre Spitalfinanzierung unterscheidet sich. Die Kommission betonte, das Schweizer Modell bedürfe einer grundlegenden Neubewertung für Deutschland."
+      quellen: [regkom-3-2022]
+  diagramme:
+    - titel: Krankenhausbetten je 100.000 Einwohner
+      einheit: Betten je 100.000 Einwohner
+      stand: "2024"
+      quelle: eurostat-hlth-rs-bds1
+      hinweis: "Alle Krankenhausbetten einschließlich Rehabilitation, soweit in Krankenhäusern. Die Länder zählen teils unterschiedlich."
+      werte:
+        - label: Deutschland
+          wert: 759
+          hervorheben: true
+        - label: Österreich
+          wert: 655
+        - label: Frankreich
+          wert: 534
+        - label: EU-Durchschnitt
+          wert: 507
+        - label: Italien
+          wert: 312
+        - label: Dänemark
+          wert: 226
+        - label: Niederlande
+          wert: 221
+        - label: Schweden
+          wert: 187
+  fazit:
+    - typ: wertung
+      text: "Viele Nachbarländer kommen mit deutlich weniger Betten aus. Ob das an weniger Krankenhäusern liegt oder an anderen Faktoren – etwa mehr ambulanter Behandlung, stärkerer Steuerung durch Hausärzte oder anderer Siedlungsstruktur –, lässt sich aus dem Vergleich allein nicht ablesen."
+    - typ: wertung
+      text: "Dänemark zeigt, dass eine geplante Zentralisierung möglich ist, aber Zeit, viel Geld für Neubauten und eine einheitliche Steuerung braucht."
+
+verknuepft:
+  - frage: krankenhaus-verguetung
+    grund: "Wie Kliniken bezahlt werden, entscheidet mit darüber, ob sich kleine Häuser wirtschaftlich halten können."
+  - frage: krankenhaus-traeger
+    grund: "Ob ein Standort bleibt, hängt auch davon ab, ob ein öffentlicher, kirchlicher oder privater Träger Verluste tragen kann oder will."
+  - frage: ambulant-land
+    grund: "Wo Krankenhäuser wegfallen oder umgewandelt werden, müssen Arztpraxen auf dem Land mehr leisten."
+  - frage: fachkraefte-pflege
+    grund: "Wie viele Standorte sich besetzen lassen, hängt am verfügbaren Pflegepersonal."
+  - frage: finanzierung-kostenanstieg
+    grund: "Krankenhäuser sind der größte Ausgabenposten der gesetzlichen Krankenversicherung."
+
+parteien: []
+
+quellen:
+  - id: destatis-pm-2026-376
+    titel: "1,2 % mehr Krankenhausbehandlungen im Jahr 2025 (Pressemitteilung Nr. 376 vom 28. Oktober 2026)"
+    herausgeber: Statistisches Bundesamt (Destatis)
+    jahr: 2026
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/10/PD26_376_231.html
+    art: amtlich
+  - id: destatis-grunddaten-2021
+    titel: "Grunddaten der Krankenhäuser 2021 (Fachserie 12 Reihe 6.1.1), Tabellen 1.1–1.4: Krankenhäuser 1991 bis 2021"
+    herausgeber: Statistisches Bundesamt (Destatis)
+    jahr: 2022
+    url: https://www.statistischebibliothek.de/mir/servlets/MCRFileNodeServlet/DEHeft_derivate_00087776/2120611217004_korr10072024.pdf
+    art: amtlich
+  - id: eurostat-betten-2024
+    titel: "Healthcare resource statistics – beds (Statistics Explained, Daten 2024)"
+    herausgeber: Eurostat
+    jahr: 2026
+    url: https://ec.europa.eu/eurostat/statistics-explained/index.php?title=Healthcare_resource_statistics_-_beds
+    art: international
+  - id: eurostat-hlth-rs-bds1
+    titel: "Hospital beds by function and type of care (Datensatz hlth_rs_bds1), Betten je 100.000 Einwohner"
+    herausgeber: Eurostat
+    jahr: 2026
+    url: https://ec.europa.eu/eurostat/databrowser/view/hlth_rs_bds1/default/table
+    art: international
+  - id: sgb5-135e
+    titel: "§ 135e SGB V – Mindestanforderungen an die Qualität der Krankenhausbehandlung"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/sgb_5/__135e.html
+    art: gesetz
+  - id: sgb5-115g
+    titel: "§ 115g SGB V – Behandlung in einer sektorenübergreifenden Versorgungseinrichtung"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/sgb_5/__115g.html
+    art: gesetz
+  - id: khg-6c
+    titel: "§ 6c KHG – Bestimmung als sektorenübergreifende Versorgungseinrichtung"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/khg/__6c.html
+    art: gesetz
+  - id: khg-12
+    titel: "§ 12 KHG – Förderung von Vorhaben zur Verbesserung von Versorgungsstrukturen (Strukturfonds)"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/khg/__12.html
+    art: gesetz
+  - id: khg-12b
+    titel: "§ 12b KHG – Transformationsfonds"
+    herausgeber: Bundesministerium der Justiz (gesetze-im-internet.de)
+    jahr: 2026
+    url: https://www.gesetze-im-internet.de/khg/__12b.html
+    art: gesetz
+  - id: bt-drs-21-2512
+    titel: "Entwurf eines Gesetzes zur Anpassung der Krankenhausreform (Krankenhausreformanpassungsgesetz – KHAG), Drucksache 21/2512"
+    herausgeber: Deutscher Bundestag
+    jahr: 2025
+    url: https://dserver.bundestag.de/btd/21/025/2102512.pdf
+    art: amtlich
+  - id: bmg-khag-verfahren
+    titel: "Krankenhausreformanpassungsgesetz (KHAG) – Gesetzgebungsverfahren"
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/service/gesetze-und-verordnungen/detail/krankenhausreformanpassungsgesetz
+    art: amtlich
+  - id: bmg-pm-khag-2026
+    titel: "Warken: „Die Krankenhauslandschaft muss sich verändern“ – Bundestag beschließt Krankenhausreformanpassungsgesetz (Pressemitteilung vom 6. März 2026)"
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/ministerium/meldungen/bundestag-beschliesst-krankenhausreformanpassungsgesetz-pm-06-03-2026
+    art: amtlich
+  - id: regkom-3-2022
+    titel: "Dritte Stellungnahme und Empfehlung der Regierungskommission für eine moderne und bedarfsgerechte Krankenhausversorgung: Grundlegende Reform der Krankenhausvergütung"
+    herausgeber: Regierungskommission für eine moderne und bedarfsgerechte Krankenhausversorgung (BMG)
+    jahr: 2022
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/K/Krankenhausreform/3te_Stellungnahme_Regierungskommission_Grundlegende_Reform_KH-Verguetung_6_Dez_2022_mit_Tab-anhang.pdf
+    art: gutachten
+  - id: gkv-sv-fokus-finanzierung
+    titel: "Fokus: Krankenhausfinanzierung"
+    herausgeber: GKV-Spitzenverband
+    jahr: 2023
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/fokus/krankenhausfinanzierung/thema_krankenhausfinanzierung.jsp
+    art: verband
+  - id: gkv-sv-pm-2025-10-08
+    titel: "Die Planungskompetenz für Krankenhäuser zeigt sich im Status Quo (Pressemitteilung vom 8. Oktober 2025)"
+    herausgeber: GKV-Spitzenverband
+    jahr: 2025
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/pressemitteilungen_und_statements/pressemitteilung_2130752.jsp
+    art: verband
+  - id: gkv-sv-pm-2026-02-27
+    titel: "Mehr Licht als Schatten – Bund und Länder einigen sich bei der Krankenhausreform (Pressemitteilung vom 27. Februar 2026)"
+    herausgeber: GKV-Spitzenverband
+    jahr: 2026
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/pressemitteilungen_und_statements/pressemitteilung_2215616.jsp
+    art: verband
+  - id: dlt-khag-2025
+    titel: "Stellungnahme zum Referentenentwurf eines Gesetzes zur Anpassung der Krankenhausreform (KHAG), 21. August 2025"
+    herausgeber: Deutscher Landkreistag
+    jahr: 2025
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Gesetze_und_Verordnungen/Stellungnahmen_WP21/KHAG/Deutscher_Landkreistag.pdf
+    art: verband
+  - id: dkg-khvvg-2024
+    titel: "Stellungnahme zum Regierungsentwurf des Krankenhausversorgungsverbesserungsgesetzes (KHVVG), Ausschussdrucksache 20(14)220(22)"
+    herausgeber: Deutsche Krankenhausgesellschaft
+    jahr: 2024
+    url: https://bundestag.de/resource/blob/1020654/3bf39c98c2d368b3036bb0c0ab5a8478/20_14_0220-22-_DKG_KHVVG.pdf
+    art: verband
+  - id: bbsr-erreichbarkeit-2020
+    titel: "Schlaganfall, Herzinfarkt, schwerer Unfall – Wege zu optimaler Versorgung unterschiedlich lang (Pressemitteilung zu IzR 1/2020)"
+    herausgeber: Bundesinstitut für Bau-, Stadt- und Raumforschung (BBSR)
+    jahr: 2020
+    url: https://idw-online.de/de/news751884
+    art: amtlich
+  - id: wizen-2023
+    titel: "Initial cancer treatment in certified versus non-certified hospitals – results of the WiZen comparative cohort study (Dtsch Arztebl Int 2023)"
+    herausgeber: "Schmitt J, Klinkhammer-Schalke M u. a., Deutsches Ärzteblatt International"
+    jahr: 2023
+    url: https://doi.org/10.3238/arztebl.m2023.0169
+    art: wissenschaft
+  - id: bertelsmann-2019
+    titel: "Eine bessere Versorgung ist nur mit halb so vielen Kliniken möglich (Meldung zur IGES-Studie, 15. Juli 2019)"
+    herausgeber: Bertelsmann Stiftung
+    jahr: 2019
+    url: https://www.bertelsmann-stiftung.de/de/themen/aktuelle-meldungen/2019/juli/eine-bessere-versorgung-ist-nur-mit-halb-so-vielen-kliniken-moeglich
+    art: gutachten
+  - id: dk-super-hospital-2021
+    titel: The Danish Super Hospital Programme 2021
+    herausgeber: Indenrigs- og Sundhedsministeriet (Dänisches Innen- und Gesundheitsministerium)
+    jahr: 2021
+    url: https://ism.dk/Media/637683227529083454/The%20Danish%20Super%20Hospital%20Programme%202021.pdf
+    art: international
+  - id: christiansen-vrangbaek-2018
+    titel: "Hospital centralization and performance in Denmark – Ten years on (Health Policy 122(4), 321–328)"
+    herausgeber: "Christiansen T, Vrangbæk K"
+    jahr: 2018
+    url: https://doi.org/10.1016/j.healthpol.2017.12.009
+    art: wissenschaft
+  - id: observatory-nl-2016
+    titel: "Netherlands – Health Systems and Policy Monitor (2016), 5.4 Specialized ambulatory care/inpatient care"
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2016
+    url: https://eurohealthobservatory.who.int/monitors/health-systems-monitor/countries-hspm/hspm/netherlands-2016/provision-of-services/specialized-ambulatory-care-inpatient-care
+    art: international

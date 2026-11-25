@@ -1,0 +1,232 @@
+bereich: finanzierung
+reihenfolge: 1
+status: entwurf
+stand: "2026-11-25"
+titel: Gesetzlich und privat – soll das duale System bleiben?
+frage: Sollen gesetzliche und private Krankenversicherung weiter nebeneinander bestehen, oder soll es eine gemeinsame Versicherung für alle geben?
+optionen:
+  - id: dual-beibehalten
+    titel: Duales System beibehalten
+    kurz: Gesetzliche und private Krankenversicherung bleiben in ihrer heutigen Form nebeneinander bestehen.
+    pro:
+      - typ: wertung
+        text: Wer gut verdient, selbstständig oder verbeamtet ist, kann zwischen zwei Systemen wählen. Diese Wahlfreiheit ist für viele ein Wert an sich.
+      - typ: wertung
+        text: Die private Krankenversicherung bildet für jeden Versicherten Rücklagen für das Alter (**Alterungsrückstellungen**). Das gilt als Vorsorge für eine alternde Gesellschaft, die nicht allein auf die nächste Generation verschoben wird.
+      - typ: position
+        wer: PKV-Verband
+        text: Privatversicherte bringen Arztpraxen, Kliniken und anderen Anbietern zusätzliches Geld, weil für sie höhere Gebühren gelten. Dieses Geld komme der Versorgung aller zugute und würde ohne die PKV fehlen.
+        quellen: [pkv-mehrumsatz-2026]
+      - typ: wertung
+        text: Der Wettbewerb zwischen zwei Systemen kann beide unter Druck setzen, Leistungen und Service zu verbessern.
+    contra:
+      - typ: wertung
+        text: Gerade Menschen mit hohem Einkommen und geringerem Krankheitsrisiko können die gesetzliche Versicherung verlassen. Ihr Beitrag zum Solidarausgleich fehlt dann.
+      - typ: wertung
+        text: Unterschiedliche Honorare für gesetzlich und privat Versicherte können zu unterschiedlich schnellen Terminen führen. Viele empfinden das als ungerecht.
+      - typ: wertung
+        text: Ältere Privatversicherte mit steigenden Beiträgen haben nur begrenzte Möglichkeiten, in die gesetzliche Versicherung zurückzukehren.
+    gewinnt: [Wahlfreiheit für Gutverdienende, Selbstständige und Beamte, Kapitalgedeckte Altersvorsorge in der PKV, Einnahmen von Arztpraxen]
+    kostet: [Breite der Finanzierungsbasis der GKV, Gleichbehandlung beim Zugang]
+  - id: annaehern
+    titel: Schrittweise annähern
+    kurz: Beide Systeme bleiben, werden aber stärker verbunden – etwa durch höhere Einkommensgrenzen oder einen gemeinsamen Finanzausgleich.
+    pro:
+      - typ: wertung
+        text: Eine höhere **Versicherungspflichtgrenze** (bis zu diesem Einkommen muss man gesetzlich versichert sein) hält mehr Gutverdienende in der GKV und verbreitert so ihre Einnahmen.
+      - typ: wertung
+        text: Eine höhere **Beitragsbemessungsgrenze** (Einkommen darüber ist beitragsfrei) lässt Menschen mit hohem Einkommen mehr zur Finanzierung beitragen.
+      - typ: wertung
+        text: Ein Finanzausgleich zwischen den Systemen könnte Unterschiede bei Einkommen und Krankheitsrisiken ausgleichen, ohne bestehende Verträge aufzulösen.
+      - typ: wertung
+        text: Schrittweise Änderungen lassen sich besser steuern und notfalls korrigieren als ein großer Systemwechsel.
+    contra:
+      - typ: position
+        wer: PKV-Verband
+        text: Höhere Beitragsbemessungs- und Versicherungspflichtgrenzen seien „faktisch Sondersteuern für qualifizierte Fachkräfte und deren Arbeitgeber“ und erschwerten die Wahlfreiheit stark.
+        quellen: [pkv-stellungnahme-bstabg-2026]
+      - typ: wertung
+        text: Höhere Grenzen erhöhen die Lohnnebenkosten von Beschäftigten mit hohem Einkommen und ihren Arbeitgebern.
+      - typ: wertung
+        text: Für Befürworter einer einheitlichen Versicherung bleibt die Annäherung auf halbem Weg stehen; für Befürworter des dualen Systems ist sie ein schleichender Umbau.
+    gewinnt: [Finanzierungsbasis der GKV, Planbarkeit durch kleine Schritte]
+    kostet: [Beschäftigte mit hohem Einkommen und ihre Arbeitgeber, Neugeschäft der PKV]
+  - id: buergerversicherung
+    titel: Eine Versicherung für alle
+    kurz: Alle Menschen werden in einem gemeinsamen System versichert, oft „Bürgerversicherung“ genannt.
+    pro:
+      - typ: wertung
+        text: Alle tragen nach ihrer wirtschaftlichen Leistungsfähigkeit zur Finanzierung bei, Gesunde und Kranke teilen das Risiko gemeinsam.
+      - typ: schaetzung
+        text: Eine Modellrechnung des IGES-Instituts kam 2020 zu dem Ergebnis, dass der Beitragssatz um 0,2 bis 0,6 Prozentpunkte sinken könnte, wenn alle Privatversicherten in die GKV einbezogen würden.
+        quellen: [bertelsmann-iges-2020]
+        unsicherheit: Datenstand 2020. Das Ergebnis hängt stark davon ab, ob Arztpraxen ihre bisherigen Mehreinnahmen aus der PKV ersetzt bekommen. Kritiker wenden ein, dass Privatversicherte künftig älter werden.
+      - typ: position
+        wer: Deutscher Gewerkschaftsbund (DGB)
+        text: Eine einheitliche Bürgerversicherung schaffe eine bedarfsgerechte Versorgung für alle, unabhängig von Alter, Wohnort oder Einkommen. Auch weitere Einkommensarten oberhalb eines Freibetrags sollten Beiträge tragen.
+        quellen: [dgb-buergerversicherung-2024]
+      - typ: wertung
+        text: Gleiche Honorare für alle Patienten nehmen Praxen den Anreiz, bestimmte Versicherte zu bevorzugen.
+    contra:
+      - typ: wertung
+        text: Ein Systemwechsel ist rechtlich und praktisch schwierig. Bestehende private Verträge und Alterungsrückstellungen genießen Vertrauensschutz.
+      - typ: wertung
+        text: Ohne die höheren Honorare der PKV fehlt Arztpraxen Geld. Wird es ausgeglichen, schrumpft die Entlastung der Beitragszahler.
+      - typ: wertung
+        text: Ein einziges umlagefinanziertes System trägt die Kosten der Alterung allein über laufende Beiträge – ohne kapitalgedeckten Puffer.
+      - typ: wertung
+        text: Wer bisher privat versichert ist, verliert eine Wahlmöglichkeit.
+    gewinnt: [Solidarausgleich zwischen allen Einkommen, Gleichbehandlung beim Zugang, Gesetzlich Versicherte mit mittlerem Einkommen]
+    kostet: [Wahlfreiheit, Privatversicherte und ihre Versicherer, Einnahmen von Arztpraxen]
+erklaerung:
+  - typ: fakt
+    text: Deutschland hat zwei Systeme der Krankenversicherung. Rund **74,4 Millionen** Menschen sind gesetzlich versichert (Oktober 2026), rund **8,8 Millionen** privat vollversichert (2025).
+    quellen: [bmg-km1-2026, pkv-branchenzahlen-2025]
+  - typ: fakt
+    text: In der **gesetzlichen Krankenversicherung (GKV)** richtet sich der Beitrag nach dem Einkommen, Gesunde und Kranke zahlen gleich viel. In der **privaten Krankenversicherung (PKV)** hängt der Beitrag nicht vom Einkommen ab, sondern vom Tarif und vom Gesundheitsrisiko beim Eintritt. Privatversicherte verdienen im Schnitt mehr und sind im Schnitt gesünder als gesetzlich Versicherte.
+    quellen: [bundesregierung-rechengroessen-2026, bertelsmann-iges-2020]
+  - typ: fakt
+    text: Angestellte müssen gesetzlich versichert sein, solange ihr Einkommen unter der **Versicherungspflichtgrenze** liegt. Sie beträgt 2026 77.400 € im Jahr und steigt 2027 auf 84.150 €. Beamte und Selbstständige können unabhängig vom Einkommen in die PKV wechseln.
+    quellen: [bundesregierung-rechengroessen-2026, bundesregierung-rechengroessen-2027]
+  - typ: fakt
+    text: Beiträge zur GKV werden nur bis zur **Beitragsbemessungsgrenze** erhoben – 2026 bis 69.750 € Jahreseinkommen, 2027 bis 76.500 €. Für 2027 steigen beide Grenzen zusätzlich zur üblichen Anpassung um 300 € im Monat.
+    quellen: [bundesregierung-rechengroessen-2026, bundesregierung-rechengroessen-2027]
+  - typ: schaetzung
+    text: Nach Berechnung des Wissenschaftlichen Instituts der PKV flossen Arztpraxen, Kliniken und anderen Anbietern 2024 durch Privatversicherte rund 15,5 Mrd. € mehr zu, als sie nach GKV-Regeln erhalten hätten.
+    quellen: [pkv-mehrumsatz-2026]
+    unsicherheit: Berechnung eines Instituts der PKV, also eines Interessenträgers.
+zielkonflikte:
+  - typ: wertung
+    text: '**Wahlfreiheit gegen Solidarausgleich:** Je mehr Menschen wählen dürfen, desto eher verlassen gut verdienende und gesunde Versicherte die gemeinsame Kasse.'
+  - typ: wertung
+    text: '**Entlastung der Beitragszahler gegen Einnahmen der Praxen:** Was GKV-Versicherte durch eine Einbeziehung der PKV sparen könnten, fehlt zum Teil Ärztinnen und Ärzten – oder muss anders ausgeglichen werden.'
+  - typ: wertung
+    text: '**Vorsorge gegen Umlage:** Kapitalgedeckte Rücklagen der PKV bereiten auf die Alterung vor, binden aber Geld. Das Umlageverfahren der GKV verteilt Lasten sofort, ist aber abhängig von der Zahl der Beitragszahler.'
+  - typ: wertung
+    text: '**Stabilität gegen Veränderung:** Ein großer Umbau kann Ungleichheiten schneller beseitigen, bringt aber rechtliche Risiken und Übergangsprobleme.'
+daten:
+  kennzahlen:
+    - label: Gesetzlich Versicherte
+      wert: 74,4 Mio.
+      stand: Oktober 2026
+      quelle: bmg-km1-2026
+    - label: Private Vollversicherte
+      wert: 8,79 Mio.
+      stand: "2025"
+      quelle: pkv-branchenzahlen-2025
+    - label: Versicherungspflichtgrenze
+      wert: 77.400 € / Jahr (2027 84.150 €)
+      stand: "2026"
+      quelle: bundesregierung-rechengroessen-2026
+    - label: Ausgaben der PKV im Gesundheitswesen
+      wert: 44,8 Mrd. € (8,3 % aller Gesundheitsausgaben)
+      stand: "2024"
+      quelle: destatis-gesundheitsausgaben-2024
+  diagramme:
+    - titel: Wer finanziert die Gesundheitsausgaben?
+      einheit: Mrd. €
+      stand: "2024"
+      quelle: destatis-gesundheitsausgaben-2024
+      hinweis: Auswahl der größten Ausgabenträger. Gesamt 538,2 Mrd. €.
+      werte:
+        - label: Gesetzliche Krankenversicherung
+          wert: 300.8
+          hervorheben: true
+        - label: Private Haushalte und Organisationen
+          wert: 65
+        - label: Soziale Pflegeversicherung
+          wert: 64.7
+        - label: Private Krankenversicherung
+          wert: 44.8
+          hervorheben: true
+geschichte:
+  ereignisse:
+    - jahr: "2020"
+      titel: Modellrechnung zur einheitlichen Versicherung
+      text: Eine Studie des IGES-Instituts im Auftrag der Bertelsmann Stiftung berechnet, wie sich die GKV-Finanzen ändern würden, wenn alle Privatversicherten einbezogen wären.
+      quellen: [bertelsmann-iges-2020]
+    - jahr: "2026"
+      titel: Außerordentliche Anhebung der Einkommensgrenzen
+      text: Mit dem GKV-Beitragssatzstabilisierungsgesetz steigen Versicherungspflicht- und Beitragsbemessungsgrenze 2027 zusätzlich um 300 € im Monat.
+      quellen: [bundesregierung-rechengroessen-2027]
+laender:
+  beispiele:
+    - land: Niederlande
+      ansatz: Eine Pflichtversicherung für alle bei privaten Versicherern
+      text: Seit 2006 müssen alle Einwohner eine Basisversicherung bei einem privatrechtlichen Versicherer abschließen. Die Trennung zwischen gesetzlicher und privater Versicherung wurde aufgehoben. Versicherer müssen jeden aufnehmen und dürfen Prämien nicht nach Gesundheit staffeln. Eine erste Auswertung bewertete die Reform als „per Saldo positiv“, sah aber auch deutliche Probleme, etwa beim Einkauf von Leistungen durch die Versicherer.
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: Die Niederlande haben wie Deutschland Versicherungen und Wettbewerb zwischen Kassen. Der Weg dorthin war aber ein anderer, und die Finanzierung (Prämie an den Versicherer, staatlicher Zuschuss für Haushalte mit geringem Einkommen) unterscheidet sich vom deutschen Beitragssystem.
+      quellen: [observatory-nl-2016, zvw-evaluation-2010]
+verknuepft:
+  - frage: finanzierung-kostenanstieg
+    grund: Wer wie versichert ist, bestimmt mit, wie viel Geld der GKV zur Verfügung steht.
+  - frage: pflege-eigenanteile
+    grund: Auch in der Pflegeversicherung gibt es ein gesetzliches und ein privates System.
+parteien: []
+quellen:
+  - id: bmg-km1-2026
+    titel: Gesetzliche Krankenversicherung – Mitglieder, mitversicherte Angehörige und Krankenstand, Monatswerte Januar–Oktober 2026 (KM1)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/GKV/Mitglieder_Versicherte/KM1_Januar_bis_Oktober_2026.pdf
+    art: amtlich
+  - id: pkv-branchenzahlen-2025
+    titel: Private Krankenversicherung auch 2025 mit stabilem Wachstum (Pressemitteilung)
+    herausgeber: Verband der Privaten Krankenversicherung
+    jahr: 2026
+    url: https://www.pkv.de/verband/presse/pressemitteilungen/pkv-branchenzahlen-private-krankenversicherung-auch-2025-mit-stabilem-wachstum/
+    art: verband
+  - id: bundesregierung-rechengroessen-2026
+    titel: Rechengrößen in der Sozialversicherung (2026)
+    herausgeber: Bundesregierung
+    jahr: 2026
+    url: https://www.bundesregierung.de/breg-de/aktuelles/beitragsbemessungsgrenzen-2386514
+    art: amtlich
+  - id: bundesregierung-rechengroessen-2027
+    titel: Sozialversicherung – Beitragsbemessungsgrenzen sollen ab 2027 steigen
+    herausgeber: Bundesregierung
+    jahr: 2026
+    url: https://www.bundesregierung.de/breg-de/aktuelles/beitragsbemessungsgrenzen-2027-2454638
+    art: amtlich
+  - id: destatis-gesundheitsausgaben-2024
+    titel: Gesundheitsausgaben im Jahr 2024 auf 538 Milliarden Euro gestiegen (Pressemitteilung Nr. 115)
+    herausgeber: Statistisches Bundesamt
+    jahr: 2026
+    url: https://www.destatis.de/DE/Presse/Pressemitteilungen/2026/04/PD26_115_23611.html
+    art: amtlich
+  - id: pkv-mehrumsatz-2026
+    titel: Mehrumsatz auf Rekordniveau – Bedeutung der PKV für das Gesundheitswesen wächst weiter an (Pressemitteilung zur WIP-Studie)
+    herausgeber: Verband der Privaten Krankenversicherung
+    jahr: 2026
+    url: https://www.pkv.de/verband/presse/pressemitteilungen/mehrumsatz-auf-rekordniveau/
+    art: verband
+  - id: pkv-stellungnahme-bstabg-2026
+    titel: Stellungnahme zum Entwurf des GKV-Beitragssatzstabilisierungsgesetzes
+    herausgeber: Verband der Privaten Krankenversicherung
+    jahr: 2026
+    url: https://www.pkv.de/positionen/entwurf-eines-gesetzes-zur-stabilisierung-der-beitragssaetze-in-der-gesetzlichen-krankenversicherung-gkv-beitragssatzstabilisierungsgesetz/
+    art: verband
+  - id: bertelsmann-iges-2020
+    titel: Duales System kostet die Gesetzliche Krankenversicherung bis zu 145 Euro je Mitglied pro Jahr (Pressemitteilung zur IGES-Studie)
+    herausgeber: Bertelsmann Stiftung
+    jahr: 2020
+    url: https://bertelsmann-stiftung.de/fileadmin/files/BSt/Presse/20200217_Pressemitteilung_Duaes-System-kostet-die-Gesetzliche-Krankenversicherung-bis-zu-145-Euro-je-Mitglied-pro-Jahr.pdf
+    art: gutachten
+  - id: dgb-buergerversicherung-2024
+    titel: Das DGB-Bürgerversicherungsmodell – Solidarisch, gerecht, tragfähig
+    herausgeber: Deutscher Gewerkschaftsbund
+    jahr: 2024
+    url: https://www.dgb.de/fileadmin/import/Aktuelles/News/DGB-Buergerversicherungsmodell.pdf
+    art: verband
+  - id: observatory-nl-2016
+    titel: 'Netherlands: health system review 2016 (Health Systems in Transition, Vol. 18 No. 2)'
+    herausgeber: European Observatory on Health Systems and Policies
+    jahr: 2016
+    url: https://eurohealthobservatory.who.int/publications/i/netherlands-health-system-review-2016
+    art: international
+  - id: zvw-evaluation-2010
+    titel: 'Evaluation of the Health Insurance Act – Summary and Recommendations (van de Ven u. a.)'
+    herausgeber: ZonMw / NIVEL
+    jahr: 2010
+    url: https://www.nivel.nl/sites/default/files/bestanden/Summary%20and%20Recommendations%20Zvw.pdf
+    art: wissenschaft

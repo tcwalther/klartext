@@ -1,0 +1,274 @@
+bereich: finanzierung
+reihenfolge: 2
+status: entwurf
+stand: "2026-11-25"
+titel: Ausgaben wachsen schneller als Einnahmen – wie die Lücke schließen?
+frage: Die Ausgaben der gesetzlichen Krankenversicherung steigen seit Jahren schneller als ihre Einnahmen. Wie soll die Lücke vor allem geschlossen werden?
+optionen:
+  - id: hoehere-beitraege
+    titel: Höhere Beiträge
+    kurz: Die Leistungen bleiben, wie sie sind; Versicherte und Arbeitgeber zahlen bei Bedarf höhere Beiträge.
+    pro:
+      - typ: wertung
+        text: Der Leistungsumfang bleibt erhalten. Niemand muss auf Behandlungen verzichten oder mehr aus eigener Tasche zahlen.
+      - typ: wertung
+        text: Beiträge richten sich nach dem Einkommen. Wer mehr verdient, trägt mehr – das gilt als sozial ausgewogen.
+      - typ: wertung
+        text: Beitragserhöhungen wirken schnell und sind für Krankenkassen gut planbar.
+    contra:
+      - typ: wertung
+        text: Höhere Beiträge verteuern Arbeit. Das kann Arbeitsplätze und Wettbewerbsfähigkeit belasten.
+      - typ: wertung
+        text: Beschäftigte haben weniger Netto vom Brutto. Einkommen oberhalb der Beitragsbemessungsgrenze und andere Einkommensarten bleiben außen vor.
+      - typ: wertung
+        text: Wer nur Beiträge erhöht, nimmt den Druck, Geld wirksamer einzusetzen.
+    gewinnt: [Umfang des Leistungskatalogs, Patientinnen und Patienten mit hohem Behandlungsbedarf]
+    kostet: [Beschäftigte, Arbeitgeber, Lohnnebenkosten]
+  - id: mehr-steuermittel
+    titel: Mehr Steuermittel
+    kurz: Der Bund zahlt mehr in die Krankenversicherung, etwa kostendeckende Beiträge für Bürgergeldbeziehende.
+    pro:
+      - typ: position
+        wer: GKV-Spitzenverband
+        text: Der Bund zahle für die Gesundheitsversorgung von Bürgergeldbeziehenden zu wenig. Diese staatliche Aufgabe werde auf die Beitragszahler abgewälzt. Die Kassen klagen deshalb gegen den Bund.
+        quellen: [gkv-sv-klage-2025, gkv-sv-buergergeld-2026]
+      - typ: position
+        wer: Bundesvereinigung der Deutschen Arbeitgeberverbände (BDA)
+        text: Die Krankenversicherung von Bürgergeldbeziehenden sei eine „versicherungsfremde Leistung“, die vollständig aus Steuermitteln bezahlt werden müsse.
+        quellen: [bda-finanzkommission-2026]
+      - typ: wertung
+        text: Steuern werden auf alle Einkommensarten erhoben, nicht nur auf Löhne. Die Last verteilt sich damit breiter.
+    contra:
+      - typ: wertung
+        text: Der Bundeshaushalt ist ebenfalls angespannt. Mehr Geld für die Krankenversicherung fehlt an anderer Stelle oder erfordert höhere Steuern oder Schulden.
+      - typ: wertung
+        text: Je mehr die GKV von Steuermitteln abhängt, desto stärker hängt sie von der jeweiligen Haushaltslage und politischen Mehrheiten ab.
+      - typ: wertung
+        text: Steuergeld allein löst nicht das Problem, dass die Ausgaben schneller wachsen als die Wirtschaft.
+    gewinnt: [Beitragszahlende, Arbeitgeber]
+    kostet: [Bundeshaushalt, Steuerzahlende, Andere staatliche Aufgaben]
+  - id: ausgaben-begrenzen
+    titel: Ausgaben begrenzen
+    kurz: Preise, Honorare und Strukturen werden so gesteuert, dass die Ausgaben nicht schneller wachsen als die Einnahmen.
+    pro:
+      - typ: position
+        wer: Bundesvereinigung der Deutschen Arbeitgeberverbände (BDA)
+        text: Die Ausgaben müssten „strikt an die tatsächlich vorhandenen Einnahmen gebunden werden“. Preis- und Honorarsteigerungen dürften nur so weit gehen, wie die Beitragseinnahmen sie decken.
+        quellen: [bda-finanzkommission-2026]
+      - typ: wertung
+        text: Nicht jede Ausgabe verbessert die Gesundheit. Wer Doppeluntersuchungen, überhöhte Preise oder unnötige Klinikaufenthalte abbaut, spart, ohne die Versorgung zu verschlechtern.
+      - typ: wertung
+        text: Eine Ausgabengrenze zwingt alle Beteiligten, effizienter zu werden, und hält die Beiträge stabil.
+    contra:
+      - typ: wertung
+        text: Wenn Preise und Honorare langsamer steigen als Löhne und Kosten, können Praxen, Kliniken und Pflegedienste in Schwierigkeiten geraten. Das kann Wartezeiten verlängern oder Angebote verkleinern.
+      - typ: wertung
+        text: Strukturreformen brauchen Jahre, bis sie Geld sparen. Kurzfristige Deckel treffen oft alle gleichermaßen, unabhängig von der Qualität.
+      - typ: wertung
+        text: Neue, teure Behandlungen können zum Nachteil von Patienten langsamer in die Versorgung kommen.
+    gewinnt: [Beitragszahlende, Stabilität der Beiträge]
+    kostet: [Einnahmen von Kliniken, Praxen und Herstellern, Möglicherweise Wartezeiten und Angebot]
+  - id: mehr-eigenbeteiligung
+    titel: Mehr Eigenbeteiligung
+    kurz: Patientinnen und Patienten zahlen bei der Inanspruchnahme mehr selbst, etwa durch höhere Zuzahlungen oder eine Gebühr pro Arztbesuch.
+    pro:
+      - typ: position
+        wer: Bundesvereinigung der Deutschen Arbeitgeberverbände (BDA)
+        text: Eine Kontaktgebühr bei jedem Arztbesuch und eine höhere Belastungsgrenze (3 statt 2 % des Einkommens) sollen Anreize für kostenbewusstes Verhalten setzen.
+        quellen: [bda-finanzkommission-2026]
+      - typ: wertung
+        text: Wer einen Teil selbst zahlt, überlegt eher, ob ein Arztbesuch oder ein Medikament nötig ist. Das kann unnötige Leistungen verringern.
+      - typ: fakt
+        text: Zuzahlungen sind durch eine **Belastungsgrenze** gedeckelt – 2 % des Haushaltsbruttoeinkommens im Jahr, für chronisch Kranke 1 %.
+        quellen: [bundesregierung-bstabg-2026]
+    contra:
+      - typ: wertung
+        text: Menschen mit wenig Geld könnten auch nötige Behandlungen aufschieben. Das kann später teurer werden.
+      - typ: wertung
+        text: Kranke zahlen mehr als Gesunde. Das schwächt den Solidarausgleich.
+      - typ: wertung
+        text: Mit der Praxisgebühr gab es bis Ende 2012 schon einmal eine Gebühr für Arztbesuche. Ob sie unnötige Besuche wirklich verringert hat, ist umstritten.
+    gewinnt: [Beitragszahlende, Möglicherweise weniger unnötige Arztbesuche]
+    kostet: [Patientinnen und Patienten, besonders mit wenig Einkommen, Chronisch Kranke]
+erklaerung:
+  - typ: fakt
+    text: 2024 gab die GKV 327,4 Mrd. € aus, nahm aber nur 320,8 Mrd. € ein. Die Ausgaben stiegen um 6,5 %, die Einnahmen um 5,0 %.
+    quellen: [bmg-kennzahlen-gkv-2025]
+  - typ: fakt
+    text: Im ersten Halbjahr 2026 stiegen die Leistungsausgaben um 7,4 %, die beitragspflichtigen Einnahmen nur um 4,1 %.
+    quellen: [gkv-sv-kostenproblem-2026]
+  - typ: fakt
+    text: Der Beitrag besteht aus dem **allgemeinen Beitragssatz** von 14,6 % und einem **Zusatzbeitrag**, den jede Kasse selbst festlegt. Das Ministerium hat den durchschnittlichen Zusatzbeitrag für 2027 – wie für 2026 – auf 2,9 % festgelegt. Tatsächlich erheben die Kassen im Schnitt derzeit 3,13 %.
+    quellen: [bmg-kennzahlen-gkv-2025, bmg-zusatzbeitrag-2027, gkv-sv-beitragsniveau-2026]
+  - typ: schaetzung
+    text: Die FinanzKommission Gesundheit bezifferte die Finanzlücke der GKV auf über 15 Mrd. € für 2027 und über 40 Mrd. € für 2030 – jeweils ohne Gegenmaßnahmen.
+    quellen: [bmg-finanzkommission-2026]
+    unsicherheit: Prognose, abhängig von Lohn- und Ausgabenentwicklung.
+  - typ: fakt
+    text: Mit dem **GKV-Beitragssatzstabilisierungsgesetz** (beschlossen im Juli 2026) setzt die Politik für 2027 auf alle vier Hebel zugleich. Es begrenzt Preis- und Honorarsteigerungen, erhöht Zuzahlungen einmalig um 50 % und hebt die Beitragsbemessungsgrenze an. Der Bund zahlt mehr für Bürgergeldbeziehende, senkt aber gleichzeitig seinen allgemeinen Zuschuss.
+    quellen: [bmg-bstabg-2026, bundesregierung-bstabg-2026, bundesregierung-rechengroessen-2027]
+zielkonflikte:
+  - typ: wertung
+    text: '**Stabile Beiträge gegen vollen Leistungsumfang:** Jeder Euro, der nicht über Beiträge kommt, muss aus Steuern, Einsparungen oder eigener Tasche kommen.'
+  - typ: wertung
+    text: '**Solidarität gegen Eigenverantwortung:** Mehr Eigenbeteiligung entlastet alle Beitragszahler, belastet aber vor allem Kranke.'
+  - typ: wertung
+    text: '**Kurzfristige Entlastung gegen langfristige Wirkung:** Ausgabendeckel und Zuschüsse wirken sofort, Strukturreformen erst nach Jahren.'
+  - typ: wertung
+    text: '**Arbeitskosten gegen Staatshaushalt:** Höhere Beiträge verteuern Arbeit, höhere Steuerzuschüsse belasten den Bundeshaushalt.'
+daten:
+  kennzahlen:
+    - label: Ausgaben der GKV
+      wert: 327,4 Mrd. €
+      stand: "2024"
+      quelle: bmg-kennzahlen-gkv-2025
+    - label: Durchschnittlicher Zusatzbeitrag (festgelegt)
+      wert: 2,9 %
+      stand: "2026 und 2027"
+      quelle: bmg-zusatzbeitrag-2027
+      hinweis: Tatsächlich erhobener Durchschnitt laut GKV-Spitzenverband 3,13 % (Oktober 2026).
+    - label: Bundeszuschuss für versicherungsfremde Leistungen
+      wert: 14,5 Mrd. €
+      stand: "2026"
+      quelle: bas-schaetzerkreis-2025
+      hinweis: Für 2027 um 1,35 Mrd. € abgesenkt.
+    - label: Wirkung eines Beitragssatzpunkts
+      wert: rund 18,9 Mrd. €
+      stand: "2025"
+      quelle: bmg-kennzahlen-gkv-2025
+      hinweis: Schätzung des Ministeriums.
+  diagramme:
+    - titel: Durchschnittlicher Zusatzbeitragssatz
+      einheit: Prozent
+      stand: 2019–2025
+      quelle: bmg-kennzahlen-gkv-2025
+      hinweis: Für 2026 und 2027 jeweils 2,9 % festgelegt.
+      werte:
+        - label: "2019"
+          wert: 0.9
+        - label: "2020"
+          wert: 1.1
+        - label: "2021"
+          wert: 1.3
+        - label: "2022"
+          wert: 1.3
+        - label: "2023"
+          wert: 1.6
+        - label: "2024"
+          wert: 1.7
+        - label: "2025"
+          wert: 2.5
+          hervorheben: true
+  aussagen:
+    - typ: schaetzung
+      text: Laut einer Studie des IGES-Instituts für den GKV-Spitzenverband deckten die Beiträge des Bundes für Bürgergeldbeziehende 2022 nur 39 % der Kosten. Es fehlten rund 9,2 Mrd. €. Der Bund zahlte 108,48 € im Monat je Person; kostendeckend wären 311,45 € gewesen.
+      quellen: [gkv-sv-iges-buergergeld-2024]
+      unsicherheit: Studie im Auftrag eines Interessenträgers; Daten von 2022.
+    - typ: fakt
+      text: Ab 2027 erhöht der Bund seine Zahlungen für Grundsicherungsbeziehende schrittweise, von 1 Mrd. € (2027) auf 2,75 Mrd. € jährlich ab 2031.
+      quellen: [bmg-bstabg-2026]
+geschichte:
+  ereignisse:
+    - jahr: "2025"
+      titel: FinanzKommission Gesundheit eingesetzt
+      text: Die Bundesregierung setzt im September 2025 eine Kommission ein. Ihr erster Bericht im März 2026 enthält 66 Empfehlungen für alle Bereiche der GKV.
+      quellen: [bmg-zusatzbeitrag-2027, bmg-finanzkommission-2026]
+    - jahr: "2026"
+      titel: GKV-Beitragssatzstabilisierungsgesetz
+      text: Bundestag und Bundesrat beschließen im Juli 2026 ein Sparpaket von knapp 19 Mrd. € für 2027. Der durchschnittliche Zusatzbeitrag bleibt dadurch 2027 bei 2,9 %.
+      quellen: [bmg-bstabg-2026, bmg-zusatzbeitrag-2027]
+  bilanz:
+    - typ: fakt
+      text: Das Ministerium erwartet, dass 2027 erstmals seit drei Jahren der Ausgabenanstieg wieder durch Einnahmenzuwächse gedeckt ist. Strukturreformen sollen folgen.
+      quellen: [bmg-zusatzbeitrag-2027]
+verknuepft:
+  - frage: finanzierung-versicherungssystem
+    grund: Wer in die GKV einzahlt, bestimmt ihre Einnahmenbasis.
+  - frage: arzneimittel-preise
+    grund: Arzneimittel sind ein großer und schnell wachsender Ausgabenblock.
+  - frage: krankenhaus-verguetung
+    grund: Krankenhäuser sind der größte Ausgabenblock der GKV.
+  - frage: ambulant-steuerung
+    grund: Bessere Steuerung von Patienten gilt als möglicher Weg, Ausgaben zu begrenzen.
+  - frage: praevention-anreize
+    grund: Prävention soll langfristig Krankheitskosten vermeiden.
+parteien: []
+quellen:
+  - id: bmg-kennzahlen-gkv-2025
+    titel: Gesetzliche Krankenversicherung – Kennzahlen und Faustformeln (KF25Bund)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2025
+    url: https://www.bundesgesundheitsministerium.de/fileadmin/Dateien/3_Downloads/Statistiken/GKV/Kennzahlen_Daten/KF2025Bund_Dezember_2025.pdf
+    art: amtlich
+  - id: gkv-sv-kostenproblem-2026
+    titel: Das Kostenproblem ist gewaltig (Meldung)
+    herausgeber: GKV-Spitzenverband
+    jahr: 2026
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/pressemitteilungen_und_statements/pressemitteilung_2303680.jsp
+    art: verband
+  - id: gkv-sv-beitragsniveau-2026
+    titel: Das Beitragsniveau hat sich stabilisiert (Meldung)
+    herausgeber: GKV-Spitzenverband
+    jahr: 2026
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/pressemitteilungen_und_statements/pressemitteilung_2318251.jsp
+    art: verband
+  - id: bmg-zusatzbeitrag-2027
+    titel: BMG legt durchschnittlichen Zusatzbeitragssatz auf 2,9 Prozent fest (Pressemitteilung)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/zusatzbeitragssatz-gkv-2027-festgelegt
+    art: amtlich
+  - id: bmg-finanzkommission-2026
+    titel: Ergebnisse der FinanzKommission Gesundheit (Pressemitteilung vom 30.03.2026)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/finanzkommission-gesundheit-ergebnisse-30-03-26
+    art: amtlich
+  - id: bmg-bstabg-2026
+    titel: Bundestag beschließt GKV-Beitragssatzstabilisierungsgesetz (Pressemitteilung)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/bundestag-beschliesst-gkv-beitragssatzstabilisierunggesetz-pm-10-07-2026
+    art: amtlich
+  - id: bundesregierung-bstabg-2026
+    titel: Für ein bezahlbares Gesundheitssystem
+    herausgeber: Bundesregierung
+    jahr: 2026
+    url: https://www.bundesregierung.de/breg-de/aktuelles/gesundheitsreform-kabinett-2425916
+    art: amtlich
+  - id: bundesregierung-rechengroessen-2027
+    titel: Sozialversicherung – Beitragsbemessungsgrenzen sollen ab 2027 steigen
+    herausgeber: Bundesregierung
+    jahr: 2026
+    url: https://www.bundesregierung.de/breg-de/aktuelles/beitragsbemessungsgrenzen-2027-2454638
+    art: amtlich
+  - id: bas-schaetzerkreis-2025
+    titel: GKV-Schätzerkreis schätzt die finanziellen Rahmenbedingungen der GKV für die Jahre 2025 und 2026 (Pressemitteilung Nr. 6/2025)
+    herausgeber: Bundesamt für Soziale Sicherung
+    jahr: 2025
+    url: https://www.bundesamtsozialesicherung.de/fileadmin/user_upload/PM_GKV_Schaetzerkreis.pdf
+    art: amtlich
+  - id: gkv-sv-klage-2025
+    titel: 10-Milliarden-Klage gegen Unterfinanzierung der GKV beschlossen (Pressemitteilung)
+    herausgeber: GKV-Spitzenverband
+    jahr: 2025
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/pressemitteilungen_und_statements/pressemitteilung_2112896.jsp
+    art: verband
+  - id: gkv-sv-buergergeld-2026
+    titel: Bund lässt Krankenkassen zunehmend auf Kosten sitzen – Klagen wichtiger denn je (Pressemitteilung)
+    herausgeber: GKV-Spitzenverband
+    jahr: 2026
+    url: https://www.gkv-spitzenverband.de/gkv_spitzenverband/presse/pressemitteilungen_und_statements/pressemitteilung_2277696.jsp
+    art: verband
+  - id: bda-finanzkommission-2026
+    titel: Stellungnahme zum ersten Bericht der FinanzKommission Gesundheit vom 30. März 2026
+    herausgeber: Bundesvereinigung der Deutschen Arbeitgeberverbände
+    jahr: 2026
+    url: https://arbeitgeber.de/wp-content/uploads/bda-arbeitgeber-stellungnahme-zum_ersten_bericht_der_finanzkommission_gesundheit_vom_30_maerz_2026-2026_04_10.pdf
+    art: verband
+  - id: gkv-sv-iges-buergergeld-2024
+    titel: 'IGES-Gutachten zeigt: Gesundheitsausgaben für Bürgergeldbeziehende nur zu gut einem Drittel gedeckt (Pressemitteilung)'
+    herausgeber: GKV-Spitzenverband
+    jahr: 2024
+    url: https://gkv-spitzenverband.de/media/dokumente/presse/pressekonferenzen_gespraeche/2024/20240524_pg_iges_gutachten/02_PM_IGES-Gutachten_Burgergeldbeziehende.pdf
+    art: verband

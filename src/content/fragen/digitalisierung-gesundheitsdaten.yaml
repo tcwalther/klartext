@@ -1,0 +1,200 @@
+bereich: digitalisierung
+reihenfolge: 1
+status: entwurf
+stand: "2026-11-25"
+titel: Elektronische Patientenakte und Forschungsdaten
+frage: Sollen Gesundheitsdaten in der elektronischen Patientenakte automatisch gespeichert und für Forschung genutzt werden, solange man nicht widerspricht – oder nur mit ausdrücklicher Zustimmung?
+
+optionen:
+  - id: opt-out
+    titel: Widerspruchslösung wie heute
+    kurz: Jede und jeder gesetzlich Versicherte hat eine ePA, und pseudonymisierte Daten gehen an die Forschung – außer man widerspricht.
+    pro:
+      - typ: wertung
+        text: Eine Akte nützt nur, wenn fast alle sie haben. Dann sehen Ärztinnen, Kliniken und Apotheken wichtige Befunde und Medikamente auf einen Blick.
+      - typ: wertung
+        text: Forschung mit Daten fast aller Versicherten ist aussagekräftiger. Seltene Nebenwirkungen oder Versorgungslücken fallen eher auf.
+      - typ: fakt
+        text: In einer Befragung im Auftrag der Bundesdatenschutzbeauftragten wollten bis zu neun von zehn Versicherten ihre ePA behalten. Mehr als zwei Drittel würden pseudonymisierte Daten für die Forschung bereitstellen.
+        quellen: [aerzteblatt-datenbarometer-2026]
+    contra:
+      - typ: wertung
+        text: Wer sich nicht aktiv kümmert, gibt Daten frei, ohne bewusst entschieden zu haben. Gerade bei sehr sensiblen Daten ist das aus Sicht vieler zu wenig.
+      - typ: fakt
+        text: Sicherheitsforscher des Chaos Computer Clubs zeigten Ende 2024 Lücken, über die sich Unbefugte Zugriff auf Akten verschaffen konnten. Die gematik nannte die Angriffe technisch möglich, aber in der Praxis unwahrscheinlich.
+        quellen: [heise-ccc-2024]
+    gewinnt: [Behandlungssicherheit, Forschung, Menschen mit vielen Ärzten und Medikamenten]
+    kostet: [ausdrückliche Selbstbestimmung, Datenschutz (Restrisiko)]
+
+  - id: opt-in
+    titel: Nur mit Zustimmung
+    kurz: Eine ePA wird nur angelegt und Daten fließen nur in die Forschung, wenn Versicherte ausdrücklich zustimmen.
+    pro:
+      - typ: wertung
+        text: Gesundheitsdaten gehören zu den sensibelsten Informationen überhaupt. Wer sie teilt, sollte das bewusst tun.
+      - typ: wertung
+        text: Eine echte Zustimmung schafft Vertrauen. Wer zustimmt, nutzt die Akte vermutlich auch aktiv.
+    contra:
+      - typ: wertung
+        text: Ohne Automatik melden sich erfahrungsgemäß nur wenige aktiv an – auch heute haben sich nur rund 8 Prozent in der Kassen-App registriert. Eine Akte, die kaum jemand hat, hilft Ärztinnen und Ärzten wenig.
+      - typ: wertung
+        text: Forschung mit Daten nur von Freiwilligen kann verzerrt sein, weil bestimmte Gruppen seltener zustimmen.
+    gewinnt: [informationelle Selbstbestimmung, Vertrauen der Skeptischen]
+    kostet: [Verbreitung der ePA, Aussagekraft der Forschung]
+
+  - id: breiter-nutzen
+    titel: Daten breiter nutzbar machen
+    kurz: Pseudonymisierte Daten stehen nach festen Regeln auch Unternehmen offen, etwa für die Entwicklung von Medikamenten oder KI – mit Widerspruchsrecht wie im europäischen Gesundheitsdatenraum.
+    pro:
+      - typ: position
+        wer: Verband Forschender Arzneimittelhersteller (vfa)
+        text: Zugang zu Gesundheitsdaten sei ein Standortfaktor. Gewerbliche Forschung solle gleichberechtigt Anträge stellen können.
+        quellen: [vfa-gesundheitsdaten]
+      - typ: wertung
+        text: Neue Medikamente und Diagnosehilfen entstehen oft in Unternehmen. Gute Daten können sie schneller und sicherer machen.
+    contra:
+      - typ: wertung
+        text: Daten, die Versicherte für das Gemeinwohl teilen, würden auch für Gewinnzwecke genutzt. Viele empfinden das als Vertrauensbruch.
+      - typ: wertung
+        text: Je mehr Stellen Zugriff haben, desto größer ist das Risiko von Missbrauch oder einer Rückverfolgung zu Einzelnen.
+    gewinnt: [Unternehmen und Forschungsstandort, medizinische Innovation]
+    kostet: [Vertrauen in die Zweckbindung, Datenschutz]
+
+erklaerung:
+  - typ: fakt
+    text: Die **elektronische Patientenakte (ePA)** ist eine digitale Akte mit Befunden, Arztbriefen und Medikamenten. Seit dem 15. Januar 2025 bekommen alle gesetzlich Versicherten eine, sofern sie nicht widersprechen. Widersprechen geht jederzeit.
+    quellen: [bmg-digig-faq]
+  - typ: fakt
+    text: Bis Ende September 2025 wurden rund 70 Millionen Akten angelegt. Vor dem Start hatten laut GKV-Spitzenverband durchschnittlich gut fünf Prozent widersprochen.
+    quellen: [gematik-epa-zahlen-2025, aok-widerspruch-2025]
+  - typ: fakt
+    text: Aktiv genutzt wird die Akte über die Kassen-App von wenigen. Laut gematik haben sich rund 8 Prozent der Versicherten registriert (etwa 5,85 Millionen).
+    quellen: [aerzteblatt-datenbarometer-2026]
+  - typ: fakt
+    text: Ab Oktober 2026 werden ePA-Daten pseudonymisiert an das **Forschungsdatenzentrum Gesundheit** beim BfArM weitergeleitet, wenn man nicht widerspricht. Pseudonymisiert heißt, der Name wird durch einen Code ersetzt. Forschende – auch aus Unternehmen – können die Daten ab 2027 für festgelegte Gemeinwohl-Zwecke beantragen, nicht für Marketing.
+    quellen: [bmg-fdz-faq]
+  - typ: fakt
+    text: Der **Europäische Gesundheitsdatenraum (EHDS)** ist seit März 2025 in Kraft und gilt schrittweise. Er sieht für die Forschungsnutzung ein verpflichtendes Widerspruchsrecht vor, mit möglichen Ausnahmen.
+    quellen: [bmg-ehds]
+
+zielkonflikte:
+  - typ: wertung
+    text: Nutzen für alle steht gegen Kontrolle durch den Einzelnen. Je mehr Daten fließen, desto größer der Nutzen – und desto schwerer zu überblicken, wer was sieht.
+  - typ: wertung
+    text: Hohe Hürden schützen die Privatsphäre, können aber dazu führen, dass Forschung und Versorgung im Ausland schneller vorankommen.
+  - typ: wertung
+    text: Wer Unternehmen ausschließt, schützt die Zweckbindung, verzichtet aber womöglich auf Innovationen, die gerade dort entstehen.
+
+daten:
+  kennzahlen:
+    - label: Angelegte ePAs
+      wert: rund 70 Mio.
+      stand: "30.09.2025"
+      quelle: gematik-epa-zahlen-2025
+    - label: Widerspruchsquote vor dem Start
+      wert: gut 5 %
+      stand: "April 2025"
+      quelle: aok-widerspruch-2025
+      hinweis: Angabe des GKV-Spitzenverbands; aktuelle bundesweite Zahl nicht veröffentlicht gefunden
+    - label: In der Kassen-App registrierte Versicherte
+      wert: rund 5,85 Mio. (ca. 8 %)
+      stand: "2026"
+      quelle: aerzteblatt-datenbarometer-2026
+    - label: Praxen, Kliniken und Apotheken mit ePA-Zugriff
+      wert: über 110.000 von ca. 160.000
+      stand: "30.09.2025"
+      quelle: gematik-epa-zahlen-2025
+
+geschichte:
+  ereignisse:
+    - jahr: "2023"
+      titel: Wechsel zur Widerspruchslösung beschlossen
+      text: Der Bundestag beschloss das Digital-Gesetz und das Gesundheitsdatennutzungsgesetz. Damit wurde die ePA von der Zustimmungs- auf die Widerspruchslösung umgestellt.
+      quellen: [bmg-digitalgesetze-2023]
+    - jahr: "2025"
+      titel: ePA für alle
+      text: Seit dem 15. Januar 2025 legen die Kassen für alle Versicherten ohne Widerspruch eine ePA an.
+      quellen: [bmg-digig-faq]
+    - jahr: "2026"
+      titel: Daten für die Forschung
+      text: Im Oktober 2026 startete die Weiterleitung von ePA-Daten an das Forschungsdatenzentrum, nach einer sechswöchigen Widerspruchsfrist stufenweise ab Mitte Dezember.
+      quellen: [bmg-fdz-faq]
+
+laender:
+  beispiele:
+    - land: Finnland
+      ansatz: Zentrale Genehmigungsstelle Findata für Gesundheits- und Sozialdaten (Gesetz seit 2019)
+      text: Findata erteilt Genehmigungen für Forschung, Statistik, Behördenaufgaben und auch Entwicklung und Innovation. Für Entwicklung ohne wissenschaftliche Forschung gibt es nur zusammengefasste Daten, aus denen niemand erkennbar ist. Marketing und die Berechnung von Versicherungsprämien sind ausgeschlossen. Registerforschung läuft ohne gesonderte Einwilligung.
+      vergleichbarkeit: mittel
+      vergleichbarkeit_text: Finnland hat seit Langem zentrale Register und eine einheitliche Patientenakte. Deutschland baut beides erst auf, und das Vertrauen in staatliche Datennutzung ist hier anders verteilt.
+      quellen: [stm-findata]
+
+verknuepft:
+  - frage: digitalisierung-telemedizin
+    grund: Digitale Ersteinschätzung und Terminvermittlung sollen künftig in die ePA eingebunden werden.
+  - frage: praevention-anreize
+    grund: Verhaltensbezogene Tarife würden Gesundheitsdaten voraussetzen.
+  - frage: arzneimittel-preise
+    grund: Versorgungsdaten spielen eine Rolle bei der Bewertung des Nutzens neuer Medikamente.
+
+quellen:
+  - id: bmg-digig-faq
+    titel: Fragen und Antworten zum Digital-Gesetz
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2025
+    url: https://www.bundesgesundheitsministerium.de/ministerium/gesetze-und-verordnungen/guv-20-lp/digig/faq-digital-gesetz
+    art: amtlich
+  - id: bmg-digitalgesetze-2023
+    titel: Bundestag verabschiedet Digitalgesetze für bessere Versorgung und Forschung im Gesundheitswesen
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2023
+    url: https://www.bundesgesundheitsministerium.de/presse/pressemitteilungen/bundestag-verabschiedet-digitalgesetze-pm-14-12-23
+    art: amtlich
+  - id: gematik-epa-zahlen-2025
+    titel: "ePA für alle: Aktuelle Zahlen und Daten"
+    herausgeber: gematik
+    jahr: 2025
+    url: https://www.gematik.de/newsroom/news-detail/epa-fuer-alle-aktuelle-zahlen-und-daten
+    art: amtlich
+  - id: aok-widerspruch-2025
+    titel: Weniger Widerspruch als erwartet – knapp 94 Prozent erhalten elektronische Patientenakte
+    herausgeber: AOK-Bundesverband (G+G)
+    jahr: 2025
+    url: https://www.aok.de/pp/gg/update/knapp-94-prozent-erhalten-elektronische-patientenakte/
+    art: verband
+  - id: aerzteblatt-datenbarometer-2026
+    titel: "Elektronische Patientenakte: Große Zustimmung trotz geringer aktiver Nutzung"
+    herausgeber: Deutsches Ärzteblatt
+    jahr: 2026
+    url: https://www.aerzteblatt.de/news/elektronische-patientenakte-grosse-zustimmung-trotz-geringer-aktiver-nutzung-7f6c6af8-d89a-4083-9574-138d2efdd1e6
+    art: presse
+  - id: bmg-fdz-faq
+    titel: Forschungsdatenzentrum (FDZ) Gesundheit – Fragen und Antworten
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2026
+    url: https://www.bundesgesundheitsministerium.de/themen/gesundheitswesen/forschungsdatenzentrum-fdz-gesundheit-fragen-und-antworten
+    art: amtlich
+  - id: bmg-ehds
+    titel: Europäischer Gesundheitsdatenraum (EHDS)
+    herausgeber: Bundesministerium für Gesundheit
+    jahr: 2025
+    url: https://www.bundesgesundheitsministerium.de/themen/internationale-gesundheitspolitik/europa/europaeische-gesundheitspolitik/ehds
+    art: amtlich
+  - id: heise-ccc-2024
+    titel: "38C3: Major security flaws uncovered in electronic patient file 3.0"
+    herausgeber: heise online
+    jahr: 2024
+    url: https://heise.de/-10221396
+    art: presse
+  - id: vfa-gesundheitsdaten
+    titel: "Positionspapier: Gesundheitsdaten retten Leben"
+    herausgeber: Verband Forschender Arzneimittelhersteller (vfa)
+    jahr: 2023
+    url: https://vfa.de/download/positionspapier-gesundheitsdaten-retten-leben
+    art: verband
+  - id: stm-findata
+    titel: Secondary use of health and social data
+    herausgeber: Ministry of Social Affairs and Health, Finland
+    jahr: 2025
+    url: https://stm.fi/en/secondary-use-of-health-and-social-data
+    art: amtlich

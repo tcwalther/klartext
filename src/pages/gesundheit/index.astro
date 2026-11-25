@@ -1,0 +1,239 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Kennzahl from '../../components/Kennzahl.astro';
+import SourceRefs from '../../components/SourceRefs.astro';
+import EntwurfHinweis from '../../components/EntwurfHinweis.astro';
+import { getCollection } from 'astro:content';
+import { getFragen, getBereiche, frageUrl, ebenenVon } from '../../lib/content';
+
+const bereiche = await getBereiche();
+const fragen = await getFragen();
+const system = (await getCollection('system')).find((s) => s.id === 'gesundheit');
+const nums = new Map((system?.data.quellen ?? []).map((q, i) => [q.id, i + 1]));
+
+// Zusammenhänge zwischen Bereichen aus den Verknüpfungen der Fragen ableiten
+const bereichVon = new Map(fragen.map((f) => [f.id, f.data.bereich]));
+const kanten = new Map<string, number>();
+for (const f of fragen) {
+  for (const v of f.data.verknuepft) {
+    const a = f.data.bereich;
+    const b = bereichVon.get(v.frage);
+    if (!b || a === b) continue;
+    const key = [a, b].sort().join('|');
+    kanten.set(key, (kanten.get(key) ?? 0) + 1);
+  }
+}
+const R = 140;
+const pos = new Map(
+  bereiche.map((b, i) => {
+    const w = (i / bereiche.length) * Math.PI * 2 - Math.PI / 2;
+    return [b.id, { x: 200 + R * Math.cos(w), y: 200 + R * Math.sin(w), w }];
+  }),
+);
+const maxKante = Math.max(1, ...kanten.values());
+const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.split('|').includes(id)).reduce((s, [, n]) => s + n, 0);
+---
+
+<Layout title="Gesundheit" description="Das deutsche Gesundheitssystem auf einer Seite: Geldflüsse, Akteure, Kennzahlen und die großen Fragen.">
+  <div class="mx-auto max-w-5xl px-4 pt-6 sm:pt-10">
+    <header class="max-w-3xl">
+      <div class="text-sm font-semibold text-accent mb-2">Thema 1</div>
+      <h1 class="serif text-3xl sm:text-5xl font-semibold leading-tight">Gesundheit</h1>
+      <p class="mt-4 text-lg text-muted leading-relaxed">
+        Fast jede Frage im Gesundheitssystem hängt mit anderen zusammen: Wer mehr Kliniken vor Ort will, muss sagen, wie
+        sie bezahlt werden. Wer niedrigere Beiträge will, muss sagen, wo gespart wird. Deshalb zuerst der Überblick – dann
+        die Fragen.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-2">
+        <a href="/gesundheit/fragen/" class="btn btn-primary">Fragen starten ({fragen.length}) →</a>
+        <a href="#bereiche" class="btn btn-ghost">Bereiche ansehen</a>
+      </div>
+    </header>
+
+    {
+      system && (
+        <>
+          <section class="mt-14" aria-labelledby="kennzahlen">
+            <div class="flex flex-wrap items-baseline justify-between gap-2 mb-4">
+              <h2 id="kennzahlen" class="serif text-2xl font-semibold">
+                Das System in Zahlen
+              </h2>
+              {system.data.status === 'entwurf' && <span class="text-xs text-faint">Entwurf · Stand {system.data.stand}</span>}
+            </div>
+            <div class="grid grid-cols-1 min-[420px]:grid-cols-2 lg:grid-cols-4 gap-3">
+              {system.data.kennzahlen.map((k) => (
+                <Kennzahl {...k} nums={nums} />
+              ))}
+            </div>
+          </section>
+
+          <section class="mt-14" aria-labelledby="geld">
+            <h2 id="geld" class="serif text-2xl font-semibold">
+              Wie das Geld fließt
+            </h2>
+            <p class="text-muted mt-1 mb-4 max-w-prose">Die wichtigsten Ströme – vereinfacht.</p>
+            <ol class="grid gap-2">
+              {system.data.geldfluss.map((g) => (
+                <li class="card p-4 grid gap-1 md:grid-cols-[minmax(0,22rem)_1fr] md:gap-6">
+                  <div>
+                    <div class="font-semibold leading-snug">
+                      {g.von} <span class="text-accent" aria-label="an">→</span> {g.an}
+                    </div>
+                    <div class="text-accent font-semibold tabular-nums leading-snug mt-0.5">
+                      {g.betrag}
+                      <SourceRefs ids={[g.quelle]} nums={nums} />
+                    </div>
+                  </div>
+                  <p class="text-sm text-muted leading-snug">{g.text}</p>
+                </li>
+              ))}
+            </ol>
+          </section>
+
+          <section class="mt-14" aria-labelledby="akteure">
+            <h2 id="akteure" class="serif text-2xl font-semibold mb-4">
+              Wer entscheidet was?
+            </h2>
+            <dl class="grid sm:grid-cols-2 gap-3">
+              {system.data.akteure.map((a) => (
+                <div class="card p-4">
+                  <dt class="font-semibold">{a.name}</dt>
+                  <dd class="text-sm text-muted mt-0.5 leading-snug">{a.rolle}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        </>
+      )
+    }
+
+    <section class="mt-14 grid lg:grid-cols-[1fr_30rem] gap-8 items-start" aria-labelledby="zusammenhaenge">
+      <div>
+        <h2 id="zusammenhaenge" class="serif text-2xl font-semibold">Alles hängt zusammen</h2>
+        <p class="text-muted mt-1 max-w-prose">
+          Jede Linie steht für Fragen, die sich gegenseitig beeinflussen. Je dicker die Linie, desto mehr Verbindungen.
+          Am Ende zeigt dir <a class="link" href="/mein-bild/">Mein Bild</a>, wo deine eigenen Antworten in Spannung
+          zueinander stehen.
+        </p>
+      </div>
+      <figure class="card p-2">
+        <svg viewBox="-95 15 590 370" class="w-full h-auto" role="img" aria-label="Netz der Zusammenhänge zwischen den Bereichen">
+          {
+            [...kanten.entries()].map(([k, n]) => {
+              const [a, b] = k.split('|');
+              const p = pos.get(a!)!;
+              const q = pos.get(b!)!;
+              return (
+                <line
+                  x1={p.x}
+                  y1={p.y}
+                  x2={q.x}
+                  y2={q.y}
+                  stroke="var(--accent)"
+                  stroke-opacity={0.25 + (0.5 * n) / maxKante}
+                  stroke-width={1 + (4 * n) / maxKante}
+                  stroke-linecap="round"
+                />
+              );
+            })
+          }
+          {
+            bereiche.map((b) => {
+              const p = pos.get(b.id)!;
+              const cos = Math.cos(p.w);
+              const anchor = Math.abs(cos) < 0.3 ? 'middle' : cos > 0 ? 'start' : 'end';
+              const lx = p.x + 18 * cos;
+              const ly = p.y + 16 * Math.sin(p.w) + (Math.sin(p.w) > 0.3 ? 10 : Math.sin(p.w) < -0.3 ? -4 : 4);
+              return (
+                <a href={`#bereich-${b.id}`}>
+                  <circle cx={p.x} cy={p.y} r={6 + Math.min(6, verbindungen(b.id))} fill="var(--surface)" stroke="var(--accent)" stroke-width="2" />
+                  <text x={lx} y={ly} text-anchor={anchor} font-size="17" font-weight="600" fill="var(--ink)">
+                    {b.data.titel.split(' & ')[0]}
+                  </text>
+                </a>
+              );
+            })
+          }
+        </svg>
+      </figure>
+    </section>
+
+    <section id="bereiche" class="mt-14 scroll-mt-20" aria-labelledby="bereiche-h">
+      <h2 id="bereiche-h" class="serif text-2xl font-semibold mb-4">Die Bereiche und ihre Fragen</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        {
+          bereiche.map((b) => {
+            const fs = fragen.filter((f) => f.data.bereich === b.id);
+            return (
+              <section id={`bereich-${b.id}`} class="card p-5 scroll-mt-20">
+                <div class="flex items-baseline justify-between gap-3">
+                  <h3 class="serif text-xl font-semibold">{b.data.titel}</h3>
+                  {fs.length > 0 && (
+                    <a href={`/gesundheit/fragen/?bereich=${b.id}`} class="text-sm link shrink-0">
+                      Fragen starten
+                    </a>
+                  )}
+                </div>
+                <p class="text-sm text-muted mt-1 mb-3">{b.data.kurz}</p>
+                {fs.length === 0 ? (
+                  <p class="text-sm text-faint italic">In Arbeit.</p>
+                ) : (
+                  <ul class="grid gap-1">
+                    {fs.map((f) => {
+                      const tiefe = ebenenVon(f).filter((e) => e.da && e.n < 6).length;
+                      return (
+                        <li>
+                          <a href={frageUrl(f.id)} class="flex items-start gap-3 rounded-lg -mx-2 px-2 py-2 no-underline hover:bg-surface-2">
+                            <span class="flex-1 leading-snug">{f.data.titel}</span>
+                            <span class="flex gap-0.5 pt-1.5 shrink-0" title={`${tiefe} von 5 Ebenen ausgearbeitet`} aria-label={`${tiefe} von 5 Ebenen ausgearbeitet`}>
+                              {[1, 2, 3, 4, 5].map((n) => (
+                                <span class="size-1.5 rounded-full" style={`background: ${n <= tiefe ? 'var(--accent)' : 'var(--line)'}`} />
+                              ))}
+                            </span>
+                          </a>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                )}
+              </section>
+            );
+          })
+        }
+      </div>
+      <p class="text-xs text-faint mt-3">Punkte = ausgearbeitete Ebenen (Erklärung, Argumente, Daten, Geschichte, Ländervergleich).</p>
+    </section>
+
+    {
+      system && (
+        <section class="mt-14" aria-labelledby="sys-quellen">
+          <h2 id="sys-quellen" class="serif text-lg font-semibold mb-2">
+            Quellen dieser Seite
+          </h2>
+          {system.data.status === 'entwurf' && (
+            <div class="mb-3">
+              <EntwurfHinweis stand={system.data.stand} />
+            </div>
+          )}
+          <ol class="space-y-1.5 text-sm">
+            {system.data.quellen.map((q) => (
+              <li id={`quelle-${q.id}`} class="grid grid-cols-[2rem_1fr] scroll-mt-24">
+                <span class="text-faint tabular-nums">[{nums.get(q.id)}]</span>
+                <span>
+                  {q.url ? (
+                    <a class="link" href={q.url} target="_blank" rel="noopener">
+                      {q.titel}
+                    </a>
+                  ) : (
+                    q.titel
+                  )}
+                  <span class="text-muted"> – {q.herausgeber}, {q.jahr}</span>
+                </span>
+              </li>
+            ))}
+          </ol>
+        </section>
+      )
+    }
+  </div>
+</Layout>
