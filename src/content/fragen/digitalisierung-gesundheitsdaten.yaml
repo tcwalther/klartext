@@ -3,12 +3,12 @@ reihenfolge: 1
 status: entwurf
 stand: "2026-11-25"
 titel: Elektronische Patientenakte und Forschungsdaten
-frage: Sollen Gesundheitsdaten in der elektronischen Patientenakte automatisch gespeichert und für Forschung genutzt werden, solange man nicht widerspricht – oder nur mit ausdrücklicher Zustimmung?
+frage: Sollen Gesundheitsdaten in der elektronischen Patientenakte automatisch gespeichert und für Forschung genutzt werden, solange man nicht widerspricht, oder nur mit ausdrücklicher Zustimmung?
 
 optionen:
   - id: opt-out
     titel: Widerspruchslösung wie heute
-    kurz: Jede und jeder gesetzlich Versicherte hat eine ePA, und pseudonymisierte Daten gehen an die Forschung – außer man widerspricht.
+    kurz: Jede und jeder gesetzlich Versicherte hat eine ePA, und pseudonymisierte Daten gehen an die Forschung, sofern man nicht widerspricht.
     pro:
       - typ: wertung
         text: Eine Akte nützt nur, wenn fast alle sie haben. Dann sehen Ärztinnen, Kliniken und Apotheken wichtige Befunde und Medikamente auf einen Blick.
@@ -36,7 +36,7 @@ optionen:
         text: Eine echte Zustimmung schafft Vertrauen. Wer zustimmt, nutzt die Akte vermutlich auch aktiv.
     contra:
       - typ: wertung
-        text: Ohne Automatik melden sich erfahrungsgemäß nur wenige aktiv an – auch heute haben sich nur rund 8 Prozent in der Kassen-App registriert. Eine Akte, die kaum jemand hat, hilft Ärztinnen und Ärzten wenig.
+        text: Ohne Automatik melden sich erfahrungsgemäß nur wenige aktiv an. Auch heute haben sich nur rund 8 Prozent in der Kassen-App registriert. Eine Akte, die kaum jemand hat, hilft Ärztinnen und Ärzten wenig.
       - typ: wertung
         text: Forschung mit Daten nur von Freiwilligen kann verzerrt sein, weil bestimmte Gruppen seltener zustimmen.
     gewinnt: [informationelle Selbstbestimmung, Vertrauen der Skeptischen]
@@ -44,7 +44,7 @@ optionen:
 
   - id: breiter-nutzen
     titel: Daten breiter nutzbar machen
-    kurz: Pseudonymisierte Daten stehen nach festen Regeln auch Unternehmen offen, etwa für die Entwicklung von Medikamenten oder KI – mit Widerspruchsrecht wie im europäischen Gesundheitsdatenraum.
+    kurz: Pseudonymisierte Daten stehen nach festen Regeln auch Unternehmen offen, etwa für die Entwicklung von Medikamenten oder KI. Wie im europäischen Gesundheitsdatenraum gibt es ein Widerspruchsrecht.
     pro:
       - typ: position
         wer: Verband Forschender Arzneimittelhersteller (vfa)
@@ -62,23 +62,23 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: Die **elektronische Patientenakte (ePA)** ist eine digitale Akte mit Befunden, Arztbriefen und Medikamenten. Seit 2025 bekommt sie jede und jeder gesetzlich Versicherte automatisch, außer man widerspricht. Das nennt man **Widerspruchslösung**.
-    genau: Die ePA wird seit dem 15. Januar 2025 für alle angelegt, die nicht widersprechen. Widersprechen geht jederzeit. Die Umstellung von der Zustimmungs- auf die Widerspruchslösung hat der Bundestag 2023 beschlossen.
+    text: Die **elektronische Patientenakte (ePA)** ist eine digitale Akte mit Befunden, Arztbriefen und Medikamenten. Seit 2025 bekommt sie jede und jeder gesetzlich Versicherte automatisch, außer man widerspricht. Das nennt man Widerspruchslösung.
+    genau: Die ePA wird seit dem 15. Januar 2025 für alle angelegt, die nicht widersprechen. Widersprechen kann man jederzeit. Die Umstellung von der Zustimmungs- auf die Widerspruchslösung hat der Bundestag 2023 beschlossen.
     quellen: [bmg-digig-faq, bmg-digitalgesetze-2023]
   - typ: fakt
-    text: Diese Voreinstellung entscheidet viel. Nur etwa jeder Zwanzigste hat widersprochen, deshalb haben fast alle Versicherten eine Akte.
+    text: Diese Voreinstellung hat große Wirkung. Nur etwa jeder Zwanzigste hat widersprochen. Deshalb haben fast alle Versicherten eine Akte.
     genau: Vor dem Start hatten laut GKV-Spitzenverband durchschnittlich gut 5 Prozent widersprochen (Stand April 2025). Bis zum 30. September 2025 wurden rund 70 Millionen Akten angelegt.
     quellen: [aok-widerspruch-2025, gematik-epa-zahlen-2025]
   - typ: fakt
-    text: Selbst hineinschauen tun dagegen wenige. Nur etwa jeder zwölfte Versicherte hat sich in der App seiner Kasse angemeldet. Die Akte ist damit vor allem ein Werkzeug für Praxen, Kliniken und Apotheken.
+    text: Selbst schauen dagegen nur wenige hinein. Nur etwa jeder zwölfte Versicherte hat sich in der App seiner Kasse angemeldet. Die Akte ist damit vor allem ein Werkzeug für Praxen, Kliniken und Apotheken.
     genau: Laut gematik haben sich rund 5,85 Millionen Versicherte registriert, etwa 8 Prozent (2026). Über 110.000 von rund 160.000 Praxen, Kliniken und Apotheken hatten Ende September 2025 Zugriff auf die ePA.
     quellen: [aerzteblatt-datenbarometer-2026, gematik-epa-zahlen-2025]
   - typ: fakt
-    text: Seit Herbst 2026 gehen die Daten außerdem an ein staatliches Forschungsdatenzentrum, ebenfalls nur ohne Widerspruch. Der Name wird dabei durch einen Code ersetzt (**pseudonymisiert**). Forschende, auch aus Unternehmen, können die Daten für Gemeinwohl-Zwecke beantragen, nicht für Marketing.
-    genau: Die Weiterleitung an das **Forschungsdatenzentrum Gesundheit** beim BfArM startete im Oktober 2026, nach einer sechswöchigen Widerspruchsfrist stufenweise ab Mitte Dezember. Anträge auf Datennutzung sind ab 2027 möglich.
+    text: Seit Herbst 2026 gehen die Daten außerdem an ein staatliches Forschungsdatenzentrum, ebenfalls nur ohne Widerspruch. Der Name wird dabei durch einen Code ersetzt (**pseudonymisiert**). Forschende, auch aus Unternehmen, können die Daten für gemeinwohlorientierte Zwecke beantragen, nicht für Marketing.
+    genau: Die Weiterleitung an das Forschungsdatenzentrum Gesundheit beim BfArM startete im Oktober 2026; nach einer sechswöchigen Widerspruchsfrist fließen die Daten ab Mitte Dezember stufenweise. Anträge auf Datennutzung sind ab 2027 möglich.
     quellen: [bmg-fdz-faq]
   - typ: wertung
-    text: Im Kern geht es um die richtige Voreinstellung. Mit der Widerspruchslösung sind fast alle dabei, das macht Akte und Forschung aussagekräftiger. Mit einer Zustimmungslösung hätte jede Person bewusst entschieden, es machen aber vermutlich deutlich weniger mit.
+    text: Gestritten wird also über die richtige Voreinstellung. Mit der Widerspruchslösung sind fast alle dabei. Das macht Akte und Forschung aussagekräftiger. Bei einer Zustimmungslösung hätte jede Person bewusst entschieden, doch vermutlich würden deutlich weniger mitmachen.
   - typ: fakt
     text: Ganz allein entscheidet Deutschland das nicht mehr. Der **Europäische Gesundheitsdatenraum (EHDS)** schreibt für die Nutzung von Gesundheitsdaten in der Forschung ein Widerspruchsrecht vor.
     genau: Der EHDS ist seit März 2025 in Kraft und gilt schrittweise. Das verpflichtende Widerspruchsrecht sieht mögliche Ausnahmen vor.
@@ -86,7 +86,7 @@ erklaerung:
 
 zielkonflikte:
   - typ: wertung
-    text: Nutzen für alle steht gegen Kontrolle durch den Einzelnen. Je mehr Daten fließen, desto größer der Nutzen – und desto schwerer zu überblicken, wer was sieht.
+    text: Nutzen für alle steht gegen Kontrolle durch den Einzelnen. Je mehr Daten fließen, desto größer ist der Nutzen und desto schwerer ist zu überblicken, wer was sieht.
   - typ: wertung
     text: Hohe Hürden schützen die Privatsphäre, können aber dazu führen, dass Forschung und Versorgung im Ausland schneller vorankommen.
   - typ: wertung
@@ -102,7 +102,7 @@ daten:
       wert: gut 5 %
       stand: "April 2025"
       quelle: aok-widerspruch-2025
-      hinweis: Angabe des GKV-Spitzenverbands; aktuelle bundesweite Zahl nicht veröffentlicht gefunden
+      hinweis: Angabe des GKV-Spitzenverbands; eine aktuellere bundesweite Zahl fand die Redaktion nicht
     - label: In der Kassen-App registrierte Versicherte
       wert: rund 5,85 Mio. (ca. 8 %)
       stand: "2026"
@@ -124,14 +124,14 @@ geschichte:
       quellen: [bmg-digig-faq]
     - jahr: "2026"
       titel: Daten für die Forschung
-      text: Im Oktober 2026 startete die Weiterleitung von ePA-Daten an das Forschungsdatenzentrum, nach einer sechswöchigen Widerspruchsfrist stufenweise ab Mitte Dezember.
+      text: Im Oktober 2026 startete die Weiterleitung von ePA-Daten an das Forschungsdatenzentrum. Nach einer sechswöchigen Widerspruchsfrist fließen die Daten ab Mitte Dezember stufenweise.
       quellen: [bmg-fdz-faq]
 
 laender:
   beispiele:
     - land: Finnland
       ansatz: Zentrale Genehmigungsstelle Findata für Gesundheits- und Sozialdaten (Gesetz seit 2019)
-      text: Findata erteilt Genehmigungen für Forschung, Statistik, Behördenaufgaben und auch Entwicklung und Innovation. Für Entwicklung ohne wissenschaftliche Forschung gibt es nur zusammengefasste Daten, aus denen niemand erkennbar ist. Marketing und die Berechnung von Versicherungsprämien sind ausgeschlossen. Registerforschung läuft ohne gesonderte Einwilligung.
+      text: Findata erteilt Genehmigungen für Forschung, Statistik und Behördenaufgaben sowie für Entwicklung und Innovation. Für Entwicklung ohne wissenschaftliche Forschung gibt es nur zusammengefasste Daten, aus denen niemand erkennbar ist. Marketing und die Berechnung von Versicherungsprämien sind ausgeschlossen. Registerforschung läuft ohne gesonderte Einwilligung.
       vergleichbarkeit: mittel
       vergleichbarkeit_text: Finnland hat seit Langem zentrale Register und eine einheitliche Patientenakte. Deutschland baut beides erst auf, und das Vertrauen in staatliche Datennutzung ist hier anders verteilt.
       quellen: [stm-findata]

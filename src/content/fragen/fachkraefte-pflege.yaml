@@ -11,26 +11,26 @@ optionen:
     kurz: Höhere Löhne, verlässliche Dienstpläne und weniger Überlastung sollen mehr Menschen in den Beruf holen und dort halten.
     pro:
       - typ: wertung
-        text: Viele ausgebildete Pflegekräfte arbeiten in Teilzeit oder haben den Beruf verlassen. Bessere Bedingungen könnten einen Teil zurückholen – das wirkt schneller als neue Ausbildung.
+        text: Viele ausgebildete Pflegekräfte arbeiten in Teilzeit oder haben den Beruf verlassen. Bessere Bedingungen könnten einen Teil von ihnen zurückholen. Das wirkt schneller als eine neue Ausbildung.
       - typ: wertung
         text: Ein attraktiver Beruf zieht auch mehr junge Menschen an. Das sichert den Nachwuchs langfristig.
     contra:
       - typ: wertung
-        text: Höhere Löhne kosten Geld – über Krankenkassenbeiträge, Pflegeversicherung oder Eigenanteile im Heim.
+        text: Höhere Löhne kosten Geld, das über Krankenkassenbeiträge, die Pflegeversicherung oder Eigenanteile im Heim aufgebracht wird.
       - typ: fakt
         text: Die Löhne sind bereits deutlich gestiegen. Fachkräfte in der Altenpflege verdienten im April 2024 im Mittel 4.228 Euro brutto im Monat (Vollzeit), 1.612 Euro mehr als zehn Jahre zuvor. Das liegt über dem Mittel aller Vollzeitbeschäftigten (3.978 Euro).
         quellen: [destatis-verdienste-pflege-2025]
       - typ: wertung
-        text: Wenn die Löhne schon über dem Durchschnitt liegen, löst noch mehr Geld allein den Mangel womöglich nicht.
+        text: Wenn die Löhne schon über dem mittleren Verdienst aller Beschäftigten liegen, löst noch mehr Geld allein den Mangel womöglich nicht.
     gewinnt: [Pflegekräfte, Pflegequalität]
     kostet: [Beitragszahler, Pflegebedürftige (Eigenanteile)]
 
   - id: anwerbung
     titel: Gezielte Anwerbung aus dem Ausland
-    kurz: Pflegekräfte aus anderen Ländern werden aktiv angeworben, ihre Abschlüsse schneller anerkannt und sie beim Ankommen unterstützt.
+    kurz: Pflegekräfte aus anderen Ländern werden aktiv angeworben und beim Ankommen unterstützt; ihre Abschlüsse werden schneller anerkannt.
     pro:
       - typ: fakt
-        text: Das wächst bereits stark. 2025 wurden 32.000 ausländische Pflege-Abschlüsse als gleichwertig anerkannt – so viele wie in keinem anderen Beruf.
+        text: Die Zahl der Anerkennungen wächst bereits stark. 2025 wurden 32.000 ausländische Pflegeabschlüsse als gleichwertig anerkannt, so viele wie in keinem anderen Beruf.
         quellen: [destatis-anerkennung-2026]
       - typ: wertung
         text: Anwerbung wirkt schneller als eine dreijährige Ausbildung im Inland.
@@ -39,7 +39,7 @@ optionen:
         text: Herkunftsländer verlieren Fachkräfte, die sie selbst brauchen.
       - typ: wertung
         text: Sprache, Anerkennung und Einarbeitung kosten Zeit. Wer sich nicht willkommen fühlt, zieht weiter oder kehrt zurück.
-    gewinnt: [Krankenhäuser und Heime mit offenen Stellen, Zugewanderte Fachkräfte]
+    gewinnt: [Krankenhäuser und Heime mit offenen Stellen, zugewanderte Fachkräfte]
     kostet: [Herkunftsländer, Einarbeitungsaufwand in den Teams]
 
   - id: personalbemessung
@@ -48,7 +48,7 @@ optionen:
     pro:
       - typ: position
         wer: Deutscher Berufsverband für Pflegeberufe (DBfK)
-        text: Die Personalbemessung mache sichtbar, wie viel Pflege tatsächlich gebraucht wird. Ohne sie würden Engpässe „unsichtbar“, die Arbeit verdichte sich und der Beruf werde unattraktiver.
+        text: Die Personalbemessung mache sichtbar, wie viel Pflege tatsächlich gebraucht werde. Ohne sie würden Engpässe „unsichtbar“, die Arbeit verdichte sich und der Beruf werde unattraktiver.
         quellen: [dbfk-ppr-2026]
       - typ: wertung
         text: Feste Vorgaben schützen Patientinnen und Pflegekräfte vor Überlastung. Das kann auch Menschen in den Beruf zurückholen.
@@ -65,9 +65,9 @@ optionen:
     kurz: Digitale Dokumentation, Hilfsmittel und weniger Papierarbeit sollen Pflegekräften mehr Zeit für Menschen geben.
     pro:
       - typ: wertung
-        text: Jede Stunde weniger Dokumentation ist eine Stunde mehr Pflege – ohne zusätzliche Köpfe.
+        text: Jede Stunde weniger Dokumentation ist eine Stunde mehr Pflege, ohne dass zusätzliches Personal nötig ist.
       - typ: fakt
-        text: Das Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege, seit 1. Januar 2026 in Kraft, soll Pflegeeinrichtungen bei Bürokratie entlasten.
+        text: Das Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege, seit dem 1. Januar 2026 in Kraft, soll Pflegeeinrichtungen von Bürokratie entlasten.
         quellen: [bundesregierung-beep-2026]
     contra:
       - typ: wertung
@@ -88,13 +88,13 @@ erklaerung:
     quellen: [destatis-pflegekraefte-2024]
     unsicherheit: Modellrechnung („Wenn-dann-Aussage“); die Spanne hängt davon ab, ob sich der Zuwachs der 2010er-Jahre fortsetzt.
   - typ: fakt
-    text: Die Löhne sind in den letzten zehn Jahren stark gestiegen. Pflegefachkräfte verdienen inzwischen mehr als der Durchschnitt aller Vollzeitbeschäftigten.
+    text: Die Löhne sind in den vergangenen zehn Jahren stark gestiegen. Pflegefachkräfte verdienen inzwischen mehr, als Vollzeitbeschäftigte im Mittel verdienen.
     genau: Im April 2024 verdienten Fachkräfte in der Altenpflege im Mittel (Median, Vollzeit, ohne Sonderzahlungen) 4.228 Euro brutto im Monat, 1.612 Euro mehr als zehn Jahre zuvor. In der Gesundheits- und Krankenpflege waren es 4.310 Euro, über alle Vollzeitbeschäftigten 3.978 Euro.
     quellen: [destatis-verdienste-pflege-2025]
   - typ: wertung
     text: Neben der Zahl der Köpfe zählt, wie viele Stunden Pflegekräfte arbeiten und wie lange sie im Beruf bleiben. Dort setzen Arbeitsbedingungen, Personalvorgaben und Entlastung durch Technik an. Ausbildung und Anwerbung erhöhen dagegen die Zahl der Köpfe, brauchen aber Zeit.
   - typ: fakt
-    text: Der Nachwuchs wächst wieder. Die Zahl neuer Auszubildender in der Pflege ist dreimal in Folge gestiegen.
+    text: Der Nachwuchs wächst wieder. Die Zahl neuer Auszubildender in der Pflege ist drei Jahre in Folge gestiegen.
     genau: 2025 begannen 63.900 Menschen eine Ausbildung zur Pflegefachfrau oder zum Pflegefachmann, 8 Prozent mehr als im Vorjahr.
     quellen: [destatis-pflegeausbildung-2026]
   - typ: fakt
@@ -108,7 +108,7 @@ zielkonflikte:
   - typ: wertung
     text: Strenge Personalvorgaben schützen die Qualität, können bei Mangel aber dazu führen, dass weniger Menschen versorgt werden.
   - typ: wertung
-    text: Anwerbung schließt Lücken hier und kann Lücken anderswo vergrößern.
+    text: Anwerbung schließt Lücken in Deutschland, kann aber Lücken in den Herkunftsländern vergrößern.
 
 daten:
   kennzahlen:
@@ -120,7 +120,7 @@ daten:
       wert: 280.000 bis 690.000
       stand: "2049"
       quelle: destatis-pflegekraefte-2024
-    - label: Anerkannte ausländische Pflege-Abschlüsse
+    - label: Anerkannte ausländische Pflegeabschlüsse
       wert: "32.000"
       stand: "2025"
       quelle: destatis-anerkennung-2026
@@ -152,7 +152,7 @@ geschichte:
       quellen: [dbfk-ppr-2026]
     - jahr: "2024"
       titel: PPR 2.0 eingeführt
-      text: Die Pflegepersonalbemessungsverordnung trat im Juli 2024 in Kraft – zunächst ohne Sanktionen bei Unterschreitung.
+      text: Die Pflegepersonalbemessungsverordnung trat im Juli 2024 in Kraft, zunächst ohne Sanktionen bei Unterschreitung.
       quellen: [bmg-ppbv]
     - jahr: "2026"
       titel: PPR 2.0 wieder abgeschafft
@@ -170,7 +170,7 @@ laender:
 
 verknuepft:
   - frage: fachkraefte-aufgabenteilung
-    grund: Wenn Pflegekräfte mehr Aufgaben übernehmen, steigt der Bedarf an Pflegekräften weiter – oder der Beruf wird attraktiver.
+    grund: Wenn Pflegekräfte mehr Aufgaben übernehmen, kann das den Bedarf an Pflegekräften weiter erhöhen oder den Beruf attraktiver machen.
   - frage: pflege-eigenanteile
     grund: Höhere Löhne in der Altenpflege schlagen auf die Eigenanteile im Heim durch.
   - frage: krankenhaus-verguetung

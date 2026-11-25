@@ -6,29 +6,31 @@ import { getFragen } from '../lib/content';
 const fragen = await getFragen();
 const beispiel = fragen.find((f) => f.id === 'krankenhaus-standorte') ?? fragen[0];
 const schichten = [
-  { n: 0, t: 'Die Frage', d: 'Kurz und einfach, wie beim Wahl-O-Mat.' },
-  { n: 1, t: 'Worum geht’s?', d: 'Das Wichtigste in zwei Minuten.' },
-  { n: 2, t: 'Wie hängt das zusammen?', d: 'Ursachen, Wirkungen – und wie groß jeder Hebel ist.' },
-  { n: 3, t: 'Argumente & Zielkonflikte', d: 'Die stärksten Gründe für jede Option – und was sie kostet.' },
-  { n: 4, t: 'Fakten & Daten', d: 'Zahlen mit Quelle und Stand.' },
-  { n: 5, t: 'Geschichte', d: 'Was wurde schon versucht, was kam heraus?' },
-  { n: 6, t: 'Andere Länder', d: 'Wie machen es andere – und ist das übertragbar?' },
+  { n: 0, t: 'Die Frage', d: 'Kurz und mit wenigen Antwortmöglichkeiten, ähnlich wie beim Wahl-O-Mat.' },
+  { n: 1, t: 'Worum geht’s?', d: 'Das Wichtigste, in zwei Minuten gelesen.' },
+  { n: 2, t: 'Wie hängt das zusammen?', d: 'Ursachen und Wirkungen und wie viel eine Maßnahme bewirkt.' },
+  { n: 3, t: 'Argumente und Zielkonflikte', d: 'Die stärksten Gründe für jede Antwort und was sie jeweils kostet.' },
+  { n: 4, t: 'Fakten und Daten', d: 'Zahlen mit Quelle und Stand.' },
+  { n: 5, t: 'Geschichte', d: 'Was bereits versucht wurde und was daraus geworden ist.' },
+  { n: 6, t: 'Andere Länder', d: 'Wie andere Länder vorgehen und ob sich das übertragen lässt.' },
 ];
 ---
 
 <Layout>
   <section class="mx-auto max-w-5xl px-4 pt-10 sm:pt-20 pb-6">
     <h1 class="serif text-4xl sm:text-6xl font-semibold leading-[1.08] max-w-3xl">
-      Erst verstehen.<br />Dann entscheiden.
+      Politik verstehen, bevor man sie bewertet
     </h1>
     <p class="mt-6 text-lg sm:text-xl text-muted max-w-2xl leading-relaxed">
-      Beim Wahl-O-Mat hat man zu vielen Fragen keine Meinung – weil man nicht weiß, worum es geht. Klartext fängt genauso
-      einfach an. Aber wenn du sagst <em class="text-ink not-italic font-semibold">„kann ich nicht entscheiden“</em>,
-      geht es Schicht für Schicht tiefer: Zusammenhänge, Argumente, Daten, Geschichte, andere Länder.
+      Beim Wahl-O-Mat soll man zu vielen Fragen Stellung nehmen, ohne genau zu wissen, worum es geht. Klartext beginnt
+      ebenso einfach: mit einer Frage und wenigen Antwortmöglichkeiten. Wer unsicher ist, wählt
+      <em class="text-ink not-italic font-semibold">„Kann ich nicht entscheiden“</em> und kann die Frage dann Schicht
+      für Schicht vertiefen, von einer kurzen Erklärung bis zu Zahlen, früheren Reformen und Beispielen aus anderen
+      Ländern.
     </p>
     <div class="mt-8 flex flex-wrap gap-2">
-      <a href="/gesundheit/" class="btn btn-primary">Mit dem Gesundheitssystem beginnen →</a>
-      <a href="/methodik/" class="btn btn-ghost">Wie neutral ist das?</a>
+      <a href="/gesundheit/" class="btn btn-primary">Zum Thema Gesundheit</a>
+      <a href="/methodik/" class="btn btn-ghost">Wie Klartext arbeitet</a>
     </div>
   </section>
 
@@ -36,8 +38,8 @@ const schichten = [
     <div>
       <h2 class="serif text-2xl font-semibold">Wie eine Zwiebel</h2>
       <p class="text-muted mt-2 mb-6 max-w-prose">
-        Jede Frage hat mehrere Schichten. Du gehst nur so tief, wie du willst. Alle sehen dieselben Inhalte – es gibt
-        keine personalisierten Antworten.
+        Jede Frage ist in mehreren Schichten aufgebaut, und du entscheidest selbst, wie tief du einsteigst. Alle sehen
+        dieselben Inhalte; es gibt keine auf einzelne Nutzer zugeschnittenen Antworten.
       </p>
       <ol class="relative border-l border-line ml-3.5">
         {
@@ -60,14 +62,14 @@ const schichten = [
     <div>
       <h2 class="serif text-2xl font-semibold">Daten und Meinungen getrennt</h2>
       <p class="text-muted mt-2 mb-6 max-w-prose">
-        Jede Aussage ist am Rand markiert. So siehst du sofort, ob etwas belegt ist, geschätzt wird, eine Abwägung ist –
-        oder ob es jemand fordert, der ein Interesse daran hat.
+        Jede Aussage ist am linken Rand markiert. Daran erkennst du, ob sie belegt ist, auf einer Schätzung beruht, eine
+        Abwägung enthält oder die Forderung eines Verbands, einer Partei oder einer Behörde wiedergibt.
       </p>
       <Legende ausfuehrlich />
       {
         beispiel && (
           <a href={`/gesundheit/${beispiel.id}/`} class="group block mt-8 border-t-2 border-ink pt-3 no-underline">
-            <span class="kicker">Beispiel ansehen</span>
+            <span class="kicker">Ein Beispiel</span>
             <span class="block serif text-xl font-semibold mt-1 leading-snug group-hover:text-accent">{beispiel.data.titel} →</span>
             <span class="block text-sm text-muted mt-1">{beispiel.data.frage}</span>
           </a>
@@ -77,25 +79,14 @@ const schichten = [
   </section>
 
   <section class="mx-auto max-w-5xl px-4 mt-20">
-    <div class="grid sm:grid-cols-3 gap-x-10 gap-y-6">
-      <div class="border-t border-line pt-3">
-        <h3 class="font-semibold">Neutral</h3>
-        <p class="text-sm text-muted mt-1">
-          Keine Wahlempfehlung, kein Ranking. Jede Option wird in ihrer stärksten Form dargestellt.
-        </p>
-      </div>
-      <div class="border-t border-line pt-3">
-        <h3 class="font-semibold">Belegt</h3>
-        <p class="text-sm text-muted mt-1">
-          Jede Zahl hat eine Quelle. Jede Änderung ist öffentlich nachvollziehbar.
-        </p>
-      </div>
-      <div class="border-t border-line pt-3">
-        <h3 class="font-semibold">Privat</h3>
-        <p class="text-sm text-muted mt-1">
-          Deine Antworten bleiben in deinem Browser. Kein Konto, kein Tracking deiner Meinung.
-        </p>
-      </div>
+    <div class="border-t border-line pt-4 max-w-3xl">
+      <h2 class="serif text-xl font-semibold">Wie Klartext arbeitet</h2>
+      <p class="text-muted mt-2">
+        Klartext gibt keine Wahlempfehlung und stellt jede Antwortmöglichkeit mit ihren stärksten Argumenten dar. Jede
+        Zahl ist mit einer Quelle belegt, und alle Änderungen sind öffentlich nachvollziehbar. Deine Antworten werden nur
+        in deinem Browser gespeichert; es gibt weder ein Konto noch eine Auswertung deiner Meinung.
+        <a href="/methodik/" class="link">Mehr zur Methodik</a>
+      </p>
     </div>
   </section>
 </Layout>

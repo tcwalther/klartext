@@ -74,7 +74,8 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
         </div>
         {ueberschuss > 0 && (
           <p class="text-sm text-muted mt-1">
-            Das wäre {fmt.format(ueberschuss)} {einheit} mehr als nötig – Spielraum, um an anderer Stelle weniger zu tun.
+            Das wären {fmt.format(ueberschuss)} {einheit} mehr als nötig; an anderer Stelle könnte entsprechend weniger
+            geschehen.
           </p>
         )}
       </div>
@@ -104,7 +105,7 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
                   aria-pressed={w === -1}
                   onClick={() => setWahl({ ...wahl, [m.id]: -1 })}
                 >
-                  nicht
+                  keine
                 </button>
                 {m.varianten.map((v, i) => (
                   <button
@@ -132,8 +133,9 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
 
       <div class="mt-4 flex flex-wrap items-center justify-between gap-2">
         <p class="text-xs text-faint max-w-prose">
-          Grobe Größenordnungen pro Jahr. Maßnahmen beeinflussen sich teils gegenseitig und lassen sich nicht exakt
-          addieren. Der Rechner bewertet nichts – er zeigt nur, wie groß welcher Hebel ist und wer ihn bezahlt.
+          Grobe Größenordnungen pro Jahr. Weil sich manche Maßnahmen gegenseitig beeinflussen, lassen sich die Beträge
+          nicht genau addieren. Der Rechner bewertet nichts; er zeigt nur, wie viel eine Maßnahme bringt und wer sie
+          bezahlt.
         </p>
         {aktiv.length > 0 && (
           <button type="button" class="btn btn-ghost text-sm py-1.5" onClick={() => setWahl({})}>

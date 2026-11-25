@@ -2,7 +2,7 @@ bereich: finanzierung
 reihenfolge: 1
 status: entwurf
 stand: "2026-11-25"
-titel: Gesetzlich und privat – soll das duale System bleiben?
+titel: Soll das duale System aus gesetzlicher und privater Versicherung bleiben?
 frage: Sollen gesetzliche und private Krankenversicherung weiter nebeneinander bestehen, oder soll es eine gemeinsame Versicherung für alle geben?
 optionen:
   - id: dual-beibehalten
@@ -12,27 +12,27 @@ optionen:
       - typ: wertung
         text: Wer gut verdient, selbstständig oder verbeamtet ist, kann zwischen zwei Systemen wählen. Diese Wahlfreiheit ist für viele ein Wert an sich.
       - typ: wertung
-        text: Die private Krankenversicherung bildet für jeden Versicherten Rücklagen für das Alter (**Alterungsrückstellungen**). Das gilt als Vorsorge für eine alternde Gesellschaft, die nicht allein auf die nächste Generation verschoben wird.
+        text: Die private Krankenversicherung bildet für jeden Versicherten Rücklagen für das Alter (**Alterungsrückstellungen**). Das gilt als Vorsorge für eine alternde Gesellschaft, weil die Kosten des Alters so nicht allein auf die nächste Generation verschoben werden.
       - typ: position
         wer: PKV-Verband
-        text: Privatversicherte bringen Arztpraxen, Kliniken und anderen Anbietern zusätzliches Geld, weil für sie höhere Gebühren gelten. Dieses Geld komme der Versorgung aller zugute und würde ohne die PKV fehlen.
+        text: Privatversicherte bringen Arztpraxen, Kliniken und anderen Anbietern zusätzliches Geld, weil für sie höhere Gebühren gelten. Dieses Geld komme der Versorgung aller zugute und fehle ohne die PKV.
         quellen: [pkv-mehrumsatz-2026]
       - typ: wertung
         text: Der Wettbewerb zwischen zwei Systemen kann beide unter Druck setzen, Leistungen und Service zu verbessern.
     contra:
       - typ: fakt
-        text: "Wer in die PKV wechselt, verdient im Schnitt mehr und ist im Schnitt gesünder als gesetzlich Versicherte. Ihr Beitrag zum Ausgleich zwischen Gesunden und Kranken, Gut- und Geringverdienenden fehlt der GKV. Eine Modellrechnung beziffert das auf bis zu 145 € je GKV-Mitglied im Jahr."
+        text: "Wer in die PKV wechselt, verdient im Schnitt mehr und ist gesünder als gesetzlich Versicherte. Damit fehlt der GKV der Beitrag dieser Menschen zum Ausgleich zwischen Gesunden und Kranken sowie zwischen Gut- und Geringverdienenden. Eine Modellrechnung beziffert das auf bis zu 145 € je GKV-Mitglied im Jahr."
         quellen: [bertelsmann-iges-2020]
       - typ: wertung
         text: Unterschiedliche Honorare für gesetzlich und privat Versicherte können zu unterschiedlich schnellen Terminen führen. Viele empfinden das als ungerecht.
       - typ: fakt
         text: "Der Weg in die PKV ist für viele eine Einbahnstraße: Zurück in die GKV kommt nur, wer wieder versicherungspflichtig wird, und ab 55 Jahren ist auch das praktisch ausgeschlossen. Wer im Alter hohe Prämien zahlt, kann deshalb kaum ausweichen."
         quellen: [iaq-wechsel-gkv-pkv]
-    gewinnt: [Wahlfreiheit für Gutverdienende, Selbstständige und Beamte, Kapitalgedeckte Altersvorsorge in der PKV, Einnahmen von Arztpraxen]
+    gewinnt: ["Wahlfreiheit für Gutverdienende, Selbstständige und Beamte", Kapitalgedeckte Altersvorsorge in der PKV, Einnahmen von Arztpraxen]
     kostet: [Breite der Finanzierungsbasis der GKV, Gleichbehandlung beim Zugang]
   - id: annaehern
     titel: Schrittweise annähern
-    kurz: Beide Systeme bleiben, werden aber stärker verbunden – etwa durch höhere Einkommensgrenzen oder einen gemeinsamen Finanzausgleich.
+    kurz: Beide Systeme bleiben, werden aber stärker verbunden, etwa durch höhere Einkommensgrenzen oder einen gemeinsamen Finanzausgleich.
     pro:
       - typ: wertung
         text: Eine höhere **Versicherungspflichtgrenze** (bis zu diesem Einkommen muss man gesetzlich versichert sein) hält mehr Gutverdienende in der GKV und verbreitert so ihre Einnahmen.
@@ -43,7 +43,7 @@ optionen:
       - typ: wertung
         text: Schrittweise Änderungen lassen sich besser steuern und notfalls korrigieren als ein großer Systemwechsel.
       - typ: schaetzung
-        text: "Wie viel eine Anhebung bringt, zeigt der Schritt für 2027: 300 € mehr Beitragsbemessungs- und Versicherungspflichtgrenze im Monat bringen der GKV rund 2,5 Mrd. € im Jahr. Betroffen sind rund 5,4 Mio. Mitglieder mit hohem Einkommen."
+        text: "Die zusätzliche Anhebung für 2027 zeigt die Größenordnung: Steigen Beitragsbemessungs- und Versicherungspflichtgrenze um 300 € im Monat, nimmt die GKV rund 2,5 Mrd. € im Jahr mehr ein. Betroffen sind rund 5,4 Mio. Mitglieder mit hohem Einkommen."
         genau: "1,2 Mrd. € tragen die Mitglieder, 1,3 Mrd. € die Arbeitgeber (Schätzung im Gesetzentwurf)."
         quellen: [bt-drs-21-6130]
     contra:
@@ -64,11 +64,11 @@ optionen:
     kurz: Alle Menschen werden in einem gemeinsamen System versichert, oft „Bürgerversicherung“ genannt.
     pro:
       - typ: wertung
-        text: Alle tragen nach ihrer wirtschaftlichen Leistungsfähigkeit zur Finanzierung bei, Gesunde und Kranke teilen das Risiko gemeinsam.
+        text: Alle tragen nach ihrer wirtschaftlichen Leistungsfähigkeit zur Finanzierung bei. Gesunde und Kranke teilen sich das Risiko.
       - typ: schaetzung
         text: Eine Modellrechnung des IGES-Instituts kam 2020 zu dem Ergebnis, dass der Beitragssatz um 0,2 bis 0,6 Prozentpunkte sinken könnte, wenn alle Privatversicherten in die GKV einbezogen würden.
         quellen: [bertelsmann-iges-2020]
-        unsicherheit: Datenstand 2020. Das Ergebnis hängt stark davon ab, ob Arztpraxen ihre bisherigen Mehreinnahmen aus der PKV ersetzt bekommen. Kritiker wenden ein, dass Privatversicherte künftig älter werden.
+        unsicherheit: Datenstand 2020. Das Ergebnis hängt stark davon ab, ob Arztpraxen ihre bisherigen Mehreinnahmen aus der PKV ersetzt bekommen. Kritiker wenden ein, die Privatversicherten würden künftig älter.
       - typ: position
         wer: Deutscher Gewerkschaftsbund (DGB)
         text: Eine einheitliche Bürgerversicherung schaffe eine bedarfsgerechte Versorgung für alle, unabhängig von Alter, Wohnort oder Einkommen. Auch weitere Einkommensarten oberhalb eines Freibetrags sollten Beiträge tragen.
@@ -79,12 +79,12 @@ optionen:
       - typ: wertung
         text: Ein Systemwechsel ist rechtlich und praktisch schwierig. Bestehende private Verträge und Alterungsrückstellungen genießen Vertrauensschutz.
       - typ: schaetzung
-        text: "Privatversicherte bringen Praxen und Kliniken deutlich mehr Geld, als sie nach GKV-Regeln bekämen – nach Berechnung eines PKV-Instituts mehr als 15 Mrd. € im Jahr. Fällt das weg, fehlt es den Anbietern. Wird es ausgeglichen, schrumpft die Entlastung der Beitragszahler."
+        text: "Privatversicherte bringen Praxen und Kliniken deutlich mehr Geld, als sie nach GKV-Regeln bekämen. Nach Berechnung eines PKV-Instituts sind es mehr als 15 Mrd. € im Jahr. Fällt das weg, fehlt es den Anbietern. Wird es ausgeglichen, schrumpft die Entlastung der Beitragszahler."
         genau: "Mehrumsatz durch Privatversicherte 2024: rund 15,5 Mrd. € (Wissenschaftliches Institut der PKV)."
         quellen: [pkv-mehrumsatz-2026]
         unsicherheit: Berechnung eines Instituts der PKV, also eines Interessenträgers.
       - typ: wertung
-        text: Ein einziges umlagefinanziertes System trägt die Kosten der Alterung allein über laufende Beiträge – ohne kapitalgedeckten Puffer.
+        text: Ein einziges umlagefinanziertes System trägt die Kosten der Alterung allein über laufende Beiträge, ohne kapitalgedeckten Puffer.
       - typ: wertung
         text: Wer bisher privat versichert ist, verliert eine Wahlmöglichkeit.
     gewinnt: [Solidarausgleich zwischen allen Einkommen, Gleichbehandlung beim Zugang, Gesetzlich Versicherte mit mittlerem Einkommen]
@@ -95,14 +95,14 @@ erklaerung:
     genau: "Gesetzlich Versicherte: 74,4 Mio. (Oktober 2026). Private Vollversicherte: 8,79 Mio. (2025)."
     quellen: [bmg-km1-2026, pkv-branchenzahlen-2025]
   - typ: fakt
-    text: "In der **gesetzlichen Krankenversicherung (GKV)** richtet sich der Beitrag nach dem Einkommen, Gesunde und Kranke zahlen gleich viel. In der **privaten Krankenversicherung (PKV)** hängt er vom Tarif und vom Gesundheitszustand beim Eintritt ab. Deshalb ist die PKV vor allem für junge, gesunde und gut verdienende Menschen günstig."
+    text: "In der gesetzlichen Krankenversicherung (GKV) richtet sich der Beitrag nach dem Einkommen; Gesunde und Kranke zahlen bei gleichem Einkommen gleich viel. In der privaten Krankenversicherung (PKV) hängt er vom Tarif und vom Gesundheitszustand beim Eintritt ab. Deshalb ist die PKV vor allem für junge, gesunde und gut verdienende Menschen günstig."
     quellen: [bundesregierung-rechengroessen-2026, bertelsmann-iges-2020]
   - typ: fakt
     text: "Angestellte dürfen erst wechseln, wenn sie mehr als rund 6.500 € brutto im Monat verdienen. Beamte und Selbstständige dürfen unabhängig vom Einkommen wählen."
     genau: "Versicherungspflichtgrenze 2026: 77.400 € im Jahr (6.450 € im Monat), 2027: 84.150 €."
     quellen: [bundesregierung-rechengroessen-2026, bundesregierung-rechengroessen-2027]
   - typ: fakt
-    text: "Auch in der GKV wird nicht das ganze Einkommen belastet: Oberhalb der **Beitragsbemessungsgrenze** von rund 5.800 € im Monat ist jeder weitere Euro beitragsfrei. Wer viel verdient, zahlt deshalb anteilig weniger."
+    text: "Auch in der GKV wird nicht das ganze Einkommen belastet: Oberhalb der **Beitragsbemessungsgrenze** von rund 5.800 € im Monat ist jeder weitere Euro beitragsfrei. Wer viel verdient, zahlt deshalb einen kleineren Teil seines Einkommens."
     genau: "Beitragsbemessungsgrenze 2026: 69.750 € im Jahr, 2027: 76.500 €. Für 2027 steigen beide Grenzen zusätzlich zur üblichen Anpassung um 300 € im Monat."
     quellen: [bundesregierung-rechengroessen-2026, bundesregierung-rechengroessen-2027]
   - typ: fakt
@@ -113,7 +113,7 @@ erklaerung:
 zusammenhaenge:
   erklaerung:
     - typ: wertung
-      text: "Die beiden Systeme rechnen grundverschieden. Die GKV verteilt um: Die Beiträge eines Jahres bezahlen die Behandlungen desselben Jahres, Junge und Gesunde zahlen für Alte und Kranke mit. Die PKV kalkuliert für jeden Versicherten über das ganze Leben und legt in jungen Jahren Geld für das Alter zurück (Alterungsrückstellungen)."
+      text: "Die beiden Systeme rechnen grundverschieden. Die GKV verteilt um: Die Beiträge eines Jahres bezahlen die Behandlungen desselben Jahres. Junge und Gesunde zahlen dabei für Alte und Kranke mit. Die PKV kalkuliert für jeden Versicherten über das ganze Leben und legt in jungen Jahren Geld für das Alter zurück (Alterungsrückstellungen)."
     - typ: fakt
       text: "Weil nur bestimmte Gruppen wählen dürfen und vor allem Junge, Gesunde und Gutverdienende von der PKV profitieren, entmischt sich das Risiko. Seit 2019 wechseln wieder deutlich mehr Menschen von der GKV in die PKV als umgekehrt."
       genau: "Wanderungssaldo zugunsten der PKV 2024: knapp 81.000 Personen. Zwischen 2012 und 2017 wechselten mehr Menschen von der PKV in die GKV als umgekehrt."
@@ -122,14 +122,14 @@ zusammenhaenge:
       text: "Der Ausgleich wirkt in beide Richtungen: Bezöge man alle Privatversicherten ein, könnte der GKV-Beitragssatz um einige Zehntelpunkte sinken. Zugleich verlören Praxen und Kliniken höhere Honorare, die ihnen Privatversicherte heute bringen."
       genau: "IGES-Modellrechnung 2020: Beitragssatz minus 0,2 bis 0,6 Prozentpunkte. PKV-Mehrumsatz 2024 laut WIP: rund 15,5 Mrd. €."
       quellen: [bertelsmann-iges-2020, pkv-mehrumsatz-2026]
-      unsicherheit: Beide Zahlen stammen von Akteuren mit eigenen Interessen bzw. aus Modellrechnungen mit älterem Datenstand.
+      unsicherheit: Beide Zahlen stammen von Akteuren mit eigenen Interessen oder aus Modellrechnungen mit älterem Datenstand.
   kette:
     - titel: Wer wo versichert ist
       punkte:
         - label: Pflichtversicherte
-          text: Angestellte unter der Versicherungspflichtgrenze, Rentner, Arbeitslose, Studierende – automatisch in der GKV.
+          text: Angestellte unter der Versicherungspflichtgrenze, Rentner, Arbeitslose und Studierende sind automatisch in der GKV.
         - label: Wahlberechtigte
-          text: Gutverdienende Angestellte, Selbstständige, Beamte – sie können in die PKV.
+          text: Gutverdienende Angestellte, Selbstständige und Beamte können in die PKV wechseln.
         - label: Beamte
           text: Der Dienstherr erstattet einen Teil der Kosten (Beihilfe); deshalb ist die PKV für sie meist günstiger.
     - titel: Wie der Beitrag entsteht
@@ -143,7 +143,7 @@ zusammenhaenge:
         - label: Risikoentmischung
           text: Gute Risiken können die GKV verlassen, schlechte bleiben.
         - label: Unterschiedliche Honorare
-          text: Für Privatversicherte gelten höhere Gebühren – das bringt Praxen Geld und kann Termine beeinflussen.
+          text: Für Privatversicherte gelten höhere Gebühren. Das bringt Praxen Geld und kann die Terminvergabe beeinflussen.
         - label: Kaum Rückweg
           text: Wer privat versichert ist, kommt nur unter engen Bedingungen zurück.
     - titel: Stellschrauben
@@ -159,9 +159,9 @@ zielkonflikte:
   - typ: wertung
     text: '**Wahlfreiheit gegen Solidarausgleich:** Je mehr Menschen wählen dürfen, desto eher verlassen gut verdienende und gesunde Versicherte die gemeinsame Kasse.'
   - typ: wertung
-    text: '**Entlastung der Beitragszahler gegen Einnahmen der Praxen:** Was GKV-Versicherte durch eine Einbeziehung der PKV sparen könnten, fehlt zum Teil Ärztinnen und Ärzten – oder muss anders ausgeglichen werden.'
+    text: '**Entlastung der Beitragszahler gegen Einnahmen der Praxen:** Was GKV-Versicherte durch eine Einbeziehung der PKV sparen könnten, fehlt zum Teil Ärztinnen und Ärzten oder muss anders ausgeglichen werden.'
   - typ: wertung
-    text: '**Vorsorge gegen Umlage:** Kapitalgedeckte Rücklagen der PKV bereiten auf die Alterung vor, binden aber Geld. Das Umlageverfahren der GKV verteilt Lasten sofort, ist aber abhängig von der Zahl der Beitragszahler.'
+    text: '**Vorsorge gegen Umlage:** Kapitalgedeckte Rücklagen der PKV bereiten auf die Alterung vor, binden aber Geld. Das Umlageverfahren der GKV verteilt Lasten sofort, hängt aber von der Zahl der Beitragszahler ab.'
   - typ: wertung
     text: '**Stabilität gegen Veränderung:** Ein großer Umbau kann Ungleichheiten schneller beseitigen, bringt aber rechtliche Risiken und Übergangsprobleme.'
 
@@ -235,7 +235,7 @@ geschichte:
   ereignisse:
     - jahr: "1883"
       titel: Krankenversicherung für Arbeiter
-      text: Die gesetzliche Krankenversicherung beginnt mit Pflichtversicherung für Industriearbeiter und Beschäftigte in Handwerk und Gewerbe. Anfangs ist nur etwa jeder Zehnte pflichtversichert; heute sind es rund neun von zehn.
+      text: Die gesetzliche Krankenversicherung beginnt mit einer Pflichtversicherung für Industriearbeiter und Beschäftigte in Handwerk und Gewerbe. Anfangs ist nur etwa jeder Zehnte pflichtversichert; heute sind es rund neun von zehn.
       quellen: [bmg-geschichte-gkv]
     - jahr: "2003"
       titel: Wechselgrenze wird eigenständig
@@ -247,7 +247,7 @@ geschichte:
       quellen: [bmg-basistarif]
     - jahr: "2012–2024"
       titel: Wechselströme kehren sich zweimal um
-      text: Ab 2012 wechseln einige Jahre lang mehr Menschen von der PKV in die GKV als umgekehrt. Seit 2019 gewinnt die PKV wieder Versicherte, 2024 per Saldo knapp 81.000 – deutlich weniger als in den 1990er- und 2000er-Jahren.
+      text: Ab 2012 wechseln einige Jahre lang mehr Menschen von der PKV in die GKV als umgekehrt. Seit 2019 gewinnt die PKV wieder Versicherte, 2024 per Saldo knapp 81.000. Das sind deutlich weniger als in den 1990er- und 2000er-Jahren.
       quellen: [iaq-wechsel-gkv-pkv]
     - jahr: "2020"
       titel: Modellrechnung zur einheitlichen Versicherung
@@ -259,7 +259,7 @@ geschichte:
       quellen: [bundesregierung-rechengroessen-2027, bt-drs-21-6130]
   bilanz:
     - typ: fakt
-      text: Die Zahl der Privatversicherten bleibt seit Jahren bei knapp 9 Mio. Das duale System wurde mehrfach verändert, an seiner Grundstruktur aber nie gerüttelt.
+      text: Die Zahl der Privatversicherten bleibt seit Jahren bei knapp 9 Mio. Das duale System wurde mehrfach verändert, seine Grundstruktur blieb aber unangetastet.
       quellen: [pkv-branchenzahlen-2025]
     - typ: wertung
       text: "Die Politik hat eher an den Grenzen gedreht als am System: höhere Wechselgrenze, Pflicht zur Versicherung, Basistarif, Anhebung der Bemessungsgrenze. Eine Bürgerversicherung wurde oft gefordert, aber nie umgesetzt."
@@ -268,21 +268,21 @@ laender:
   beispiele:
     - land: Niederlande
       ansatz: Eine Pflichtversicherung für alle bei privaten Versicherern
-      text: "Seit 2006 müssen alle Einwohner eine Basisversicherung bei einem privatrechtlichen Versicherer abschließen; die Trennung zwischen gesetzlicher und privater Versicherung wurde aufgehoben. Versicherer müssen jeden aufnehmen. Etwa die Hälfte der Finanzierung kommt aus einer für alle gleichen Prämie, die andere Hälfte aus einem einkommensabhängigen Beitrag; Haushalte mit wenig Einkommen erhalten einen Zuschuss aus Steuern. Eine erste Auswertung bewertete die Reform als „per Saldo positiv“, sah aber auch Probleme, etwa beim Einkauf von Leistungen."
+      text: "Seit 2006 müssen alle Einwohner eine Basisversicherung bei einem privatrechtlichen Versicherer abschließen; die Trennung zwischen gesetzlicher und privater Versicherung wurde aufgehoben. Versicherer müssen jeden aufnehmen. Etwa die Hälfte der Finanzierung kommt aus einer für alle gleichen Prämie, die andere Hälfte aus einem einkommensabhängigen Beitrag; Haushalte mit wenig Einkommen erhalten einen Zuschuss aus Steuern. Eine erste Auswertung beurteilte die Reform als „per Saldo positiv“, sah aber auch Probleme, etwa beim Einkauf von Leistungen."
       vergleichbarkeit: mittel
       vergleichbarkeit_text: Die Niederlande haben wie Deutschland Versicherungen und Wettbewerb zwischen Kassen. Der Weg dorthin war aber ein anderer, und die Finanzierung (Prämie an den Versicherer, Zuschuss für Haushalte mit geringem Einkommen) unterscheidet sich vom deutschen Beitragssystem.
       quellen: [observatory-nl-2016, observatory-nl-2024, zvw-evaluation-2010]
     - land: Schweiz
       ansatz: Pflichtversicherung für alle mit Kopfprämien und Prämienverbilligung
-      text: "Jede Person mit Wohnsitz in der Schweiz muss grundversichert sein. Die Prämie ist pro Person gleich, unabhängig von Einkommen und Gesundheit; sie hängt nur von Region und Tarifmodell ab. Wer wenig verdient, bekommt eine Prämienverbilligung aus Steuern – 2024 insgesamt rund 6,6 Mrd. Franken. Private Versicherungen gibt es nur als Zusatz."
+      text: "Jede Person mit Wohnsitz in der Schweiz muss grundversichert sein. Die Prämie ist pro Person gleich, unabhängig von Einkommen und Gesundheit; sie hängt nur von Region und Tarifmodell ab. Wer wenig verdient, bekommt eine Prämienverbilligung aus Steuern, 2024 insgesamt rund 6,6 Mrd. Franken. Private Versicherungen gibt es nur als Zusatz."
       vergleichbarkeit: mittel
-      vergleichbarkeit_text: "Die Schweiz kennt keine Trennung in gesetzlich und privat, aber auch keine einkommensabhängigen Beiträge. Der soziale Ausgleich läuft über Steuern statt über die Versicherung selbst – ein Modell, das in Deutschland unter dem Stichwort „Gesundheitsprämie“ diskutiert wurde."
+      vergleichbarkeit_text: "Die Schweiz kennt keine Trennung in gesetzlich und privat, aber auch keine einkommensabhängigen Beiträge. Der soziale Ausgleich läuft über Steuern statt über die Versicherung selbst. Ein ähnliches Modell wurde in Deutschland unter dem Stichwort „Gesundheitsprämie“ diskutiert."
       quellen: [bag-praemienverbilligung-2025]
     - land: Österreich
       ansatz: Pflichtversicherung für fast alle, private Versicherung als Zusatz
       text: "Fast die gesamte Bevölkerung ist gesetzlich pflichtversichert; die Kasse richtet sich nach dem Beruf. Eine Möglichkeit, sich stattdessen privat voll zu versichern, gibt es nicht. Trotzdem hat gut jeder Dritte eine private Zusatzversicherung, etwa für Wahlärzte oder ein Einzelzimmer im Krankenhaus."
       vergleichbarkeit: hoch
-      vergleichbarkeit_text: "Österreich hat ein sehr ähnliches Sozialversicherungssystem wie Deutschland. Es zeigt, wie eine Pflichtversicherung für alle aussehen kann – und dass private Angebote dann als Zusatz weiterbestehen. Die Zahl zur Zusatzversicherung ist allerdings von 2016."
+      vergleichbarkeit_text: "Österreich hat ein sehr ähnliches Sozialversicherungssystem wie Deutschland. Es zeigt, wie eine Pflichtversicherung für alle aussehen kann und dass private Angebote dann als Zusatz weiterbestehen. Die Zahl zur Zusatzversicherung ist allerdings von 2016."
       quellen: [sozialministerium-at-2025, observatory-at-2018]
     - land: Frankreich
       ansatz: Sozialversicherung für alle plus fast flächendeckende Zusatzversicherung
@@ -314,10 +314,10 @@ laender:
           wert: 9.4
   fazit:
     - typ: fakt
-      text: "Unter den Vergleichsländern gibt nur Deutschland Gutverdienenden, Beamten und Selbstständigen die Wahl, die Sozialversicherung ganz durch eine private Vollversicherung zu ersetzen. Die anderen Länder versichern alle in einem System – mit sehr unterschiedlicher Finanzierung."
+      text: "Unter den Vergleichsländern gibt nur Deutschland Gutverdienenden, Beamten und Selbstständigen die Wahl, die Sozialversicherung ganz durch eine private Vollversicherung zu ersetzen. Die anderen Länder versichern alle in einem System, finanzieren es aber sehr unterschiedlich."
       quellen: [observatory-nl-2024, bag-praemienverbilligung-2025, sozialministerium-at-2025, drees-financement-2025]
     - typ: wertung
-      text: "Ein „System für alle“ kann sehr Verschiedenes heißen: private Versicherer mit Einheitsprämie wie in den Niederlanden, Kopfprämien wie in der Schweiz oder eine Sozialversicherung mit Zusatzversicherung wie in Frankreich. Die Frage ist also nicht nur, ob es ein System gibt, sondern wie es finanziert wird."
+      text: "Ein „System für alle“ kann sehr Verschiedenes heißen: private Versicherer mit Einheitsprämie wie in den Niederlanden, Kopfprämien wie in der Schweiz oder eine Sozialversicherung mit Zusatzversicherung wie in Frankreich. Neben der Frage, ob es ein System gibt, kommt es also darauf an, wie es finanziert wird."
 
 verknuepft:
   - frage: finanzierung-kostenanstieg

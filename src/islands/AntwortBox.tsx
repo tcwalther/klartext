@@ -37,7 +37,7 @@ export default function AntwortBox({ frage, variante = 'oben' }: Props) {
   return (
     <section class="card p-4 sm:p-5" aria-label="Deine Einschätzung">
       <div class="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-0.5 mb-3">
-        <h2 class="serif text-lg font-semibold">{variante === 'oben' ? 'Deine Einschätzung' : 'Und jetzt – wie siehst du es?'}</h2>
+        <h2 class="serif text-lg font-semibold">{variante === 'oben' ? 'Deine Einschätzung' : 'Wie siehst du es jetzt?'}</h2>
         {geladen && wahl && (
           <span class="text-xs text-muted">gespeichert in deinem Browser</span>
         )}
@@ -53,7 +53,7 @@ export default function AntwortBox({ frage, variante = 'oben' }: Props) {
       </div>
       {wahl === 'unentschieden' && variante === 'oben' && (
         <p class="mt-3 text-sm text-muted">
-          Völlig in Ordnung. Unten kannst du Schicht für Schicht tiefer einsteigen – und später wiederkommen.
+          Weiter unten findest du Erklärungen, Argumente und Zahlen zu dieser Frage. Deine Antwort kannst du jederzeit ändern.
         </p>
       )}
       {wahl && <Parteipositionen frage={frage} wahl={wahl} />}

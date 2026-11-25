@@ -47,12 +47,11 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
     return (
       <div class="card p-6 sm:p-8">
         <h2 ref={headingRef} tabIndex={-1} class="serif text-2xl sm:text-3xl font-semibold">
-          Einmal durch.
+          Ende der Fragen
         </h2>
         <p class="mt-3 text-muted max-w-prose">
           Du hast {beantwortet} von {fragen.length} Fragen beantwortet
-          {offen.length > 0 && <>, bei {offen.length} bist du noch unentschieden</>}. Unentschieden zu sein ist kein
-          Makel – es ist der beste Ausgangspunkt, um tiefer einzusteigen.
+          {offen.length > 0 && <>; bei {offen.length} bist du noch unentschieden. Gerade dort lohnt es sich, tiefer einzusteigen</>}.
         </p>
         <div class="mt-6 flex flex-wrap gap-2">
           <a href="/mein-bild/" class="btn btn-primary">
@@ -60,7 +59,7 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
           </a>
           {ohne.length > 0 && (
             <button type="button" class="btn btn-ghost" onClick={() => gehe(fragen.indexOf(ohne[0]!))}>
-              {ohne.length} übersprungene Fragen
+              Übersprungene Fragen ({ohne.length})
             </button>
           )}
         </div>
@@ -168,9 +167,9 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
               ))}
             </ul>
             <a href={`${f.url}#${f.zusammenhaenge ? 'zusammenhaenge' : 'argumente'}`} class="btn btn-primary mt-4">
-              Tiefer einsteigen: Zusammenhänge, Argumente, Daten →
+              Ausführlich zu dieser Frage →
             </a>
-            <p class="text-xs text-muted mt-2">Quellen zu allen Aussagen findest du auf der Detailseite.</p>
+            <p class="text-xs text-muted mt-2">Dort findest du auch die Quellen zu allen Aussagen.</p>
           </section>
         )}
 

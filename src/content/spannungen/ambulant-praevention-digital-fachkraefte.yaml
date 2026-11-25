@@ -5,9 +5,9 @@ eintraege:
         option: primaerarzt
       - frage: fachkraefte-aufgabenteilung
         option: arztvorbehalt
-    titel: Mehr Wege über die Hausarztpraxis – aber nur Ärzte entscheiden
-    text: Ein verbindliches Primärarztsystem schickt mehr Menschen zuerst in die Hausarztpraxis. Wenn dort weiterhin nur Ärztinnen und Ärzte eigenständig entscheiden dürfen, muss diese Mehrarbeit von einer Berufsgruppe getragen werden, von der schon heute Sitze unbesetzt sind.
-    aufloesung: Beides passt zusammen, wenn man die Arbeit innerhalb der ärztlichen Verantwortung neu verteilt – etwa durch mehr Delegation an Praxisteams, eine gute digitale Ersteinschätzung vor dem Termin und mehr Studienplätze. Wer den Arztvorbehalt für ein Qualitätsmerkmal hält, kann ihn bewusst als Teil eines Primärarztsystems wollen.
+    titel: Mehr Wege über die Hausarztpraxis, aber nur Ärzte entscheiden
+    text: Ein verbindliches Primärarztsystem schickt mehr Menschen zuerst in die Hausarztpraxis. Dürfen dort weiterhin nur Ärztinnen und Ärzte eigenständig entscheiden, muss diese Berufsgruppe die zusätzliche Arbeit allein tragen. Schon heute sind Hausarztsitze unbesetzt.
+    aufloesung: Beides passt zusammen, wenn man die Arbeit innerhalb der ärztlichen Verantwortung neu verteilt, etwa durch mehr Delegation an Praxisteams und eine gute digitale Ersteinschätzung vor dem Termin, und zugleich mehr Studienplätze schafft. Wer den Arztvorbehalt für ein Qualitätsmerkmal hält, kann ihn bewusst als Teil eines Primärarztsystems wollen.
 
   - id: verhaltenstarif-und-datenhoheit
     wenn:
@@ -15,9 +15,9 @@ eintraege:
         option: verhaltensabhaengig
       - frage: digitalisierung-gesundheitsdaten
         option: opt-in
-    titel: Belohnung fürs Verhalten – und strenge Kontrolle über die eigenen Daten
-    text: Beiträge nach Verhalten setzen voraus, dass die Kasse etwas über das Verhalten erfährt – zum Beispiel über Vorsorge, Bewegung oder Rauchen. Gleichzeitig soll ohne ausdrückliche Zustimmung nichts fließen.
-    aufloesung: Das lässt sich verbinden, wenn verhaltensbezogene Tarife selbst freiwillig sind. Wer mitmacht, stimmt der Datennutzung ausdrücklich zu; wer nicht zustimmt, bleibt im normalen Tarif. Die Zustimmung ist dann gerade der Schlüssel zum Anreiz.
+    titel: Belohnung fürs Verhalten und strenge Kontrolle über die eigenen Daten
+    text: Beiträge nach Verhalten setzen voraus, dass die Kasse etwas über das Verhalten erfährt, zum Beispiel über Vorsorge, Bewegung oder Rauchen. Gleichzeitig sollen ohne ausdrückliche Zustimmung keine Daten fließen.
+    aufloesung: Das lässt sich verbinden, wenn verhaltensbezogene Tarife selbst freiwillig sind. Wer mitmacht, stimmt der Datennutzung ausdrücklich zu; wer nicht zustimmt, bleibt im normalen Tarif. Die Zustimmung wird dann zur Voraussetzung für den Anreiz.
 
   - id: digitale-steuerung-ohne-automatische-akte
     wenn:
@@ -25,9 +25,9 @@ eintraege:
         option: digital-zuerst
       - frage: digitalisierung-gesundheitsdaten
         option: opt-in
-    titel: Digital zuerst – aber die Akte nur auf Wunsch
-    text: Eine digitale Ersteinschätzung wird umso besser, je mehr sie über Vorerkrankungen und Medikamente weiß. Die Pläne der Bundesregierung binden sie deshalb an die ePA an. Wenn die Akte nur mit Zustimmung entsteht, fehlen diese Informationen bei vielen.
-    aufloesung: Eine Ersteinschätzung funktioniert auch mit den Angaben, die Anrufende selbst machen – so arbeitet die 116117 schon heute. Wer beides will, kann eine digitale Steuerung befürworten, die mit Akte besser, aber ohne Akte nicht schlechter ist als heute.
+    titel: Digital zuerst, aber die Akte nur auf Wunsch
+    text: Eine digitale Ersteinschätzung wird umso besser, je mehr sie über Vorerkrankungen und Medikamente weiß. Die Pläne der Bundesregierung binden sie deshalb an die elektronische Patientenakte (ePA) an. Entsteht die Akte nur mit Zustimmung, fehlen diese Angaben bei vielen Menschen.
+    aufloesung: Eine Ersteinschätzung funktioniert auch mit den Angaben, die Anrufende selbst machen. So arbeitet die 116117 schon heute. Wer beides will, kann eine digitale Steuerung befürworten, die mit Akte besser, aber ohne Akte nicht schlechter ist als heute.
 
   - id: pflege-uebernimmt-mehr-bei-mangel
     wenn:
@@ -35,6 +35,6 @@ eintraege:
         option: erweitern
       - frage: fachkraefte-pflege
         option: personalbemessung
-    titel: Pflege soll mehr übernehmen – und am Krankenbett mehr Personal binden
-    text: Erweiterte Befugnisse holen Pflegekräfte in neue Aufgaben, etwa in Hausarztpraxen oder in der Gemeinde. Eine verbindliche Personalbemessung im Krankenhaus verlangt zugleich mehr Pflegekräfte am Bett. Beides zieht an derselben knappen Gruppe.
-    aufloesung: Die beiden Ziele können sich auch gegenseitig stützen. Mehr Verantwortung und Entwicklungsmöglichkeiten machen den Beruf attraktiver und können Menschen zurückholen oder länger halten. Wer beides will, setzt darauf, dass ein besserer Beruf am Ende mehr Pflegekräfte bringt.
+    titel: Mehr Aufgaben für die Pflege und mehr Pflegekräfte am Bett
+    text: Mit erweiterten Befugnissen übernehmen Pflegekräfte neue Aufgaben, etwa in Hausarztpraxen oder in der Gemeinde. Eine verbindliche Personalbemessung im Krankenhaus verlangt zugleich mehr Pflegekräfte am Bett. Beides beansprucht dieselbe knappe Berufsgruppe.
+    aufloesung: Die beiden Ziele können sich auch gegenseitig stützen. Mehr Verantwortung und Entwicklungsmöglichkeiten machen den Beruf attraktiver und können Pflegekräfte zurückholen oder länger im Beruf halten. Wer beides will, setzt darauf, dass ein attraktiverer Beruf auf Dauer mehr Pflegekräfte gewinnt.

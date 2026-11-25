@@ -20,9 +20,10 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
   if (beantwortet.length === 0) {
     return (
       <div class="card p-6 sm:p-8">
-        <h2 class="serif text-2xl font-semibold">Noch leer</h2>
+        <h2 class="serif text-2xl font-semibold">Noch keine Antworten</h2>
         <p class="mt-2 text-muted max-w-prose">
-          Hier entsteht dein Bild, sobald du ein paar Fragen beantwortet hast – auch „kann ich nicht entscheiden“ zählt.
+          Sobald du einige Fragen beantwortet hast, erscheint hier eine Übersicht. Auch „Kann ich nicht entscheiden“ zählt
+          als Antwort.
         </p>
         <a href="/gesundheit/fragen/" class="btn btn-primary mt-5">
           Mit den Fragen beginnen →
@@ -90,8 +91,8 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
         <section>
           <h2 class="serif text-2xl font-semibold">Spannungen in deinem Bild</h2>
           <p class="text-muted mt-1 mb-4 max-w-prose">
-            Manche Antworten ziehen in verschiedene Richtungen. Das ist normal – fast jede politische Position muss
-            solche Spannungen auflösen. Genau hier lohnt sich das Gespräch.
+            Manche deiner Antworten ziehen in verschiedene Richtungen. Das ist kein Fehler, denn fast jede politische
+            Position muss solche Zielkonflikte auflösen. Über diese Stellen lohnt es sich zu sprechen.
           </p>
           <div class="grid gap-7">
             {aktiv.map((s) => (
@@ -111,7 +112,7 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
                 </ul>
                 <p class="leading-relaxed">{s.text}</p>
                 <p class="mt-2 text-sm text-muted leading-relaxed">
-                  <span class="font-semibold text-ink">Wie beides zusammengehen kann: </span>
+                  <span class="font-semibold text-ink">Wie sich beides verbinden lässt: </span>
                   {s.aufloesung}
                 </p>
               </article>
@@ -124,7 +125,7 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
       {offen.length > 0 && (
         <section>
           <h2 class="serif text-2xl font-semibold">Hier bist du noch unentschieden</h2>
-          <p class="text-muted mt-1 mb-4">Guter Startpunkt, um tiefer einzusteigen.</p>
+          <p class="text-muted mt-1 mb-4">Hier lohnt es sich, tiefer einzusteigen.</p>
           <ul class="border-t border-line">
             {offen.map((f) => (
               <li key={f.id} class="border-b border-line">
@@ -203,9 +204,9 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
                 <span class="text-sm text-muted group-open/a:hidden">anzeigen</span>
               </summary>
               <p class="text-sm text-muted mt-2 mb-4">
-                Gezählt werden nur Fragen, bei denen du eine Option gewählt hast <em>und</em> das Wahlprogramm 2025 einer
-                Partei eindeutig ist. Das ist keine Wahlempfehlung: Programme sagen zu vielen Fragen nichts, und eine
-                Wahlentscheidung hängt an viel mehr als am Gesundheitssystem.
+                Gezählt werden nur Fragen, bei denen du eine Antwort gewählt hast und das Wahlprogramm 2025 einer Partei
+                eindeutig ist. Das ist keine Wahlempfehlung. Die Programme äußern sich zu vielen Fragen gar nicht, und eine
+                Wahlentscheidung hängt von weit mehr ab als vom Gesundheitssystem.
               </p>
               <ul class="grid gap-3">
                 {zeilen.map((z) => (
@@ -213,7 +214,7 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
                     <div class="flex justify-between gap-3 mb-1">
                       <span class="font-semibold">{z.partei}</span>
                       <span class="text-muted tabular-nums">
-                        {z.vergleichbar === 0 ? 'nicht vergleichbar' : `${z.gleich} von ${z.vergleichbar} gleich`}
+                        {z.vergleichbar === 0 ? 'nicht vergleichbar' : `${z.gleich} von ${z.vergleichbar} übereinstimmend`}
                       </span>
                     </div>
                     <div class="h-2 rounded-full bg-surface-2 overflow-hidden" aria-hidden="true">
@@ -231,10 +232,10 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
       })()}
 
       <section class="card p-4 sm:p-5">
-        <h2 class="serif text-lg font-semibold">Ins Gespräch bringen</h2>
+        <h2 class="serif text-lg font-semibold">Mit anderen vergleichen</h2>
         <p class="text-sm text-muted mt-1 mb-3">
-          Kopiere dein Bild als Text und vergleiche es mit Freunden: Wo liegt ihr auseinander – und liegt es an
-          unterschiedlichen Werten oder an unterschiedlichen Annahmen über die Fakten?
+          Kopiere deine Antworten als Text und vergleiche sie mit Freunden. Wo ihr unterschiedlicher Meinung seid, lohnt
+          sich die Frage, ob ihr verschiedene Werte habt oder von unterschiedlichen Fakten ausgeht.
         </p>
         <div class="flex flex-wrap gap-2">
           <button type="button" class="btn btn-primary" onClick={kopieren}>

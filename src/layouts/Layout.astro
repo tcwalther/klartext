@@ -6,7 +6,7 @@ interface Props {
   title?: string;
   description?: string;
 }
-const { title, description = 'Klartext erklärt politische Fragen Schicht für Schicht – neutral, mit Quellen, ohne Wahlempfehlung.' } = Astro.props;
+const { title, description = 'Klartext erklärt politische Fragen Schicht für Schicht: neutral, mit Quellen und ohne Wahlempfehlung.' } = Astro.props;
 const fullTitle = title ? `${title} · ${SITE.name}` : `${SITE.name} – ${SITE.claim}`;
 const path = Astro.url.pathname;
 const nav = [
@@ -67,9 +67,9 @@ const isActive = (href: string) =>
     <footer class="border-t border-line mt-16">
       <div class="mx-auto max-w-5xl px-4 py-8 text-sm text-muted grid gap-3 sm:grid-cols-[1fr_auto]">
         <p class="max-w-prose">
-          <strong class="text-ink">Klartext</strong> ist politisch neutral und gibt keine Wahlempfehlung. Inhalte sind
-          mit Quellen belegt und als Fakt, Schätzung, Wertung oder Position gekennzeichnet. Deine Antworten bleiben in
-          deinem Browser.
+          <strong class="text-ink">Klartext</strong> ist politisch neutral und gibt keine Wahlempfehlung. Alle Inhalte sind
+          mit Quellen belegt und als Fakt, Schätzung, Wertung oder Position gekennzeichnet. Deine Antworten werden nur in
+          deinem Browser gespeichert.
         </p>
         <p class="sm:text-right">
           <a class="link" href="/methodik/">Methodik</a> · <a class="link" href="/quellen/">Quellen</a><br />

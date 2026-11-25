@@ -4,34 +4,34 @@ eintraege:
     wenn:
       - { frage: krankenhaus-standorte, option: wohnortnah-erhalten }
       - { frage: finanzierung-kostenanstieg, option: ausgaben-begrenzen }
-    titel: Viele Kliniken erhalten – und die Ausgaben begrenzen
-    text: Krankenhäuser sind der größte Ausgabenblock der gesetzlichen Krankenversicherung. Viele kleine Standorte mit eigener Notaufnahme, Technik und Bereitschaftsdiensten sind in der Regel teurer als weniger, größere Standorte. Wer die Ausgaben bremsen will, muss also an anderer Stelle umso stärker sparen.
-    aufloesung: Beides passt zusammen, wenn man die Einsparungen bewusst in anderen Bereichen sucht – etwa bei Arzneimittelpreisen, Verwaltung oder vermeidbaren Klinikaufenthalten – oder wenn kleine Häuser zwar erhalten bleiben, aber mit schmalerem Angebot und günstigerer Struktur.
+    titel: Viele Kliniken erhalten und die Ausgaben begrenzen
+    text: Krankenhäuser sind der größte Ausgabenblock der gesetzlichen Krankenversicherung. Viele kleine Standorte mit eigener Notaufnahme, Technik und Bereitschaftsdiensten sind in der Regel teurer als weniger, größere Standorte. Wer zugleich die Ausgaben bremsen will, muss deshalb an anderer Stelle mehr sparen.
+    aufloesung: Beides passt zusammen, wenn man die Einsparungen bewusst in anderen Bereichen sucht, etwa bei Arzneimittelpreisen, in der Verwaltung oder bei vermeidbaren Klinikaufenthalten. Möglich ist auch, kleine Häuser zu erhalten, ihnen aber ein schmaleres Angebot und eine günstigere Struktur zu geben.
   - id: pflegevollversicherung-und-ausgaben-begrenzen
     wenn:
       - { frage: pflege-eigenanteile, option: vollversicherung }
       - { frage: finanzierung-kostenanstieg, option: ausgaben-begrenzen }
-    titel: Volle Pflegekosten übernehmen – und insgesamt sparen
-    text: Eine Pflegevollversicherung würde Pflegebedürftige stark entlasten, aber die Ausgaben der Sozialversicherung deutlich erhöhen. Gleichzeitig sollen die Ausgaben im Gesundheitswesen gebremst werden. Kranken- und Pflegeversicherung sind zwar getrennte Kassen, werden aber beide überwiegend aus Beiträgen auf Löhne bezahlt.
-    aufloesung: Wer beides will, kann bewusst umschichten – mehr Geld für Pflege, weniger für andere Leistungen – oder die Vollversicherung über Steuern statt Beiträge finanzieren. Es ist eine Prioritätenfrage, kein Widerspruch.
+    titel: Volle Pflegekosten übernehmen und insgesamt sparen
+    text: Eine Pflegevollversicherung würde Pflegebedürftige stark entlasten, die Ausgaben der Sozialversicherung aber deutlich erhöhen. Gleichzeitig sollen die Ausgaben im Gesundheitswesen gebremst werden. Kranken- und Pflegeversicherung sind zwar getrennte Kassen, werden aber beide überwiegend aus Beiträgen auf Löhne bezahlt.
+    aufloesung: Wer beides will, kann bewusst umschichten, also mehr Geld für die Pflege und weniger für andere Leistungen ausgeben. Oder man finanziert die Vollversicherung über Steuern statt über Beiträge. Das ist eine Frage der Prioritäten, kein Widerspruch.
   - id: bessere-bezahlung-und-ausgaben-begrenzen
     wenn:
       - { frage: fachkraefte-pflege, option: bezahlung }
       - { frage: finanzierung-kostenanstieg, option: ausgaben-begrenzen }
-    titel: Pflegekräfte besser bezahlen – und die Ausgaben bremsen
-    text: Personalkosten sind in Krankenhäusern und Pflegeheimen der größte Kostenblock. Höhere Löhne kommen am Ende über Beiträge, Eigenanteile oder Steuern bei den Versicherten an.
-    aufloesung: Das lässt sich verbinden, wenn bessere Bezahlung an anderer Stelle Kosten senkt – zum Beispiel weniger teure Leiharbeit, weniger Ausfälle und länger im Beruf bleibende Fachkräfte – oder wenn man bewusst in Kauf nimmt, dass Pflege mehr kostet, und dafür anderswo spart.
+    titel: Pflegekräfte besser bezahlen und die Ausgaben bremsen
+    text: Personalkosten sind in Krankenhäusern und Pflegeheimen der größte Kostenblock. Höhere Löhne landen über Beiträge, Eigenanteile oder Steuern bei den Versicherten.
+    aufloesung: Das lässt sich verbinden, wenn bessere Bezahlung an anderer Stelle Kosten senkt, zum Beispiel durch weniger teure Leiharbeit, weniger Ausfälle und Fachkräfte, die länger im Beruf bleiben. Man kann auch bewusst in Kauf nehmen, dass Pflege mehr kostet, und dafür anderswo sparen.
   - id: opt-in-und-forschungsstandort
     wenn:
       - { frage: digitalisierung-gesundheitsdaten, option: opt-in }
       - { frage: arzneimittel-preise, option: zugang-standort }
-    titel: Daten nur mit Zustimmung – und ein starker Forschungsstandort
-    text: Forschende Unternehmen und Universitäten nennen den Zugang zu großen, vollständigen Gesundheitsdatensätzen als wichtigen Standortfaktor. Wenn Daten nur mit ausdrücklicher Zustimmung genutzt werden, nehmen erfahrungsgemäß weniger Menschen teil, und die Datensätze werden kleiner und weniger repräsentativ.
-    aufloesung: Beides passt zusammen, wenn man Standortpolitik über andere Wege betreibt – Förderung, schnelle Zulassungsverfahren, klinische Studien – oder wenn die Zustimmung so einfach und vertrauenswürdig gestaltet wird, dass trotzdem viele mitmachen.
+    titel: Daten nur mit Zustimmung und ein starker Forschungsstandort
+    text: Forschende Unternehmen und Universitäten bezeichnen den Zugang zu großen, vollständigen Gesundheitsdatensätzen als wichtigen Standortfaktor. Wenn Daten nur mit ausdrücklicher Zustimmung genutzt werden, nehmen erfahrungsgemäß weniger Menschen teil, und die Datensätze werden kleiner und weniger repräsentativ.
+    aufloesung: Beides passt zusammen, wenn man den Standort auf anderen Wegen stärkt, etwa durch Förderung, schnelle Zulassungsverfahren und klinische Studien. Möglich ist auch, die Zustimmung so einfach und vertrauenswürdig zu gestalten, dass trotzdem viele mitmachen.
   - id: buendeln-und-landarzt-anreize
     wenn:
       - { frage: krankenhaus-standorte, option: buendeln }
       - { frage: ambulant-land, option: anreize }
-    titel: Kliniken bündeln – und auf dem Land vor allem auf Anreize für Praxen setzen
-    text: Wenn Krankenhausleistungen auf weniger Standorte konzentriert werden, werden die Wege in ländlichen Regionen länger. Umso wichtiger wird die Versorgung vor Ort durch Praxen. Ob finanzielle Anreize allein genug Ärztinnen und Ärzte aufs Land bringen, ist umstritten – und sie wirken erst, wenn sich jemand tatsächlich niederlässt.
-    aufloesung: Das lässt sich verbinden, wenn die Bündelung zeitlich an den Ausbau der ambulanten Versorgung gekoppelt wird – oder wenn Anreize mit anderen Bausteinen wie Telemedizin, Rettungsdienst und umgewandelten Klinikstandorten kombiniert werden.
+    titel: Kliniken bündeln und auf dem Land vor allem auf Anreize für Praxen setzen
+    text: Wenn Krankenhausleistungen auf weniger Standorte konzentriert werden, werden die Wege in ländlichen Regionen länger. Umso wichtiger wird die Versorgung vor Ort durch Praxen. Ob finanzielle Anreize allein genug Ärztinnen und Ärzte aufs Land bringen, ist umstritten. Zudem wirken sie erst, wenn sich jemand tatsächlich niederlässt.
+    aufloesung: Das lässt sich verbinden, wenn die Bündelung zeitlich an den Ausbau der ambulanten Versorgung gekoppelt wird oder wenn die Anreize mit anderen Bausteinen wie Telemedizin, Rettungsdienst und umgewandelten Klinikstandorten kombiniert werden.

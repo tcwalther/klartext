@@ -41,6 +41,27 @@ Jede Quelle braucht `id`, `titel`, `herausgeber`, `jahr`, `art` und möglichst e
 - `gewinnt` / `kostet`: konkrete Gruppen oder Güter in Stichworten, z. B. „Beitragszahler“, „Patienten auf dem Land“, „Versorgungsqualität bei komplexen Eingriffen“.
 - Zahlen mit Stand-Jahr angeben. Deutsche Schreibweise: 1.234,5.
 
+### Sprache: sachlich, genau, unaufgeregt
+
+Klartext soll klingen wie ein gutes Sachbuch oder ein sorgfältiger Zeitungsartikel – nicht wie Werbung und nicht wie ein Chatbot. Maßstab: Ein Deutschlehrer liest den Text und hat nichts anzustreichen.
+
+**Vermeiden – typische Muster maschinell geschriebener Texte:**
+- Griffige Werbe-Untertitel, die nichts aussagen („Drei Bilder, die fast jede Debatte erklären.“). Ein Untertitel sagt, was folgt – oder er fällt weg.
+- Der Gedankenstrich als Allzweckwerkzeug („X – und Y“, „Am Ende zahlt immer jemand – …“). Höchstens einer pro Absatz, und nur, wo ein Komma, Punkt oder Doppelpunkt schlechter wäre.
+- Dreierreihen aus Gewohnheit („schnell, einfach, verständlich“), „nicht nur …, sondern auch …“, rhetorische Fragen, Pathos („entscheidend“, „zentral“, „Kernfrage“, „Spannungsfeld“, „im Fokus“).
+- Doppelpunkt-Sätze mit Pointe („Die Antwort: …“), Sätze, die mit „Denn“ oder „Und“ beginnen, um Spannung zu erzeugen.
+- Übertriebener Fettdruck. Fett nur für den einen Begriff, um den es in der Aussage geht – oder gar nicht.
+- Anglizismen und Denglisch, wo es ein gängiges deutsches Wort gibt.
+- Füllwörter und Weichmacher („durchaus“, „letztlich“, „im Grunde“, „quasi“, „ein Stück weit“).
+
+**Stattdessen:**
+- Vollständige, grammatisch saubere Sätze; Subjekt und Verb nah beieinander; ein Gedanke pro Satz.
+- Konkrete Verben statt Substantivketten („Die Kassen zahlen weniger“ statt „Es kommt zu einer Reduktion der Ausgaben seitens der Kassen“).
+- Korrekte Zeichensetzung (Kommas vor Nebensätzen und erweiterten Infinitiven), deutsche Anführungszeichen „…“, Gedankenstrich „–“ mit Leerzeichen, Bindestrich ohne.
+- Positionen in indirekter Rede stehen im Konjunktiv I („Der Verband sagt, die Reform gehe zu weit“); Konjunktiv II nur, wo Konjunktiv I und Indikativ gleich lauten („…, die Kliniken hätten zu wenig Geld“).
+- Einheitliche Anrede: Die Oberfläche duzt; Sachtexte sprechen niemanden an.
+- Gleiche Dinge gleich benennen (nicht abwechselnd „Kassen“, „Krankenversicherungen“, „GKV“ ohne Grund).
+
 ## 5. Die Zwiebel – Ebenen einer Frage
 
 0. **Frage** + Optionen in je einem Satz

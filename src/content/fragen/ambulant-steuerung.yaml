@@ -3,15 +3,15 @@ reihenfolge: 1
 status: entwurf
 stand: "2026-11-25"
 titel: Wer entscheidet, zu welchem Arzt man geht?
-frage: Soll man weiterhin selbst entscheiden, ob man zuerst zur Hausärztin oder direkt zum Facharzt geht – oder soll der erste Weg verbindlich über die Hausarztpraxis oder eine Ersteinschätzung führen?
+frage: Soll man weiterhin selbst entscheiden, ob man zuerst zur Hausärztin oder direkt zum Facharzt geht, oder soll der erste Weg verbindlich über die Hausarztpraxis oder eine Ersteinschätzung führen?
 
 optionen:
   - id: freie-wahl
     titel: Freie Arztwahl wie bisher
-    kurz: Patientinnen und Patienten gehen weiter selbst direkt zu jeder Fachärztin, ohne Überweisung.
+    kurz: Patientinnen und Patienten gehen weiterhin ohne Überweisung direkt zu jeder Fachärztin und jedem Facharzt.
     pro:
       - typ: wertung
-        text: Wer seine Beschwerden kennt, kommt ohne Umweg zur passenden Fachpraxis. Das spart einen Termin und Zeit.
+        text: Wer seine Beschwerden kennt, kommt ohne Umweg zur passenden Fachpraxis. Das spart einen zusätzlichen Termin und damit Zeit.
       - typ: wertung
         text: Selbstbestimmung ist ein Wert für sich. Erwachsene sollen selbst entscheiden, wem sie ihre Gesundheit anvertrauen.
       - typ: position
@@ -24,25 +24,25 @@ optionen:
       - typ: wertung
         text: Niemand hat den Überblick über alle Befunde und Medikamente einer Person, wenn sie viele Praxen parallel besucht.
     gewinnt: [Wahlfreiheit der Versicherten, schneller Direktzugang für Menschen mit klarer Diagnose, Fachpraxen]
-    kostet: [Termine für Menschen, die dringend einen Facharzt brauchen, Koordination der Behandlung]
+    kostet: ["Termine für Menschen, die dringend einen Facharzt brauchen", Koordination der Behandlung]
 
   - id: primaerarzt
     titel: Verbindliches Primärarztsystem
-    kurz: Der erste Weg führt in der Regel zur Hausarztpraxis oder über eine telefonische bzw. digitale Ersteinschätzung, die dann gezielt weiterleitet.
+    kurz: Der erste Weg führt in der Regel zur Hausarztpraxis oder über eine telefonische oder digitale Ersteinschätzung, die dann gezielt weiterleitet.
     pro:
       - typ: wertung
         text: Eine feste Anlaufstelle behält den Überblick über Diagnosen und Medikamente. Das kann Doppeluntersuchungen und Wechselwirkungen vermeiden.
       - typ: wertung
-        text: Facharzttermine gehen gezielter an die, die sie wirklich brauchen. Wartezeiten können sich nach Dringlichkeit richten statt nach Zufall.
+        text: Facharzttermine gehen gezielter an Menschen, die sie wirklich brauchen. Wartezeiten können sich nach Dringlichkeit richten statt nach Zufall.
       - typ: position
         wer: Bundesgesundheitsministerium (damals Nina Warken, CDU, Januar 2026)
         text: Das geplante Primärversorgungssystem sei „kein Spargesetz“, sondern solle vorhandene Kapazitäten besser nutzen.
         quellen: [kbv-primaerversorgung-2026]
     contra:
       - typ: wertung
-        text: Hausarztpraxen sind vielerorts schon heute voll. Eine Pflicht-Station könnte zum Engpass werden statt zur Entlastung.
+        text: Hausarztpraxen sind vielerorts schon heute voll. Eine verpflichtende erste Anlaufstelle könnte zum Engpass werden, statt zu entlasten.
       - typ: wertung
-        text: Ein zusätzlicher Termin vor dem Facharzt kostet Zeit – besonders für Menschen, die ihr Problem und ihre Fachärztin längst kennen.
+        text: Ein zusätzlicher Termin vor dem Facharztbesuch kostet Zeit, besonders für Menschen, die ihr Problem und ihre Fachärztin längst kennen.
       - typ: position
         wer: Sozialverband VdK (Verena Bentele)
         text: Patientinnen und Patienten bräuchten Orientierung statt Sanktionen. Wenn die Arztwahl eingeschränkt werde, müsse das fair bleiben und evaluiert werden.
@@ -52,21 +52,21 @@ optionen:
 
   - id: hausarzttarif
     titel: Freiwillige Hausarzttarife mit Bonus
-    kurz: Wer sich freiwillig verpflichtet, zuerst zur Hausarztpraxis zu gehen, bekommt einen Vorteil – alle anderen behalten den Direktzugang.
+    kurz: Wer sich freiwillig verpflichtet, zuerst zur Hausarztpraxis zu gehen, bekommt einen Vorteil. Alle anderen behalten den Direktzugang.
     pro:
       - typ: wertung
-        text: Niemand wird gezwungen. Wer Steuerung will, bekommt sie; wer frei wählen will, kann das weiter.
+        text: Niemand wird gezwungen. Wer Steuerung will, bekommt sie. Wer frei wählen will, kann das weiterhin.
       - typ: fakt
         text: Solche Programme gibt es schon. An der **hausarztzentrierten Versorgung (HzV)** nehmen nach Angaben des Hausärztinnen- und Hausärzteverbands rund 11 Millionen Versicherte freiwillig teil (Stand April 2026).
         quellen: [haev-hzv-2026]
     contra:
       - typ: position
         wer: Techniker Krankenkasse
-        text: Die TK hat 2026 14 HzV-Verträge gekündigt. Eine von ihr zitierte Evaluation zeige keine weniger Facharztkontakte oder Klinikaufenthalte, aber Mehrkosten von rund 160 Millionen Euro im Jahr für die TK.
+        text: Die TK hat 2026 insgesamt 14 HzV-Verträge gekündigt. Nach einer von ihr zitierten Evaluation gebe es weder weniger Facharztkontakte noch weniger Klinikaufenthalte, wohl aber Mehrkosten von rund 160 Millionen Euro im Jahr für die TK.
         quellen: [tk-hzv-2026]
       - typ: wertung
-        text: Freiwillig machen vor allem die mit, die ohnehin ihre Hausarztpraxis nutzen. Die Steuerungswirkung auf alle anderen bleibt dann klein.
-    gewinnt: [Wahlfreiheit, Versicherte, die Steuerung wünschen, teilnehmende Hausarztpraxen]
+        text: Freiwillig machen vor allem Menschen mit, die ohnehin ihre Hausarztpraxis nutzen. Die Steuerungswirkung auf alle anderen bleibt dann klein.
+    gewinnt: [Wahlfreiheit, "Versicherte, die eine Steuerung wünschen", teilnehmende Hausarztpraxen]
     kostet: [Beitragszahler (Bonus und Zusatzvergütung), Steuerungswirkung im Gesamtsystem]
 
 erklaerung:
@@ -75,10 +75,10 @@ erklaerung:
     quellen: [kbv-primaerversorgung-2026]
   - typ: fakt
     text: Den größeren Teil der Arbeit tragen die Fachpraxen. Auf einen Behandlungsfall in der Hausarztpraxis kommen fast zwei bei Fachärzten.
-    genau: 2024 wurden in den Arztpraxen rund 579 Millionen **Behandlungsfälle** abgerechnet, davon 188 Millionen in Hausarztpraxen und 328 Millionen bei Fachärzten. Ein Behandlungsfall heißt eine Person, eine Praxis, ein Quartal.
+    genau: 2024 wurden in den Arztpraxen rund 579 Millionen **Behandlungsfälle** abgerechnet, davon 188 Millionen in Hausarztpraxen und 328 Millionen bei Fachärzten. Ein Behandlungsfall umfasst alle Besuche einer Person in einer Praxis innerhalb eines Quartals.
     quellen: [zi-trendreport-2024]
   - typ: wertung
-    text: Freier Zugang hat zwei Seiten. Wer seine Diagnose kennt, spart sich einen Umweg. Gleichzeitig hat oft niemand den Überblick über alle Befunde und Medikamente einer Person, und knappe Facharzttermine gehen eher an die, die zuerst anrufen, als an die, die sie am dringendsten brauchen.
+    text: Freier Zugang hat zwei Seiten. Wer seine Diagnose kennt, spart sich einen Umweg. Gleichzeitig hat oft niemand den Überblick über alle Befunde und Medikamente einer Person, und knappe Facharzttermine gehen eher an Menschen, die zuerst anrufen, als an jene, die sie am dringendsten brauchen.
   - typ: fakt
     text: Union und SPD wollen ein **Primärarztsystem** einführen. Gemeint ist eine feste erste Anlaufstelle, meist die Hausarztpraxis, die gezielt weiterleitet. Ein Gesetzentwurf liegt noch nicht vor.
     genau: Im Koalitionsvertrag 2025 steht ein „verbindliches Primärarztsystem bei freier Arztwahl durch Haus- und Kinderärzte“. Die damalige Ministerin Nina Warken (CDU) kündigte im Januar 2026 einen Entwurf bis zum Sommer und „erste Wirkungen“ für 2028 an. Ihr Nachfolger Carsten Linnemann (CDU, Minister seit 29. Juli 2026) will das Vorhaben weiterverfolgen; einen veröffentlichten Entwurf fand die Redaktion bis Ende November 2026 nicht.
@@ -91,7 +91,7 @@ erklaerung:
 
 zielkonflikte:
   - typ: wertung
-    text: Mehr Steuerung kann knappe Facharzttermine gerechter verteilen – sie schränkt aber die Wahlfreiheit ein, die viele Versicherte schätzen.
+    text: Mehr Steuerung kann knappe Facharzttermine gerechter verteilen, schränkt aber die Wahlfreiheit ein, die viele Versicherte schätzen.
   - typ: wertung
     text: Eine starke Hausarztrolle setzt genug Hausärztinnen und Hausärzte voraus. Wo diese fehlen, kann die Steuerung selbst zum Nadelöhr werden.
   - typ: wertung
@@ -125,7 +125,7 @@ laender:
       ansatz: Hausarzt als verbindlicher Lotse, mit Wahlmöglichkeit gegen Zuzahlung
       text: Fast alle Däninnen und Dänen sind in der „Gruppe 1“. Sie sind bei einer Hausarztpraxis eingeschrieben, die sie zu den meisten Fachärzten, zur Physiotherapie und ins Krankenhaus überweist. Augen- und HNO-Ärzte sind ohne Überweisung erreichbar. Wer in „Gruppe 2“ wechselt, darf frei zu Fachärzten gehen, zahlt aber zu. Das wählt nur etwa 1 Prozent.
       vergleichbarkeit: mittel
-      vergleichbarkeit_text: Dänemark hat ein steuerfinanziertes, regional organisiertes System mit langer Hausarzt-Tradition. Deutschland hat dagegen viele niedergelassene Fachärzte und eine Kultur des Direktzugangs – die Umstellung wäre größer.
+      vergleichbarkeit_text: Dänemark hat ein steuerfinanziertes, regional organisiertes System mit langer Hausarzt-Tradition. Deutschland hat dagegen viele niedergelassene Fachärzte und eine Kultur des Direktzugangs. Die Umstellung wäre hier größer.
       quellen: [observatory-daenemark-2024]
 
 verknuepft:
@@ -134,7 +134,7 @@ verknuepft:
   - frage: digitalisierung-telemedizin
     grund: Die geplante Steuerung soll teils über telefonische und digitale Ersteinschätzung laufen.
   - frage: fachkraefte-aufgabenteilung
-    grund: Wenn Pflegekräfte mehr übernehmen, können Hausarztpraxen mehr Menschen steuern.
+    grund: Wenn Pflegekräfte mehr übernehmen, können Hausarztpraxen mehr Patientinnen und Patienten lotsen.
 
 quellen:
   - id: kbv-primaerversorgung-2026

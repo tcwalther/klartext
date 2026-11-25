@@ -4,20 +4,20 @@ eintraege:
     wenn:
       - { frage: finanzierung-kassenvielfalt, option: vielfalt-wie-bisher }
       - { frage: finanzierung-kostenanstieg, option: ausgaben-begrenzen }
-    titel: Viele Kassen behalten – und überall sparen
+    titel: Viele Kassen behalten und überall sparen
     text: Wenn Kliniken, Praxen und Hersteller sparen sollen, wird oft gefragt, ob auch die Kassen selbst schlanker werden müssen. Rund 90 Kassen bedeuten rund 90 Vorstände, Verwaltungen und Werbebudgets. Wer die Struktur unverändert lässt, nimmt diesen Bereich von der Sparrunde zumindest teilweise aus.
-    aufloesung: Beides passt zusammen, weil die Verwaltung nur knapp 4 von 100 Euro der Ausgaben ausmacht und Studien keinen klaren Zusammenhang zwischen Kassengröße und Verwaltungskosten finden. Man kann außerdem die Verwaltungsausgaben deckeln, wie es das Spargesetz von 2026 tut, ohne die Zahl der Kassen vorzuschreiben. Und man kann den Preiswettbewerb zwischen den Kassen gerade als Sparanreiz sehen.
+    aufloesung: Beides passt zusammen, weil die Verwaltung nur knapp 4 von 100 Euro der Ausgaben ausmacht und Studien keinen klaren Zusammenhang zwischen Kassengröße und Verwaltungskosten finden. Man kann außerdem die Verwaltungsausgaben deckeln, wie es das Spargesetz von 2026 tut, ohne die Zahl der Kassen vorzuschreiben. Zudem lässt sich der Preiswettbewerb zwischen den Kassen gerade als Sparanreiz sehen.
   - id: einheitskasse-und-duales-system
     wenn:
       - { frage: finanzierung-kassenvielfalt, option: einheitskasse }
       - { frage: finanzierung-versicherungssystem, option: dual-beibehalten }
-    titel: Eine Kasse für alle gesetzlich Versicherten – aber die private Versicherung bleibt
+    titel: Eine Kasse für alle gesetzlich Versicherten, aber die private Versicherung bleibt
     text: Mit einer Einheitskasse hätten gesetzlich Versicherte keine Wahl mehr zwischen Kassen. Wer gut verdient, verbeamtet oder selbstständig ist, könnte dagegen weiter zwischen der Einheitskasse und vielen privaten Versicherern wählen. Die Wahlfreiheit hinge dann noch stärker als heute von Einkommen und Beruf ab.
-    aufloesung: Das lässt sich verbinden, wenn man die Wahl zwischen Kassen für die gesetzliche Versicherung nicht für wichtig hält, weil der Leistungsanspruch ohnehin fast gleich ist, die private Versicherung aber aus anderen Gründen schätzt – etwa wegen ihrer Rücklagen für das Alter. Man kann die Einheitskasse auch als ersten Schritt sehen und die Frage nach dem dualen System später neu stellen.
+    aufloesung: Das lässt sich verbinden, wenn man die Wahl zwischen gesetzlichen Kassen nicht für wichtig hält, weil der Leistungsanspruch ohnehin fast gleich ist, die private Versicherung aber aus anderen Gründen schätzt, etwa wegen ihrer Rücklagen für das Alter. Man kann die Einheitskasse auch als ersten Schritt sehen und die Frage nach dem dualen System später neu stellen.
   - id: mehr-wettbewerb-und-primaerarzt
     wenn:
       - { frage: finanzierung-kassenvielfalt, option: mehr-wettbewerb }
       - { frage: ambulant-steuerung, option: primaerarzt }
-    titel: Mehr Freiheit für die Kassen – und ein Primärarztsystem für alle
+    titel: Mehr Freiheit für die Kassen und ein Primärarztsystem für alle
     text: Mehr Wettbewerb heißt, dass Kassen eigene Wege in der Versorgung gehen dürfen, etwa mit eigenen Hausarztmodellen. Ein verbindliches Primärarztsystem legt dagegen per Gesetz für alle fest, wie Patienten durch das System gelotst werden. Je einheitlicher die Steuerung vorgegeben ist, desto weniger Raum bleibt für unterschiedliche Modelle der Kassen.
-    aufloesung: Beides passt zusammen, wenn der Gesetzgeber nur den Grundsatz vorgibt – zuerst eine Ersteinschätzung oder Hausarztpraxis – und die Kassen die Umsetzung über eigene Verträge, Netze und digitale Angebote gestalten. So könnten sie im Wettbewerb darum stehen, wer die Steuerung am besten organisiert.
+    aufloesung: Beides passt zusammen, wenn der Gesetzgeber nur den Grundsatz vorgibt (zuerst eine Ersteinschätzung oder die Hausarztpraxis) und die Kassen die Umsetzung über eigene Verträge, Netze und digitale Angebote gestalten. Dann könnten die Kassen darum konkurrieren, wer die Steuerung am besten organisiert.

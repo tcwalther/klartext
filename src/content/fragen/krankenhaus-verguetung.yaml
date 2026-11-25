@@ -8,7 +8,7 @@ frage: "Sollen Krankenhäuser weiter vor allem je Behandlungsfall bezahlt werden
 optionen:
   - id: fallpauschalen
     titel: Fallpauschalen weiterentwickeln
-    kurz: "Das Geld folgt weiterhin der einzelnen Behandlung: Für jeden Fall gibt es einen festen Preis je nach Diagnose und Schweregrad; das System wird verfeinert statt ersetzt."
+    kurz: "Das Geld folgt weiterhin der einzelnen Behandlung. Jeder Fall hat einen festen Preis, der von Diagnose und Schweregrad abhängt; das System wird verfeinert statt ersetzt."
     pro:
       - typ: position
         wer: Verband der Privaten Krankenversicherung (PKV)
@@ -26,17 +26,17 @@ optionen:
         text: "Die rein leistungs- und mengenorientierte Vergütung erzeuge erhebliche Fehlanreize, insbesondere „eine sachlich nicht gerechtfertigte Mengenausweitung“. In Deutschland übten die Fallpauschalen wahrscheinlich den stärksten Mengenanreiz im OECD-Vergleich aus."
         quellen: [regkom-3-2022]
       - typ: wertung
-        text: "Eine Notaufnahme oder ein Kreißsaal kostet auch dann Geld, wenn wenig los ist. Häuser mit wenigen Fällen geraten so unter Druck – unabhängig davon, wie gut sie behandeln."
+        text: "Eine Notaufnahme oder ein Kreißsaal kostet auch dann Geld, wenn wenig los ist. Häuser mit wenigen Fällen geraten so unter Druck, unabhängig davon, wie gut sie behandeln."
     gewinnt: [Kliniken mit hohen Fallzahlen und effizienten Abläufen, Transparenz über Leistungen und Kosten]
     kostet: [kleine Häuser mit hohen Bereitschaftskosten, Bereiche mit schwankender Nachfrage wie Geburtshilfe und Kinderheilkunde]
 
   - id: mischsystem
     titel: Mischsystem mit Vorhaltepauschalen
-    kurz: "Ein großer Teil des Geldes fließt unabhängig von der genauen Fallzahl für das Bereithalten von Personal und Technik, der Rest weiter je Fall – so sieht es die Reform von 2024/2026 vor."
+    kurz: "Ein großer Teil des Geldes fließt unabhängig von der genauen Fallzahl für das Bereithalten von Personal und Technik, der Rest weiterhin je Fall. So sieht es die Reform von 2024/2026 vor."
     pro:
       - typ: position
         wer: Regierungskommission Krankenhausversorgung
-        text: "Leistungsanreize müssten erhalten bleiben. Daneben solle es eine Vorhaltefinanzierung geben, die an Versorgungsstufen und Leistungsgruppen gekoppelt ist."
+        text: "Leistungsanreize müssten erhalten bleiben. Daneben solle es eine Vorhaltefinanzierung geben, die an Versorgungsstufen und Leistungsgruppen gekoppelt sei."
         quellen: [regkom-3-2022]
       - typ: fakt
         text: "Nach geltendem Recht werden 60 % der Kosten einer Behandlung (ohne Materialkosten wie Implantate, die Pflegepersonalkosten mitgerechnet) aus den Fallpauschalen herausgelöst und als **Vorhaltebudget** gezahlt."
@@ -50,7 +50,7 @@ optionen:
         quellen: [dkg-khvvg-2024]
       - typ: position
         wer: Deutscher Landkreistag
-        text: "Die Idee einer echten Vorhaltefinanzierung sei richtig, die fallzahlabhängige Ausgestaltung aber „ein grundsätzlich ungeeignetes Instrument“. Daran ändere auch die Verschiebung nichts."
+        text: "Die Idee einer echten Vorhaltefinanzierung sei richtig, die fallzahlabhängige Ausgestaltung aber „ein grundsätzlich ungeeignetes Instrument“. Daran ändere auch die zeitliche Verschiebung nichts."
         quellen: [dlt-khag-2025]
       - typ: wertung
         text: "Ein zweites Abrechnungssystem neben den Fallpauschalen macht die Finanzierung komplizierter und schwerer zu überprüfen."
@@ -59,11 +59,11 @@ optionen:
 
   - id: budgets
     titel: Budgets nach tatsächlichen Kosten
-    kurz: "Jedes Krankenhaus bekommt ein festes Budget, das seine nachgewiesenen, notwendigen Kosten deckt – wie früher allgemein und heute schon beim Pflegepersonal."
+    kurz: "Jedes Krankenhaus bekommt ein festes Budget, das seine nachgewiesenen, notwendigen Kosten deckt. So war es früher allgemein, und so ist es heute schon beim Pflegepersonal."
     pro:
       - typ: position
         wer: ver.di (Vereinte Dienstleistungsgewerkschaft)
-        text: "ver.di fordert die Abschaffung des DRG-Systems. Es solle durch eine Finanzierung ersetzt werden, die sich an den tatsächlichen Bedarfen der Patientinnen und Patienten orientiert, und unterstützt die Wiedereinführung des Selbstkostendeckungsprinzips."
+        text: "ver.di fordert, das DRG-System abzuschaffen. Es solle durch eine Finanzierung ersetzt werden, die sich am tatsächlichen Bedarf der Patientinnen und Patienten orientiere. Die Gewerkschaft unterstützt außerdem die Wiedereinführung des Selbstkostendeckungsprinzips."
         quellen: [verdi-2021]
       - typ: fakt
         text: "Für das Pflegepersonal am Bett gilt das Prinzip bereits: Seit 2020 werden diese Kosten außerhalb der Fallpauschalen über ein krankenhausindividuelles **Pflegebudget** nach dem Selbstkostendeckungsprinzip bezahlt."
@@ -73,7 +73,7 @@ optionen:
     contra:
       - typ: position
         wer: Regierungskommission Krankenhausversorgung
-        text: "Auch eine ausschließlich leistungsunabhängige Vergütung – etwa ein zu 100 % garantiertes Budget oder Selbstkostendeckung – setze Fehlanreize und löse erhebliche Risiken für die Versorgung sowie finanzielle Risiken für die Krankenkassen aus."
+        text: "Auch eine ausschließlich leistungsunabhängige Vergütung, etwa ein zu 100 % garantiertes Budget oder die Selbstkostendeckung, setze Fehlanreize und löse erhebliche Risiken für die Versorgung sowie finanzielle Risiken für die Krankenkassen aus."
         quellen: [regkom-3-2022]
       - typ: position
         wer: GKV-Spitzenverband
@@ -87,7 +87,7 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: "Krankenhäuser haben zwei Geldgeber: Die **Bundesländer** sollen Neubauten und Geräte bezahlen, die **Krankenkassen** die laufende Behandlung. Für die Kassen ist das der größte Posten – fast jeder dritte Euro geht ins Krankenhaus."
+    text: "Krankenhäuser haben zwei Geldgeber. Die Bundesländer sollen Neubauten und Geräte bezahlen, die Krankenkassen die laufende Behandlung. Für die Kassen ist das der größte Ausgabenposten: Fast jeder dritte Euro geht ins Krankenhaus."
     quellen: [gkv-sv-fokus-finanzierung, khg-4, bmg-kv45-2025]
     genau: "Diese „duale Finanzierung“ gilt seit 1972. 2025 gaben die gesetzlichen Krankenkassen rund 111,4 Mrd. € für Krankenhausbehandlung aus, rund 31,6 % ihrer Ausgaben (vorläufige Rechnungsergebnisse)."
   - typ: fakt
@@ -104,17 +104,17 @@ erklaerung:
     quellen: [gkv-sv-pflegebudget]
     genau: "Der GKV-Spitzenverband nennt das Pflegebudget die tiefgreifendste Veränderung seit Einführung der Fallpauschalen."
   - typ: fakt
-    text: "Die Reform von 2024 fügt ein **Vorhaltebudget** hinzu: Geld dafür, dass eine Klinik eine Leistung überhaupt bereithält – unabhängig davon, wie viele Fälle sie hat. Damit hängt weniger Geld an der Fallzahl. Wirksam wird das aber erst gegen Ende des Jahrzehnts."
+    text: "Die Reform von 2024 fügt ein **Vorhaltebudget** hinzu. Es bezahlt dafür, dass eine Klinik eine Leistung überhaupt bereithält, unabhängig davon, wie viele Fälle sie hat. Damit hängt weniger Geld an der Fallzahl. Wirksam wird das aber erst gegen Ende des Jahrzehnts."
     quellen: [bt-drs-21-2512, khentgg-6b, khg-17b]
     genau: "2026 und 2027 ändern sich die Budgets noch nicht, 2028 und 2029 folgt der Übergang, ab 2030 wirkt das Vorhaltebudget voll (Verschiebung durch das KHAG von 2026). Als Vorhalteanteil gelten 60 % der Kosten ohne variable Sachkosten; die Pflegepersonalkosten werden darauf angerechnet."
   - typ: wertung
-    text: "Die Kernfrage lautet: Soll das Geld der einzelnen Behandlung folgen, dem Bereithalten von Versorgung oder den tatsächlichen Kosten einer Klinik? Jedes Modell setzt andere Anreize – zwischen Effizienz, Mengenausweitung und Sicherheit für die Klinik."
+    text: "Strittig ist, ob das Geld der einzelnen Behandlung folgen soll, dem Bereithalten von Versorgung oder den tatsächlichen Kosten einer Klinik. Jedes Modell gewichtet Effizienz, den Anreiz zur Mengenausweitung und die finanzielle Sicherheit der Klinik anders."
 
 zielkonflikte:
   - typ: wertung
-    text: "**Effizienz gegen Sicherheit.** Je stärker Geld an Fälle gebunden ist, desto mehr lohnt sich effizientes Arbeiten – aber auch das Ausweiten lukrativer Behandlungen. Je stärker Kosten garantiert sind, desto sicherer ist die Klinik – aber desto geringer der Druck, wirtschaftlich zu arbeiten."
+    text: "**Effizienz gegen Sicherheit.** Je stärker Geld an Fälle gebunden ist, desto mehr lohnt sich effizientes Arbeiten, aber auch das Ausweiten lukrativer Behandlungen. Je stärker Kosten garantiert sind, desto sicherer ist die Klinik, aber desto geringer ist der Druck, wirtschaftlich zu arbeiten."
   - typ: wertung
-    text: "**Umverteilen oder mehr Geld?** Ein neues Bezahlsystem verteilt zunächst die vorhandenen Mittel anders. Ob insgesamt mehr Geld nötig ist, ist eine eigene Frage – und betrifft Beitrags- und Steuerzahler."
+    text: "**Verteilung und Höhe sind zwei Fragen.** Ein neues Bezahlsystem verteilt zunächst die vorhandenen Mittel anders. Ob insgesamt mehr Geld nötig ist, muss getrennt entschieden werden. Diese Frage betrifft Beitrags- und Steuerzahler."
   - typ: wertung
     text: "**Genauigkeit gegen Bürokratie.** Je genauer ein System Aufwand abbildet, desto mehr muss dokumentiert, kodiert und geprüft werden."
   - typ: fakt
@@ -202,7 +202,7 @@ daten:
       text: "Ob der Anstieg der Fallzahlen vor allem an den Fallpauschalen lag oder an einer älteren Bevölkerung und medizinischem Fortschritt, ist umstritten. Die Daten allein beantworten das nicht."
     - typ: position
       wer: GKV-Spitzenverband, PKV-Verband und Deutsche Krankenhausgesellschaft (gemeinsam)
-      text: "Der bestandserhaltende Investitionsbedarf der Krankenhäuser liege bei rund 6,5 Milliarden Euro pro Jahr; die Länder deckten seit Jahren nur etwa die Hälfte. Anfang der 1970er-Jahre hätten die Investitionsmittel 25 % der GKV-Ausgaben entsprochen, heute deutlich unter 4 %."
+      text: "Der bestandserhaltende Investitionsbedarf der Krankenhäuser liege bei rund 6,5 Milliarden Euro pro Jahr; die Länder deckten seit Jahren nur etwa die Hälfte. Anfang der 1970er-Jahre hätten die Investitionsmittel 25 % der GKV-Ausgaben entsprochen, heute seien es deutlich unter 4 %."
       quellen: [gemeinsame-pm-invest-2024]
 
 geschichte:
@@ -237,14 +237,14 @@ geschichte:
       quellen: [bt-drs-21-2512, khentgg-6b]
     - jahr: "2026"
       titel: KHAG verschiebt Vorhaltevergütung
-      text: "Das Krankenhausreformanpassungsgesetz tritt am 15. April 2026 in Kraft. Es verschiebt die Vorhaltevergütung um ein Jahr: volle Wirkung erst ab 2030."
+      text: "Das Krankenhausreformanpassungsgesetz tritt am 15. April 2026 in Kraft. Es verschiebt die Vorhaltevergütung um ein Jahr; voll wirksam wird sie erst ab 2030."
       quellen: [bmg-khag-verfahren, bt-drs-21-2512]
   bilanz:
     - typ: fakt
-      text: "Die Verweildauer hat sich seit 1991 halbiert. Sie sank allerdings schon vor 2003 deutlich – also auch unter Tagessätzen und Budgetdeckel."
+      text: "Die Verweildauer hat sich seit 1991 halbiert. Sie sank allerdings schon vor 2003 deutlich, also bereits zur Zeit der Tagessätze und des Budgetdeckels."
       quellen: [destatis-grunddaten-2021]
     - typ: wertung
-      text: "Deutschland hat in 50 Jahren fast alle Grundmodelle ausprobiert: Kostenerstattung, Budgetdeckel, Fallpauschalen und nun ein Mischsystem. Jedes Modell wurde eingeführt, um Probleme des vorherigen zu lösen – und hat eigene Nebenwirkungen erzeugt."
+      text: "Deutschland hat in 50 Jahren fast alle Grundmodelle ausprobiert: Kostenerstattung, Budgetdeckel, Fallpauschalen und nun ein Mischsystem. Jedes Modell wurde eingeführt, um Probleme des vorherigen zu lösen, und erzeugte eigene Nebenwirkungen."
     - typ: wertung
       text: "Wie das neue Vorhaltebudget wirkt, lässt sich frühestens ab 2028 beobachten, wenn es tatsächlich Geld verteilt."
 
@@ -278,11 +278,11 @@ verknuepft:
   - frage: krankenhaus-standorte
     grund: "Ob sich kleine Häuser halten können, hängt stark davon ab, ob Geld je Fall oder für das Bereithalten fließt."
   - frage: krankenhaus-traeger
-    grund: "Gewinne und Verluste eines Krankenhauses entstehen innerhalb des Bezahlsystems – das prägt, für welche Träger sich ein Haus lohnt."
+    grund: "Gewinne und Verluste eines Krankenhauses entstehen innerhalb des Bezahlsystems. Das prägt, für welche Träger sich ein Haus lohnt."
   - frage: finanzierung-kostenanstieg
     grund: "Krankenhausausgaben sind der größte Posten der gesetzlichen Krankenversicherung."
   - frage: fachkraefte-pflege
-    grund: "Das Pflegebudget bezahlt Pflegepersonal nach tatsächlichen Kosten – mit Folgen für Stellen und Beiträge."
+    grund: "Das Pflegebudget bezahlt Pflegepersonal nach tatsächlichen Kosten. Das hat Folgen für Stellen und Beiträge."
   - frage: ambulant-steuerung
     grund: "Wie stationäre Behandlungen bezahlt werden, beeinflusst, was ambulant oder im Krankenhaus gemacht wird."
 

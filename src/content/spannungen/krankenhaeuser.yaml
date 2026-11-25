@@ -7,7 +7,7 @@ eintraege:
         option: fallpauschalen
     titel: Kleine Häuser und Bezahlung je Fall
     text: "Diese Antworten verbinden den Wunsch, möglichst viele wohnortnahe Krankenhäuser zu erhalten, mit der Bezahlung je Behandlungsfall. Kleine Häuser haben aber oft wenige Fälle und trotzdem feste Kosten für Notaufnahme und Bereitschaft rund um die Uhr. Bei reinen Fallpauschalen fällt es ihnen deshalb schwerer, wirtschaftlich zu bestehen."
-    aufloesung: "Beides lässt sich verbinden, wenn das Fallpauschalensystem gezielte Zuschläge für Häuser enthält, die für die Versorgung einer Region notwendig sind – so wie es heute schon Sicherstellungszuschläge für ländliche Krankenhäuser gibt. Wer so denkt, hält die Fallpauschale als Grundprinzip für richtig und will Ausnahmen bewusst und begrenzt regeln."
+    aufloesung: "Beides lässt sich verbinden, wenn das Fallpauschalensystem gezielte Zuschläge für Häuser enthält, die für die Versorgung einer Region notwendig sind. Solche Sicherstellungszuschläge für ländliche Krankenhäuser gibt es schon heute. Wer so denkt, hält die Fallpauschale als Grundprinzip für richtig und will Ausnahmen bewusst und begrenzt regeln."
 
   - id: buendeln-und-budgets
     wenn:
@@ -16,7 +16,7 @@ eintraege:
       - frage: krankenhaus-verguetung
         option: budgets
     titel: Bündeln und Kosten decken
-    text: "Diese Antworten verbinden die Bündelung auf weniger Standorte mit der Erstattung der tatsächlichen Kosten. Ein Budget, das die Kosten jedes bestehenden Hauses deckt, nimmt aber einen Teil des wirtschaftlichen Drucks, der heute mit dazu führt, dass sich Häuser zusammenschließen oder Abteilungen aufgeben."
+    text: "Diese Antworten verbinden die Bündelung auf weniger Standorte mit der Erstattung der tatsächlichen Kosten. Ein Budget, das die Kosten jedes bestehenden Hauses deckt, nimmt aber einen Teil des wirtschaftlichen Drucks weg, der heute dazu beiträgt, dass sich Häuser zusammenschließen oder Abteilungen aufgeben."
     aufloesung: "Das passt zusammen, wenn die Bündelung nicht über wirtschaftlichen Druck, sondern über eine verbindliche Planung geschieht: Zuerst wird festgelegt, welche Standorte welche Aufgaben haben, und dann bekommen genau diese ein kostendeckendes Budget. Dänemark ist ein Beispiel für eine geplante Zentralisierung mit Budgets statt Fallpauschalen."
 
   - id: wettbewerb-und-wohnortnah
@@ -27,4 +27,4 @@ eintraege:
         option: wohnortnah-erhalten
     titel: Wettbewerb und Häuser in der Fläche
     text: "Diese Antworten verbinden mehr Wettbewerb zwischen den Trägern mit dem Erhalt vieler wohnortnaher Häuser. Kleine Krankenhäuser in dünn besiedelten Regionen sind aber oft nicht rentabel. Ein Träger, der wirtschaftlich entscheiden muss, wird solche Standorte eher umbauen oder aufgeben."
-    aufloesung: "Beides lässt sich vereinbaren, wenn die Versorgung in der Fläche ausdrücklich als Auftrag vergeben und dafür bezahlt wird – unabhängig davon, wem das Haus gehört. Dann können auch private Träger wohnortnahe Häuser wirtschaftlich betreiben, und der Wettbewerb dreht sich darum, wer diesen Auftrag am besten erfüllt."
+    aufloesung: "Beides lässt sich vereinbaren, wenn die Versorgung in der Fläche ausdrücklich als Auftrag vergeben und dafür bezahlt wird, unabhängig davon, wem das Haus gehört. Dann können auch private Träger wohnortnahe Häuser wirtschaftlich betreiben, und der Wettbewerb dreht sich darum, wer diesen Auftrag am besten erfüllt."

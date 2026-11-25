@@ -1,14 +1,14 @@
 # Die Bereiche des Themas Gesundheit. Die Reihenfolge bestimmt die Anzeige.
 - id: finanzierung
   titel: Finanzierung
-  kurz: Wer zahlt wie viel – Beiträge, Steuern, gesetzlich und privat versichert.
+  kurz: "Wer wie viel zahlt: Beiträge, Steuern, gesetzliche und private Versicherung."
   reihenfolge: 1
 - id: krankenhaeuser
   titel: Krankenhäuser
-  kurz: Wie viele Kliniken, wo, und wie sie bezahlt werden.
+  kurz: Wie viele Kliniken es gibt, wo sie stehen und wie sie bezahlt werden.
   reihenfolge: 2
 - id: ambulant
-  titel: Arztpraxen & ambulante Versorgung
+  titel: Arztpraxen und ambulante Versorgung
   kurz: Termine, Wartezeiten, Hausärzte, Versorgung auf dem Land.
   reihenfolge: 3
 - id: pflege
@@ -21,7 +21,7 @@
   reihenfolge: 5
 - id: praevention
   titel: Prävention
-  kurz: Krankheiten vermeiden statt behandeln – Rolle von Staat und Einzelnem.
+  kurz: "Krankheiten vermeiden statt behandeln: die Rolle von Staat und Einzelnem."
   reihenfolge: 6
 - id: digitalisierung
   titel: Digitalisierung
@@ -29,5 +29,5 @@
   reihenfolge: 7
 - id: fachkraefte
   titel: Fachkräfte
-  kurz: Genug Ärztinnen, Pflegekräfte und Therapeuten – heute und morgen.
+  kurz: Ob es heute und künftig genug Ärztinnen, Pflegekräfte und Therapeuten gibt.
   reihenfolge: 8

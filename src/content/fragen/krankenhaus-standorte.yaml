@@ -2,7 +2,7 @@ bereich: krankenhaeuser
 reihenfolge: 1
 status: entwurf
 stand: "2026-11-25"
-titel: Wie viele Krankenhäuser – und wo?
+titel: Wie viele Krankenhäuser und an welchen Standorten?
 frage: "Soll Deutschland seine Krankenhausversorgung stärker auf weniger, spezialisierte Standorte bündeln, möglichst viele wohnortnahe Häuser erhalten oder kleine Häuser in ambulant-stationäre Versorgungszentren umwandeln?"
 
 optionen:
@@ -11,25 +11,25 @@ optionen:
     kurz: "Komplexe und planbare Behandlungen sollen in weniger, größeren Kliniken mit viel Erfahrung stattfinden; die Grundversorgung bleibt in der Fläche."
     pro:
       - typ: schaetzung
-        text: "Eine große Studie mit Daten von AOK-Versicherten und Krebsregistern fand: Wer bei der ersten Krebsbehandlung in einem zertifizierten Zentrum behandelt wurde, lebte im Schnitt länger – bei allen elf untersuchten Krebsarten. Zertifizierte Zentren müssen unter anderem Mindestfallzahlen und feste Abläufe nachweisen."
+        text: "Eine große Studie mit Daten von AOK-Versicherten und Krebsregistern ergab, dass Menschen, die bei der ersten Krebsbehandlung in einem zertifizierten Zentrum behandelt wurden, im Schnitt länger lebten. Das galt für alle elf untersuchten Krebsarten. Zertifizierte Zentren müssen unter anderem Mindestfallzahlen und feste Abläufe nachweisen."
         quellen: [wizen-2023]
         unsicherheit: "Beobachtungsstudie mit Daten von 2009 bis 2017. Sie zeigt einen Zusammenhang, keinen sicheren Ursache-Wirkungs-Beleg. Der Überlebensvorteil schwankt je nach Krebsart stark."
       - typ: position
         wer: GKV-Spitzenverband
-        text: "Es gebe „zu viele Krankenhäuser mit Gelegenheitsversorgung“. Wer Operationen nur gelegentlich mache, gehe zulasten der Qualität. Ziel müsse sein, Spezialisierung zu fördern und zugleich eine gute Grundversorgung flächendeckend zu sichern."
+        text: "Es gebe „zu viele Krankenhäuser mit Gelegenheitsversorgung“. Wenn Kliniken Operationen nur gelegentlich durchführten, gehe das zulasten der Qualität. Ziel müsse sein, Spezialisierung zu fördern und zugleich eine gute Grundversorgung flächendeckend zu sichern."
         quellen: [gkv-sv-pm-2025-10-08]
       - typ: wertung
-        text: "Ärztinnen, Ärzte und Pflegekräfte sind knapp. Wenn sich dieselben Fachkräfte auf weniger Standorte verteilen, lassen sich Dienstpläne rund um die Uhr leichter besetzen und Teams sammeln mehr Routine."
+        text: "Ärztinnen, Ärzte und Pflegekräfte sind knapp. Wenn sich dieselben Fachkräfte auf weniger Standorte verteilen, lassen sich Dienstpläne rund um die Uhr leichter besetzen, und die Teams gewinnen mehr Routine."
     contra:
       - typ: fakt
-        text: "Schon heute sind spezialisierte Einrichtungen nicht überall schnell erreichbar: 2020 lebten rund 9 Millionen Menschen (11 %) dort, wo eine Schlaganfall-Station (Stroke Unit) mit dem Rettungsdienst nicht innerhalb von 30 Minuten erreichbar war – vor allem im ländlichen Nordosten."
+        text: "Schon heute sind spezialisierte Einrichtungen nicht überall schnell erreichbar: 2020 lebten rund 9 Millionen Menschen (11 %) dort, wo eine Schlaganfall-Station (Stroke Unit) mit dem Rettungsdienst nicht innerhalb von 30 Minuten erreichbar war. Das betraf vor allem den ländlichen Nordosten."
         quellen: [bbsr-erreichbarkeit-2020]
       - typ: position
         wer: Deutscher Landkreistag
         text: "Ausnahmen bei der Zuweisung von Leistungsgruppen seien gerade für Flächenländer ein wesentliches Instrument, um die stationäre Versorgung in ländlichen Regionen zu sichern. Die Reform müsse den regionalen Versorgungsrealitäten Rechnung tragen."
         quellen: [dlt-khag-2025]
       - typ: wertung
-        text: "Längere Wege treffen nicht nur Patientinnen und Patienten, sondern auch Angehörige, die zu Besuch kommen. Für Menschen ohne Auto kann eine Klinik in 40 Kilometern Entfernung praktisch unerreichbar sein."
+        text: "Längere Wege treffen Patientinnen und Patienten ebenso wie Angehörige, die sie besuchen. Für Menschen ohne Auto kann eine Klinik in 40 Kilometern Entfernung praktisch unerreichbar sein."
     gewinnt: [Behandlungsqualität bei komplexen Eingriffen, Fachkräfte in größeren Teams, Beitragszahler (weniger doppelte Vorhaltung)]
     kostet: [Wohnortnähe, Patienten und Angehörige in dünn besiedelten Regionen, Beschäftigte und Gemeinden an aufgegebenen Standorten]
 
@@ -38,13 +38,13 @@ optionen:
     kurz: "Möglichst viele Krankenhäuser mit Notaufnahme und Grundversorgung sollen bestehen bleiben; Länder sollen dafür von bundesweiten Vorgaben abweichen dürfen."
     pro:
       - typ: wertung
-        text: "Bei Herzinfarkt, Schlaganfall oder Unfall zählt jede Minute. Ein Krankenhaus in der Nähe kann Erstversorgung leisten und stabilisieren, bevor jemand in ein Zentrum verlegt wird."
+        text: "Bei Herzinfarkt, Schlaganfall oder Unfall zählt jede Minute. Ein Krankenhaus in der Nähe kann die Erstversorgung übernehmen und Patienten stabilisieren, bevor sie in ein Zentrum verlegt werden."
       - typ: position
         wer: Deutscher Landkreistag
-        text: "Die Länder sollen bei der Krankenhausplanung eine zentrale Rolle behalten und ihre Kompetenzen dauerhaft stärken. Ausnahmen von Qualitätsvorgaben müssten in besonderen Fällen auch länger als sechs Jahre möglich sein, wenn die Versorgungsqualität nicht leidet."
+        text: "Die Länder sollten bei der Krankenhausplanung eine zentrale Rolle behalten, ihre Kompetenzen seien dauerhaft zu stärken. Ausnahmen von Qualitätsvorgaben müssten in besonderen Fällen auch länger als sechs Jahre möglich sein, wenn die Versorgungsqualität nicht leidet."
         quellen: [dlt-khag-2025]
       - typ: wertung
-        text: "Ein Krankenhaus ist in vielen Kleinstädten einer der größten Arbeitgeber und ein Ankerpunkt für Praxen, Rettungsdienst und Pflege. Fällt es weg, kann das die ganze Region schwächen."
+        text: "In vielen Kleinstädten ist das Krankenhaus einer der größten Arbeitgeber und ein Ankerpunkt für Praxen, Rettungsdienst und Pflege. Fällt es weg, kann das die ganze Region schwächen."
       - typ: wertung
         text: "Mehr Standorte bedeuten mehr Reserven für Krisen wie eine Pandemie oder einen Großschadensfall."
     contra:
@@ -62,14 +62,14 @@ optionen:
 
   - id: umwandeln
     titel: Kleine Häuser umwandeln
-    kurz: "Kleine Krankenhäuser werden zu Gesundheitszentren, die einfache stationäre Fälle, ambulante Behandlung und Pflege unter einem Dach anbieten – komplexe Fälle gehen in größere Kliniken."
+    kurz: "Kleine Krankenhäuser werden zu Gesundheitszentren, die einfache stationäre Fälle, ambulante Behandlung und Pflege unter einem Dach anbieten; komplexe Fälle gehen an größere Kliniken."
     pro:
       - typ: fakt
-        text: "Seit der Krankenhausreform 2024 können die Länder Standorte als **sektorenübergreifende Versorgungseinrichtung** bestimmen. Diese erbringen stationäre Grundleistungen etwa der Inneren Medizin und Geriatrie (Altersmedizin) und können zusätzlich ambulant behandeln sowie Kurzzeit-, Tages- und Nachtpflege anbieten."
+        text: "Seit der Krankenhausreform 2024 können die Länder Standorte als **sektorenübergreifende Versorgungseinrichtung** bestimmen. Diese Einrichtungen erbringen stationäre Grundleistungen, etwa in der Inneren Medizin und der Geriatrie (Altersmedizin). Zusätzlich können sie ambulant behandeln sowie Kurzzeit-, Tages- und Nachtpflege anbieten."
         quellen: [sgb5-115g, khg-6c]
       - typ: position
         wer: Deutsche Krankenhausgesellschaft (DKG)
-        text: "Diese Einrichtungen seien „regionale Gesundheitszentren“. Nötig sei ein breiter „Instrumentenkasten“, mit dem die Verantwortlichen vor Ort Lösungen für eine wohnortnahe, sektorenübergreifende Versorgung entwickeln können."
+        text: "Diese Einrichtungen seien „regionale Gesundheitszentren“. Nötig sei ein breiter „Instrumentenkasten“, mit dem die Verantwortlichen vor Ort Lösungen für eine wohnortnahe, sektorenübergreifende Versorgung entwickeln könnten."
         quellen: [dkg-khvvg-2024]
       - typ: wertung
         text: "Der Ort behält eine Anlaufstelle mit Ärztinnen, Ärzten und Pflege. Personal und Gebäude werden weiter genutzt, statt zu verschwinden."
@@ -81,7 +81,7 @@ optionen:
         text: "Die Finanzierung der sektorenübergreifenden Versorger sei unzureichend. Wegen befristeter Versorgungsaufgaben fehle den Häusern Planungssicherheit."
         quellen: [dkg-khvvg-2024]
       - typ: wertung
-        text: "Das Modell ist neu. Wie gut die Zusammenarbeit mit Arztpraxen, Pflegediensten und großen Kliniken im Alltag klappt, muss sich erst zeigen."
+        text: "Das Modell ist neu. Wie gut die Zusammenarbeit mit Arztpraxen, Pflegediensten und großen Kliniken im Alltag funktioniert, muss sich erst zeigen."
     gewinnt: [Grundversorgung vor Ort, ältere und chronisch kranke Menschen, Zusammenarbeit von Klinik, Praxen und Pflege]
     kostet: [Notfallversorgung rund um die Uhr am Ort, Planungssicherheit in der Übergangszeit]
 
@@ -91,7 +91,7 @@ erklaerung:
     quellen: [eurostat-betten-2024]
     genau: "2024: 759 Betten je 100.000 Einwohner, EU-Schnitt 507. Nur Bulgarien lag höher. Eurostat zählt für Deutschland auch Betten in Vorsorge- und Rehabilitationseinrichtungen mit."
   - typ: fakt
-    text: "Häuser und Betten werden seit Jahrzehnten weniger. Noch stärker gesunken ist aber, wie lange Patientinnen und Patienten bleiben: nur noch halb so lange wie 1991. Für dieselbe Zahl an Fällen braucht es deshalb weniger Betten."
+    text: "Häuser und Betten werden seit Jahrzehnten weniger. Noch stärker gesunken ist die Verweildauer: Patientinnen und Patienten bleiben im Schnitt nur noch halb so lange wie 1991. Für dieselbe Zahl an Fällen werden deshalb weniger Betten gebraucht."
     quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
     genau: "1991: 2.411 Krankenhäuser mit 665.565 Betten, durchschnittliche Verweildauer 14,0 Tage. 2025: 1.807 Krankenhäuser mit durchschnittlich 468.803 Betten, Verweildauer 7,0 Tage."
   - typ: fakt
@@ -99,21 +99,21 @@ erklaerung:
     quellen: [destatis-pm-2026-376]
     genau: "Bettenauslastung 2025: 72,6 % über alle Häuser, 55,2 % in Häusern mit 1–49 Betten, 75,3 % in Häusern mit über 800 Betten."
   - typ: fakt
-    text: "Wo welches Krankenhaus steht, planen die **Bundesländer**. Seit der Reform von 2024 teilen sie den Kliniken **Leistungsgruppen** zu, etwa Herzchirurgie oder Geburtshilfe. Eine Leistung darf nur anbieten, wer die Mindestanforderungen an Personal und Ausstattung erfüllt. So entscheiden Qualitätsregeln mit, welches Haus was behält."
+    text: "Wo welches Krankenhaus steht, planen die Bundesländer. Seit der Reform von 2024 teilen sie den Kliniken **Leistungsgruppen** zu, etwa Herzchirurgie oder Geburtshilfe. Eine Leistung darf nur anbieten, wer die Mindestanforderungen an Personal und Ausstattung erfüllt. So entscheiden Qualitätsregeln mit darüber, welches Haus welche Leistungen behält."
     quellen: [sgb5-135e, bmg-pm-khag-2026]
     genau: "Krankenhausversorgungsverbesserungsgesetz (KHVVG), in Kraft seit 12. Dezember 2024, angepasst 2026 durch das Krankenhausreformanpassungsgesetz (KHAG). Die Anforderungen je Leistungsgruppe regelt § 135e SGB V."
   - typ: wertung
-    text: "Im Kern ist es eine Abwägung zwischen Nähe und Routine. Viele Standorte bedeuten kurze Wege. Aber jedes Haus braucht rund um die Uhr Personal, knappe Fachkräfte verteilen sich auf mehr Häuser, und jedes macht einen bestimmten Eingriff seltener. Weniger Standorte bündeln Erfahrung und Personal, verlängern aber für manche die Wege."
+    text: "Abzuwägen sind Nähe und Routine. Viele Standorte bedeuten kurze Wege. Jedes Haus braucht aber rund um die Uhr Personal, die knappen Fachkräfte verteilen sich auf mehr Häuser, und jedes Haus macht einen bestimmten Eingriff seltener. Weniger Standorte bündeln Erfahrung und Personal, verlängern aber für manche die Wege."
 
 zielkonflikte:
   - typ: wertung
-    text: "**Nähe gegen Routine.** Je mehr Standorte es gibt, desto kürzer sind die Wege – aber desto seltener macht jedes Haus einen bestimmten Eingriff."
+    text: "**Nähe gegen Routine.** Je mehr Standorte es gibt, desto kürzer sind die Wege, aber desto seltener macht jedes Haus einen bestimmten Eingriff."
   - typ: wertung
-    text: "**Personal ist die harte Grenze.** Auch wer alle Häuser erhalten will, muss sie rund um die Uhr besetzen. Auch wer bündeln will, braucht genug Fachkräfte in den Zentren und im Rettungsdienst."
+    text: "**Personal setzt die Grenze.** Wer alle Häuser erhalten will, muss sie rund um die Uhr besetzen. Wer bündeln will, braucht genug Fachkräfte in den Zentren und im Rettungsdienst."
   - typ: wertung
-    text: "**Einheitlich oder regional?** Bundesweit gleiche Qualitätsregeln sorgen für Vergleichbarkeit. Spielräume der Länder erlauben Lösungen für besondere Lagen, etwa dünn besiedelte Regionen – führen aber zu Unterschieden zwischen den Ländern."
+    text: "**Einheitliche Regeln gegen regionale Spielräume.** Bundesweit gleiche Qualitätsregeln sorgen für Vergleichbarkeit. Spielräume der Länder erlauben Lösungen für besondere Lagen wie dünn besiedelte Regionen. Sie führen aber zu Unterschieden zwischen den Ländern."
   - typ: fakt
-    text: "**Umbau kostet Geld.** Für den Umbau der Krankenhauslandschaft steht von 2026 bis 2035 ein Transformationsfonds mit insgesamt rund 50 Milliarden Euro bereit; davon trägt der Bund 29 Milliarden Euro, den Rest die Länder."
+    text: "**Umbau kostet Geld.** Für den Umbau der Krankenhauslandschaft steht von 2026 bis 2035 ein Transformationsfonds mit insgesamt rund 50 Milliarden Euro bereit. Davon trägt der Bund 29 Milliarden Euro, den Rest tragen die Länder."
     quellen: [bt-drs-21-2512, khg-12b]
 
 daten:
@@ -185,10 +185,10 @@ daten:
       text: "Die Zahl der Krankenhäuser ist seit 1991 um rund ein Viertel gesunken. Gleichzeitig hat sich die durchschnittliche Verweildauer halbiert: von 14,0 Tagen (1991) auf 7,0 Tage (2025)."
       quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
     - typ: fakt
-      text: "Erreichbarkeit spezialisierter Versorgung 2020: Rund 14,5 Millionen Menschen (17,5 %) lebten mehr als 30 Minuten Fahrzeit von einer zertifizierten Herzinfarkt-Einheit (Chest Pain Unit) entfernt. Bei Traumazentren für Schwerverletzte waren es rund 2 Millionen (2,5 %)."
+      text: "2020 lebten rund 14,5 Millionen Menschen (17,5 %) mehr als 30 Minuten Fahrzeit von einer zertifizierten Herzinfarkt-Einheit (Chest Pain Unit) entfernt. Bei Traumazentren für Schwerverletzte waren es rund 2 Millionen (2,5 %)."
       quellen: [bbsr-erreichbarkeit-2020]
     - typ: schaetzung
-      text: "Für die Region Köln/Leverkusen simulierte das IGES-Institut im Auftrag der Bertelsmann Stiftung eine Versorgung mit 14 statt 38 Akutkrankenhäusern. Die Stiftung folgerte daraus, bundesweit seien deutlich unter 600 statt knapp 1.400 Kliniken für eine bessere Versorgung ausreichend."
+      text: "Für die Region Köln/Leverkusen simulierte das IGES-Institut im Auftrag der Bertelsmann Stiftung eine Versorgung mit 14 statt 38 Akutkrankenhäusern. Die Stiftung folgerte daraus, für eine bessere Versorgung reichten bundesweit deutlich unter 600 statt knapp 1.400 Kliniken aus."
       quellen: [bertelsmann-2019]
       unsicherheit: "Modellrechnung für eine einzelne, dicht besiedelte Region. Die Übertragung auf ganz Deutschland ist eine Hochrechnung und war stark umstritten."
 
@@ -200,11 +200,11 @@ geschichte:
       quellen: [gkv-sv-fokus-finanzierung, regkom-3-2022]
     - jahr: "1991–2021"
       titel: Stetiger Rückgang
-      text: "Die Zahl der Häuser sinkt von 2.411 auf 1.887, die der Betten von 665.565 auf 483.606. Der Abbau geschieht meist schrittweise durch Fusionen, Schließungen einzelner Abteilungen oder ganzer Häuser."
+      text: "Die Zahl der Häuser sinkt von 2.411 auf 1.887, die der Betten von 665.565 auf 483.606. Der Abbau geschieht meist schrittweise: durch Fusionen und durch die Schließung einzelner Abteilungen oder ganzer Häuser."
       quellen: [destatis-grunddaten-2021]
     - jahr: "2016"
       titel: Strukturfonds
-      text: "Ein Fonds über 500 Millionen Euro aus der Reserve des Gesundheitsfonds soll Länder beim Abbau von Überkapazitäten, bei der Konzentration von Standorten und bei der Umwandlung von Krankenhäusern in nicht-stationäre Einrichtungen unterstützen."
+      text: "Ein Fonds mit 500 Millionen Euro aus der Reserve des Gesundheitsfonds soll die Länder beim Abbau von Überkapazitäten, bei der Konzentration von Standorten und bei der Umwandlung von Krankenhäusern in nicht-stationäre Einrichtungen unterstützen."
       quellen: [khg-12]
     - jahr: "2019"
       titel: Streit um Bertelsmann-Studie
@@ -227,13 +227,13 @@ geschichte:
       text: "Seit 1991 ist rund ein Viertel der Krankenhäuser weggefallen. Trotzdem liegt Deutschland bei der Bettendichte weiterhin weit über dem EU-Schnitt."
       quellen: [destatis-pm-2026-376, eurostat-betten-2024]
     - typ: wertung
-      text: "Bisher geschah der Abbau meist ungeplant – etwa durch Insolvenzen oder Entscheidungen einzelner Träger. Die Reform von 2024/2026 ist der erste Versuch, Standorte bundesweit nach einheitlichen Qualitätskriterien zu ordnen. Wie stark sie die Landschaft tatsächlich verändert, lässt sich Ende 2026 noch nicht sagen."
+      text: "Bisher geschah der Abbau meist ungeplant, etwa durch Insolvenzen oder Entscheidungen einzelner Träger. Die Reform von 2024/2026 ist der erste Versuch, Standorte bundesweit nach einheitlichen Qualitätskriterien zu ordnen. Wie stark sie die Landschaft tatsächlich verändert, lässt sich Ende 2026 noch nicht sagen."
 
 laender:
   beispiele:
     - land: Dänemark
       ansatz: "Geplante Zentralisierung mit Neubau von Großkliniken"
-      text: "Mit einer Verwaltungsreform 2007 übernahmen fünf Regionen die Krankenhäuser von 13 Kreisen. Ziel war, die Zahl der Krankenhäuser mit Notaufnahme von 40 auf 21 zu senken. Bis 2021 wurden 18 Krankenhäuser geschlossen, weitere neun sollten folgen. Ein Neubauprogramm mit 16 Projekten ist mit rund 6,6 Milliarden Euro ausgestattet. Eine Studie zehn Jahre nach der Reform fand, dass die Produktivität der Kliniken um mehr als 2 % pro Jahr stieg, bei stabilen Kosten. Zugleich berichtet sie, dass sich Menschen in abgelegenen Gegenden abgehängt fühlen und das Personal stärker belastet ist."
+      text: "Mit einer Verwaltungsreform 2007 übernahmen fünf Regionen die Krankenhäuser von 13 Kreisen. Ziel war, die Zahl der Krankenhäuser mit Notaufnahme von 40 auf 21 zu senken. Bis 2021 wurden 18 Krankenhäuser geschlossen, weitere neun sollten folgen. Ein Neubauprogramm mit 16 Projekten ist mit rund 6,6 Milliarden Euro ausgestattet. Nach einer Studie, die zehn Jahre nach der Reform erschien, stieg die Produktivität der Kliniken um mehr als 2 % pro Jahr, während die Kosten stabil blieben. Zugleich berichtet die Studie, dass sich Menschen in abgelegenen Gegenden abgehängt fühlen und das Personal stärker belastet ist."
       vergleichbarkeit: mittel
       vergleichbarkeit_text: "Dänemark ist klein, und dort sind die Regionen zugleich für Planung, Betrieb und Budgets der Kliniken zuständig. In Deutschland sind diese Rollen auf Länder, Kassen und viele verschiedene Träger verteilt, was einen zentral geplanten Umbau schwieriger macht."
       quellen: [dk-super-hospital-2021, christiansen-vrangbaek-2018]
@@ -245,7 +245,7 @@ laender:
       quellen: [observatory-nl-2016, eurostat-hlth-rs-bds1]
     - land: Schweiz
       ansatz: "Planung über fein definierte Leistungsgruppen"
-      text: "In der Schweiz wird die Spitalplanung über ein Modell mit über 100 Leistungsgruppen organisiert, für die jeweils Vorgaben an Personal und Technik gelten. Die Regierungskommission nannte es 2022 ausdrücklich als Beispiel für die deutschen Leistungsgruppen; Nordrhein-Westfalen arbeitet mit einer gröberen Einteilung in 60 Gruppen."
+      text: "Die Schweiz plant ihre Spitäler mit einem Modell aus über 100 Leistungsgruppen, für die jeweils Vorgaben an Personal und Technik gelten. Die Regierungskommission nannte es 2022 ausdrücklich als Beispiel für die deutschen Leistungsgruppen; Nordrhein-Westfalen arbeitet mit einer gröberen Einteilung in 60 Gruppen."
       vergleichbarkeit: hoch
       vergleichbarkeit_text: "Wie in Deutschland liegt die Planung bei den Gliedstaaten (Kantonen), und das Instrument diente als Vorlage. Die Schweiz ist aber deutlich kleiner, und ihre Spitalfinanzierung unterscheidet sich. Die Kommission betonte, das Schweizer Modell bedürfe einer grundlegenden Neubewertung für Deutschland."
       quellen: [regkom-3-2022]
@@ -275,9 +275,9 @@ laender:
           wert: 187
   fazit:
     - typ: wertung
-      text: "Viele Nachbarländer kommen mit deutlich weniger Betten aus. Ob das an weniger Krankenhäusern liegt oder an anderen Faktoren – etwa mehr ambulanter Behandlung, stärkerer Steuerung durch Hausärzte oder anderer Siedlungsstruktur –, lässt sich aus dem Vergleich allein nicht ablesen."
+      text: "Viele Nachbarländer kommen mit deutlich weniger Betten aus. Ob das an weniger Krankenhäusern liegt oder an anderen Faktoren wie mehr ambulanter Behandlung, stärkerer Steuerung durch Hausärzte oder einer anderen Siedlungsstruktur, lässt sich aus dem Vergleich allein nicht ablesen."
     - typ: wertung
-      text: "Dänemark zeigt, dass eine geplante Zentralisierung möglich ist, aber Zeit, viel Geld für Neubauten und eine einheitliche Steuerung braucht."
+      text: "Dänemark zeigt, dass eine geplante Zentralisierung möglich ist. Sie braucht aber Zeit, viel Geld für Neubauten und eine einheitliche Steuerung."
 
 verknuepft:
   - frage: krankenhaus-verguetung

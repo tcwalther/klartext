@@ -3,45 +3,45 @@ reihenfolge: 2
 status: entwurf
 stand: "2026-11-25"
 titel: Sollen Versicherte für gesundes Verhalten belohnt werden?
-frage: Sollen Krankenkassen gesundes Verhalten stärker belohnen – oder soll der Beitrag weiterhin unabhängig davon sein, wie jemand lebt?
+frage: Sollen Krankenkassen gesundes Verhalten stärker belohnen, oder soll der Beitrag weiterhin unabhängig davon sein, wie jemand lebt?
 
 optionen:
   - id: bonus-ausbauen
     titel: Bonusprogramme ausbauen
-    kurz: Kassen zahlen höhere Prämien für Vorsorge, Impfungen, Sportkurse oder Gesundheits-Apps – die Teilnahme bleibt freiwillig.
+    kurz: Kassen zahlen höhere Prämien für Vorsorge, Impfungen, Sportkurse oder Gesundheits-Apps. Die Teilnahme bleibt freiwillig.
     pro:
       - typ: wertung
         text: Ein Bonus ist ein positiver Anreiz. Niemand wird bestraft, aber wer etwas für seine Gesundheit tut, merkt es auch im Geldbeutel.
       - typ: wertung
-        text: Boni können helfen, Früherkennung und Impfungen bekannter zu machen, die viele sonst aufschieben.
+        text: Boni können Früherkennung und Impfungen bekannter machen, die viele sonst aufschieben.
     contra:
       - typ: wertung
-        text: Boni bekommen oft die, die ohnehin gesund leben und Zeit für Kurse haben. Wer es schwerer hat, profitiert weniger.
+        text: Boni bekommen oft Menschen, die ohnehin gesund leben und Zeit für Kurse haben. Wer es schwerer hat, profitiert weniger.
       - typ: fakt
         text: Das Gesetz verlangt, dass sich Boni für Präventionskurse mittelfristig durch Einsparungen selbst tragen. Gelingt das nicht, dürfen Kassen dafür keine Boni zahlen.
         quellen: [sgb5-65a]
     gewinnt: [gesundheitsbewusste Versicherte, Früherkennung und Impfquoten]
-    kostet: [Beitragszahler, Versicherte, die Angebote nicht nutzen können]
+    kostet: [Beitragszahler, "Versicherte, die die Angebote nicht nutzen können"]
 
   - id: verhaltensabhaengig
     titel: Beiträge stärker ans Verhalten koppeln
-    kurz: Wer nachweislich gesund lebt, zahlt weniger – wer zum Beispiel raucht oder Vorsorge auslässt, zahlt mehr oder bekommt weniger Leistungen.
+    kurz: Wer nachweislich gesund lebt, zahlt weniger. Wer zum Beispiel raucht oder Vorsorge auslässt, zahlt mehr oder bekommt weniger Leistungen.
     pro:
       - typ: wertung
-        text: Wer Risiken bewusst eingeht, soll einen größeren Teil der Folgen tragen. Das empfinden viele als gerecht gegenüber denen, die vorsorgen.
+        text: Wer Risiken bewusst eingeht, soll einen größeren Teil der Folgen tragen. Das empfinden viele als gerecht gegenüber Menschen, die vorsorgen.
       - typ: wertung
         text: Ein spürbarer finanzieller Unterschied setzt einen stärkeren Anreiz als ein kleiner Bonus.
     contra:
       - typ: wertung
-        text: Krankheit hat oft Ursachen, die Menschen nicht steuern können – Gene, Armut, Arbeitsbedingungen. Wer krank wird, könnte zusätzlich bestraft werden.
+        text: Krankheit hat oft Ursachen, die Menschen nicht beeinflussen können, etwa Gene, Armut oder Arbeitsbedingungen. Wer krank wird, könnte zusätzlich bestraft werden.
       - typ: wertung
-        text: Um Verhalten zu belohnen, muss man es messen. Das erfordert Daten über Ernährung, Bewegung oder Gewohnheiten – ein Eingriff in die Privatsphäre.
+        text: Um Verhalten zu belohnen, muss man es messen. Das erfordert Daten über Ernährung, Bewegung oder Gewohnheiten und greift damit in die Privatsphäre ein.
     gewinnt: [Versicherte mit gesundem Lebensstil, Eigenverantwortung]
     kostet: [Solidarausgleich, chronisch Kranke und Menschen in schwierigen Lebenslagen, Datenschutz]
 
   - id: lebenswelten
     titel: Solidarisch bleiben, Prävention in Lebenswelten
-    kurz: Der Beitrag hängt nicht vom Verhalten ab. Prävention findet dort statt, wo Menschen leben und arbeiten – in Kita, Schule, Betrieb und Stadtteil.
+    kurz: Der Beitrag hängt nicht vom Verhalten ab. Prävention findet dort statt, wo Menschen leben und arbeiten, etwa in Kita, Schule, Betrieb und Stadtteil.
     pro:
       - typ: wertung
         text: Gesundheit hängt stark von den Lebensverhältnissen ab. Wer dort ansetzt, erreicht auch Menschen, die sich nie für einen Kurs anmelden würden.
@@ -54,7 +54,7 @@ optionen:
       - typ: wertung
         text: Ohne persönlichen Anreiz fehlt ein Hebel, der zum Mitmachen motiviert. Eigenverantwortung wird nicht gestärkt.
       - typ: wertung
-        text: Ob Programme in Schulen oder Betrieben wirken, ist schwer zu messen. Das Geld kann versickern.
+        text: Ob Programme in Schulen oder Betrieben wirken, ist schwer zu messen. Geld kann so ohne nachweisbare Wirkung ausgegeben werden.
     gewinnt: [Kinder und Beschäftigte, Menschen mit wenig Einkommen, Solidarprinzip]
     kostet: [persönliche Anreize, Kassen und Kommunen (Organisationsaufwand)]
 
@@ -63,21 +63,21 @@ erklaerung:
     text: In der gesetzlichen Krankenversicherung hängt der Beitrag vom Einkommen ab, nicht von Gesundheit oder Lebensstil. Das nennt man **Solidarprinzip**. Wer raucht, zahlt also nicht mehr als jemand, der Sport treibt.
     quellen: [sgb5-3]
   - typ: wertung
-    text: Dahinter steht eine Abwägung. Ob jemand krank wird, hängt nur zum Teil vom eigenen Verhalten ab, zum Teil von Genen, Einkommen oder Arbeit. Würde der Beitrag am persönlichen Risiko hängen, zahlten Kranke mehr – genau das soll eine solidarische Versicherung vermeiden.
+    text: Dahinter steht eine Abwägung. Ob jemand krank wird, hängt nur zum Teil vom eigenen Verhalten ab, zum Teil von Genen, Einkommen oder Arbeit. Würde der Beitrag am persönlichen Risiko hängen, zahlten Kranke mehr. Genau das soll eine solidarische Versicherung vermeiden.
   - typ: fakt
     text: Belohnen ist trotzdem möglich, aber nur über einen **Bonus**. Kassen sollen zum Beispiel Vorsorge, Impfungen oder Präventionskurse belohnen. Boni für Kurse müssen sich auf Dauer durch Einsparungen selbst tragen.
-    genau: Geregelt in § 65a SGB V. Auch Arbeitgeber mit betrieblicher Gesundheitsförderung und ihre Beschäftigten sollen einen Bonus bekommen.
+    genau: Geregelt ist das in § 65a SGB V. Auch Arbeitgeber mit betrieblicher Gesundheitsförderung und ihre Beschäftigten sollen einen Bonus bekommen.
     quellen: [sgb5-65a]
   - typ: fakt
     text: Der größere Teil des Präventionsgeldes geht nicht an Einzelne. Gut 40 Prozent fließen allein in Betriebe, dazu kommen Angebote in Kitas, Schulen und Kommunen.
     genau: 2024 gaben die Krankenkassen rund 686 Millionen Euro für Gesundheitsförderung und Prävention aus, davon 282 Millionen Euro für Betriebe. Mit Angeboten in Lebenswelten erreichten sie knapp 8,9 Millionen Menschen.
     quellen: [zm-praeventionsbericht-2025]
   - typ: wertung
-    text: Gestritten wird darüber, ob persönliche Anreize mehr bewirken als Angebote dort, wo Menschen leben und arbeiten – und ob der Beitrag überhaupt vom Verhalten abhängen darf. Dafür müsste man Verhalten messen und also mehr Gesundheitsdaten erheben.
+    text: Gestritten wird darüber, ob persönliche Anreize mehr bewirken als Angebote dort, wo Menschen leben und arbeiten. Umstritten ist auch, ob der Beitrag überhaupt vom Verhalten abhängen darf. Dafür müsste man Verhalten messen und also mehr Gesundheitsdaten erheben.
 
 zielkonflikte:
   - typ: wertung
-    text: Eigenverantwortung steht gegen Solidarität. Je stärker das Verhalten zählt, desto mehr tragen Einzelne ihre Risiken selbst – desto weniger tragen alle gemeinsam.
+    text: Eigenverantwortung steht gegen Solidarität. Je stärker das Verhalten zählt, desto mehr tragen Einzelne ihre Risiken selbst und desto weniger trägt die Gemeinschaft.
   - typ: wertung
     text: Anreize brauchen Nachweise. Je genauer man belohnt, desto mehr Daten muss man erheben.
   - typ: wertung

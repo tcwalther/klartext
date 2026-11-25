@@ -2,7 +2,7 @@ bereich: finanzierung
 reihenfolge: 2
 status: entwurf
 stand: "2026-11-25"
-titel: Ausgaben wachsen schneller als Einnahmen – wie die Lücke schließen?
+titel: Wie soll die Finanzlücke der Krankenkassen geschlossen werden?
 frage: Die Ausgaben der gesetzlichen Krankenversicherung steigen seit Jahren schneller als ihre Einnahmen. Wie soll die Lücke vor allem geschlossen werden?
 
 optionen:
@@ -22,7 +22,7 @@ optionen:
         text: Der Leistungsumfang bleibt erhalten. Niemand muss auf Behandlungen verzichten oder bei Krankheit mehr aus eigener Tasche zahlen.
     contra:
       - typ: schaetzung
-        text: "Beiträge verteuern Arbeit. Simulationen des Instituts für Arbeitsmarkt- und Berufsforschung ergaben, dass ein Prozentpunkt niedrigere Sozialbeiträge langfristig bis zu 150.000 Arbeitsplätze bringen könnte – umgekehrt kosten höhere Beiträge Beschäftigung. Wie groß der Effekt ist, hängt stark davon ab, wie die Löhne reagieren und wie die Beiträge gegenfinanziert werden."
+        text: "Beiträge verteuern Arbeit. Simulationen des Instituts für Arbeitsmarkt- und Berufsforschung ergaben, dass ein Prozentpunkt niedrigere Sozialbeiträge langfristig bis zu 150.000 Arbeitsplätze bringen könnte. Umgekehrt kosten höhere Beiträge Beschäftigung. Wie groß der Effekt ist, hängt stark davon ab, wie die Löhne reagieren und wie die Beiträge gegenfinanziert werden."
         quellen: [iab-kurzbericht-2005]
         unsicherheit: "Modellrechnung von 2005, als die Arbeitslosigkeit sehr hoch war. Auf den heutigen Arbeitsmarkt mit Fachkräftemangel ist sie nur eingeschränkt übertragbar."
       - typ: fakt
@@ -40,12 +40,12 @@ optionen:
     kurz: Der Bund zahlt mehr in die Krankenversicherung, etwa kostendeckende Beiträge für Bürgergeldbeziehende.
     pro:
       - typ: schaetzung
-        text: "Für Bürgergeldbeziehende zahlt der Bund eine Pauschale an die Kassen. Nach einem Gutachten im Auftrag des GKV-Spitzenverbands deckte sie 2022 nur gut ein Drittel der Kosten. Den Rest tragen die Beitragszahler – also nur Beschäftigte, Rentner und Arbeitgeber, nicht alle Steuerzahler."
+        text: "Für Bürgergeldbeziehende zahlt der Bund eine Pauschale an die Kassen. Nach einem Gutachten im Auftrag des GKV-Spitzenverbands deckte sie 2022 nur gut ein Drittel der Kosten. Den Rest tragen die Beitragszahler, also Beschäftigte, Rentner und Arbeitgeber, nicht aber alle Steuerzahler."
         genau: "Pauschale 2022: 108,48 € im Monat je Person; kostendeckend wären 311,45 € gewesen. Fehlbetrag rund 9,2 Mrd. €."
         quellen: [gkv-sv-iges-buergergeld-2024]
         unsicherheit: Studie im Auftrag eines Interessenträgers; Daten von 2022.
       - typ: wertung
-        text: "Steuern werden auf alle Einkommensarten erhoben – auch auf Mieten, Kapitalerträge und Einkommen oberhalb der Beitragsbemessungsgrenze. Eine Finanzierung über Steuern verteilt die Last daher breiter als Beiträge auf Löhne."
+        text: "Steuern werden auf alle Einkommensarten erhoben, auch auf Mieten, Kapitalerträge und Einkommen oberhalb der Beitragsbemessungsgrenze. Eine Finanzierung über Steuern verteilt die Last daher breiter als Beiträge auf Löhne."
       - typ: position
         wer: GKV-Spitzenverband
         text: Der Bund zahle für die Gesundheitsversorgung von Bürgergeldbeziehenden zu wenig. Diese staatliche Aufgabe werde auf die Beitragszahler abgewälzt. Die Kassen klagen deshalb gegen den Bund.
@@ -75,7 +75,7 @@ optionen:
         quellen: [finanzkommission-bericht-2026]
         unsicherheit: "Analyse einer vom Ministerium eingesetzten Kommission. Leistungserbringer verweisen dagegen auf gestiegene Personal- und Energiekosten."
       - typ: fakt
-        text: "Die tatsächlichen Kosten der Kliniken stiegen nach Angaben der Bundesregierung im Mittel langsamer als die Einnahmen der Kassen je Mitglied. Eine Obergrenze in Höhe der echten Kostenentwicklung spart deshalb Geld, ohne dass Kliniken real weniger bekommen als sie ausgeben."
+        text: "Die tatsächlichen Kosten der Kliniken stiegen nach Angaben der Bundesregierung im Mittel langsamer als die Einnahmen der Kassen je Mitglied. Eine Obergrenze in Höhe der echten Kostenentwicklung spart deshalb Geld, ohne dass Kliniken weniger bekommen, als sie tatsächlich ausgeben."
         genau: "Orientierungswert (Kostenentwicklung der Krankenhäuser) seit 2013 im Median deutlich unter 2,5 %; Grundlohnrate im Mittel über 3 %."
         quellen: [bt-drs-21-6130]
       - typ: position
@@ -84,29 +84,29 @@ optionen:
         quellen: [bda-finanzkommission-2026]
     contra:
       - typ: fakt
-        text: "Gesundheit ist personalintensiv. Steigen die Tariflöhne stärker als die Obergrenze, bekommen Kliniken nach dem Spargesetz von 2026 nur noch die Hälfte der Differenz erstattet. Den Rest müssen sie anders auffangen – etwa durch weniger Personal oder weniger Angebot."
+        text: "Gesundheit ist personalintensiv. Steigen die Tariflöhne stärker als die Obergrenze, bekommen Kliniken nach dem Spargesetz von 2026 nur noch die Hälfte der Differenz erstattet. Den Rest müssen sie anders auffangen, etwa durch weniger Personal oder ein kleineres Angebot."
         quellen: [bt-drs-21-6130]
       - typ: fakt
-        text: "Manche Ausgaben steigen, weil die Politik es so wollte: Die Kosten für Pflegekräfte im Krankenhaus werden seit 2020 voll erstattet. Seitdem gibt es dort mehr Pflegepersonal – und die Ausgaben dafür wuchsen um etwa 11 % pro Jahr. Ein harter Deckel stellt solche Verbesserungen in Frage."
+        text: "Manche Ausgaben steigen, weil die Politik es so wollte: Die Kosten für Pflegekräfte im Krankenhaus werden seit 2020 voll erstattet. Seitdem gibt es dort mehr Pflegepersonal, und die Ausgaben dafür wuchsen um etwa 11 % pro Jahr. Ein harter Deckel stellt solche Verbesserungen in Frage."
         genau: "Pflegepersonalkosten im Krankenhaus: Wachstum seit 2020 durchschnittlich rund 2,1 Mrd. € pro Jahr, 2025 rund 25 Mrd. €."
         quellen: [bt-drs-21-6130]
       - typ: wertung
         text: "Ein Deckel für alle trifft gute und schlechte Anbieter gleich. Strukturreformen, die gezielt Doppeluntersuchungen oder unnötige Klinikaufenthalte abbauen, brauchen dagegen Jahre, bis sie Geld sparen."
     gewinnt: [Beitragszahlende, Stabilität der Beiträge]
-    kostet: [Einnahmen von Kliniken, Praxen und Herstellern, Beschäftigte im Gesundheitswesen, Möglicherweise Wartezeiten und Angebot]
+    kostet: ["Einnahmen von Kliniken, Praxen und Herstellern", Beschäftigte im Gesundheitswesen, Möglicherweise kurze Wartezeiten und Breite des Angebots]
 
   - id: mehr-eigenbeteiligung
     titel: Mehr Eigenbeteiligung
-    kurz: Patientinnen und Patienten zahlen bei der Inanspruchnahme mehr selbst, etwa durch höhere Zuzahlungen oder eine Gebühr pro Arztbesuch.
+    kurz: Patientinnen und Patienten zahlen bei Behandlungen mehr selbst, etwa durch höhere Zuzahlungen oder eine Gebühr pro Arztbesuch.
     pro:
       - typ: fakt
         text: "Die Zuzahlungen waren seit 2004 nicht angepasst worden. Weil Preise und Löhne seitdem gestiegen sind, sind sie real immer weniger wert geworden. Eine Anpassung an die Inflation stellt nur das frühere Verhältnis wieder her."
         quellen: [bundesregierung-bstabg-2026]
       - typ: wertung
-        text: "Wer einen kleinen Teil selbst zahlt, überlegt eher, ob ein Arztbesuch oder ein Medikament nötig ist. Das kann Leistungen verringern, die wenig bringen – vor allem dort, wo es günstige Alternativen gibt."
+        text: "Wer einen kleinen Teil selbst zahlt, überlegt eher, ob ein Arztbesuch oder ein Medikament nötig ist. Das kann Leistungen verringern, die wenig bringen, vor allem dort, wo es günstige Alternativen gibt."
       - typ: position
         wer: Bundesvereinigung der Deutschen Arbeitgeberverbände (BDA)
-        text: Eine Kontaktgebühr bei jedem Arztbesuch und eine höhere Belastungsgrenze (3 statt 2 % des Einkommens) sollen Anreize für kostenbewusstes Verhalten setzen.
+        text: Eine Kontaktgebühr bei jedem Arztbesuch und eine höhere Belastungsgrenze (3 statt 2 % des Einkommens) sollten Anreize für kostenbewusstes Verhalten setzen.
         quellen: [bda-finanzkommission-2026]
     contra:
       - typ: fakt
@@ -121,11 +121,11 @@ optionen:
       - typ: wertung
         text: Mit der Praxisgebühr gab es bis Ende 2012 schon einmal eine Gebühr für Arztbesuche. Ob sie unnötige Besuche wirklich verringert hat, ist umstritten.
     gewinnt: [Beitragszahlende, Möglicherweise weniger unnötige Leistungen]
-    kostet: [Patientinnen und Patienten, besonders mit wenig Einkommen, Chronisch Kranke]
+    kostet: ["Patientinnen und Patienten, besonders solche mit wenig Einkommen", Chronisch Kranke]
 
 erklaerung:
   - typ: fakt
-    text: "Fast jeder dritte Euro der gesetzlichen Krankenversicherung geht ins Krankenhaus, etwa jeder sechste in Arzneimittel. Gerade dort stiegen die Kosten zuletzt besonders stark – weil diese Bereiche viel Personal und teure neue Medikamente brauchen."
+    text: "Fast jeder dritte Euro der gesetzlichen Krankenversicherung geht ins Krankenhaus, etwa jeder sechste in Arzneimittel. In beiden Bereichen stiegen die Kosten zuletzt besonders stark, weil Kliniken viel Personal brauchen und neue Medikamente teuer sind."
     genau: "2024: Ausgaben insgesamt 327,4 Mrd. €, davon Krankenhaus 102,2 Mrd. € (+8,5 %), Arzneimittel 55,2 Mrd. € (+9,6 %), ärztliche Behandlung 50,3 Mrd. €. Alle Ausgaben: +6,5 %."
     quellen: [bmg-kennzahlen-gkv-2025]
   - typ: fakt
@@ -133,7 +133,7 @@ erklaerung:
     genau: "Index 2005 = 100, Stand 2024: Leistungsausgaben je Mitglied 199,4; Bruttoinlandsprodukt 186,1; beitragspflichtige Einnahmen je Mitglied 158,9."
     quellen: [iaq-schere-2026]
   - typ: fakt
-    text: "Die Lücke wird bisher vor allem über den **Zusatzbeitrag** geschlossen, den jede Kasse zum festen allgemeinen Satz dazu erhebt. Deshalb ist der Gesamtbeitrag in nur drei Jahren um mehr als einen Prozentpunkt gestiegen."
+    text: "Die Lücke wird bisher vor allem über den **Zusatzbeitrag** geschlossen, den jede Kasse zusätzlich zum festen allgemeinen Satz erhebt. Deshalb ist der Gesamtbeitrag in nur drei Jahren um mehr als einen Prozentpunkt gestiegen."
     genau: "Allgemeiner Beitragssatz 14,6 %. Gesamtbeitrag mit dem festgelegten durchschnittlichen Zusatzbeitrag: 2023 16,2 %, 2026 17,5 %. Tatsächlich erheben die Kassen 2026 im Schnitt 3,13 % Zusatzbeitrag."
     quellen: [vdek-basisdaten-2026, gkv-sv-beitragsniveau-2026]
   - typ: schaetzung
@@ -142,29 +142,29 @@ erklaerung:
     quellen: [finanzkommission-bericht-2026, bt-drs-21-6130]
     unsicherheit: Prognose, abhängig von Lohn- und Ausgabenentwicklung.
   - typ: fakt
-    text: "Das Spargesetz von 2026 zieht alle vier Hebel zugleich. Den größten Teil tragen aber Kliniken, Praxen und Hersteller: Etwa zwei von drei eingesparten Euro kommen von ihnen."
+    text: "Das Spargesetz von 2026 setzt an allen vier Hebeln zugleich an. Den größten Teil tragen aber Kliniken, Praxen und Hersteller: Etwa zwei von drei eingesparten Euro kommen von ihnen."
     genau: "GKV-Beitragssatzstabilisierungsgesetz, Entwurf: Entlastung 2027 rund 16,3 Mrd. €, davon 11,2 Mrd. € bei Leistungserbringern, Herstellern und Kassen, 2,5 Mrd. € bei Patienten, 4,3 Mrd. € Mehreinnahmen; der Bund senkt seinen Zuschuss. Beschlossen im Juli 2026."
     quellen: [bt-drs-21-6130, bmg-bstabg-2026]
 
 zusammenhaenge:
   erklaerung:
     - typ: fakt
-      text: "Zwei Faustformeln erklären fast die ganze Debatte: Ein Prozentpunkt Beitragssatz bringt rund 19 Mrd. € im Jahr. Ein Prozent mehr Ausgaben kostet rund 3,4 Mrd. €. Jedes Prozent, um das die Ausgaben schneller wachsen als die Einnahmen, verlangt also knapp 0,2 Beitragssatzpunkte mehr."
+      text: "Zwei Faustformeln helfen, die Größenordnungen einzuordnen: Ein Prozentpunkt Beitragssatz bringt rund 19 Mrd. € im Jahr. Ein Prozent mehr Ausgaben kostet rund 3,4 Mrd. €. Jedes Prozent, um das die Ausgaben schneller wachsen als die Einnahmen, verlangt also knapp 0,2 Beitragssatzpunkte mehr."
       genau: "Faustformeln des BMG für 2025: 1 Beitragssatzpunkt = 18,9 Mrd. €; 1 % Ausgabenentwicklung = 3,4 Mrd. € (eigene Division: rund 0,18 Punkte)."
       quellen: [bmg-kennzahlen-gkv-2025]
     - typ: fakt
-      text: "Die Einnahmen wachsen ungefähr mit den Löhnen, mittelfristig rund 3 % im Jahr. Die Ausgaben wachsen schneller: Steigende Preise und Honorare, mehr Behandlungen und eine ältere Bevölkerung wirken zusammen. Die Alterung schwächt zugleich die Einnahmen, weil weniger Menschen im Erwerbsalter Beiträge aus Löhnen zahlen; dazu kommt eine stagnierende Beschäftigung."
+      text: "Die Einnahmen wachsen ungefähr mit den Löhnen, mittelfristig rund 3 % im Jahr. Die Ausgaben wachsen schneller: Steigende Preise und Honorare, mehr Behandlungen und eine ältere Bevölkerung wirken zusammen. Die Alterung schwächt zugleich die Einnahmen, weil weniger Menschen im Erwerbsalter Beiträge aus Löhnen zahlen. Hinzu kommt, dass die Beschäftigung stagniert."
       quellen: [bt-drs-21-6130]
     - typ: fakt
-      text: "Am Ende zahlt immer jemand: Beitragszahler über den Satz, Steuerzahler über den Bund, Kliniken, Praxen, Hersteller und ihre Beschäftigten über niedrigere Preise oder Patienten über Zuzahlungen. Eine Lücke von 0,75 Beitragssatzpunkten hätte ein durchschnittliches Mitglied mit seinem Arbeitgeber 2027 rund 260 € im Jahr gekostet."
+      text: "Jeder Weg, die Lücke zu schließen, belastet eine Gruppe: die Beitragszahler über den Beitragssatz, die Steuerzahler über den Bund, Kliniken, Praxen, Hersteller und ihre Beschäftigten über niedrigere Preise oder die Patienten über Zuzahlungen. Eine Lücke von 0,75 Beitragssatzpunkten hätte ein durchschnittliches Mitglied mit seinem Arbeitgeber 2027 rund 260 € im Jahr gekostet."
       quellen: [finanzkommission-bericht-2026]
   kette:
     - titel: Was die Ausgaben treibt
       punkte:
         - label: Preise und Honorare
-          text: Vergütungen stiegen zuletzt schneller als die Einnahmen der Kassen – nach Analyse der FinanzKommission der wichtigste Treiber.
+          text: Vergütungen stiegen zuletzt schneller als die Einnahmen der Kassen. Nach Analyse der FinanzKommission ist das der wichtigste Treiber.
         - label: Personal
-          text: Kliniken, Pflege und Praxen sind personalintensiv; steigende Löhne kommen direkt in den Ausgaben an.
+          text: Kliniken, Pflege und Praxen sind personalintensiv; steigende Löhne schlagen direkt auf die Ausgaben durch.
         - label: Medizinischer Fortschritt
           text: Neue Medikamente und Verfahren helfen oft, sind aber teuer.
         - label: Alterung und Menge
@@ -184,23 +184,23 @@ zusammenhaenge:
     - titel: Warum die Einnahmen nicht mithalten
       punkte:
         - label: Beiträge hängen an Löhnen
-          text: Die Einnahmen wachsen ungefähr mit den Löhnen – langsamer als die Ausgaben.
+          text: Die Einnahmen wachsen ungefähr mit den Löhnen und damit langsamer als die Ausgaben.
         - label: Obergrenze
           text: Einkommen über der Beitragsbemessungsgrenze ist beitragsfrei.
         - label: Rentner und Mitversicherte
-          text: Renten sind meist niedriger als Löhne, Kinder und viele Ehepartner sind beitragsfrei mitversichert.
+          text: Renten sind meist niedriger als Löhne; Kinder und viele Ehepartner sind beitragsfrei mitversichert.
         - label: Beschäftigung stagniert
-          text: Wenn die Zahl der Beschäftigten nicht mehr wächst, fehlt ein früherer Einnahmenschub.
+          text: Wenn die Zahl der Beschäftigten nicht mehr wächst, fehlt ein Einnahmenzuwachs, den es früher gab.
     - titel: Stellschrauben
       punkte:
         - label: Beitragssatz und Grenzen
-          text: Höherer Satz oder höhere Beitragsbemessungsgrenze – zahlen Beschäftigte, Rentner und Arbeitgeber.
+          text: Höherer Satz oder höhere Beitragsbemessungsgrenze. Es zahlen Beschäftigte, Rentner und Arbeitgeber.
         - label: Steuermittel
-          text: Kostendeckende Pauschalen, Zuschüsse oder Steuersenkungen auf Arzneimittel – zahlen Steuerzahler.
+          text: Kostendeckende Pauschalen, Zuschüsse oder niedrigere Steuern auf Arzneimittel. Es zahlen die Steuerzahler.
         - label: Preise und Strukturen
-          text: Deckel für Preise und Honorare, strengere Prüfungen – tragen Kliniken, Praxen, Hersteller und ihre Beschäftigten.
+          text: Deckel für Preise und Honorare, strengere Prüfungen. Die Last tragen Kliniken, Praxen, Hersteller und ihre Beschäftigten.
         - label: Eigenbeteiligung
-          text: Höhere Zuzahlungen oder Gebühren – zahlen Patientinnen und Patienten.
+          text: Höhere Zuzahlungen oder Gebühren. Es zahlen Patientinnen und Patienten.
   rechner:
     titel: Womit lässt sich die Lücke für 2027 schließen?
     einheit: Mrd. € pro Jahr
@@ -266,7 +266,7 @@ zusammenhaenge:
             wirkung: 1.8
         typ: schaetzung
         quelle: finanzkommission-bericht-2026
-        hinweis: Wirkung im ersten Jahr; bis 2030 steigend. Soll zugleich den Konsum senken.
+        hinweis: Wirkung im ersten Jahr, bis 2030 steigend. Die Maßnahme soll zugleich den Konsum senken.
       - id: verguetungsdeckel
         titel: Preise und Honorare an die Einnahmen binden
         option: ausgaben-begrenzen
@@ -276,7 +276,7 @@ zusammenhaenge:
             wirkung: 5.5
         typ: schaetzung
         quelle: finanzkommission-bericht-2026
-        hinweis: Wirkung im ersten Jahr (2027). Sie wächst in den Folgejahren, weil jeder geringere Anstieg nachwirkt – laut Kommission auf rund 16,6 Mrd. € bis 2030.
+        hinweis: Wirkung im ersten Jahr (2027). Sie wächst in den Folgejahren, weil jeder geringere Anstieg nachwirkt, laut Kommission bis 2030 auf rund 16,6 Mrd. €.
       - id: herstellerabschlag
         titel: Höherer Rabatt der Pharmahersteller
         option: ausgaben-begrenzen
@@ -312,7 +312,7 @@ zusammenhaenge:
 
 zielkonflikte:
   - typ: wertung
-    text: "**Stabile Beiträge gegen vollen Leistungsumfang:** Jeder Euro, der nicht über Beiträge kommt, muss aus Steuern, Einsparungen oder eigener Tasche kommen."
+    text: "**Stabile Beiträge gegen vollen Leistungsumfang:** Jeder Euro, der nicht über Beiträge kommt, muss aus Steuern, durch Einsparungen oder aus eigener Tasche aufgebracht werden."
   - typ: wertung
     text: "**Solidarität gegen Eigenverantwortung:** Mehr Eigenbeteiligung entlastet alle Beitragszahler, belastet aber vor allem Kranke."
   - typ: wertung
@@ -320,7 +320,7 @@ zielkonflikte:
   - typ: wertung
     text: "**Arbeitskosten gegen Staatshaushalt:** Höhere Beiträge verteuern Arbeit, höhere Steuerzuschüsse belasten den Bundeshaushalt."
   - typ: wertung
-    text: "**Sparen gegen gute Arbeitsbedingungen:** Ein großer Teil der Ausgaben sind Löhne. Wer Preise begrenzt, begrenzt oft auch, wie viel Personal bezahlt werden kann."
+    text: "**Sparen gegen gute Arbeitsbedingungen:** Ein großer Teil der Ausgaben entfällt auf Löhne. Wer Preise begrenzt, begrenzt oft auch, wie viel Personal bezahlt werden kann."
 
 daten:
   kennzahlen:
@@ -436,7 +436,7 @@ geschichte:
       quellen: [gkv-sv-finanzierung]
     - jahr: "2022"
       titel: GKV-Finanzstabilisierungsgesetz
-      text: "Gegen ein drohendes Defizit setzt die Politik auf einen Mix: Der Bundeszuschuss steigt 2023 einmalig um 2 Mrd. €, der Bund gibt ein Darlehen, Pharmahersteller zahlen einen höheren Rabatt, zahnärztliche Honorare werden begrenzt."
+      text: "Gegen ein drohendes Defizit kombiniert die Politik mehrere Maßnahmen: Der Bundeszuschuss steigt 2023 einmalig um 2 Mrd. €, der Bund gibt ein Darlehen, Pharmahersteller zahlen einen höheren Rabatt, zahnärztliche Honorare werden begrenzt."
       quellen: [bundesregierung-finstg-2022]
     - jahr: "2025"
       titel: FinanzKommission Gesundheit eingesetzt
@@ -451,10 +451,10 @@ geschichte:
       text: "Trotz vieler Spargesetze ist der Beitragssatz langfristig gestiegen: von gut 12 % Anfang der 1990er-Jahre auf heute 17,5 %."
       quellen: [iaq-beitragssatz-2026]
     - typ: fakt
-      text: Das Ministerium erwartet, dass 2027 erstmals seit drei Jahren der Ausgabenanstieg wieder durch Einnahmenzuwächse gedeckt ist. Strukturreformen sollen folgen.
+      text: Nach Erwartung des Ministeriums decken 2027 erstmals seit drei Jahren wieder die Einnahmenzuwächse den Ausgabenanstieg. Strukturreformen sollen folgen.
       quellen: [bmg-zusatzbeitrag-2027]
     - typ: wertung
-      text: "Ein wiederkehrendes Muster: Spargesetze kombinieren Preisbremsen, Zuschüsse und Zuzahlungen und stabilisieren die Beiträge für einige Jahre. Die grundlegende Schere zwischen Ausgaben und lohnabhängigen Einnahmen haben sie bisher nicht dauerhaft geschlossen."
+      text: "Spargesetze folgen einem wiederkehrenden Muster. Sie kombinieren Preisbremsen, Zuschüsse und Zuzahlungen und stabilisieren die Beiträge für einige Jahre. Die grundlegende Schere zwischen Ausgaben und lohnabhängigen Einnahmen haben sie bisher nicht dauerhaft geschlossen."
 
 laender:
   beispiele:
@@ -474,7 +474,7 @@ laender:
       ansatz: Hohe Kostenbeteiligung plus Kopfprämien mit staatlicher Verbilligung
       text: "Erwachsene zahlen eine Franchise von mindestens 300 Franken im Jahr und darüber 10 % der Kosten, bis höchstens 700 Franken. Die Prämien sind pro Kopf gleich, unabhängig vom Einkommen. Haushalte mit wenig Geld bekommen eine Prämienverbilligung aus Steuern, 2024 rund 6,6 Mrd. Franken."
       vergleichbarkeit: gering
-      vergleichbarkeit_text: "Die Schweiz finanziert über Kopfprämien statt Lohnbeiträge und gleicht soziale Härten über Steuern aus. Der Anteil, den Menschen selbst zahlen, ist deutlich höher als in Deutschland. Das zeigt, wie viel Eigenbeteiligung möglich ist – aber auch, wie viel Umverteilung über Steuern dann nötig wird."
+      vergleichbarkeit_text: "Die Schweiz finanziert über Kopfprämien statt Lohnbeiträge und gleicht soziale Härten über Steuern aus. Der Anteil, den Menschen selbst zahlen, ist deutlich höher als in Deutschland. Das zeigt, wie viel Eigenbeteiligung möglich ist, aber auch, wie viel Umverteilung über Steuern dann nötig wird."
       quellen: [bag-kostenbeteiligung, bag-praemienverbilligung-2025]
     - land: Dänemark
       ansatz: Steuerfinanziert, Budget statt Beitragssatz
@@ -508,7 +508,7 @@ laender:
     - typ: wertung
       text: "Kein Land hat das Problem steigender Gesundheitsausgaben gelöst. Die Länder unterscheiden sich vor allem darin, wo die Lücke sichtbar wird: als Beitragserhöhung, als Steuerlast, als Selbstbehalt oder als Wartezeit."
     - typ: fakt
-      text: "Deutschland liegt beim Anteil der Selbstzahlungen im unteren Bereich vergleichbarer Länder. Die Schweiz zeigt, dass deutlich mehr Eigenbeteiligung möglich ist – mit entsprechend höherer Belastung für Menschen, die viel Behandlung brauchen."
+      text: "Deutschland liegt beim Anteil der Selbstzahlungen im unteren Bereich vergleichbarer Länder. Die Schweiz zeigt, dass deutlich mehr Eigenbeteiligung möglich ist, allerdings mit entsprechend höherer Belastung für Menschen, die viel Behandlung brauchen."
       quellen: [oecd-hag-2025]
 
 verknuepft:
@@ -525,7 +525,7 @@ verknuepft:
   - frage: praevention-anreize
     grund: Prävention soll langfristig Krankheitskosten vermeiden.
   - frage: fachkraefte-pflege
-    grund: Löhne im Gesundheitswesen sind ein großer Kostentreiber – und eine Voraussetzung für genug Personal.
+    grund: Löhne im Gesundheitswesen sind ein großer Kostentreiber und zugleich eine Voraussetzung für genug Personal.
 
 parteien:
   - partei: AfD

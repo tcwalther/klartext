@@ -13,24 +13,24 @@ optionen:
         text: Das System verbindet schnellen Zugang mit einer Preisbindung an den Nutzen. Neue Mittel sind sofort verfügbar, der Preis wird danach verhandelt.
       - typ: position
         wer: European Federation of Pharmaceutical Industries and Associations (EFPIA)
-        text: In Deutschland sind neue Medikamente nach der EU-Zulassung europaweit am schnellsten verfügbar – im Median nach 56 Tagen, gegenüber einem Median von 532 Tagen über alle untersuchten Länder.
+        text: In Deutschland seien neue Medikamente nach der EU-Zulassung europaweit am schnellsten verfügbar, im Median nach 56 Tagen. Über alle untersuchten Länder liege der Median bei 532 Tagen.
         quellen: [efpia-wait-2026]
       - typ: wertung
         text: Das System wurde seit 2011 immer wieder angepasst. Weitere große Eingriffe könnten Hersteller verunsichern.
     contra:
       - typ: fakt
-        text: Trotz AMNOG verursachten patentgeschützte Arzneimittel 2025 rund 55 % der Nettokosten für Arzneimittel, aber nur gut 7 % der verordneten Tagesdosen.
+        text: Trotz des AMNOG verursachten patentgeschützte Arzneimittel 2025 rund 55 % der Nettokosten für Arzneimittel, aber nur gut 7 % der verordneten Tagesdosen.
         quellen: [wido-arzneimittelmarkt-2026]
       - typ: wertung
-        text: Neue Ausnahmen – etwa vertrauliche Preise für Unternehmen mit Forschung in Deutschland – machen das System weniger transparent.
-    gewinnt: [Schneller Zugang zu neuen Medikamenten, Planungssicherheit für Hersteller]
-    kostet: [Beitragszahlende, wenn Ausgaben weiter stark wachsen]
+        text: Neue Ausnahmen wie vertrauliche Preise für Unternehmen mit Forschung in Deutschland machen das System weniger transparent.
+    gewinnt: [schneller Zugang zu neuen Medikamenten, Planungssicherheit für Hersteller]
+    kostet: ["Beitragszahlende, wenn die Ausgaben weiter stark wachsen"]
   - id: strenger-regulieren
     titel: Preise strenger regulieren
-    kurz: Der verhandelte Preis gilt rückwirkend ab dem ersten Tag, und der Preis richtet sich noch strenger nach dem nachgewiesenen Zusatznutzen.
+    kurz: Der verhandelte Preis gilt rückwirkend ab dem ersten Tag und richtet sich noch strenger nach dem nachgewiesenen Zusatznutzen.
     pro:
       - typ: wertung
-        text: In den ersten sechs Monaten dürfen Hersteller ihren Preis heute frei festlegen. Gilt der verhandelte Preis ab Tag 1, entfällt dieser Anreiz zu hohen Einstiegspreisen.
+        text: In den ersten sechs Monaten dürfen Hersteller ihren Preis heute frei festlegen. Gilt der verhandelte Preis ab dem ersten Tag, entfällt dieser Anreiz zu hohen Einstiegspreisen.
       - typ: position
         wer: Wissenschaftliches Institut der AOK (WIdO)
         text: Was die GKV für ein Arzneimittel bezahlt, müsse sich am zusätzlichen Nutzen für die Patientinnen und Patienten orientieren. Dafür sei eine Reform der Preisbildung nötig.
@@ -47,13 +47,13 @@ optionen:
       - typ: wertung
         text: Niedrigere Preise können Investitionen in Forschung und Produktion in Deutschland unattraktiver machen.
     gewinnt: [Beitragszahlende, Krankenkassen]
-    kostet: [Umsätze der Hersteller, Möglicherweise Zugang zu einzelnen neuen Medikamenten]
+    kostet: [Umsätze der Hersteller, möglicherweise Zugang zu einzelnen neuen Medikamenten]
   - id: zugang-standort
     titel: Zugang und Standort priorisieren
-    kurz: Regeln werden gelockert oder mit Standortförderung verbunden, damit neue Medikamente schnell kommen und Pharmaforschung in Deutschland bleibt.
+    kurz: Regeln werden gelockert oder mit Standortförderung verbunden, damit neue Medikamente schnell auf den Markt kommen und Pharmaforschung in Deutschland bleibt.
     pro:
       - typ: wertung
-        text: Patientinnen und Patienten profitieren, wenn neue Therapien früh verfügbar sind – besonders bei schweren Erkrankungen wie Krebs.
+        text: Patientinnen und Patienten profitieren, wenn neue Therapien früh verfügbar sind, besonders bei schweren Erkrankungen wie Krebs.
       - typ: fakt
         text: Unternehmen mit Forschung in Deutschland können seit 2025 einen vertraulichen Erstattungsbetrag vereinbaren. Das soll Forschung und Investitionen im Land fördern.
         quellen: [gkv-sv-amnog-fokus]
@@ -67,8 +67,8 @@ optionen:
       - typ: wertung
         text: Industriepolitik ist Aufgabe des Staates. Werden Beitragsgelder dafür eingesetzt, zahlen Versicherte für etwas, das allen nützt.
       - typ: wertung
-        text: Geheime Preise erschweren es Ärzten und Öffentlichkeit, Kosten und Nutzen zu vergleichen.
-    gewinnt: [Schneller Zugang zu Innovationen, Pharmastandort und Arbeitsplätze]
+        text: Geheime Preise erschweren es Ärzten und der Öffentlichkeit, Kosten und Nutzen zu vergleichen.
+    gewinnt: [schneller Zugang zu Innovationen, Pharmastandort und Arbeitsplätze]
     kostet: [Beitragszahlende, Preistransparenz]
 erklaerung:
   - typ: fakt
@@ -78,7 +78,7 @@ erklaerung:
   - typ: fakt
     text: Solange ein Patent gilt, gibt es keine günstigeren Nachahmer. Der Preis entsteht deshalb nicht durch Wettbewerb, sondern wird verhandelt. Grundlage ist seit 2011 der **Zusatznutzen**, den der Hersteller gegenüber bisherigen Therapien belegen muss.
     quellen: [gkv-sv-amnog-fokus]
-    genau: Geregelt im **AMNOG** (Arzneimittelmarktneuordnungsgesetz). Den Zusatznutzen prüft der Gemeinsame Bundesausschuss (G-BA).
+    genau: Geregelt im AMNOG (Arzneimittelmarktneuordnungsgesetz). Den Zusatznutzen prüft der Gemeinsame Bundesausschuss (G-BA).
   - typ: fakt
     text: Auf dieser Grundlage handeln Hersteller und GKV-Spitzenverband einen **Erstattungsbetrag** aus; ohne Einigung entscheidet eine Schiedsstelle. Im ersten halben Jahr gilt aber der Preis, den der Hersteller selbst festlegt.
     quellen: [sgb5-130b, gkv-sv-amnog-fokus]
@@ -121,7 +121,7 @@ daten:
       stand: "2026"
       quelle: sgb5-130b
   diagramme:
-    - titel: Patentgeschützte Arzneimittel – Anteil an Kosten und Menge
+    - titel: Anteil patentgeschützter Arzneimittel an Kosten und Menge
       einheit: Prozent
       stand: "2025"
       quelle: wido-arzneimittelmarkt-2026
@@ -139,7 +139,7 @@ geschichte:
       quellen: [gkv-sv-amnog-fokus]
     - jahr: "2022"
       titel: GKV-Finanzstabilisierungsgesetz
-      text: Neue „Leitplanken“ für die Verhandlung – ob die Vergleichstherapie noch patentgeschützt ist, wird für den Preis relevant.
+      text: Das Gesetz setzt neue „Leitplanken“ für die Verhandlung. Für den Preis zählt nun auch, ob die Vergleichstherapie noch patentgeschützt ist.
       quellen: [gkv-sv-amnog-fokus]
     - jahr: "2025"
       titel: Medizinforschungsgesetz
@@ -147,7 +147,7 @@ geschichte:
       quellen: [gkv-sv-amnog-fokus]
   bilanz:
     - typ: fakt
-      text: Das Gesetz zur Preisverhandlung (§ 130b SGB V) wurde bis Ende 2024 in sechzehn Gesetzen geändert, im Schnitt mehr als einmal im Jahr.
+      text: Die Vorschrift zur Preisverhandlung (§ 130b SGB V) wurde bis Ende 2024 durch sechzehn Gesetze geändert, im Schnitt mehr als einmal im Jahr.
       quellen: [gkv-sv-amnog-fokus]
 verknuepft:
   - frage: arzneimittel-lieferengpaesse

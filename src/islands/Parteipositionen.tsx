@@ -22,8 +22,8 @@ export default function Parteipositionen({ frage, wahl }: Props) {
         <span class="text-xs font-normal text-muted group-open/p:hidden">anzeigen</span>
       </summary>
       <p class="text-xs text-muted mt-2 mb-3">
-        Laut Wahlprogrammen zur Bundestagswahl 2025, wörtlich zitiert. Eine Partei wird nur zugeordnet, wenn ihr Programm
-        eindeutig ist. Alphabetische Reihenfolge.
+        Wörtliche Zitate aus den Wahlprogrammen zur Bundestagswahl 2025. Eine Partei wird einer Antwort nur zugeordnet,
+        wenn ihr Programm eindeutig ist. Die Reihenfolge ist alphabetisch.
       </p>
       <ul class="border-t border-line">
         {PARTEIEN.map((partei) => {
@@ -36,7 +36,7 @@ export default function Parteipositionen({ frage, wahl }: Props) {
                 <span class={`inline-flex items-center gap-1.5 ${p ? (gleich ? 'font-semibold text-accent' : 'font-medium') : 'text-faint italic'}`}>
                   {p && <span class="opt opt-klein">{optionBuchstabe(p.option)}</span>}
                   {p ? optionTitel(p.option) : 'keine eindeutige Aussage im Programm'}
-                  {gleich && ' · wie du'}
+                  {gleich && ' (wie du)'}
                 </span>
               </div>
               {p && (

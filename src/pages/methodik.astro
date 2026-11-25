@@ -3,35 +3,45 @@ import Layout from '../layouts/Layout.astro';
 import Legende from '../components/Legende.astro';
 ---
 
-<Layout title="Methodik & Neutralität" description="Wie Klartext Inhalte erstellt, prüft und neutral hält.">
+<Layout title="Methodik und Neutralität" description="Wie Klartext Inhalte erstellt, prüft und neutral hält.">
   <article class="mx-auto max-w-3xl px-4 pt-6 sm:pt-10 grid gap-10">
     <header>
-      <h1 class="serif text-3xl sm:text-4xl font-semibold">Methodik & Neutralität</h1>
+      <h1 class="serif text-3xl sm:text-4xl font-semibold">Methodik und Neutralität</h1>
       <p class="mt-3 text-lg text-muted leading-relaxed">
-        Klartext will konstruktive Gespräche über Politik ermöglichen. Dafür muss die Plattform selbst glaubwürdig neutral
-        sein. Neutralität kann man nicht behaupten – man muss sie überprüfbar machen. So gehen wir vor.
+        Klartext soll sachliche Gespräche über Politik erleichtern. Das gelingt nur, wenn die Seite selbst als neutral
+        gelten kann. Weil sich Neutralität nicht einfach behaupten lässt, legen wir offen, wie wir arbeiten, damit jeder
+        es überprüfen kann.
       </p>
     </header>
 
     <section>
       <h2 class="serif text-2xl font-semibold mb-3">Grundsätze</h2>
       <ol class="grid gap-3 list-decimal pl-5 marker:text-faint marker:font-semibold">
-        <li><strong>Alle sehen dasselbe.</strong> Es gibt keine personalisierten oder spontan generierten Antworten. Inhalte werden geschrieben, geprüft und versioniert veröffentlicht.</li>
-        <li><strong>Daten und Meinungen sind getrennt.</strong> Jede Aussage trägt einen Typ (siehe unten).</li>
-        <li><strong>Jede Option in ihrer stärksten Form.</strong> Testfrage: Würde ein überzeugter Anhänger sagen, dass seine Position hier fair dargestellt ist?</li>
-        <li><strong>Keine Empfehlung.</strong> Klartext sagt nie, welche Option richtig ist – auch nicht am Ende.</li>
+        <li>
+          <strong>Alle sehen dasselbe.</strong> Es gibt keine auf einzelne Nutzer zugeschnittenen oder spontan erzeugten
+          Antworten. Die Inhalte werden geschrieben, geprüft und in nachvollziehbaren Fassungen veröffentlicht.
+        </li>
+        <li><strong>Daten und Meinungen sind getrennt.</strong> Jede Aussage ist einem von vier Typen zugeordnet.</li>
+        <li>
+          <strong>Jede Antwort wird mit ihren stärksten Argumenten dargestellt.</strong> Als Prüfstein dient die Frage, ob
+          überzeugte Anhänger ihre Position hier fair wiedergegeben fänden.
+        </li>
+        <li><strong>Klartext gibt keine Empfehlung.</strong> Die Seite sagt an keiner Stelle, welche Antwort richtig ist.</li>
         <li><strong>Unsicherheit wird benannt.</strong> Wo die Datenlage dünn oder umstritten ist, steht das dabei.</li>
-        <li><strong>Interessen werden sichtbar.</strong> Forderungen von Verbänden, Kassen, Kliniken oder Parteien sind als Position gekennzeichnet – mit Absender.</li>
+        <li>
+          <strong>Interessen werden sichtbar.</strong> Forderungen von Verbänden, Krankenkassen, Kliniken oder Parteien
+          sind als Position gekennzeichnet und nennen ihren Absender.
+        </li>
       </ol>
     </section>
 
     <section>
       <h2 class="serif text-2xl font-semibold mb-2">Die vier Aussage-Typen</h2>
-      <p class="text-muted mb-4">Jede Aussage ist am linken Rand markiert – die Form der Linie verrät den Typ.</p>
+      <p class="text-muted mb-4">Jede Aussage ist am linken Rand markiert. Die Form der Linie zeigt den Typ an.</p>
       <Legende ausfuehrlich />
       <p class="text-sm text-muted mt-3">
-        Fakten und Schätzungen ohne Quelle lassen sich technisch gar nicht veröffentlichen: Die Seite wird dann nicht
-        gebaut.
+        Fakten und Schätzungen ohne Quelle lassen sich gar nicht veröffentlichen, weil die Seite in diesem Fall nicht
+        erstellt wird.
       </p>
     </section>
 
@@ -39,52 +49,55 @@ import Legende from '../components/Legende.astro';
       <h2 class="serif text-2xl font-semibold mb-3">Entwürfe und Sprachmodelle</h2>
       <div class="grid gap-3 text-[0.95rem] leading-relaxed">
         <p>
-          Recherche und Aufbereitung sind viel Arbeit. Deshalb nutzt Klartext Sprachmodelle (KI) als Recherche- und
-          Schreibhilfe. Dabei gelten feste Regeln:
+          Recherche und Aufbereitung sind aufwendig. Klartext nutzt deshalb Sprachmodelle als Hilfe beim Recherchieren und
+          Schreiben. Dafür gelten feste Regeln:
         </p>
         <ul class="list-disc pl-5 grid gap-1.5 marker:text-faint">
-          <li>Das Modell erstellt nur <strong>Entwürfe</strong>. Sie sind auf der Seite deutlich als Entwurf markiert.</li>
-          <li>Jede Zahl muss aus einer echten, verlinkten Quelle stammen. Was sich nicht belegen lässt, wird gestrichen.</li>
-          <li>Ein Mensch prüft Entwürfe gegen die Quellen und den Redaktionsleitfaden, bevor die Markierung entfällt.</li>
-          <li>Inhalte werden nicht für einzelne Nutzer generiert. Alle lesen dieselbe, geprüfte Fassung.</li>
+          <li>Das Sprachmodell erstellt nur Entwürfe. Sie sind auf der Seite deutlich als Entwurf gekennzeichnet.</li>
+          <li>Jede Zahl muss aus einer tatsächlich vorhandenen, verlinkten Quelle stammen. Was sich nicht belegen lässt, wird gestrichen.</li>
+          <li>Ein Mensch prüft jeden Entwurf anhand der Quellen und des Redaktionsleitfadens, bevor die Kennzeichnung entfällt.</li>
+          <li>Inhalte werden nicht für einzelne Nutzer erzeugt. Alle lesen dieselbe geprüfte Fassung.</li>
         </ul>
         <p class="text-muted">
-          Dieser Prototyp besteht derzeit vollständig aus Entwürfen. Fehler sind wahrscheinlich – Hinweise sind
-          ausdrücklich erwünscht.
+          Dieser Prototyp besteht bisher ausschließlich aus Entwürfen. Er enthält wahrscheinlich noch Fehler; Hinweise
+          darauf sind ausdrücklich erwünscht.
         </p>
       </div>
     </section>
 
     <section>
-      <h2 class="serif text-2xl font-semibold mb-3">Woher die Informationen kommen</h2>
+      <h2 class="serif text-2xl font-semibold mb-3">Woher die Informationen stammen</h2>
       <ol class="grid gap-1.5 list-decimal pl-5 text-[0.95rem] marker:text-faint">
         <li>Amtliche Statistik und Gesetze (Statistisches Bundesamt, Bundesgesundheitsministerium, Bundestag)</li>
-        <li>Wissenschaftliche Gutachten (z. B. Sachverständigenrat, Regierungskommissionen, Forschungsinstitute)</li>
-        <li>Internationale Organisationen (OECD, WHO, European Observatory)</li>
-        <li>Selbstverwaltung und Verbände – immer als Interessenträger gekennzeichnet</li>
-        <li>Qualitätsjournalismus nur für Ereignisse, nicht für Zahlen</li>
+        <li>Wissenschaftliche Gutachten (etwa vom Sachverständigenrat, von Regierungskommissionen und Forschungsinstituten)</li>
+        <li>Internationale Organisationen (OECD, WHO, European Observatory on Health Systems and Policies)</li>
+        <li>Selbstverwaltung und Verbände, stets als Interessenvertreter gekennzeichnet</li>
+        <li>Zeitungen und Fachpresse, nur für Ereignisse und nicht für Zahlen</li>
       </ol>
     </section>
 
     <section>
       <h2 class="serif text-2xl font-semibold mb-3">Parteien</h2>
-      <p class="text-[0.95rem] leading-relaxed">
-        Parteipositionen werden nur mit Beleg aus dem Wahl- oder Grundsatzprogramm aufgenommen und erst angezeigt,
-        <em>nachdem</em> du selbst geantwortet hast – damit du dich mit der Sache beschäftigst und nicht mit dem Absender.
-        Berücksichtigt sind die Parteien im aktuellen Bundestag (AfD, CDU/CSU, Die Linke, Grüne, SPD) mit ihren
-        Wahlprogrammen zur Bundestagswahl 2025 – in alphabetischer Reihenfolge, ohne Rangfolge. Jede Zuordnung ist mit
-        einem wörtlichen Zitat und der Seitenzahl belegt. Wo ein Programm nichts Eindeutiges sagt, steht genau das da.
-        Was Parteien seitdem in Regierung oder Opposition getan haben, kann vom Programm abweichen – das gehört in die
-        Ebene „Geschichte“.
-      </p>
+      <div class="grid gap-3 text-[0.95rem] leading-relaxed">
+        <p>
+          Berücksichtigt sind die Parteien des aktuellen Bundestags (AfD, CDU/CSU, Die Linke, Grüne und SPD) mit ihren
+          Wahlprogrammen zur Bundestagswahl 2025. Sie stehen in alphabetischer Reihenfolge. Jede Zuordnung ist mit einem
+          wörtlichen Zitat und der Seitenzahl belegt; wo ein Programm keine eindeutige Aussage enthält, steht das so da.
+        </p>
+        <p>
+          Die Positionen der Parteien erscheinen erst, <em>nachdem</em> du selbst geantwortet hast. So beschäftigst du dich
+          zuerst mit der Sache und nicht mit dem Absender. Was eine Partei seither in Regierung oder Opposition getan hat,
+          kann von ihrem Programm abweichen; darauf geht die Ebene „Geschichte“ ein.
+        </p>
+      </div>
     </section>
 
     <section>
       <h2 class="serif text-2xl font-semibold mb-3">Deine Daten</h2>
       <p class="text-[0.95rem] leading-relaxed">
-        Deine Antworten werden nur im Speicher deines Browsers abgelegt (localStorage). Es gibt keine Konten, keine
-        Übertragung an einen Server und kein Tracking deiner Meinung. Schriften werden lokal ausgeliefert, nicht von
-        Drittanbietern geladen.
+        Deine Antworten werden ausschließlich im Speicher deines Browsers abgelegt (localStorage). Es gibt keine Konten,
+        keine Übertragung an einen Server und keine Auswertung deiner Meinung. Auch die Schriften werden von Klartext selbst
+        ausgeliefert und nicht bei Drittanbietern geladen.
       </p>
     </section>
   </article>

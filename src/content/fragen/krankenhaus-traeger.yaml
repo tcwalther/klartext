@@ -8,7 +8,7 @@ frage: "Soll es beim Nebeneinander öffentlicher, gemeinnütziger und privater K
 optionen:
   - id: traegervielfalt
     titel: Trägervielfalt wie bisher
-    kurz: "Öffentliche, kirchliche bzw. gemeinnützige und private Krankenhäuser bestehen nebeneinander und arbeiten unter denselben Regeln für Planung, Bezahlung und Qualität."
+    kurz: "Öffentliche, gemeinnützige (etwa kirchliche) und private Krankenhäuser bestehen nebeneinander und arbeiten unter denselben Regeln für Planung, Bezahlung und Qualität."
     pro:
       - typ: fakt
         text: "Das Krankenhausfinanzierungsgesetz schreibt vor, dass die **Vielfalt der Krankenhausträger** zu beachten ist; die wirtschaftliche Sicherung gemeinnütziger und privater Häuser ist ausdrücklich zu gewährleisten."
@@ -21,33 +21,33 @@ optionen:
         text: "Unterschiedliche Träger bringen unterschiedliche Stärken mit: kommunale Verankerung, kirchliche Werte, Kapital und Managementerfahrung großer Klinikgruppen. Patientinnen und Patienten können oft zwischen Häusern wählen."
     contra:
       - typ: wertung
-        text: "Gleiche Regeln bedeuten nicht gleiche Ausgangslage: Kommunen gleichen Verluste ihrer Häuser teils aus Steuergeld aus, private Träger können Gewinne an Eigentümer ausschütten. Beide Seiten sehen darin einen Nachteil für sich."
+        text: "Gleiche Regeln bedeuten keine gleiche Ausgangslage. Kommunen gleichen Verluste ihrer Häuser teils aus Steuergeld aus, private Träger können Gewinne an Eigentümer ausschütten. Beide Seiten sehen darin einen Nachteil für sich."
       - typ: fakt
-        text: "Der Bundesverband Deutscher Privatkliniken klagte gegen den Landkreis Calw, weil dieser die Verluste seiner Kreiskliniken ausglich. Der Bundesgerichtshof entschied 2016, dass solche Zahlungen unter bestimmten Voraussetzungen zulässig sind – etwa wenn der Kreis das Haus vorher förmlich mit der Versorgung betraut hat."
+        text: "Der Bundesverband Deutscher Privatkliniken klagte gegen den Landkreis Calw, weil dieser die Verluste seiner Kreiskliniken ausglich. Der Bundesgerichtshof entschied 2016, dass solche Zahlungen unter bestimmten Voraussetzungen zulässig sind, etwa wenn der Kreis das Haus vorher förmlich mit der Versorgung betraut hat."
         quellen: [bgh-2016-calw]
       - typ: wertung
-        text: "Der bisherige Zustand hat das Investitionsproblem nicht gelöst: Träger mit wenig eigenem Kapital können notwendige Erneuerungen oft nicht finanzieren."
+        text: "Der bisherige Zustand hat das Investitionsproblem nicht gelöst. Träger mit wenig eigenem Kapital können notwendige Erneuerungen oft nicht finanzieren."
     gewinnt: [Wahlfreiheit der Patienten, bestehende Träger aller Art, Planbarkeit für Beschäftigte]
     kostet: [klare Verantwortung bei Verlusten, kommunale Haushalte (Defizitausgleich)]
 
   - id: gemeinwohl-staerken
     titel: Öffentliche Träger stärken, Gewinne begrenzen
-    kurz: "Krankenhäuser sollen stärker in öffentlicher oder gemeinnütziger Hand sein; Gewinne aus Kassengeldern sollen im System bleiben statt an Eigentümer zu fließen."
+    kurz: "Krankenhäuser sollen stärker in öffentlicher oder gemeinnütziger Hand sein; Gewinne aus Kassengeldern sollen im System bleiben, statt an Eigentümer zu fließen."
     pro:
       - typ: position
         wer: Bündnis Klinikrettung
         text: "„Verbieten Sie Gewinne im Krankenhauswesen! Krankenhäuser müssen gemeinnützig sein.“ Der wirtschaftliche Druck gehe zulasten von Personal und Versorgungsqualität."
         quellen: [klinikrettung-petition-2026]
       - typ: schaetzung
-        text: "Eine Übersichtsarbeit aus Oxford zu Studien aus acht reichen Ländern, darunter Deutschland, fand: Mehr Privatisierung ging meist mit schlechterer Versorgungsqualität einher. Häuser, die von öffentlicher in private Hand wechselten, erzielten höhere Gewinne – vor allem durch weniger Personal."
+        text: "Eine Übersichtsarbeit aus Oxford zu Studien aus acht reichen Ländern, darunter Deutschland, kam zu dem Ergebnis, dass mehr Privatisierung meist mit schlechterer Versorgungsqualität einherging. Häuser, die von öffentlicher in private Hand wechselten, erzielten höhere Gewinne, vor allem durch weniger Personal."
         quellen: [goodair-reeves-2024]
         unsicherheit: "Die Autoren betonen selbst, dass es nur wenige Studien gibt und viele Lücken bestehen. Die Ergebnisse stammen aus sehr unterschiedlichen Gesundheitssystemen."
       - typ: wertung
-        text: "Krankenhäuser werden aus Pflichtbeiträgen und Steuern bezahlt. Wer das so sieht, hält es für richtig, dass Überschüsse in die Versorgung zurückfließen und gewählte Vertreter über Standorte mitentscheiden."
+        text: "Krankenhäuser werden aus Pflichtbeiträgen und Steuern bezahlt. Deshalb sollten Überschüsse in die Versorgung zurückfließen, und gewählte Vertreter sollten über Standorte mitentscheiden."
     contra:
       - typ: position
         wer: Bundesverband Deutscher Privatkliniken (BDPK)
-        text: "Eine Rekommunalisierung lehnt der BDPK ab. Private Häuser seien in der Mehrzahl ehemalige kommunale Krankenhäuser, die durch private Investoren „vor dem Aus gerettet“ worden seien; sie stünden bei Qualität mindestens auf gleicher Höhe wie andere Träger."
+        text: "Eine Rekommunalisierung lehnt der BDPK ab. Private Häuser seien in der Mehrzahl ehemalige kommunale Krankenhäuser, die durch private Investoren „vor dem Aus gerettet“ worden seien; bei der Qualität lägen sie mindestens gleichauf mit anderen Trägern."
         quellen: [bdpk-2021]
       - typ: schaetzung
         text: "Eine RWI-Studie mit Daten von 2005 bis 2013 fand bei Wundinfektionen, Krankenhaussterblichkeit und Druckgeschwüren keine signifikanten Unterschiede zwischen den Trägern. 2013 galten 7 % der privaten, aber 62 % der kommunalen Häuser als nicht investitionsfähig."
@@ -60,12 +60,12 @@ optionen:
 
   - id: mehr-wettbewerb
     titel: Mehr Wettbewerb zwischen Trägern
-    kurz: "Wer ein Haus betreibt, ist zweitrangig – entscheidend sind Qualität und Wirtschaftlichkeit. Private Träger sollen leichter übernehmen können, Verlustausgleich aus Steuergeld soll die Ausnahme bleiben."
+    kurz: "Wer ein Haus betreibt, ist zweitrangig; es zählen Qualität und Wirtschaftlichkeit. Private Träger sollen leichter übernehmen können, Verlustausgleich aus Steuergeld soll die Ausnahme bleiben."
     pro:
       - typ: schaetzung
-        text: "Eine Studie zu deutschen Krankenhäusern fand: Nach dem Wechsel von öffentlicher zu privater, gewinnorientierter Trägerschaft stieg die Effizienz um 2,9 bis 4,9 %, und der Effekt hielt an. Die Autoren sehen darin einen Weg, knappe Mittel besser zu nutzen."
+        text: "Nach einer Studie zu deutschen Krankenhäusern stieg die Effizienz nach dem Wechsel von öffentlicher zu privater, gewinnorientierter Trägerschaft um 2,9 bis 4,9 %, und der Effekt hielt an. Die Autoren sehen darin einen Weg, knappe Mittel besser zu nutzen."
         quellen: [tiemann-schreyoegg-2012]
-        unsicherheit: "Effizienz bedeutet hier das Verhältnis von Personal und Mitteln zu Leistungen – nicht die Behandlungsqualität. Die Daten stammen überwiegend aus der Zeit um die Einführung der Fallpauschalen."
+        unsicherheit: "Effizienz bedeutet hier das Verhältnis von Personal und Mitteln zu Leistungen, nicht die Behandlungsqualität. Die Daten stammen überwiegend aus der Zeit um die Einführung der Fallpauschalen."
       - typ: position
         wer: Bundesverband Deutscher Privatkliniken (BDPK)
         text: "Nahezu alle privaten Kliniken arbeiteten heute im wirtschaftlichen Plus. Ohne die Privaten gäbe es keine Versorgungssicherheit, weil sie viele Häuser übernommen hätten, die sonst geschlossen worden wären."
@@ -74,7 +74,7 @@ optionen:
         text: "Wo die Länder Investitionen nicht ausreichend bezahlen, können private Träger mit eigenem Kapital modernisieren. Wettbewerb zwingt alle Häuser, Abläufe zu verbessern."
     contra:
       - typ: schaetzung
-        text: "Dieselbe Studie zeigt, woher die Effizienzgewinne vor allem kamen: aus einem deutlichen Abbau von Personal in fast allen Berufsgruppen, außer bei Ärztinnen und Ärzten."
+        text: "Nach derselben Studie kamen die Effizienzgewinne vor allem aus einem deutlichen Personalabbau in fast allen Berufsgruppen. Ausgenommen waren Ärztinnen und Ärzte."
         quellen: [tiemann-schreyoegg-2012]
         unsicherheit: "Ob weniger Personal je Fall die Qualität senkt, misst die Studie nicht."
       - typ: wertung
@@ -88,7 +88,7 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: "Krankenhäuser gehören drei Arten von Trägern: **öffentlichen** (etwa Ländern, Kreisen und Städten), **freigemeinnützigen** (etwa Kirchen und Wohlfahrtsverbänden) und **privaten** Unternehmen."
+    text: "Krankenhäuser gehören drei Arten von Trägern: öffentlichen (etwa Ländern, Kreisen und Städten), freigemeinnützigen (etwa Kirchen und Wohlfahrtsverbänden) und privaten Unternehmen."
     quellen: [destatis-grunddaten-2021]
     genau: "Öffentlich sind auch Häuser von Sozialversicherungen. Freigemeinnützig sind Häuser der kirchlichen und freien Wohlfahrtspflege, von Kirchengemeinden, Stiftungen und Vereinen. Private Träger sind gewerbliche Unternehmen."
   - typ: fakt
@@ -109,7 +109,7 @@ erklaerung:
     quellen: [khg-1, khg-9, bgh-2016-calw]
     genau: "Der Verlustausgleich ist zulässig, wenn die Kommune ihr Haus vorher förmlich mit der Versorgung betraut hat (Bundesgerichtshof 2016, Fall Landkreis Calw). Das Krankenhausfinanzierungsgesetz verlangt, die Vielfalt der Träger zu beachten."
   - typ: wertung
-    text: "Ob die Trägerart die Qualität der Behandlung beeinflusst, ist wissenschaftlich nicht eindeutig geklärt – auch weil Häuser verschiedener Träger unterschiedliche Patienten und Leistungen haben. Im Streit geht es deshalb auch um Grundüberzeugungen: Wie viel Markt verträgt die Gesundheitsversorgung, und wer soll Gewinne und Verluste tragen?"
+    text: "Ob die Trägerart die Qualität der Behandlung beeinflusst, ist wissenschaftlich nicht eindeutig geklärt, auch weil Häuser verschiedener Träger unterschiedliche Patienten und Leistungen haben. Im Streit geht es deshalb auch um Grundüberzeugungen: wie viel Markt die Gesundheitsversorgung verträgt und wer Gewinne und Verluste tragen soll."
 
 zielkonflikte:
   - typ: wertung
@@ -117,7 +117,7 @@ zielkonflikte:
   - typ: wertung
     text: "**Effizienz gegen Personalausstattung.** Was als Effizienzgewinn gemessen wird, ist oft weniger Personal je Fall. Ob das Verschwendung abbaut oder die Versorgung verschlechtert, hängt vom Einzelfall ab."
   - typ: wertung
-    text: "**Gleiche Regeln, ungleiche Rollen.** Sollen alle Träger gleich behandelt werden – oder brauchen Häuser, die unrentable Notfall- und Grundversorgung übernehmen, einen Ausgleich, den andere nicht bekommen?"
+    text: "**Gleiche Regeln, ungleiche Rollen.** Offen ist, ob alle Träger gleich behandelt werden sollen oder ob Häuser, die unrentable Notfall- und Grundversorgung übernehmen, einen Ausgleich brauchen, den andere nicht bekommen."
   - typ: fakt
     text: "**Das Investitionsproblem betrifft alle.** Die Länder sind gesetzlich verpflichtet, die notwendigen Investitionskosten zu decken. Nach Angaben der Deutschen Krankenhausgesellschaft blieb 2023 aber eine Lücke von über 2,6 Milliarden Euro."
     quellen: [khg-9, dkg-pm-2026-01-09]
@@ -186,7 +186,7 @@ daten:
       text: "Zur Frage, ob private, öffentliche oder gemeinnützige Häuser besser behandeln, gibt es nur wenige belastbare Studien. Sie kommen zu unterschiedlichen Ergebnissen, auch weil Häuser verschiedener Träger unterschiedliche Patienten und Leistungen haben. Ein klarer Befund zugunsten einer Trägerart lässt sich daraus nicht ableiten."
     - typ: position
       wer: GKV-Spitzenverband, PKV-Verband und Deutsche Krankenhausgesellschaft (gemeinsam)
-      text: "Die Länder deckten seit Jahren nur etwa die Hälfte des Investitionsbedarfs von rund 6,5 Milliarden Euro pro Jahr. Anfang der 1970er-Jahre hätten die Investitionsmittel noch 25 % der GKV-Ausgaben entsprochen, heute deutlich unter 4 %."
+      text: "Die Länder deckten seit Jahren nur etwa die Hälfte des Investitionsbedarfs von rund 6,5 Milliarden Euro pro Jahr. Anfang der 1970er-Jahre hätten die Investitionsmittel noch 25 % der GKV-Ausgaben entsprochen, heute seien es deutlich unter 4 %."
       quellen: [gemeinsame-pm-invest-2024]
 
 geschichte:
@@ -201,7 +201,7 @@ geschichte:
       quellen: [hamburg-volksabstimmungen, abgeordnetenwatch-lbk-2004]
     - jahr: "2006"
       titel: Erste private Uniklinik
-      text: "Das Land Hessen verkauft 95 % der fusionierten Universitätskliniken Gießen und Marburg für 112 Millionen Euro an die Rhön-Klinikum AG – die erste Privatisierung einer Universitätsklinik in Deutschland."
+      text: "Das Land Hessen verkauft 95 % der fusionierten Universitätskliniken Gießen und Marburg für 112 Millionen Euro an die Rhön-Klinikum AG. Es ist die erste Privatisierung einer Universitätsklinik in Deutschland."
       quellen: [iww-ukgm-2006]
     - jahr: "2016"
       titel: BGH-Urteil zum Verlustausgleich
@@ -213,7 +213,7 @@ geschichte:
       quellen: [klinikrettung-petition-2026]
   bilanz:
     - typ: fakt
-      text: "Seit 1991 ist der Anteil privater Häuser stark gestiegen; heute stellen private Träger die meisten Häuser. Gemessen an den Betten bleiben öffentliche Häuser aber die größte Gruppe."
+      text: "Seit 1991 ist der Anteil privater Häuser stark gestiegen; heute bilden private Träger die größte Gruppe, aber keine Mehrheit der Häuser. Gemessen an den Betten bleiben öffentliche Häuser aber die größte Gruppe."
       quellen: [destatis-grunddaten-2021, destatis-pm-2026-376]
     - typ: wertung
       text: "Die Erfahrungen mit Privatisierungen werden sehr unterschiedlich bewertet. Befürworter verweisen auf gerettete Standorte und Investitionen, Kritiker auf Personalabbau und Renditedruck. Eine eindeutige wissenschaftliche Bilanz gibt es nicht."
@@ -240,7 +240,7 @@ laender:
       quellen: [dk-super-hospital-2021, observatory-dk-2024]
   fazit:
     - typ: wertung
-      text: "Die Spannbreite in Europa ist groß: von Regionen, die ihre Krankenhäuser selbst führen (Dänemark), über ausschließlich gemeinnützige Häuser (Niederlande) bis zu gemischten Systemen wie in Frankreich und Deutschland. Ein Ländervergleich allein zeigt nicht, welches Modell besser versorgt, weil sich die Systeme in vielem anderen auch unterscheiden."
+      text: "Die Spannbreite in Europa ist groß: von Regionen, die ihre Krankenhäuser selbst führen (Dänemark), über ausschließlich gemeinnützige Häuser (Niederlande) bis zu gemischten Systemen wie in Frankreich und Deutschland. Ein Ländervergleich allein zeigt nicht, welches Modell besser versorgt, weil sich die Systeme auch in vielem anderen unterscheiden."
     - typ: wertung
       text: "Auch in Frankreich schreiben öffentliche Häuser insgesamt Verluste und gewinnorientierte Kliniken Gewinne. Ob das an Effizienz liegt oder an unterschiedlichen Aufgaben und Patienten, zeigen diese Zahlen allein nicht."
 
@@ -248,7 +248,7 @@ verknuepft:
   - frage: krankenhaus-standorte
     grund: "Ob ein kleines Haus erhalten bleibt, hängt auch davon ab, ob sein Träger Verluste tragen kann oder will."
   - frage: krankenhaus-verguetung
-    grund: "Das Bezahlsystem entscheidet, welche Leistungen Gewinn bringen – und damit, für welche Träger sich ein Haus lohnt."
+    grund: "Das Bezahlsystem entscheidet, welche Leistungen Gewinn bringen, und damit auch, für welche Träger sich ein Haus lohnt."
   - frage: fachkraefte-pflege
     grund: "Studien zu Privatisierungen drehen sich oft um die Personalausstattung."
   - frage: finanzierung-kostenanstieg

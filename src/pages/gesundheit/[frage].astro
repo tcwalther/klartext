@@ -145,20 +145,20 @@ const kurzTitel: Record<string, string> = {
       <AntwortBox client:load frage={kurz} />
 
       <div class="mt-10 mb-3 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-2">
-        <h2 class="kicker">Schicht für Schicht tiefer</h2>
+        <h2 class="kicker">Die Frage im Einzelnen</h2>
         <Legende />
       </div>
 
       <div class="border-b border-line">
         <!-- Ebene 1 -->
-        <Ebene n={1} id="worum-gehts" titel="Worum geht’s?" sub="In zwei Minuten das Wichtigste" frageId={frage.id} open>
+        <Ebene n={1} id="worum-gehts" titel="Worum geht’s?" sub="Das Wichtigste in zwei Minuten" frageId={frage.id} open>
           <AussageListe items={d.erklaerung} nums={nums} />
         </Ebene>
 
         <!-- Ebene 2 -->
         {
           z && (
-            <Ebene n={2} id="zusammenhaenge" titel="Wie hängt das zusammen?" sub="Ursachen, Wirkungen und wie groß jeder Hebel ist" frageId={frage.id}>
+            <Ebene n={2} id="zusammenhaenge" titel="Wie hängt das zusammen?" sub="Ursachen, Wirkungen und Größenordnungen" frageId={frage.id}>
               <AussageListe items={z.erklaerung} nums={nums} />
               {z.kette && (
                 <div class="mt-8">
@@ -175,7 +175,7 @@ const kurzTitel: Record<string, string> = {
         }
 
         <!-- Ebene 3 -->
-        <Ebene n={3} id="argumente" titel="Argumente & Zielkonflikte" sub="Was spricht für welche Option – und was kostet sie?" frageId={frage.id}>
+        <Ebene n={3} id="argumente" titel="Argumente und Zielkonflikte" sub="Was für jede Antwort spricht und was sie kostet" frageId={frage.id}>
           <div>
             {
               d.optionen.map((o, i) => (
@@ -201,13 +201,13 @@ const kurzTitel: Record<string, string> = {
                     <dl class="mt-5 grid md:grid-cols-2 gap-x-8 gap-y-2 text-sm">
                       {o.gewinnt.length > 0 && (
                         <div>
-                          <dt class="font-semibold">Wer oder was gewinnt</dt>
+                          <dt class="font-semibold">Wer davon profitiert</dt>
                           <dd class="text-muted">{o.gewinnt.join(' · ')}</dd>
                         </div>
                       )}
                       {o.kostet.length > 0 && (
                         <div>
-                          <dt class="font-semibold">Wer oder was trägt die Last</dt>
+                          <dt class="font-semibold">Wer die Last trägt</dt>
                           <dd class="text-muted">{o.kostet.join(' · ')}</dd>
                         </div>
                       )}
@@ -226,7 +226,7 @@ const kurzTitel: Record<string, string> = {
         <!-- Ebene 4 -->
         {
           d.daten && ebenen[3]!.da && (
-            <Ebene n={4} id="daten" titel="Fakten & Daten" sub="Zahlen mit Quelle und Stand" frageId={frage.id}>
+            <Ebene n={4} id="daten" titel="Fakten und Daten" sub="Zahlen mit Quelle und Stand" frageId={frage.id}>
               {d.daten.kennzahlen.length > 0 && (
                 <div class="grid grid-cols-1 min-[420px]:grid-cols-2 gap-x-6 gap-y-5 mb-8">
                   {d.daten.kennzahlen.map((k) => (
@@ -249,7 +249,7 @@ const kurzTitel: Record<string, string> = {
         <!-- Ebene 5 -->
         {
           d.geschichte && ebenen[4]!.da && (
-            <Ebene n={5} id="geschichte" titel="Was wurde schon versucht?" sub="Reformen und was dabei herauskam" frageId={frage.id}>
+            <Ebene n={5} id="geschichte" titel="Was wurde schon versucht?" sub="Frühere Reformen und ihre Ergebnisse" frageId={frage.id}>
               <ol class="relative border-l border-line ml-1.5 space-y-5 mb-8">
                 {d.geschichte.ereignisse.map((e) => (
                   <li class="pl-5 relative">
@@ -276,7 +276,7 @@ const kurzTitel: Record<string, string> = {
         <!-- Ebene 6 -->
         {
           d.laender && ebenen[5]!.da && (
-            <Ebene n={6} id="andere-laender" titel="Wie machen es andere Länder?" sub="Und lässt sich das übertragen?" frageId={frage.id}>
+            <Ebene n={6} id="andere-laender" titel="Wie machen es andere Länder?" sub="Beispiele und ob sie sich übertragen lassen" frageId={frage.id}>
               <div class="mb-8">
                 {d.laender.beispiele.map((l) => (
                   <section class="py-5 first:pt-0 border-b border-line last:border-b-0">
@@ -348,7 +348,7 @@ const kurzTitel: Record<string, string> = {
       {
         verknuepft.length > 0 && (
           <section class="mt-12">
-            <h2 class="kicker mb-3">Hängt zusammen mit</h2>
+            <h2 class="kicker mb-3">Verwandte Fragen</h2>
             <ul class="border-t border-line">
               {verknuepft.map((v) => (
                 <li class="border-b border-line">

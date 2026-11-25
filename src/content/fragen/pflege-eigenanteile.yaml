@@ -15,14 +15,14 @@ optionen:
         text: Die Ausgaben der Pflegeversicherung bleiben begrenzt und planbar. Das schützt Beitragszahler und jüngere Generationen.
       - typ: position
         wer: Bundesgesundheitsministerium (Carsten Linnemann)
-        text: Ein fester Deckel spare Betroffenen nur etwa 300 € und könne dazu führen, dass Anbieter die Preise erhöhen. Stattdessen sollen die nach Wohndauer gestaffelten Zuschüsse „sozialverträglich“ weiterentwickelt werden.
+        text: Ein fester Deckel spare Betroffenen nur etwa 300 € und könne dazu führen, dass Anbieter die Preise erhöhen. Stattdessen sollten die nach Wohndauer gestaffelten Zuschüsse „sozialverträglich“ weiterentwickelt werden.
         quellen: [aerzteblatt-pflegedeckel-2026]
     contra:
       - typ: fakt
-        text: Trotz Zuschlägen zahlten Bewohner im ersten Jahr im Juli 2026 im Schnitt 3.364 € im Monat selbst – 256 € mehr als ein Jahr zuvor.
+        text: Im ersten Jahr im Heim zahlten Bewohner im Juli 2026 im Schnitt 3.364 € im Monat selbst, 256 € mehr als ein Jahr zuvor. Darin ist der Zuschlag von 15 % auf den Pflegeanteil noch nicht abgezogen; mit ihm bleiben knapp 3.100 €.
         quellen: [vdek-eigenanteile-2026]
       - typ: wertung
-        text: Wer pflegebedürftig wird, kann nicht vorhersehen, wie hoch und wie lange die Kosten sein werden. Genau gegen solche Risiken sollen Versicherungen schützen.
+        text: Wer pflegebedürftig wird, kann nicht vorhersehen, wie hoch und wie lange die Kosten sein werden. Gegen solche Risiken sollen Versicherungen schützen.
       - typ: wertung
         text: Wenn Rente und Ersparnisse nicht reichen, ist Sozialhilfe nötig. Das wollte die Pflegeversicherung ursprünglich vermeiden.
     gewinnt: [Beitragszahlende, Stabilität der Pflegeversicherung]
@@ -35,10 +35,10 @@ optionen:
         text: Pflegebedürftige wissen vorher, was auf sie zukommt, und können dafür gezielt vorsorgen.
       - typ: position
         wer: Gutachten im Auftrag der Initiative Pro-Pflegereform (Rothgang u. a.)
-        text: Ein begrenzter Sockel – etwa 25 % der Pflegekosten, höchstens 700 € im Monat – und ein Höchstbetrag über die ganze Pflegezeit würden das Kostenrisiko für Pflegebedürftige verlässlich begrenzen.
+        text: Ein begrenzter Sockel (etwa 25 % der Pflegekosten, höchstens 700 € im Monat) und ein Höchstbetrag über die gesamte Pflegezeit würden das Kostenrisiko für Pflegebedürftige verlässlich begrenzen.
         quellen: [rothgang-aapv-2025]
       - typ: wertung
-        text: Steigende Löhne für Pflegekräfte würden nicht mehr direkt bei den Bewohnern ankommen, sondern solidarisch getragen.
+        text: Steigende Löhne für Pflegekräfte würden nicht mehr unmittelbar die Bewohner belasten, sondern von der Gemeinschaft der Versicherten getragen.
     contra:
       - typ: wertung
         text: Die Pflegeversicherung müsste alle künftigen Kostensteigerungen übernehmen. Das kann höhere Beiträge oder Steuerzuschüsse nötig machen.
@@ -47,7 +47,7 @@ optionen:
       - typ: wertung
         text: Auch Menschen mit hohem Vermögen werden entlastet, obwohl sie selbst zahlen könnten.
     gewinnt: [Pflegebedürftige im Heim, Angehörige, Planbarkeit]
-    kostet: [Beitragszahlende, Möglicherweise Bundeshaushalt]
+    kostet: [Beitragszahlende, möglicherweise Bundeshaushalt]
   - id: vollversicherung
     titel: Pflegevollversicherung
     kurz: Die Pflegeversicherung übernimmt alle pflegebedingten Kosten; Bewohner zahlen nur noch Unterkunft, Verpflegung und gegebenenfalls Investitionskosten.
@@ -55,25 +55,25 @@ optionen:
       - typ: wertung
         text: Pflege wird abgesichert wie Krankheit. Niemand muss wegen Pflegekosten sein Erspartes aufbrauchen oder Sozialhilfe beantragen.
       - typ: wertung
-        text: Das Kostenrisiko wird von allen gemeinsam getragen. Das gilt als gerecht, weil niemand sich gegen Pflegebedürftigkeit entscheiden kann.
+        text: Das Kostenrisiko wird von allen gemeinsam getragen. Das gilt als gerecht, weil sich niemand gegen Pflegebedürftigkeit entscheiden kann.
       - typ: wertung
-        text: Der Streit über die Höhe von Eigenanteilen entfällt, die Regeln werden einfacher.
+        text: Der Streit über die Höhe der Eigenanteile entfällt, und die Regeln werden einfacher.
     contra:
       - typ: wertung
-        text: Die Ausgaben der Pflegeversicherung würden stark steigen – und mit ihnen Beiträge oder Steuerzuschüsse.
+        text: Die Ausgaben der Pflegeversicherung würden stark steigen, mit ihnen die Beiträge oder die Steuerzuschüsse.
       - typ: wertung
         text: Ohne Eigenanteil gibt es kaum noch eine Bremse für Kostensteigerungen in Heimen.
       - typ: wertung
         text: In einer alternden Gesellschaft tragen vor allem jüngere Beitragszahler die zusätzlichen Kosten.
     gewinnt: [Pflegebedürftige, Angehörige, Erben]
-    kostet: [Beitragszahlende, Jüngere Generationen, Bundeshaushalt]
+    kostet: [Beitragszahlende, jüngere Generationen, Bundeshaushalt]
   - id: private-vorsorge-pflicht
     titel: Verpflichtende private Vorsorge
     kurz: Alle müssen zusätzlich eine kapitalgedeckte Pflegeversicherung abschließen, die künftige Eigenanteile weitgehend abdeckt.
     pro:
       - typ: position
         wer: Experten-Rat „Pflegefinanzen“ (vom PKV-Verband initiiert)
-        text: Eine verpflichtende, kapitalgedeckte „Pflege+ Versicherung“ könne den pflegebedingten Eigenanteil im Heim zu 90 % absichern. Für einen 20-Jährigen läge die Prämie bei rund 39 € im Monat, die Hälfte zahlt bei Beschäftigten der Arbeitgeber.
+        text: Eine verpflichtende, kapitalgedeckte „Pflege+ Versicherung“ könne den pflegebedingten Eigenanteil im Heim zu 90 % absichern. Für einen 20-Jährigen läge die Prämie bei rund 39 € im Monat; bei Beschäftigten zahle der Arbeitgeber die Hälfte.
         quellen: [expertenrat-pflegefinanzen-2023]
       - typ: wertung
         text: Jede Generation spart für die eigene Pflege an. Das entlastet künftige Beitragszahler in einer alternden Gesellschaft.
@@ -81,36 +81,36 @@ optionen:
         text: Die soziale Pflegeversicherung bleibt stabil, ohne dass ihre Beiträge stark steigen müssen.
     contra:
       - typ: wertung
-        text: Wer heute schon alt ist, kann kaum noch Kapital aufbauen. Für diese Gruppe hilft das Modell wenig oder wird teuer.
+        text: Wer heute schon alt ist, kann kaum noch Kapital aufbauen. Diesen Menschen hilft das Modell wenig, oder es wird für sie teuer.
       - typ: wertung
         text: Einheitsprämien belasten Geringverdiener relativ stärker als einkommensabhängige Beiträge.
       - typ: wertung
         text: Kapitalanlagen unterliegen Zins- und Marktrisiken. Private Versicherer verursachen eigene Verwaltungskosten.
-    gewinnt: [Künftige Beitragszahlende, Jüngere Generationen, Private Versicherer]
-    kostet: [Versicherte mit geringem Einkommen, Arbeitgeber, Heute ältere Menschen]
+    gewinnt: [künftige Beitragszahlende, jüngere Generationen, private Versicherer]
+    kostet: [Versicherte mit geringem Einkommen, Arbeitgeber, heute ältere Menschen]
 erklaerung:
   - typ: fakt
-    text: Die Pflegeversicherung zahlt im Heim einen **festen Betrag** je Pflegegrad – keinen festen Anteil an den Kosten. Steigen die Kosten, tragen die Bewohner den Anstieg deshalb zunächst selbst.
+    text: Die Pflegeversicherung zahlt im Heim einen **festen Betrag** je Pflegegrad, keinen festen Anteil an den Kosten. Steigen die Kosten, tragen die Bewohner den Anstieg deshalb zunächst selbst.
     quellen: [bmg-leistungsbetraege-2026]
     genau: Bei Pflegegrad 3 zahlt die Pflegeversicherung 2026 zum Beispiel 1.319 € im Monat.
   - typ: fakt
-    text: Entsprechend hoch ist der Eigenanteil, und er steigt Jahr für Jahr. Im ersten Jahr im Heim zahlen Bewohner im Schnitt deutlich mehr als 3.000 € im Monat selbst.
+    text: Entsprechend hoch ist der Eigenanteil, und er steigt Jahr für Jahr. Im ersten Jahr im Heim zahlen Bewohner im Schnitt rund 3.000 € im Monat oder mehr selbst.
     quellen: [vdek-eigenanteile-2026]
-    genau: 'Juli 2026: im Schnitt 3.364 € im Monat im ersten Jahr, je nach Land von 2.891 € (Sachsen-Anhalt) bis 3.761 € (Bremen). Der pflegebedingte Teil stieg binnen eines Jahres von 1.583 € auf 1.775 €.'
+    genau: 'Juli 2026: im Schnitt 3.364 € im Monat im ersten Jahr vor Abzug des Leistungszuschlags (mit Zuschlag knapp 3.100 €), je nach Land von 2.891 € (Sachsen-Anhalt) bis 3.761 € (Bremen). Der pflegebedingte Teil stieg binnen eines Jahres von 1.583 € auf 1.775 €.'
   - typ: fakt
-    text: Nur gut die Hälfte davon ist Pflege. Der Rest sind Unterkunft und Verpflegung sowie **Investitionskosten** der Heime, etwa für Gebäude. Wer die Eigenanteile senken will, kann deshalb an verschiedenen Stellen ansetzen.
+    text: Nur gut die Hälfte davon ist Pflege. Der Rest entfällt auf Unterkunft und Verpflegung sowie auf Investitionskosten der Heime, etwa für Gebäude. Wer die Eigenanteile senken will, kann deshalb an verschiedenen Stellen ansetzen.
     quellen: [vdek-eigenanteile-2026]
     genau: 'Juli 2026, erstes Jahr im Heim: Pflege 1.775 €, Unterkunft und Verpflegung 1.068 €, Investitionskosten 521 € im Monat.'
   - typ: fakt
     text: Ein **Leistungszuschlag** senkt den Pflege-Anteil, und zwar umso stärker, je länger jemand im Heim lebt. Er hilft also vor allem bei langen Aufenthalten. Unterkunft, Verpflegung und Investitionskosten deckt er nicht.
     quellen: [bmg-leistungsbetraege-2026]
-    genau: Zuschlag auf den pflegebedingten Eigenanteil – 15 % im ersten Jahr, 30 % im zweiten, 50 % im dritten und 75 % ab dem vierten Jahr.
+    genau: 'Zuschlag auf den pflegebedingten Eigenanteil: 15 % im ersten Jahr, 30 % im zweiten, 50 % im dritten und 75 % ab dem vierten Jahr.'
   - typ: fakt
     text: Das Pflegeneuordnungsgesetz der Bundesregierung enthält keinen Deckel für die Eigenanteile. Eine Kommission soll Vorschläge zur langfristigen Finanzierung machen.
     quellen: [bundesregierung-pnog-2026]
     genau: Kabinettsbeschluss im September 2026. Die Kommission soll bis Ende Januar 2027 berichten.
   - typ: wertung
-    text: 'Im Kern geht es darum, wer das Risiko steigender Pflegekosten trägt: die Bewohner und ihre Familien, die Beitragszahler, die Steuerzahler oder die Länder. Was eine Gruppe weniger zahlt, zahlt eine andere mehr.'
+    text: 'Es geht darum, wer das Risiko steigender Pflegekosten trägt: die Bewohner und ihre Familien, die Beitragszahler, die Steuerzahler oder die Länder. Was eine Gruppe weniger zahlt, zahlt eine andere mehr.'
 zielkonflikte:
   - typ: wertung
     text: '**Schutz der Pflegebedürftigen gegen Belastung der Beitragszahler:** Was Bewohner weniger zahlen, müssen Versicherte, Arbeitgeber oder Steuerzahler mehr zahlen.'
@@ -119,7 +119,7 @@ zielkonflikte:
   - typ: wertung
     text: '**Generationengerechtigkeit:** Umlagefinanzierte Lösungen entlasten heute Pflegebedürftige, kapitalgedeckte Lösungen entlasten künftige Beitragszahler.'
   - typ: wertung
-    text: '**Bund gegen Länder:** Ein Teil der Eigenanteile sind Investitionskosten, für die eigentlich die Länder zuständig sind.'
+    text: '**Bund gegen Länder:** Ein Teil der Eigenanteile besteht aus Investitionskosten, für die eigentlich die Länder zuständig sind.'
 daten:
   kennzahlen:
     - label: Eigenanteil im 1. Jahr im Heim
@@ -164,7 +164,7 @@ geschichte:
       quellen: [expertenrat-pflegefinanzen-2023]
     - jahr: "2026"
       titel: Pflegeneuordnungsgesetz im Kabinett
-      text: Die Bundesregierung beschließt einen Gesetzentwurf ohne Deckel. Die Länder sollen Investitionskosten übernehmen; eine Kommission soll weitere Vorschläge erarbeiten, darunter zum Deckel.
+      text: Die Bundesregierung beschließt einen Gesetzentwurf ohne Deckel. Die Länder sollen Investitionskosten übernehmen; eine Kommission soll weitere Vorschläge erarbeiten, auch zu einem Deckel.
       quellen: [bundesregierung-pnog-2026, aok-pnog-kabinett-2026]
 verknuepft:
   - frage: pflege-zuhause

@@ -8,7 +8,7 @@ frage: Sollen Pflegekräfte, Apothekerinnen und andere Gesundheitsberufe mehr Au
 optionen:
   - id: erweitern
     titel: Befugnisse deutlich erweitern
-    kurz: Speziell ausgebildete Pflegekräfte – etwa Community Health Nurses oder Advanced Practice Nurses – behandeln bestimmte Krankheiten eigenständig und verordnen selbst.
+    kurz: Speziell ausgebildete Pflegekräfte, etwa Community Health Nurses oder Advanced Practice Nurses, behandeln bestimmte Krankheiten eigenständig und verordnen selbst Medikamente.
     pro:
       - typ: wertung
         text: Ärztinnen und Ärzte sind knapp. Wenn andere Berufe Routineaufgaben eigenständig übernehmen, bleibt mehr Arztzeit für schwierige Fälle.
@@ -29,7 +29,7 @@ optionen:
 
   - id: schrittweise
     titel: Schrittweise mit ärztlicher Einbindung
-    kurz: Pflegekräfte und Apotheken übernehmen nach und nach mehr – über festgelegte Leistungskataloge, nach ärztlicher Diagnose oder mit ärztlicher Rückfrage.
+    kurz: "Pflegekräfte und Apotheken übernehmen nach und nach mehr Aufgaben: über festgelegte Leistungskataloge, nach ärztlicher Diagnose oder mit ärztlicher Rückfrage."
     pro:
       - typ: wertung
         text: Neue Aufgaben lassen sich erproben und auswerten, bevor sie zur Regel werden.
@@ -39,7 +39,7 @@ optionen:
         quellen: [kbv-stellungnahme-beep-2025]
     contra:
       - typ: wertung
-        text: Ein Kompromiss kann die Nachteile beider Seiten verbinden – zusätzliche Abstimmung, aber wenig echte Entlastung.
+        text: "Ein Kompromiss kann die Nachteile beider Seiten verbinden: zusätzliche Abstimmung, aber wenig echte Entlastung."
       - typ: wertung
         text: Wenn die Selbstverwaltung die Leistungskataloge erst aushandeln muss, kann es Jahre dauern, bis sich im Alltag etwas ändert.
     gewinnt: [Patientensicherheit durch Erprobung, schrittweise Entlastung der Praxen]
@@ -63,18 +63,18 @@ optionen:
 
 erklaerung:
   - typ: fakt
-    text: Viele medizinische Aufgaben dürfen in Deutschland nur Ärztinnen und Ärzte eigenständig ausführen. Andere Berufe übernehmen sie meist nur auf ärztliche Anordnung (**Delegation**). Übernimmt ein anderer Beruf eine Aufgabe in eigener Verantwortung, spricht man von **Substitution**.
+    text: Viele medizinische Aufgaben dürfen in Deutschland nur Ärztinnen und Ärzte eigenständig ausführen. Andere Berufe übernehmen sie meist nur auf ärztliche Anordnung (Delegation). Übernimmt ein anderer Beruf eine Aufgabe in eigener Verantwortung, spricht man von Substitution.
     quellen: [baek-stellungnahme-pkg-2025]
   - typ: schaetzung
-    text: Weil Arztzeit knapp ist, liegt hier ein Hebel. Eine Modellrechnung für Baden-Württemberg kommt zum Ergebnis, dass nichtärztliche Berufe etwa ein Drittel der erwarteten hausärztlichen Versorgungslücke schließen könnten.
+    text: Weil Arztzeit knapp ist, liegt hier ein Hebel. Eine Modellrechnung für Baden-Württemberg kommt zu dem Ergebnis, dass nichtärztliche Berufe etwa ein Drittel der erwarteten hausärztlichen Versorgungslücke schließen könnten.
     genau: Laut der IGES-Studie im Auftrag des Bosch Health Campus könnte der Einsatz nichtärztlicher Berufsgruppen die Lücke 2040 von 6,5 auf 4,4 Millionen Behandlungsfälle pro Jahr verringern.
     quellen: [aerzteblatt-iges-2026]
     unsicherheit: Szenariorechnung; hängt stark von Annahmen zu übertragbaren Aufgaben ab.
   - typ: wertung
-    text: Der Preis liegt bei Verantwortung und Überblick. Wer diagnostiziert, haftet und muss das ganze Krankheitsbild im Blick haben. Mehr Beteiligte bedeuten mehr Schnittstellen. Und auch Pflegekräfte sind knapp – was sie zusätzlich übernehmen, fehlt womöglich an anderer Stelle.
+    text: Dem stehen Fragen der Verantwortung und des Überblicks gegenüber. Wer diagnostiziert, haftet und muss das ganze Krankheitsbild im Blick haben. Mehr Beteiligte bedeuten mehr Schnittstellen. Zudem sind auch Pflegekräfte knapp. Was sie zusätzlich übernehmen, fehlt womöglich an anderer Stelle.
   - typ: fakt
     text: Erste Schritte sind gemacht. Pflegefachpersonen dürfen seit 2026 bestimmte ärztliche Aufgaben eigenständig übernehmen, etwa bei chronischen Erkrankungen. Welche genau, legt die Selbstverwaltung erst noch in Verträgen fest. Apotheken dürfen mehr impfen und in dringenden Fällen bestimmte Medikamente ohne Rezept abgeben.
-    genau: Das **Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege** gilt seit 1. Januar 2026. Mit der Apothekenreform (Bundestag, Mai 2026) dürfen Apotheken mit allen Impfstoffen impfen, die keine Lebendimpfstoffe sind.
+    genau: Das Gesetz zur Befugniserweiterung und Entbürokratisierung in der Pflege gilt seit dem 1. Januar 2026. Mit der Apothekenreform (Bundestag, Mai 2026) dürfen Apotheken mit allen Impfstoffen impfen, die keine Lebendimpfstoffe sind.
     quellen: [bundesregierung-beep-2026, bmg-apothekenreform-2026]
   - typ: fakt
     text: Andere Länder gehen weiter. In mehreren europäischen Ländern dürfen speziell ausgebildete Pflegekräfte selbst Medikamente verordnen. Ein Gesetz für solche **Advanced Practice Nurses** ist in Deutschland angekündigt.
@@ -86,7 +86,7 @@ zielkonflikte:
   - typ: wertung
     text: Mehr Befugnisse für andere Berufe können den Zugang zur Versorgung verbessern, verteilen aber Verantwortung auf mehr Schultern.
   - typ: wertung
-    text: Wer Pflegekräften ärztliche Aufgaben überträgt, braucht noch mehr Pflegekräfte – und die sind selbst knapp.
+    text: Wer Pflegekräften ärztliche Aufgaben überträgt, braucht noch mehr Pflegekräfte. Auch diese sind knapp.
   - typ: wertung
     text: Schnelle Entlastung steht gegen sorgfältige Erprobung. Je vorsichtiger man vorgeht, desto länger dauert es, bis Patienten etwas merken.
 
@@ -110,7 +110,7 @@ laender:
   beispiele:
     - land: Mehrere OECD-Länder
       ansatz: Pflegekräfte in erweiterten Rollen in der Primärversorgung
-      text: Eine OECD-Studie zu 37 Ländern beschreibt, wie Pflegekräfte dort Aufgaben übernehmen, die früher Ärzten vorbehalten waren – von Chronikerbetreuung bis zur Verordnung von Medikamenten. Voraussetzung sind meist eine akademische Zusatzqualifikation und eine klare gesetzliche Regelung.
+      text: Eine OECD-Studie zu 37 Ländern beschreibt, wie Pflegekräfte dort Aufgaben übernehmen, die früher Ärzten vorbehalten waren, von der Betreuung chronisch Kranker bis zur Verordnung von Medikamenten. Voraussetzung sind meist eine akademische Zusatzqualifikation und eine klare gesetzliche Regelung.
       vergleichbarkeit: mittel
       vergleichbarkeit_text: Ausbildung, Rollen und Bezahlung unterscheiden sich stark. Länder mit langer akademischer Pflegeausbildung sind schwer mit Deutschland zu vergleichen, wo die Akademisierung erst begonnen hat.
       quellen: [oecd-nurses-advanced-2017]

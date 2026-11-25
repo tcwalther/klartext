@@ -3,7 +3,7 @@ reihenfolge: 2
 status: entwurf
 stand: "2026-11-25"
 titel: Telemedizin und digitale Ersteinschätzung
-frage: Welche Rolle sollen Videosprechstunde, Telefon und digitale Ersteinschätzung künftig spielen – erster Kontakt, Ergänzung oder Ausnahme?
+frage: "Welche Rolle sollen Videosprechstunde, Telefon und digitale Ersteinschätzung künftig spielen: als erster Kontakt, als Ergänzung oder als Ausnahme?"
 
 optionen:
   - id: digital-zuerst
@@ -11,9 +11,9 @@ optionen:
     kurz: Wer krank ist, meldet sich zuerst per App, Telefon oder Video. Eine strukturierte Ersteinschätzung entscheidet, ob und wohin es weitergeht.
     pro:
       - typ: wertung
-        text: Viele Anliegen lassen sich ohne Wartezimmer klären. Das spart Wege, Ansteckungen und Praxiszeit für die, die wirklich vor Ort untersucht werden müssen.
+        text: Viele Anliegen lassen sich ohne Wartezimmer klären. Das erspart Wege und Ansteckungen und lässt in der Praxis mehr Zeit für Menschen, die wirklich vor Ort untersucht werden müssen.
       - typ: wertung
-        text: Eine einheitliche Ersteinschätzung lenkt nach Dringlichkeit, nicht nach dem Zufall, wer zuerst anruft.
+        text: Eine einheitliche Ersteinschätzung verteilt nach Dringlichkeit und nicht danach, wer zufällig zuerst anruft.
     contra:
       - typ: wertung
         text: Ältere Menschen und Menschen ohne gutes Internet oder mit Sprachbarrieren könnten benachteiligt werden.
@@ -24,7 +24,7 @@ optionen:
 
   - id: ergaenzung
     titel: Ergänzung mit klaren Grenzen
-    kurz: Telemedizin wird weiter ausgebaut, bleibt aber Ergänzung. Grenzen – etwa beim Anteil reiner Videofälle je Praxis – sichern den Praxisbetrieb.
+    kurz: Telemedizin wird weiter ausgebaut, bleibt aber Ergänzung. Grenzen, etwa beim Anteil reiner Videofälle je Praxis, sichern den Praxisbetrieb.
     pro:
       - typ: wertung
         text: Die Mischung nutzt Vorteile beider Wege. Folgetermine und Besprechungen gehen per Video, Untersuchungen in der Praxis.
@@ -51,7 +51,7 @@ optionen:
       - typ: wertung
         text: Wege und Wartezeiten bleiben, auch für Anliegen, die sich per Video schnell klären ließen.
       - typ: wertung
-        text: Gerade dort, wo Praxen fehlen, verzichtet man auf ein Mittel, um Versorgung überhaupt zu ermöglichen.
+        text: Gerade dort, wo Praxen fehlen, verzichtet man so auf ein Mittel, das Versorgung überhaupt erst möglich machen kann.
     gewinnt: [persönliche Arzt-Patienten-Beziehung, Menschen ohne digitale Zugänge]
     kostet: [Menschen mit weiten Wegen, Praxiszeit]
 
@@ -61,11 +61,11 @@ erklaerung:
     genau: 2024 gab es rund 2,7 Millionen Videosprechstunden, 24,8 Prozent mehr als 2023, bei insgesamt 579 Millionen Behandlungsfällen. Die Hälfte entfiel auf Hausarztpraxen, ein Drittel auf die Psychotherapie. Dazu kamen 8,4 Millionen telefonische Beratungen.
     quellen: [zi-trendreport-2024]
   - typ: fakt
-    text: Wie gut Video passt, hängt vom Anliegen ab. Gespräche wie in der Psychotherapie gehen gut, körperliche Untersuchungen nicht. Telemedizin bleibt deshalb bisher an Praxen gebunden. Eine Praxis darf höchstens die Hälfte ihrer Fälle nur per Video behandeln.
+    text: Wie gut Video passt, hängt vom Anliegen ab. Für Gespräche wie in der Psychotherapie eignet es sich gut, für körperliche Untersuchungen nicht. Telemedizin bleibt deshalb bisher an Praxen gebunden. Eine Praxis darf höchstens die Hälfte ihrer Fälle nur per Video behandeln.
     genau: Die Obergrenze von 50 Prozent reiner Videofälle je Praxis haben Kassenärztliche Bundesvereinigung und GKV-Spitzenverband 2025 vereinbart. Sie gilt einheitlich, auch für Patientinnen und Patienten, die die Praxis noch nicht kennt.
     quellen: [kbv-video-obergrenze-2025, zi-trendreport-2024]
   - typ: fakt
-    text: Die zweite Idee ist die **Ersteinschätzung**. Bevor jemand in eine Praxis oder Notaufnahme geht, klärt ein strukturiertes Gespräch am Telefon oder online, wie dringend das Anliegen ist und wo es am besten aufgehoben ist. Das gibt es schon über die Nummer **116117**.
+    text: Die zweite Idee ist die **Ersteinschätzung**. Bevor jemand in eine Praxis oder Notaufnahme geht, klärt ein strukturiertes Gespräch am Telefon oder online, wie dringend das Anliegen ist und wo es am besten aufgehoben ist. Das gibt es schon über die Nummer 116117.
     genau: Im ersten Halbjahr 2026 gab es rund 1,85 Millionen Ersteinschätzungen über die 116117 und das Online-Patientennavi, davon rund 440.000 online.
     quellen: [aerzteblatt-ersteinschaetzung-2026]
   - typ: fakt
@@ -73,7 +73,7 @@ erklaerung:
     genau: Die Notfallreform hat der Bundestag im Oktober 2026 beschlossen; die 116117 wird in eine Terminservice- und eine Akutleitstelle geteilt. Das Digitalgesetz (GeDIG) hat das Kabinett im Juli 2026 beschlossen.
     quellen: [bmg-notfallreform-2026, zm-gedig-2026]
   - typ: wertung
-    text: Offen ist, welche Rolle der digitale Weg spielen soll – normaler erster Kontakt oder Ergänzung zur Praxis. Je mehr er zum Standard wird, desto mehr Praxiszeit kann er sparen. Umso wichtiger wird dann aber, dass Menschen ohne gutes Internet oder mit Sprachbarrieren nicht abgehängt werden.
+    text: Offen ist, ob der digitale Weg zum normalen ersten Kontakt wird oder die Praxis ergänzt. Je mehr er zum Standard wird, desto mehr Praxiszeit kann er sparen. Umso wichtiger wird dann aber, dass Menschen ohne gutes Internet oder mit Sprachbarrieren nicht benachteiligt werden.
 
 zielkonflikte:
   - typ: wertung
@@ -81,7 +81,7 @@ zielkonflikte:
   - typ: wertung
     text: Digitale Wege entlasten die einen und schließen andere aus. Je mehr „digital zuerst“ gilt, desto wichtiger sind gute Alternativen.
   - typ: wertung
-    text: Steuerung durch eine zentrale Ersteinschätzung kann Praxen entlasten, nimmt Patientinnen aber ein Stück Entscheidung ab.
+    text: Steuerung durch eine zentrale Ersteinschätzung kann Praxen entlasten, nimmt Patientinnen aber einen Teil der Entscheidung ab.
 
 daten:
   kennzahlen:
@@ -107,7 +107,7 @@ laender:
   beispiele:
     - land: Dänemark (Region Hauptstadt)
       ansatz: Telefonische Ersteinschätzung vor Notaufnahme und Bereitschaftsdienst („Akuttelefon 1813“)
-      text: Die Nummer 1813 ist mit Ärztinnen und Pflegekräften besetzt und leitet Anrufende außerhalb der Hausarzt-Sprechzeiten zur passenden Hilfe.
+      text: Die Nummer 1813 ist mit Ärztinnen und Pflegekräften besetzt und leitet Anrufende außerhalb der Sprechzeiten der Hausarztpraxen zur passenden Hilfe.
       vergleichbarkeit: mittel
       vergleichbarkeit_text: Dänemark hat ein steuerfinanziertes System mit starker Hausarztsteuerung. Die deutsche Akutleitstelle der 116117 verfolgt ein ähnliches Ziel, startet aber in einem System mit freiem Zugang zu Praxen.
       quellen: [regionh-1813]

@@ -16,9 +16,9 @@ export const typLabel: Record<AussageTyp, string> = {
 
 export const typErklaerung: Record<AussageTyp, string> = {
   fakt: 'Überprüfbare Tatsache mit Quelle',
-  schaetzung: 'Prognose, Modellrechnung oder Studienergebnis mit Unsicherheit',
+  schaetzung: 'Prognose, Modellrechnung oder Studienergebnis mit einer gewissen Unsicherheit',
   wertung: 'Argument, das auf einer Abwägung oder einem Wert beruht',
-  position: 'Was ein bestimmter Akteur fordert oder behauptet',
+  position: 'Forderung oder Einschätzung eines bestimmten Verbands, einer Partei oder einer Behörde',
 };
 
 /** Inline-Markdown → HTML (Inhalte stammen aus dem Repo, nicht von Nutzern). */
@@ -74,12 +74,12 @@ export function ebenenVon(frage: Frage) {
   const hatDaten = !!d.daten && (d.daten.kennzahlen.length + d.daten.diagramme.length + d.daten.aussagen.length > 0);
   const z = d.zusammenhaenge;
   return [
-    { n: 1, id: 'worum-gehts', titel: 'Worum geht’s?', sub: 'In zwei Minuten das Wichtigste', da: true },
-    { n: 2, id: 'zusammenhaenge', titel: 'Wie hängt das zusammen?', sub: 'Ursachen, Wirkungen und wie groß jeder Hebel ist', da: !!z },
-    { n: 3, id: 'argumente', titel: 'Argumente & Zielkonflikte', sub: 'Was spricht für welche Option – und was kostet sie?', da: true },
-    { n: 4, id: 'daten', titel: 'Fakten & Daten', sub: 'Zahlen mit Quelle und Stand', da: hatDaten },
-    { n: 5, id: 'geschichte', titel: 'Was wurde schon versucht?', sub: 'Reformen und was dabei herauskam', da: !!d.geschichte?.ereignisse.length },
-    { n: 6, id: 'andere-laender', titel: 'Wie machen es andere Länder?', sub: 'Und lässt sich das übertragen?', da: !!d.laender?.beispiele.length },
+    { n: 1, id: 'worum-gehts', titel: 'Worum geht’s?', sub: 'Das Wichtigste in zwei Minuten', da: true },
+    { n: 2, id: 'zusammenhaenge', titel: 'Wie hängt das zusammen?', sub: 'Ursachen, Wirkungen und Größenordnungen', da: !!z },
+    { n: 3, id: 'argumente', titel: 'Argumente und Zielkonflikte', sub: 'Was für jede Antwort spricht und was sie kostet', da: true },
+    { n: 4, id: 'daten', titel: 'Fakten und Daten', sub: 'Zahlen mit Quelle und Stand', da: hatDaten },
+    { n: 5, id: 'geschichte', titel: 'Was wurde schon versucht?', sub: 'Frühere Reformen und ihre Ergebnisse', da: !!d.geschichte?.ereignisse.length },
+    { n: 6, id: 'andere-laender', titel: 'Wie machen es andere Länder?', sub: 'Beispiele und ob sie sich übertragen lassen', da: !!d.laender?.beispiele.length },
     { n: 7, id: 'quellen', titel: 'Quellen', sub: 'Alle Belege dieser Frage', da: true },
   ];
 }
