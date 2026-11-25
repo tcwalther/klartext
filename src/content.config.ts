@@ -220,6 +220,20 @@ const system = defineCollection({
   schema: z.object({
     stand: z.string(),
     status: z.enum(['entwurf', 'geprueft']),
+    // Das Wichtigste auf einen Blick: wenige merkbare Aussagen, genaue Zahlen in `genau`
+    kernaussagen: z.array(aussage).max(6).default([]),
+    // Wohin ein Euro geht – als ein gestapelter Balken
+    ausgabenanteile: z
+      .object({
+        titel: z.string(),
+        einheit: z.string(),
+        stand: z.string(),
+        quelle: slug,
+        anteile: z.array(z.object({ label: z.string(), wert: z.number().positive(), text: z.string() })).min(2),
+      })
+      .optional(),
+    // Wer entscheidet – grob in Ebenen
+    steuerung: z.array(z.object({ titel: z.string(), text: z.string(), wer: z.string() })).default([]),
     kennzahlen: z.array(kennzahl.extend({ bereich: slug.optional() })),
     geldfluss: z.array(z.object({ von: z.string(), an: z.string(), betrag: z.string(), text: z.string(), quelle: slug })),
     akteure: z.array(z.object({ name: z.string(), rolle: z.string() })),

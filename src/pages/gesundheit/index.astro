@@ -1,7 +1,13 @@
 ---
+/**
+ * Themenseite Gesundheit.
+ * Aufbau nach dem Zwiebel-Prinzip: erst das mentale Modell (wenige merkbare Aussagen),
+ * dann die Fragen, dann wie das System funktioniert – und alle Detailzahlen nur auf Wunsch.
+ */
 import Layout from '../../layouts/Layout.astro';
 import Kennzahl from '../../components/Kennzahl.astro';
 import SourceRefs from '../../components/SourceRefs.astro';
+import AussageListe from '../../components/AussageListe.astro';
 import EntwurfHinweis from '../../components/EntwurfHinweis.astro';
 import { getCollection } from 'astro:content';
 import { getFragen, getBereiche, frageUrl, ebenenVon } from '../../lib/content';
@@ -9,7 +15,30 @@ import { getFragen, getBereiche, frageUrl, ebenenVon } from '../../lib/content';
 const bereiche = await getBereiche();
 const fragen = await getFragen();
 const system = (await getCollection('system')).find((s) => s.id === 'gesundheit');
-const nums = new Map((system?.data.quellen ?? []).map((q, i) => [q.id, i + 1]));
+const sd = system?.data;
+
+// Quellen in der Reihenfolge ihres Auftretens auf der Seite nummerieren
+const nums = new Map<string, number>();
+const merke = (id: string) => !nums.has(id) && nums.set(id, nums.size + 1);
+if (sd) {
+  sd.kernaussagen.forEach((a) => a.quellen.forEach(merke));
+  if (sd.ausgabenanteile) merke(sd.ausgabenanteile.quelle);
+  sd.kennzahlen.forEach((k) => merke(k.quelle));
+  sd.geldfluss.forEach((g) => merke(g.quelle));
+  sd.quellen.forEach((q) => merke(q.id));
+}
+const quellenSortiert = [...(sd?.quellen ?? [])].sort((a, b) => nums.get(a.id)! - nums.get(b.id)!);
+
+const anteile = sd?.ausgabenanteile;
+const anteilSumme = anteile ? anteile.anteile.reduce((s, a) => s + a.wert, 0) : 0;
+const fmt = new Intl.NumberFormat('de-DE', { maximumFractionDigits: 1 });
+// Abgestufte Töne derselben Akzentfarbe – keine Parteifarben, „Alles andere“ grau
+const toene = [
+  'var(--accent)',
+  'color-mix(in srgb, var(--accent) 70%, var(--bg))',
+  'color-mix(in srgb, var(--accent) 45%, var(--bg))',
+  'var(--line)',
+];
 
 // Zusammenhänge zwischen Bereichen aus den Verknüpfungen der Fragen ableiten
 const bereichVon = new Map(fragen.map((f) => [f.id, f.data.bereich]));
@@ -34,132 +63,38 @@ const maxKante = Math.max(1, ...kanten.values());
 const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.split('|').includes(id)).reduce((s, [, n]) => s + n, 0);
 ---
 
-<Layout title="Gesundheit" description="Das deutsche Gesundheitssystem auf einer Seite: Geldflüsse, Akteure, Kennzahlen und die großen Fragen.">
+<Layout title="Gesundheit" description="Das deutsche Gesundheitssystem verständlich: das Wichtigste auf einen Blick, die großen Fragen und wie das System funktioniert.">
   <div class="mx-auto max-w-5xl px-4 pt-6 sm:pt-10">
     <header class="max-w-3xl">
-      <div class="text-sm font-semibold text-accent mb-2">Thema 1</div>
-      <h1 class="serif text-3xl sm:text-5xl font-semibold leading-tight">Gesundheit</h1>
+      <div class="kicker text-accent mb-2">Thema 1</div>
+      <h1 class="serif text-4xl sm:text-5xl font-semibold leading-tight">Gesundheit</h1>
       <p class="mt-4 text-lg text-muted leading-relaxed">
         Fast jede Frage im Gesundheitssystem hängt mit anderen zusammen: Wer mehr Kliniken vor Ort will, muss sagen, wie
-        sie bezahlt werden. Wer niedrigere Beiträge will, muss sagen, wo gespart wird. Deshalb zuerst der Überblick – dann
-        die Fragen.
+        sie bezahlt werden. Wer niedrigere Beiträge will, muss sagen, wo gespart wird.
       </p>
       <div class="mt-6 flex flex-wrap gap-2">
         <a href="/gesundheit/fragen/" class="btn btn-primary">Fragen starten ({fragen.length}) →</a>
-        <a href="#bereiche" class="btn btn-ghost">Bereiche ansehen</a>
+        <a href="#bereiche" class="btn btn-ghost">Alle Fragen ansehen</a>
       </div>
     </header>
 
     {
-      system && (
-        <>
-          <section class="mt-14" aria-labelledby="kennzahlen">
-            <div class="flex flex-wrap items-baseline justify-between gap-2 mb-4">
-              <h2 id="kennzahlen" class="serif text-2xl font-semibold">
-                Das System in Zahlen
-              </h2>
-              {system.data.status === 'entwurf' && <span class="text-xs text-faint">Entwurf · Stand {system.data.stand}</span>}
-            </div>
-            <div class="grid grid-cols-1 min-[420px]:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
-              {system.data.kennzahlen.map((k) => (
-                <Kennzahl {...k} nums={nums} />
-              ))}
-            </div>
-          </section>
-
-          <section class="mt-14" aria-labelledby="geld">
-            <h2 id="geld" class="serif text-2xl font-semibold">
-              Wie das Geld fließt
-            </h2>
-            <p class="text-muted mt-1 mb-4 max-w-prose">Die wichtigsten Ströme – vereinfacht.</p>
-            <ol class="border-t border-line">
-              {system.data.geldfluss.map((g) => (
-                <li class="border-b border-line py-4 grid gap-1 md:grid-cols-[minmax(0,22rem)_1fr] md:gap-8">
-                  <div>
-                    <div class="font-semibold leading-snug">
-                      {g.von} <span class="text-accent" aria-label="an">→</span> {g.an}
-                    </div>
-                    <div class="text-accent font-semibold tabular-nums leading-snug mt-0.5">
-                      {g.betrag}
-                      <SourceRefs ids={[g.quelle]} nums={nums} />
-                    </div>
-                  </div>
-                  <p class="text-sm text-muted leading-snug">{g.text}</p>
-                </li>
-              ))}
-            </ol>
-          </section>
-
-          <section class="mt-14" aria-labelledby="akteure">
-            <h2 id="akteure" class="serif text-2xl font-semibold mb-4">
-              Wer entscheidet was?
-            </h2>
-            <dl class="grid sm:grid-cols-2 gap-x-8 border-t border-line">
-              {system.data.akteure.map((a) => (
-                <div class="border-b border-line py-3.5">
-                  <dt class="font-semibold">{a.name}</dt>
-                  <dd class="text-sm text-muted mt-0.5 leading-snug">{a.rolle}</dd>
-                </div>
-              ))}
-            </dl>
-          </section>
-        </>
+      sd && sd.kernaussagen.length > 0 && (
+        <section class="mt-14 max-w-3xl" aria-labelledby="blick">
+          <h2 id="blick" class="serif text-2xl font-semibold mb-5">
+            Das Wichtigste auf einen Blick
+          </h2>
+          <AussageListe items={sd.kernaussagen} nums={nums} class="text-[1.05rem] space-y-5" />
+        </section>
       )
     }
 
-    <section class="mt-14 grid lg:grid-cols-[1fr_30rem] gap-8 items-start" aria-labelledby="zusammenhaenge">
-      <div>
-        <h2 id="zusammenhaenge" class="serif text-2xl font-semibold">Alles hängt zusammen</h2>
-        <p class="text-muted mt-1 max-w-prose">
-          Jede Linie steht für Fragen, die sich gegenseitig beeinflussen. Je dicker die Linie, desto mehr Verbindungen.
-          Am Ende zeigt dir <a class="link" href="/mein-bild/">Mein Bild</a>, wo deine eigenen Antworten in Spannung
-          zueinander stehen.
-        </p>
-      </div>
-      <figure class="border-t border-line pt-2">
-        <svg viewBox="-95 15 590 370" class="w-full h-auto" role="img" aria-label="Netz der Zusammenhänge zwischen den Bereichen">
-          {
-            [...kanten.entries()].map(([k, n]) => {
-              const [a, b] = k.split('|');
-              const p = pos.get(a!)!;
-              const q = pos.get(b!)!;
-              return (
-                <line
-                  x1={p.x}
-                  y1={p.y}
-                  x2={q.x}
-                  y2={q.y}
-                  stroke="var(--accent)"
-                  stroke-opacity={0.25 + (0.5 * n) / maxKante}
-                  stroke-width={1 + (4 * n) / maxKante}
-                  stroke-linecap="round"
-                />
-              );
-            })
-          }
-          {
-            bereiche.map((b) => {
-              const p = pos.get(b.id)!;
-              const cos = Math.cos(p.w);
-              const anchor = Math.abs(cos) < 0.3 ? 'middle' : cos > 0 ? 'start' : 'end';
-              const lx = p.x + 18 * cos;
-              const ly = p.y + 16 * Math.sin(p.w) + (Math.sin(p.w) > 0.3 ? 10 : Math.sin(p.w) < -0.3 ? -4 : 4);
-              return (
-                <a href={`#bereich-${b.id}`}>
-                  <circle cx={p.x} cy={p.y} r={6 + Math.min(6, verbindungen(b.id))} fill="var(--surface)" stroke="var(--accent)" stroke-width="2" />
-                  <text x={lx} y={ly} text-anchor={anchor} font-size="17" font-weight="600" fill="var(--ink)">
-                    {b.data.titel.split(' & ')[0]}
-                  </text>
-                </a>
-              );
-            })
-          }
-        </svg>
-      </figure>
-    </section>
-
-    <section id="bereiche" class="mt-14 scroll-mt-20" aria-labelledby="bereiche-h">
-      <h2 id="bereiche-h" class="serif text-2xl font-semibold mb-4">Die Bereiche und ihre Fragen</h2>
+    <!-- Die Fragen -->
+    <section id="bereiche" class="mt-16 scroll-mt-20" aria-labelledby="bereiche-h">
+      <h2 id="bereiche-h" class="serif text-2xl font-semibold">Die großen Fragen</h2>
+      <p class="text-muted mt-1 mb-6 max-w-prose">
+        {fragen.length} Fragen in {bereiche.length} Bereichen. Jede beginnt einfach – und geht so tief, wie du willst.
+      </p>
       <div class="grid md:grid-cols-2 gap-x-10 gap-y-10">
         {
           bereiche.map((b) => {
@@ -185,7 +120,11 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
                         <li class="border-b border-line">
                           <a href={frageUrl(f.id)} class="group flex items-start gap-3 py-2.5 no-underline">
                             <span class="flex-1 leading-snug group-hover:text-accent">{f.data.titel}</span>
-                            <span class="flex gap-0.5 pt-1.5 shrink-0" title={`${tiefe} von 6 Ebenen ausgearbeitet`} aria-label={`${tiefe} von 6 Ebenen ausgearbeitet`}>
+                            <span
+                              class="flex gap-0.5 pt-1.5 shrink-0"
+                              title={`${tiefe} von 6 Ebenen ausgearbeitet`}
+                              aria-label={`${tiefe} von 6 Ebenen ausgearbeitet`}
+                            >
                               {[1, 2, 3, 4, 5, 6].map((n) => (
                                 <span class="size-1.5 rounded-full" style={`background: ${n <= tiefe ? 'var(--accent)' : 'var(--line)'}`} />
                               ))}
@@ -201,25 +140,201 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
           })
         }
       </div>
-      <p class="text-xs text-faint mt-3">Punkte = ausgearbeitete Ebenen (Erklärung, Zusammenhänge, Argumente, Daten, Geschichte, Ländervergleich).</p>
+      <p class="text-xs text-faint mt-4">Punkte = wie viele Ebenen schon ausgearbeitet sind.</p>
     </section>
 
+    <!-- Wie das System funktioniert -->
     {
-      system && (
-        <section class="mt-14" aria-labelledby="sys-quellen">
-          <h2 id="sys-quellen" class="serif text-lg font-semibold mb-2">
-            Quellen dieser Seite
+      sd && (
+        <section class="mt-20" aria-labelledby="system">
+          <h2 id="system" class="serif text-2xl font-semibold">
+            Wie das System funktioniert
           </h2>
-          {system.data.status === 'entwurf' && (
-            <div class="mb-3">
-              <EntwurfHinweis stand={system.data.stand} />
+          <p class="text-muted mt-1 mb-8 max-w-prose">Drei Bilder, die fast jede Debatte erklären.</p>
+
+          {anteile && (
+            <figure class="mb-14">
+              <figcaption class="mb-4">
+                <span class="kicker text-accent">1 · Das Geld</span>
+                <span class="block serif text-xl font-semibold mt-1">{anteile.titel}</span>
+              </figcaption>
+              <div
+                class="flex h-9 sm:h-11 rounded-md overflow-hidden gap-0.5"
+                role="img"
+                aria-label={anteile.anteile.map((a) => `${a.label}: ${a.text}`).join('; ')}
+              >
+                {anteile.anteile.map((a, i) => (
+                  <div
+                    style={`flex: ${a.wert}; background: ${toene[Math.min(i, toene.length - 1)]}`}
+                    title={`${a.label}: ${fmt.format(a.wert)} ${anteile.einheit}`}
+                  />
+                ))}
+              </div>
+              <ul class="mt-4 grid grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4">
+                {anteile.anteile.map((a, i) => (
+                  <li class="text-sm leading-snug">
+                    <span class="flex items-center gap-2 font-semibold">
+                      <span class="size-3 rounded-sm shrink-0" style={`background: ${toene[Math.min(i, toene.length - 1)]}`} aria-hidden="true" />
+                      {a.label}
+                    </span>
+                    <span class="block text-muted mt-0.5">{a.text}</span>
+                  </li>
+                ))}
+              </ul>
+              <p class="mt-5 text-[0.95rem] text-muted max-w-prose">
+                <strong class="text-ink font-semibold">So fließt das Geld:</strong> Versicherte und Arbeitgeber zahlen Beiträge,
+                der Bund gibt einen Zuschuss dazu. Alles landet im Gesundheitsfonds, der es an die Krankenkassen verteilt. Die
+                Kassen bezahlen Kliniken, Praxen und Apotheken.
+              </p>
+              <p class="mt-2 text-xs text-faint">
+                Ausgaben der gesetzlichen Krankenversicherung {anteile.stand}, insgesamt {fmt.format(anteilSumme)} {anteile.einheit}
+                <SourceRefs ids={[anteile.quelle]} nums={nums} />
+              </p>
+            </figure>
+          )}
+
+          {sd.steuerung.length > 0 && (
+            <div class="mb-14">
+              <div class="kicker text-accent">2 · Die Entscheidungen</div>
+              <h3 class="serif text-xl font-semibold mt-1 mb-5">Wer entscheidet was?</h3>
+              <ol class="grid md:grid-cols-3 gap-x-8 gap-y-6">
+                {sd.steuerung.map((st, i) => (
+                  <li class="border-t-2 border-ink pt-3">
+                    <span class="serif text-[1.65rem] font-semibold leading-none text-accent">{i + 1}</span>
+                    <span class="block font-semibold leading-snug mt-2">{st.titel}</span>
+                    <span class="block text-[0.95rem] text-muted mt-1">{st.text}</span>
+                    <span class="block text-xs text-faint mt-2">{st.wer}</span>
+                  </li>
+                ))}
+              </ol>
+            </div>
+          )}
+
+          <div class="grid lg:grid-cols-[1fr_28rem] gap-8 items-start">
+            <div>
+              <div class="kicker text-accent">3 · Die Zusammenhänge</div>
+              <h3 class="serif text-xl font-semibold mt-1">Alles hängt zusammen</h3>
+              <p class="text-muted mt-2 max-w-prose">
+                Jede Linie steht für Fragen, die sich gegenseitig beeinflussen. Je dicker die Linie, desto mehr
+                Verbindungen. Am Ende zeigt dir <a class="link" href="/mein-bild/">Mein Bild</a>, wo deine eigenen
+                Antworten in Spannung zueinander stehen.
+              </p>
+            </div>
+            <figure>
+              <svg viewBox="-95 15 590 370" class="w-full h-auto" role="img" aria-label="Netz der Zusammenhänge zwischen den Bereichen">
+                {[...kanten.entries()].map(([k, n]) => {
+                  const [a, b] = k.split('|');
+                  const p = pos.get(a!)!;
+                  const q = pos.get(b!)!;
+                  return (
+                    <line
+                      x1={p.x}
+                      y1={p.y}
+                      x2={q.x}
+                      y2={q.y}
+                      stroke="var(--accent)"
+                      stroke-opacity={0.25 + (0.5 * n) / maxKante}
+                      stroke-width={1 + (4 * n) / maxKante}
+                      stroke-linecap="round"
+                    />
+                  );
+                })}
+                {bereiche.map((b) => {
+                  const p = pos.get(b.id)!;
+                  const cos = Math.cos(p.w);
+                  const anchor = Math.abs(cos) < 0.3 ? 'middle' : cos > 0 ? 'start' : 'end';
+                  const lx = p.x + 18 * cos;
+                  const ly = p.y + 16 * Math.sin(p.w) + (Math.sin(p.w) > 0.3 ? 10 : Math.sin(p.w) < -0.3 ? -4 : 4);
+                  return (
+                    <a href={`#bereich-${b.id}`}>
+                      <circle cx={p.x} cy={p.y} r={6 + Math.min(6, verbindungen(b.id))} fill="var(--bg)" stroke="var(--accent)" stroke-width="2" />
+                      <text x={lx} y={ly} text-anchor={anchor} font-size="17" font-weight="600" fill="var(--ink)">
+                        {b.data.titel.split(' & ')[0]}
+                      </text>
+                    </a>
+                  );
+                })}
+              </svg>
+            </figure>
+          </div>
+        </section>
+      )
+    }
+
+    <!-- Details auf Wunsch -->
+    {
+      sd && (
+        <section class="mt-20 border-t border-line" aria-label="Details">
+          <details class="group/d">
+            <summary class="flex items-center justify-between gap-4 py-5 cursor-pointer list-none">
+              <span>
+                <span class="block serif text-xl font-semibold">Alle Zahlen im Detail</span>
+                <span class="block text-sm text-muted">
+                  {sd.kennzahlen.length} Kennzahlen, {sd.geldfluss.length} Geldströme, {sd.akteure.length} Akteure – mit Quellen
+                </span>
+              </span>
+              <span class="text-sm text-accent shrink-0 group-open/d:hidden">aufklappen</span>
+              <span class="text-sm text-accent shrink-0 hidden group-open/d:inline">zuklappen</span>
+            </summary>
+
+            <div class="pb-6">
+              <h3 class="kicker mb-4">Kennzahlen</h3>
+              <div class="grid grid-cols-1 min-[420px]:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-6">
+                {sd.kennzahlen.map((k) => (
+                  <Kennzahl {...k} nums={nums} />
+                ))}
+              </div>
+
+              <h3 class="kicker mt-12">Alle Geldströme</h3>
+              <ol class="border-t border-line mt-3">
+                {sd.geldfluss.map((g) => (
+                  <li class="border-b border-line py-4 grid gap-1 md:grid-cols-[minmax(0,22rem)_1fr] md:gap-8">
+                    <div>
+                      <div class="font-semibold leading-snug">
+                        {g.von} <span class="text-accent" aria-label="an">→</span> {g.an}
+                      </div>
+                      <div class="text-accent font-semibold tabular-nums leading-snug mt-0.5">
+                        {g.betrag}
+                        <SourceRefs ids={[g.quelle]} nums={nums} />
+                      </div>
+                    </div>
+                    <p class="text-sm text-muted leading-snug">{g.text}</p>
+                  </li>
+                ))}
+              </ol>
+
+              <h3 class="kicker mt-12">Alle Akteure</h3>
+              <dl class="grid sm:grid-cols-2 gap-x-8 border-t border-line mt-3">
+                {sd.akteure.map((a) => (
+                  <div class="border-b border-line py-3.5">
+                    <dt class="font-semibold">{a.name}</dt>
+                    <dd class="text-sm text-muted mt-0.5 leading-snug">{a.rolle}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </details>
+        </section>
+      )
+    }
+
+    {
+      sd && (
+        <section class="mt-10 border-t border-line pt-6" aria-labelledby="sys-quellen">
+          <details>
+          <summary class="cursor-pointer list-none kicker mb-3 hover:text-ink" id="sys-quellen">
+            Quellen dieser Seite ({quellenSortiert.length}) <span class="normal-case tracking-normal font-normal text-accent">· anzeigen</span>
+          </summary>
+          {sd.status === 'entwurf' && (
+            <div class="mb-4">
+              <EntwurfHinweis stand={sd.stand} />
             </div>
           )}
           <ol class="space-y-1.5 text-sm">
-            {system.data.quellen.map((q) => (
-              <li id={`quelle-${q.id}`} class="grid grid-cols-[2rem_1fr] scroll-mt-24">
+            {quellenSortiert.map((q) => (
+              <li id={`quelle-${q.id}`} class="grid grid-cols-[2.25rem_1fr] scroll-mt-24">
                 <span class="text-faint tabular-nums">[{nums.get(q.id)}]</span>
-                <span>
+                <span class="min-w-0">
                   {q.url ? (
                     <a class="link" href={q.url} target="_blank" rel="noopener">
                       {q.titel}
@@ -232,8 +347,20 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
               </li>
             ))}
           </ol>
+          </details>
         </section>
       )
     }
   </div>
 </Layout>
+
+<script>
+  // Quellenverweise: Ziel in den zugeklappten Details sichtbar machen
+  document.addEventListener('click', (e) => {
+    const a = (e.target as HTMLElement).closest('a[href^="#"]');
+    if (!a) return;
+    const el = document.getElementById(a.getAttribute('href')!.slice(1));
+    const details = el?.closest('details');
+    if (details && !details.open) details.open = true;
+  });
+</script>

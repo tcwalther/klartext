@@ -1,5 +1,54 @@
 stand: "2026-11-25"
 status: entwurf
+kernaussagen:
+  - typ: fakt
+    text: Fast **neun von zehn** Menschen in Deutschland sind gesetzlich versichert, gut jeder Zehnte privat. Wer gesetzlich versichert ist, zahlt nach Einkommen – nicht nach Alter oder Gesundheit.
+    genau: 74,4 Mio. gesetzlich Versicherte (Oktober 2026) und 8,79 Mio. privat Vollversicherte (2025).
+    quellen: [bmg-km1-2026, pkv-branchenzahlen-2025]
+  - typ: fakt
+    text: Etwa **jeder achte Euro**, den Deutschland erwirtschaftet, fließt ins Gesundheitswesen.
+    genau: Gesundheitsausgaben 2024 insgesamt 538,2 Mrd. € – 12,4 % des Bruttoinlandsprodukts, 6.444 € je Einwohner. Schätzung für 2025 579,5 Mrd. €.
+    quellen: [destatis-gesundheitsausgaben-2024]
+  - typ: fakt
+    text: Deutschland gibt pro Kopf rund **anderthalbmal so viel** aus wie der Durchschnitt der Industrieländer. Die Lebenserwartung liegt trotzdem nur im Durchschnitt.
+    genau: 9.365 US-$ je Kopf gegenüber 5.967 US-$ im OECD-Schnitt (2024, Kaufkraftparitäten). Lebenserwartung bei Geburt 81,1 Jahre – genau der OECD-Schnitt (2023).
+    quellen: [oecd-hag-2025]
+  - typ: fakt
+    text: Bezahlt wird vor allem aus **Beiträgen auf Löhne und Renten**, nur ein kleiner Teil aus Steuern. Deshalb hängt die Finanzierung daran, wie viele Menschen arbeiten und wie viel sie verdienen.
+    genau: Der Gesundheitsfonds rechnet für 2026 mit Einnahmen von 312,3 Mrd. €; davon sind 14,5 Mrd. € Bundeszuschuss aus Steuern, der Rest im Wesentlichen Beiträge.
+    quellen: [bas-schaetzerkreis-2025]
+  - typ: fakt
+    text: Die meisten Pflegebedürftigen – **mehr als vier von fünf** – werden zu Hause versorgt, oft von Angehörigen.
+    genau: 5,7 Mio. Pflegebedürftige Ende 2023, davon 86 % zu Hause.
+    quellen: [destatis-pflegestatistik-2023]
+ausgabenanteile:
+  titel: Wohin ein Euro der gesetzlichen Krankenkassen geht
+  einheit: Mrd. €
+  stand: "2024"
+  quelle: bmg-kennzahlen-gkv-2025
+  anteile:
+    - label: Krankenhaus
+      wert: 102.2
+      text: fast jeder dritte Euro
+    - label: Arzneimittel
+      wert: 55.2
+      text: etwa jeder sechste Euro
+    - label: Arztpraxen
+      wert: 50.3
+      text: etwa jeder siebte Euro
+    - label: Alles andere
+      wert: 119.7
+      text: Zahnärzte, Krankengeld, Heil- und Hilfsmittel, Verwaltung und weitere Leistungen
+steuerung:
+  - titel: Der Bund setzt den Rahmen
+    text: Bundestag und Bundesrat beschließen die Gesetze – welche Leistungen es grundsätzlich gibt, wie hoch die Beiträge sind, wie Kliniken bezahlt werden.
+    wer: Bundestag, Bundesrat, Bundesgesundheitsministerium
+  - titel: Die Selbstverwaltung füllt ihn aus
+    text: Kassen, Ärzte und Kliniken handeln die Details untereinander aus – Preise, Honorare und welche Behandlungen die Kassen bezahlen. Der Staat führt nur die Aufsicht.
+    wer: Gemeinsamer Bundesausschuss, Krankenkassen, Kassenärztliche Vereinigungen, Krankenhausgesellschaft
+  - titel: Die Länder planen die Kliniken
+    text: Welche Krankenhäuser es wo gibt, entscheiden die Bundesländer. Sie sollen auch Gebäude und Geräte bezahlen.
+    wer: Landesregierungen
 kennzahlen:
   - label: Gesundheitsausgaben insgesamt
     wert: 538,2 Mrd. €
