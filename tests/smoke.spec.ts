@@ -54,7 +54,7 @@ test('Durchlauf: unentschieden → tiefer → entscheiden → Mein Bild', async 
   await page.goto('/gesundheit/fragen/');
   const frage = await page.locator('h2').first().innerText();
 
-  await page.getByRole('button', { name: /Kann ich nicht entscheiden/ }).click();
+  await page.locator('label.wahl', { hasText: 'noch nicht entscheiden' }).click();
   await expect(page.getByRole('heading', { name: 'Worum geht’s?' })).toBeVisible();
 
   await page.getByRole('link', { name: /Ausführlich zu dieser Frage/ }).click();
@@ -71,12 +71,44 @@ test('Durchlauf: unentschieden → tiefer → entscheiden → Mein Bild', async 
 
   // Entscheiden: erste echte Option in der oberen Antwortbox
   const box = page.getByRole('region', { name: 'Deine Einschätzung' }).first();
-  const option = box.locator('button.choice').first();
-  await option.click();
-  await expect(option).toHaveAttribute('aria-pressed', 'true');
+  const option = box.getByRole('radio').first();
+  await box.locator('label.wahl').first().click();
+  await expect(option).toBeChecked();
+  // Zurücksetzen hebt die Auswahl wieder auf
+  await box.getByRole('button', { name: 'Antwort zurücksetzen' }).click();
+  await expect(option).not.toBeChecked();
+  await box.locator('label.wahl').first().click();
+  await expect(option).toBeChecked();
 
   await page.goto('/mein-bild/');
   await expect(page.getByText('mit Position')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Deine Antworten' })).toBeVisible();
   expect(frage.length).toBeGreaterThan(0);
+});
+
+test('Durchlauf: Pfeiltasten wechseln die Auswahl, ohne weiterzuspringen', async ({ page }) => {
+  await page.goto('/gesundheit/fragen/');
+  const erste = page.getByRole('radio').first();
+  const frage = await page.locator('h2').first().innerText();
+  await erste.focus();
+  await page.keyboard.press('ArrowDown');
+  await expect(page.getByRole('radio').nth(1)).toBeChecked();
+  await page.waitForTimeout(400);
+  expect(await page.locator('h2').first().innerText()).toBe(frage);
+  // Ein Klick dagegen geht zur nächsten Frage
+  await page.locator('label.wahl').nth(2).click();
+  await expect(page.locator('h2').first()).not.toHaveText(frage);
+});
+
+test('Hebel-Rechner: Klick auf eine Maßnahme ändert die Summe', async ({ page }) => {
+  await page.goto('/gesundheit/finanzierung-kostenanstieg/#zusammenhaenge');
+  // Der Rechner wird erst aktiv, wenn er sichtbar ist (client:visible)
+  await page.locator('#zusammenhaenge li > button[aria-pressed]').first().scrollIntoViewIfNeeded();
+  await page.locator('#zusammenhaenge astro-island:not([ssr])').waitFor({ state: 'attached' });
+  const rechner = page.locator('#zusammenhaenge section[aria-label]').last();
+  await expect(rechner.getByText(/Ausgewählt: 0 von/)).toBeVisible();
+  const erste = rechner.locator('li > button[aria-pressed]').first();
+  await erste.click();
+  await expect(erste).toHaveAttribute('aria-pressed', 'true');
+  await expect(rechner.getByText(/Ausgewählt: 0 von/)).toHaveCount(0);
 });

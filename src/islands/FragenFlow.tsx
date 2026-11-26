@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { setzeAntwort, useAntworten } from '../lib/antworten';
 import type { FrageKurz } from '../lib/content';
-import { buchstabe } from '../lib/optionen';
+import Antwortauswahl, { type Art } from './Antwortauswahl';
 
 type Props = {
   fragen: FrageKurz[];
@@ -71,13 +71,14 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
   const wahl = antworten[f.id]?.wahl;
   const bereich = bereiche.find((b) => b.id === f.bereich);
 
-  const waehle = (id: string) => {
+  const waehle = (id: string, art: Art = 'klick') => {
     setzeAntwort(f.id, id);
     if (id === 'unentschieden') {
       setMehr(true);
       return;
     }
-    setTimeout(() => gehe(index + 1), 220);
+    // Per Pfeiltaste nur die Auswahl wechseln, nicht sofort zur nächsten Frage springen
+    if (art === 'klick') setTimeout(() => gehe(index + 1), 220);
   };
 
   return (
@@ -113,39 +114,25 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
 
       <div class="card p-5 sm:p-7">
         <div class="text-sm text-muted mb-1">{f.titel}</div>
-        <h2 ref={headingRef} tabIndex={-1} class="serif text-2xl sm:text-[1.7rem] font-semibold leading-snug outline-none">
+        <h2 ref={headingRef} tabIndex={-1} class="serif text-[1.4rem] sm:text-[1.7rem] font-semibold leading-snug outline-none">
           {f.frage}
         </h2>
 
-        <div class="grid gap-2 mt-5" role="group" aria-label="Antwortmöglichkeiten">
-          {f.optionen.map((o, i) => (
-            <button key={o.id} type="button" class="choice" aria-pressed={wahl === o.id} onClick={() => waehle(o.id)}>
-              <span class="flex items-start gap-3">
-                <span class="opt mt-px">{buchstabe(i)}</span>
-                <span class="min-w-0">
-                  <span class="block font-semibold leading-snug">{o.titel}</span>
-                  <span class="block text-sm text-muted leading-snug mt-0.5">{o.kurz}</span>
-                </span>
-              </span>
+        <div class="mt-5">
+          <Antwortauswahl
+            key={f.id}
+            name={`durchlauf-${f.id}`}
+            legende={f.frage}
+            legendeVersteckt
+            optionen={f.optionen}
+            wahl={wahl}
+            onWahl={waehle}
+          />
+          {wahl === 'unentschieden' && (
+            <button type="button" class="mt-1 text-sm text-accent underline underline-offset-2" aria-expanded={mehr} onClick={() => setMehr(!mehr)}>
+              {mehr ? 'Erklärung ausblenden' : 'Worum geht’s? Erklärung anzeigen'}
             </button>
-          ))}
-        </div>
-
-        <div class="grid sm:grid-cols-2 gap-2 mt-2">
-          <button
-            type="button"
-            class="choice"
-            aria-pressed={wahl === 'unentschieden'}
-            aria-expanded={mehr}
-            onClick={() => (wahl === 'unentschieden' ? setMehr(!mehr) : waehle('unentschieden'))}
-          >
-            <span class="block font-semibold leading-snug">Kann ich nicht entscheiden</span>
-            <span class="block text-sm text-muted leading-snug mt-0.5">Erklär mir mehr</span>
-          </button>
-          <button type="button" class="choice" aria-pressed={wahl === 'egal'} onClick={() => waehle('egal')}>
-            <span class="block font-semibold leading-snug">Ist mir nicht wichtig</span>
-            <span class="block text-sm text-muted leading-snug mt-0.5">Weiter zur nächsten Frage</span>
-          </button>
+          )}
         </div>
 
         {mehr && (

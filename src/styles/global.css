@@ -116,7 +116,7 @@ h2,
 h3,
 .serif,
 summary,
-.choice,
+.wahl,
 .font-semibold {
   hyphens: manual;
 }
@@ -380,24 +380,85 @@ details.ebene[open] .chev {
   border-color: var(--faint);
 }
 
-/* Antwort-Optionen */
-.choice {
-  width: 100%;
-  text-align: left;
-  border: 1.5px solid var(--line);
-  background: var(--surface);
-  border-radius: 12px;
-  padding: 0.9rem 1rem;
-  transition:
-    border-color 0.15s,
-    background 0.15s;
+/* Antwortauswahl: echte Optionsfelder, Zeilen mit Linien, runder Kreis mit Buchstabe */
+.wahl-gruppe {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  min-width: 0;
+}
+.wahl {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.9rem;
+  padding: 0.8rem 0;
+  min-height: 44px;
+  border-bottom: 1px solid var(--line);
   cursor: pointer;
 }
-.choice:hover {
-  border-color: var(--faint);
+.wahl-klein {
+  border-bottom: 0;
+  padding: 0.45rem 0;
+  align-items: center;
 }
-.choice[aria-pressed='true'] {
+.wahl-kreis {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  border: 2px solid var(--ink);
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
+  transition:
+    background 0.15s,
+    border-color 0.15s,
+    color 0.15s;
+}
+.wahl-klein .wahl-kreis {
+  width: 1.35rem;
+  height: 1.35rem;
+  margin: 0 0.275rem;
+}
+.wahl-text {
+  min-width: 0;
+  padding-top: 0.15rem;
+}
+.wahl-klein .wahl-text {
+  padding-top: 0;
+}
+.wahl-titel {
+  display: block;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.wahl-klein .wahl-titel {
+  font-weight: 500;
+  color: var(--muted);
+}
+.wahl:hover .wahl-kreis {
   border-color: var(--accent);
-  background: var(--accent-soft);
+}
+.wahl input:checked + .wahl-kreis {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-ink);
+}
+.wahl-klein input:checked + .wahl-kreis {
+  box-shadow: inset 0 0 0 4px var(--surface);
+}
+.wahl input:checked ~ .wahl-text .wahl-titel {
+  color: var(--accent);
+}
+.wahl input:focus-visible + .wahl-kreis {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+@media (prefers-reduced-motion: reduce) {
+  .wahl-kreis {
+    transition: none;
+  }
 }
 }
