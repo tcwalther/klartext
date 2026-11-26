@@ -9,6 +9,7 @@ import EntwurfHinweis from '../../components/EntwurfHinweis.astro';
 import OptionMarker from '../../components/OptionMarker.astro';
 import Legende from '../../components/Legende.astro';
 import Wirkungskette from '../../components/Wirkungskette.astro';
+import Tiefenringe from '../../components/Tiefenringe.astro';
 import AntwortBox from '../../islands/AntwortBox.tsx';
 import HebelRechner from '../../islands/HebelRechner.tsx';
 import { getFragen, getBereiche, quellenNummern, ebenenVon, frageKurz, frageUrl, md } from '../../lib/content';
@@ -26,6 +27,7 @@ const alleFragen = await getFragen();
 const nums = quellenNummern(frage);
 const ebenen = ebenenVon(frage);
 const sichtbar = ebenen.filter((e) => e.da);
+const ringEbenen = sichtbar.map((e) => ({ id: e.id, titel: e.titel }));
 const kurz = frageKurz(frage);
 const quellenSortiert = [...d.quellen].sort((a, b) => nums.get(a.id)! - nums.get(b.id)!);
 const verknuepft = d.verknuepft
@@ -97,7 +99,8 @@ const kurzTitel: Record<string, string> = {
           ))
         }
       </ol>
-      <span class="text-xs text-muted truncate min-w-0" data-ebene-name>Tiefer einsteigen</span>
+      <Tiefenringe ebenen={ringEbenen} groesse={24} class="shrink-0 ml-auto order-last" />
+      <span class="hidden min-[400px]:block text-xs text-muted truncate min-w-0" data-ebene-name>Tiefer einsteigen</span>
     </div>
   </nav>
 
@@ -105,7 +108,13 @@ const kurzTitel: Record<string, string> = {
     <!-- Tiefenleiste Desktop: links, mitlaufend -->
     <aside class="hidden lg:block">
       <nav class="sticky top-24" aria-label="Ebenen dieser Frage">
-        <div class="kicker mb-3">Tiefe</div>
+        <div class="flex items-center gap-3 mb-5">
+          <Tiefenringe ebenen={ringEbenen} groesse={52} />
+          <div class="text-xs leading-snug">
+            <span class="kicker block">Tiefe</span>
+            <span class="text-muted" data-ringe-zahl>1 von {sichtbar.length} gelesen</span>
+          </div>
+        </div>
         <ol class="relative border-l border-line ml-[0.4rem]">
           {
             sichtbar.map((e) => (
@@ -433,6 +442,19 @@ const kurzTitel: Record<string, string> = {
         dot.style.borderColor = ist || offen ? 'var(--accent)' : 'var(--line)';
       }
     }
+    // Tiefenringe: geöffnete Ebenen füllen ihren Ring
+    let offenZahl = 0;
+    for (const d of ebenen) {
+      if (d.open) offenZahl++;
+      document.querySelectorAll<SVGCircleElement>(`[data-ring="${d.id}"]`).forEach((c) => {
+        const farbe = d.open ? 'var(--ink)' : 'var(--line)';
+        if (c.getAttribute('fill') === 'none') c.setAttribute('stroke', farbe);
+        else c.setAttribute('fill', farbe);
+      });
+    }
+    const zahl = document.querySelector('[data-ringe-zahl]');
+    if (zahl) zahl.textContent = `${offenZahl} von ${ebenen.length} gelesen`;
+    document.querySelectorAll('[data-tiefenringe]').forEach((svg) => svg.setAttribute('aria-label', `${offenZahl} von ${ebenen.length} Ebenen geöffnet`));
     const name = document.querySelector('[data-ebene-name]');
     const akt = ebenen.find((d) => d.id === aktiv);
     if (name && akt) name.textContent = `Ebene ${akt.dataset.ebene}: ${akt.querySelector('.ebene-titel')?.textContent ?? ''}`;

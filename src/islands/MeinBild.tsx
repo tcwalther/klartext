@@ -3,6 +3,7 @@ import { allesLoeschen, useAntworten } from '../lib/antworten';
 import type { FrageKurz, Spannung } from '../lib/content';
 import { PARTEIEN } from '../lib/parteien';
 import { buchstabe } from '../lib/optionen';
+import TiefenringeKlein from './TiefenringeKlein';
 
 type Props = {
   fragen: FrageKurz[];
@@ -160,7 +161,12 @@ export default function MeinBild({ fragen, bereiche, spannungen }: Props) {
                     return (
                       <li key={f.id} class="border-b border-line">
                         <a href={f.url} class="group flex flex-col sm:flex-row sm:items-center gap-0.5 sm:gap-4 py-3 no-underline">
-                          <span class="flex-1 text-[0.95rem] leading-snug group-hover:text-accent">{f.titel}</span>
+                          <span class="flex-1 flex items-start gap-2.5 text-[0.95rem] leading-snug group-hover:text-accent">
+                            <span class="pt-0.5 shrink-0" title="Wie tief du gelesen hast">
+                              <TiefenringeKlein anzahl={f.tiefe + 1} gelesen={Math.min(tiefen[f.id] ?? 0, f.tiefe + 1)} />
+                            </span>
+                            {f.titel}
+                          </span>
                           <span
                             class={`inline-flex items-center gap-1.5 text-sm sm:justify-end sm:max-w-[45%] ${
                               !a ? 'text-faint' : a.wahl === 'unentschieden' || a.wahl === 'egal' ? 'text-muted italic' : 'font-semibold'

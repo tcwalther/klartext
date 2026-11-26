@@ -1,0 +1,30 @@
+---
+/**
+ * Tiefenringe für die Detailseite. Jeder Ring trägt data-ring=<ebenen-id>;
+ * das Seitenskript färbt geöffnete Ebenen ein.
+ */
+import { ringe } from '../lib/ringe';
+interface Props {
+  ebenen: { id: string; titel: string }[];
+  groesse: number;
+  class?: string;
+}
+const { ebenen, groesse, class: cls = '' } = Astro.props;
+const geo = ringe(ebenen.length);
+---
+
+<svg width={groesse} height={groesse} viewBox="0 0 24 24" class={cls} role="img" aria-label="Gelesene Ebenen" data-tiefenringe>
+  {
+    geo.map((g) =>
+      g.scheibe ? (
+        <circle cx="12" cy="12" r={g.r} fill="var(--line)" data-ring={ebenen[g.i]!.id}>
+          <title>{ebenen[g.i]!.titel}</title>
+        </circle>
+      ) : (
+        <circle cx="12" cy="12" r={g.r} fill="none" stroke="var(--line)" stroke-width={g.breite} data-ring={ebenen[g.i]!.id}>
+          <title>{ebenen[g.i]!.titel}</title>
+        </circle>
+      ),
+    )
+  }
+</svg>
