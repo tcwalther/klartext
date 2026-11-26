@@ -90,7 +90,8 @@ Viele Menschen wollen eine Frage beantworten, nicht einen Artikel lesen. Deshalb
 - Antwort-`titel`: 2–4 Wörter, ohne Fachbegriffe („Mehr Steuergeld“ statt „Mehr Steuermittel“).
 - `kurz_erklaert`: höchstens drei Sätze, je höchstens 25 Wörter, mit Quelle. Lieber ungenau und verständlich als vollständig; die genaue Fassung steht eine Stufe tiefer.
 - `kurz_pro` / `kurz_contra` je Antwort: eine Zeile, höchstens 12 Wörter, gleich sorgfältig für alle Antworten.
-- `video`: höchstens ein Erklärvideo, nur nach redaktioneller Freigabe. Bevorzugt sachliche Erklärformate (öffentlich-rechtliche Angebote, Bundeszentrale für politische Bildung). Politikerinnen und Politiker nur im Paket, etwa je Fraktion eine Rede aus derselben Bundestagsdebatte. YouTube-Videos werden erst nach einem Klick geladen.
+- `video`: höchstens ein Erklärvideo (3–15 Minuten) für „Verstehen“, längere Videos in `videos_tief` für „Genau wissen“. Nur nach redaktioneller Freigabe.
+- Videos müssen **erklären, nicht beschreiben**: Sie zeigen, *warum* etwas passiert, welche Mechanismen wirken und welche Möglichkeiten es gibt. Nachrichtenbeiträge, die nur melden, *dass* etwas passiert („Krankenkassen werden teurer“), und Verbraucherbeiträge („So sparst du beim Kassenwechsel“) sind ungeeignet, weil sie nichts erklären, was die Leser nicht schon wissen. Bevorzugt sachliche Erklärformate (öffentlich-rechtliche Angebote, Bundeszentrale für politische Bildung). Politikerinnen und Politiker nur im Paket, etwa je Fraktion eine Rede aus derselben Bundestagsdebatte. YouTube-Videos werden erst nach einem Klick geladen.
 
 ### Ebene 1: Verstehen statt merken
 
