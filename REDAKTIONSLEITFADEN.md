@@ -62,6 +62,13 @@ Klartext soll klingen wie ein gutes Sachbuch oder ein sorgfältiger Zeitungsarti
 - Einheitliche Anrede: Die Oberfläche duzt; Sachtexte sprechen niemanden an.
 - Gleiche Dinge gleich benennen (nicht abwechselnd „Kassen“, „Krankenversicherungen“, „GKV“ ohne Grund).
 
+### Gestaltung und Farbe
+
+- Grundsatz: schwarz auf weiß. Es gibt keine Akzentfarbe, weil in Deutschland fast jede Farbe parteipolitisch belegt ist.
+- Farbe nur mit Funktion, etwa für die vier Aussage-Typen oder, wo es einmal richtig und falsch gibt, Grün und Rot.
+- Farbe ist nie das einzige Merkmal: Immer kommt eine Form, ein Symbol oder ein Wort dazu, damit die Seite auch bei Farbenblindheit funktioniert.
+- Keine Parteifarben als Schmuck, auch nicht in Diagrammen.
+
 ## 5. Die Zwiebel – Ebenen einer Frage
 
 0. **Frage** + Optionen in je einem Satz
