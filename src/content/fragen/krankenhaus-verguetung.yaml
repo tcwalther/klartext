@@ -4,10 +4,24 @@ status: entwurf
 stand: "2026-11-25"
 titel: Wie sollen Krankenhäuser bezahlt werden?
 frage: "Sollen Krankenhäuser weiter vor allem je Behandlungsfall bezahlt werden, einen festen Anteil für das Bereithalten von Leistungen bekommen oder ein Budget, das ihre tatsächlichen Kosten deckt?"
+kurzfrage: Wofür sollen Krankenhäuser von den Krankenkassen Geld bekommen?
+kurz_erklaert:
+  - typ: fakt
+    text: Fast jeder dritte Euro der Krankenkassen geht ins Krankenhaus.
+    quellen:
+      - bmg-kv45-2025
+  - typ: fakt
+    text: Seit 2004 bekommen Kliniken meist einen festen Betrag pro Behandlungsfall. Damit lohnt es sich, zügig zu entlassen und mehr Fälle zu behandeln.
+    quellen:
+      - bmg-fallpauschalen
+  - typ: fakt
+    text: Nach der Reform von 2024 gibt es gegen Ende des Jahrzehnts auch Geld fürs Bereithalten. Strittig ist, wonach sich das Geld richten soll.
+    quellen:
+      - bt-drs-21-2512
 
 optionen:
   - id: fallpauschalen
-    titel: Fallpauschalen weiterentwickeln
+    titel: Festpreis je Behandlung
     kurz: "Das Geld folgt weiterhin der einzelnen Behandlung. Jeder Fall hat einen festen Preis, der von Diagnose und Schweregrad abhängt; das System wird verfeinert statt ersetzt."
     pro:
       - typ: position
@@ -29,9 +43,11 @@ optionen:
         text: "Eine Notaufnahme oder ein Kreißsaal kostet auch dann Geld, wenn wenig los ist. Häuser mit wenigen Fällen geraten so unter Druck, unabhängig davon, wie gut sie behandeln."
     gewinnt: [Kliniken mit hohen Fallzahlen und effizienten Abläufen, Transparenz über Leistungen und Kosten]
     kostet: [kleine Häuser mit hohen Bereitschaftskosten, Bereiche mit schwankender Nachfrage wie Geburtshilfe und Kinderheilkunde]
+    kurz_pro: Wer effizient behandelt, verdient mehr; Kosten werden vergleichbar.
+    kurz_contra: Lohnt mehr Behandlungen als nötig; kleine Häuser geraten unter Druck.
 
   - id: mischsystem
-    titel: Mischsystem mit Vorhaltepauschalen
+    titel: Festpreis plus Bereitschaftsgeld
     kurz: "Ein großer Teil des Geldes fließt unabhängig von der genauen Fallzahl für das Bereithalten von Personal und Technik, der Rest weiterhin je Fall. So sieht es die Reform von 2024/2026 vor."
     pro:
       - typ: position
@@ -56,9 +72,11 @@ optionen:
         text: "Ein zweites Abrechnungssystem neben den Fallpauschalen macht die Finanzierung komplizierter und schwerer zu überprüfen."
     gewinnt: [Häuser mit hohen Bereitschaftskosten (Notfall, Geburtshilfe, Kinder), Planbarkeit für Kliniken, Spezialisierung über Leistungsgruppen]
     kostet: [Einfachheit der Abrechnung, Anreiz zur Effizienz je Fall, Häuser ohne zugewiesene Leistungsgruppen]
+    kurz_pro: Weniger Druck, zusätzliche Fälle zu behandeln; Kliniken planen sicherer.
+    kurz_contra: Mehr Bürokratie; das Geld hängt weiter an den Fallzahlen.
 
   - id: budgets
-    titel: Budgets nach tatsächlichen Kosten
+    titel: Tatsächliche Kosten erstatten
     kurz: "Jedes Krankenhaus bekommt ein festes Budget, das seine nachgewiesenen, notwendigen Kosten deckt. So war es früher allgemein, und so ist es heute schon beim Pflegepersonal."
     pro:
       - typ: position
@@ -84,6 +102,8 @@ optionen:
         quellen: [bmg-fallpauschalen]
     gewinnt: [Beschäftigte (weniger Kostendruck), Häuser mit wenigen Fällen, Versorgung mit schwankender Nachfrage]
     kostet: [Beitragszahler (schwerere Ausgabenkontrolle), Anreize zu wirtschaftlichem Handeln, Vergleichbarkeit zwischen Kliniken]
+    kurz_pro: Kein Anreiz, Behandlungen auszuweiten oder am Personal zu sparen.
+    kurz_contra: Wenig Anreiz zum Sparen; die Kosten sind schwer zu kontrollieren.
 
 erklaerung:
   - typ: fakt

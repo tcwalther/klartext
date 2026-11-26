@@ -4,10 +4,26 @@ status: entwurf
 stand: "2026-11-25"
 titel: Wie viele Krankenkassen braucht es, und wie viel Wettbewerb zwischen ihnen?
 frage: Sollen die gesetzlichen Krankenkassen stärker miteinander konkurrieren, so vielfältig bleiben wie heute, deutlich weniger werden oder zu einer einzigen Kasse zusammengelegt werden?
+kurzfrage: Rund 90 Krankenkassen konkurrieren um Mitglieder. Wie soll es weitergehen?
+kurz_erklaert:
+  - typ: fakt
+    text: Es gibt rund 90 gesetzliche Krankenkassen, vor gut 50 Jahren waren es etwa zwanzigmal so viele.
+    quellen:
+      - gkv-sv-kassen
+      - bmg-km1-2026
+  - typ: fakt
+    text: "Die Leistungen sind fast überall gleich. Deshalb unterscheiden sich die Kassen vor allem im Preis: Der höchste Zusatzbeitrag ist etwa doppelt so hoch wie der niedrigste."
+    quellen:
+      - vdek-basisdaten-2026
+      - monopolkommission-sg75-2017
+  - typ: fakt
+    text: Die Verwaltung der Kassen kostet knapp 4 von 100 Euro. Strittig ist, ob weniger Kassen viel sparen oder mehr Wettbewerb die Versorgung verbessert.
+    quellen:
+      - gkv-sv-fokus-verwaltung
 
 optionen:
   - id: mehr-wettbewerb
-    titel: Mehr Wettbewerb
+    titel: Mehr Wettbewerb der Kassen
     kurz: Kassen bekommen mehr Freiheit, eigene Verträge mit Ärzten und Kliniken zu schließen, Tarife zu gestalten und Leistungen anzubieten.
     pro:
       - typ: position
@@ -39,9 +55,11 @@ optionen:
         quellen: [vzbv-vergleichsportal-2025]
     gewinnt: [Kassen mit eigenen Versorgungsideen, Anbieter mit guter Qualität, "Versicherte, die Angebote vergleichen"]
     kostet: [Einheitlichkeit des Leistungsanspruchs, Übersichtlichkeit, möglicherweise chronisch Kranke]
+    kurz_pro: Kassen könnten gezielt gute Ärzte und Kliniken unter Vertrag nehmen.
+    kurz_contra: Kassen könnten Gesunde umwerben; Angebote werden schwerer vergleichbar.
 
   - id: vielfalt-wie-bisher
-    titel: Vielfalt wie bisher
+    titel: Viele Kassen wie heute
     kurz: Viele Kassen mit weitgehend gleichem Leistungskatalog konkurrieren vor allem über Zusatzbeitrag und Service; die Zahl ergibt sich aus freiwilligen Fusionen.
     pro:
       - typ: fakt
@@ -69,9 +87,11 @@ optionen:
         text: "Weil fast alle Leistungen gesetzlich vorgegeben sind, unterscheiden sich die Kassen für die meisten Versicherten nur im Beitrag. Ein Wettbewerb, der sich fast nur um den Preis dreht, verbessert die Versorgung kaum."
     gewinnt: [Wahlfreiheit der Versicherten, Selbstverwaltung der Kassen, Planbarkeit]
     kostet: [Verwaltungskosten mehrfacher Strukturen, Werbeausgaben]
+    kurz_pro: Wer unzufrieden ist, kann wechseln; Größe allein spart kaum.
+    kurz_contra: Jede Kasse bezahlt eigene Verwaltung, IT und Werbung.
 
   - id: weniger-kassen
-    titel: Weniger Kassen
+    titel: Weniger, größere Kassen
     kurz: Die Politik fördert Fusionen, etwa über eine Mindestgröße, und begrenzt die Verwaltungskosten stärker.
     pro:
       - typ: fakt
@@ -102,6 +122,8 @@ optionen:
         text: "Fusionen kosten zunächst Geld: Systeme müssen zusammengelegt, Personal umgesetzt, Verträge angeglichen werden. Einsparungen stellen sich, wenn überhaupt, erst Jahre später ein."
     gewinnt: ["Beitragszahlende, falls die Verwaltungskosten sinken", Verhandlungsmacht der Kassen]
     kostet: [Auswahl für Versicherte, kleine und betriebsnahe Kassen, Beschäftigte der Kassen]
+    kurz_pro: Weniger doppelte Verwaltung, mehr Gewicht in Verhandlungen.
+    kurz_contra: Verwaltung ist ein kleiner Posten; Fusionen kosten erst einmal Geld.
 
   - id: einheitskasse
     titel: Eine Kasse für alle
@@ -132,6 +154,8 @@ optionen:
         text: "Wer mit seiner Kasse unzufrieden ist, kann nicht mehr ausweichen. Fehler oder schlechter Service treffen dann alle gesetzlich Versicherten zugleich."
     gewinnt: [Einheitliche Regeln für alle, Verhandlungsmacht gegenüber Anbietern, Wegfall von Werbung und Risikoauswahl]
     kostet: [Wahlfreiheit, Wettbewerbsdruck auf die Kasse, Selbstverwaltung in heutiger Form]
+    kurz_pro: Keine Werbung, kein Werben um Gesunde, überall gleiche Regeln.
+    kurz_contra: Kein Ausweichen mehr; in Österreich brachte die Fusion Mehrkosten.
 
 erklaerung:
   - typ: fakt

@@ -111,7 +111,7 @@ export function frageKurz(f: Frage) {
     kurzErklaert: (f.data.kurz_erklaert ?? []).map((a) => ({ typ: a.typ, html: md(a.text), wer: a.wer ?? null, genau: a.genau ? md(a.genau) : null })),
     status: f.data.status,
     url: frageUrl(f.id),
-    optionen: f.data.optionen.map((o) => ({ id: o.id, titel: o.titel, kurz: o.kurz })),
+    optionen: f.data.optionen.map((o) => ({ id: o.id, titel: o.titel })),
     erklaerung: f.data.erklaerung.map((a) => ({ typ: a.typ, html: md(a.text), wer: a.wer ?? null, genau: a.genau ? md(a.genau) : null })),
     parteien: f.data.parteien.map((p) => {
       const q = f.data.quellen.find((q) => q.id === p.quelle);

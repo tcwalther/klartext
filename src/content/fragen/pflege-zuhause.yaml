@@ -4,9 +4,19 @@ status: entwurf
 stand: "2026-11-25"
 titel: Was soll in der Pflege zu Hause gestärkt werden?
 frage: Die meisten Pflegebedürftigen werden zu Hause versorgt, oft von Angehörigen. Wo soll zusätzliches Geld vor allem hinfließen?
+kurzfrage: Die meisten Pflegebedürftigen leben zu Hause. Wo soll mehr Geld hin?
+kurz_erklaert:
+  - typ: fakt
+    text: Mehr als vier von fünf Pflegebedürftigen leben zu Hause, die meisten werden von der eigenen Familie versorgt.
+    quellen: [destatis-pflegestatistik-2023]
+  - typ: fakt
+    text: Wer im Beruf kürzertritt, um zu pflegen, verliert Einkommen. Einen Lohnersatz wie das Elterngeld gibt es dafür nicht.
+    quellen: [beirat-familienpflegegeld-2022]
+  - typ: wertung
+    text: "Streit gibt es darüber, wo zusätzliches Geld am meisten hilft: bei den Angehörigen, bei Pflegediensten oder als freies Budget für Familien."
 optionen:
   - id: angehoerige-lohnersatz
-    titel: Angehörige finanziell absichern
+    titel: Lohnersatz für pflegende Angehörige
     kurz: Wer für die Pflege eines Angehörigen im Beruf kürzertritt, bekommt einen Lohnersatz, ähnlich dem Elterngeld.
     pro:
       - typ: position
@@ -26,8 +36,10 @@ optionen:
         text: Arbeitgeber, besonders kleine Betriebe, müssen längere Ausfälle überbrücken, obwohl Fachkräfte ohnehin knapp sind.
     gewinnt: [pflegende Angehörige, Vereinbarkeit von Pflege und Beruf]
     kostet: [Beitrags- oder Steuerzahlende, Arbeitgeber, kleine Betriebe]
+    kurz_pro: Pflegende verlieren weniger Einkommen und bleiben im Beruf.
+    kurz_contra: Kostet viel; vor allem Frauen könnten ihre Arbeitszeit länger verringern.
   - id: profis-ausbauen
-    titel: Professionelle Dienste ausbauen
+    titel: Mehr Pflegedienste und Tagespflege
     kurz: Ambulante Pflegedienste sowie Tages- und Kurzzeitpflege werden ausgebaut, damit Angehörige entlastet werden und weiter arbeiten können.
     pro:
       - typ: wertung
@@ -45,8 +57,10 @@ optionen:
         text: Viele Pflegebedürftige möchten lieber von vertrauten Menschen gepflegt werden.
     gewinnt: [Pflegebedürftige ohne Angehörige, erwerbstätige Angehörige, Pflegequalität]
     kostet: [Beitragszahlende, ohnehin knappe Pflegekräfte]
+    kurz_pro: Fachkräfte sichern die Qualität und entlasten berufstätige Angehörige.
+    kurz_contra: Pflegekräfte fehlen schon heute; mehr Geld schafft nicht automatisch Angebote.
   - id: budget-flexibel
-    titel: Leistungen flexibel als Budget
+    titel: Flexibles Budget für Familien
     kurz: Die verschiedenen Leistungen werden zu einem Budget zusammengefasst, das Familien nach eigenem Bedarf einsetzen können.
     pro:
       - typ: wertung
@@ -65,6 +79,8 @@ optionen:
         text: Ein Budget verteilt das vorhandene Geld nur neu. Es löst nicht das Problem steigender Kosten.
     gewinnt: [Wahlfreiheit der Familien, weniger Bürokratie]
     kostet: [Kontrolle über die Mittelverwendung, möglicherweise professionelle Anbieter]
+    kurz_pro: Familien wählen selbst, welche Hilfe sie brauchen; weniger Bürokratie.
+    kurz_contra: Schwer zu prüfen, ob das Geld in gute Pflege fließt.
 erklaerung:
   - typ: fakt
     text: Pflege findet vor allem zu Hause statt. Mehr als vier von fünf Pflegebedürftigen leben nicht im Heim.

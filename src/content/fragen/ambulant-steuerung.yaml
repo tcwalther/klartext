@@ -4,10 +4,20 @@ status: entwurf
 stand: "2026-11-25"
 titel: Wer entscheidet, zu welchem Arzt man geht?
 frage: Soll man weiterhin selbst entscheiden, ob man zuerst zur Hausärztin oder direkt zum Facharzt geht, oder soll der erste Weg verbindlich über die Hausarztpraxis oder eine Ersteinschätzung führen?
+kurzfrage: Direkt zum Facharzt oder erst zum Hausarzt? Wer soll entscheiden?
+kurz_erklaert:
+  - typ: fakt
+    text: Gesetzlich Versicherte dürfen meist ohne Überweisung direkt zu jeder Fachärztin und jedem Facharzt gehen.
+    quellen: [kbv-primaerversorgung-2026]
+  - typ: wertung
+    text: Das spart Umwege. Aber oft hat niemand den Überblick, und knappe Facharzttermine gehen eher an Schnelle als an dringende Fälle.
+  - typ: fakt
+    text: Union und SPD wollen, dass der erste Weg meist in die Hausarztpraxis führt. Ein Gesetzentwurf liegt noch nicht vor.
+    quellen: [aok-koalitionsvertrag-2025, kbv-primaerversorgung-2026]
 
 optionen:
   - id: freie-wahl
-    titel: Freie Arztwahl wie bisher
+    titel: Weiter direkt zum Facharzt
     kurz: Patientinnen und Patienten gehen weiterhin ohne Überweisung direkt zu jeder Fachärztin und jedem Facharzt.
     pro:
       - typ: wertung
@@ -25,9 +35,11 @@ optionen:
         text: Niemand hat den Überblick über alle Befunde und Medikamente einer Person, wenn sie viele Praxen parallel besucht.
     gewinnt: [Wahlfreiheit der Versicherten, schneller Direktzugang für Menschen mit klarer Diagnose, Fachpraxen]
     kostet: ["Termine für Menschen, die dringend einen Facharzt brauchen", Koordination der Behandlung]
+    kurz_pro: Wer seine Beschwerden kennt, kommt ohne Umweg zur Fachpraxis.
+    kurz_contra: Niemand behält den Überblick; knappe Termine gehen nicht nach Dringlichkeit.
 
   - id: primaerarzt
-    titel: Verbindliches Primärarztsystem
+    titel: Verpflichtend erst zur Hausarztpraxis
     kurz: Der erste Weg führt in der Regel zur Hausarztpraxis oder über eine telefonische oder digitale Ersteinschätzung, die dann gezielt weiterleitet.
     pro:
       - typ: wertung
@@ -49,9 +61,11 @@ optionen:
         quellen: [aok-primaerversorgung-auftakt-2026]
     gewinnt: [Koordination der Behandlung, Menschen mit dringendem Facharztbedarf, Hausarztpraxen als zentrale Anlaufstelle]
     kostet: [Wahlfreiheit, Zeit für Menschen mit bekannter Diagnose, Kapazität der Hausarztpraxen]
+    kurz_pro: Eine Praxis behält den Überblick; Facharzttermine gehen gezielter an Bedürftige.
+    kurz_contra: Volle Hausarztpraxen könnten zum Engpass werden; der Umweg kostet Zeit.
 
   - id: hausarzttarif
-    titel: Freiwillige Hausarzttarife mit Bonus
+    titel: Freiwilliger Hausarzt-Tarif mit Bonus
     kurz: Wer sich freiwillig verpflichtet, zuerst zur Hausarztpraxis zu gehen, bekommt einen Vorteil. Alle anderen behalten den Direktzugang.
     pro:
       - typ: wertung
@@ -68,6 +82,8 @@ optionen:
         text: Freiwillig machen vor allem Menschen mit, die ohnehin ihre Hausarztpraxis nutzen. Die Steuerungswirkung auf alle anderen bleibt dann klein.
     gewinnt: [Wahlfreiheit, "Versicherte, die eine Steuerung wünschen", teilnehmende Hausarztpraxen]
     kostet: [Beitragszahler (Bonus und Zusatzvergütung), Steuerungswirkung im Gesamtsystem]
+    kurz_pro: Niemand wird gezwungen; wer Steuerung will, bekommt sie.
+    kurz_contra: Kostet extra; die Wirkung auf alle anderen bleibt klein.
 
 erklaerung:
   - typ: fakt

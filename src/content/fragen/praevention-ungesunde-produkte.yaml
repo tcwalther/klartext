@@ -4,10 +4,20 @@ status: entwurf
 stand: "2026-11-25"
 titel: Soll der Staat ungesunde Produkte stärker regulieren?
 frage: Soll der Staat mit Abgaben oder Werbegrenzen dafür sorgen, dass weniger zuckerhaltige und andere ungesunde Lebensmittel konsumiert werden, oder vor allem auf Aufklärung setzen?
+kurzfrage: Viele Menschen essen ungesund. Was soll der Staat tun?
+kurz_erklaert:
+  - typ: fakt
+    text: Etwa jeder zweite Erwachsene in Deutschland ist übergewichtig, etwa jeder fünfte sogar stark.
+    quellen: [rki-geda-uebergewicht-2022, rki-adipositas-trend-2025]
+  - typ: fakt
+    text: In Großbritannien steigt eine Abgabe mit dem Zuckergehalt. Hersteller änderten ihre Rezepte, der Zucker in Softdrinks hat sich fast halbiert.
+    quellen: [govuk-sdil-2025]
+  - typ: wertung
+    text: Gestritten wird darüber, ob der Staat beim Angebot ansetzt, mit Abgaben und Werbegrenzen, oder beim Einzelnen, mit Aufklärung.
 
 optionen:
   - id: abgaben
-    titel: Abgaben auf ungesunde Produkte
+    titel: Ungesundes teurer machen
     kurz: Hersteller zahlen eine Abgabe, die mit dem Zuckergehalt steigt, etwa auf Softdrinks nach britischem Vorbild.
     pro:
       - typ: wertung
@@ -30,9 +40,11 @@ optionen:
         text: Eine Abgabe auf einzelne Produkte erfasst nur einen Teil der Ernährung. Wer ausweicht, greift womöglich zu anderen ungesunden Produkten.
     gewinnt: [Kinder und Jugendliche mit hohem Softdrink-Konsum, Zahngesundheit, Staatshaushalt oder Krankenversicherung (Einnahmen)]
     kostet: [Getränkehersteller, Verbraucher mit geringem Einkommen, Wahlfreiheit über den Preis]
+    kurz_pro: Hersteller nehmen weniger Zucker, ohne dass etwas verboten wird.
+    kurz_contra: Höhere Preise treffen Menschen mit wenig Geld stärker.
 
   - id: werbung
-    titel: Werbung und Marketing begrenzen
+    titel: Werbung für Kinder begrenzen
     kurz: Werbung für sehr zucker-, fett- oder salzhaltige Lebensmittel, die sich an Kinder richtet, wird eingeschränkt.
     pro:
       - typ: wertung
@@ -48,9 +60,11 @@ optionen:
         text: Wo genau Kinderwerbung anfängt, ist schwer abzugrenzen. Zu breite Regeln können auch Werbung treffen, die sich an Erwachsene richtet.
     gewinnt: [Kinder, Eltern]
     kostet: [Lebensmittel- und Werbewirtschaft, Medien (Werbeeinnahmen)]
+    kurz_pro: Schützt Kinder, kostet Verbraucher nichts und verbietet kein Produkt.
+    kurz_contra: Medien verlieren Werbegeld; die Wirkung auf die Gesundheit ist umstritten.
 
   - id: freiwillig
-    titel: Aufklärung und Freiwilligkeit
+    titel: Auf Aufklärung setzen
     kurz: Der Staat setzt auf Ernährungsbildung, Information und freiwillige Vereinbarungen mit der Industrie statt auf neue Abgaben oder Verbote.
     pro:
       - typ: wertung
@@ -66,6 +80,8 @@ optionen:
         text: Freiwillige Zusagen der Industrie sind schwer zu überprüfen und lassen sich ohne Folgen verfehlen.
     gewinnt: [Wahlfreiheit der Verbraucher, Lebensmittelwirtschaft]
     kostet: [Tempo bei der Senkung des Zuckerkonsums, "Menschen, die Aufklärung schlecht erreicht"]
+    kurz_pro: Jeder entscheidet selbst; Wissen über Ernährung hilft ein Leben lang.
+    kurz_contra: Erreicht oft nur Informierte; freiwillige Zusagen sind schwer überprüfbar.
 
 erklaerung:
   - typ: fakt

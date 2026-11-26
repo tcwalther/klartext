@@ -4,10 +4,20 @@ status: entwurf
 stand: "2026-11-25"
 titel: Sollen Versicherte für gesundes Verhalten belohnt werden?
 frage: Sollen Krankenkassen gesundes Verhalten stärker belohnen, oder soll der Beitrag weiterhin unabhängig davon sein, wie jemand lebt?
+kurzfrage: Soll die Krankenkasse belohnen, wer gesund lebt?
+kurz_erklaert:
+  - typ: fakt
+    text: Der Kassenbeitrag hängt vom Einkommen ab, nicht vom Lebensstil. Wer raucht, zahlt nicht mehr als jemand, der Sport treibt.
+    quellen: [sgb5-3]
+  - typ: fakt
+    text: Belohnen können Kassen bisher nur mit einem Bonus, etwa für Vorsorge, Impfungen oder Gesundheitskurse.
+    quellen: [sgb5-65a]
+  - typ: wertung
+    text: Gestritten wird darüber, ob Belohnungen mehr bewirken als Angebote im Alltag, etwa in Schule und Betrieb, und ob Verhalten den Beitrag beeinflussen darf.
 
 optionen:
   - id: bonus-ausbauen
-    titel: Bonusprogramme ausbauen
+    titel: Höhere Boni für Vorsorge
     kurz: Kassen zahlen höhere Prämien für Vorsorge, Impfungen, Sportkurse oder Gesundheits-Apps. Die Teilnahme bleibt freiwillig.
     pro:
       - typ: wertung
@@ -22,9 +32,11 @@ optionen:
         quellen: [sgb5-65a]
     gewinnt: [gesundheitsbewusste Versicherte, Früherkennung und Impfquoten]
     kostet: [Beitragszahler, "Versicherte, die die Angebote nicht nutzen können"]
+    kurz_pro: Belohnt Vorsorge, ohne jemanden zu bestrafen.
+    kurz_contra: Boni gehen oft an Menschen, die ohnehin gesund leben.
 
   - id: verhaltensabhaengig
-    titel: Beiträge stärker ans Verhalten koppeln
+    titel: Beitrag nach Lebensstil
     kurz: Wer nachweislich gesund lebt, zahlt weniger. Wer zum Beispiel raucht oder Vorsorge auslässt, zahlt mehr oder bekommt weniger Leistungen.
     pro:
       - typ: wertung
@@ -38,9 +50,11 @@ optionen:
         text: Um Verhalten zu belohnen, muss man es messen. Das erfordert Daten über Ernährung, Bewegung oder Gewohnheiten und greift damit in die Privatsphäre ein.
     gewinnt: [Versicherte mit gesundem Lebensstil, Eigenverantwortung]
     kostet: [Solidarausgleich, chronisch Kranke und Menschen in schwierigen Lebenslagen, Datenschutz]
+    kurz_pro: Wer Risiken eingeht, trägt mehr Folgen; das setzt starke Anreize.
+    kurz_contra: Trifft auch unverschuldet Kranke; dafür müsste Verhalten gemessen werden.
 
   - id: lebenswelten
-    titel: Solidarisch bleiben, Prävention in Lebenswelten
+    titel: Vorsorge im Alltag
     kurz: Der Beitrag hängt nicht vom Verhalten ab. Prävention findet dort statt, wo Menschen leben und arbeiten, etwa in Kita, Schule, Betrieb und Stadtteil.
     pro:
       - typ: wertung
@@ -57,6 +71,8 @@ optionen:
         text: Ob Programme in Schulen oder Betrieben wirken, ist schwer zu messen. Geld kann so ohne nachweisbare Wirkung ausgegeben werden.
     gewinnt: [Kinder und Beschäftigte, Menschen mit wenig Einkommen, Solidarprinzip]
     kostet: [persönliche Anreize, Kassen und Kommunen (Organisationsaufwand)]
+    kurz_pro: Erreicht auch Menschen, die sich nie für einen Kurs anmelden würden.
+    kurz_contra: Kein persönlicher Anreiz; die Wirkung ist schwer zu messen.
 
 erklaerung:
   - typ: fakt

@@ -55,10 +55,10 @@ test('Durchlauf: unentschieden → tiefer → entscheiden → Mein Bild', async 
   const frage = await page.locator('h2').first().innerText();
 
   await page.locator('label.wahl', { hasText: 'noch nicht entscheiden' }).click();
-  await expect(page.getByRole('heading', { name: 'Worum geht’s?' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: /Kurz erklärt|Worum geht’s\?/ })).toBeVisible();
 
-  await page.getByRole('link', { name: /Ausführlich zu dieser Frage/ }).click();
-  await expect(page).toHaveURL(/#(argumente|zusammenhaenge)$/);
+  await page.getByRole('link', { name: /Verstehen in|Ausführlich zu dieser Frage/ }).click();
+  await expect(page).toHaveURL(/#(verstehen|argumente|zusammenhaenge)$/);
   const ziel = new URL(page.url()).hash;
   await expect(page.locator(ziel)).toHaveAttribute('open', '');
 

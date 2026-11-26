@@ -47,9 +47,7 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
   return (
     <section class="rounded-xl border border-line bg-surface p-3 sm:p-5" aria-label={titel}>
       <h3 class="serif text-lg font-semibold leading-snug">{titel}</h3>
-      <p class="text-sm text-muted mt-1 mb-4">
-        Tippe auf eine Maßnahme, um sie einzurechnen. Werte in {einheit}.
-      </p>
+      <p class="text-sm text-muted mt-1 mb-4">Tippe auf eine Maßnahme, um sie einzurechnen ({einheit}).</p>
 
       {/* Die Lücke als Bezugsgröße */}
       <div class={`${zeile} pb-3 border-b border-ink`}>
@@ -61,6 +59,12 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
         </span>
         <span class="h-4 rounded-[3px] border-[1.5px] border-ink" style={{ width: breite(ziel.wert), background: 'repeating-linear-gradient(45deg, var(--ink) 0 1.5px, transparent 1.5px 6px)' }} />
         <span class="text-right tabular-nums font-semibold">{fmt.format(ziel.wert)}</span>
+        {ziel.hinweis && (
+          <details class="col-span-full text-xs text-muted">
+            <summary class="cursor-pointer text-faint w-fit">Mehr zur Lücke</summary>
+            <span class="block mt-0.5">{ziel.hinweis}</span>
+          </details>
+        )}
       </div>
 
       <ul>
@@ -115,14 +119,20 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
                     })}
                   </span>
                 )}
-                <span>Trägt die Last: {m.wer_traegt}</span>
-                <span class="block mt-0.5 text-faint">
-                  {m.typ === 'fakt' ? 'Fakt' : 'Schätzung'}
-                  {m.hinweis && <>. {m.hinweis}</>}
+                <span>
+                  Trägt die Last: {m.wer_traegt}
                   <a href={`#quelle-${m.quelleId}`} class="src-ref">
                     [{m.quelleNr}]
                   </a>
                 </span>
+                {m.hinweis && (
+                  <details class="mt-0.5">
+                    <summary class="cursor-pointer text-faint w-fit">Mehr dazu</summary>
+                    <span class="block mt-0.5">
+                      {m.typ === 'fakt' ? 'Fakt' : 'Schätzung'}. {m.hinweis}
+                    </span>
+                  </details>
+                )}
               </div>
             </li>
           );
@@ -149,10 +159,7 @@ export default function HebelRechner({ titel, einheit, ziel, massnahmen }: Props
       </div>
 
       <div class="mt-4 flex flex-wrap items-center justify-between gap-2">
-        <p class="text-xs text-faint max-w-prose">
-          {ziel.hinweis ? `${ziel.hinweis} ` : ''}Weil sich manche Maßnahmen gegenseitig beeinflussen, lassen sich die
-          Beträge nicht genau addieren.
-        </p>
+        <p class="text-xs text-faint max-w-prose">Schätzungen; manche Beträge überschneiden sich.</p>
         {aktiv.length > 0 && (
           <button
             type="button"

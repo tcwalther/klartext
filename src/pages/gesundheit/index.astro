@@ -194,7 +194,6 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
                     <span class="serif text-[1.65rem] font-semibold leading-none text-accent">{i + 1}</span>
                     <span class="block font-semibold leading-snug mt-2">{st.titel}</span>
                     <span class="block text-[0.95rem] text-muted mt-1">{st.text}</span>
-                    <span class="block text-xs text-faint mt-2">{st.wer}</span>
                   </li>
                 ))}
               </ol>
@@ -258,9 +257,6 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
             <summary class="flex items-center justify-between gap-4 py-5 cursor-pointer list-none">
               <span>
                 <span class="block serif text-xl font-semibold">Alle Zahlen im Detail</span>
-                <span class="block text-sm text-muted">
-                  {sd.kennzahlen.length} Kennzahlen, {sd.geldfluss.length} Geldströme und {sd.akteure.length} Akteure
-                </span>
               </span>
               <span class="text-sm text-accent shrink-0 group-open/d:hidden">aufklappen</span>
               <span class="text-sm text-accent shrink-0 hidden group-open/d:inline">zuklappen</span>

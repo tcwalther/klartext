@@ -4,10 +4,20 @@ status: entwurf
 stand: "2026-11-25"
 titel: Arztpraxen auf dem Land
 frage: Wie soll die ärztliche Grundversorgung in Regionen gesichert werden, in denen Hausarztpraxen keine Nachfolge finden?
+kurzfrage: Auf dem Land finden viele Hausarztpraxen keine Nachfolge. Was tun?
+kurz_erklaert:
+  - typ: fakt
+    text: Es gibt nicht weniger Hausärzte, aber mehr arbeiten in Teilzeit. Mehr Köpfe bedeuten also nicht mehr Arztzeit.
+    quellen: [kbv-arztzahlen-2026]
+  - typ: schaetzung
+    text: Eine Modellrechnung erwartet, dass bis 2040 etwa jede fünfte Hausarztstelle unbesetzt ist, vor allem in ländlichen Kreisen.
+    quellen: [aerzteblatt-iges-2026]
+  - typ: wertung
+    text: Viele junge Ärztinnen und Ärzte wollen lieber angestellt arbeiten als eine eigene Praxis führen. Umstritten ist, wie man am besten gegensteuert.
 
 optionen:
   - id: anreize
-    titel: Anreize und Landarztquote
+    titel: Anreize für Landärzte
     kurz: Mehr Geld, Förderprogramme und Studienplätze mit Landverpflichtung sollen Ärztinnen und Ärzte aufs Land holen.
     pro:
       - typ: wertung
@@ -22,9 +32,11 @@ optionen:
         text: Geld allein löst nicht alles. Viele junge Ärztinnen und Ärzte wollen angestellt und in Teilzeit arbeiten, statt eine eigene Praxis zu führen.
     gewinnt: ["Ärztinnen und Ärzte, die aufs Land gehen", Kontinuität des Praxismodells]
     kostet: [Beitrags- und Steuerzahler (Förderung), Wahlfreiheit von Studierenden mit Landverpflichtung]
+    kurz_pro: Die eigene Praxis bleibt; Ärzte wählen weiter selbst, wo sie arbeiten.
+    kurz_contra: Wirkt erst nach Jahren; viele wollen ohnehin keine eigene Praxis.
 
   - id: kommunale-zentren
-    titel: Kommunen betreiben Versorgungszentren
+    titel: Gemeinden stellen Ärzte an
     kurz: Gemeinden, Kreise oder das Land gründen selbst Gesundheitszentren und stellen Ärztinnen und Ärzte an, wo sich keine Praxis findet.
     pro:
       - typ: wertung
@@ -39,9 +51,11 @@ optionen:
         text: Ein Zentrum ist nur so gut wie sein Personal. Fehlen Ärztinnen und Ärzte insgesamt, verschiebt eine neue Trägerschaft sie nur von einem Ort an einen anderen.
     gewinnt: [Orte ohne Praxisnachfolge, "Ärztinnen und Ärzte, die angestellt arbeiten wollen"]
     kostet: [kommunale Haushalte, unternehmerische Freiheit der Praxisinhaber]
+    kurz_pro: Angestellte Ärzte tragen kein Unternehmerrisiko und haben geregelte Arbeitszeiten.
+    kurz_contra: Kommunen tragen die Kosten; fehlen Ärzte insgesamt, verschiebt das sie nur.
 
   - id: neu-organisieren
-    titel: Versorgung neu organisieren
+    titel: Telemedizin und Praxisteams stärken
     kurz: Weniger Arztkontakte pro Patient, dafür Telemedizin, mobile Teams und mehr Aufgaben für Pflegekräfte und Praxisassistenz.
     pro:
       - typ: wertung
@@ -57,6 +71,8 @@ optionen:
         text: Mehr Beteiligte bedeuten mehr Schnittstellen. Wenn Zuständigkeiten unklar sind, kann Wichtiges untergehen.
     gewinnt: [Patienten in Regionen mit wenigen Praxen, Pflege- und Assistenzberufe]
     kostet: [persönlicher Arztkontakt, Menschen ohne digitale Zugänge]
+    kurz_pro: Ärzte konzentrieren sich aufs Wesentliche, andere Berufe übernehmen Routine.
+    kurz_contra: Ältere kommen mit Videosprechstunden schlechter zurecht, gerade auf dem Land.
 
 erklaerung:
   - typ: fakt

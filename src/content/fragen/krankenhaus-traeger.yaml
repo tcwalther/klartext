@@ -4,10 +4,28 @@ status: entwurf
 stand: "2026-11-25"
 titel: Wem sollen Krankenhäuser gehören?
 frage: "Soll es beim Nebeneinander öffentlicher, gemeinnütziger und privater Krankenhäuser bleiben, sollen öffentliche Träger gestärkt und Gewinnausschüttungen begrenzt werden, oder soll es mehr Wettbewerb zwischen Trägern geben?"
+kurzfrage: "Stadt, Kirche oder Unternehmen: Wem sollen Krankenhäuser gehören?"
+kurz_erklaert:
+  - typ: fakt
+    text: Krankenhäuser gehören dem Staat, Kirchen und Wohlfahrtsverbänden oder privaten Unternehmen. Der Anteil privater Häuser hat sich seit 1991 fast verdreifacht.
+    quellen:
+      - destatis-grunddaten-2021
+      - destatis-pm-2026-376
+  - typ: schaetzung
+    text: Die Länder zahlen nur etwa die Hälfte der nötigen Investitionen. Kommunen gleichen Verluste teils aus Steuergeld aus, Private bringen eigenes Kapital und wollen Rendite.
+    quellen:
+      - gemeinsame-pm-invest-2024
+      - dkg-pm-2026-01-09
+      - bgh-2016-calw
+  - typ: wertung
+    text: Ob der Eigentümer die Behandlungsqualität beeinflusst, ist nicht eindeutig geklärt. Der Streit dreht sich auch darum, wie viel Markt Gesundheit verträgt.
+    quellen:
+      - rwi-2015
+      - goodair-reeves-2024
 
 optionen:
   - id: traegervielfalt
-    titel: Trägervielfalt wie bisher
+    titel: Gemischte Eigentümer wie heute
     kurz: "Öffentliche, gemeinnützige (etwa kirchliche) und private Krankenhäuser bestehen nebeneinander und arbeiten unter denselben Regeln für Planung, Bezahlung und Qualität."
     pro:
       - typ: fakt
@@ -29,9 +47,11 @@ optionen:
         text: "Der bisherige Zustand hat das Investitionsproblem nicht gelöst. Träger mit wenig eigenem Kapital können notwendige Erneuerungen oft nicht finanzieren."
     gewinnt: [Wahlfreiheit der Patienten, bestehende Träger aller Art, Planbarkeit für Beschäftigte]
     kostet: [klare Verantwortung bei Verlusten, kommunale Haushalte (Defizitausgleich)]
+    kurz_pro: Jede Art von Eigentümer bringt eigene Stärken ein; Patienten können wählen.
+    kurz_contra: Das Investitionsproblem bleibt; Streit um ungleiche Startbedingungen.
 
   - id: gemeinwohl-staerken
-    titel: Öffentliche Träger stärken, Gewinne begrenzen
+    titel: Mehr öffentliche Kliniken
     kurz: "Krankenhäuser sollen stärker in öffentlicher oder gemeinnütziger Hand sein; Gewinne aus Kassengeldern sollen im System bleiben, statt an Eigentümer zu fließen."
     pro:
       - typ: position
@@ -57,9 +77,11 @@ optionen:
         text: "Kauf, Verlustausgleich und Investitionen müssten aus öffentlichen Haushalten kommen, die ohnehin knapp sind. Ein Gewinnverbot kann privates Kapital für Neubauten und Technik fernhalten."
     gewinnt: [demokratische Kontrolle über Standorte, Beschäftigte (weniger Renditedruck), Beitragszahler (keine Gewinnausschüttung)]
     kostet: [öffentliche Haushalte, privates Kapital für Investitionen, bestehende private Träger]
+    kurz_pro: Überschüsse bleiben in der Versorgung, Bürger entscheiden über Standorte mit.
+    kurz_contra: Kostet knappe öffentliche Haushalte und hält privates Kapital fern.
 
   - id: mehr-wettbewerb
-    titel: Mehr Wettbewerb zwischen Trägern
+    titel: Mehr Wettbewerb unter Eigentümern
     kurz: "Wer ein Haus betreibt, ist zweitrangig; es zählen Qualität und Wirtschaftlichkeit. Private Träger sollen leichter übernehmen können, Verlustausgleich aus Steuergeld soll die Ausnahme bleiben."
     pro:
       - typ: schaetzung
@@ -85,6 +107,8 @@ optionen:
         quellen: [klinikrettung-petition-2026]
     gewinnt: [Effizienz, Kapital für Investitionen, Steuerzahler (weniger Verlustausgleich)]
     kostet: [Personalausstattung je Fall, wenig rentable Standorte und Abteilungen, öffentlicher Einfluss auf Standorte]
+    kurz_pro: Nach Übernahmen stieg die Effizienz; privates Geld modernisiert Kliniken.
+    kurz_contra: Gespart wurde vor allem beim Personal; Unrentables bleibt beim Staat.
 
 erklaerung:
   - typ: fakt

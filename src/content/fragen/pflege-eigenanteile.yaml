@@ -4,9 +4,19 @@ status: entwurf
 stand: "2026-11-25"
 titel: Was sollen Pflegebedürftige im Heim selbst zahlen?
 frage: Die Eigenanteile im Pflegeheim steigen seit Jahren. Wie soll das Kostenrisiko künftig verteilt werden?
+kurzfrage: Pflege im Heim wird immer teurer. Wer soll das bezahlen?
+kurz_erklaert:
+  - typ: fakt
+    text: Die Pflegeversicherung zahlt im Heim nur einen festen Betrag. Steigen die Kosten, zahlen die Bewohner den Anstieg selbst.
+    quellen: [bmg-leistungsbetraege-2026]
+  - typ: fakt
+    text: Im ersten Jahr im Heim zahlen Bewohner im Schnitt rund 3.000 Euro im Monat oder mehr selbst.
+    quellen: [vdek-eigenanteile-2026]
+  - typ: wertung
+    text: "Streit gibt es darüber, wer das Risiko trägt: Bewohner und Familien, Beitragszahler oder Steuerzahler. Was eine Gruppe weniger zahlt, zahlt eine andere mehr."
 optionen:
   - id: teilleistung-zuschlaege
-    titel: Teilleistung mit Zuschlägen
+    titel: Fester Zuschuss wie bisher
     kurz: Die Pflegeversicherung zahlt weiter einen festen Betrag plus Zuschläge, die mit der Wohndauer im Heim steigen; den Rest tragen die Bewohner.
     pro:
       - typ: wertung
@@ -27,8 +37,10 @@ optionen:
         text: Wenn Rente und Ersparnisse nicht reichen, ist Sozialhilfe nötig. Das wollte die Pflegeversicherung ursprünglich vermeiden.
     gewinnt: [Beitragszahlende, Stabilität der Pflegeversicherung]
     kostet: [Pflegebedürftige im Heim, Angehörige, Sozialhilfeträger]
+    kurz_pro: Die Ausgaben der Pflegeversicherung bleiben begrenzt und planbar.
+    kurz_contra: Steigende Kosten treffen die Bewohner, oft bis zur Sozialhilfe.
   - id: eigenanteil-deckeln
-    titel: Eigenanteil deckeln
+    titel: Obergrenze für Bewohner
     kurz: Pflegebedürftige zahlen für die Pflege einen festen, begrenzten Betrag („Sockel“); alles darüber trägt die Pflegeversicherung („Sockel-Spitze-Tausch“).
     pro:
       - typ: wertung
@@ -48,8 +60,10 @@ optionen:
         text: Auch Menschen mit hohem Vermögen werden entlastet, obwohl sie selbst zahlen könnten.
     gewinnt: [Pflegebedürftige im Heim, Angehörige, Planbarkeit]
     kostet: [Beitragszahlende, möglicherweise Bundeshaushalt]
+    kurz_pro: Bewohner wissen vorher, wie viel sie höchstens selbst zahlen.
+    kurz_contra: Mehrkosten trägt die Versicherung; Beiträge oder Steuerzuschüsse könnten steigen.
   - id: vollversicherung
-    titel: Pflegevollversicherung
+    titel: Pflegekosten komplett versichert
     kurz: Die Pflegeversicherung übernimmt alle pflegebedingten Kosten; Bewohner zahlen nur noch Unterkunft, Verpflegung und gegebenenfalls Investitionskosten.
     pro:
       - typ: wertung
@@ -67,8 +81,10 @@ optionen:
         text: In einer alternden Gesellschaft tragen vor allem jüngere Beitragszahler die zusätzlichen Kosten.
     gewinnt: [Pflegebedürftige, Angehörige, Erben]
     kostet: [Beitragszahlende, jüngere Generationen, Bundeshaushalt]
+    kurz_pro: Niemand muss wegen Pflegekosten sein Erspartes aufbrauchen.
+    kurz_contra: Beiträge oder Steuerzuschüsse würden stark steigen, vor allem für Jüngere.
   - id: private-vorsorge-pflicht
-    titel: Verpflichtende private Vorsorge
+    titel: Pflicht zur Zusatzversicherung
     kurz: Alle müssen zusätzlich eine kapitalgedeckte Pflegeversicherung abschließen, die künftige Eigenanteile weitgehend abdeckt.
     pro:
       - typ: position
@@ -88,6 +104,8 @@ optionen:
         text: Kapitalanlagen unterliegen Zins- und Marktrisiken. Private Versicherer verursachen eigene Verwaltungskosten.
     gewinnt: [künftige Beitragszahlende, jüngere Generationen, private Versicherer]
     kostet: [Versicherte mit geringem Einkommen, Arbeitgeber, heute ältere Menschen]
+    kurz_pro: Jede Generation spart für die eigene Pflege an.
+    kurz_contra: Heute Ältere profitieren kaum; Geringverdiener werden relativ stärker belastet.
 erklaerung:
   - typ: fakt
     text: Die Pflegeversicherung zahlt im Heim einen **festen Betrag** je Pflegegrad, keinen festen Anteil an den Kosten. Steigen die Kosten, tragen die Bewohner den Anstieg deshalb zunächst selbst.

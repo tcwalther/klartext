@@ -4,9 +4,19 @@ status: entwurf
 stand: "2026-11-25"
 titel: Wie sollen Preise neuer Medikamente festgelegt werden?
 frage: Neue, patentgeschützte Medikamente machen gut die Hälfte der Arzneimittelausgaben aus. Soll Deutschland ihre Preise strenger regulieren oder schnellen Zugang und den Pharmastandort in den Vordergrund stellen?
+kurzfrage: Neue Medikamente sind sehr teuer. Wie streng sollen ihre Preise geregelt werden?
+kurz_erklaert:
+  - typ: fakt
+    text: Neue Medikamente mit Patent machen nur einen kleinen Teil der Verordnungen aus, aber mehr als die Hälfte der Arzneimittelkosten.
+    quellen: [wido-arzneimittelmarkt-2026]
+  - typ: fakt
+    text: Ihr Preis wird zwischen Hersteller und Krankenkassen verhandelt, je nach zusätzlichem Nutzen. Im ersten halben Jahr bestimmt der Hersteller ihn selbst.
+    quellen: [sgb5-130b, gkv-sv-amnog-fokus]
+  - typ: wertung
+    text: Niedrigere Preise entlasten die Beitragszahler. Höhere Preise sollen schnellen Zugang zu neuen Mitteln und Forschung in Deutschland sichern.
 optionen:
   - id: amnog-beibehalten
-    titel: System im Kern beibehalten
+    titel: Heutige Regeln beibehalten
     kurz: Nutzenbewertung und Preisverhandlung nach dem AMNOG bleiben wie heute, mit Anpassungen im Detail.
     pro:
       - typ: wertung
@@ -25,8 +35,10 @@ optionen:
         text: Neue Ausnahmen wie vertrauliche Preise für Unternehmen mit Forschung in Deutschland machen das System weniger transparent.
     gewinnt: [schneller Zugang zu neuen Medikamenten, Planungssicherheit für Hersteller]
     kostet: ["Beitragszahlende, wenn die Ausgaben weiter stark wachsen"]
+    kurz_pro: Neue Medikamente sind in Deutschland sehr schnell verfügbar.
+    kurz_contra: Patentgeschützte Mittel verursachen trotzdem mehr als die Hälfte der Kosten.
   - id: strenger-regulieren
-    titel: Preise strenger regulieren
+    titel: Preise strenger begrenzen
     kurz: Der verhandelte Preis gilt rückwirkend ab dem ersten Tag und richtet sich noch strenger nach dem nachgewiesenen Zusatznutzen.
     pro:
       - typ: wertung
@@ -48,8 +60,10 @@ optionen:
         text: Niedrigere Preise können Investitionen in Forschung und Produktion in Deutschland unattraktiver machen.
     gewinnt: [Beitragszahlende, Krankenkassen]
     kostet: [Umsätze der Hersteller, möglicherweise Zugang zu einzelnen neuen Medikamenten]
+    kurz_pro: Keine hohen Einstiegspreise mehr; das Ersparte entlastet die Beitragszahler.
+    kurz_contra: Hersteller könnten Medikamente hier später oder gar nicht anbieten.
   - id: zugang-standort
-    titel: Zugang und Standort priorisieren
+    titel: Weniger Preisregeln
     kurz: Regeln werden gelockert oder mit Standortförderung verbunden, damit neue Medikamente schnell auf den Markt kommen und Pharmaforschung in Deutschland bleibt.
     pro:
       - typ: wertung
@@ -70,6 +84,8 @@ optionen:
         text: Geheime Preise erschweren es Ärzten und der Öffentlichkeit, Kosten und Nutzen zu vergleichen.
     gewinnt: [schneller Zugang zu Innovationen, Pharmastandort und Arbeitsplätze]
     kostet: [Beitragszahlende, Preistransparenz]
+    kurz_pro: Neue Therapien kommen früh zu Patienten, Pharmaforschung bleibt im Land.
+    kurz_contra: Versicherte zahlen für Industriepolitik; geheime Preise erschweren Vergleiche.
 erklaerung:
   - typ: fakt
     text: Neue, patentgeschützte Medikamente machen nur einen kleinen Teil der Verordnungen aus, aber mehr als die Hälfte der Arzneimittelkosten der Krankenkassen.

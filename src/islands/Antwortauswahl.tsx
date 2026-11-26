@@ -9,7 +9,7 @@ type Props = {
   legende: string;
   /** Legende nur für Screenreader (wenn eine sichtbare Überschrift schon dasselbe sagt) */
   legendeVersteckt?: boolean;
-  optionen: { id: string; titel: string; kurz?: string | undefined }[];
+  optionen: { id: string; titel: string }[];
   wahl: string | undefined;
   /** art = 'pfeiltaste', wenn die Auswahl nur per Pfeiltaste innerhalb der Gruppe gewechselt wurde */
   onWahl: (id: string, art: Art) => void;
@@ -59,7 +59,6 @@ export default function Antwortauswahl({ name, legende, legendeVersteckt, option
             </span>
             <span class="wahl-text">
               <span class="wahl-titel">{o.titel}</span>
-              {o.kurz && <span class="block text-sm text-muted leading-snug mt-0.5">{o.kurz}</span>}
             </span>
           </label>
         ))}

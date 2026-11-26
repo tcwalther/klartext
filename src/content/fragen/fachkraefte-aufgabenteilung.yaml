@@ -4,10 +4,21 @@ status: entwurf
 stand: "2026-11-25"
 titel: Wer darf was in der Versorgung?
 frage: Sollen Pflegekräfte, Apothekerinnen und andere Gesundheitsberufe mehr Aufgaben eigenständig übernehmen dürfen, die bisher Ärztinnen und Ärzten vorbehalten sind?
+kurzfrage: Sollen Pflegekräfte und Apotheken mehr tun dürfen, was bisher nur Ärzte dürfen?
+kurz_erklaert:
+  - typ: fakt
+    text: Viele Behandlungen dürfen bisher nur Ärztinnen und Ärzte eigenständig übernehmen. Andere Berufe handeln meist auf ärztliche Anordnung.
+    quellen: [baek-stellungnahme-pkg-2025]
+  - typ: schaetzung
+    text: Arztzeit ist knapp. Laut einer Modellrechnung könnten andere Berufe in Baden-Württemberg etwa ein Drittel der erwarteten Hausarztlücke schließen.
+    quellen: [aerzteblatt-iges-2026]
+    unsicherheit: Szenariorechnung; hängt stark von Annahmen zu übertragbaren Aufgaben ab.
+  - typ: wertung
+    text: "Gestritten wird um Verantwortung: Wer diagnostiziert, haftet und braucht den Überblick. Zudem sind auch Pflegekräfte knapp."
 
 optionen:
   - id: erweitern
-    titel: Befugnisse deutlich erweitern
+    titel: Deutlich mehr erlauben
     kurz: Speziell ausgebildete Pflegekräfte, etwa Community Health Nurses oder Advanced Practice Nurses, behandeln bestimmte Krankheiten eigenständig und verordnen selbst Medikamente.
     pro:
       - typ: wertung
@@ -26,9 +37,11 @@ optionen:
         text: Mehr Beteiligte bedeuten mehr Schnittstellen. Wenn unklar ist, wer verantwortlich ist, kann für Patientinnen etwas verloren gehen.
     gewinnt: [Pflegekräfte und andere Gesundheitsberufe, Patienten in Regionen mit wenigen Ärzten]
     kostet: [ärztliche Gesamtverantwortung, klare Zuständigkeiten (in der Übergangszeit)]
+    kurz_pro: Mehr Arztzeit für schwierige Fälle; Gesundheitsberufe werden attraktiver.
+    kurz_contra: Mehr Schnittstellen; unklarer, wer entscheidet und haftet.
 
   - id: schrittweise
-    titel: Schrittweise mit ärztlicher Einbindung
+    titel: Schrittweise mehr erlauben
     kurz: "Pflegekräfte und Apotheken übernehmen nach und nach mehr Aufgaben: über festgelegte Leistungskataloge, nach ärztlicher Diagnose oder mit ärztlicher Rückfrage."
     pro:
       - typ: wertung
@@ -44,9 +57,11 @@ optionen:
         text: Wenn die Selbstverwaltung die Leistungskataloge erst aushandeln muss, kann es Jahre dauern, bis sich im Alltag etwas ändert.
     gewinnt: [Patientensicherheit durch Erprobung, schrittweise Entlastung der Praxen]
     kostet: [Tempo, Abstimmungsaufwand]
+    kurz_pro: Neue Aufgaben werden erst erprobt, bevor sie zur Regel werden.
+    kurz_contra: Mehr Abstimmung, wenig Entlastung; Änderungen können Jahre dauern.
 
   - id: arztvorbehalt
-    titel: Arztvorbehalt beibehalten
+    titel: Ärzte entscheiden weiter
     kurz: Diagnose und Behandlungsentscheidung bleiben bei Ärztinnen und Ärzten. Andere Berufe arbeiten weiter auf ärztliche Anordnung („Delegation“).
     pro:
       - typ: wertung
@@ -60,6 +75,8 @@ optionen:
         text: Gut qualifizierte Pflegekräfte bleiben unter ihren Möglichkeiten. Das kann den Beruf weniger attraktiv machen.
     gewinnt: [einheitliche ärztliche Verantwortung, Klarheit bei der Haftung]
     kostet: [Arztzeit, Entwicklungsmöglichkeiten anderer Gesundheitsberufe]
+    kurz_pro: Klare Verantwortung; Ärzte überblicken das ganze Krankheitsbild.
+    kurz_contra: Arztzeit wird für Aufgaben gebunden, die andere ebenso könnten.
 
 erklaerung:
   - typ: fakt

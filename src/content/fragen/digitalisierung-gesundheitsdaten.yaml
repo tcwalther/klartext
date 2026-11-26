@@ -4,10 +4,20 @@ status: entwurf
 stand: "2026-11-25"
 titel: Elektronische Patientenakte und Forschungsdaten
 frage: Sollen Gesundheitsdaten in der elektronischen Patientenakte automatisch gespeichert und für Forschung genutzt werden, solange man nicht widerspricht, oder nur mit ausdrücklicher Zustimmung?
+kurzfrage: Wer darf meine Gesundheitsdaten nutzen, und muss ich zustimmen?
+kurz_erklaert:
+  - typ: fakt
+    text: Seit 2025 bekommen alle gesetzlich Versicherten automatisch eine digitale Patientenakte, außer sie widersprechen. Das tat nur etwa jeder Zwanzigste.
+    quellen: [bmg-digig-faq, aok-widerspruch-2025]
+  - typ: fakt
+    text: Seit Herbst 2026 gehen die Daten ohne Namen auch an die Forschung, ebenfalls nur ohne Widerspruch.
+    quellen: [bmg-fdz-faq]
+  - typ: wertung
+    text: Streitpunkt ist die Voreinstellung. Automatisch sind fast alle dabei. Mit Zustimmungspflicht entscheidet jeder bewusst, doch es machen wohl weniger mit.
 
 optionen:
   - id: opt-out
-    titel: Widerspruchslösung wie heute
+    titel: Automatisch, außer ich widerspreche
     kurz: Jede und jeder gesetzlich Versicherte hat eine ePA, und pseudonymisierte Daten gehen an die Forschung, sofern man nicht widerspricht.
     pro:
       - typ: wertung
@@ -25,9 +35,11 @@ optionen:
         quellen: [heise-ccc-2024]
     gewinnt: [Behandlungssicherheit, Forschung, Menschen mit vielen Ärzten und Medikamenten]
     kostet: [ausdrückliche Selbstbestimmung, Datenschutz (Restrisiko)]
+    kurz_pro: Fast alle haben eine Akte; Ärzte und Forschung sehen mehr.
+    kurz_contra: Wer sich nicht kümmert, gibt Daten frei, ohne bewusst zu entscheiden.
 
   - id: opt-in
-    titel: Nur mit Zustimmung
+    titel: Nur wenn ich zustimme
     kurz: Eine ePA wird nur angelegt und Daten fließen nur in die Forschung, wenn Versicherte ausdrücklich zustimmen.
     pro:
       - typ: wertung
@@ -41,9 +53,11 @@ optionen:
         text: Forschung mit Daten nur von Freiwilligen kann verzerrt sein, weil bestimmte Gruppen seltener zustimmen.
     gewinnt: [informationelle Selbstbestimmung, Vertrauen der Skeptischen]
     kostet: [Verbreitung der ePA, Aussagekraft der Forschung]
+    kurz_pro: Jeder entscheidet bewusst über seine sensiblen Daten.
+    kurz_contra: Wenige würden mitmachen; die Akte hilft dann kaum.
 
   - id: breiter-nutzen
-    titel: Daten breiter nutzbar machen
+    titel: Auch für Unternehmen öffnen
     kurz: Pseudonymisierte Daten stehen nach festen Regeln auch Unternehmen offen, etwa für die Entwicklung von Medikamenten oder KI. Wie im europäischen Gesundheitsdatenraum gibt es ein Widerspruchsrecht.
     pro:
       - typ: position
@@ -59,6 +73,8 @@ optionen:
         text: Je mehr Stellen Zugriff haben, desto größer ist das Risiko von Missbrauch oder einer Rückverfolgung zu Einzelnen.
     gewinnt: [Unternehmen und Forschungsstandort, medizinische Innovation]
     kostet: [Vertrauen in die Zweckbindung, Datenschutz]
+    kurz_pro: Mit guten Daten entstehen neue Medikamente schneller und sicherer.
+    kurz_contra: Daten fürs Gemeinwohl dienen auch Gewinnen; mehr Zugriff, mehr Risiko.
 
 erklaerung:
   - typ: fakt

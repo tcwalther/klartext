@@ -4,9 +4,19 @@ status: entwurf
 stand: "2026-11-25"
 titel: Was tun gegen Lieferengpässe bei Medikamenten?
 frage: Immer wieder fehlen in Apotheken gängige Medikamente wie Antibiotika oder Psychopharmaka. Was soll vor allem dagegen helfen?
+kurzfrage: In Apotheken fehlen oft Medikamente. Was soll dagegen helfen?
+kurz_erklaert:
+  - typ: fakt
+    text: 2025 wurden rund tausend Lieferengpässe gemeldet, auch bei Antibiotika und Psychopharmaka. Manche dauern Monate.
+    quellen: [zi-lieferengpaesse-2026]
+  - typ: fakt
+    text: Krankenkassen kaufen günstige Nachahmer-Medikamente oft per Ausschreibung ein. Geht der Auftrag an wenige Anbieter, fehlt bei Ausfällen schnell Ersatz.
+    quellen: [progenerika-zahlen-2025]
+  - typ: wertung
+    text: Niedrige Preise sparen Beitragsgeld, machen Vorräte und Produktion in Europa aber weniger attraktiv. Umstritten ist, was am meisten hilft.
 optionen:
   - id: produktion-europa
-    titel: Produktion nach Europa holen
+    titel: Mehr Herstellung in Europa
     kurz: Die Herstellung wichtiger Wirkstoffe in Europa wird gezielt gefördert, auch wenn Medikamente dadurch teurer werden.
     pro:
       - typ: position
@@ -27,8 +37,10 @@ optionen:
         text: Auch europäische Hersteller sind auf Vorprodukte aus aller Welt angewiesen. Vollständige Unabhängigkeit ist kaum erreichbar.
     gewinnt: [Versorgungssicherheit, Industriestandort Europa]
     kostet: [Beitragszahlende, Steuerzahlende, günstige Preise]
+    kurz_pro: Die Versorgung hängt weniger an einzelnen Fabriken und Ländern.
+    kurz_contra: Medikamente werden teurer, und neue Fabriken brauchen Jahre.
   - id: vorraete-meldepflichten
-    titel: Vorräte und Frühwarnung ausbauen
+    titel: Größere Vorräte, frühere Warnung
     kurz: Hersteller, Großhandel und Apotheken müssen mehr vorrätig halten; Engpässe sollen über Meldepflichten früher erkannt werden.
     pro:
       - typ: wertung
@@ -50,8 +62,10 @@ optionen:
         quellen: [zi-lieferengpaesse-2026]
     gewinnt: [kurzfristige Versorgungssicherheit, Transparenz]
     kostet: [Hersteller und Großhandel, Lagerkosten]
+    kurz_pro: Überbrückt kurze Ausfälle und lässt sich schnell umsetzen.
+    kurz_contra: Lager kosten Geld und helfen nicht bei monatelangem Mangel.
   - id: markt-rabattvertraege
-    titel: Markt und Rabattverträge im Kern belassen
+    titel: Einkauf wie bisher
     kurz: Krankenkassen schließen weiter Rabattverträge mit Herstellern; staatliche Eingriffe bleiben auf einzelne Problemfälle beschränkt.
     pro:
       - typ: fakt
@@ -74,6 +88,8 @@ optionen:
         text: Engpässe belasten Patienten, Ärzte und Apotheken, die nach Alternativen suchen müssen.
     gewinnt: [Beitragszahlende, niedrige Arzneimittelpreise]
     kostet: [Vielfalt der Anbieter, möglicherweise Versorgungssicherheit]
+    kurz_pro: Spart viel Geld, das für andere Leistungen bleibt.
+    kurz_contra: Bei wenigen Anbietern fehlt nach einem Ausfall schnell Ersatz.
 erklaerung:
   - typ: fakt
     text: Ein **Lieferengpass** liegt vor, wenn ein Medikament länger als zwei Wochen nicht oder nur eingeschränkt lieferbar ist. Das kommt häufig vor. 2025 wurden rund tausend Engpässe gemeldet.

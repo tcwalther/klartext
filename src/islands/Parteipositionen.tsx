@@ -22,8 +22,7 @@ export default function Parteipositionen({ frage, wahl }: Props) {
         <span class="text-xs font-normal text-muted group-open/p:hidden">anzeigen</span>
       </summary>
       <p class="text-xs text-muted mt-2 mb-3">
-        Wörtliche Zitate aus den Wahlprogrammen zur Bundestagswahl 2025. Eine Partei wird einer Antwort nur zugeordnet,
-        wenn ihr Programm eindeutig ist. Die Reihenfolge ist alphabetisch.
+        Wörtlich aus den Wahlprogrammen 2025, alphabetisch.
       </p>
       <ul class="border-t border-line">
         {PARTEIEN.map((partei) => {

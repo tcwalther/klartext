@@ -4,10 +4,21 @@ status: entwurf
 stand: "2026-11-25"
 titel: Wie gewinnt man genug Pflegekräfte?
 frage: Worauf soll die Politik vor allem setzen, damit es in Krankenhäusern, Heimen und zu Hause genug Pflegekräfte gibt?
+kurzfrage: Es fehlen Pflegekräfte. Was hilft am meisten?
+kurz_erklaert:
+  - typ: fakt
+    text: In der Pflege arbeiten heute gut ein Fünftel mehr Menschen als vor zehn Jahren. Viele Neue kommen aus dem Ausland.
+    quellen: [ba-pflege-2025]
+  - typ: schaetzung
+    text: Trotzdem dürfte es nicht reichen. Der Pflegebedarf steigt um rund ein Drittel, und viele Pflegekräfte gehen selbst in Rente.
+    quellen: [destatis-pflegekraefte-2024]
+    unsicherheit: Modellrechnung („Wenn-dann-Aussage“); die Spanne hängt davon ab, ob sich der Zuwachs der 2010er-Jahre fortsetzt.
+  - typ: wertung
+    text: "Gestritten wird darüber, was mehr hilft: zusätzliche Köpfe durch Anwerbung und Ausbildung oder bessere Bedingungen, damit Pflegekräfte bleiben."
 
 optionen:
   - id: bezahlung
-    titel: Bessere Bezahlung und Arbeitsbedingungen
+    titel: Bessere Löhne und Arbeitsbedingungen
     kurz: Höhere Löhne, verlässliche Dienstpläne und weniger Überlastung sollen mehr Menschen in den Beruf holen und dort halten.
     pro:
       - typ: wertung
@@ -24,9 +35,11 @@ optionen:
         text: Wenn die Löhne schon über dem mittleren Verdienst aller Beschäftigten liegen, löst noch mehr Geld allein den Mangel womöglich nicht.
     gewinnt: [Pflegekräfte, Pflegequalität]
     kostet: [Beitragszahler, Pflegebedürftige (Eigenanteile)]
+    kurz_pro: Kann Ausgestiegene zurückholen; das wirkt schneller als Ausbildung.
+    kurz_contra: Kostet Beitragszahler und Heimbewohner; die Löhne sind schon stark gestiegen.
 
   - id: anwerbung
-    titel: Gezielte Anwerbung aus dem Ausland
+    titel: Pflegekräfte aus dem Ausland
     kurz: Pflegekräfte aus anderen Ländern werden aktiv angeworben und beim Ankommen unterstützt; ihre Abschlüsse werden schneller anerkannt.
     pro:
       - typ: fakt
@@ -41,9 +54,11 @@ optionen:
         text: Sprache, Anerkennung und Einarbeitung kosten Zeit. Wer sich nicht willkommen fühlt, zieht weiter oder kehrt zurück.
     gewinnt: [Krankenhäuser und Heime mit offenen Stellen, zugewanderte Fachkräfte]
     kostet: [Herkunftsländer, Einarbeitungsaufwand in den Teams]
+    kurz_pro: Wirkt schneller als eine dreijährige Ausbildung im Inland.
+    kurz_contra: Herkunftsländer verlieren Fachkräfte; Sprache und Einarbeitung brauchen Zeit.
 
   - id: personalbemessung
-    titel: Verbindliche Personalbemessung
+    titel: Mindestzahl an Pflegekräften
     kurz: Eine Vorgabe legt fest, wie viele Pflegekräfte für eine bestimmte Zahl und Schwere von Patienten mindestens im Dienst sein müssen.
     pro:
       - typ: position
@@ -59,9 +74,11 @@ optionen:
         text: Vorgaben schaffen keine Pflegekräfte. Wo sie fehlen, müssen Kliniken Betten sperren oder Stationen schließen.
     gewinnt: [Patientensicherheit, Pflegekräfte im Dienst]
     kostet: [Flexibilität der Kliniken, Bettenkapazität bei Personalmangel, Bürokratie]
+    kurz_pro: Schützt Patienten und Pflegekräfte vor Überlastung.
+    kurz_contra: Schafft keine Pflegekräfte; fehlen sie, werden Betten gesperrt.
 
   - id: entlastung
-    titel: Entlastung durch Technik und weniger Bürokratie
+    titel: Weniger Bürokratie, mehr Technik
     kurz: Digitale Dokumentation, Hilfsmittel und weniger Papierarbeit sollen Pflegekräften mehr Zeit für Menschen geben.
     pro:
       - typ: wertung
@@ -76,6 +93,8 @@ optionen:
         text: Pflege ist Beziehungsarbeit. Den Großteil der Arbeit am Menschen kann Technik nicht ersetzen.
     gewinnt: [Pflegekräfte, Pflegebedürftige (mehr Zeit)]
     kostet: [Investitionen der Einrichtungen, Kontrolldichte]
+    kurz_pro: Mehr Zeit für Pflege, ohne zusätzliches Personal.
+    kurz_contra: Kostet anfangs Geld; die Arbeit am Menschen ersetzt Technik nicht.
 
 erklaerung:
   - typ: fakt

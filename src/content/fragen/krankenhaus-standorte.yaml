@@ -4,10 +4,25 @@ status: entwurf
 stand: "2026-11-25"
 titel: Wie viele Krankenhäuser und an welchen Standorten?
 frage: "Soll Deutschland seine Krankenhausversorgung stärker auf weniger, spezialisierte Standorte bündeln, möglichst viele wohnortnahe Häuser erhalten oder kleine Häuser in ambulant-stationäre Versorgungszentren umwandeln?"
+kurzfrage: Wie viele Krankenhäuser brauchen wir, und wo sollen sie stehen?
+kurz_erklaert:
+  - typ: fakt
+    text: Deutschland hat rund anderthalbmal so viele Krankenhausbetten je Einwohner wie der EU-Schnitt.
+    quellen:
+      - eurostat-betten-2024
+  - typ: fakt
+    text: Patienten bleiben heute nur noch halb so lange wie 1991. In kleinen Häusern ist im Schnitt nur gut jedes zweite Bett belegt.
+    quellen:
+      - destatis-grunddaten-2021
+      - destatis-pm-2026-376
+  - typ: wertung
+    text: Weniger Standorte bündeln Erfahrung und knappes Personal, verlängern aber Wege. 2020 erreichte jeder Neunte eine Schlaganfall-Station nicht binnen 30 Minuten.
+    quellen:
+      - bbsr-erreichbarkeit-2020
 
 optionen:
   - id: buendeln
-    titel: Stärker bündeln und spezialisieren
+    titel: Weniger, spezialisierte Kliniken
     kurz: "Komplexe und planbare Behandlungen sollen in weniger, größeren Kliniken mit viel Erfahrung stattfinden; die Grundversorgung bleibt in der Fläche."
     pro:
       - typ: schaetzung
@@ -32,9 +47,11 @@ optionen:
         text: "Längere Wege treffen Patientinnen und Patienten ebenso wie Angehörige, die sie besuchen. Für Menschen ohne Auto kann eine Klinik in 40 Kilometern Entfernung praktisch unerreichbar sein."
     gewinnt: [Behandlungsqualität bei komplexen Eingriffen, Fachkräfte in größeren Teams, Beitragszahler (weniger doppelte Vorhaltung)]
     kostet: [Wohnortnähe, Patienten und Angehörige in dünn besiedelten Regionen, Beschäftigte und Gemeinden an aufgegebenen Standorten]
+    kurz_pro: Mehr Routine bei schweren Eingriffen; Krebspatienten lebten in Zentren länger.
+    kurz_contra: Längere Wege, besonders auf dem Land und ohne Auto.
 
   - id: wohnortnah-erhalten
-    titel: Wohnortnahe Häuser erhalten
+    titel: Kliniken vor Ort erhalten
     kurz: "Möglichst viele Krankenhäuser mit Notaufnahme und Grundversorgung sollen bestehen bleiben; Länder sollen dafür von bundesweiten Vorgaben abweichen dürfen."
     pro:
       - typ: wertung
@@ -59,9 +76,11 @@ optionen:
         text: "Jeder Standort braucht rund um die Uhr Personal, auch wenn nachts wenige Patienten kommen. Bei Fachkräftemangel kann das an anderer Stelle fehlen."
     gewinnt: [Patienten und Angehörige auf dem Land, Gemeinden mit Krankenhausstandort, Beschäftigte vor Ort]
     kostet: [Beitragszahler (Vorhaltung vieler Standorte), Spezialisierung, knappe Fachkräfte]
+    kurz_pro: Kurze Wege im Notfall; die Klinik stärkt die ganze Region.
+    kurz_contra: Kleine Häuser sind schwach ausgelastet und binden knappes Personal.
 
   - id: umwandeln
-    titel: Kleine Häuser umwandeln
+    titel: Kleine Kliniken zu Gesundheitszentren
     kurz: "Kleine Krankenhäuser werden zu Gesundheitszentren, die einfache stationäre Fälle, ambulante Behandlung und Pflege unter einem Dach anbieten; komplexe Fälle gehen an größere Kliniken."
     pro:
       - typ: fakt
@@ -84,6 +103,8 @@ optionen:
         text: "Das Modell ist neu. Wie gut die Zusammenarbeit mit Arztpraxen, Pflegediensten und großen Kliniken im Alltag funktioniert, muss sich erst zeigen."
     gewinnt: [Grundversorgung vor Ort, ältere und chronisch kranke Menschen, Zusammenarbeit von Klinik, Praxen und Pflege]
     kostet: [Notfallversorgung rund um die Uhr am Ort, Planungssicherheit in der Übergangszeit]
+    kurz_pro: Der Ort behält eine Anlaufstelle mit Ärzten und Pflege.
+    kurz_contra: Meist keine volle Notaufnahme mehr; das Modell ist noch unerprobt.
 
 erklaerung:
   - typ: fakt

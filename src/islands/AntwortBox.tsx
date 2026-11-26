@@ -26,7 +26,7 @@ export default function AntwortBox({ frage, variante = 'oben' }: Props) {
         name={`antwort-${frage.id}-${variante}`}
         legende={titel}
         legendeVersteckt
-        optionen={frage.optionen.map((o) => ({ id: o.id, titel: o.titel, kurz: variante === 'oben' && !frage.kompakt ? o.kurz : undefined }))}
+        optionen={frage.optionen.map((o) => ({ id: o.id, titel: o.titel }))}
         wahl={wahl}
         onWahl={(id) => setzeAntwort(frage.id, id)}
         onZuruecksetzen={() => setzeAntwort(frage.id, null)}

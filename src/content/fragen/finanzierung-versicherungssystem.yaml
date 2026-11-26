@@ -4,9 +4,26 @@ status: entwurf
 stand: "2026-11-25"
 titel: Soll das duale System aus gesetzlicher und privater Versicherung bleiben?
 frage: Sollen gesetzliche und private Krankenversicherung weiter nebeneinander bestehen, oder soll es eine gemeinsame Versicherung für alle geben?
+kurzfrage: "Gesetzlich und privat versichert: Soll es beides weiter geben?"
+kurz_erklaert:
+  - typ: fakt
+    text: Etwa neun von zehn Menschen sind gesetzlich versichert, gut jeder zehnte privat.
+    quellen:
+      - bmg-km1-2026
+      - pkv-branchenzahlen-2025
+  - typ: fakt
+    text: Privat zahlt man je nach Tarif und Gesundheit beim Eintritt, gesetzlich nach Einkommen. Das macht privat vor allem für Junge, Gesunde und Gutverdienende günstig.
+    quellen:
+      - bundesregierung-rechengroessen-2026
+      - bertelsmann-iges-2020
+  - typ: schaetzung
+    text: Der gesetzlichen Kasse fehlen so Beiträge von Gesunden und Gutverdienenden. Dafür bringen Privatversicherte Praxen und Kliniken nach Rechnung der Privatversicherer über 15 Milliarden Euro im Jahr zusätzlich.
+    quellen:
+      - bertelsmann-iges-2020
+      - pkv-mehrumsatz-2026
 optionen:
   - id: dual-beibehalten
-    titel: Duales System beibehalten
+    titel: Beide Systeme behalten
     kurz: Gesetzliche und private Krankenversicherung bleiben in ihrer heutigen Form nebeneinander bestehen.
     pro:
       - typ: wertung
@@ -30,8 +47,10 @@ optionen:
         quellen: [iaq-wechsel-gkv-pkv]
     gewinnt: ["Wahlfreiheit für Gutverdienende, Selbstständige und Beamte", Kapitalgedeckte Altersvorsorge in der PKV, Einnahmen von Arztpraxen]
     kostet: [Breite der Finanzierungsbasis der GKV, Gleichbehandlung beim Zugang]
+    kurz_pro: Wahlfreiheit bleibt, und die private Versicherung spart fürs Alter an.
+    kurz_contra: Der gesetzlichen Kasse fehlen Beiträge von Gutverdienenden und Gesunden.
   - id: annaehern
-    titel: Schrittweise annähern
+    titel: Beide schrittweise angleichen
     kurz: Beide Systeme bleiben, werden aber stärker verbunden, etwa durch höhere Einkommensgrenzen oder einen gemeinsamen Finanzausgleich.
     pro:
       - typ: wertung
@@ -59,6 +78,8 @@ optionen:
         text: Für Befürworter einer einheitlichen Versicherung bleibt die Annäherung auf halbem Weg stehen; für Befürworter des dualen Systems ist sie ein schleichender Umbau.
     gewinnt: [Finanzierungsbasis der GKV, Planbarkeit durch kleine Schritte]
     kostet: [Beschäftigte mit hohem Einkommen und ihre Arbeitgeber, Neugeschäft der PKV]
+    kurz_pro: Mehr Gutverdienende zahlen in die gesetzliche Kasse, in kleinen Schritten.
+    kurz_contra: Gut bezahlte Arbeit wird teurer, der Wechsel zur Privatversicherung schwerer.
   - id: buergerversicherung
     titel: Eine Versicherung für alle
     kurz: Alle Menschen werden in einem gemeinsamen System versichert, oft „Bürgerversicherung“ genannt.
@@ -89,6 +110,8 @@ optionen:
         text: Wer bisher privat versichert ist, verliert eine Wahlmöglichkeit.
     gewinnt: [Solidarausgleich zwischen allen Einkommen, Gleichbehandlung beim Zugang, Gesetzlich Versicherte mit mittlerem Einkommen]
     kostet: [Wahlfreiheit, Privatversicherte und ihre Versicherer, Einnahmen von Arztpraxen]
+    kurz_pro: Alle zahlen nach Einkommen ein, gleiche Honorare für alle Patienten.
+    kurz_contra: Schwieriger Umbau; Praxen verlieren die höheren Privathonorare.
 erklaerung:
   - typ: fakt
     text: "Etwa neun von zehn Menschen sind gesetzlich versichert, gut jeder zehnte privat."

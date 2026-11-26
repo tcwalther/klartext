@@ -4,10 +4,20 @@ status: entwurf
 stand: "2026-11-25"
 titel: Telemedizin und digitale Ersteinschätzung
 frage: "Welche Rolle sollen Videosprechstunde, Telefon und digitale Ersteinschätzung künftig spielen: als erster Kontakt, als Ergänzung oder als Ausnahme?"
+kurzfrage: Sollen Arztgespräche per Video oder Telefon zum Normalfall werden?
+kurz_erklaert:
+  - typ: fakt
+    text: Videosprechstunden sind noch selten. Auf gut 200 Behandlungen in Arztpraxen kommt etwa eine per Video.
+    quellen: [zi-trendreport-2024]
+  - typ: fakt
+    text: Über die Nummer 116117 lässt sich vorab klären, wie dringend ein Anliegen ist. Neue Gesetze bauen das aus.
+    quellen: [aerzteblatt-ersteinschaetzung-2026, bmg-notfallreform-2026]
+  - typ: wertung
+    text: Digital spart Wege und Praxiszeit. Aber nicht alles lässt sich per Video untersuchen, und nicht jeder hat gutes Internet.
 
 optionen:
   - id: digital-zuerst
-    titel: Digital als regulärer erster Kontakt
+    titel: Zuerst digital melden
     kurz: Wer krank ist, meldet sich zuerst per App, Telefon oder Video. Eine strukturierte Ersteinschätzung entscheidet, ob und wohin es weitergeht.
     pro:
       - typ: wertung
@@ -21,9 +31,11 @@ optionen:
         text: Manche Erkrankungen zeigen sich erst bei der körperlichen Untersuchung. Ein Fehler in der Ersteinschätzung kann eine Behandlung verzögern.
     gewinnt: [Menschen mit wenig Zeit oder weiten Wegen, Praxen mit vollem Wartezimmer, Steuerung nach Dringlichkeit]
     kostet: [Menschen ohne digitale Zugänge, persönlicher Erstkontakt]
+    kurz_pro: Spart Wege und Wartezimmer; Dringendes kommt zuerst dran.
+    kurz_contra: Ältere und Menschen ohne gutes Internet könnten benachteiligt werden.
 
   - id: ergaenzung
-    titel: Ergänzung mit klaren Grenzen
+    titel: Digital als Ergänzung
     kurz: Telemedizin wird weiter ausgebaut, bleibt aber Ergänzung. Grenzen, etwa beim Anteil reiner Videofälle je Praxis, sichern den Praxisbetrieb.
     pro:
       - typ: wertung
@@ -38,9 +50,11 @@ optionen:
         text: Solange Telemedizin nur ergänzt, bleibt ihr Effekt auf Wartezeiten und Wege eher klein.
     gewinnt: [Praxen mit gemischtem Angebot, Patienten mit Folgeterminen]
     kostet: [Tempo der Digitalisierung, Anbieter rein digitaler Versorgung]
+    kurz_pro: Gespräche per Video, Untersuchungen in der Praxis.
+    kurz_contra: Feste Grenzen sind willkürlich; Wartezeiten sinken nur wenig.
 
   - id: persoenlich
-    titel: Vorrang des persönlichen Kontakts
+    titel: Zuerst in die Praxis
     kurz: Der Erstkontakt findet in der Regel persönlich statt. Telemedizin bleibt die Ausnahme für bekannte Patientinnen und einfache Anliegen.
     pro:
       - typ: wertung
@@ -54,6 +68,8 @@ optionen:
         text: Gerade dort, wo Praxen fehlen, verzichtet man so auf ein Mittel, das Versorgung überhaupt erst möglich machen kann.
     gewinnt: [persönliche Arzt-Patienten-Beziehung, Menschen ohne digitale Zugänge]
     kostet: [Menschen mit weiten Wegen, Praxiszeit]
+    kurz_pro: Beim ersten Kontakt sieht man im Raum mehr als am Bildschirm.
+    kurz_contra: Wege und Wartezeiten bleiben, gerade wo Praxen fehlen.
 
 erklaerung:
   - typ: fakt

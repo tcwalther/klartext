@@ -31,8 +31,7 @@ const { n, id, titel, sub, frageId, open = false } = Astro.props;
   </summary>
   <div class="ebene-body pb-8 sm:pl-11">
     <slot />
-    <div class="mt-6 flex flex-wrap gap-x-4 gap-y-1 items-center justify-between">
-      <a href={`#${id}`} class="text-xs text-faint hover:text-ink no-underline">Link zu dieser Ebene</a>
+    <div class="mt-6 flex justify-end empty:hidden">
       <FeedbackLink abschnitt={`${frageId}#${id}`} />
     </div>
   </div>

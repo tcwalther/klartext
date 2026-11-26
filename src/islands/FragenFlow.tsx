@@ -124,7 +124,7 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
             name={`durchlauf-${f.id}`}
             legende={f.kurzfrage ?? f.frage}
             legendeVersteckt
-            optionen={f.kompakt ? f.optionen.map((o) => ({ id: o.id, titel: o.titel })) : f.optionen}
+            optionen={f.optionen.map((o) => ({ id: o.id, titel: o.titel }))}
             wahl={wahl}
             onWahl={waehle}
           />
