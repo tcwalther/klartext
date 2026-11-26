@@ -1,87 +1,108 @@
 @import 'tailwindcss';
-@import '@fontsource-variable/inter';
+@import '@fontsource-variable/atkinson-hyperlegible-next';
 @import '@fontsource-variable/source-serif-4';
 
+/* Ziffern aus Public Sans: Atkinson setzt die Null mit Schrägstrich, das wirkt im Deutschen fremd. */
+@font-face {
+  font-family: 'Klartext Ziffern';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 900;
+  src: url('@fontsource-variable/public-sans/files/public-sans-latin-wght-normal.woff2') format('woff2-variations');
+  unicode-range: U+0030-0039;
+  size-adjust: 92%;
+}
+
 /*
- * Farben bewusst ohne Parteibezug: warmes Papier, Tinte, gedecktes Petrol als Akzent.
- * Aussage-Typen unterscheiden sich durch Form UND Beschriftung, nicht nur durch Farbe.
+ * Identität: „Klartext“ – schwarz auf weiß. Keine Akzentfarbe, denn jede Farbe ist
+ * in Deutschland parteipolitisch belegt (das frühere Petrol lag nah am CDU-Türkis).
+ * Farbe gibt es nur, wo sie etwas bedeutet: bei den vier Aussage-Typen.
+ * Schrift: Atkinson Hyperlegible Next (Braille Institute) – für Lesbarkeit gemacht.
+ * Serifenschrift nur für wörtliche Zitate.
  */
 :root {
-  --bg: #f8f6f1;
+  --bg: #ffffff;
   --surface: #ffffff;
-  --surface-2: #f1eee6;
-  --ink: #1d1c1a;
-  --muted: #5d5950;
-  --faint: #8a857a;
-  --line: #e2ddd1;
-  --accent: #0e5a66;
+  --surface-2: #f2f2f0;
+  --ink: #0b0c0c;
+  --muted: #474b4e;
+  --faint: #676d71;
+  --line: #d3d6d8;
+  --accent: #0b0c0c;
   --accent-ink: #ffffff;
-  --accent-soft: #e2eff0;
-  --fakt: #2d4a63;
-  --fakt-soft: #e6edf3;
-  --schaetzung: #4c5f73;
-  --wertung: #7a5418;
-  --wertung-soft: #f6ecd9;
-  --position: #5a4a6e;
-  --position-soft: #ece7f2;
-  --warn-soft: #fbf1d6;
-  --warn-ink: #6b4d00;
-  --focus: #0e5a66;
+  --accent-soft: #ececea;
+  --fakt: #2f4a66;
+  --fakt-soft: #e5ebf2;
+  --schaetzung: #56677a;
+  --wertung: #8a5a00;
+  --wertung-soft: #f7eddb;
+  --position: #6a4377;
+  --position-soft: #efe7f2;
+  --warn-soft: #fff4d4;
+  --warn-ink: #5c4300;
+  --focus: #0b0c0c;
   color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme='light']) {
-    --bg: #141413;
-    --surface: #1d1d1b;
-    --surface-2: #262523;
-    --ink: #ecebe6;
-    --muted: #b0aca2;
-    --faint: #86827a;
-    --line: #34332f;
-    --accent: #6cc3cf;
-    --accent-ink: #0b2226;
-    --accent-soft: #17343a;
+    --bg: #0e0f10;
+    --surface: #16181a;
+    --surface-2: #1f2225;
+    --ink: #f2f2f0;
+    --muted: #b9bdc0;
+    --faint: #92979b;
+    --line: #34383b;
+    --accent: #f2f2f0;
+    --accent-ink: #0b0c0c;
+    --accent-soft: #272a2d;
     --fakt: #a9c3da;
     --fakt-soft: #1d2a36;
     --schaetzung: #a7b6c6;
     --wertung: #e2b874;
     --wertung-soft: #33291a;
-    --position: #c8b6dd;
+    --position: #cdb4dc;
     --position-soft: #2b2534;
     --warn-soft: #33290f;
     --warn-ink: #f0cf7a;
-    --focus: #6cc3cf;
+    --focus: #f2f2f0;
     color-scheme: dark;
   }
 }
 :root[data-theme='dark'] {
-  --bg: #141413;
-  --surface: #1d1d1b;
-  --surface-2: #262523;
-  --ink: #ecebe6;
-  --muted: #b0aca2;
-  --faint: #86827a;
-  --line: #34332f;
-  --accent: #6cc3cf;
-  --accent-ink: #0b2226;
-  --accent-soft: #17343a;
+  --bg: #0e0f10;
+  --surface: #16181a;
+  --surface-2: #1f2225;
+  --ink: #f2f2f0;
+  --muted: #b9bdc0;
+  --faint: #92979b;
+  --line: #34383b;
+  --accent: #f2f2f0;
+  --accent-ink: #0b0c0c;
+  --accent-soft: #272a2d;
   --fakt: #a9c3da;
   --fakt-soft: #1d2a36;
   --schaetzung: #a7b6c6;
   --wertung: #e2b874;
   --wertung-soft: #33291a;
-  --position: #c8b6dd;
+  --position: #cdb4dc;
   --position-soft: #2b2534;
   --warn-soft: #33290f;
   --warn-ink: #f0cf7a;
-  --focus: #6cc3cf;
+  --focus: #f2f2f0;
   color-scheme: dark;
 }
 
 @theme {
-  --font-sans: 'Inter Variable', ui-sans-serif, system-ui, sans-serif;
-  --font-serif: 'Source Serif 4 Variable', ui-serif, Georgia, serif;
+  --font-sans: 'Klartext Ziffern', 'Atkinson Hyperlegible Next Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-serif: 'Klartext Ziffern', 'Atkinson Hyperlegible Next Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-zitat: 'Source Serif 4 Variable', ui-serif, Georgia, serif;
+  /* Klare Kanten: Rundungen nur noch angedeutet; Kreise (rounded-full) bleiben */
+  --radius-sm: 2px;
+  --radius-md: 2px;
+  --radius-lg: 3px;
+  --radius-xl: 3px;
+  --radius-2xl: 4px;
   --color-bg: var(--bg);
   --color-surface: var(--surface);
   --color-surface-2: var(--surface-2);
@@ -108,8 +129,8 @@ body {
   hyphenate-limit-chars: 10 4 4;
   overflow-wrap: break-word;
   font-family: var(--font-sans);
+  font-size: 1.0625rem;
   line-height: 1.6;
-  font-feature-settings: 'cv11', 'ss01';
 }
 h1,
 h2,
@@ -124,17 +145,20 @@ h1,
 h2,
 h3,
 .serif {
-  font-family: var(--font-serif);
-  letter-spacing: -0.01em;
+  font-family: var(--font-sans);
+  font-weight: 700;
+  letter-spacing: -0.015em;
   text-wrap: balance;
+}
+.zitat {
+  font-family: var(--font-zitat);
 }
 p {
   text-wrap: pretty;
 }
 :focus-visible {
-  outline: 2px solid var(--focus);
+  outline: 3px solid var(--focus);
   outline-offset: 2px;
-  border-radius: 4px;
 }
 a {
   color: inherit;
@@ -187,7 +211,7 @@ a {
     border-left-color: var(--position);
   }
   .aussage-position .aussage-text {
-    font-family: var(--font-serif);
+    font-family: var(--font-zitat);
     font-size: 1.04em;
   }
   .aussage-wer {
@@ -342,7 +366,7 @@ details.ebene[open] .chev {
 .card {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 14px;
+  border-top: 3px solid var(--ink);
 }
 
 .btn {
@@ -350,10 +374,10 @@ details.ebene[open] .chev {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  font-weight: 600;
-  font-size: 0.95rem;
-  border-radius: 10px;
-  padding: 0.7rem 1.1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  border-radius: 0;
+  padding: 0.65rem 1.1rem;
   transition:
     background 0.15s,
     border-color 0.15s,
@@ -367,17 +391,18 @@ details.ebene[open] .chev {
 .btn-primary {
   background: var(--accent);
   color: var(--accent-ink);
+  box-shadow: 0 3px 0 color-mix(in srgb, var(--accent) 55%, #000);
 }
 .btn-primary:hover {
-  filter: brightness(1.08);
+  background: color-mix(in srgb, var(--accent) 85%, var(--bg));
 }
 .btn-ghost {
-  border: 1px solid var(--line);
+  border: 2px solid var(--ink);
   background: var(--surface);
   color: var(--ink);
 }
 .btn-ghost:hover {
-  border-color: var(--faint);
+  background: var(--surface-2);
 }
 
 /* Antwortauswahl: echte Optionsfelder, Zeilen mit Linien, runder Kreis mit Buchstabe */

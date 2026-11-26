@@ -40,7 +40,7 @@ export default function Parteipositionen({ frage, wahl }: Props) {
                 </span>
               </div>
               {p && (
-                <blockquote class="mt-1.5 serif text-[0.98rem] text-muted leading-snug border-l-[3px] pl-2.5" style={{ borderColor: 'var(--position)' }}>
+                <blockquote class="mt-1.5 zitat text-[0.98rem] text-muted leading-snug border-l-[3px] pl-2.5" style={{ borderColor: 'var(--position)' }}>
                   „{p.beleg}“
                   <span class="block font-sans text-xs text-faint mt-1">
                     {p.url ? (

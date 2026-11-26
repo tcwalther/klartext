@@ -1,0 +1,18 @@
+---
+/**
+ * Das Klartext-Zeichen: drei Ringe wie Schichten einer Zwiebel.
+ * `tiefe` füllt die Ringe von außen nach innen (0–3) – dasselbe Zeichen dient als Tiefenanzeige.
+ */
+interface Props {
+  groesse?: number;
+  tiefe?: number;
+  class?: string;
+}
+const { groesse = 22, tiefe = 3, class: cls = '' } = Astro.props;
+---
+
+<svg width={groesse} height={groesse} viewBox="0 0 24 24" fill="none" aria-hidden="true" class={cls}>
+  <circle cx="12" cy="12" r="10.5" stroke="currentColor" stroke-width="2"></circle>
+  <circle cx="12" cy="12" r="6.5" stroke="currentColor" stroke-width="2" fill={tiefe >= 2 ? 'currentColor' : 'none'} fill-opacity={tiefe >= 2 ? 0.25 : 0}></circle>
+  <circle cx="12" cy="12" r="2.6" fill="currentColor"></circle>
+</svg>
