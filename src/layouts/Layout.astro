@@ -1,7 +1,6 @@
 ---
 import '../styles/global.css';
 import { SITE } from '../config';
-import Logo from '../components/Logo.astro';
 
 interface Props {
   title?: string;
@@ -35,8 +34,7 @@ const isActive = (href: string) =>
     <a href="#inhalt" class="sr-only focus:not-sr-only focus:absolute focus:m-2 focus:p-2 focus:bg-surface">Zum Inhalt</a>
     <header class="bg-ink text-bg sticky top-0 z-20">
       <div class="mx-auto max-w-5xl px-4 h-14 flex items-center gap-4">
-        <a href="/" class="flex items-center gap-2 text-[1.35rem] font-bold tracking-tight no-underline shrink-0" aria-label="Klartext – Startseite">
-          <Logo groesse={22} />
+        <a href="/" class="text-[1.4rem] font-bold tracking-tight no-underline shrink-0" aria-label="Klartext – Startseite">
           Klartext
         </a>
         <nav aria-label="Hauptnavigation" class="ml-auto -mr-2 overflow-x-auto">

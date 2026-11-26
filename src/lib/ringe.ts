@@ -1,6 +1,6 @@
 /**
  * Geometrie der Tiefenringe: ein Ring je Ebene, außen Ebene 1, innen die tiefste.
- * Dasselbe Motiv wie das Klartext-Zeichen. viewBox 0 0 24 24.
+ * Bild für die Schichten der Zwiebel. viewBox 0 0 24 24.
  */
 export function ringe(anzahl: number) {
   const R = 11.25;
