@@ -101,7 +101,7 @@ const fragen = defineCollection({
     // Kurz erklärt (30 Sekunden) → Verstehen (10 Minuten) → Genau wissen (alles Übrige).
     kurzfrage: z.string().max(90).optional(), // höchstens ~12 Wörter
     kurz_erklaert: z.array(aussage).min(1).max(3).optional(),
-    // Erklärvideo für „Verstehen“ (3–110 Minuten), vorher redaktionell freigegeben
+    // Erklärvideo für „Verstehen“ (3–15 Minuten), vorher redaktionell freigegeben
     video: videoSchema.optional(),
     // Längere Videos für „Genau wissen“
     videos_tief: z.array(videoSchema).default([]),
