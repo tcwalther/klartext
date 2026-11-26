@@ -101,11 +101,11 @@ test('Durchlauf: Pfeiltasten wechseln die Auswahl, ohne weiterzuspringen', async
 });
 
 test('Hebel-Rechner: Klick auf eine Maßnahme ändert die Summe', async ({ page }) => {
-  await page.goto('/gesundheit/finanzierung-kostenanstieg/#zusammenhaenge');
+  await page.goto('/gesundheit/finanzierung-kostenanstieg/#verstehen');
   // Der Rechner wird erst aktiv, wenn er sichtbar ist (client:visible)
-  await page.locator('#zusammenhaenge li > button[aria-pressed]').first().scrollIntoViewIfNeeded();
-  await page.locator('#zusammenhaenge astro-island:not([ssr])').waitFor({ state: 'attached' });
-  const rechner = page.locator('#zusammenhaenge section[aria-label]').last();
+  await page.locator('#verstehen li > button[aria-pressed]').first().scrollIntoViewIfNeeded();
+  await page.locator('#verstehen astro-island:not([ssr])').waitFor({ state: 'attached' });
+  const rechner = page.locator('#verstehen section[aria-label]').last();
   await expect(rechner.getByText(/Ausgewählt: 0 von/)).toBeVisible();
   const erste = rechner.locator('li > button[aria-pressed]').first();
   await erste.click();

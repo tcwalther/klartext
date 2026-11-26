@@ -4,6 +4,21 @@ status: entwurf
 stand: "2026-11-25"
 titel: Wie soll die Finanzlücke der Krankenkassen geschlossen werden?
 frage: Die Ausgaben der gesetzlichen Krankenversicherung steigen seit Jahren schneller als ihre Einnahmen. Wie soll die Lücke vor allem geschlossen werden?
+kurz_erklaert:
+  - typ: fakt
+    text: Die Ausgaben der Krankenkassen steigen seit Jahren schneller als ihre Einnahmen.
+    quellen:
+      - iaq-schere-2026
+  - typ: fakt
+    text: Bisher wird die Lücke vor allem mit höheren Beiträgen gestopft. Sie sind in drei Jahren um mehr als einen Prozentpunkt gestiegen.
+    quellen:
+      - vdek-basisdaten-2026
+      - gkv-sv-beitragsniveau-2026
+  - typ: schaetzung
+    text: Für 2027 fehlten ohne Gegenmaßnahmen rund 15 Milliarden Euro. Bezahlen müssen das am Ende Versicherte, Steuerzahler, Kliniken und Praxen oder Patienten.
+    quellen:
+      - finanzkommission-bericht-2026
+kurzfrage: Die Krankenkassen haben zu wenig Geld. Was soll passieren?
 
 optionen:
   - id: hoehere-beitraege
@@ -34,9 +49,11 @@ optionen:
         quellen: [bt-drs-21-6130]
     gewinnt: [Umfang des Leistungskatalogs, Patientinnen und Patienten mit hohem Behandlungsbedarf]
     kostet: [Beschäftigte mit mittlerem Einkommen, Arbeitgeber, Arbeitskosten]
+    kurz_pro: Die Versorgung bleibt, wie sie ist.
+    kurz_contra: Arbeit wird teurer, Beschäftigten bleibt weniger netto.
 
   - id: mehr-steuermittel
-    titel: Mehr Steuermittel
+    titel: Mehr Steuergeld
     kurz: Der Bund zahlt mehr in die Krankenversicherung, etwa kostendeckende Beiträge für Bürgergeldbeziehende.
     pro:
       - typ: schaetzung
@@ -65,6 +82,8 @@ optionen:
         text: "Mehr Steuergeld ändert nichts daran, wie schnell die Ausgaben wachsen. Es verschiebt die Frage nur in den Bundeshaushalt, der ebenfalls mit einer alternden Bevölkerung rechnen muss."
     gewinnt: [Beitragszahlende, Arbeitgeber]
     kostet: [Bundeshaushalt, Steuerzahlende, Andere staatliche Aufgaben]
+    kurz_pro: Die Last verteilt sich auf alle Einkommen, nicht nur auf Löhne.
+    kurz_contra: Das Geld fehlt im Bundeshaushalt an anderer Stelle.
 
   - id: ausgaben-begrenzen
     titel: Ausgaben begrenzen
@@ -94,9 +113,11 @@ optionen:
         text: "Ein Deckel für alle trifft gute und schlechte Anbieter gleich. Strukturreformen, die gezielt Doppeluntersuchungen oder unnötige Klinikaufenthalte abbauen, brauchen dagegen Jahre, bis sie Geld sparen."
     gewinnt: [Beitragszahlende, Stabilität der Beiträge]
     kostet: ["Einnahmen von Kliniken, Praxen und Herstellern", Beschäftigte im Gesundheitswesen, Möglicherweise kurze Wartezeiten und Breite des Angebots]
+    kurz_pro: Beiträge bleiben stabil, ohne dass Patienten mehr zahlen.
+    kurz_contra: Kliniken und Praxen bekommen weniger; das kann die Versorgung treffen.
 
   - id: mehr-eigenbeteiligung
-    titel: Mehr Eigenbeteiligung
+    titel: Patienten zahlen mehr selbst
     kurz: Patientinnen und Patienten zahlen bei Behandlungen mehr selbst, etwa durch höhere Zuzahlungen oder eine Gebühr pro Arztbesuch.
     pro:
       - typ: fakt
@@ -122,6 +143,8 @@ optionen:
         text: Mit der Praxisgebühr gab es bis Ende 2012 schon einmal eine Gebühr für Arztbesuche. Ob sie unnötige Besuche wirklich verringert hat, ist umstritten.
     gewinnt: [Beitragszahlende, Möglicherweise weniger unnötige Leistungen]
     kostet: ["Patientinnen und Patienten, besonders solche mit wenig Einkommen", Chronisch Kranke]
+    kurz_pro: Wer Leistungen nutzt, zahlt mit; das kann unnötige Arztbesuche senken.
+    kurz_contra: Kranke und Menschen mit wenig Geld werden stärker belastet.
 
 erklaerung:
   - typ: fakt

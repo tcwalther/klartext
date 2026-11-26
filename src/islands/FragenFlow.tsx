@@ -113,33 +113,33 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
       </div>
 
       <div class="card p-5 sm:p-7">
-        <div class="text-sm text-muted mb-1">{f.titel}</div>
+        {!f.kompakt && <div class="text-sm text-muted mb-1">{f.titel}</div>}
         <h2 ref={headingRef} tabIndex={-1} class="serif text-[1.4rem] sm:text-[1.7rem] font-semibold leading-snug outline-none">
-          {f.frage}
+          {f.kurzfrage ?? f.frage}
         </h2>
 
         <div class="mt-5">
           <Antwortauswahl
             key={f.id}
             name={`durchlauf-${f.id}`}
-            legende={f.frage}
+            legende={f.kurzfrage ?? f.frage}
             legendeVersteckt
-            optionen={f.optionen}
+            optionen={f.kompakt ? f.optionen.map((o) => ({ id: o.id, titel: o.titel })) : f.optionen}
             wahl={wahl}
             onWahl={waehle}
           />
           {wahl === 'unentschieden' && (
             <button type="button" class="mt-1 text-sm text-accent underline underline-offset-2" aria-expanded={mehr} onClick={() => setMehr(!mehr)}>
-              {mehr ? 'Erklärung ausblenden' : 'Worum geht’s? Erklärung anzeigen'}
+              {mehr ? 'Erklärung ausblenden' : 'Kurze Erklärung anzeigen'}
             </button>
           )}
         </div>
 
         {mehr && (
-          <section class="mt-5 rounded-xl bg-surface-2 p-4 sm:p-5" aria-label="Worum geht’s?">
-            <h3 class="serif text-lg font-semibold mb-3">Worum geht’s?</h3>
+          <section class="mt-5 rounded-xl bg-surface-2 p-4 sm:p-5" aria-label={f.kompakt ? 'Kurz erklärt' : 'Worum geht’s?'}>
+            <h3 class="serif text-lg font-semibold mb-3">{f.kompakt ? 'Kurz erklärt' : 'Worum geht’s?'}</h3>
             <ul class="space-y-4">
-              {f.erklaerung.map((a, i) => (
+              {(f.kompakt ? f.kurzErklaert : f.erklaerung).map((a, i) => (
                 <li key={i} class={`aussage aussage-${a.typ} leading-relaxed`} title={label[a.typ]}>
                   <span class="sr-only">{label[a.typ]}: </span>
                   <span class="aussage-text prose-k" dangerouslySetInnerHTML={{ __html: a.html }} />
@@ -153,8 +153,8 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
                 </li>
               ))}
             </ul>
-            <a href={`${f.url}#${f.zusammenhaenge ? 'zusammenhaenge' : 'argumente'}`} class="btn btn-primary mt-4">
-              Ausführlich zu dieser Frage →
+            <a href={`${f.url}#${f.kompakt ? 'verstehen' : f.zusammenhaenge ? 'zusammenhaenge' : 'argumente'}`} class="btn btn-primary mt-4">
+              {f.kompakt ? 'Verstehen in 5 Minuten →' : 'Ausführlich zu dieser Frage →'}
             </a>
             <p class="text-xs text-muted mt-2">Dort findest du auch die Quellen zu allen Aussagen.</p>
           </section>

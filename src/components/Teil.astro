@@ -1,0 +1,37 @@
+---
+/**
+ * Ein inhaltlicher Teil einer Frage (Hintergrund, Argumente, Daten …).
+ * Ohne Kurzfassung ist er eine eigene Ebene; mit Kurzfassung ein aufklappbarer
+ * Unterpunkt innerhalb der Stufe „Genau wissen“.
+ */
+import Ebene from './Ebene.astro';
+interface Props {
+  kompakt: boolean;
+  n: number;
+  id: string;
+  titel: string;
+  frageId: string;
+  open?: boolean;
+}
+const { kompakt, n, id, titel, frageId, open = false } = Astro.props;
+---
+
+{
+  kompakt ? (
+    <details class="unter group/u border-t border-line first:border-t-0 scroll-mt-28 lg:scroll-mt-20" id={id}>
+      <summary class="flex items-center justify-between gap-3 py-3.5 cursor-pointer list-none">
+        <span class="font-bold text-[1.05rem] leading-snug group-hover/u:underline underline-offset-4">{titel}</span>
+        <svg class="shrink-0 size-4 text-faint transition-transform group-open/u:rotate-90" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M7.5 4.5 13 10l-5.5 5.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </summary>
+      <div class="pb-7">
+        <slot />
+      </div>
+    </details>
+  ) : (
+    <Ebene n={n} id={id} titel={titel} frageId={frageId} open={open}>
+      <slot />
+    </Ebene>
+  )
+}

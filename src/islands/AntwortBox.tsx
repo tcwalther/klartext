@@ -4,7 +4,7 @@ import Antwortauswahl from './Antwortauswahl';
 import Parteipositionen from './Parteipositionen';
 
 type Props = {
-  frage: Pick<FrageKurz, 'id' | 'optionen' | 'parteien'>;
+  frage: Pick<FrageKurz, 'id' | 'optionen' | 'parteien' | 'kompakt'>;
   /** „unten“ = am Ende der Seite, ohne Kurztexte */
   variante?: 'oben' | 'unten';
 };
@@ -26,7 +26,7 @@ export default function AntwortBox({ frage, variante = 'oben' }: Props) {
         name={`antwort-${frage.id}-${variante}`}
         legende={titel}
         legendeVersteckt
-        optionen={frage.optionen.map((o) => ({ id: o.id, titel: o.titel, kurz: variante === 'oben' ? o.kurz : undefined }))}
+        optionen={frage.optionen.map((o) => ({ id: o.id, titel: o.titel, kurz: variante === 'oben' && !frage.kompakt ? o.kurz : undefined }))}
         wahl={wahl}
         onWahl={(id) => setzeAntwort(frage.id, id)}
         onZuruecksetzen={() => setzeAntwort(frage.id, null)}

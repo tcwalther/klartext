@@ -10,7 +10,7 @@ import SourceRefs from '../../components/SourceRefs.astro';
 import AussageListe from '../../components/AussageListe.astro';
 import EntwurfHinweis from '../../components/EntwurfHinweis.astro';
 import { getCollection } from 'astro:content';
-import { getFragen, getBereiche, frageUrl, ebenenVon } from '../../lib/content';
+import { getFragen, getBereiche, frageUrl, inhaltsEbenen } from '../../lib/content';
 
 const bereiche = await getBereiche();
 const fragen = await getFragen();
@@ -110,7 +110,7 @@ const verbindungen = (id: string) => [...kanten.entries()].filter(([k]) => k.spl
                 ) : (
                   <ul class="border-t border-line">
                     {fs.map((f) => {
-                      const tiefe = ebenenVon(f).filter((e) => e.da && e.n < 7).length;
+                      const tiefe = inhaltsEbenen(f).filter((e) => e.da && e.n < 7).length;
                       return (
                         <li class="border-b border-line">
                           <a href={frageUrl(f.id)} class="group flex items-start gap-3 py-2.5 no-underline">

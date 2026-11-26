@@ -1,0 +1,21 @@
+---
+/** Legt die Inhaltsteile bei Fragen mit Kurzfassung in die Stufe „Genau wissen“. */
+import Ebene from './Ebene.astro';
+interface Props {
+  kompakt: boolean;
+  frageId: string;
+}
+const { kompakt, frageId } = Astro.props;
+---
+
+{
+  kompakt ? (
+    <Ebene n={3} id="genau" titel="Genau wissen" sub="so lange du willst" frageId={frageId}>
+      <div class="border-b border-line">
+        <slot />
+      </div>
+    </Ebene>
+  ) : (
+    <slot />
+  )
+}

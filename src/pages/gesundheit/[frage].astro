@@ -10,9 +10,12 @@ import OptionMarker from '../../components/OptionMarker.astro';
 import Legende from '../../components/Legende.astro';
 import Wirkungskette from '../../components/Wirkungskette.astro';
 import Tiefenringe from '../../components/Tiefenringe.astro';
+import Teil from '../../components/Teil.astro';
+import Huelle from '../../components/Huelle.astro';
+import Video from '../../components/Video.astro';
 import AntwortBox from '../../islands/AntwortBox.tsx';
 import HebelRechner from '../../islands/HebelRechner.tsx';
-import { getFragen, getBereiche, quellenNummern, ebenenVon, frageKurz, frageUrl, md } from '../../lib/content';
+import { getFragen, getBereiche, quellenNummern, ebenenVon, frageKurz, frageUrl, md, istKompakt, inhaltsEbenen } from '../../lib/content';
 import { buchstabe } from '../../lib/optionen';
 
 export async function getStaticPaths() {
@@ -26,6 +29,8 @@ const bereich = (await getBereiche()).find((b) => b.id === d.bereich)!;
 const alleFragen = await getFragen();
 const nums = quellenNummern(frage);
 const ebenen = ebenenVon(frage);
+const kompakt = istKompakt(frage);
+const inhalt = inhaltsEbenen(frage);
 const sichtbar = ebenen.filter((e) => e.da);
 const ringEbenen = sichtbar.map((e) => ({ id: e.id, titel: e.titel }));
 const kurz = frageKurz(frage);
@@ -122,7 +127,7 @@ const kurzTitel: Record<string, string> = {
                 <span class="absolute -left-[0.4rem] top-[0.3rem] size-3 rounded-full border-2 border-line bg-bg" aria-hidden="true" data-dot={e.id} />
                 <a href={`#${e.id}`} data-ebene-link={e.id} class="tiefe-link block text-sm leading-snug no-underline text-muted hover:text-ink">
                   <span class="tabular-nums text-faint mr-1">{e.n}</span>
-                  {kurzTitel[e.id]}
+                  {kompakt ? e.titel : kurzTitel[e.id]}
                 </a>
               </li>
             ))
@@ -139,8 +144,16 @@ const kurzTitel: Record<string, string> = {
       </nav>
 
       <header class="mb-6">
-        <p class="text-muted text-[0.95rem] mb-2">{d.titel}</p>
-        <h1 class="serif text-[1.55rem] sm:text-[2.3rem] font-semibold leading-[1.18]">{d.frage}</h1>
+        {
+          kompakt ? (
+            <h1 class="serif text-[1.7rem] sm:text-[2.5rem] font-semibold leading-[1.15]">{d.kurzfrage ?? d.titel}</h1>
+          ) : (
+            <>
+              <p class="text-muted text-[0.95rem] mb-2">{d.titel}</p>
+              <h1 class="serif text-[1.55rem] sm:text-[2.3rem] font-semibold leading-[1.18]">{d.frage}</h1>
+            </>
+          )
+        }
       </header>
 
       {
@@ -158,32 +171,73 @@ const kurzTitel: Record<string, string> = {
       </div>
 
       <div class="border-b border-line">
+        {
+          kompakt && (
+            <>
+              <Ebene n={1} id="worum-gehts" titel="Kurz erklärt" sub="30 Sekunden" frageId={frage.id} open>
+                <AussageListe items={d.kurz_erklaert ?? []} nums={nums} />
+              </Ebene>
+              <Ebene n={2} id="verstehen" titel="Verstehen" sub="5 Minuten" frageId={frage.id}>
+                {d.video && <Video {...d.video} />}
+                <ul class="grid gap-5">
+                  {d.optionen.map((o, i) => (
+                    <li>
+                      <div class="flex items-center gap-2.5 font-bold leading-snug">
+                        <OptionMarker index={i} />
+                        {o.titel}
+                      </div>
+                      <dl class="mt-1.5 pl-9 grid gap-1 text-[0.98rem]">
+                        <div class="flex gap-2">
+                          <dt class="shrink-0 font-semibold w-[4.5rem]">Dafür:</dt>
+                          <dd>{o.kurz_pro ?? o.kurz}</dd>
+                        </div>
+                        {o.kurz_contra && (
+                          <div class="flex gap-2">
+                            <dt class="shrink-0 font-semibold w-[4.5rem]">Dagegen:</dt>
+                            <dd>{o.kurz_contra}</dd>
+                          </div>
+                        )}
+                      </dl>
+                    </li>
+                  ))}
+                </ul>
+                {rechner && (
+                  <div class="mt-10">
+                    <HebelRechner client:visible {...rechner} />
+                  </div>
+                )}
+              </Ebene>
+            </>
+          )
+        }
+
+        <Huelle kompakt={kompakt} frageId={frage.id}>
         <!-- Ebene 1 -->
-        <Ebene n={1} id="worum-gehts" titel="Worum geht’s?" frageId={frage.id} open>
+        <Teil kompakt={kompakt} n={1} id={kompakt ? 'hintergrund' : 'worum-gehts'} titel={kompakt ? 'Hintergrund' : 'Worum geht’s?'} frageId={frage.id} open={!kompakt}>
           <AussageListe items={d.erklaerung} nums={nums} />
-        </Ebene>
+        </Teil>
 
         <!-- Ebene 2 -->
         {
           z && (
-            <Ebene n={2} id="zusammenhaenge" titel="Wie hängt das zusammen?" frageId={frage.id}>
+            <Teil kompakt={kompakt} n={2} id="zusammenhaenge" titel="Wie hängt das zusammen?" frageId={frage.id}>
               <AussageListe items={z.erklaerung} nums={nums} />
               {z.kette && (
                 <div class="mt-8">
                   <Wirkungskette stufen={z.kette} />
                 </div>
               )}
-              {rechner && (
+              {rechner && !kompakt && (
                 <div class="mt-8">
                   <HebelRechner client:visible {...rechner} />
                 </div>
               )}
-            </Ebene>
+            </Teil>
           )
         }
 
         <!-- Ebene 3 -->
-        <Ebene n={3} id="argumente" titel="Argumente und Zielkonflikte" frageId={frage.id}>
+        <Teil kompakt={kompakt} n={3} id="argumente" titel="Argumente und Zielkonflikte" frageId={frage.id}>
           <div>
             {
               d.optionen.map((o, i) => (
@@ -229,12 +283,12 @@ const kurzTitel: Record<string, string> = {
               <AussageListe items={d.zielkonflikte} nums={nums} />
             </section>
           </div>
-        </Ebene>
+        </Teil>
 
         <!-- Ebene 4 -->
         {
-          d.daten && ebenen[3]!.da && (
-            <Ebene n={4} id="daten" titel="Fakten und Daten" frageId={frage.id}>
+          d.daten && inhalt[3]!.da && (
+            <Teil kompakt={kompakt} n={4} id="daten" titel="Fakten und Daten" frageId={frage.id}>
               {d.daten.kennzahlen.length > 0 && (
                 <div class="grid grid-cols-1 min-[420px]:grid-cols-2 gap-x-6 gap-y-5 mb-8">
                   {d.daten.kennzahlen.map((k) => (
@@ -250,14 +304,14 @@ const kurzTitel: Record<string, string> = {
                 </div>
               )}
               {d.daten.aussagen.length > 0 && <AussageListe items={d.daten.aussagen} nums={nums} />}
-            </Ebene>
+            </Teil>
           )
         }
 
         <!-- Ebene 5 -->
         {
-          d.geschichte && ebenen[4]!.da && (
-            <Ebene n={5} id="geschichte" titel="Was wurde schon versucht?" frageId={frage.id}>
+          d.geschichte && inhalt[4]!.da && (
+            <Teil kompakt={kompakt} n={5} id="geschichte" titel="Was wurde schon versucht?" frageId={frage.id}>
               <ol class="relative border-l border-line ml-1.5 space-y-5 mb-8">
                 {d.geschichte.ereignisse.map((e) => (
                   <li class="pl-5 relative">
@@ -277,14 +331,14 @@ const kurzTitel: Record<string, string> = {
                   <AussageListe items={d.geschichte.bilanz} nums={nums} />
                 </>
               )}
-            </Ebene>
+            </Teil>
           )
         }
 
         <!-- Ebene 6 -->
         {
-          d.laender && ebenen[5]!.da && (
-            <Ebene n={6} id="andere-laender" titel="Wie machen es andere Länder?" frageId={frage.id}>
+          d.laender && inhalt[5]!.da && (
+            <Teil kompakt={kompakt} n={6} id="andere-laender" titel="Wie machen es andere Länder?" frageId={frage.id}>
               <div class="mb-8">
                 {d.laender.beispiele.map((l) => (
                   <section class="py-5 first:pt-0 border-b border-line last:border-b-0">
@@ -321,12 +375,12 @@ const kurzTitel: Record<string, string> = {
                 </div>
               )}
               {d.laender.fazit.length > 0 && <AussageListe items={d.laender.fazit} nums={nums} />}
-            </Ebene>
+            </Teil>
           )
         }
 
         <!-- Ebene 7 -->
-        <Ebene n={7} id="quellen" titel={`Quellen (${d.quellen.length})`} frageId={frage.id}>
+        <Teil kompakt={kompakt} n={7} id="quellen" titel={`Quellen (${d.quellen.length})`} frageId={frage.id}>
           <ol class="space-y-2.5">
             {
               quellenSortiert.map((q) => (
@@ -350,7 +404,8 @@ const kurzTitel: Record<string, string> = {
               ))
             }
           </ol>
-        </Ebene>
+        </Teil>
+        </Huelle>
       </div>
 
       {
@@ -405,11 +460,18 @@ const kurzTitel: Record<string, string> = {
   const frageId = location.pathname.split('/').filter(Boolean).pop()!;
 
   // Ebene öffnen, wenn per Anker angesprungen (auch Quellen in der geschlossenen letzten Ebene).
+  // Öffnet ein Element und alle Abschnitte, in denen es steckt (auch verschachtelte).
+  function oeffneMitEltern(el: Element | null) {
+    let d = el?.closest('details');
+    while (d) {
+      if (!d.open) d.open = true;
+      d = d.parentElement?.closest('details') ?? null;
+    }
+  }
   function oeffneZiel() {
     if (!location.hash) return;
     const el = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-    const details = el?.closest('details');
-    if (details && !details.open) details.open = true;
+    oeffneMitEltern(el);
     el?.scrollIntoView({ block: 'start' });
   }
   window.addEventListener('hashchange', oeffneZiel);
@@ -417,9 +479,7 @@ const kurzTitel: Record<string, string> = {
   document.addEventListener('click', (e) => {
     const a = (e.target as HTMLElement).closest('a[href^="#"]');
     if (!a) return;
-    const el = document.getElementById(a.getAttribute('href')!.slice(1));
-    const details = el?.closest('details');
-    if (details && !details.open) details.open = true;
+    oeffneMitEltern(document.getElementById(a.getAttribute('href')!.slice(1)));
   });
 
   const ebenen = [...document.querySelectorAll<HTMLDetailsElement>('details.ebene')];

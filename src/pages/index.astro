@@ -1,90 +1,64 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Legende from '../components/Legende.astro';
-import { getFragen } from '../lib/content';
+import { getFragen, frageUrl } from '../lib/content';
+import { buchstabe } from '../lib/optionen';
 
 const fragen = await getFragen();
-const beispiel = fragen.find((f) => f.id === 'krankenhaus-standorte') ?? fragen[0];
-const schichten = [
-  { n: 0, t: 'Die Frage', d: 'Kurz und mit wenigen Antwortmöglichkeiten, ähnlich wie beim Wahl-O-Mat.' },
-  { n: 1, t: 'Worum geht’s?', d: 'Das Wichtigste, in zwei Minuten gelesen.' },
-  { n: 2, t: 'Wie hängt das zusammen?', d: 'Ursachen und Wirkungen und wie viel eine Maßnahme bewirkt.' },
-  { n: 3, t: 'Argumente und Zielkonflikte', d: 'Die stärksten Gründe für jede Antwort und was sie jeweils kostet.' },
-  { n: 4, t: 'Fakten und Daten', d: 'Zahlen mit Quelle und Stand.' },
-  { n: 5, t: 'Geschichte', d: 'Was bereits versucht wurde und was daraus geworden ist.' },
-  { n: 6, t: 'Andere Länder', d: 'Wie andere Länder vorgehen und ob sich das übertragen lässt.' },
+// Beispiel: eine Frage mit Kurzfassung, sonst die erste
+const beispiel = fragen.find((f) => f.data.kurzfrage) ?? fragen[0]!;
+const stufen = [
+  { t: 'Die Frage', z: '10 Sekunden' },
+  { t: 'Kurz erklärt', z: '30 Sekunden' },
+  { t: 'Verstehen', z: '5 Minuten' },
+  { t: 'Genau wissen', z: 'so lange du willst' },
 ];
 ---
 
 <Layout>
-  <section class="mx-auto max-w-5xl px-4 pt-10 sm:pt-20 pb-6">
-    <h1 class="serif text-4xl sm:text-6xl font-semibold leading-[1.08] max-w-3xl">
+  <section class="mx-auto max-w-5xl px-4 pt-12 sm:pt-20">
+    <h1 class="text-[2.4rem] sm:text-6xl font-bold leading-[1.05] tracking-tight max-w-3xl">
       Politik verstehen, bevor man sie bewertet
     </h1>
-    <p class="mt-6 text-lg sm:text-xl text-muted max-w-2xl leading-relaxed">
-      Beim Wahl-O-Mat soll man zu vielen Fragen Stellung nehmen, ohne genau zu wissen, worum es geht. Klartext beginnt
-      ebenso einfach: mit einer Frage und wenigen Antwortmöglichkeiten. Wer unsicher ist, wählt{' '}
-      <em class="text-ink not-italic font-semibold">„Kann ich nicht entscheiden“</em> und kann die Frage dann Schicht
-      für Schicht vertiefen, von einer kurzen Erklärung bis zu Zahlen, früheren Reformen und Beispielen aus anderen
-      Ländern.
+    <p class="mt-5 text-lg sm:text-xl text-muted max-w-xl">
+      Einfache Fragen zur Gesundheitspolitik. Wer unsicher ist, bekommt eine kurze Erklärung und kann so tief
+      einsteigen, wie er möchte.
     </p>
-    <div class="mt-8 flex flex-wrap gap-2">
-      <a href="/gesundheit/" class="btn btn-primary">Zum Thema Gesundheit</a>
-      <a href="/methodik/" class="btn btn-ghost">Wie Klartext arbeitet</a>
+    <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3">
+      <a href="/gesundheit/fragen/" class="btn btn-primary">Erste Frage beantworten</a>
+      <a href="/gesundheit/" class="link font-semibold">Alle Fragen ansehen</a>
     </div>
   </section>
 
-  <section class="mx-auto max-w-5xl px-4 mt-16 grid lg:grid-cols-2 gap-x-16 gap-y-14 items-start">
-    <div>
-      <h2 class="serif text-2xl font-semibold">Wie eine Zwiebel</h2>
-      <p class="text-muted mt-2 mb-6 max-w-prose">
-        Du entscheidest selbst, wie tief du einsteigst. Alle sehen dieselben Inhalte.
-      </p>
-      <ol class="relative border-l border-line ml-3.5">
+  <section class="mx-auto max-w-5xl px-4 mt-16 sm:mt-24" aria-label="So funktioniert es">
+    <ol class="grid grid-cols-2 lg:grid-cols-4 border-t-2 border-ink">
+      {
+        stufen.map((s, i) => (
+          <li class="pt-3 pb-5 pr-4">
+            <span class="block text-3xl font-bold tabular-nums">{i + 1}</span>
+            <span class="block font-bold mt-1">{s.t}</span>
+            <span class="block text-sm text-muted">{s.z}</span>
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+
+  <section class="mx-auto max-w-5xl px-4 mt-12" aria-labelledby="beispiel">
+    <h2 id="beispiel" class="kicker mb-3">Zum Beispiel</h2>
+    <a href={frageUrl(beispiel.id)} class="group block max-w-2xl border-2 border-ink p-5 sm:p-6 no-underline hover:bg-surface-2">
+      <span class="block text-xl sm:text-2xl font-bold leading-snug">{beispiel.data.kurzfrage ?? beispiel.data.titel}</span>
+      <span class="mt-4 grid gap-2">
         {
-          schichten.map((s, i) => (
-            <li class="relative pl-7 pb-4 last:pb-0">
-              <span
-                class="absolute -left-3.5 top-0 size-7 rounded-full grid place-items-center text-xs font-bold border-2"
-                style={`background: color-mix(in srgb, var(--accent) ${100 - i * 15}%, var(--bg)); border-color: var(--bg); color: ${i < 3 ? 'var(--accent-ink)' : 'var(--ink)'}`}
-              >
-                {s.n}
-              </span>
-              <span class="block font-semibold leading-snug pt-0.5">{s.t}</span>
-              <span class="block text-sm text-muted leading-snug">{s.d}</span>
-            </li>
+          beispiel.data.optionen.map((o, i) => (
+            <span class="flex items-center gap-3">
+              <span class="opt">{buchstabe(i)}</span>
+              {o.titel}
+            </span>
           ))
         }
-      </ol>
-    </div>
-
-    <div>
-      <h2 class="serif text-2xl font-semibold">Daten und Meinungen getrennt</h2>
-      <p class="text-muted mt-2 mb-6 max-w-prose">
-        Jede Aussage ist am linken Rand markiert.
-      </p>
-      <Legende ausfuehrlich />
-      {
-        beispiel && (
-          <a href={`/gesundheit/${beispiel.id}/`} class="group block mt-8 border-t-2 border-ink pt-3 no-underline">
-            <span class="kicker">Ein Beispiel</span>
-            <span class="block serif text-xl font-semibold mt-1 leading-snug group-hover:text-accent">{beispiel.data.titel} →</span>
-            <span class="block text-sm text-muted mt-1">{beispiel.data.frage}</span>
-          </a>
-        )
-      }
-    </div>
+      </span>
+      <span class="mt-5 inline-block font-semibold underline underline-offset-4 decoration-2 group-hover:no-underline">Zur Frage</span>
+    </a>
   </section>
 
-  <section class="mx-auto max-w-5xl px-4 mt-20">
-    <div class="border-t border-line pt-4 max-w-3xl">
-      <h2 class="serif text-xl font-semibold">Wie Klartext arbeitet</h2>
-      <p class="text-muted mt-2">
-        Klartext gibt keine Wahlempfehlung und stellt jede Antwortmöglichkeit mit ihren stärksten Argumenten dar. Jede
-        Zahl ist mit einer Quelle belegt, und alle Änderungen sind öffentlich nachvollziehbar. Deine Antworten werden nur
-        in deinem Browser gespeichert; es gibt weder ein Konto noch eine Auswertung deiner Meinung.{' '}
-        <a href="/methodik/" class="link whitespace-nowrap">Mehr zur Methodik</a>
-      </p>
-    </div>
-  </section>
 </Layout>

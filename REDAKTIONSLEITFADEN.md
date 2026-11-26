@@ -82,6 +82,16 @@ Klartext soll klingen wie ein gutes Sachbuch oder ein sorgfältiger Zeitungsarti
 
 Ebenen 2 und 4–6 sind optional, solange ein Bereich noch im Aufbau ist.
 
+### Kurzfassung nach Zeitbudget
+
+Viele Menschen wollen eine Frage beantworten, nicht einen Artikel lesen. Deshalb bekommt jede Frage eine Kurzfassung, die vor allem anderen steht. Die Seite zeigt dann drei Stufen: **Kurz erklärt** (30 Sekunden), **Verstehen** (5 Minuten) und **Genau wissen** (alle übrigen Ebenen).
+
+- `kurzfrage`: höchstens 12 Wörter, Alltagssprache („Die Krankenkassen haben zu wenig Geld. Was soll passieren?“).
+- Antwort-`titel`: 2–4 Wörter, ohne Fachbegriffe („Mehr Steuergeld“ statt „Mehr Steuermittel“).
+- `kurz_erklaert`: höchstens drei Sätze, je höchstens 25 Wörter, mit Quelle. Lieber ungenau und verständlich als vollständig; die genaue Fassung steht eine Stufe tiefer.
+- `kurz_pro` / `kurz_contra` je Antwort: eine Zeile, höchstens 12 Wörter, gleich sorgfältig für alle Antworten.
+- `video`: höchstens ein Erklärvideo, nur nach redaktioneller Freigabe. Bevorzugt sachliche Erklärformate (öffentlich-rechtliche Angebote, Bundeszentrale für politische Bildung). Politikerinnen und Politiker nur im Paket, etwa je Fraktion eine Rede aus derselben Bundestagsdebatte. YouTube-Videos werden erst nach einem Klick geladen.
+
 ### Ebene 1: Verstehen statt merken
 
 Ebene 1 soll ein **mentales Modell** vermitteln, keinen Datensatz. Niemand merkt sich beim Lesen fünf Zahlen, aber jeder merkt sich „etwa jeder dritte Euro geht ins Krankenhaus“.

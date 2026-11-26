@@ -68,8 +68,23 @@ export function quellenNummern(frage: Frage) {
   return nums;
 }
 
-/** Welche Zwiebel-Ebenen hat eine Frage? (1 und 3 immer, 2 und 4–6 optional, 7 = Quellen) */
+/** Hat die Frage eine Kurzfassung? Dann zeigt die Seite drei Stufen nach Zeitbudget. */
+export const istKompakt = (frage: Frage) => !!frage.data.kurz_erklaert?.length;
+
+/** Die drei Stufen einer Frage mit Kurzfassung. */
+export const STUFEN = [
+  { n: 1, id: 'worum-gehts', titel: 'Kurz erklärt', sub: '30 Sekunden', da: true },
+  { n: 2, id: 'verstehen', titel: 'Verstehen', sub: '5 Minuten', da: true },
+  { n: 3, id: 'genau', titel: 'Genau wissen', sub: 'so lange du willst', da: true },
+];
+
+/** Gliederung, nach der die Seite aufgebaut ist: drei Stufen (Kurzfassung) oder die Inhaltsebenen. */
 export function ebenenVon(frage: Frage) {
+  return istKompakt(frage) ? STUFEN : inhaltsEbenen(frage);
+}
+
+/** Welche Inhaltsebenen hat eine Frage? (1 und 3 immer, 2 und 4–6 optional, 7 = Quellen) */
+export function inhaltsEbenen(frage: Frage) {
   const d = frage.data;
   const hatDaten = !!d.daten && (d.daten.kennzahlen.length + d.daten.diagramme.length + d.daten.aussagen.length > 0);
   const z = d.zusammenhaenge;
@@ -91,6 +106,9 @@ export function frageKurz(f: Frage) {
     bereich: f.data.bereich,
     titel: f.data.titel,
     frage: f.data.frage,
+    kurzfrage: f.data.kurzfrage ?? null,
+    kompakt: istKompakt(f),
+    kurzErklaert: (f.data.kurz_erklaert ?? []).map((a) => ({ typ: a.typ, html: md(a.text), wer: a.wer ?? null, genau: a.genau ? md(a.genau) : null })),
     status: f.data.status,
     url: frageUrl(f.id),
     optionen: f.data.optionen.map((o) => ({ id: o.id, titel: o.titel, kurz: o.kurz })),
@@ -100,7 +118,8 @@ export function frageKurz(f: Frage) {
       return { partei: p.partei, option: p.option, beleg: p.beleg, seite: p.seite, titel: q?.titel ?? '', url: q?.url ?? null };
     }),
     zusammenhaenge: !!f.data.zusammenhaenge,
-    tiefe: ebenenVon(f).filter((e) => e.da && e.n < 7).length,
+    tiefe: inhaltsEbenen(f).filter((e) => e.da && e.n < 7).length,
+    ringe: ebenenVon(f).filter((e) => e.da).length,
   };
 }
 export type FrageKurz = ReturnType<typeof frageKurz>;
