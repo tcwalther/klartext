@@ -84,7 +84,7 @@ Ebenen 2 und 4–6 sind optional, solange ein Bereich noch im Aufbau ist.
 
 ### Kurzfassung nach Zeitbudget
 
-Viele Menschen wollen eine Frage beantworten, nicht einen Artikel lesen. Deshalb bekommt jede Frage eine Kurzfassung, die vor allem anderen steht. Die Seite zeigt dann drei Stufen: **Kurz erklärt** (30 Sekunden), **Verstehen** (5 Minuten) und **Genau wissen** (alle übrigen Ebenen).
+Viele Menschen wollen eine Frage beantworten, nicht einen Artikel lesen. Deshalb bekommt jede Frage eine Kurzfassung, die vor allem anderen steht. Die Seite zeigt dann drei Stufen: **Kurz erklärt** (30 Sekunden), **Verstehen** (10 Minuten) und **Genau wissen** (alle übrigen Ebenen).
 
 - `kurzfrage`: höchstens 12 Wörter, Alltagssprache („Die Krankenkassen haben zu wenig Geld. Was soll passieren?“).
 - Antwort-`titel`: 2–4 Wörter, ohne Fachbegriffe („Mehr Steuergeld“ statt „Mehr Steuermittel“).

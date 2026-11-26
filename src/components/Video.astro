@@ -7,7 +7,7 @@ interface Props {
   titel: string;
   absender: string;
   dauer: string;
-  jahr: number;
+  jahr?: number | undefined;
   url: string;
   youtube_id?: string | undefined;
 }
@@ -39,7 +39,7 @@ const { titel, absender, dauer, jahr, url, youtube_id } = Astro.props;
     )
   }
   <figcaption class="mt-2 text-xs text-muted">
-    {absender}, {jahr}.{youtube_id && ' Beim Abspielen lädt YouTube das Video; dabei werden Daten an YouTube übertragen.'}
+    {absender}{jahr && `, ${jahr}`}.{youtube_id && ' Beim Abspielen lädt YouTube das Video; dabei werden Daten an YouTube übertragen.'}
   </figcaption>
 </figure>
 

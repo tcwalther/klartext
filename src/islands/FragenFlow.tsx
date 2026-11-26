@@ -154,7 +154,7 @@ export default function FragenFlow({ fragen, bereiche }: Props) {
               ))}
             </ul>
             <a href={`${f.url}#${f.kompakt ? 'verstehen' : f.zusammenhaenge ? 'zusammenhaenge' : 'argumente'}`} class="btn btn-primary mt-4">
-              {f.kompakt ? 'Verstehen in 5 Minuten →' : 'Ausführlich zu dieser Frage →'}
+              {f.kompakt ? 'Verstehen in 10 Minuten →' : 'Ausführlich zu dieser Frage →'}
             </a>
             <p class="text-xs text-muted mt-2">Dort findest du auch die Quellen zu allen Aussagen.</p>
           </section>

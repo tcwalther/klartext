@@ -177,7 +177,7 @@ const kurzTitel: Record<string, string> = {
               <Ebene n={1} id="worum-gehts" titel="Kurz erklärt" sub="30 Sekunden" frageId={frage.id} open>
                 <AussageListe items={d.kurz_erklaert ?? []} nums={nums} />
               </Ebene>
-              <Ebene n={2} id="verstehen" titel="Verstehen" sub="5 Minuten" frageId={frage.id}>
+              <Ebene n={2} id="verstehen" titel="Verstehen" sub="10 Minuten" frageId={frage.id}>
                 {d.video && <Video {...d.video} />}
                 <ul class="grid gap-5">
                   {d.optionen.map((o, i) => (
@@ -212,6 +212,15 @@ const kurzTitel: Record<string, string> = {
         }
 
         <Huelle kompakt={kompakt} frageId={frage.id}>
+        {
+          kompakt && d.videos_tief.length > 0 && (
+            <Teil kompakt n={0} id="videos" titel="Ausführlich im Video" frageId={frage.id}>
+              {d.videos_tief.map((v) => (
+                <Video {...v} />
+              ))}
+            </Teil>
+          )
+        }
         <!-- Ebene 1 -->
         <Teil kompakt={kompakt} n={1} id={kompakt ? 'hintergrund' : 'worum-gehts'} titel={kompakt ? 'Hintergrund' : 'Worum geht’s?'} frageId={frage.id} open={!kompakt}>
           <AussageListe items={d.erklaerung} nums={nums} />

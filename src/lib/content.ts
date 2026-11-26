@@ -74,7 +74,7 @@ export const istKompakt = (frage: Frage) => !!frage.data.kurz_erklaert?.length;
 /** Die drei Stufen einer Frage mit Kurzfassung. */
 export const STUFEN = [
   { n: 1, id: 'worum-gehts', titel: 'Kurz erklärt', sub: '30 Sekunden', da: true },
-  { n: 2, id: 'verstehen', titel: 'Verstehen', sub: '5 Minuten', da: true },
+  { n: 2, id: 'verstehen', titel: 'Verstehen', sub: '10 Minuten', da: true },
   { n: 3, id: 'genau', titel: 'Genau wissen', sub: 'so lange du willst', da: true },
 ];
 

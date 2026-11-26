@@ -49,6 +49,15 @@ const aussage = z
     }
   });
 
+const videoSchema = z.object({
+  titel: z.string(),
+  absender: z.string(),
+  dauer: z.string(), // z. B. „8 Min.“
+  jahr: z.number().int().optional(), // nur, wenn sicher bekannt
+  url: z.url(),
+  youtube_id: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(), // dann per Klick einbettbar
+});
+
 const kennzahl = z.object({
   label: z.string(),
   wert: z.string(), // als Text, damit „ca. 1.870“ oder „7,8 je 1.000 EW“ möglich ist
@@ -89,20 +98,13 @@ const fragen = defineCollection({
     titel: z.string(), // Überschrift, neutral formuliert
     frage: z.string(), // Ebene 0: die Entscheidungsfrage
     // Kurzfassung nach Zeitbudget. Ist `kurz_erklaert` gesetzt, zeigt die Seite drei Stufen:
-    // Kurz erklärt (30 Sekunden) → Verstehen (5 Minuten) → Genau wissen (alles Übrige).
+    // Kurz erklärt (30 Sekunden) → Verstehen (10 Minuten) → Genau wissen (alles Übrige).
     kurzfrage: z.string().max(90).optional(), // höchstens ~12 Wörter
     kurz_erklaert: z.array(aussage).min(1).max(3).optional(),
-    // Erklärvideo: höchstens eines je Frage, vorher redaktionell freigegeben
-    video: z
-      .object({
-        titel: z.string(),
-        absender: z.string(),
-        dauer: z.string(), // z. B. „4 Min.“
-        jahr: z.number().int(),
-        url: z.url(),
-        youtube_id: z.string().regex(/^[A-Za-z0-9_-]{11}$/).optional(), // dann per Klick einbettbar
-      })
-      .optional(),
+    // Erklärvideo für „Verstehen“ (3–110 Minuten), vorher redaktionell freigegeben
+    video: videoSchema.optional(),
+    // Längere Videos für „Genau wissen“
+    videos_tief: z.array(videoSchema).default([]),
     optionen: z.array(option).min(2).max(4),
 
     // Ebene 1 – Worum geht's? (in zwei Minuten lesbar)

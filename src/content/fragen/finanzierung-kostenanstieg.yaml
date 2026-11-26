@@ -19,6 +19,18 @@ kurz_erklaert:
     quellen:
       - finanzkommission-bericht-2026
 kurzfrage: Die Krankenkassen haben zu wenig Geld. Was soll passieren?
+videos_tief:
+  - titel: Wer zahlt für das 15-Milliarden-Defizit der Krankenkassen?
+    absender: Politico
+    dauer: 19 Min.
+    url: https://www.youtube.com/watch?v=dj71A8PEqSo
+    youtube_id: dj71A8PEqSo
+video:
+  titel: "Krankenkassen in der Krise: Was passiert mit unseren Beiträgen?"
+  absender: ZDF frontal (Kanal ZDFheute Nachrichten)
+  dauer: 8 Min.
+  url: https://www.youtube.com/watch?v=tj05V3KSiww
+  youtube_id: tj05V3KSiww
 
 optionen:
   - id: hoehere-beitraege
